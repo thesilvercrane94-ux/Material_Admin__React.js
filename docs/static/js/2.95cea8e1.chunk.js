@@ -37940,8 +37940,7 @@
                 -1 === e.indexOf("Mobile Safari") ||
                 -1 !== e.indexOf("Chrome") ||
                 -1 !== e.indexOf("Windows Phone")) &&
-              window.history &&
-              "pushState" in window.history
+              window.history && "pushState" in window.history
             );
           })(),
           a = !(-1 === window.navigator.userAgent.indexOf("Trident")),
@@ -50602,8 +50601,7 @@
               n = e.tagName;
             return (
               !("INPUT" !== n || !u[t] || e.readOnly) ||
-              ("TEXTAREA" === n && !e.readOnly) ||
-              !!e.isContentEditable
+              ("TEXTAREA" === n && !e.readOnly) || !!e.isContentEditable
             );
           })(t)
         );
@@ -60805,9 +60803,7 @@
             null != e &&
             !a(e)
           ) ||
-          o.test(e) ||
-          !i.test(e) ||
-          (null != t && e in Object(t))
+          o.test(e) || !i.test(e) || (null != t && e in Object(t))
         );
       };
     },
@@ -88040,12 +88036,16 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                        var o = t.graphics.group().attr({
-                          class: "apexcharts-series",
-                          seriesName: m.escapeString(n.globals.seriesNames[i]),
-                          rel: i + 1,
-                          "data:realIndex": i
-                        });
+                        var o = t.graphics
+                          .group()
+                          .attr({
+                            class: "apexcharts-series",
+                            seriesName: m.escapeString(
+                              n.globals.seriesNames[i]
+                            ),
+                            rel: i + 1,
+                            "data:realIndex": i
+                          });
                         (t.dataRadiusOfPercent[i] = []),
                           (t.dataRadius[i] = []),
                           (t.angleArr[i] = []),
@@ -108141,7 +108141,7 @@
         return (
           "Object" === r(e) &&
           e.constructor === Object &&
-          Object.getPrototypeOf(e) === Object.prototype
+            Object.getPrototypeOf(e) === Object.prototype
         );
       }
       function i(e) {
@@ -109771,8 +109771,8 @@
           ? 0 === a.type
           : !r &&
             2 < t.length &&
-            ("o" === t[0] || "O" === t[0]) &&
-            ("n" === t[1] || "N" === t[1])) ||
+              ("o" === t[0] || "O" === t[0]) &&
+              ("n" === t[1] || "N" === t[1])) ||
           ((function(e, t, n, r) {
             if (
               null === t ||
@@ -112385,8 +112385,7 @@
           ? e.shouldComponentUpdate(r, i, o)
           : !t.prototype ||
               !t.prototype.isPureReactComponent ||
-              !na(n, r) ||
-              !na(a, i);
+              !na(n, r) || !na(a, i);
       }
       function Ri(e, t, n) {
         var r = !1,
@@ -135194,9 +135193,7 @@
               null != e &&
               !ht(e)
             ) ||
-            R.test(e) ||
-            !A.test(e) ||
-            (null != t && e in Object(t))
+            R.test(e) || !A.test(e) || (null != t && e in Object(t))
           );
         }
         function Ke(e) {
@@ -145085,12 +145082,16 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                        var o = t.graphics.group().attr({
-                          class: "apexcharts-series",
-                          seriesName: g.escapeString(n.globals.seriesNames[i]),
-                          rel: i + 1,
-                          "data:realIndex": i
-                        });
+                        var o = t.graphics
+                          .group()
+                          .attr({
+                            class: "apexcharts-series",
+                            seriesName: g.escapeString(
+                              n.globals.seriesNames[i]
+                            ),
+                            rel: i + 1,
+                            "data:realIndex": i
+                          });
                         (t.dataRadiusOfPercent[i] = []),
                           (t.dataRadius[i] = []),
                           (t.angleArr[i] = []),
@@ -178453,9 +178454,9 @@
           void 0 === n && (n = e.textContent),
           void 0 !== n &&
             0 !== (n = n.trim().toLowerCase()).length &&
-            (t.repeating
-              ? n[0] === t.keys[0]
-              : 0 === n.indexOf(t.keys.join("")))
+              (t.repeating
+                ? n[0] === t.keys[0]
+                : 0 === n.indexOf(t.keys.join("")))
         );
       }
       function g(e, t, n, r, a) {
