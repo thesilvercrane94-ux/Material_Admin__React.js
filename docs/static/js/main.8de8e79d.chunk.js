@@ -2,16 +2,16 @@
   this["webpackJsonpflatlogic-material-full"] || []).push([
   [0],
   {
-    1106: function(e, a, t) {},
-    1108: function(e, a, t) {
+    1095: function(e, a, t) {},
+    1097: function(e, a, t) {
       "use strict";
       t.r(a);
       var l = t(0),
         n = t.n(l),
         r = t(19),
         m = t.n(r),
-        c = t(386),
-        i = t(1263),
+        c = t(380),
+        i = t(1252),
         s = t(27),
         o = t(41),
         E = t(111),
@@ -22,24 +22,24 @@
         x = t(58),
         h = t.n(x),
         N = t(59),
-        I = t(1269),
-        f = t(1249),
-        y = t(2197),
-        b = t(2201),
-        T = t(2198),
-        v = t(209),
-        A = t(1222),
-        w = t(284),
-        C = t(1268),
-        P = t(398),
-        O = t(2200),
-        S = t(1804),
-        k = t(1397),
-        B = t(1429),
-        M = t(2194),
-        j = t(1242),
-        L = t(1110),
-        D = t(520);
+        I = t(1258),
+        f = t(1238),
+        y = t(2186),
+        b = t(2190),
+        T = t(2187),
+        v = t(208),
+        A = t(1211),
+        w = t(281),
+        C = t(1257),
+        P = t(392),
+        O = t(2189),
+        S = t(1793),
+        k = t(1386),
+        B = t(1418),
+        M = t(2183),
+        j = t(1231),
+        L = t(1099),
+        D = t(509);
       function F(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -109,23 +109,32 @@
             },
             ecommerceIcon: { color: "#6E6E6E" },
             calendarIcon: { color: e.palette.primary.main, marginRight: 14 },
-            margin: { marginBottom: 24 }
+            margin: { marginBottom: 24 },
+            changeThemeFab: {
+              position: "fixed",
+              top: e.spacing(23),
+              right: 0,
+              zIndex: 1,
+              borderRadius: 0,
+              borderTopLeftRadius: "50%",
+              borderBottomLeftRadius: "50%"
+            }
           };
         }),
-        H = t(1201),
-        z = t(325),
-        G = t(517),
-        V = t(444),
-        U = t(326),
-        Y = t(311),
-        K = t(1218),
-        Q = t(1219),
-        J = t(1220),
-        q = t(1206),
-        Z = t(1221),
-        _ = t(1223),
-        X = t(1224),
-        $ = t(443),
+        H = t(1190),
+        z = t(318),
+        G = t(506),
+        V = t(439),
+        U = t(319),
+        Y = t(303),
+        K = t(1207),
+        Q = t(1208),
+        J = t(1209),
+        q = t(1195),
+        Z = t(1210),
+        _ = t(1212),
+        X = t(1213),
+        $ = t(438),
         ee = t.n($),
         ae = t(94),
         te = Object(D.a)(function(e) {
@@ -251,16 +260,16 @@
             sendButtonIcon: { marginLeft: e.spacing(2) }
           };
         }),
-        le = t(1198),
-        ne = t(437),
+        le = t(1187),
+        ne = t(432),
         re = t(60),
-        me = t(283),
-        ce = t(1200),
-        ie = t(324),
+        me = t(280),
+        ce = t(1189),
+        ie = t(317),
         se = t(123),
-        oe = t(1202),
-        Ee = t(1203),
-        de = t(1204),
+        oe = t(1191),
+        Ee = t(1192),
+        de = t(1193),
         ue = t(8);
       function pe(e, a) {
         var t = Object.keys(e);
@@ -570,18 +579,18 @@
           return (0, e.children)(Object(s.a)(e, ["children"]));
         });
       }
-      var ke = t(1205),
-        Be = t(1207),
-        Me = t(1208),
-        je = t(1209),
-        Le = t(1210),
-        De = t(1211),
-        Fe = t(1212),
-        Re = t(1213),
-        We = t(1214),
-        He = t(1215),
-        ze = t(1216),
-        Ge = t(1217),
+      var ke = t(1194),
+        Be = t(1196),
+        Me = t(1197),
+        je = t(1198),
+        Le = t(1199),
+        De = t(1200),
+        Fe = t(1201),
+        Re = t(1202),
+        We = t(1203),
+        He = t(1204),
+        ze = t(1205),
+        Ge = t(1206),
         Ve = t(23),
         Ue = t.n(Ve),
         Ye = Object(D.a)(function(e) {
@@ -1304,7 +1313,7 @@
         );
       }
       var ua = t(73),
-        pa = t(1116);
+        pa = t(1105);
       function ga(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -1392,14 +1401,14 @@
             padding: { paddingBottom: e.spacing(2) }
           };
         }),
-        Na = t(1228),
-        Ia = t(1117),
-        fa = t(1229),
-        ya = t(328),
-        ba = t(327),
-        Ta = t(1232),
-        va = t(1230),
-        Aa = t(1231),
+        Na = t(1217),
+        Ia = t(1106),
+        fa = t(1218),
+        ya = t(321),
+        ba = t(320),
+        Ta = t(1221),
+        va = t(1219),
+        Aa = t(1220),
         wa = Object(D.a)(function(e) {
           return {
             link: {
@@ -1522,9 +1531,9 @@
           )
         });
       }
-      var ka = t(1225),
-        Ba = t(1226),
-        Ma = t(1227);
+      var ka = t(1214),
+        Ba = t(1215),
+        Ma = t(1216);
       function ja(e) {
         var a = e.open,
           t = e.onClose;
@@ -1967,8 +1976,8 @@
             a
           );
         },
-        Ra = t(1233),
-        Wa = t(1234),
+        Ra = t(1222),
+        Wa = t(1223),
         Ha = Object(D.a)(function(e) {
           return {
             widgetWrapper: { display: "flex", minHeight: "100%" },
@@ -2173,52 +2182,25 @@
           )
         );
       }
-      var Ga = t(295),
-        Va = t(296);
-      function Ua() {
-        var e = Object(Ga.a)([
-          "\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  animation: ",
-          " 1.5s ease-in-out infinite;\n  animation-direction: alternate;\n  z-index: 1;\n  margin: 24px;\n  :hover {\n    animation-play-state: paused;\n  }\n"
-        ]);
-        return (
-          (Ua = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function Ya() {
-        var e = Object(Ga.a)([
-          "\n  from {\n    transform: scale(.7);\n  }\n  to {\n    transform: scale(1);\n  }\n"
-        ]);
-        return (
-          (Ya = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      var Ka = Object(Va.b)(Ya()),
-        Qa = Va.a.div(Ua(), Ka),
-        Ja = t(1235),
-        qa = t(1236),
-        Za = t(1237),
-        _a = t(1238),
-        Xa = t(1239),
-        $a = t(1240),
-        et = t(1241),
-        at = t(1243),
-        tt = t(1244),
-        lt = t(1245),
-        nt = t(1246),
-        rt = t(1247),
-        mt = t(1248);
-      var ct = [
+      var Ga = t(1224),
+        Va = t(1225),
+        Ua = t(1226),
+        Ya = t(1227),
+        Ka = t(1228),
+        Qa = t(1229),
+        Ja = t(1230),
+        qa = t(1232),
+        Za = t(1233),
+        _a = t(1234),
+        Xa = t(1235),
+        $a = t(1236),
+        et = t(1237);
+      var at = [
           {
             id: 0,
             label: "Dashboard",
             link: "/app/dashboard",
-            icon: n.a.createElement(Ja.a, null)
+            icon: n.a.createElement(Ga.a, null)
           },
           {
             id: 1,
@@ -2235,7 +2217,7 @@
             id: 2,
             label: "Documentation",
             link: "/documentation",
-            icon: n.a.createElement(qa.a, null)
+            icon: n.a.createElement(Va.a, null)
           },
           { id: 3, type: "divider" },
           { id: 4, type: "title", label: "TEMPLATE" },
@@ -2243,7 +2225,7 @@
             id: 5,
             label: "Core",
             link: "/app/core",
-            icon: n.a.createElement(Za.a, null),
+            icon: n.a.createElement(Ua.a, null),
             children: [
               { label: "Typography", link: "/app/core/typography" },
               { label: "Colors", link: "/app/core/colors" },
@@ -2254,7 +2236,7 @@
             id: 6,
             label: "Tables",
             link: "/app/tables",
-            icon: n.a.createElement(_a.a, null),
+            icon: n.a.createElement(Ya.a, null),
             children: [
               { label: "Tables Basic", link: "/app/tables/static" },
               { label: "Tables Dynamic", link: "/app/tables/dynamic" }
@@ -2264,7 +2246,7 @@
             id: 7,
             label: "UI Elements",
             link: "/app/ui",
-            icon: n.a.createElement(Xa.a, null),
+            icon: n.a.createElement(Ka.a, null),
             children: [
               { label: "Icons", link: "/app/ui/icons" },
               { label: "Badge", link: "/app/ui/badge" },
@@ -2284,7 +2266,7 @@
             id: 8,
             label: "Forms",
             link: "/app/forms",
-            icon: n.a.createElement(qa.a, null),
+            icon: n.a.createElement(Va.a, null),
             children: [
               { label: "Form Elements", link: "/app/forms/elements" },
               { label: "Form Validation", link: "/app/forms/validation" }
@@ -2294,7 +2276,7 @@
             id: 9,
             label: "Charts",
             link: "/app/charts",
-            icon: n.a.createElement($a.a, null),
+            icon: n.a.createElement(Qa.a, null),
             children: [
               { label: "Charts Overview", link: "/app/charts/overview" },
               { label: "Line Charts", link: "/app/charts/line" },
@@ -2306,7 +2288,7 @@
             id: 10,
             label: "Maps",
             link: "/app/maps",
-            icon: n.a.createElement(et.a, null),
+            icon: n.a.createElement(Ja.a, null),
             children: [
               { label: "Google Maps", link: "/app/maps/google" },
               { label: "Vector Map", link: "/app/maps/vector" }
@@ -2348,7 +2330,7 @@
           {
             id: 12,
             label: "Menu Levels",
-            icon: n.a.createElement(at.a, null),
+            icon: n.a.createElement(qa.a, null),
             children: [
               { label: "Level 1.1" },
               {
@@ -2367,19 +2349,19 @@
             id: 15,
             label: "Library",
             link: "",
-            icon: n.a.createElement(tt.a, null)
+            icon: n.a.createElement(Za.a, null)
           },
           {
             id: 16,
             label: "Support",
             link: "",
-            icon: n.a.createElement(lt.a, null)
+            icon: n.a.createElement(_a.a, null)
           },
           {
             id: 17,
             label: "FAQ",
             link: "",
-            icon: n.a.createElement(nt.a, null)
+            icon: n.a.createElement(Xa.a, null)
           },
           { id: 18, type: "divider" },
           { id: 19, type: "title", label: "PROJECTS" },
@@ -2407,7 +2389,7 @@
             label: "Add section",
             icon: n.a.createElement(function() {
               var e = Object(Y.a)();
-              return n.a.createElement(rt.a, {
+              return n.a.createElement($a.a, {
                 style: { color: e.palette.secondary.main, fontSize: 45 }
               });
             }, null),
@@ -2453,7 +2435,7 @@
                 n.a.createElement(
                   "section",
                   { className: e.root },
-                  n.a.createElement(mt.a, null)
+                  n.a.createElement(et.a, null)
                 )
               );
             }, null),
@@ -2473,18 +2455,18 @@
             }
           }
         ],
-        it = t(381),
-        st = t(382),
-        ot = t(383),
-        Et = t(435),
-        dt = t(438),
-        ut = t(291),
-        pt = t(1122),
-        gt = t(384),
-        xt = t(385),
-        ht = t(439),
-        Nt = t(22),
-        It = Object(D.a)(function(e) {
+        tt = t(375),
+        lt = t(376),
+        nt = t(377),
+        rt = t(430),
+        mt = t(433),
+        ct = t(288),
+        it = t(1111),
+        st = t(378),
+        ot = t(379),
+        Et = t(434),
+        dt = t(22),
+        ut = Object(D.a)(function(e) {
           return {
             card: {
               minHeight: "100%",
@@ -2597,7 +2579,7 @@
             fixIconRight: { "& .MuiSelect-icon": { right: 4 } }
           };
         }),
-        ft = {
+        pt = {
           tasks: [
             {
               id: 0,
@@ -2786,9 +2768,9 @@
             }
           ]
         },
-        yt = t(213),
-        bt = t(1250),
-        Tt = Object(D.a)(function(e) {
+        gt = t(212),
+        xt = t(1239),
+        ht = Object(D.a)(function(e) {
           return {
             title: {
               display: "flex",
@@ -2826,13 +2808,13 @@
             }
           };
         });
-      function vt(e) {
+      function Nt(e) {
         var a = e.product,
           t = e.total,
           r = e.color,
           m = e.registrations,
           c = e.bounce,
-          i = Tt(),
+          i = ht(),
           s = Object(Y.a)(),
           o = Object(l.useState)("daily"),
           E = Object(u.a)(o, 2),
@@ -2850,13 +2832,13 @@
                 a
               ),
               n.a.createElement(
-                ut.a,
+                ct.a,
                 {
                   value: p,
                   onChange: function(e) {
                     return x(e.target.value);
                   },
-                  input: n.a.createElement(yt.a, {
+                  input: n.a.createElement(gt.a, {
                     disableUnderline: !0,
                     classes: { input: i.selectInput }
                   }),
@@ -2889,7 +2871,7 @@
               )
             ),
             n.a.createElement(
-              Nt.d,
+              dt.d,
               {
                 width: 100,
                 height: 70,
@@ -2899,7 +2881,7 @@
                     return { value: Math.floor(10 * Math.random()) + 1 };
                   })
               },
-              n.a.createElement(Nt.c, {
+              n.a.createElement(dt.c, {
                 dataKey: "value",
                 fill: s.palette[r].main,
                 radius: 10,
@@ -2926,7 +2908,7 @@
                   },
                   m[p].value
                 ),
-                n.a.createElement(bt.a, {
+                n.a.createElement(xt.a, {
                   className: g()(
                     i.profitArrow,
                     Object(d.a)({}, !m[p].profit, i.profitArrowDanger)
@@ -2956,7 +2938,7 @@
                   c[p].value,
                   "%"
                 ),
-                n.a.createElement(bt.a, {
+                n.a.createElement(xt.a, {
                   className: g()(
                     i.profitArrow,
                     Object(d.a)({}, !m[p].profit, i.profitArrowDanger)
@@ -2985,7 +2967,7 @@
                   },
                   10 * m[p].value
                 ),
-                n.a.createElement(bt.a, {
+                n.a.createElement(xt.a, {
                   className: g()(
                     i.profitArrow,
                     Object(d.a)({}, i.profitArrowDanger, !m[p].profit)
@@ -3001,15 +2983,15 @@
           )
         );
       }
-      var At = t(1251),
-        wt = t(1252),
-        Ct = t(15),
-        Pt = (function() {
+      var It = t(1240),
+        ft = t(1241),
+        yt = t(15),
+        bt = (function() {
           for (
             var e = [],
-              a = Rt(31, 3500, 6500, 7500, 1e3),
-              t = Rt(31, 1500, 7500, 7500, 1500),
-              l = Rt(31, 1500, 7500, 7500, 1500),
+              a = Bt(31, 3500, 6500, 7500, 1e3),
+              t = Bt(31, 1500, 7500, 7500, 1500),
+              l = Bt(31, 1500, 7500, 7500, 1500),
               n = 0;
             n < a.length;
             n++
@@ -3021,13 +3003,13 @@
             });
           return e;
         })(),
-        Ot = [
+        Tt = [
           { name: "Group A", value: 400, color: "primary" },
           { name: "Group B", value: 300, color: "secondary" },
           { name: "Group C", value: 300, color: "warning" },
           { name: "Group D", value: 200, color: "success" }
         ],
-        St = [
+        vt = [
           { name: "Client 1", value: 2, color: "primary" },
           { name: "Client 2", value: 2, color: "primary" },
           { name: "Client 3", value: 2, color: "primary" },
@@ -3049,7 +3031,7 @@
           { name: "Client 19", value: 2, color: "primary" },
           { name: "Client 20", value: 2, color: "primary" }
         ],
-        kt = [
+        At = [
           {
             id: 1,
             orderId: Math.floor(3e6 * Math.random(0)),
@@ -3111,10 +3093,10 @@
             color: "warning"
           }
         ];
-      function Bt(e, a, t) {
+      function wt(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var Mt = [
+      var Ct = [
         { id: "id", numeric: !0, disablePadding: !0, label: "Order ID" },
         { id: "customer", numeric: !0, disablePadding: !1, label: "Customer" },
         { id: "office", numeric: !0, disablePadding: !1, label: "Office" },
@@ -3139,7 +3121,7 @@
         },
         { id: "status", numeric: !0, disablePadding: !1, label: "Status" }
       ];
-      function jt(e) {
+      function Pt(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -3148,15 +3130,15 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          it.a,
+          tt.a,
           null,
           n.a.createElement(
-            st.a,
+            lt.a,
             null,
             n.a.createElement(
-              ot.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(Et.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
@@ -3164,9 +3146,9 @@
                 style: { color: "rgb(185, 185, 185)" }
               })
             ),
-            Mt.map(function(e) {
+            Ct.map(function(e) {
               return n.a.createElement(
-                ot.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "left" : "right",
@@ -3174,7 +3156,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  dt.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -3204,13 +3186,13 @@
           )
         );
       }
-      var Lt = Object(D.a)(function(e) {
+      var Ot = Object(D.a)(function(e) {
           return {
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Ct.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -3222,8 +3204,8 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        Dt = function(e) {
-          var a = Lt(),
+        St = function(e) {
+          var a = Ot(),
             t = e.numSelected;
           return n.a.createElement(
             z.a,
@@ -3270,27 +3252,27 @@
                 ),
             t > 0
               ? n.a.createElement(
-                  Nt.o,
+                  dt.o,
                   { title: "Delete" },
                   n.a.createElement(
                     v.a,
                     { "aria-label": "delete" },
-                    n.a.createElement(At.a, null)
+                    n.a.createElement(It.a, null)
                   )
                 )
               : n.a.createElement(
-                  Nt.o,
+                  dt.o,
                   { title: "Filter list" },
                   n.a.createElement(
                     v.a,
                     { "aria-label": "filter list" },
-                    n.a.createElement(wt.a, null)
+                    n.a.createElement(ft.a, null)
                   )
                 )
           );
         };
-      function Ft(e) {
-        var a = It(),
+      function kt(e) {
+        var a = ut(),
           t = Object(Y.a)(),
           r = Object(l.useState)("monthly"),
           m = Object(u.a)(r, 2),
@@ -3316,7 +3298,7 @@
           O = Object(u.a)(P, 2),
           S = O[0],
           k = O[1],
-          B = S - Math.min(S, kt.length - w * S);
+          B = S - Math.min(S, At.length - w * S);
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -3380,15 +3362,15 @@
                       "64%"
                     ),
                     n.a.createElement(
-                      Nt.m,
+                      dt.m,
                       { width: "100%", height: 80 },
                       n.a.createElement(
-                        Nt.l,
+                        dt.l,
                         null,
                         n.a.createElement(
-                          Nt.k,
+                          dt.k,
                           {
-                            data: St,
+                            data: vt,
                             startAngle: 270,
                             endAngle: 0,
                             paddingAngle: 5,
@@ -3396,8 +3378,8 @@
                             outerRadius: 35,
                             dataKey: "value"
                           },
-                          St.map(function(e, a) {
-                            return n.a.createElement(Nt.f, {
+                          vt.map(function(e, a) {
+                            return n.a.createElement(dt.f, {
                               key: "cell-".concat(a),
                               fill: t.palette[e.color].main
                             });
@@ -3535,21 +3517,21 @@
                       "1700"
                     ),
                     n.a.createElement(
-                      Nt.m,
+                      dt.m,
                       { width: "100%", height: 144 },
                       n.a.createElement(
-                        Nt.l,
+                        dt.l,
                         null,
                         n.a.createElement(
-                          Nt.k,
+                          dt.k,
                           {
-                            data: Ot,
+                            data: Tt,
                             innerRadius: 30,
                             outerRadius: 40,
                             dataKey: "value"
                           },
-                          Ot.map(function(e, a) {
-                            return n.a.createElement(Nt.f, {
+                          Tt.map(function(e, a) {
+                            return n.a.createElement(dt.f, {
                               key: "cell-".concat(a),
                               fill: t.palette[e.color].main
                             });
@@ -3564,7 +3546,7 @@
                     n.a.createElement(
                       "div",
                       { className: a.pieChartLegendWrapper },
-                      Ot.map(function(e, t) {
+                      Tt.map(function(e, t) {
                         var l = e.name,
                           r = e.value,
                           m = e.color;
@@ -3713,12 +3695,12 @@
                     "div",
                     { className: a.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      Nt.m,
+                      dt.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        Nt.b,
-                        { data: Rt(10) },
-                        n.a.createElement(Nt.a, {
+                        dt.b,
+                        { data: Bt(10) },
+                        n.a.createElement(dt.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: t.palette.secondary.main,
@@ -3748,12 +3730,12 @@
                     "div",
                     { className: a.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      Nt.m,
+                      dt.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        Nt.b,
-                        { data: Rt(10) },
-                        n.a.createElement(Nt.a, {
+                        dt.b,
+                        { data: Bt(10) },
+                        n.a.createElement(dt.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: t.palette.primary.main,
@@ -3783,12 +3765,12 @@
                     "div",
                     { className: a.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      Nt.m,
+                      dt.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        Nt.b,
-                        { data: Rt(10) },
-                        n.a.createElement(Nt.a, {
+                        dt.b,
+                        { data: Bt(10) },
+                        n.a.createElement(dt.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: t.palette.warning.main,
@@ -3857,13 +3839,13 @@
                       )
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: c,
                         onChange: function(e) {
                           return i(e.target.value);
                         },
-                        input: n.a.createElement(pt.a, {
+                        input: n.a.createElement(it.a, {
                           labelWidth: 0,
                           classes: {
                             notchedOutline: a.mainChartSelectRoot,
@@ -3880,21 +3862,21 @@
                   )
                 },
                 n.a.createElement(
-                  Nt.m,
+                  dt.m,
                   { width: "100%", minWidth: 500, height: 350 },
                   n.a.createElement(
-                    Nt.g,
+                    dt.g,
                     {
                       margin: { top: 0, right: -15, left: -15, bottom: 0 },
-                      data: Pt
+                      data: bt
                     },
-                    n.a.createElement(Nt.q, {
+                    n.a.createElement(dt.q, {
                       ticks: [0, 2500, 5e3, 7500],
                       tick: { fill: t.palette.text.hint + "80", fontSize: 14 },
                       stroke: t.palette.text.hint + "80",
                       tickLine: !1
                     }),
-                    n.a.createElement(Nt.p, {
+                    n.a.createElement(dt.p, {
                       tickFormatter: function(e) {
                         return e + 1;
                       },
@@ -3902,15 +3884,15 @@
                       stroke: t.palette.text.hint + "80",
                       tickLine: !1
                     }),
-                    n.a.createElement(Nt.o, null),
-                    n.a.createElement(Nt.a, {
+                    n.a.createElement(dt.o, null),
+                    n.a.createElement(dt.a, {
                       type: "natural",
                       dataKey: "desktop",
                       fill: t.palette.background.light,
                       strokeWidth: 0,
                       activeDot: !1
                     }),
-                    n.a.createElement(Nt.i, {
+                    n.a.createElement(dt.i, {
                       type: "natural",
                       dataKey: "mobile",
                       stroke: t.palette.primary.main,
@@ -3918,7 +3900,7 @@
                       dot: !1,
                       activeDot: !1
                     }),
-                    n.a.createElement(Nt.i, {
+                    n.a.createElement(dt.i, {
                       type: "linear",
                       dataKey: "tablet",
                       stroke: t.palette.warning.main,
@@ -3934,11 +3916,11 @@
                 )
               )
             ),
-            ft.bigStat.map(function(e) {
+            pt.bigStat.map(function(e) {
               return n.a.createElement(
                 f.a,
                 { item: !0, md: 4, sm: 6, xs: 12, key: e.product },
-                n.a.createElement(vt, e)
+                n.a.createElement(Nt, e)
               );
             }),
             n.a.createElement(
@@ -3947,25 +3929,25 @@
               n.a.createElement(
                 za,
                 { upperTitle: !0, noBodyPadding: !0, bodyClass: a.tableWidget },
-                n.a.createElement(Dt, { numSelected: b.length }),
+                n.a.createElement(St, { numSelected: b.length }),
                 n.a.createElement(
                   "div",
                   { className: a.tableWrapper },
                   n.a.createElement(
-                    gt.a,
+                    st.a,
                     {
                       className: a.table,
                       "aria-labelledby": "tableTitle",
                       "aria-label": "recent orders"
                     },
-                    n.a.createElement(jt, {
+                    n.a.createElement(Pt, {
                       classes: a,
                       numSelected: b.length,
                       order: E,
                       orderBy: x,
                       onSelectAllClick: function(e) {
                         if (e.target.checked) {
-                          var a = kt.map(function(e) {
+                          var a = At.map(function(e) {
                             return e.id;
                           });
                           T(a);
@@ -3974,10 +3956,10 @@
                       onRequestSort: function(e, a) {
                         d(x === a && "desc" === E ? "asc" : "desc"), h(a);
                       },
-                      rowCount: kt.length
+                      rowCount: At.length
                     }),
                     n.a.createElement(
-                      xt.a,
+                      ot.a,
                       null,
                       (function(e, a) {
                         var t = e.map(function(e, a) {
@@ -3993,14 +3975,14 @@
                           })
                         );
                       })(
-                        kt,
+                        At,
                         (function(e, a) {
                           return "desc" === e
                             ? function(e, t) {
-                                return Bt(e, t, a);
+                                return wt(e, t, a);
                               }
                             : function(e, t) {
-                                return -Bt(e, t, a);
+                                return -wt(e, t, a);
                               };
                         })(E, x)
                       )
@@ -4010,7 +3992,7 @@
                             l = ((t = e.id), -1 !== b.indexOf(t)),
                             r = "orders-table-checkbox-".concat(a);
                           return n.a.createElement(
-                            st.a,
+                            lt.a,
                             {
                               hover: !0,
                               onClick: function(a) {
@@ -4038,16 +4020,16 @@
                               selected: l
                             },
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { padding: "checkbox" },
-                              n.a.createElement(Et.a, {
+                              n.a.createElement(rt.a, {
                                 checked: l,
                                 inputProps: { "aria-labelledby": r },
                                 style: { color: "rgb(185, 185, 185)" }
                               })
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               {
                                 component: "th",
                                 id: r,
@@ -4057,7 +4039,7 @@
                               e.orderId
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 y.a,
@@ -4082,13 +4064,13 @@
                                 )
                               )
                             ),
-                            n.a.createElement(ot.a, null, e.office),
-                            n.a.createElement(ot.a, null, e.weight),
-                            n.a.createElement(ot.a, null, "$", e.price),
-                            n.a.createElement(ot.a, null, e.purDate),
-                            n.a.createElement(ot.a, null, e.delDate),
+                            n.a.createElement(nt.a, null, e.office),
+                            n.a.createElement(nt.a, null, e.weight),
+                            n.a.createElement(nt.a, null, "$", e.price),
+                            n.a.createElement(nt.a, null, e.purDate),
+                            n.a.createElement(nt.a, null, e.delDate),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(Ne, {
                                 label: e.status,
@@ -4099,17 +4081,17 @@
                         }),
                       B > 0 &&
                         n.a.createElement(
-                          st.a,
+                          lt.a,
                           { style: { height: 53 * B } },
-                          n.a.createElement(ot.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     )
                   )
                 ),
-                n.a.createElement(ht.a, {
+                n.a.createElement(Et.a, {
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
-                  count: kt.length,
+                  count: At.length,
                   rowsPerPage: S,
                   page: w,
                   backIconButtonProps: { "aria-label": "previous page" },
@@ -4126,7 +4108,7 @@
           )
         );
       }
-      function Rt(e, a, t) {
+      function Bt(e, a, t) {
         var l,
           n =
             arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10,
@@ -4142,7 +4124,7 @@
           return (l = c), { value: c };
         });
       }
-      var Wt = Object(D.a)(function(e) {
+      var Mt = Object(D.a)(function(e) {
         return {
           dashedBorder: {
             border: "1px dashed",
@@ -4155,8 +4137,8 @@
           text: { marginBottom: e.spacing(2) }
         };
       });
-      function Ht() {
-        var e = Wt();
+      function jt() {
+        var e = Mt();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -4336,10 +4318,10 @@
           )
         );
       }
-      var zt = t(1254),
-        Gt = t(90),
-        Vt =
-          (t(727),
+      var Lt = t(1243),
+        Dt = t(90),
+        Ft =
+          (t(716),
           Object(D.a)(function(e) {
             return {
               layoutContainer: {
@@ -4413,7 +4395,7 @@
               notificationComponent: { paddingRight: e.spacing(4) }
             };
           })),
-        Ut = Object(D.a)(function(e) {
+        Rt = Object(D.a)(function(e) {
           return {
             codeContainer: {
               display: function(e) {
@@ -4430,38 +4412,38 @@
             }
           };
         }),
-        Yt = t(2199),
-        Kt = t(1253),
-        Qt = function(e) {
+        Wt = t(2188),
+        Ht = t(1242),
+        zt = function(e) {
           var a = e.children,
             t = e.row,
             l = e.inline,
-            r = Ut({ row: t, inline: l });
+            r = Rt({ row: t, inline: l });
           return n.a.createElement(
             "div",
             { className: r.codeContainer },
             n.a.createElement(
-              Yt.a,
+              Wt.a,
               {
                 className: r.codeComponent,
                 language: "javascript",
-                style: Kt.a,
+                style: Ht.a,
                 customStyle: l ? { padding: "2px 6px", margin: "-0.5em 0" } : {}
               },
               a
             )
           );
         },
-        Jt = [
-          Gt.b.POSITION.TOP_LEFT,
-          Gt.b.POSITION.TOP_CENTER,
-          Gt.b.POSITION.TOP_RIGHT,
-          Gt.b.POSITION.BOTTOM_LEFT,
-          Gt.b.POSITION.BOTTOM_CENTER,
-          Gt.b.POSITION.BOTTOM_RIGHT
+        Gt = [
+          Dt.b.POSITION.TOP_LEFT,
+          Dt.b.POSITION.TOP_CENTER,
+          Dt.b.POSITION.TOP_RIGHT,
+          Dt.b.POSITION.BOTTOM_LEFT,
+          Dt.b.POSITION.BOTTOM_CENTER,
+          Dt.b.POSITION.BOTTOM_RIGHT
         ];
-      function qt(e) {
-        var a = Vt(),
+      function Vt(e) {
+        var a = Ft(),
           t = Object(l.useState)(2),
           r = Object(u.a)(t, 2),
           m = r[0],
@@ -4476,9 +4458,9 @@
           n.a.createElement(
             f.a,
             { container: !0, spacing: 3 },
-            n.a.createElement(Gt.a, {
+            n.a.createElement(Dt.a, {
               className: a.toastsContainer,
-              closeButton: n.a.createElement(Zt, {
+              closeButton: n.a.createElement(Ut, {
                 className: a.notificationCloseButton
               }),
               closeOnClick: !1,
@@ -4639,7 +4621,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Qt,
+                  zt,
                   null,
                   "\n  // import needed components, functions and styles\n  import { ToastContainer, toast } from 'react-toastify';\n  import 'react-toastify/dist/ReactToastify.css';\n\n  const Page = () => {\n    <div>\n      <ToastContainer />\n      <button onClick={() => toast('Toast Message')}>\n        show notification\n      </button>\n    </div>\n  };\n            "
                 ),
@@ -4807,7 +4789,7 @@
           )
         );
         function p() {
-          Gt.b.update(o, {
+          Dt.b.update(o, {
             render: n.a.createElement(Qe, {
               type: "message",
               message: "Message was sent successfully!",
@@ -4849,7 +4831,7 @@
                 };
             }
             var l = (function(e, t) {
-              return Object(Gt.b)(
+              return Object(Dt.b)(
                 n.a.createElement(
                   Qe,
                   Object.assign({}, e, { className: a.notificationComponent })
@@ -4858,7 +4840,7 @@
               );
             })(t, {
               type: e,
-              position: Jt[m],
+              position: Gt[m],
               progressClassName: a.progress,
               onClose:
                 "error" === e &&
@@ -4874,15 +4856,15 @@
           c(e);
         }
       }
-      function Zt(e) {
+      function Ut(e) {
         var a = e.closeToast,
           t = e.className;
-        return n.a.createElement(zt.a, { className: t, onClick: a });
+        return n.a.createElement(Lt.a, { className: t, onClick: a });
       }
-      var _t = t(462),
-        Xt = t.n(_t),
-        $t = { sent: "success", pending: "warning", declined: "secondary" };
-      function el(e) {
+      var Yt = t(455),
+        Kt = t.n(Yt),
+        Qt = { sent: "success", pending: "warning", declined: "secondary" };
+      function Jt(e) {
         var a = e.data,
           t = Object.keys(a[0]).map(function(e) {
             return e.toUpperCase();
@@ -4891,21 +4873,21 @@
           t.shift(),
           t.pop(),
           n.a.createElement(
-            gt.a,
+            st.a,
             { className: "mb-0" },
             n.a.createElement(
-              it.a,
+              tt.a,
               null,
               n.a.createElement(
-                st.a,
+                lt.a,
                 null,
                 t.map(function(e) {
-                  return n.a.createElement(ot.a, { key: e }, e);
+                  return n.a.createElement(nt.a, { key: e }, e);
                 })
               )
             ),
             n.a.createElement(
-              xt.a,
+              ot.a,
               null,
               a.map(function(e) {
                 var a = e.id,
@@ -4918,10 +4900,10 @@
                   s = e.status,
                   o = e.color;
                 return n.a.createElement(
-                  st.a,
+                  lt.a,
                   { key: a },
                   n.a.createElement(
-                    ot.a,
+                    nt.a,
                     { className: "fw-normal" },
                     n.a.createElement(
                       y.a,
@@ -4935,18 +4917,18 @@
                       t
                     )
                   ),
-                  n.a.createElement(ot.a, null, l),
-                  n.a.createElement(ot.a, null, r),
-                  n.a.createElement(ot.a, null, m),
-                  n.a.createElement(ot.a, null, c),
-                  n.a.createElement(ot.a, null, i),
+                  n.a.createElement(nt.a, null, l),
+                  n.a.createElement(nt.a, null, r),
+                  n.a.createElement(nt.a, null, m),
+                  n.a.createElement(nt.a, null, c),
+                  n.a.createElement(nt.a, null, i),
                   n.a.createElement(
-                    ot.a,
+                    nt.a,
                     null,
                     n.a.createElement(
                       fe,
                       {
-                        color: $t[s.toLowerCase()],
+                        color: Qt[s.toLowerCase()],
                         size: "small",
                         className: "px-2",
                         variant: "contained"
@@ -4960,7 +4942,7 @@
           )
         );
       }
-      var al = [
+      var qt = [
         ["Joe James", "Example Inc.", "Yonkers", "NY"],
         ["John Walsh", "Example Inc.", "Hartford", "CT"],
         ["Bob Herm", "Example Inc.", "Tampa", "FL"],
@@ -4979,7 +4961,7 @@
         ["Serafima Babatunde", "Example Inc.", "Tampa", "FL"],
         ["Gaston Festus", "Example Inc.", "Tampa", "FL"]
       ];
-      function tl() {
+      function Zt() {
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -4989,9 +4971,9 @@
             n.a.createElement(
               f.a,
               { item: !0, xs: 12 },
-              n.a.createElement(Xt.a, {
+              n.a.createElement(Kt.a, {
                 title: "Employee List",
-                data: al,
+                data: qt,
                 columns: ["Name", "Company", "City", "State"],
                 options: { filterType: "checkbox" }
               })
@@ -5006,934 +4988,934 @@
                   upperTitle: !0,
                   noBodyPadding: !0
                 },
-                n.a.createElement(el, { data: ft.table })
+                n.a.createElement(Jt, { data: pt.table })
               )
             )
           )
         );
       }
-      var ll = t(1270),
-        nl = t(1271),
-        rl = t(1272),
-        ml = t(1273),
-        cl = t(1274),
-        il = t(1275),
-        sl = t(1276),
-        ol = t(1277),
-        El = t(1278),
-        dl = t(1279),
-        ul = t(1280),
-        pl = t(1281),
-        gl = t(1282),
-        xl = t(1283),
-        hl = t(1284),
-        Nl = t(1285),
-        Il = t(1286),
-        fl = t(1287),
-        yl = t(1288),
-        bl = t(1289),
-        Tl = t(1290),
-        vl = t(1291),
-        Al = t(1292),
-        wl = t(1293),
-        Cl = t(1294),
-        Pl = t(1295),
-        Ol = t(1296),
-        Sl = t(1297),
-        kl = t(1298),
-        Bl = t(1299),
-        Ml = t(1300),
-        jl = t(1301),
-        Ll = t(1302),
-        Dl = t(1303),
-        Fl = t(1304),
-        Rl = t(1305),
-        Wl = t(1306),
-        Hl = t(1307),
-        zl = t(1308),
-        Gl = t(1309),
-        Vl = t(1310),
-        Ul = t(1311),
-        Yl = t(1312),
-        Kl = t(1313),
-        Ql = t(1314),
-        Jl = t(1315),
-        ql = t(1316),
-        Zl = t(1317),
-        _l = t(1318),
-        Xl = t(1319),
-        $l = t(1320),
-        en = t(1321),
-        an = t(1322),
-        tn = t(1323),
-        ln = t(1324),
-        nn = t(1325),
-        rn = t(1326),
-        mn = t(1327),
-        cn = t(1328),
-        sn = t(1329),
-        on = t(1330),
-        En = t(1331),
-        dn = t(1332),
-        un = t(1333),
-        pn = t(1334),
-        gn = t(1335),
-        xn = t(1336),
-        hn = t(1337),
-        Nn = t(1338),
-        In = t(1339),
-        fn = t(1340),
-        yn = t(1341),
-        bn = t(1342),
-        Tn = t(1343),
-        vn = t(1344),
-        An = t(1345),
-        wn = t(1346),
-        Cn = t(1347),
-        Pn = t(1348),
-        On = t(1349),
-        Sn = t(1350),
-        kn = t(1351),
-        Bn = t(1352),
-        Mn = t(1353),
-        jn = t(1354),
-        Ln = t(1355),
-        Dn = t(1356),
-        Fn = t(1357),
-        Rn = t(1358),
-        Wn = t(1359),
-        Hn = t(1360),
-        zn = t(1361),
-        Gn = t(1362),
-        Vn = t(1363),
-        Un = t(1364),
-        Yn = t(1365),
-        Kn = t(1366),
-        Qn = t(1367),
-        Jn = t(1368),
-        qn = t(1369),
-        Zn = t(1370),
-        _n = t(1371),
-        Xn = t(1372),
-        $n = t(1373),
-        er = t(1374),
-        ar = t(1375),
-        tr = t(1376),
-        lr = t(1377),
-        nr = t(1378),
-        rr = t(1379),
-        mr = t(1380),
-        cr = t(1381),
-        ir = t(1382),
-        sr = t(1383),
-        or = t(1384),
-        Er = t(1385),
-        dr = t(1386),
-        ur = t(1387),
-        pr = t(1388),
-        gr = t(1389),
-        xr = t(1390),
-        hr = t(1391),
-        Nr = t(1392),
-        Ir = t(1393),
-        fr = t(1394),
-        yr = t(1395),
-        br = t(1396),
-        Tr = t(1398),
-        vr = t(1399),
-        Ar = t(1400),
-        wr = t(1401),
-        Cr = t(1402),
-        Pr = t(1403),
-        Or = t(1404),
-        Sr = t(1405),
-        kr = t(1406),
-        Br = t(1407),
-        Mr = t(1408),
-        jr = t(1409),
-        Lr = t(1410),
-        Dr = t(1411),
-        Fr = t(1412),
-        Rr = t(1413),
-        Wr = t(1414),
-        Hr = t(1415),
-        zr = t(1416),
-        Gr = t(1417),
-        Vr = t(1418),
-        Ur = t(1419),
-        Yr = t(1420),
-        Kr = t(1421),
-        Qr = t(1422),
-        Jr = t(1423),
-        qr = t(1424),
-        Zr = t(1425),
-        _r = t(1426),
-        Xr = t(1427),
-        $r = t(1428),
-        em = t(1430),
-        am = t(1431),
-        tm = t(1432),
-        lm = t(1433),
-        nm = t(1434),
-        rm = t(1435),
-        mm = t(1436),
-        cm = t(1437),
-        im = t(1438),
-        sm = t(1439),
-        om = t(1440),
-        Em = t(1441),
-        dm = t(1442),
-        um = t(1443),
-        pm = t(1444),
-        gm = t(1445),
-        xm = t(1446),
-        hm = t(1447),
-        Nm = t(1448),
-        Im = t(1449),
-        fm = t(1450),
-        ym = t(1451),
-        bm = t(1452),
-        Tm = t(1453),
-        vm = t(1454),
-        Am = t(1455),
-        wm = t(1456),
-        Cm = t(1457),
-        Pm = t(1458),
-        Om = t(1459),
-        Sm = t(1460),
-        km = t(1461),
-        Bm = t(1462),
-        Mm = t(1463),
-        jm = t(1464),
-        Lm = t(1465),
-        Dm = t(1466),
-        Fm = t(1467),
-        Rm = t(1468),
-        Wm = t(1469),
-        Hm = t(1470),
-        zm = t(1471),
-        Gm = t(1472),
-        Vm = t(1473),
-        Um = t(1474),
-        Ym = t(1475),
-        Km = t(1476),
-        Qm = t(1477),
-        Jm = t(1478),
-        qm = t(1479),
-        Zm = t(1480),
-        _m = t(1481),
-        Xm = t(1482),
-        $m = t(1483),
-        ec = t(1484),
-        ac = t(1485),
-        tc = t(1486),
-        lc = t(1487),
-        nc = t(1488),
-        rc = t(1489),
-        mc = t(1490),
-        cc = t(1491),
-        ic = t(1492),
-        sc = t(1493),
-        oc = t(1494),
-        Ec = t(1495),
-        dc = t(1496),
-        uc = t(1497),
-        pc = t(1498),
-        gc = t(1499),
-        xc = t(1500),
-        hc = t(1501),
-        Nc = t(1502),
-        Ic = t(1503),
-        fc = t(1504),
-        yc = t(1505),
-        bc = t(1506),
-        Tc = t(1507),
-        vc = t(1508),
-        Ac = t(1509),
-        wc = t(1510),
-        Cc = t(1511),
-        Pc = t(1512),
-        Oc = t(1513),
-        Sc = t(1514),
-        kc = t(1515),
-        Bc = t(1516),
-        Mc = t(1517),
-        jc = t(1518),
-        Lc = t(1519),
-        Dc = t(1520),
-        Fc = t(1521),
-        Rc = t(1522),
-        Wc = t(1523),
-        Hc = t(1524),
-        zc = t(1525),
-        Gc = t(1526),
-        Vc = t(1527),
-        Uc = t(1528),
-        Yc = t(1529),
-        Kc = t(1530),
-        Qc = t(1531),
-        Jc = t(1532),
-        qc = t(1533),
-        Zc = t(1534),
-        _c = t(1535),
-        Xc = t(1536),
-        $c = t(1537),
-        ei = t(1538),
-        ai = t(1539),
-        ti = t(1540),
-        li = t(1541),
-        ni = t(1542),
-        ri = t(1543),
-        mi = t(1544),
-        ci = t(1545),
-        ii = t(1546),
-        si = t(1547),
-        oi = t(1548),
-        Ei = t(1549),
-        di = t(1550),
-        ui = t(1551),
-        pi = t(1552),
-        gi = t(1553),
-        xi = t(1554),
-        hi = t(1555),
-        Ni = t(1556),
-        Ii = t(1557),
-        fi = t(1558),
-        yi = t(1559),
-        bi = t(1560),
-        Ti = t(1561),
-        vi = t(1562),
-        Ai = t(1563),
-        wi = t(1564),
-        Ci = t(1565),
-        Pi = t(1566),
-        Oi = t(1567),
-        Si = t(1568),
-        ki = t(1569),
-        Bi = t(1570),
-        Mi = t(1571),
-        ji = t(1572),
-        Li = t(1573),
-        Di = t(1574),
-        Fi = t(1575),
-        Ri = t(1576),
-        Wi = t(1577),
-        Hi = t(1578),
-        zi = t(1579),
-        Gi = t(1580),
-        Vi = t(1581),
-        Ui = t(1582),
-        Yi = t(1583),
-        Ki = t(1584),
-        Qi = t(1585),
-        Ji = t(1586),
-        qi = t(1587),
-        Zi = t(1588),
-        _i = t(1589),
-        Xi = t(1590),
-        $i = t(1591),
-        es = t(1592),
-        as = t(1593),
-        ts = t(1594),
-        ls = t(1595),
-        ns = t(1596),
-        rs = t(1597),
-        ms = t(1598),
-        cs = t(1599),
-        is = t(1600),
-        ss = t(1601),
-        os = t(1602),
-        Es = t(1603),
-        ds = t(1604),
-        us = t(1605),
-        ps = t(1606),
-        gs = t(1607),
-        xs = t(1608),
-        hs = t(1609),
-        Ns = t(1610),
-        Is = t(1611),
-        fs = t(1612),
-        ys = t(1613),
-        bs = t(1614),
-        Ts = t(1615),
-        vs = t(1616),
-        As = t(1617),
-        ws = t(1618),
-        Cs = t(1619),
-        Ps = t(1620),
-        Os = t(1621),
-        Ss = t(1622),
-        ks = t(1623),
-        Bs = t(1624),
-        Ms = t(1625),
-        js = t(1626),
-        Ls = t(1627),
-        Ds = t(1628),
-        Fs = t(1629),
-        Rs = t(1630),
-        Ws = t(1631),
-        Hs = t(1632),
-        zs = t(1633),
-        Gs = t(1634),
-        Vs = t(1635),
-        Us = t(1636),
-        Ys = t(1637),
-        Ks = t(1638),
-        Qs = t(1639),
-        Js = t(1640),
-        qs = t(1641),
-        Zs = t(1642),
-        _s = t(1643),
-        Xs = t(1644),
-        $s = t(1645),
-        eo = t(1646),
-        ao = t(1647),
-        to = t(1648),
-        lo = t(1649),
-        no = t(1650),
-        ro = t(1651),
-        mo = t(1652),
-        co = t(1653),
-        io = t(1654),
-        so = t(1655),
-        oo = t(1656),
-        Eo = t(1657),
-        uo = t(1658),
-        po = t(1659),
-        go = t(1660),
-        xo = t(1661),
-        ho = t(1662),
-        No = t(1663),
-        Io = t(1664),
-        fo = t(1665),
-        yo = t(1666),
-        bo = t(1667),
-        To = t(1668),
-        vo = t(1669),
-        Ao = t(1670),
-        wo = t(1671),
-        Co = t(1672),
-        Po = t(1673),
-        Oo = t(1674),
-        So = t(1675),
-        ko = t(1676),
-        Bo = t(1677),
-        Mo = t(1678),
-        jo = t(1679),
-        Lo = t(1680),
-        Do = t(1681),
-        Fo = t(1682),
-        Ro = t(1683),
-        Wo = t(1684),
-        Ho = t(1685),
-        zo = t(1686),
-        Go = t(1687),
-        Vo = t(1688),
-        Uo = t(1689),
-        Yo = t(1690),
-        Ko = t(1691),
-        Qo = t(1692),
-        Jo = t(1693),
-        qo = t(1694),
-        Zo = t(1695),
-        _o = t(1696),
-        Xo = t(1697),
-        $o = t(1698),
-        eE = t(1699),
-        aE = t(1700),
-        tE = t(1701),
-        lE = t(1702),
-        nE = t(1703),
-        rE = t(1704),
-        mE = t(1705),
-        cE = t(1706),
-        iE = t(1707),
-        sE = t(1708),
-        oE = t(1709),
-        EE = t(1710),
-        dE = t(1711),
-        uE = t(1712),
-        pE = t(1713),
-        gE = t(1714),
-        xE = t(1715),
-        hE = t(1716),
-        NE = t(1717),
-        IE = t(1718),
-        fE = t(1719),
-        yE = t(1720),
-        bE = t(1721),
-        TE = t(1722),
-        vE = t(1723),
-        AE = t(1724),
-        wE = t(1725),
-        CE = t(1726),
-        PE = t(1727),
-        OE = t(1728),
-        SE = t(1729),
-        kE = t(1730),
-        BE = t(1731),
-        ME = t(1732),
-        jE = t(1733),
-        LE = t(1734),
-        DE = t(1735),
-        FE = t(1736),
-        RE = t(1737),
-        WE = t(1738),
-        HE = t(1739),
-        zE = t(1740),
-        GE = t(1741),
-        VE = t(1742),
-        UE = t(1743),
-        YE = t(1744),
-        KE = t(1745),
-        QE = t(1746),
-        JE = t(1747),
-        qE = t(1748),
-        ZE = t(1749),
-        _E = t(1750),
-        XE = t(1751),
-        $E = t(1752),
-        ed = t(1753),
-        ad = t(1754),
-        td = t(1755),
-        ld = t(1756),
-        nd = t(1757),
-        rd = t(1758),
-        md = t(1759),
-        cd = t(1760),
-        id = t(1761),
-        sd = t(1762),
-        od = t(1763),
-        Ed = t(1764),
-        dd = t(1765),
-        ud = t(1766),
-        pd = t(1767),
-        gd = t(1768),
-        xd = t(1769),
-        hd = t(1770),
-        Nd = t(1771),
-        Id = t(1772),
-        fd = t(1773),
-        yd = t(1774),
-        bd = t(1775),
-        Td = t(1776),
-        vd = t(1777),
-        Ad = t(1778),
-        wd = t(1779),
-        Cd = t(1780),
-        Pd = t(1781),
-        Od = t(1782),
-        Sd = t(1783),
-        kd = t(1784),
-        Bd = t(1785),
-        Md = t(1786),
-        jd = t(1787),
-        Ld = t(1788),
-        Dd = t(1789),
-        Fd = t(1790),
-        Rd = t(1791),
-        Wd = t(1792),
-        Hd = t(1793),
-        zd = t(1794),
-        Gd = t(1795),
-        Vd = t(1796),
-        Ud = t(1797),
-        Yd = t(1798),
-        Kd = t(1799),
-        Qd = t(1800),
-        Jd = t(1801),
-        qd = t(1802),
-        Zd = t(1803),
-        _d = t(1805),
-        Xd = t(1806),
-        $d = t(1807),
-        eu = t(1808),
-        au = t(1809),
-        tu = t(1810),
-        lu = t(1811),
-        nu = t(1812),
-        ru = t(1813),
-        mu = t(1814),
-        cu = t(1815),
-        iu = t(1816),
-        su = t(1817),
-        ou = t(1818),
-        Eu = t(1819),
-        du = t(1820),
-        uu = t(1821),
-        pu = t(1822),
-        gu = t(1823),
-        xu = t(1824),
-        hu = t(1825),
-        Nu = t(1826),
-        Iu = t(1827),
-        fu = t(1828),
-        yu = t(1829),
-        bu = t(1830),
-        Tu = t(1831),
-        vu = t(1832),
-        Au = t(1833),
-        wu = t(1834),
-        Cu = t(1835),
-        Pu = t(1836),
-        Ou = t(1837),
-        Su = t(1838),
-        ku = t(1839),
-        Bu = t(1840),
-        Mu = t(1841),
-        ju = t(1842),
-        Lu = t(1843),
-        Du = t(1844),
-        Fu = t(1845),
-        Ru = t(1846),
-        Wu = t(1847),
-        Hu = t(1848),
-        zu = t(1849),
-        Gu = t(1850),
-        Vu = t(1851),
-        Uu = t(1852),
-        Yu = t(1853),
-        Ku = t(1854),
-        Qu = t(1855),
-        Ju = t(1856),
-        qu = t(1857),
-        Zu = t(1858),
-        _u = t(1859),
-        Xu = t(1860),
-        $u = t(1861),
-        ep = t(1862),
-        ap = t(1863),
-        tp = t(1864),
-        lp = t(1865),
-        np = t(1866),
-        rp = t(1867),
-        mp = t(1868),
-        cp = t(1869),
-        ip = t(1870),
-        sp = t(1871),
-        op = t(1872),
-        Ep = t(1873),
-        dp = t(1874),
-        up = t(1875),
-        pp = t(1876),
-        gp = t(1877),
-        xp = t(1878),
-        hp = t(1879),
-        Np = t(1880),
-        Ip = t(1881),
-        fp = t(1882),
-        yp = t(1883),
-        bp = t(1884),
-        Tp = t(1885),
-        vp = t(1886),
-        Ap = t(1887),
-        wp = t(1888),
-        Cp = t(1889),
-        Pp = t(1890),
-        Op = t(1891),
-        Sp = t(1892),
-        kp = t(1893),
-        Bp = t(1894),
-        Mp = t(1895),
-        jp = t(1896),
-        Lp = t(1897),
-        Dp = t(1898),
-        Fp = t(1899),
-        Rp = t(1900),
-        Wp = t(1901),
-        Hp = t(1902),
-        zp = t(1903),
-        Gp = t(1904),
-        Vp = t(1905),
-        Up = t(1906),
-        Yp = t(1907),
-        Kp = t(1908),
-        Qp = t(1909),
-        Jp = t(1910),
-        qp = t(1911),
-        Zp = t(1912),
-        _p = t(1913),
-        Xp = t(1914),
-        $p = t(1915),
-        eg = t(1916),
-        ag = t(1917),
-        tg = t(1918),
-        lg = t(1919),
-        ng = t(1920),
-        rg = t(1921),
-        mg = t(1922),
-        cg = t(1923),
-        ig = t(1924),
-        sg = t(1925),
-        og = t(1926),
-        Eg = t(1927),
-        dg = t(1928),
-        ug = t(1929),
-        pg = t(1930),
-        gg = t(1931),
-        xg = t(1932),
-        hg = t(1933),
-        Ng = t(1934),
-        Ig = t(1935),
-        fg = t(1936),
-        yg = t(1937),
-        bg = t(1938),
-        Tg = t(1939),
-        vg = t(1940),
-        Ag = t(1941),
-        wg = t(1942),
-        Cg = t(1943),
-        Pg = t(1944),
-        Og = t(1945),
-        Sg = t(1946),
-        kg = t(1947),
-        Bg = t(1948),
-        Mg = t(1949),
-        jg = t(1950),
-        Lg = t(1951),
-        Dg = t(1952),
-        Fg = t(1953),
-        Rg = t(1954),
-        Wg = t(1955),
-        Hg = t(1956),
-        zg = t(1957),
-        Gg = t(1958),
-        Vg = t(1959),
-        Ug = t(1960),
-        Yg = t(1961),
-        Kg = t(1962),
-        Qg = t(1963),
-        Jg = t(1964),
-        qg = t(1965),
-        Zg = t(1966),
-        _g = t(1967),
-        Xg = t(1968),
-        $g = t(1969),
-        ex = t(1970),
-        ax = t(1971),
-        tx = t(1972),
-        lx = t(1973),
-        nx = t(1974),
-        rx = t(1975),
-        mx = t(1976),
-        cx = t(1977),
-        ix = t(1978),
-        sx = t(1979),
-        ox = t(1980),
-        Ex = t(1981),
-        dx = t(1982),
-        ux = t(1983),
-        px = t(1984),
-        gx = t(1985),
-        xx = t(1986),
-        hx = t(1987),
-        Nx = t(1988),
-        Ix = t(1989),
-        fx = t(1990),
-        yx = t(1991),
-        bx = t(1992),
-        Tx = t(1993),
-        vx = t(1994),
-        Ax = t(1995),
-        wx = t(1996),
-        Cx = t(1997),
-        Px = t(1998),
-        Ox = t(1999),
-        Sx = t(2e3),
-        kx = t(2001),
-        Bx = t(2002),
-        Mx = t(2003),
-        jx = t(2004),
-        Lx = t(2005),
-        Dx = t(2006),
-        Fx = t(2007),
-        Rx = t(2008),
-        Wx = t(2009),
-        Hx = t(2010),
-        zx = t(2011),
-        Gx = t(2012),
-        Vx = t(2013),
-        Ux = t(2014),
-        Yx = t(2015),
-        Kx = t(2016),
-        Qx = t(2017),
-        Jx = t(2018),
-        qx = t(2019),
-        Zx = t(2020),
-        _x = t(2021),
-        Xx = t(2022),
-        $x = t(2023),
-        eh = t(2024),
-        ah = t(2025),
-        th = t(2026),
-        lh = t(2027),
-        nh = t(2028),
-        rh = t(2029),
-        mh = t(2030),
-        ch = t(2031),
-        ih = t(2032),
-        sh = t(2033),
-        oh = t(2034),
-        Eh = t(2035),
-        dh = t(2036),
-        uh = t(2037),
-        ph = t(2038),
-        gh = t(2039),
-        xh = t(2040),
-        hh = t(2041),
-        Nh = t(2042),
-        Ih = t(2043),
-        fh = t(2044),
-        yh = t(2045),
-        bh = t(2046),
-        Th = t(2047),
-        vh = t(2048),
-        Ah = t(2049),
-        wh = t(2050),
-        Ch = t(2051),
-        Ph = t(2052),
-        Oh = t(2053),
-        Sh = t(2054),
-        kh = t(2055),
-        Bh = t(2056),
-        Mh = t(2057),
-        jh = t(2058),
-        Lh = t(2059),
-        Dh = t(2060),
-        Fh = t(2061),
-        Rh = t(2062),
-        Wh = t(2063),
-        Hh = t(2064),
-        zh = t(2065),
-        Gh = t(2066),
-        Vh = t(2067),
-        Uh = t(2068),
-        Yh = t(2069),
-        Kh = t(2070),
-        Qh = t(2071),
-        Jh = t(2072),
-        qh = t(2073),
-        Zh = t(2074),
-        _h = t(2075),
-        Xh = t(2076),
-        $h = t(2077),
-        eN = t(2078),
-        aN = t(2079),
-        tN = t(2080),
-        lN = t(2081),
-        nN = t(2082),
-        rN = t(2083),
-        mN = t(2084),
-        cN = t(2085),
-        iN = t(2086),
-        sN = t(2087),
-        oN = t(2088),
-        EN = t(2089),
-        dN = t(2090),
-        uN = t(2091),
-        pN = t(2092),
-        gN = t(2093),
-        xN = t(2094),
-        hN = t(2095),
-        NN = t(2096),
-        IN = t(2097),
-        fN = t(2098),
-        yN = t(2099),
-        bN = t(2100),
-        TN = t(2101),
-        vN = t(2102),
-        AN = t(2103),
-        wN = t(2104),
-        CN = t(2105),
-        PN = t(2106),
-        ON = t(2107),
-        SN = t(2108),
-        kN = t(2109),
-        BN = t(2110),
-        MN = t(2111),
-        jN = t(2112),
-        LN = t(2113),
-        DN = t(2114),
-        FN = t(2115),
-        RN = t(2116),
-        WN = t(2117),
-        HN = t(2118),
-        zN = t(2119),
-        GN = t(2120),
-        VN = t(2121),
-        UN = t(2122),
-        YN = t(2123),
-        KN = t(2124),
-        QN = t(2125),
-        JN = t(2126),
-        qN = t(2127),
-        ZN = t(2128),
-        _N = t(2129),
-        XN = t(2130),
-        $N = t(2131),
-        eI = t(2132),
-        aI = t(2133),
-        tI = t(2134),
-        lI = t(2135),
-        nI = t(2136),
-        rI = t(2137),
-        mI = t(2138),
-        cI = t(2139),
-        iI = t(2140),
-        sI = t(2141),
-        oI = t(2142),
-        EI = t(2143),
-        dI = t(2144),
-        uI = t(2145),
-        pI = t(2146),
-        gI = t(2147),
-        xI = t(2148),
-        hI = t(2149),
-        NI = t(2150),
-        II = t(2151),
-        fI = t(2152),
-        yI = t(2153),
-        bI = t(2154),
-        TI = t(2155),
-        vI = t(2156),
-        AI = t(2157),
-        wI = t(2158),
-        CI = t(2159),
-        PI = t(2160),
-        OI = t(2161),
-        SI = t(2162),
-        kI = t(2163),
-        BI = t(2164),
-        MI = t(2165),
-        jI = t(2166),
-        LI = t(2167),
-        DI = t(2168),
-        FI = t(2169),
-        RI = t(2170),
-        WI = t(2171),
-        HI = t(2172),
-        zI = t(2173),
-        GI = t(2174),
-        VI = t(2175),
-        UI = t(2176),
-        YI = t(2177),
-        KI = t(2178),
-        QI = t(2179),
-        JI = t(2180),
-        qI = t(2181),
-        ZI = t(2182),
-        _I = t(2183),
-        XI = t(2184),
-        $I = t(2185),
-        ef = t(2186),
-        af = t(2187),
-        tf = t(2188),
-        lf = t(2189),
-        nf = t(2190),
-        rf = t(2191),
-        mf = t(2192),
-        cf = t(2193),
-        sf = Object(D.a)(function(e) {
+      var _t = t(1259),
+        Xt = t(1260),
+        $t = t(1261),
+        el = t(1262),
+        al = t(1263),
+        tl = t(1264),
+        ll = t(1265),
+        nl = t(1266),
+        rl = t(1267),
+        ml = t(1268),
+        cl = t(1269),
+        il = t(1270),
+        sl = t(1271),
+        ol = t(1272),
+        El = t(1273),
+        dl = t(1274),
+        ul = t(1275),
+        pl = t(1276),
+        gl = t(1277),
+        xl = t(1278),
+        hl = t(1279),
+        Nl = t(1280),
+        Il = t(1281),
+        fl = t(1282),
+        yl = t(1283),
+        bl = t(1284),
+        Tl = t(1285),
+        vl = t(1286),
+        Al = t(1287),
+        wl = t(1288),
+        Cl = t(1289),
+        Pl = t(1290),
+        Ol = t(1291),
+        Sl = t(1292),
+        kl = t(1293),
+        Bl = t(1294),
+        Ml = t(1295),
+        jl = t(1296),
+        Ll = t(1297),
+        Dl = t(1298),
+        Fl = t(1299),
+        Rl = t(1300),
+        Wl = t(1301),
+        Hl = t(1302),
+        zl = t(1303),
+        Gl = t(1304),
+        Vl = t(1305),
+        Ul = t(1306),
+        Yl = t(1307),
+        Kl = t(1308),
+        Ql = t(1309),
+        Jl = t(1310),
+        ql = t(1311),
+        Zl = t(1312),
+        _l = t(1313),
+        Xl = t(1314),
+        $l = t(1315),
+        en = t(1316),
+        an = t(1317),
+        tn = t(1318),
+        ln = t(1319),
+        nn = t(1320),
+        rn = t(1321),
+        mn = t(1322),
+        cn = t(1323),
+        sn = t(1324),
+        on = t(1325),
+        En = t(1326),
+        dn = t(1327),
+        un = t(1328),
+        pn = t(1329),
+        gn = t(1330),
+        xn = t(1331),
+        hn = t(1332),
+        Nn = t(1333),
+        In = t(1334),
+        fn = t(1335),
+        yn = t(1336),
+        bn = t(1337),
+        Tn = t(1338),
+        vn = t(1339),
+        An = t(1340),
+        wn = t(1341),
+        Cn = t(1342),
+        Pn = t(1343),
+        On = t(1344),
+        Sn = t(1345),
+        kn = t(1346),
+        Bn = t(1347),
+        Mn = t(1348),
+        jn = t(1349),
+        Ln = t(1350),
+        Dn = t(1351),
+        Fn = t(1352),
+        Rn = t(1353),
+        Wn = t(1354),
+        Hn = t(1355),
+        zn = t(1356),
+        Gn = t(1357),
+        Vn = t(1358),
+        Un = t(1359),
+        Yn = t(1360),
+        Kn = t(1361),
+        Qn = t(1362),
+        Jn = t(1363),
+        qn = t(1364),
+        Zn = t(1365),
+        _n = t(1366),
+        Xn = t(1367),
+        $n = t(1368),
+        er = t(1369),
+        ar = t(1370),
+        tr = t(1371),
+        lr = t(1372),
+        nr = t(1373),
+        rr = t(1374),
+        mr = t(1375),
+        cr = t(1376),
+        ir = t(1377),
+        sr = t(1378),
+        or = t(1379),
+        Er = t(1380),
+        dr = t(1381),
+        ur = t(1382),
+        pr = t(1383),
+        gr = t(1384),
+        xr = t(1385),
+        hr = t(1387),
+        Nr = t(1388),
+        Ir = t(1389),
+        fr = t(1390),
+        yr = t(1391),
+        br = t(1392),
+        Tr = t(1393),
+        vr = t(1394),
+        Ar = t(1395),
+        wr = t(1396),
+        Cr = t(1397),
+        Pr = t(1398),
+        Or = t(1399),
+        Sr = t(1400),
+        kr = t(1401),
+        Br = t(1402),
+        Mr = t(1403),
+        jr = t(1404),
+        Lr = t(1405),
+        Dr = t(1406),
+        Fr = t(1407),
+        Rr = t(1408),
+        Wr = t(1409),
+        Hr = t(1410),
+        zr = t(1411),
+        Gr = t(1412),
+        Vr = t(1413),
+        Ur = t(1414),
+        Yr = t(1415),
+        Kr = t(1416),
+        Qr = t(1417),
+        Jr = t(1419),
+        qr = t(1420),
+        Zr = t(1421),
+        _r = t(1422),
+        Xr = t(1423),
+        $r = t(1424),
+        em = t(1425),
+        am = t(1426),
+        tm = t(1427),
+        lm = t(1428),
+        nm = t(1429),
+        rm = t(1430),
+        mm = t(1431),
+        cm = t(1432),
+        im = t(1433),
+        sm = t(1434),
+        om = t(1435),
+        Em = t(1436),
+        dm = t(1437),
+        um = t(1438),
+        pm = t(1439),
+        gm = t(1440),
+        xm = t(1441),
+        hm = t(1442),
+        Nm = t(1443),
+        Im = t(1444),
+        fm = t(1445),
+        ym = t(1446),
+        bm = t(1447),
+        Tm = t(1448),
+        vm = t(1449),
+        Am = t(1450),
+        wm = t(1451),
+        Cm = t(1452),
+        Pm = t(1453),
+        Om = t(1454),
+        Sm = t(1455),
+        km = t(1456),
+        Bm = t(1457),
+        Mm = t(1458),
+        jm = t(1459),
+        Lm = t(1460),
+        Dm = t(1461),
+        Fm = t(1462),
+        Rm = t(1463),
+        Wm = t(1464),
+        Hm = t(1465),
+        zm = t(1466),
+        Gm = t(1467),
+        Vm = t(1468),
+        Um = t(1469),
+        Ym = t(1470),
+        Km = t(1471),
+        Qm = t(1472),
+        Jm = t(1473),
+        qm = t(1474),
+        Zm = t(1475),
+        _m = t(1476),
+        Xm = t(1477),
+        $m = t(1478),
+        ec = t(1479),
+        ac = t(1480),
+        tc = t(1481),
+        lc = t(1482),
+        nc = t(1483),
+        rc = t(1484),
+        mc = t(1485),
+        cc = t(1486),
+        ic = t(1487),
+        sc = t(1488),
+        oc = t(1489),
+        Ec = t(1490),
+        dc = t(1491),
+        uc = t(1492),
+        pc = t(1493),
+        gc = t(1494),
+        xc = t(1495),
+        hc = t(1496),
+        Nc = t(1497),
+        Ic = t(1498),
+        fc = t(1499),
+        yc = t(1500),
+        bc = t(1501),
+        Tc = t(1502),
+        vc = t(1503),
+        Ac = t(1504),
+        wc = t(1505),
+        Cc = t(1506),
+        Pc = t(1507),
+        Oc = t(1508),
+        Sc = t(1509),
+        kc = t(1510),
+        Bc = t(1511),
+        Mc = t(1512),
+        jc = t(1513),
+        Lc = t(1514),
+        Dc = t(1515),
+        Fc = t(1516),
+        Rc = t(1517),
+        Wc = t(1518),
+        Hc = t(1519),
+        zc = t(1520),
+        Gc = t(1521),
+        Vc = t(1522),
+        Uc = t(1523),
+        Yc = t(1524),
+        Kc = t(1525),
+        Qc = t(1526),
+        Jc = t(1527),
+        qc = t(1528),
+        Zc = t(1529),
+        _c = t(1530),
+        Xc = t(1531),
+        $c = t(1532),
+        ei = t(1533),
+        ai = t(1534),
+        ti = t(1535),
+        li = t(1536),
+        ni = t(1537),
+        ri = t(1538),
+        mi = t(1539),
+        ci = t(1540),
+        ii = t(1541),
+        si = t(1542),
+        oi = t(1543),
+        Ei = t(1544),
+        di = t(1545),
+        ui = t(1546),
+        pi = t(1547),
+        gi = t(1548),
+        xi = t(1549),
+        hi = t(1550),
+        Ni = t(1551),
+        Ii = t(1552),
+        fi = t(1553),
+        yi = t(1554),
+        bi = t(1555),
+        Ti = t(1556),
+        vi = t(1557),
+        Ai = t(1558),
+        wi = t(1559),
+        Ci = t(1560),
+        Pi = t(1561),
+        Oi = t(1562),
+        Si = t(1563),
+        ki = t(1564),
+        Bi = t(1565),
+        Mi = t(1566),
+        ji = t(1567),
+        Li = t(1568),
+        Di = t(1569),
+        Fi = t(1570),
+        Ri = t(1571),
+        Wi = t(1572),
+        Hi = t(1573),
+        zi = t(1574),
+        Gi = t(1575),
+        Vi = t(1576),
+        Ui = t(1577),
+        Yi = t(1578),
+        Ki = t(1579),
+        Qi = t(1580),
+        Ji = t(1581),
+        qi = t(1582),
+        Zi = t(1583),
+        _i = t(1584),
+        Xi = t(1585),
+        $i = t(1586),
+        es = t(1587),
+        as = t(1588),
+        ts = t(1589),
+        ls = t(1590),
+        ns = t(1591),
+        rs = t(1592),
+        ms = t(1593),
+        cs = t(1594),
+        is = t(1595),
+        ss = t(1596),
+        os = t(1597),
+        Es = t(1598),
+        ds = t(1599),
+        us = t(1600),
+        ps = t(1601),
+        gs = t(1602),
+        xs = t(1603),
+        hs = t(1604),
+        Ns = t(1605),
+        Is = t(1606),
+        fs = t(1607),
+        ys = t(1608),
+        bs = t(1609),
+        Ts = t(1610),
+        vs = t(1611),
+        As = t(1612),
+        ws = t(1613),
+        Cs = t(1614),
+        Ps = t(1615),
+        Os = t(1616),
+        Ss = t(1617),
+        ks = t(1618),
+        Bs = t(1619),
+        Ms = t(1620),
+        js = t(1621),
+        Ls = t(1622),
+        Ds = t(1623),
+        Fs = t(1624),
+        Rs = t(1625),
+        Ws = t(1626),
+        Hs = t(1627),
+        zs = t(1628),
+        Gs = t(1629),
+        Vs = t(1630),
+        Us = t(1631),
+        Ys = t(1632),
+        Ks = t(1633),
+        Qs = t(1634),
+        Js = t(1635),
+        qs = t(1636),
+        Zs = t(1637),
+        _s = t(1638),
+        Xs = t(1639),
+        $s = t(1640),
+        eo = t(1641),
+        ao = t(1642),
+        to = t(1643),
+        lo = t(1644),
+        no = t(1645),
+        ro = t(1646),
+        mo = t(1647),
+        co = t(1648),
+        io = t(1649),
+        so = t(1650),
+        oo = t(1651),
+        Eo = t(1652),
+        uo = t(1653),
+        po = t(1654),
+        go = t(1655),
+        xo = t(1656),
+        ho = t(1657),
+        No = t(1658),
+        Io = t(1659),
+        fo = t(1660),
+        yo = t(1661),
+        bo = t(1662),
+        To = t(1663),
+        vo = t(1664),
+        Ao = t(1665),
+        wo = t(1666),
+        Co = t(1667),
+        Po = t(1668),
+        Oo = t(1669),
+        So = t(1670),
+        ko = t(1671),
+        Bo = t(1672),
+        Mo = t(1673),
+        jo = t(1674),
+        Lo = t(1675),
+        Do = t(1676),
+        Fo = t(1677),
+        Ro = t(1678),
+        Wo = t(1679),
+        Ho = t(1680),
+        zo = t(1681),
+        Go = t(1682),
+        Vo = t(1683),
+        Uo = t(1684),
+        Yo = t(1685),
+        Ko = t(1686),
+        Qo = t(1687),
+        Jo = t(1688),
+        qo = t(1689),
+        Zo = t(1690),
+        _o = t(1691),
+        Xo = t(1692),
+        $o = t(1693),
+        eE = t(1694),
+        aE = t(1695),
+        tE = t(1696),
+        lE = t(1697),
+        nE = t(1698),
+        rE = t(1699),
+        mE = t(1700),
+        cE = t(1701),
+        iE = t(1702),
+        sE = t(1703),
+        oE = t(1704),
+        EE = t(1705),
+        dE = t(1706),
+        uE = t(1707),
+        pE = t(1708),
+        gE = t(1709),
+        xE = t(1710),
+        hE = t(1711),
+        NE = t(1712),
+        IE = t(1713),
+        fE = t(1714),
+        yE = t(1715),
+        bE = t(1716),
+        TE = t(1717),
+        vE = t(1718),
+        AE = t(1719),
+        wE = t(1720),
+        CE = t(1721),
+        PE = t(1722),
+        OE = t(1723),
+        SE = t(1724),
+        kE = t(1725),
+        BE = t(1726),
+        ME = t(1727),
+        jE = t(1728),
+        LE = t(1729),
+        DE = t(1730),
+        FE = t(1731),
+        RE = t(1732),
+        WE = t(1733),
+        HE = t(1734),
+        zE = t(1735),
+        GE = t(1736),
+        VE = t(1737),
+        UE = t(1738),
+        YE = t(1739),
+        KE = t(1740),
+        QE = t(1741),
+        JE = t(1742),
+        qE = t(1743),
+        ZE = t(1744),
+        _E = t(1745),
+        XE = t(1746),
+        $E = t(1747),
+        ed = t(1748),
+        ad = t(1749),
+        td = t(1750),
+        ld = t(1751),
+        nd = t(1752),
+        rd = t(1753),
+        md = t(1754),
+        cd = t(1755),
+        id = t(1756),
+        sd = t(1757),
+        od = t(1758),
+        Ed = t(1759),
+        dd = t(1760),
+        ud = t(1761),
+        pd = t(1762),
+        gd = t(1763),
+        xd = t(1764),
+        hd = t(1765),
+        Nd = t(1766),
+        Id = t(1767),
+        fd = t(1768),
+        yd = t(1769),
+        bd = t(1770),
+        Td = t(1771),
+        vd = t(1772),
+        Ad = t(1773),
+        wd = t(1774),
+        Cd = t(1775),
+        Pd = t(1776),
+        Od = t(1777),
+        Sd = t(1778),
+        kd = t(1779),
+        Bd = t(1780),
+        Md = t(1781),
+        jd = t(1782),
+        Ld = t(1783),
+        Dd = t(1784),
+        Fd = t(1785),
+        Rd = t(1786),
+        Wd = t(1787),
+        Hd = t(1788),
+        zd = t(1789),
+        Gd = t(1790),
+        Vd = t(1791),
+        Ud = t(1792),
+        Yd = t(1794),
+        Kd = t(1795),
+        Qd = t(1796),
+        Jd = t(1797),
+        qd = t(1798),
+        Zd = t(1799),
+        _d = t(1800),
+        Xd = t(1801),
+        $d = t(1802),
+        eu = t(1803),
+        au = t(1804),
+        tu = t(1805),
+        lu = t(1806),
+        nu = t(1807),
+        ru = t(1808),
+        mu = t(1809),
+        cu = t(1810),
+        iu = t(1811),
+        su = t(1812),
+        ou = t(1813),
+        Eu = t(1814),
+        du = t(1815),
+        uu = t(1816),
+        pu = t(1817),
+        gu = t(1818),
+        xu = t(1819),
+        hu = t(1820),
+        Nu = t(1821),
+        Iu = t(1822),
+        fu = t(1823),
+        yu = t(1824),
+        bu = t(1825),
+        Tu = t(1826),
+        vu = t(1827),
+        Au = t(1828),
+        wu = t(1829),
+        Cu = t(1830),
+        Pu = t(1831),
+        Ou = t(1832),
+        Su = t(1833),
+        ku = t(1834),
+        Bu = t(1835),
+        Mu = t(1836),
+        ju = t(1837),
+        Lu = t(1838),
+        Du = t(1839),
+        Fu = t(1840),
+        Ru = t(1841),
+        Wu = t(1842),
+        Hu = t(1843),
+        zu = t(1844),
+        Gu = t(1845),
+        Vu = t(1846),
+        Uu = t(1847),
+        Yu = t(1848),
+        Ku = t(1849),
+        Qu = t(1850),
+        Ju = t(1851),
+        qu = t(1852),
+        Zu = t(1853),
+        _u = t(1854),
+        Xu = t(1855),
+        $u = t(1856),
+        ep = t(1857),
+        ap = t(1858),
+        tp = t(1859),
+        lp = t(1860),
+        np = t(1861),
+        rp = t(1862),
+        mp = t(1863),
+        cp = t(1864),
+        ip = t(1865),
+        sp = t(1866),
+        op = t(1867),
+        Ep = t(1868),
+        dp = t(1869),
+        up = t(1870),
+        pp = t(1871),
+        gp = t(1872),
+        xp = t(1873),
+        hp = t(1874),
+        Np = t(1875),
+        Ip = t(1876),
+        fp = t(1877),
+        yp = t(1878),
+        bp = t(1879),
+        Tp = t(1880),
+        vp = t(1881),
+        Ap = t(1882),
+        wp = t(1883),
+        Cp = t(1884),
+        Pp = t(1885),
+        Op = t(1886),
+        Sp = t(1887),
+        kp = t(1888),
+        Bp = t(1889),
+        Mp = t(1890),
+        jp = t(1891),
+        Lp = t(1892),
+        Dp = t(1893),
+        Fp = t(1894),
+        Rp = t(1895),
+        Wp = t(1896),
+        Hp = t(1897),
+        zp = t(1898),
+        Gp = t(1899),
+        Vp = t(1900),
+        Up = t(1901),
+        Yp = t(1902),
+        Kp = t(1903),
+        Qp = t(1904),
+        Jp = t(1905),
+        qp = t(1906),
+        Zp = t(1907),
+        _p = t(1908),
+        Xp = t(1909),
+        $p = t(1910),
+        eg = t(1911),
+        ag = t(1912),
+        tg = t(1913),
+        lg = t(1914),
+        ng = t(1915),
+        rg = t(1916),
+        mg = t(1917),
+        cg = t(1918),
+        ig = t(1919),
+        sg = t(1920),
+        og = t(1921),
+        Eg = t(1922),
+        dg = t(1923),
+        ug = t(1924),
+        pg = t(1925),
+        gg = t(1926),
+        xg = t(1927),
+        hg = t(1928),
+        Ng = t(1929),
+        Ig = t(1930),
+        fg = t(1931),
+        yg = t(1932),
+        bg = t(1933),
+        Tg = t(1934),
+        vg = t(1935),
+        Ag = t(1936),
+        wg = t(1937),
+        Cg = t(1938),
+        Pg = t(1939),
+        Og = t(1940),
+        Sg = t(1941),
+        kg = t(1942),
+        Bg = t(1943),
+        Mg = t(1944),
+        jg = t(1945),
+        Lg = t(1946),
+        Dg = t(1947),
+        Fg = t(1948),
+        Rg = t(1949),
+        Wg = t(1950),
+        Hg = t(1951),
+        zg = t(1952),
+        Gg = t(1953),
+        Vg = t(1954),
+        Ug = t(1955),
+        Yg = t(1956),
+        Kg = t(1957),
+        Qg = t(1958),
+        Jg = t(1959),
+        qg = t(1960),
+        Zg = t(1961),
+        _g = t(1962),
+        Xg = t(1963),
+        $g = t(1964),
+        ex = t(1965),
+        ax = t(1966),
+        tx = t(1967),
+        lx = t(1968),
+        nx = t(1969),
+        rx = t(1970),
+        mx = t(1971),
+        cx = t(1972),
+        ix = t(1973),
+        sx = t(1974),
+        ox = t(1975),
+        Ex = t(1976),
+        dx = t(1977),
+        ux = t(1978),
+        px = t(1979),
+        gx = t(1980),
+        xx = t(1981),
+        hx = t(1982),
+        Nx = t(1983),
+        Ix = t(1984),
+        fx = t(1985),
+        yx = t(1986),
+        bx = t(1987),
+        Tx = t(1988),
+        vx = t(1989),
+        Ax = t(1990),
+        wx = t(1991),
+        Cx = t(1992),
+        Px = t(1993),
+        Ox = t(1994),
+        Sx = t(1995),
+        kx = t(1996),
+        Bx = t(1997),
+        Mx = t(1998),
+        jx = t(1999),
+        Lx = t(2e3),
+        Dx = t(2001),
+        Fx = t(2002),
+        Rx = t(2003),
+        Wx = t(2004),
+        Hx = t(2005),
+        zx = t(2006),
+        Gx = t(2007),
+        Vx = t(2008),
+        Ux = t(2009),
+        Yx = t(2010),
+        Kx = t(2011),
+        Qx = t(2012),
+        Jx = t(2013),
+        qx = t(2014),
+        Zx = t(2015),
+        _x = t(2016),
+        Xx = t(2017),
+        $x = t(2018),
+        eh = t(2019),
+        ah = t(2020),
+        th = t(2021),
+        lh = t(2022),
+        nh = t(2023),
+        rh = t(2024),
+        mh = t(2025),
+        ch = t(2026),
+        ih = t(2027),
+        sh = t(2028),
+        oh = t(2029),
+        Eh = t(2030),
+        dh = t(2031),
+        uh = t(2032),
+        ph = t(2033),
+        gh = t(2034),
+        xh = t(2035),
+        hh = t(2036),
+        Nh = t(2037),
+        Ih = t(2038),
+        fh = t(2039),
+        yh = t(2040),
+        bh = t(2041),
+        Th = t(2042),
+        vh = t(2043),
+        Ah = t(2044),
+        wh = t(2045),
+        Ch = t(2046),
+        Ph = t(2047),
+        Oh = t(2048),
+        Sh = t(2049),
+        kh = t(2050),
+        Bh = t(2051),
+        Mh = t(2052),
+        jh = t(2053),
+        Lh = t(2054),
+        Dh = t(2055),
+        Fh = t(2056),
+        Rh = t(2057),
+        Wh = t(2058),
+        Hh = t(2059),
+        zh = t(2060),
+        Gh = t(2061),
+        Vh = t(2062),
+        Uh = t(2063),
+        Yh = t(2064),
+        Kh = t(2065),
+        Qh = t(2066),
+        Jh = t(2067),
+        qh = t(2068),
+        Zh = t(2069),
+        _h = t(2070),
+        Xh = t(2071),
+        $h = t(2072),
+        eN = t(2073),
+        aN = t(2074),
+        tN = t(2075),
+        lN = t(2076),
+        nN = t(2077),
+        rN = t(2078),
+        mN = t(2079),
+        cN = t(2080),
+        iN = t(2081),
+        sN = t(2082),
+        oN = t(2083),
+        EN = t(2084),
+        dN = t(2085),
+        uN = t(2086),
+        pN = t(2087),
+        gN = t(2088),
+        xN = t(2089),
+        hN = t(2090),
+        NN = t(2091),
+        IN = t(2092),
+        fN = t(2093),
+        yN = t(2094),
+        bN = t(2095),
+        TN = t(2096),
+        vN = t(2097),
+        AN = t(2098),
+        wN = t(2099),
+        CN = t(2100),
+        PN = t(2101),
+        ON = t(2102),
+        SN = t(2103),
+        kN = t(2104),
+        BN = t(2105),
+        MN = t(2106),
+        jN = t(2107),
+        LN = t(2108),
+        DN = t(2109),
+        FN = t(2110),
+        RN = t(2111),
+        WN = t(2112),
+        HN = t(2113),
+        zN = t(2114),
+        GN = t(2115),
+        VN = t(2116),
+        UN = t(2117),
+        YN = t(2118),
+        KN = t(2119),
+        QN = t(2120),
+        JN = t(2121),
+        qN = t(2122),
+        ZN = t(2123),
+        _N = t(2124),
+        XN = t(2125),
+        $N = t(2126),
+        eI = t(2127),
+        aI = t(2128),
+        tI = t(2129),
+        lI = t(2130),
+        nI = t(2131),
+        rI = t(2132),
+        mI = t(2133),
+        cI = t(2134),
+        iI = t(2135),
+        sI = t(2136),
+        oI = t(2137),
+        EI = t(2138),
+        dI = t(2139),
+        uI = t(2140),
+        pI = t(2141),
+        gI = t(2142),
+        xI = t(2143),
+        hI = t(2144),
+        NI = t(2145),
+        II = t(2146),
+        fI = t(2147),
+        yI = t(2148),
+        bI = t(2149),
+        TI = t(2150),
+        vI = t(2151),
+        AI = t(2152),
+        wI = t(2153),
+        CI = t(2154),
+        PI = t(2155),
+        OI = t(2156),
+        SI = t(2157),
+        kI = t(2158),
+        BI = t(2159),
+        MI = t(2160),
+        jI = t(2161),
+        LI = t(2162),
+        DI = t(2163),
+        FI = t(2164),
+        RI = t(2165),
+        WI = t(2166),
+        HI = t(2167),
+        zI = t(2168),
+        GI = t(2169),
+        VI = t(2170),
+        UI = t(2171),
+        YI = t(2172),
+        KI = t(2173),
+        QI = t(2174),
+        JI = t(2175),
+        qI = t(2176),
+        ZI = t(2177),
+        _I = t(2178),
+        XI = t(2179),
+        $I = t(2180),
+        ef = t(2181),
+        af = t(2182),
+        tf = Object(D.a)(function(e) {
           return {
             titleBold: { fontWeight: 600 },
             iconsBar: {
@@ -5958,9 +5940,9 @@
             }
           };
         });
-      t(933);
-      function of() {
-        var e = sf(),
+      t(922);
+      function lf() {
+        var e = tf(),
           a = Object(l.useState)(0),
           t = Object(u.a)(a, 2),
           r = t[0],
@@ -6008,7 +5990,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ll.a, null),
+                    n.a.createElement(_t.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6025,7 +6007,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nl.a, null),
+                    n.a.createElement(Xt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6042,7 +6024,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rl.a, null),
+                    n.a.createElement($t.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6059,7 +6041,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ml.a, null),
+                    n.a.createElement(el.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6076,7 +6058,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cl.a, null),
+                    n.a.createElement(al.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6093,7 +6075,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(il.a, null),
+                    n.a.createElement(tl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6110,7 +6092,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sl.a, null),
+                    n.a.createElement(ll.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6127,7 +6109,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ol.a, null),
+                    n.a.createElement(nl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6161,7 +6143,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(El.a, null),
+                    n.a.createElement(rl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6178,7 +6160,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dl.a, null),
+                    n.a.createElement(ml.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6195,7 +6177,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ul.a, null),
+                    n.a.createElement(cl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6212,7 +6194,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pl.a, null),
+                    n.a.createElement(il.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6229,7 +6211,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gl.a, null),
+                    n.a.createElement(sl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6246,7 +6228,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xl.a, null),
+                    n.a.createElement(ol.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6263,7 +6245,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hl.a, null),
+                    n.a.createElement(El.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6280,7 +6262,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nl.a, null),
+                    n.a.createElement(dl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6297,7 +6279,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Il.a, null),
+                    n.a.createElement(ul.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6314,7 +6296,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fl.a, null),
+                    n.a.createElement(pl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6331,7 +6313,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yl.a, null),
+                    n.a.createElement(gl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6348,7 +6330,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bl.a, null),
+                    n.a.createElement(xl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6365,7 +6347,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tl.a, null),
+                    n.a.createElement(hl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6382,7 +6364,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vl.a, null),
+                    n.a.createElement(Nl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6399,7 +6381,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Al.a, null),
+                    n.a.createElement(Il.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6416,7 +6398,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wl.a, null),
+                    n.a.createElement(fl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6433,7 +6415,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cl.a, null),
+                    n.a.createElement(yl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6450,7 +6432,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pl.a, null),
+                    n.a.createElement(bl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6467,7 +6449,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ol.a, null),
+                    n.a.createElement(Tl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6484,7 +6466,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sl.a, null),
+                    n.a.createElement(vl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6501,7 +6483,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kl.a, null),
+                    n.a.createElement(Al.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6518,7 +6500,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bl.a, null),
+                    n.a.createElement(wl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6535,7 +6517,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ml.a, null),
+                    n.a.createElement(Cl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6552,7 +6534,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jl.a, null),
+                    n.a.createElement(Pl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6569,7 +6551,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Za.a, null),
+                    n.a.createElement(Ua.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6586,7 +6568,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ll.a, null),
+                    n.a.createElement(Ol.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6620,7 +6602,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dl.a, null),
+                    n.a.createElement(Sl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6637,7 +6619,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fl.a, null),
+                    n.a.createElement(kl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6654,7 +6636,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rl.a, null),
+                    n.a.createElement(Bl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6671,7 +6653,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wl.a, null),
+                    n.a.createElement(Ml.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6688,7 +6670,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hl.a, null),
+                    n.a.createElement(jl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6705,7 +6687,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bt.a, null),
+                    n.a.createElement(xt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6722,7 +6704,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zl.a, null),
+                    n.a.createElement(Ll.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6739,7 +6721,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gl.a, null),
+                    n.a.createElement(Dl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6756,7 +6738,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vl.a, null),
+                    n.a.createElement(Fl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6773,7 +6755,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ul.a, null),
+                    n.a.createElement(Rl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6790,7 +6772,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yl.a, null),
+                    n.a.createElement(Wl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6807,7 +6789,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kl.a, null),
+                    n.a.createElement(Hl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6824,7 +6806,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ql.a, null),
+                    n.a.createElement(zl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6841,7 +6823,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jl.a, null),
+                    n.a.createElement(Gl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6858,7 +6840,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ql.a, null),
+                    n.a.createElement(Vl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6875,7 +6857,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zl.a, null),
+                    n.a.createElement(Ul.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6892,7 +6874,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_l.a, null),
+                    n.a.createElement(Yl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6909,7 +6891,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xl.a, null),
+                    n.a.createElement(Kl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6926,7 +6908,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($l.a, null),
+                    n.a.createElement(Ql.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6943,7 +6925,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(en.a, null),
+                    n.a.createElement(Jl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6960,7 +6942,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(an.a, null),
+                    n.a.createElement(ql.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6977,7 +6959,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tn.a, null),
+                    n.a.createElement(Zl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6994,7 +6976,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ln.a, null),
+                    n.a.createElement(_l.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7011,7 +6993,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nn.a, null),
+                    n.a.createElement(Xl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7028,7 +7010,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rn.a, null),
+                    n.a.createElement($l.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7045,7 +7027,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mn.a, null),
+                    n.a.createElement(en.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7062,7 +7044,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cn.a, null),
+                    n.a.createElement(an.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7079,7 +7061,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sn.a, null),
+                    n.a.createElement(tn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7096,7 +7078,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(on.a, null),
+                    n.a.createElement(ln.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7113,7 +7095,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(En.a, null),
+                    n.a.createElement(nn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7130,7 +7112,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dn.a, null),
+                    n.a.createElement(rn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7147,7 +7129,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(un.a, null),
+                    n.a.createElement(mn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7164,7 +7146,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($a.a, null),
+                    n.a.createElement(Qa.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7181,7 +7163,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pn.a, null),
+                    n.a.createElement(cn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7198,7 +7180,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gn.a, null),
+                    n.a.createElement(sn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7215,7 +7197,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xn.a, null),
+                    n.a.createElement(on.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7232,7 +7214,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hn.a, null),
+                    n.a.createElement(En.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7249,7 +7231,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nn.a, null),
+                    n.a.createElement(dn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7266,7 +7248,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(In.a, null),
+                    n.a.createElement(un.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7283,7 +7265,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fn.a, null),
+                    n.a.createElement(pn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7300,7 +7282,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yn.a, null),
+                    n.a.createElement(gn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7317,7 +7299,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bn.a, null),
+                    n.a.createElement(xn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7334,7 +7316,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tn.a, null),
+                    n.a.createElement(hn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7351,7 +7333,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vn.a, null),
+                    n.a.createElement(Nn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7368,7 +7350,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(An.a, null),
+                    n.a.createElement(In.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7385,7 +7367,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wn.a, null),
+                    n.a.createElement(fn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7402,7 +7384,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cn.a, null),
+                    n.a.createElement(yn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7419,7 +7401,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pn.a, null),
+                    n.a.createElement(bn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7436,7 +7418,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(On.a, null),
+                    n.a.createElement(Tn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7453,7 +7435,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sn.a, null),
+                    n.a.createElement(vn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7470,7 +7452,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kn.a, null),
+                    n.a.createElement(An.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7487,7 +7469,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bn.a, null),
+                    n.a.createElement(wn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7504,7 +7486,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mn.a, null),
+                    n.a.createElement(Cn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7521,7 +7503,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jn.a, null),
+                    n.a.createElement(Pn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7538,7 +7520,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ln.a, null),
+                    n.a.createElement(On.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7555,7 +7537,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dn.a, null),
+                    n.a.createElement(Sn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7572,7 +7554,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fn.a, null),
+                    n.a.createElement(kn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7589,7 +7571,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rn.a, null),
+                    n.a.createElement(Bn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7606,7 +7588,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wn.a, null),
+                    n.a.createElement(Mn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7623,7 +7605,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hn.a, null),
+                    n.a.createElement(jn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7640,7 +7622,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zn.a, null),
+                    n.a.createElement(Ln.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7657,7 +7639,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gn.a, null),
+                    n.a.createElement(Dn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7674,7 +7656,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vn.a, null),
+                    n.a.createElement(Fn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7691,7 +7673,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Un.a, null),
+                    n.a.createElement(Rn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7708,7 +7690,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_a.a, null),
+                    n.a.createElement(Ya.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7725,7 +7707,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yn.a, null),
+                    n.a.createElement(Wn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7742,7 +7724,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kn.a, null),
+                    n.a.createElement(Hn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7759,7 +7741,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qn.a, null),
+                    n.a.createElement(zn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7776,7 +7758,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jn.a, null),
+                    n.a.createElement(Gn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7793,7 +7775,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qn.a, null),
+                    n.a.createElement(Vn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7810,7 +7792,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zn.a, null),
+                    n.a.createElement(Un.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7827,7 +7809,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_n.a, null),
+                    n.a.createElement(Yn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7844,7 +7826,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xn.a, null),
+                    n.a.createElement(Kn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7861,7 +7843,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($n.a, null),
+                    n.a.createElement(Qn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7878,7 +7860,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(er.a, null),
+                    n.a.createElement(Jn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7895,7 +7877,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ar.a, null),
+                    n.a.createElement(qn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7912,7 +7894,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tr.a, null),
+                    n.a.createElement(Zn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7929,7 +7911,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lr.a, null),
+                    n.a.createElement(_n.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7946,7 +7928,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nr.a, null),
+                    n.a.createElement(Xn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7963,7 +7945,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rr.a, null),
+                    n.a.createElement($n.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7980,7 +7962,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mr.a, null),
+                    n.a.createElement(er.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7997,7 +7979,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cr.a, null),
+                    n.a.createElement(ar.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8014,7 +7996,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ir.a, null),
+                    n.a.createElement(tr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8031,7 +8013,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sr.a, null),
+                    n.a.createElement(lr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8048,7 +8030,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(or.a, null),
+                    n.a.createElement(nr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8065,7 +8047,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Er.a, null),
+                    n.a.createElement(rr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8082,7 +8064,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dr.a, null),
+                    n.a.createElement(mr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8099,7 +8081,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ur.a, null),
+                    n.a.createElement(cr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8116,7 +8098,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pr.a, null),
+                    n.a.createElement(ir.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8133,7 +8115,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gr.a, null),
+                    n.a.createElement(sr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8150,7 +8132,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xr.a, null),
+                    n.a.createElement(or.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8167,7 +8149,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hr.a, null),
+                    n.a.createElement(Er.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8184,7 +8166,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nr.a, null),
+                    n.a.createElement(dr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8201,7 +8183,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ir.a, null),
+                    n.a.createElement(ur.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8218,7 +8200,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fr.a, null),
+                    n.a.createElement(pr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8252,7 +8234,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yr.a, null),
+                    n.a.createElement(gr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8269,7 +8251,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(br.a, null),
+                    n.a.createElement(xr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8303,7 +8285,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tr.a, null),
+                    n.a.createElement(hr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8320,7 +8302,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vr.a, null),
+                    n.a.createElement(Nr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8337,7 +8319,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ar.a, null),
+                    n.a.createElement(Ir.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8354,7 +8336,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wr.a, null),
+                    n.a.createElement(fr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8371,7 +8353,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cr.a, null),
+                    n.a.createElement(yr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8388,7 +8370,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pr.a, null),
+                    n.a.createElement(br.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8405,7 +8387,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Or.a, null),
+                    n.a.createElement(Tr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8422,7 +8404,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sr.a, null),
+                    n.a.createElement(vr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8439,7 +8421,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kr.a, null),
+                    n.a.createElement(Ar.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8456,7 +8438,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Br.a, null),
+                    n.a.createElement(wr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8473,7 +8455,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mr.a, null),
+                    n.a.createElement(Cr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8490,7 +8472,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jr.a, null),
+                    n.a.createElement(Pr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8507,7 +8489,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lr.a, null),
+                    n.a.createElement(Or.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8524,7 +8506,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dr.a, null),
+                    n.a.createElement(Sr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8541,7 +8523,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fr.a, null),
+                    n.a.createElement(kr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8558,7 +8540,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rr.a, null),
+                    n.a.createElement(Br.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8575,7 +8557,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wr.a, null),
+                    n.a.createElement(Mr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8592,7 +8574,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hr.a, null),
+                    n.a.createElement(jr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8609,7 +8591,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zr.a, null),
+                    n.a.createElement(Lr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8626,7 +8608,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gr.a, null),
+                    n.a.createElement(Dr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8643,7 +8625,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vr.a, null),
+                    n.a.createElement(Fr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8660,7 +8642,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ur.a, null),
+                    n.a.createElement(Rr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8677,7 +8659,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yr.a, null),
+                    n.a.createElement(Wr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8694,7 +8676,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kr.a, null),
+                    n.a.createElement(Hr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8711,7 +8693,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qr.a, null),
+                    n.a.createElement(zr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8728,7 +8710,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jr.a, null),
+                    n.a.createElement(Gr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8745,7 +8727,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qr.a, null),
+                    n.a.createElement(Vr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8762,7 +8744,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zr.a, null),
+                    n.a.createElement(Ur.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8779,7 +8761,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_r.a, null),
+                    n.a.createElement(Yr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8796,7 +8778,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xr.a, null),
+                    n.a.createElement(Kr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8813,7 +8795,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mt.a, null),
+                    n.a.createElement(et.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8830,7 +8812,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($r.a, null),
+                    n.a.createElement(Qr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8864,7 +8846,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(em.a, null),
+                    n.a.createElement(Jr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8881,7 +8863,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(am.a, null),
+                    n.a.createElement(qr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8898,7 +8880,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tm.a, null),
+                    n.a.createElement(Zr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8915,7 +8897,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lm.a, null),
+                    n.a.createElement(_r.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8932,7 +8914,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nm.a, null),
+                    n.a.createElement(Xr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8949,7 +8931,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rm.a, null),
+                    n.a.createElement($r.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8966,7 +8948,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mm.a, null),
+                    n.a.createElement(em.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8983,7 +8965,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cm.a, null),
+                    n.a.createElement(am.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9000,7 +8982,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(im.a, null),
+                    n.a.createElement(tm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9017,7 +8999,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sm.a, null),
+                    n.a.createElement(lm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9034,7 +9016,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(om.a, null),
+                    n.a.createElement(nm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9051,7 +9033,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Em.a, null),
+                    n.a.createElement(rm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9068,7 +9050,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dm.a, null),
+                    n.a.createElement(mm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9085,7 +9067,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zt.a, null),
+                    n.a.createElement(Lt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9102,7 +9084,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(um.a, null),
+                    n.a.createElement(cm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9119,7 +9101,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pm.a, null),
+                    n.a.createElement(im.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9136,7 +9118,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gm.a, null),
+                    n.a.createElement(sm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9153,7 +9135,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xm.a, null),
+                    n.a.createElement(om.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9170,7 +9152,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hm.a, null),
+                    n.a.createElement(Em.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9187,7 +9169,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nm.a, null),
+                    n.a.createElement(dm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9204,7 +9186,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Im.a, null),
+                    n.a.createElement(um.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9221,7 +9203,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fm.a, null),
+                    n.a.createElement(pm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9238,7 +9220,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ym.a, null),
+                    n.a.createElement(gm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9255,7 +9237,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bm.a, null),
+                    n.a.createElement(xm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9272,7 +9254,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tm.a, null),
+                    n.a.createElement(hm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9289,7 +9271,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vm.a, null),
+                    n.a.createElement(Nm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9306,7 +9288,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Am.a, null),
+                    n.a.createElement(Im.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9323,7 +9305,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wm.a, null),
+                    n.a.createElement(fm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9340,7 +9322,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cm.a, null),
+                    n.a.createElement(ym.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9357,7 +9339,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pm.a, null),
+                    n.a.createElement(bm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9374,7 +9356,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Om.a, null),
+                    n.a.createElement(Tm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9391,7 +9373,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sm.a, null),
+                    n.a.createElement(vm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9408,7 +9390,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(km.a, null),
+                    n.a.createElement(Am.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9425,7 +9407,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bm.a, null),
+                    n.a.createElement(wm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9442,7 +9424,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mm.a, null),
+                    n.a.createElement(Cm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9459,7 +9441,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jm.a, null),
+                    n.a.createElement(Pm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9476,7 +9458,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lm.a, null),
+                    n.a.createElement(Om.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9493,7 +9475,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dm.a, null),
+                    n.a.createElement(Sm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9510,7 +9492,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fm.a, null),
+                    n.a.createElement(km.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9527,7 +9509,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rm.a, null),
+                    n.a.createElement(Bm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9544,7 +9526,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wm.a, null),
+                    n.a.createElement(Mm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9561,7 +9543,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hm.a, null),
+                    n.a.createElement(jm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9578,7 +9560,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zm.a, null),
+                    n.a.createElement(Lm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9595,7 +9577,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gm.a, null),
+                    n.a.createElement(Dm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9612,7 +9594,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vm.a, null),
+                    n.a.createElement(Fm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9629,7 +9611,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Um.a, null),
+                    n.a.createElement(Rm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9646,7 +9628,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ym.a, null),
+                    n.a.createElement(Wm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9663,7 +9645,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Km.a, null),
+                    n.a.createElement(Hm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9680,7 +9662,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qm.a, null),
+                    n.a.createElement(zm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9697,7 +9679,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jm.a, null),
+                    n.a.createElement(Gm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9714,7 +9696,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qm.a, null),
+                    n.a.createElement(Vm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9731,7 +9713,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zm.a, null),
+                    n.a.createElement(Um.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9748,7 +9730,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_m.a, null),
+                    n.a.createElement(Ym.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9765,7 +9747,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xm.a, null),
+                    n.a.createElement(Km.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9782,7 +9764,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($m.a, null),
+                    n.a.createElement(Qm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9799,7 +9781,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ec.a, null),
+                    n.a.createElement(Jm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9816,7 +9798,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ac.a, null),
+                    n.a.createElement(qm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9833,7 +9815,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tc.a, null),
+                    n.a.createElement(Zm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9850,7 +9832,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lc.a, null),
+                    n.a.createElement(_m.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9867,7 +9849,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(At.a, null),
+                    n.a.createElement(It.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9884,7 +9866,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nc.a, null),
+                    n.a.createElement(Xm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9901,7 +9883,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rc.a, null),
+                    n.a.createElement($m.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9918,7 +9900,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mc.a, null),
+                    n.a.createElement(ec.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9935,7 +9917,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cc.a, null),
+                    n.a.createElement(ac.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9952,7 +9934,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qa.a, null),
+                    n.a.createElement(Va.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9969,7 +9951,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ic.a, null),
+                    n.a.createElement(tc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9986,7 +9968,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sc.a, null),
+                    n.a.createElement(lc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10003,7 +9985,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oc.a, null),
+                    n.a.createElement(nc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10020,7 +10002,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ec.a, null),
+                    n.a.createElement(rc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10037,7 +10019,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dc.a, null),
+                    n.a.createElement(mc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10054,7 +10036,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uc.a, null),
+                    n.a.createElement(cc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10071,7 +10053,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pc.a, null),
+                    n.a.createElement(ic.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10088,7 +10070,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gc.a, null),
+                    n.a.createElement(sc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10105,7 +10087,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xc.a, null),
+                    n.a.createElement(oc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10122,7 +10104,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hc.a, null),
+                    n.a.createElement(Ec.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10139,7 +10121,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nc.a, null),
+                    n.a.createElement(dc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10156,7 +10138,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ic.a, null),
+                    n.a.createElement(uc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10173,7 +10155,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fc.a, null),
+                    n.a.createElement(pc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10190,7 +10172,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yc.a, null),
+                    n.a.createElement(gc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10207,7 +10189,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bc.a, null),
+                    n.a.createElement(xc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10224,7 +10206,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tc.a, null),
+                    n.a.createElement(hc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10241,7 +10223,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vc.a, null),
+                    n.a.createElement(Nc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10258,7 +10240,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ac.a, null),
+                    n.a.createElement(Ic.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10275,7 +10257,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wc.a, null),
+                    n.a.createElement(fc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10292,7 +10274,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cc.a, null),
+                    n.a.createElement(yc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10309,7 +10291,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pc.a, null),
+                    n.a.createElement(bc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10326,7 +10308,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oc.a, null),
+                    n.a.createElement(Tc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10360,7 +10342,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sc.a, null),
+                    n.a.createElement(vc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10377,7 +10359,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kc.a, null),
+                    n.a.createElement(Ac.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10394,7 +10376,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bc.a, null),
+                    n.a.createElement(wc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10411,7 +10393,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mc.a, null),
+                    n.a.createElement(Cc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10445,7 +10427,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jc.a, null),
+                    n.a.createElement(Pc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10462,7 +10444,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lc.a, null),
+                    n.a.createElement(Oc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10479,7 +10461,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dc.a, null),
+                    n.a.createElement(Sc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10496,7 +10478,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fc.a, null),
+                    n.a.createElement(kc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10513,7 +10495,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rc.a, null),
+                    n.a.createElement(Bc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10530,7 +10512,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wc.a, null),
+                    n.a.createElement(Mc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10547,7 +10529,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hc.a, null),
+                    n.a.createElement(jc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10564,7 +10546,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zc.a, null),
+                    n.a.createElement(Lc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10581,7 +10563,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gc.a, null),
+                    n.a.createElement(Dc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10598,7 +10580,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vc.a, null),
+                    n.a.createElement(Fc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10615,7 +10597,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uc.a, null),
+                    n.a.createElement(Rc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10632,7 +10614,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yc.a, null),
+                    n.a.createElement(Wc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10649,7 +10631,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kc.a, null),
+                    n.a.createElement(Hc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10666,7 +10648,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qc.a, null),
+                    n.a.createElement(zc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10700,7 +10682,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jc.a, null),
+                    n.a.createElement(Gc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10717,7 +10699,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qc.a, null),
+                    n.a.createElement(Vc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10751,7 +10733,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zc.a, null),
+                    n.a.createElement(Uc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10768,7 +10750,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_c.a, null),
+                    n.a.createElement(Yc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10785,7 +10767,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xc.a, null),
+                    n.a.createElement(Kc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10802,7 +10784,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($c.a, null),
+                    n.a.createElement(Qc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10819,7 +10801,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ei.a, null),
+                    n.a.createElement(Jc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10836,7 +10818,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ai.a, null),
+                    n.a.createElement(qc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10853,7 +10835,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ti.a, null),
+                    n.a.createElement(Zc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10870,7 +10852,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(li.a, null),
+                    n.a.createElement(_c.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10887,7 +10869,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ni.a, null),
+                    n.a.createElement(Xc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10904,7 +10886,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ri.a, null),
+                    n.a.createElement($c.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10938,7 +10920,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mi.a, null),
+                    n.a.createElement(ei.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10955,7 +10937,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ci.a, null),
+                    n.a.createElement(ai.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10972,7 +10954,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ii.a, null),
+                    n.a.createElement(ti.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10989,7 +10971,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(si.a, null),
+                    n.a.createElement(li.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11006,7 +10988,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oi.a, null),
+                    n.a.createElement(ni.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11023,7 +11005,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ei.a, null),
+                    n.a.createElement(ri.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11040,7 +11022,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(di.a, null),
+                    n.a.createElement(mi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11057,7 +11039,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ui.a, null),
+                    n.a.createElement(ci.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11074,7 +11056,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pi.a, null),
+                    n.a.createElement(ii.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11091,7 +11073,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gi.a, null),
+                    n.a.createElement(si.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11108,7 +11090,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xi.a, null),
+                    n.a.createElement(oi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11125,7 +11107,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hi.a, null),
+                    n.a.createElement(Ei.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11142,7 +11124,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ni.a, null),
+                    n.a.createElement(di.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11159,7 +11141,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ii.a, null),
+                    n.a.createElement(ui.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11176,7 +11158,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fi.a, null),
+                    n.a.createElement(pi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11193,7 +11175,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yi.a, null),
+                    n.a.createElement(gi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11210,7 +11192,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bi.a, null),
+                    n.a.createElement(xi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11227,7 +11209,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ti.a, null),
+                    n.a.createElement(hi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11244,7 +11226,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vi.a, null),
+                    n.a.createElement(Ni.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11261,7 +11243,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ai.a, null),
+                    n.a.createElement(Ii.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11278,7 +11260,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wi.a, null),
+                    n.a.createElement(fi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11295,7 +11277,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ci.a, null),
+                    n.a.createElement(yi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11312,7 +11294,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pi.a, null),
+                    n.a.createElement(bi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11329,7 +11311,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oi.a, null),
+                    n.a.createElement(Ti.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11346,7 +11328,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Si.a, null),
+                    n.a.createElement(vi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11363,7 +11345,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ki.a, null),
+                    n.a.createElement(Ai.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11380,7 +11362,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bi.a, null),
+                    n.a.createElement(wi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11397,7 +11379,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mi.a, null),
+                    n.a.createElement(Ci.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11414,7 +11396,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ji.a, null),
+                    n.a.createElement(Pi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11431,7 +11413,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Li.a, null),
+                    n.a.createElement(Oi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11448,7 +11430,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Di.a, null),
+                    n.a.createElement(Si.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11465,7 +11447,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fi.a, null),
+                    n.a.createElement(ki.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11482,7 +11464,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ri.a, null),
+                    n.a.createElement(Bi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11499,7 +11481,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wi.a, null),
+                    n.a.createElement(Mi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11516,7 +11498,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hi.a, null),
+                    n.a.createElement(ji.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11533,7 +11515,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zi.a, null),
+                    n.a.createElement(Li.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11550,7 +11532,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gi.a, null),
+                    n.a.createElement(Di.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11567,7 +11549,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vi.a, null),
+                    n.a.createElement(Fi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11584,7 +11566,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ui.a, null),
+                    n.a.createElement(Ri.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11601,7 +11583,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wt.a, null),
+                    n.a.createElement(ft.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11618,7 +11600,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xa.a, null),
+                    n.a.createElement(Ka.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11635,7 +11617,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yi.a, null),
+                    n.a.createElement(Wi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11652,7 +11634,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ki.a, null),
+                    n.a.createElement(Hi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11669,7 +11651,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qi.a, null),
+                    n.a.createElement(zi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11686,7 +11668,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ji.a, null),
+                    n.a.createElement(Gi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11703,7 +11685,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qi.a, null),
+                    n.a.createElement(Vi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11720,7 +11702,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zi.a, null),
+                    n.a.createElement(Ui.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11737,7 +11719,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_i.a, null),
+                    n.a.createElement(Yi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11754,7 +11736,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xi.a, null),
+                    n.a.createElement(Ki.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11771,7 +11753,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($i.a, null),
+                    n.a.createElement(Qi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11788,7 +11770,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(es.a, null),
+                    n.a.createElement(Ji.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11805,7 +11787,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(as.a, null),
+                    n.a.createElement(qi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11822,7 +11804,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ts.a, null),
+                    n.a.createElement(Zi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11839,7 +11821,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ls.a, null),
+                    n.a.createElement(_i.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11856,7 +11838,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ns.a, null),
+                    n.a.createElement(Xi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11873,7 +11855,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rs.a, null),
+                    n.a.createElement($i.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11890,7 +11872,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ms.a, null),
+                    n.a.createElement(es.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11907,7 +11889,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cs.a, null),
+                    n.a.createElement(as.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11924,7 +11906,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(at.a, null),
+                    n.a.createElement(qa.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11941,7 +11923,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(is.a, null),
+                    n.a.createElement(ts.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11958,7 +11940,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ss.a, null),
+                    n.a.createElement(ls.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11975,7 +11957,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(os.a, null),
+                    n.a.createElement(ns.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11992,7 +11974,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Es.a, null),
+                    n.a.createElement(rs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12009,7 +11991,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ds.a, null),
+                    n.a.createElement(ms.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12026,7 +12008,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(us.a, null),
+                    n.a.createElement(cs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12043,7 +12025,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ps.a, null),
+                    n.a.createElement(is.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12060,7 +12042,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gs.a, null),
+                    n.a.createElement(ss.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12077,7 +12059,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xs.a, null),
+                    n.a.createElement(os.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12094,7 +12076,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hs.a, null),
+                    n.a.createElement(Es.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12111,7 +12093,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ns.a, null),
+                    n.a.createElement(ds.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12128,7 +12110,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Is.a, null),
+                    n.a.createElement(us.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12145,7 +12127,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fs.a, null),
+                    n.a.createElement(ps.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12162,7 +12144,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ys.a, null),
+                    n.a.createElement(gs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12179,7 +12161,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bs.a, null),
+                    n.a.createElement(xs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12196,7 +12178,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ts.a, null),
+                    n.a.createElement(hs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12213,7 +12195,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vs.a, null),
+                    n.a.createElement(Ns.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12230,7 +12212,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(As.a, null),
+                    n.a.createElement(Is.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12247,7 +12229,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ws.a, null),
+                    n.a.createElement(fs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12264,7 +12246,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cs.a, null),
+                    n.a.createElement(ys.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12281,7 +12263,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ps.a, null),
+                    n.a.createElement(bs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12298,7 +12280,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Os.a, null),
+                    n.a.createElement(Ts.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12315,7 +12297,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ss.a, null),
+                    n.a.createElement(vs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12332,7 +12314,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ks.a, null),
+                    n.a.createElement(As.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12349,7 +12331,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bs.a, null),
+                    n.a.createElement(ws.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12366,7 +12348,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ms.a, null),
+                    n.a.createElement(Cs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12383,7 +12365,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(js.a, null),
+                    n.a.createElement(Ps.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12400,7 +12382,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ls.a, null),
+                    n.a.createElement(Os.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12417,7 +12399,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ds.a, null),
+                    n.a.createElement(Ss.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12434,7 +12416,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fs.a, null),
+                    n.a.createElement(ks.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12451,7 +12433,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rs.a, null),
+                    n.a.createElement(Bs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12468,7 +12450,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ws.a, null),
+                    n.a.createElement(Ms.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12485,7 +12467,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hs.a, null),
+                    n.a.createElement(js.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12502,7 +12484,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zs.a, null),
+                    n.a.createElement(Ls.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12519,7 +12501,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gs.a, null),
+                    n.a.createElement(Ds.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12536,7 +12518,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vs.a, null),
+                    n.a.createElement(Fs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12553,7 +12535,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Us.a, null),
+                    n.a.createElement(Rs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12570,7 +12552,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ys.a, null),
+                    n.a.createElement(Ws.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12587,7 +12569,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ks.a, null),
+                    n.a.createElement(Hs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12604,7 +12586,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qs.a, null),
+                    n.a.createElement(zs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12621,7 +12603,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Js.a, null),
+                    n.a.createElement(Gs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12638,7 +12620,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qs.a, null),
+                    n.a.createElement(Vs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12655,7 +12637,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zs.a, null),
+                    n.a.createElement(Us.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12672,7 +12654,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_s.a, null),
+                    n.a.createElement(Ys.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12689,7 +12671,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xs.a, null),
+                    n.a.createElement(Ks.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12706,7 +12688,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($s.a, null),
+                    n.a.createElement(Qs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12723,7 +12705,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eo.a, null),
+                    n.a.createElement(Js.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12740,7 +12722,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ao.a, null),
+                    n.a.createElement(qs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12757,7 +12739,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(to.a, null),
+                    n.a.createElement(Zs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12774,7 +12756,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lo.a, null),
+                    n.a.createElement(_s.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12791,7 +12773,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(no.a, null),
+                    n.a.createElement(Xs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12808,7 +12790,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ro.a, null),
+                    n.a.createElement($s.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12825,7 +12807,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mo.a, null),
+                    n.a.createElement(eo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12842,7 +12824,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(co.a, null),
+                    n.a.createElement(ao.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12859,7 +12841,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(io.a, null),
+                    n.a.createElement(to.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12876,7 +12858,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(so.a, null),
+                    n.a.createElement(lo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12893,7 +12875,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oo.a, null),
+                    n.a.createElement(no.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12910,7 +12892,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eo.a, null),
+                    n.a.createElement(ro.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12927,7 +12909,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uo.a, null),
+                    n.a.createElement(mo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12944,7 +12926,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(po.a, null),
+                    n.a.createElement(co.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12961,7 +12943,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(go.a, null),
+                    n.a.createElement(io.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12978,7 +12960,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nt.a, null),
+                    n.a.createElement(Xa.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12995,7 +12977,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xo.a, null),
+                    n.a.createElement(so.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13012,7 +12994,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ho.a, null),
+                    n.a.createElement(oo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13029,7 +13011,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(No.a, null),
+                    n.a.createElement(Eo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13046,7 +13028,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ja.a, null),
+                    n.a.createElement(Ga.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13063,7 +13045,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Io.a, null),
+                    n.a.createElement(uo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13080,7 +13062,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fo.a, null),
+                    n.a.createElement(po.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13097,7 +13079,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yo.a, null),
+                    n.a.createElement(go.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13114,7 +13096,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bo.a, null),
+                    n.a.createElement(xo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13131,7 +13113,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(To.a, null),
+                    n.a.createElement(ho.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13148,7 +13130,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vo.a, null),
+                    n.a.createElement(No.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13165,7 +13147,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ao.a, null),
+                    n.a.createElement(Io.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13182,7 +13164,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wo.a, null),
+                    n.a.createElement(fo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13199,7 +13181,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Co.a, null),
+                    n.a.createElement(yo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13216,7 +13198,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Po.a, null),
+                    n.a.createElement(bo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13233,7 +13215,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oo.a, null),
+                    n.a.createElement(To.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13250,7 +13232,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(So.a, null),
+                    n.a.createElement(vo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13267,7 +13249,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ko.a, null),
+                    n.a.createElement(Ao.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13284,7 +13266,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bo.a, null),
+                    n.a.createElement(wo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13301,7 +13283,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mo.a, null),
+                    n.a.createElement(Co.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13335,7 +13317,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jo.a, null),
+                    n.a.createElement(Po.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13352,7 +13334,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lo.a, null),
+                    n.a.createElement(Oo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13369,7 +13351,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Do.a, null),
+                    n.a.createElement(So.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13386,7 +13368,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fo.a, null),
+                    n.a.createElement(ko.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13403,7 +13385,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ro.a, null),
+                    n.a.createElement(Bo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13420,7 +13402,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wo.a, null),
+                    n.a.createElement(Mo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13437,7 +13419,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ho.a, null),
+                    n.a.createElement(jo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13454,7 +13436,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zo.a, null),
+                    n.a.createElement(Lo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13471,7 +13453,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Go.a, null),
+                    n.a.createElement(Do.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13488,7 +13470,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vo.a, null),
+                    n.a.createElement(Fo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13505,7 +13487,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uo.a, null),
+                    n.a.createElement(Ro.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13522,7 +13504,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yo.a, null),
+                    n.a.createElement(Wo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13539,7 +13521,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ko.a, null),
+                    n.a.createElement(Ho.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13556,7 +13538,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qo.a, null),
+                    n.a.createElement(zo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13573,7 +13555,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jo.a, null),
+                    n.a.createElement(Go.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13590,7 +13572,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qo.a, null),
+                    n.a.createElement(Vo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13607,7 +13589,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zo.a, null),
+                    n.a.createElement(Uo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13624,7 +13606,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_o.a, null),
+                    n.a.createElement(Yo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13641,7 +13623,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xo.a, null),
+                    n.a.createElement(Ko.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13658,7 +13640,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($o.a, null),
+                    n.a.createElement(Qo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13675,7 +13657,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eE.a, null),
+                    n.a.createElement(Jo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13692,7 +13674,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aE.a, null),
+                    n.a.createElement(qo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13709,7 +13691,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tE.a, null),
+                    n.a.createElement(Zo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13726,7 +13708,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lE.a, null),
+                    n.a.createElement(_o.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13743,7 +13725,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nE.a, null),
+                    n.a.createElement(Xo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13760,7 +13742,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rE.a, null),
+                    n.a.createElement($o.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13777,7 +13759,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mE.a, null),
+                    n.a.createElement(eE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13794,7 +13776,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cE.a, null),
+                    n.a.createElement(aE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13811,7 +13793,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iE.a, null),
+                    n.a.createElement(tE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13828,7 +13810,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sE.a, null),
+                    n.a.createElement(lE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13845,7 +13827,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oE.a, null),
+                    n.a.createElement(nE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13862,7 +13844,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EE.a, null),
+                    n.a.createElement(rE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13879,7 +13861,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dE.a, null),
+                    n.a.createElement(mE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13896,7 +13878,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uE.a, null),
+                    n.a.createElement(cE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13913,7 +13895,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pE.a, null),
+                    n.a.createElement(iE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13930,7 +13912,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gE.a, null),
+                    n.a.createElement(sE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13947,7 +13929,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xE.a, null),
+                    n.a.createElement(oE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13964,7 +13946,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hE.a, null),
+                    n.a.createElement(EE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13981,7 +13963,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tt.a, null),
+                    n.a.createElement(Za.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13998,7 +13980,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NE.a, null),
+                    n.a.createElement(dE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14015,7 +13997,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(IE.a, null),
+                    n.a.createElement(uE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14032,7 +14014,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fE.a, null),
+                    n.a.createElement(pE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14049,7 +14031,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yE.a, null),
+                    n.a.createElement(gE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14066,7 +14048,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bE.a, null),
+                    n.a.createElement(xE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14083,7 +14065,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TE.a, null),
+                    n.a.createElement(hE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14100,7 +14082,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vE.a, null),
+                    n.a.createElement(NE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14117,7 +14099,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AE.a, null),
+                    n.a.createElement(IE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14134,7 +14116,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wE.a, null),
+                    n.a.createElement(fE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14151,7 +14133,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CE.a, null),
+                    n.a.createElement(yE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14168,7 +14150,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PE.a, null),
+                    n.a.createElement(bE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14185,7 +14167,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OE.a, null),
+                    n.a.createElement(TE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14202,7 +14184,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SE.a, null),
+                    n.a.createElement(vE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14219,7 +14201,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kE.a, null),
+                    n.a.createElement(AE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14236,7 +14218,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BE.a, null),
+                    n.a.createElement(wE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14253,7 +14235,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ME.a, null),
+                    n.a.createElement(CE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14270,7 +14252,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jE.a, null),
+                    n.a.createElement(PE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14287,7 +14269,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LE.a, null),
+                    n.a.createElement(OE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14304,7 +14286,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DE.a, null),
+                    n.a.createElement(SE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14321,7 +14303,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FE.a, null),
+                    n.a.createElement(kE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14338,7 +14320,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RE.a, null),
+                    n.a.createElement(BE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14355,7 +14337,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WE.a, null),
+                    n.a.createElement(ME.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14372,7 +14354,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HE.a, null),
+                    n.a.createElement(jE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14389,7 +14371,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zE.a, null),
+                    n.a.createElement(LE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14406,7 +14388,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GE.a, null),
+                    n.a.createElement(DE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14423,7 +14405,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VE.a, null),
+                    n.a.createElement(FE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14440,7 +14422,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UE.a, null),
+                    n.a.createElement(RE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14457,7 +14439,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YE.a, null),
+                    n.a.createElement(WE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14474,7 +14456,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KE.a, null),
+                    n.a.createElement(HE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14491,7 +14473,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QE.a, null),
+                    n.a.createElement(zE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14508,7 +14490,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JE.a, null),
+                    n.a.createElement(GE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14525,7 +14507,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qE.a, null),
+                    n.a.createElement(VE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14542,7 +14524,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZE.a, null),
+                    n.a.createElement(UE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14559,7 +14541,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_E.a, null),
+                    n.a.createElement(YE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14576,7 +14558,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XE.a, null),
+                    n.a.createElement(KE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14593,7 +14575,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($E.a, null),
+                    n.a.createElement(QE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14610,7 +14592,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ed.a, null),
+                    n.a.createElement(JE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14627,7 +14609,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ad.a, null),
+                    n.a.createElement(qE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14644,7 +14626,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(td.a, null),
+                    n.a.createElement(ZE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14661,7 +14643,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ld.a, null),
+                    n.a.createElement(_E.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14678,7 +14660,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nd.a, null),
+                    n.a.createElement(XE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14695,7 +14677,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rd.a, null),
+                    n.a.createElement($E.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14712,7 +14694,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(md.a, null),
+                    n.a.createElement(ed.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14729,7 +14711,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cd.a, null),
+                    n.a.createElement(ad.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14746,7 +14728,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(id.a, null),
+                    n.a.createElement(td.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14763,7 +14745,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sd.a, null),
+                    n.a.createElement(ld.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14780,7 +14762,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(od.a, null),
+                    n.a.createElement(nd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14797,7 +14779,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ed.a, null),
+                    n.a.createElement(rd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14814,7 +14796,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dd.a, null),
+                    n.a.createElement(md.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14831,7 +14813,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ud.a, null),
+                    n.a.createElement(cd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14848,7 +14830,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pd.a, null),
+                    n.a.createElement(id.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14865,7 +14847,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gd.a, null),
+                    n.a.createElement(sd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14882,7 +14864,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xd.a, null),
+                    n.a.createElement(od.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14916,7 +14898,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(et.a, null),
+                    n.a.createElement(Ja.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14933,7 +14915,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hd.a, null),
+                    n.a.createElement(Ed.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14950,7 +14932,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nd.a, null),
+                    n.a.createElement(dd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14967,7 +14949,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Id.a, null),
+                    n.a.createElement(ud.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14984,7 +14966,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fd.a, null),
+                    n.a.createElement(pd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15001,7 +14983,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yd.a, null),
+                    n.a.createElement(gd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15035,7 +15017,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bd.a, null),
+                    n.a.createElement(xd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15052,7 +15034,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Td.a, null),
+                    n.a.createElement(hd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15069,7 +15051,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vd.a, null),
+                    n.a.createElement(Nd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15086,7 +15068,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ad.a, null),
+                    n.a.createElement(Id.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15103,7 +15085,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wd.a, null),
+                    n.a.createElement(fd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15120,7 +15102,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cd.a, null),
+                    n.a.createElement(yd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15137,7 +15119,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pd.a, null),
+                    n.a.createElement(bd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15154,7 +15136,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Od.a, null),
+                    n.a.createElement(Td.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15171,7 +15153,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sd.a, null),
+                    n.a.createElement(vd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15188,7 +15170,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kd.a, null),
+                    n.a.createElement(Ad.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15205,7 +15187,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bd.a, null),
+                    n.a.createElement(wd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15222,7 +15204,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Md.a, null),
+                    n.a.createElement(Cd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15239,7 +15221,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jd.a, null),
+                    n.a.createElement(Pd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15256,7 +15238,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ld.a, null),
+                    n.a.createElement(Od.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15273,7 +15255,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dd.a, null),
+                    n.a.createElement(Sd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15290,7 +15272,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fd.a, null),
+                    n.a.createElement(kd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15324,7 +15306,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rd.a, null),
+                    n.a.createElement(Bd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15341,7 +15323,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wd.a, null),
+                    n.a.createElement(Md.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15358,7 +15340,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hd.a, null),
+                    n.a.createElement(jd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15375,7 +15357,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zd.a, null),
+                    n.a.createElement(Ld.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15392,7 +15374,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gd.a, null),
+                    n.a.createElement(Dd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15409,7 +15391,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vd.a, null),
+                    n.a.createElement(Fd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15426,7 +15408,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ud.a, null),
+                    n.a.createElement(Rd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15443,7 +15425,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yd.a, null),
+                    n.a.createElement(Wd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15460,7 +15442,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kd.a, null),
+                    n.a.createElement(Hd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15477,7 +15459,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qd.a, null),
+                    n.a.createElement(zd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15494,7 +15476,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jd.a, null),
+                    n.a.createElement(Gd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15511,7 +15493,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qd.a, null),
+                    n.a.createElement(Vd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15528,7 +15510,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zd.a, null),
+                    n.a.createElement(Ud.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15562,7 +15544,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_d.a, null),
+                    n.a.createElement(Yd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15579,7 +15561,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xd.a, null),
+                    n.a.createElement(Kd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15596,7 +15578,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($d.a, null),
+                    n.a.createElement(Qd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15613,7 +15595,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eu.a, null),
+                    n.a.createElement(Jd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15630,7 +15612,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(au.a, null),
+                    n.a.createElement(qd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15647,7 +15629,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tu.a, null),
+                    n.a.createElement(Zd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15664,7 +15646,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lu.a, null),
+                    n.a.createElement(_d.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15681,7 +15663,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nu.a, null),
+                    n.a.createElement(Xd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15698,7 +15680,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ru.a, null),
+                    n.a.createElement($d.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15715,7 +15697,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mu.a, null),
+                    n.a.createElement(eu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15732,7 +15714,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cu.a, null),
+                    n.a.createElement(au.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15749,7 +15731,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iu.a, null),
+                    n.a.createElement(tu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15766,7 +15748,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(su.a, null),
+                    n.a.createElement(lu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15783,7 +15765,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ou.a, null),
+                    n.a.createElement(nu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15800,7 +15782,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eu.a, null),
+                    n.a.createElement(ru.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15817,7 +15799,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(du.a, null),
+                    n.a.createElement(mu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15851,7 +15833,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uu.a, null),
+                    n.a.createElement(cu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15868,7 +15850,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pu.a, null),
+                    n.a.createElement(iu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15885,7 +15867,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gu.a, null),
+                    n.a.createElement(su.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15902,7 +15884,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xu.a, null),
+                    n.a.createElement(ou.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15919,7 +15901,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hu.a, null),
+                    n.a.createElement(Eu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15936,7 +15918,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nu.a, null),
+                    n.a.createElement(du.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15953,7 +15935,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Iu.a, null),
+                    n.a.createElement(uu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15970,7 +15952,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fu.a, null),
+                    n.a.createElement(pu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15987,7 +15969,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yu.a, null),
+                    n.a.createElement(gu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16004,7 +15986,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bu.a, null),
+                    n.a.createElement(xu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16021,7 +16003,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tu.a, null),
+                    n.a.createElement(hu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16038,7 +16020,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vu.a, null),
+                    n.a.createElement(Nu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16055,7 +16037,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Au.a, null),
+                    n.a.createElement(Iu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16072,7 +16054,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wu.a, null),
+                    n.a.createElement(fu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16089,7 +16071,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cu.a, null),
+                    n.a.createElement(yu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16106,7 +16088,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pu.a, null),
+                    n.a.createElement(bu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16123,7 +16105,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ou.a, null),
+                    n.a.createElement(Tu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16140,7 +16122,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Su.a, null),
+                    n.a.createElement(vu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16157,7 +16139,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ku.a, null),
+                    n.a.createElement(Au.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16174,7 +16156,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bu.a, null),
+                    n.a.createElement(wu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16191,7 +16173,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mu.a, null),
+                    n.a.createElement(Cu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16208,7 +16190,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ju.a, null),
+                    n.a.createElement(Pu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16225,7 +16207,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lu.a, null),
+                    n.a.createElement(Ou.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16242,7 +16224,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Du.a, null),
+                    n.a.createElement(Su.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16259,7 +16241,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fu.a, null),
+                    n.a.createElement(ku.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16276,7 +16258,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ru.a, null),
+                    n.a.createElement(Bu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16293,7 +16275,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wu.a, null),
+                    n.a.createElement(Mu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16310,7 +16292,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hu.a, null),
+                    n.a.createElement(ju.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16327,7 +16309,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zu.a, null),
+                    n.a.createElement(Lu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16344,7 +16326,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gu.a, null),
+                    n.a.createElement(Du.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16361,7 +16343,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vu.a, null),
+                    n.a.createElement(Fu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16395,7 +16377,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uu.a, null),
+                    n.a.createElement(Ru.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16412,7 +16394,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yu.a, null),
+                    n.a.createElement(Wu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16429,7 +16411,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ku.a, null),
+                    n.a.createElement(Hu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16446,7 +16428,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qu.a, null),
+                    n.a.createElement(zu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16463,7 +16445,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ju.a, null),
+                    n.a.createElement(Gu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16480,7 +16462,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qu.a, null),
+                    n.a.createElement(Vu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16497,7 +16479,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zu.a, null),
+                    n.a.createElement(Uu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16514,7 +16496,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_u.a, null),
+                    n.a.createElement(Yu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16531,7 +16513,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xu.a, null),
+                    n.a.createElement(Ku.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16548,7 +16530,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($u.a, null),
+                    n.a.createElement(Qu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16565,7 +16547,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ep.a, null),
+                    n.a.createElement(Ju.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16582,7 +16564,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ap.a, null),
+                    n.a.createElement(qu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16599,7 +16581,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tp.a, null),
+                    n.a.createElement(Zu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16616,7 +16598,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lp.a, null),
+                    n.a.createElement(_u.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16633,7 +16615,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(np.a, null),
+                    n.a.createElement(Xu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16650,7 +16632,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rp.a, null),
+                    n.a.createElement($u.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16667,7 +16649,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mp.a, null),
+                    n.a.createElement(ep.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16684,7 +16666,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cp.a, null),
+                    n.a.createElement(ap.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16701,7 +16683,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ip.a, null),
+                    n.a.createElement(tp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16718,7 +16700,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sp.a, null),
+                    n.a.createElement(lp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16735,7 +16717,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(op.a, null),
+                    n.a.createElement(np.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16752,7 +16734,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ep.a, null),
+                    n.a.createElement(rp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16769,7 +16751,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dp.a, null),
+                    n.a.createElement(mp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16786,7 +16768,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(up.a, null),
+                    n.a.createElement(cp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16803,7 +16785,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pp.a, null),
+                    n.a.createElement(ip.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16820,7 +16802,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gp.a, null),
+                    n.a.createElement(sp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16837,7 +16819,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xp.a, null),
+                    n.a.createElement(op.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16854,7 +16836,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hp.a, null),
+                    n.a.createElement(Ep.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16871,7 +16853,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Np.a, null),
+                    n.a.createElement(dp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16888,7 +16870,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ip.a, null),
+                    n.a.createElement(up.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16905,7 +16887,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fp.a, null),
+                    n.a.createElement(pp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16922,7 +16904,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yp.a, null),
+                    n.a.createElement(gp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16939,7 +16921,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bp.a, null),
+                    n.a.createElement(xp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16956,7 +16938,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tp.a, null),
+                    n.a.createElement(hp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16973,7 +16955,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vp.a, null),
+                    n.a.createElement(Np.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16990,7 +16972,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ap.a, null),
+                    n.a.createElement(Ip.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17007,7 +16989,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wp.a, null),
+                    n.a.createElement(fp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17024,7 +17006,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cp.a, null),
+                    n.a.createElement(yp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17041,7 +17023,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pp.a, null),
+                    n.a.createElement(bp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17058,7 +17040,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Op.a, null),
+                    n.a.createElement(Tp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17075,7 +17057,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sp.a, null),
+                    n.a.createElement(vp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17092,7 +17074,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kp.a, null),
+                    n.a.createElement(Ap.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17109,7 +17091,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bp.a, null),
+                    n.a.createElement(wp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17126,7 +17108,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mp.a, null),
+                    n.a.createElement(Cp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17143,7 +17125,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jp.a, null),
+                    n.a.createElement(Pp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17160,7 +17142,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lp.a, null),
+                    n.a.createElement(Op.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17177,7 +17159,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dp.a, null),
+                    n.a.createElement(Sp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17194,7 +17176,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fp.a, null),
+                    n.a.createElement(kp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17211,7 +17193,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rp.a, null),
+                    n.a.createElement(Bp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17228,7 +17210,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wp.a, null),
+                    n.a.createElement(Mp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17245,7 +17227,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hp.a, null),
+                    n.a.createElement(jp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17262,7 +17244,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zp.a, null),
+                    n.a.createElement(Lp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17296,7 +17278,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gp.a, null),
+                    n.a.createElement(Dp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17313,7 +17295,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lt.a, null),
+                    n.a.createElement(_a.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17330,7 +17312,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vp.a, null),
+                    n.a.createElement(Fp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17347,7 +17329,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Up.a, null),
+                    n.a.createElement(Rp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17364,7 +17346,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yp.a, null),
+                    n.a.createElement(Wp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17381,7 +17363,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kp.a, null),
+                    n.a.createElement(Hp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17398,7 +17380,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qp.a, null),
+                    n.a.createElement(zp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17415,7 +17397,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jp.a, null),
+                    n.a.createElement(Gp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17432,7 +17414,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qp.a, null),
+                    n.a.createElement(Vp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17449,7 +17431,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zp.a, null),
+                    n.a.createElement(Up.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17466,7 +17448,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_p.a, null),
+                    n.a.createElement(Yp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17483,7 +17465,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xp.a, null),
+                    n.a.createElement(Kp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17500,7 +17482,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($p.a, null),
+                    n.a.createElement(Qp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17517,7 +17499,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eg.a, null),
+                    n.a.createElement(Jp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17534,7 +17516,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ag.a, null),
+                    n.a.createElement(qp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17551,7 +17533,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tg.a, null),
+                    n.a.createElement(Zp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17568,7 +17550,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lg.a, null),
+                    n.a.createElement(_p.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17585,7 +17567,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ng.a, null),
+                    n.a.createElement(Xp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17602,7 +17584,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rg.a, null),
+                    n.a.createElement($p.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17619,7 +17601,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mg.a, null),
+                    n.a.createElement(eg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17636,7 +17618,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cg.a, null),
+                    n.a.createElement(ag.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17653,7 +17635,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ig.a, null),
+                    n.a.createElement(tg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17670,7 +17652,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sg.a, null),
+                    n.a.createElement(lg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17687,7 +17669,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(og.a, null),
+                    n.a.createElement(ng.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17704,7 +17686,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eg.a, null),
+                    n.a.createElement(rg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17721,7 +17703,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dg.a, null),
+                    n.a.createElement(mg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17738,7 +17720,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ug.a, null),
+                    n.a.createElement(cg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17755,7 +17737,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pg.a, null),
+                    n.a.createElement(ig.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17772,7 +17754,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gg.a, null),
+                    n.a.createElement(sg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17806,7 +17788,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xg.a, null),
+                    n.a.createElement(og.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17823,7 +17805,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hg.a, null),
+                    n.a.createElement(Eg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17840,7 +17822,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ng.a, null),
+                    n.a.createElement(dg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17857,7 +17839,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ig.a, null),
+                    n.a.createElement(ug.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17874,7 +17856,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fg.a, null),
+                    n.a.createElement(pg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17891,7 +17873,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yg.a, null),
+                    n.a.createElement(gg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17908,7 +17890,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bg.a, null),
+                    n.a.createElement(xg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17925,7 +17907,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tg.a, null),
+                    n.a.createElement(hg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17942,7 +17924,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vg.a, null),
+                    n.a.createElement(Ng.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17959,7 +17941,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ag.a, null),
+                    n.a.createElement(Ig.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17976,7 +17958,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wg.a, null),
+                    n.a.createElement(fg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17993,7 +17975,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cg.a, null),
+                    n.a.createElement(yg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18010,7 +17992,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pg.a, null),
+                    n.a.createElement(bg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18027,7 +18009,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Og.a, null),
+                    n.a.createElement(Tg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18044,7 +18026,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sg.a, null),
+                    n.a.createElement(vg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18061,7 +18043,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kg.a, null),
+                    n.a.createElement(Ag.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18078,7 +18060,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bg.a, null),
+                    n.a.createElement(wg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18095,7 +18077,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mg.a, null),
+                    n.a.createElement(Cg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18112,7 +18094,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jg.a, null),
+                    n.a.createElement(Pg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18129,7 +18111,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lg.a, null),
+                    n.a.createElement(Og.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18146,7 +18128,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dg.a, null),
+                    n.a.createElement(Sg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18163,7 +18145,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fg.a, null),
+                    n.a.createElement(kg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18180,7 +18162,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rg.a, null),
+                    n.a.createElement(Bg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18197,7 +18179,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wg.a, null),
+                    n.a.createElement(Mg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18214,7 +18196,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hg.a, null),
+                    n.a.createElement(jg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18231,7 +18213,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zg.a, null),
+                    n.a.createElement(Lg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18248,7 +18230,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gg.a, null),
+                    n.a.createElement(Dg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18265,7 +18247,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vg.a, null),
+                    n.a.createElement(Fg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18282,7 +18264,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ug.a, null),
+                    n.a.createElement(Rg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18299,7 +18281,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yg.a, null),
+                    n.a.createElement(Wg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18316,7 +18298,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kg.a, null),
+                    n.a.createElement(Hg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18350,7 +18332,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qg.a, null),
+                    n.a.createElement(zg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18367,7 +18349,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jg.a, null),
+                    n.a.createElement(Gg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18401,7 +18383,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qg.a, null),
+                    n.a.createElement(Vg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18418,7 +18400,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zg.a, null),
+                    n.a.createElement(Ug.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18435,7 +18417,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_g.a, null),
+                    n.a.createElement(Yg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18452,7 +18434,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xg.a, null),
+                    n.a.createElement(Kg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18469,7 +18451,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($g.a, null),
+                    n.a.createElement(Qg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18486,7 +18468,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ex.a, null),
+                    n.a.createElement(Jg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18503,7 +18485,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ax.a, null),
+                    n.a.createElement(qg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18520,7 +18502,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tx.a, null),
+                    n.a.createElement(Zg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18537,7 +18519,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lx.a, null),
+                    n.a.createElement(_g.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18554,7 +18536,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nx.a, null),
+                    n.a.createElement(Xg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18571,7 +18553,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rx.a, null),
+                    n.a.createElement($g.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18588,7 +18570,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mx.a, null),
+                    n.a.createElement(ex.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18605,7 +18587,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cx.a, null),
+                    n.a.createElement(ax.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18622,7 +18604,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ix.a, null),
+                    n.a.createElement(tx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18639,7 +18621,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sx.a, null),
+                    n.a.createElement(lx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18656,7 +18638,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ox.a, null),
+                    n.a.createElement(nx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18673,7 +18655,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ex.a, null),
+                    n.a.createElement(rx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18690,7 +18672,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dx.a, null),
+                    n.a.createElement(mx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18707,7 +18689,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ux.a, null),
+                    n.a.createElement(cx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18724,7 +18706,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(px.a, null),
+                    n.a.createElement(ix.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18741,7 +18723,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gx.a, null),
+                    n.a.createElement(sx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18758,7 +18740,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xx.a, null),
+                    n.a.createElement(ox.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18775,7 +18757,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hx.a, null),
+                    n.a.createElement(Ex.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18792,7 +18774,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nx.a, null),
+                    n.a.createElement(dx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18809,7 +18791,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ix.a, null),
+                    n.a.createElement(ux.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18826,7 +18808,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fx.a, null),
+                    n.a.createElement(px.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18860,7 +18842,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yx.a, null),
+                    n.a.createElement(gx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18877,7 +18859,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bx.a, null),
+                    n.a.createElement(xx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18894,7 +18876,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tx.a, null),
+                    n.a.createElement(hx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18911,7 +18893,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vx.a, null),
+                    n.a.createElement(Nx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18928,7 +18910,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ax.a, null),
+                    n.a.createElement(Ix.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18945,7 +18927,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wx.a, null),
+                    n.a.createElement(fx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18962,7 +18944,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cx.a, null),
+                    n.a.createElement(yx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18979,7 +18961,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Px.a, null),
+                    n.a.createElement(bx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18996,7 +18978,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ox.a, null),
+                    n.a.createElement(Tx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19013,7 +18995,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sx.a, null),
+                    n.a.createElement(vx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19030,7 +19012,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kx.a, null),
+                    n.a.createElement(Ax.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19047,7 +19029,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bx.a, null),
+                    n.a.createElement(wx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19064,7 +19046,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mx.a, null),
+                    n.a.createElement(Cx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19081,7 +19063,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jx.a, null),
+                    n.a.createElement(Px.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19098,7 +19080,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lx.a, null),
+                    n.a.createElement(Ox.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19115,7 +19097,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dx.a, null),
+                    n.a.createElement(Sx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19132,7 +19114,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fx.a, null),
+                    n.a.createElement(kx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19149,7 +19131,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rx.a, null),
+                    n.a.createElement(Bx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19166,7 +19148,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wx.a, null),
+                    n.a.createElement(Mx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19183,7 +19165,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hx.a, null),
+                    n.a.createElement(jx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19200,7 +19182,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zx.a, null),
+                    n.a.createElement(Lx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19217,7 +19199,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gx.a, null),
+                    n.a.createElement(Dx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19234,7 +19216,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vx.a, null),
+                    n.a.createElement(Fx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19251,7 +19233,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ux.a, null),
+                    n.a.createElement(Rx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19268,7 +19250,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yx.a, null),
+                    n.a.createElement(Wx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19285,7 +19267,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kx.a, null),
+                    n.a.createElement(Hx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19302,7 +19284,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qx.a, null),
+                    n.a.createElement(zx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19319,7 +19301,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jx.a, null),
+                    n.a.createElement(Gx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19336,7 +19318,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qx.a, null),
+                    n.a.createElement(Vx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19353,7 +19335,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zx.a, null),
+                    n.a.createElement(Ux.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19370,7 +19352,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_x.a, null),
+                    n.a.createElement(Yx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19387,7 +19369,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xx.a, null),
+                    n.a.createElement(Kx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19404,7 +19386,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($x.a, null),
+                    n.a.createElement(Qx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19421,7 +19403,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eh.a, null),
+                    n.a.createElement(Jx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19438,7 +19420,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ah.a, null),
+                    n.a.createElement(qx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19455,7 +19437,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(th.a, null),
+                    n.a.createElement(Zx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19489,7 +19471,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lh.a, null),
+                    n.a.createElement(_x.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19506,7 +19488,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nh.a, null),
+                    n.a.createElement(Xx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19523,7 +19505,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rh.a, null),
+                    n.a.createElement($x.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19540,7 +19522,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mh.a, null),
+                    n.a.createElement(eh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19557,7 +19539,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ch.a, null),
+                    n.a.createElement(ah.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19574,7 +19556,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ih.a, null),
+                    n.a.createElement(th.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19591,7 +19573,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sh.a, null),
+                    n.a.createElement(lh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19608,7 +19590,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oh.a, null),
+                    n.a.createElement(nh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19625,7 +19607,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eh.a, null),
+                    n.a.createElement(rh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19642,7 +19624,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dh.a, null),
+                    n.a.createElement(mh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19659,7 +19641,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uh.a, null),
+                    n.a.createElement(ch.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19693,7 +19675,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ph.a, null),
+                    n.a.createElement(ih.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19710,7 +19692,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gh.a, null),
+                    n.a.createElement(sh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19727,7 +19709,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xh.a, null),
+                    n.a.createElement(oh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19744,7 +19726,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hh.a, null),
+                    n.a.createElement(Eh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19761,7 +19743,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nh.a, null),
+                    n.a.createElement(dh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19778,7 +19760,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ih.a, null),
+                    n.a.createElement(uh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19795,7 +19777,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fh.a, null),
+                    n.a.createElement(ph.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19812,7 +19794,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yh.a, null),
+                    n.a.createElement(gh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19829,7 +19811,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bh.a, null),
+                    n.a.createElement(xh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19846,7 +19828,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Th.a, null),
+                    n.a.createElement(hh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19863,7 +19845,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vh.a, null),
+                    n.a.createElement(Nh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19880,7 +19862,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ah.a, null),
+                    n.a.createElement(Ih.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19897,7 +19879,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wh.a, null),
+                    n.a.createElement(fh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19914,7 +19896,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ch.a, null),
+                    n.a.createElement(yh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19931,7 +19913,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ph.a, null),
+                    n.a.createElement(bh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19948,7 +19930,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oh.a, null),
+                    n.a.createElement(Th.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19965,7 +19947,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sh.a, null),
+                    n.a.createElement(vh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19982,7 +19964,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kh.a, null),
+                    n.a.createElement(Ah.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19999,7 +19981,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bh.a, null),
+                    n.a.createElement(wh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20016,7 +19998,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mh.a, null),
+                    n.a.createElement(Ch.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20033,7 +20015,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jh.a, null),
+                    n.a.createElement(Ph.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20050,7 +20032,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lh.a, null),
+                    n.a.createElement(Oh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20067,7 +20049,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dh.a, null),
+                    n.a.createElement(Sh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20084,7 +20066,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fh.a, null),
+                    n.a.createElement(kh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20101,7 +20083,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rh.a, null),
+                    n.a.createElement(Bh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20118,7 +20100,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wh.a, null),
+                    n.a.createElement(Mh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20135,7 +20117,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hh.a, null),
+                    n.a.createElement(jh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20152,7 +20134,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zh.a, null),
+                    n.a.createElement(Lh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20169,7 +20151,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gh.a, null),
+                    n.a.createElement(Dh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20186,7 +20168,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vh.a, null),
+                    n.a.createElement(Fh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20203,7 +20185,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uh.a, null),
+                    n.a.createElement(Rh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20220,7 +20202,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yh.a, null),
+                    n.a.createElement(Wh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20237,7 +20219,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kh.a, null),
+                    n.a.createElement(Hh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20254,7 +20236,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qh.a, null),
+                    n.a.createElement(zh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20271,7 +20253,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jh.a, null),
+                    n.a.createElement(Gh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20288,7 +20270,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qh.a, null),
+                    n.a.createElement(Vh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20305,7 +20287,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zh.a, null),
+                    n.a.createElement(Uh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20322,7 +20304,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_h.a, null),
+                    n.a.createElement(Yh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20339,7 +20321,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xh.a, null),
+                    n.a.createElement(Kh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20356,7 +20338,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($h.a, null),
+                    n.a.createElement(Qh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20373,7 +20355,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eN.a, null),
+                    n.a.createElement(Jh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20390,7 +20372,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aN.a, null),
+                    n.a.createElement(qh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20407,7 +20389,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tN.a, null),
+                    n.a.createElement(Zh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20424,7 +20406,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lN.a, null),
+                    n.a.createElement(_h.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20441,7 +20423,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nN.a, null),
+                    n.a.createElement(Xh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20458,7 +20440,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rN.a, null),
+                    n.a.createElement($h.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20475,7 +20457,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mN.a, null),
+                    n.a.createElement(eN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20492,7 +20474,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cN.a, null),
+                    n.a.createElement(aN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20509,7 +20491,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iN.a, null),
+                    n.a.createElement(tN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20526,7 +20508,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sN.a, null),
+                    n.a.createElement(lN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20543,7 +20525,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oN.a, null),
+                    n.a.createElement(nN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20560,7 +20542,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EN.a, null),
+                    n.a.createElement(rN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20577,7 +20559,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dN.a, null),
+                    n.a.createElement(mN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20594,7 +20576,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uN.a, null),
+                    n.a.createElement(cN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20611,7 +20593,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pN.a, null),
+                    n.a.createElement(iN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20628,7 +20610,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gN.a, null),
+                    n.a.createElement(sN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20645,7 +20627,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xN.a, null),
+                    n.a.createElement(oN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20662,7 +20644,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hN.a, null),
+                    n.a.createElement(EN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20679,7 +20661,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NN.a, null),
+                    n.a.createElement(dN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20713,7 +20695,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(IN.a, null),
+                    n.a.createElement(uN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20730,7 +20712,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fN.a, null),
+                    n.a.createElement(pN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20747,7 +20729,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yN.a, null),
+                    n.a.createElement(gN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20764,7 +20746,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bN.a, null),
+                    n.a.createElement(xN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20781,7 +20763,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TN.a, null),
+                    n.a.createElement(hN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20798,7 +20780,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vN.a, null),
+                    n.a.createElement(NN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20815,7 +20797,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AN.a, null),
+                    n.a.createElement(IN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20832,7 +20814,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wN.a, null),
+                    n.a.createElement(fN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20849,7 +20831,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CN.a, null),
+                    n.a.createElement(yN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20866,7 +20848,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PN.a, null),
+                    n.a.createElement(bN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20883,7 +20865,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ON.a, null),
+                    n.a.createElement(TN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20900,7 +20882,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SN.a, null),
+                    n.a.createElement(vN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20917,7 +20899,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kN.a, null),
+                    n.a.createElement(AN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20934,7 +20916,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BN.a, null),
+                    n.a.createElement(wN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20951,7 +20933,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MN.a, null),
+                    n.a.createElement(CN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20968,7 +20950,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jN.a, null),
+                    n.a.createElement(PN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20985,7 +20967,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LN.a, null),
+                    n.a.createElement(ON.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21002,7 +20984,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DN.a, null),
+                    n.a.createElement(SN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21019,7 +21001,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FN.a, null),
+                    n.a.createElement(kN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21036,7 +21018,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RN.a, null),
+                    n.a.createElement(BN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21053,7 +21035,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WN.a, null),
+                    n.a.createElement(MN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21070,7 +21052,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HN.a, null),
+                    n.a.createElement(jN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21087,7 +21069,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zN.a, null),
+                    n.a.createElement(LN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21104,7 +21086,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GN.a, null),
+                    n.a.createElement(DN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21121,7 +21103,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VN.a, null),
+                    n.a.createElement(FN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21138,7 +21120,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UN.a, null),
+                    n.a.createElement(RN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21155,7 +21137,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YN.a, null),
+                    n.a.createElement(WN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21172,7 +21154,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KN.a, null),
+                    n.a.createElement(HN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21189,7 +21171,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QN.a, null),
+                    n.a.createElement(zN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21206,7 +21188,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JN.a, null),
+                    n.a.createElement(GN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21223,7 +21205,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qN.a, null),
+                    n.a.createElement(VN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21240,7 +21222,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZN.a, null),
+                    n.a.createElement(UN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21257,7 +21239,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_N.a, null),
+                    n.a.createElement(YN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21274,7 +21256,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XN.a, null),
+                    n.a.createElement(KN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21291,7 +21273,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($N.a, null),
+                    n.a.createElement(QN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21308,7 +21290,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eI.a, null),
+                    n.a.createElement(JN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21325,7 +21307,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aI.a, null),
+                    n.a.createElement(qN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21342,7 +21324,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tI.a, null),
+                    n.a.createElement(ZN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21359,7 +21341,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lI.a, null),
+                    n.a.createElement(_N.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21376,7 +21358,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nI.a, null),
+                    n.a.createElement(XN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21393,7 +21375,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rI.a, null),
+                    n.a.createElement($N.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21410,7 +21392,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mI.a, null),
+                    n.a.createElement(eI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21427,7 +21409,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cI.a, null),
+                    n.a.createElement(aI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21444,7 +21426,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iI.a, null),
+                    n.a.createElement(tI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21461,7 +21443,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sI.a, null),
+                    n.a.createElement(lI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21478,7 +21460,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oI.a, null),
+                    n.a.createElement(nI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21495,7 +21477,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EI.a, null),
+                    n.a.createElement(rI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21512,7 +21494,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dI.a, null),
+                    n.a.createElement(mI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21529,7 +21511,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uI.a, null),
+                    n.a.createElement(cI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21546,7 +21528,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pI.a, null),
+                    n.a.createElement(iI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21563,7 +21545,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gI.a, null),
+                    n.a.createElement(sI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21580,7 +21562,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xI.a, null),
+                    n.a.createElement(oI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21597,7 +21579,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hI.a, null),
+                    n.a.createElement(EI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21614,7 +21596,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NI.a, null),
+                    n.a.createElement(dI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21631,7 +21613,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(II.a, null),
+                    n.a.createElement(uI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21648,7 +21630,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fI.a, null),
+                    n.a.createElement(pI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21665,7 +21647,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yI.a, null),
+                    n.a.createElement(gI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21682,7 +21664,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bI.a, null),
+                    n.a.createElement(xI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21699,7 +21681,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TI.a, null),
+                    n.a.createElement(hI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21716,7 +21698,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vI.a, null),
+                    n.a.createElement(NI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21733,7 +21715,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AI.a, null),
+                    n.a.createElement(II.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21750,7 +21732,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wI.a, null),
+                    n.a.createElement(fI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21767,7 +21749,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CI.a, null),
+                    n.a.createElement(yI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21784,7 +21766,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PI.a, null),
+                    n.a.createElement(bI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21801,7 +21783,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OI.a, null),
+                    n.a.createElement(TI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21818,7 +21800,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SI.a, null),
+                    n.a.createElement(vI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21835,7 +21817,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kI.a, null),
+                    n.a.createElement(AI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21852,7 +21834,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BI.a, null),
+                    n.a.createElement(wI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21869,7 +21851,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MI.a, null),
+                    n.a.createElement(CI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21886,7 +21868,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jI.a, null),
+                    n.a.createElement(PI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21903,7 +21885,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LI.a, null),
+                    n.a.createElement(OI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21920,7 +21902,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DI.a, null),
+                    n.a.createElement(SI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21937,7 +21919,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FI.a, null),
+                    n.a.createElement(kI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21954,7 +21936,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RI.a, null),
+                    n.a.createElement(BI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21971,7 +21953,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WI.a, null),
+                    n.a.createElement(MI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21988,7 +21970,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HI.a, null),
+                    n.a.createElement(jI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22005,7 +21987,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zI.a, null),
+                    n.a.createElement(LI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22022,7 +22004,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GI.a, null),
+                    n.a.createElement(DI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22039,7 +22021,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VI.a, null),
+                    n.a.createElement(FI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22056,7 +22038,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UI.a, null),
+                    n.a.createElement(RI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22073,7 +22055,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YI.a, null),
+                    n.a.createElement(WI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22090,7 +22072,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KI.a, null),
+                    n.a.createElement(HI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22107,7 +22089,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QI.a, null),
+                    n.a.createElement(zI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22124,7 +22106,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JI.a, null),
+                    n.a.createElement(GI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22141,7 +22123,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qI.a, null),
+                    n.a.createElement(VI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22158,7 +22140,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZI.a, null),
+                    n.a.createElement(UI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22175,7 +22157,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_I.a, null),
+                    n.a.createElement(YI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22192,7 +22174,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XI.a, null),
+                    n.a.createElement(KI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22209,7 +22191,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($I.a, null),
+                    n.a.createElement(QI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22226,7 +22208,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ef.a, null),
+                    n.a.createElement(JI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22243,7 +22225,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(af.a, null),
+                    n.a.createElement(qI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22260,7 +22242,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tf.a, null),
+                    n.a.createElement(ZI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22277,7 +22259,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lf.a, null),
+                    n.a.createElement(_I.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22294,7 +22276,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nf.a, null),
+                    n.a.createElement(XI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22311,7 +22293,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rf.a, null),
+                    n.a.createElement($I.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22328,7 +22310,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mf.a, null),
+                    n.a.createElement(ef.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22345,7 +22327,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cf.a, null),
+                    n.a.createElement(af.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -23926,22 +23908,22 @@
           )
         );
       }
-      var Ef = t(37),
-        df = t.n(Ef),
-        uf = [
+      var nf = t(37),
+        rf = t.n(nf),
+        mf = [
           { name: "series1", data: [31, 40, 28, 51, 42, 109, 100] },
           { name: "series2", data: [11, 32, 45, 32, 34, 52, 41] }
         ];
-      function pf() {
+      function cf() {
         var e = Object(Y.a)();
-        return n.a.createElement(df.a, {
-          options: gf(e),
-          series: uf,
+        return n.a.createElement(rf.a, {
+          options: sf(e),
+          series: mf,
           type: "area",
           height: 350
         });
       }
-      function gf(e) {
+      function sf(e) {
         return {
           dataLabels: { enabled: !1 },
           stroke: { curve: "smooth" },
@@ -23964,27 +23946,27 @@
           legend: { show: !1 }
         };
       }
-      var xf = [
-        { name: "Metric1", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric2", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric3", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric4", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric5", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric6", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric7", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric8", data: Nf(18, { min: 0, max: 90 }) },
-        { name: "Metric9", data: Nf(18, { min: 0, max: 90 }) }
+      var of = [
+        { name: "Metric1", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric2", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric3", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric4", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric5", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric6", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric7", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric8", data: df(18, { min: 0, max: 90 }) },
+        { name: "Metric9", data: df(18, { min: 0, max: 90 }) }
       ];
-      function hf() {
+      function Ef() {
         var e = Object(Y.a)();
-        return n.a.createElement(df.a, {
-          options: If(e),
-          series: xf,
+        return n.a.createElement(rf.a, {
+          options: uf(e),
+          series: of,
           type: "heatmap",
           height: 350
         });
       }
-      function Nf(e, a) {
+      function df(e, a) {
         for (var t = 0, l = []; t < e; ) {
           var n = "w" + (t + 1).toString(),
             r = Math.floor(Math.random() * (a.max - a.min + 1)) + a.min;
@@ -23992,14 +23974,14 @@
         }
         return l;
       }
-      function If(e) {
+      function uf(e) {
         return {
           chart: { toolbar: { show: !1 } },
           dataLabels: { enabled: !1 },
           colors: [e.palette.primary.main]
         };
       }
-      var ff = function(e) {
+      var pf = function(e) {
           return {
             options: {
               labels: ["January", "February", "March", "April", "May", "June"]
@@ -24016,21 +23998,21 @@
             colors: [e.palette.primary.main, e.palette.success.main]
           };
         },
-        yf = {
+        gf = {
           series: [{ name: "Series 1", data: [80, 50, 30, 40, 100, 20] }]
         },
-        bf = function() {
+        xf = function() {
           var e = Object(Y.a)(),
-            a = Object(l.useState)(yf),
+            a = Object(l.useState)(gf),
             t = Object(u.a)(a, 1)[0];
-          return n.a.createElement(df.a, {
-            options: ff(e),
+          return n.a.createElement(rf.a, {
+            options: pf(e),
             series: t.series,
             type: "radar",
             height: "350"
           });
         },
-        Tf = function(e) {
+        hf = function(e) {
           return {
             plotOptions: { bar: { horizontal: !0 } },
             dataLabels: { enabled: !1 },
@@ -24055,23 +24037,23 @@
             fill: { colors: [e.palette.primary.main] }
           };
         },
-        vf = {
+        Nf = {
           series: [
             { data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380] }
           ]
         },
-        Af = function() {
+        If = function() {
           var e = Object(Y.a)(),
-            a = Object(l.useState)(vf),
+            a = Object(l.useState)(Nf),
             t = Object(u.a)(a, 1)[0];
-          return n.a.createElement(df.a, {
-            options: Tf(e),
+          return n.a.createElement(rf.a, {
+            options: hf(e),
             series: t.series,
             type: "bar",
             height: "350"
           });
         },
-        wf = [
+        ff = [
           { name: "Page A", uv: 4e3, pv: 2400, amt: 2400 },
           { name: "Page B", uv: 3e3, pv: 1398, amt: 2210 },
           { name: "Page C", uv: 2e3, pv: 9800, amt: 2290 },
@@ -24080,13 +24062,13 @@
           { name: "Page F", uv: 2390, pv: 3800, amt: 2500 },
           { name: "Page G", uv: 3490, pv: 4300, amt: 2100 }
         ],
-        Cf = [
+        yf = [
           { name: "Group A", value: 400 },
           { name: "Group B", value: 300 },
           { name: "Group C", value: 300 },
           { name: "Group D", value: 200 }
         ];
-      function Pf(e) {
+      function bf(e) {
         var a = Object(Y.a)(),
           t = Object(l.useState)(0),
           r = Object(u.a)(t, 2),
@@ -24104,7 +24086,7 @@
               n.a.createElement(
                 za,
                 { title: "Apex Line Chart", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(pf, null)
+                n.a.createElement(cf, null)
               )
             ),
             n.a.createElement(
@@ -24113,7 +24095,7 @@
               n.a.createElement(
                 za,
                 { title: "Apex Heatmap", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(hf, null)
+                n.a.createElement(Ef, null)
               )
             ),
             n.a.createElement(
@@ -24126,7 +24108,7 @@
                   upperTitle: !0,
                   noBodyPadding: !0
                 },
-                n.a.createElement(bf, null)
+                n.a.createElement(xf, null)
               )
             ),
             n.a.createElement(
@@ -24135,7 +24117,7 @@
               n.a.createElement(
                 za,
                 { title: "Apex Bar Chart", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(Af, null)
+                n.a.createElement(If, null)
               )
             ),
             n.a.createElement(
@@ -24149,28 +24131,28 @@
                   upperTitle: !0
                 },
                 n.a.createElement(
-                  Nt.m,
+                  dt.m,
                   { width: "100%", height: 350 },
                   n.a.createElement(
-                    Nt.j,
+                    dt.j,
                     {
                       width: 500,
                       height: 300,
-                      data: wf,
+                      data: ff,
                       margin: { top: 5, right: 30, left: 20, bottom: 5 }
                     },
-                    n.a.createElement(Nt.e, { strokeDasharray: "3 3" }),
-                    n.a.createElement(Nt.p, { dataKey: "name" }),
-                    n.a.createElement(Nt.q, null),
-                    n.a.createElement(Nt.o, null),
-                    n.a.createElement(Nt.h, null),
-                    n.a.createElement(Nt.i, {
+                    n.a.createElement(dt.e, { strokeDasharray: "3 3" }),
+                    n.a.createElement(dt.p, { dataKey: "name" }),
+                    n.a.createElement(dt.q, null),
+                    n.a.createElement(dt.o, null),
+                    n.a.createElement(dt.h, null),
+                    n.a.createElement(dt.i, {
                       type: "monotone",
                       dataKey: "pv",
                       stroke: a.palette.primary.main,
                       activeDot: { r: 8 }
                     }),
-                    n.a.createElement(Nt.i, {
+                    n.a.createElement(dt.i, {
                       type: "monotone",
                       dataKey: "uv",
                       stroke: a.palette.secondary.main
@@ -24190,15 +24172,15 @@
                   upperTitle: !0
                 },
                 n.a.createElement(
-                  Nt.m,
+                  dt.m,
                   { width: "100%", height: 300 },
                   n.a.createElement(
-                    Nt.l,
+                    dt.l,
                     { width: 200, height: 300 },
-                    n.a.createElement(Nt.k, {
+                    n.a.createElement(dt.k, {
                       activeIndex: m,
-                      activeShape: Of,
-                      data: Cf,
+                      activeShape: Tf,
+                      data: yf,
                       cx: 200,
                       cy: 150,
                       innerRadius: 60,
@@ -24216,7 +24198,7 @@
           )
         );
       }
-      function Of(e) {
+      function Tf(e) {
         var a = Math.PI / 180,
           t = e.cx,
           l = e.cy,
@@ -24246,7 +24228,7 @@
             { x: t, y: l, dy: 8, textAnchor: "middle", fill: o },
             E.name
           ),
-          n.a.createElement(Nt.n, {
+          n.a.createElement(dt.n, {
             cx: t,
             cy: l,
             innerRadius: m,
@@ -24255,7 +24237,7 @@
             endAngle: s,
             fill: o
           }),
-          n.a.createElement(Nt.n, {
+          n.a.createElement(dt.n, {
             cx: t,
             cy: l,
             startAngle: i,
@@ -24305,40 +24287,40 @@
           )
         );
       }
-      var Sf,
-        kf = t(463),
-        Bf = 0,
-        Mf = [],
-        jf = 864e5,
-        Lf = 7776e5;
-      function Df() {
-        Sf &&
+      var vf,
+        Af = t(456),
+        wf = 0,
+        Cf = [],
+        Pf = 864e5,
+        Of = 7776e5;
+      function Sf() {
+        vf &&
           window.setInterval(function() {
             !(function(e, a) {
-              var t = e + jf;
-              Bf = t;
-              for (var l = 0; l < Mf.length - 10; l++)
-                (Mf[l].x = t - Lf - jf), (Mf[l].y = 0);
-              Mf.push({
+              var t = e + Pf;
+              wf = t;
+              for (var l = 0; l < Cf.length - 10; l++)
+                (Cf[l].x = t - Of - Pf), (Cf[l].y = 0);
+              Cf.push({
                 x: t,
                 y: Math.floor(Math.random() * (a.max - a.min + 1)) + a.min
               });
-            })(Bf, { min: 10, max: 90 }),
-              kf.a.exec("realtime", "updateSeries", [{ data: Mf }]);
+            })(wf, { min: 10, max: 90 }),
+              Af.a.exec("realtime", "updateSeries", [{ data: Cf }]);
           }, 1e3);
       }
       !(function(e, a, t) {
         for (var l = 0; l < a; ) {
           var n = e,
             r = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min;
-          Mf.push({ x: n, y: r }), (Bf = e), (e += jf), l++;
+          Cf.push({ x: n, y: r }), (wf = e), (e += Pf), l++;
         }
       })(new Date("11 Feb 2019 GMT").getTime(), 10, { min: 10, max: 90 });
-      for (var Ff = 14844186e5, Rf = [], Wf = 0; Wf < 120; Wf++) {
-        var Hf = [(Ff += 864e5), Math.round(100 * Math.random(0))];
-        Rf.push(Hf);
+      for (var kf = 14844186e5, Bf = [], Mf = 0; Mf < 120; Mf++) {
+        var jf = [(kf += 864e5), Math.round(100 * Math.random(0))];
+        Bf.push(jf);
       }
-      var zf = function(e) {
+      var Lf = function(e) {
           return {
             grid: {
               row: {
@@ -24444,13 +24426,13 @@
               dataLabels: { enabled: !1 },
               stroke: { curve: "smooth" },
               markers: { size: 0 },
-              xaxis: { type: "datetime", range: Lf },
+              xaxis: { type: "datetime", range: Of },
               yaxis: { max: 100 },
               legend: { show: !1 }
             }
           };
         },
-        Gf = {
+        Df = {
           series: [
             { name: "Desktops", data: [10, 41, 35, 51, 49, 62, 69, 91, 148] }
           ],
@@ -24458,20 +24440,20 @@
             { name: "High - 2019", data: [28, 29, 33, 36, 32, 32, 33] },
             { name: "Low - 2019", data: [12, 11, 14, 18, 17, 13, 13] }
           ],
-          series3: [{ name: "Flatlogic LLC", data: Rf }],
-          series4: [{ data: Mf.slice() }]
+          series3: [{ name: "Flatlogic LLC", data: Bf }],
+          series4: [{ data: Cf.slice() }]
         };
-      function Vf(e) {
+      function Ff(e) {
         Object(l.useEffect)(function() {
           return (
-            Df(),
+            Sf(),
             function() {
-              (Sf = !1), (Mf = Mf.slice(Mf.length - 10, Mf.length));
+              (vf = !1), (Cf = Cf.slice(Cf.length - 10, Cf.length));
             }
           );
         });
         var a = Object(Y.a)(),
-          t = Object(l.useState)(Gf),
+          t = Object(l.useState)(Df),
           r = Object(u.a)(t, 1)[0];
         return n.a.createElement(
           n.a.Fragment,
@@ -24485,8 +24467,8 @@
               n.a.createElement(
                 za,
                 { title: "Line Basic", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: zf(a),
+                n.a.createElement(rf.a, {
+                  options: Lf(a),
                   series: r.series,
                   type: "line",
                   height: "350"
@@ -24503,8 +24485,8 @@
                   upperTitle: !0,
                   noBodyPadding: !0
                 },
-                n.a.createElement(df.a, {
-                  options: zf(a).options,
+                n.a.createElement(rf.a, {
+                  options: Lf(a).options,
                   series: r.series2,
                   type: "line",
                   height: "350"
@@ -24521,8 +24503,8 @@
                   upperTitle: !0,
                   noBodyPadding: !0
                 },
-                n.a.createElement(df.a, {
-                  options: zf(a).options2,
+                n.a.createElement(rf.a, {
+                  options: Lf(a).options2,
                   series: r.series3,
                   type: "area",
                   height: "350"
@@ -24539,8 +24521,8 @@
                   upperTitle: !0,
                   noBodyPadding: !0
                 },
-                n.a.createElement(df.a, {
-                  options: zf(a).options3,
+                n.a.createElement(rf.a, {
+                  options: Lf(a).options3,
                   series: r.series4,
                   type: "line",
                   height: "350"
@@ -24550,9 +24532,9 @@
           )
         );
       }
-      var Uf = t(220),
-        Yf = t.n(Uf),
-        Kf = function(e) {
+      var Rf = t(219),
+        Wf = t.n(Rf),
+        Hf = function(e) {
           return {
             plotOptions: { bar: { horizontal: !0 } },
             dataLabels: { enabled: !1 },
@@ -24635,12 +24617,12 @@
               fill: {
                 type: "image",
                 opacity: 0.87,
-                image: { src: [Yf.a], width: 466, height: 406 }
+                image: { src: [Wf.a], width: 466, height: 406 }
               }
             }
           };
         },
-        Qf = {
+        zf = {
           series: [
             { data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380] }
           ],
@@ -24695,9 +24677,9 @@
             }
           ]
         };
-      function Jf(e) {
+      function Gf(e) {
         var a = Object(Y.a)(),
-          t = Object(l.useState)(Qf),
+          t = Object(l.useState)(zf),
           r = Object(u.a)(t, 1)[0];
         return n.a.createElement(
           n.a.Fragment,
@@ -24711,8 +24693,8 @@
               n.a.createElement(
                 za,
                 { title: "Bar Basic", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: Kf(a),
+                n.a.createElement(rf.a, {
+                  options: Hf(a),
                   series: r.series,
                   type: "bar",
                   height: "350"
@@ -24725,8 +24707,8 @@
               n.a.createElement(
                 za,
                 { title: "Grouped Basic", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: Kf(a).options,
+                n.a.createElement(rf.a, {
+                  options: Hf(a).options,
                   series: r.series2,
                   type: "bar",
                   height: "350"
@@ -24739,8 +24721,8 @@
               n.a.createElement(
                 za,
                 { title: "Stacked Basic", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: Kf(a).options2,
+                n.a.createElement(rf.a, {
+                  options: Hf(a).options2,
                   series: r.series3,
                   type: "bar",
                   height: "350"
@@ -24753,8 +24735,8 @@
               n.a.createElement(
                 za,
                 { title: "Bar with Images", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: Kf(a).options3,
+                n.a.createElement(rf.a, {
+                  options: Hf(a).options3,
                   series: r.series4,
                   type: "bar",
                   height: "350"
@@ -24764,7 +24746,7 @@
           )
         );
       }
-      function qf(e, a) {
+      function Vf(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -24776,16 +24758,16 @@
         }
         return t;
       }
-      function Zf(e) {
+      function Uf(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? qf(t, !0).forEach(function(a) {
+            ? Vf(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : qf(t).forEach(function(a) {
+            : Vf(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -24795,7 +24777,7 @@
         }
         return e;
       }
-      var _f = function(e) {
+      var Yf = function(e) {
           return {
             labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
             responsive: [
@@ -24878,15 +24860,15 @@
             }
           };
         },
-        Xf = {
+        Kf = {
           series: [44, 55, 13, 43, 22],
           series2: [44, 55, 41, 17, 15],
           series3: [44, 55, 13, 33],
           series4: [25, 15, 44, 55, 41, 17]
         };
-      function $f(e) {
+      function Qf(e) {
         var a = Object(Y.a)(),
-          t = Object(l.useState)(Xf),
+          t = Object(l.useState)(Kf),
           r = Object(u.a)(t, 2),
           m = r[0],
           c = r[1];
@@ -24902,8 +24884,8 @@
               n.a.createElement(
                 za,
                 { title: "Simple Pie", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: _f(a),
+                n.a.createElement(rf.a, {
+                  options: Yf(a),
                   series: m.series,
                   type: "pie",
                   height: "380"
@@ -24916,8 +24898,8 @@
               n.a.createElement(
                 za,
                 { title: "Simple Donut", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: _f(a).options,
+                n.a.createElement(rf.a, {
+                  options: Yf(a).options,
                   series: m.series2,
                   type: "donut",
                   height: "380"
@@ -24930,8 +24912,8 @@
               n.a.createElement(
                 za,
                 { title: "Update Donut", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: _f(a).options2,
+                n.a.createElement(rf.a, {
+                  options: Yf(a).options2,
                   series: m.series3,
                   type: "donut",
                   height: "380"
@@ -24948,7 +24930,7 @@
                         variant: "contained",
                         onClick: function() {
                           c(
-                            Zf({}, m, {
+                            Uf({}, m, {
                               series3: m.series3.map(function() {
                                 return Math.floor(100 * Math.random()) + 1;
                               })
@@ -24971,7 +24953,7 @@
                           return (function() {
                             var e = m.series3.slice();
                             e.push(Math.floor(100 * Math.random()) + 1),
-                              c(Zf({}, m, { series3: e }));
+                              c(Uf({}, m, { series3: e }));
                           })();
                         },
                         color: "secondary"
@@ -24990,7 +24972,7 @@
                           return (function() {
                             if (1 !== m.series3.length) {
                               var e = m.series3.slice();
-                              e.pop(), c(Zf({}, m, { series3: e }));
+                              e.pop(), c(Uf({}, m, { series3: e }));
                             }
                           })();
                         },
@@ -25007,7 +24989,7 @@
                       {
                         variant: "contained",
                         onClick: function() {
-                          c(Zf({}, m, { series3: [44, 55, 13, 33] }));
+                          c(Uf({}, m, { series3: [44, 55, 13, 33] }));
                         },
                         color: "success"
                       },
@@ -25023,8 +25005,8 @@
               n.a.createElement(
                 za,
                 { title: "Monochrome Pie", upperTitle: !0, noBodyPadding: !0 },
-                n.a.createElement(df.a, {
-                  options: _f(a).options,
+                n.a.createElement(rf.a, {
+                  options: Yf(a).options,
                   series: m.series2,
                   type: "pie",
                   height: "380"
@@ -25034,7 +25016,7 @@
           )
         );
       }
-      var ey = Object(D.a)(function(e) {
+      var Jf = Object(D.a)(function(e) {
           return {
             dashedBorder: {
               border: "1px dashed",
@@ -25047,7 +25029,7 @@
             text: { marginBottom: e.spacing(2) }
           };
         }),
-        ay = {
+        qf = {
           palette: {
             primary: {
               main: "#536DFE",
@@ -25116,17 +25098,17 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        ty = Ue()("3CD4A0")
+        Zf = Ue()("3CD4A0")
           .darken(15)
           .toHexString(),
-        ly = {
+        _f = {
           palette: {
             primary: {
-              main: ty,
-              light: Ue()(ty)
+              main: Zf,
+              light: Ue()(Zf)
                 .lighten(7.5)
                 .toHexString(),
-              dark: Ue()(ty)
+              dark: Ue()(Zf)
                 .darken(15)
                 .toHexString()
             },
@@ -25188,7 +25170,7 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        ny = {
+        Xf = {
           palette: {
             primary: {
               main: "#FF5C93",
@@ -25257,8 +25239,8 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        ry = t(201);
-      function my(e, a) {
+        $f = t(200);
+      function ey(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -25270,16 +25252,16 @@
         }
         return t;
       }
-      function cy(e) {
+      function ay(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? my(t, !0).forEach(function(a) {
+            ? ey(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : my(t).forEach(function(a) {
+            : ey(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -25289,7 +25271,7 @@
         }
         return e;
       }
-      var iy = {
+      var ty = {
           typography: {
             h1: { fontSize: "3rem" },
             h2: { fontSize: "2rem" },
@@ -25347,13 +25329,13 @@
             }
           }
         },
-        sy = {
-          default: Object(ry.a)(cy({}, ay, {}, iy)),
-          secondary: Object(ry.a)(cy({}, ny, {}, iy)),
-          success: Object(ry.a)(cy({}, ly, {}, iy))
+        ly = {
+          default: Object($f.a)(ay({}, qf, {}, ty)),
+          secondary: Object($f.a)(ay({}, Xf, {}, ty)),
+          success: Object($f.a)(ay({}, _f, {}, ty))
         };
-      function oy() {
-        var e = ey();
+      function ny() {
+        var e = Jf();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -25372,29 +25354,29 @@
                   "There is a couple of brand colors that we're using."
                 ),
                 n.a.createElement(
-                  gt.a,
+                  st.a,
                   { className: "mb-0" },
                   n.a.createElement(
-                    it.a,
+                    tt.a,
                     null,
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, null, "State"),
-                      n.a.createElement(ot.a, null, "Preview"),
-                      n.a.createElement(ot.a, null, "Usage Example"),
-                      n.a.createElement(ot.a, null, "Hex Value")
+                      n.a.createElement(nt.a, null, "State"),
+                      n.a.createElement(nt.a, null, "Preview"),
+                      n.a.createElement(nt.a, null, "Usage Example"),
+                      n.a.createElement(nt.a, null, "Hex Value")
                     )
                   ),
                   n.a.createElement(
-                    xt.a,
+                    ot.a,
                     null,
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, null, "Primary"),
+                      n.a.createElement(nt.a, null, "Primary"),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(Sa, {
                           color: "primary",
@@ -25402,30 +25384,30 @@
                         })
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           '<Button color="primary">'
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
-                          sy[localStorage.getItem("theme")].palette.primary.main
+                          ly[localStorage.getItem("theme")].palette.primary.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, { align: "left" }, "Secondary"),
+                      n.a.createElement(nt.a, { align: "left" }, "Secondary"),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(Sa, {
                           color: "secondary",
@@ -25433,31 +25415,31 @@
                         })
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           '<Dot color="secondary">'
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
-                          sy[localStorage.getItem("theme")].palette.secondary
+                          ly[localStorage.getItem("theme")].palette.secondary
                             .main
                         )
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, { align: "left" }, "Warning"),
+                      n.a.createElement(nt.a, { align: "left" }, "Warning"),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(Sa, {
                           color: "warning",
@@ -25465,30 +25447,30 @@
                         })
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           '<Typography color="warning">'
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
-                          sy[localStorage.getItem("theme")].palette.warning.main
+                          ly[localStorage.getItem("theme")].palette.warning.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, { align: "left" }, "Success"),
+                      n.a.createElement(nt.a, { align: "left" }, "Success"),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(Sa, {
                           color: "success",
@@ -25496,49 +25478,49 @@
                         })
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           '<Notification color="success">'
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
-                          sy[localStorage.getItem("theme")].palette.success.main
+                          ly[localStorage.getItem("theme")].palette.success.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, { align: "left" }, "Info"),
+                      n.a.createElement(nt.a, { align: "left" }, "Info"),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         { align: "right" },
                         n.a.createElement(Sa, { color: "info", size: "large" })
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           '<Icon color="info">'
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
-                          sy[localStorage.getItem("theme")].palette.info.main
+                          ly[localStorage.getItem("theme")].palette.info.main
                         )
                       )
                     )
@@ -25678,7 +25660,7 @@
           )
         );
       }
-      var Ey = Object(D.a)(function(e) {
+      var ry = Object(D.a)(function(e) {
         return {
           root: {
             backgroundColor: "#f1f1f1",
@@ -25700,8 +25682,8 @@
           paperMargin: { margin: 12 }
         };
       });
-      function dy() {
-        var e = Ey();
+      function my() {
+        var e = ry();
         return n.a.createElement(
           "div",
           null,
@@ -25756,7 +25738,7 @@
                       f.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         "\n  <Grid container>\n    <Grid item xs={4}>One of three</Grid>\n    <Grid item xs={4}>One of three</Grid>\n    <Grid item xs={4}>One of three</Grid>\n  </Grid>\n                  "
                       )
@@ -25804,7 +25786,7 @@
                       f.a,
                       { item: !0, xs: 12 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         "\n  <Grid container>\n    <Grid item xs>1 of 2</Grid>\n    <Grid item xs>2 of 2</Grid>\n    <Grid item xs>2 of 2</Grid>\n  </Grid>\n"
                       )
@@ -25825,45 +25807,45 @@
                   "While Material UI grid uses ems or rems for defining most sizes, pxs are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the font size. See how aspects of the Material UI grid system work across multiple devices with a handy table."
                 ),
                 n.a.createElement(
-                  gt.a,
+                  st.a,
                   { className: "mb-0" },
                   n.a.createElement(
-                    it.a,
+                    tt.a,
                     null,
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
-                      n.a.createElement(ot.a, null),
+                      n.a.createElement(nt.a, null),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Extra small"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "<576px")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Small"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265576px")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Medium"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265768px")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Large"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265992px")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Extra large"),
                         n.a.createElement("br", null),
@@ -25872,110 +25854,110 @@
                     )
                   ),
                   n.a.createElement(
-                    xt.a,
+                    ot.a,
                     null,
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Max container width")
                       ),
-                      n.a.createElement(ot.a, null, "None (auto)"),
-                      n.a.createElement(ot.a, null, "540px"),
-                      n.a.createElement(ot.a, null, "720px"),
-                      n.a.createElement(ot.a, null, "960px"),
-                      n.a.createElement(ot.a, null, "1140px")
+                      n.a.createElement(nt.a, null, "None (auto)"),
+                      n.a.createElement(nt.a, null, "540px"),
+                      n.a.createElement(nt.a, null, "720px"),
+                      n.a.createElement(nt.a, null, "960px"),
+                      n.a.createElement(nt.a, null, "1140px")
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Component property")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Qt, { row: !0 }, "<Grid item xs>")
+                        n.a.createElement(zt, { row: !0 }, "<Grid item xs>")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Qt, { row: !0 }, "<Grid item sm>")
+                        n.a.createElement(zt, { row: !0 }, "<Grid item sm>")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Qt, { row: !0 }, "<Grid item md>")
+                        n.a.createElement(zt, { row: !0 }, "<Grid item md>")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Qt, { row: !0 }, "<Grid item lg>")
+                        n.a.createElement(zt, { row: !0 }, "<Grid item lg>")
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Qt, { row: !0 }, "<Grid item xl>")
+                        n.a.createElement(zt, { row: !0 }, "<Grid item xl>")
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "# of columns")
                       ),
-                      n.a.createElement(ot.a, null, "12")
+                      n.a.createElement(nt.a, null, "12")
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Spacing"),
                         " ",
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0, inline: !0 },
                           "output(spacing) = spacing * 8px"
                         )
                       ),
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Qt,
+                          zt,
                           { row: !0 },
                           "<Grid container spacing={2}>"
                         )
                       ),
-                      n.a.createElement(ot.a, null)
+                      n.a.createElement(nt.a, null)
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Nestable")
                       ),
-                      n.a.createElement(ot.a, null, "Yes")
+                      n.a.createElement(nt.a, null, "Yes")
                     ),
                     n.a.createElement(
-                      st.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        ot.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Column ordering")
                       ),
-                      n.a.createElement(ot.a, null, "Yes")
+                      n.a.createElement(nt.a, null, "Yes")
                     )
                   )
                 )
@@ -26054,7 +26036,7 @@
                       f.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         '\n  <Grid container>\n    <Box display="flex">\n      <Box alignSelf="flex-start">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n      <Box alignSelf="center">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n      <Box alignSelf="flex-end">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n    </Box>\n  </Grid>\n                  '
                       )
@@ -26203,7 +26185,7 @@
                       f.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         '\n  <Box display="flex" flexDirection="column">\n    <Box display="flex" flexDirection="row" justifyContent="flex-end">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n    </Box>\n    <Box display="flex" flexDirection="row" justifyContent="flex-around">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n    </Box>\n    <Box display="flex" flexDirection="row" justifyContent="flex-between">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n      <Grid item xs={3}>3</Grid>\n    </Box>\n  </Box>\n                  '
                       )
@@ -26215,15 +26197,15 @@
           )
         );
       }
-      var uy = Object(D.a)(function(e) {
+      var cy = Object(D.a)(function(e) {
         return {
           paddingTop: { paddingTop: e.spacing(1) },
           badge: { margin: e.spacing(2, 2, 0, 0) },
           margin: { margin: e.spacing(0, 2, 0, 0) }
         };
       });
-      function py() {
-        var e = uy();
+      function iy() {
+        var e = cy();
         return n.a.createElement(
           "div",
           null,
@@ -26372,7 +26354,7 @@
                     n.a.createElement(
                       he,
                       { className: e.badge, badgeContent: 4, color: "primary" },
-                      n.a.createElement(xd.a, null)
+                      n.a.createElement(od.a, null)
                     ),
                     n.a.createElement(
                       he,
@@ -26381,7 +26363,7 @@
                         badgeContent: 10,
                         color: "secondary"
                       },
-                      n.a.createElement(xd.a, null)
+                      n.a.createElement(od.a, null)
                     ),
                     n.a.createElement(
                       v.a,
@@ -26392,7 +26374,7 @@
                       n.a.createElement(
                         he,
                         { badgeContent: 4, color: "warning" },
-                        n.a.createElement(xd.a, null)
+                        n.a.createElement(od.a, null)
                       )
                     )
                   ),
@@ -26433,7 +26415,7 @@
                     "You may to use dot badge via",
                     " ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       'variant="dot"'
                     )
@@ -26464,7 +26446,7 @@
                         className: e.margin,
                         variant: "dot"
                       },
-                      n.a.createElement(xd.a, null)
+                      n.a.createElement(od.a, null)
                     ),
                     n.a.createElement(
                       he,
@@ -26482,14 +26464,14 @@
                     { block: !0 },
                     "You can use the ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       "horizontalAlignment"
                     ),
                     " ",
                     "and ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       "verticalAlignment"
                     ),
@@ -26525,7 +26507,7 @@
                           horizontal: "right"
                         }
                       },
-                      n.a.createElement(xd.a, null)
+                      n.a.createElement(od.a, null)
                     ),
                     n.a.createElement(
                       he,
@@ -26588,13 +26570,13 @@
           )
         );
       }
-      var gy = t(89),
-        xy = t(466),
-        hy = t.n(xy),
-        Ny = t(467),
-        Iy = t.n(Ny);
-      t(941), t(942), t(943);
-      function fy() {
+      var sy = t(89),
+        oy = t(459),
+        Ey = t.n(oy),
+        dy = t(460),
+        uy = t.n(dy);
+      t(930), t(931), t(932);
+      function py() {
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -26617,10 +26599,10 @@
                   y.a,
                   { my: 3 },
                   n.a.createElement(
-                    gy.f,
+                    sy.f,
                     null,
                     n.a.createElement(
-                      gy.c,
+                      sy.c,
                       {
                         activeItem: 1,
                         length: 3,
@@ -26629,43 +26611,43 @@
                         className: "z-depth-1"
                       },
                       n.a.createElement(
-                        gy.d,
+                        sy.d,
                         null,
                         n.a.createElement(
-                          gy.e,
+                          sy.e,
                           { itemId: "1" },
                           n.a.createElement(
-                            gy.j,
+                            sy.j,
                             null,
                             n.a.createElement("img", {
                               className: "d-block w-100",
-                              src: hy.a,
+                              src: Ey.a,
                               alt: "First slide"
                             })
                           )
                         ),
                         n.a.createElement(
-                          gy.e,
+                          sy.e,
                           { itemId: "2" },
                           n.a.createElement(
-                            gy.j,
+                            sy.j,
                             null,
                             n.a.createElement("img", {
                               className: "d-block w-100",
-                              src: Yf.a,
+                              src: Wf.a,
                               alt: "Second slide"
                             })
                           )
                         ),
                         n.a.createElement(
-                          gy.e,
+                          sy.e,
                           { itemId: "3" },
                           n.a.createElement(
-                            gy.j,
+                            sy.j,
                             null,
                             n.a.createElement("img", {
                               className: "d-block w-100",
-                              src: Iy.a,
+                              src: uy.a,
                               alt: "Third slide"
                             })
                           )
@@ -26679,10 +26661,10 @@
           )
         );
       }
-      var yy = t(512),
-        by = t(1265),
-        Ty = t(1264),
-        vy = Object(D.a)(function(e) {
+      var gy = t(503),
+        xy = t(1254),
+        hy = t(1253),
+        Ny = Object(D.a)(function(e) {
           return {
             marginRight: { marginRight: "10px" },
             marginTop: { marginTop: "10px" },
@@ -26701,7 +26683,7 @@
             paperMargin: { margin: 12 }
           };
         });
-      function Ay(e, a) {
+      function Iy(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -26713,16 +26695,16 @@
         }
         return t;
       }
-      function wy(e) {
+      function fy(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? Ay(t, !0).forEach(function(a) {
+            ? Iy(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : Ay(t).forEach(function(a) {
+            : Iy(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -26732,39 +26714,39 @@
         }
         return e;
       }
-      var Cy = function(e, a) {
+      var yy = function(e, a) {
         switch (a.type) {
           case "OPEN_MODAL":
-            return wy({}, e, { toggleModal: !0 });
+            return fy({}, e, { toggleModal: !0 });
           case "CLOSE_MODAL":
-            return wy({}, e, { toggleModal: !1 });
+            return fy({}, e, { toggleModal: !1 });
           case "OPEN_BODY":
-            return wy({}, e, { toggleBody: !0 });
+            return fy({}, e, { toggleBody: !0 });
           case "CLOSE_BODY":
-            return wy({}, e, { toggleBody: !1 });
+            return fy({}, e, { toggleBody: !1 });
           case "OPEN_SMALL":
-            return wy({}, e, { toggleSmall: !0 });
+            return fy({}, e, { toggleSmall: !0 });
           case "CLOSE_SMALL":
-            return wy({}, e, { toggleSmall: !1 });
+            return fy({}, e, { toggleSmall: !1 });
           case "OPEN_LARGE":
-            return wy({}, e, { toggleLarge: !0 });
+            return fy({}, e, { toggleLarge: !0 });
           case "CLOSE_LARGE":
-            return wy({}, e, { toggleLarge: !1 });
+            return fy({}, e, { toggleLarge: !1 });
           case "OPEN_GRID":
-            return wy({}, e, { toggleGrid: !0 });
+            return fy({}, e, { toggleGrid: !0 });
           case "CLOSE_GRID":
-            return wy({}, e, { toggleGrid: !1 });
+            return fy({}, e, { toggleGrid: !1 });
           case "OPEN_INPUT_MODAL":
-            return wy({}, e, { toggleInputModal: !0 });
+            return fy({}, e, { toggleInputModal: !0 });
           case "CLOSE_INPUT_MODAL":
-            return wy({}, e, { toggleInputModal: !1 });
+            return fy({}, e, { toggleInputModal: !1 });
           default:
             return null;
         }
       };
-      function Py() {
-        var e = vy(),
-          a = n.a.useReducer(Cy, {
+      function by() {
+        var e = Ny(),
+          a = n.a.useReducer(yy, {
             toggleModal: !1,
             toggleBody: !1,
             toggleSmall: !1,
@@ -26832,13 +26814,13 @@
                           Ma.a,
                           null,
                           n.a.createElement(
-                            by.a,
+                            xy.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          Ty.a,
+                          hy.a,
                           null,
                           n.a.createElement(
                             fe,
@@ -26893,9 +26875,9 @@
                           Ma.a,
                           null,
                           n.a.createElement(
-                            by.a,
+                            xy.a,
                             null,
-                            Object(yy.a)(new Array(50))
+                            Object(gy.a)(new Array(50))
                               .map(function() {
                                 return "Cras mattis consectetur purus sit amet fermentum.\nCras justo odio, dapibus ac facilisis in, egestas eget quam.\nMorbi leo risus, porta ac consectetur ac, vestibulum at eros.\nPraesent commodo cursus magna, vel scelerisque nisl consectetur et.";
                               })
@@ -26903,7 +26885,7 @@
                           )
                         ),
                         n.a.createElement(
-                          Ty.a,
+                          hy.a,
                           null,
                           n.a.createElement(
                             fe,
@@ -26941,7 +26923,7 @@
                       { block: !0 },
                       "To appoint modal's width size, equal maxWidth attribute to one of values: ",
                       n.a.createElement(
-                        Qt,
+                        zt,
                         { row: !0, inline: !0 },
                         "xs, sm, md, lg, xl"
                       )
@@ -26981,13 +26963,13 @@
                           Ma.a,
                           null,
                           n.a.createElement(
-                            by.a,
+                            xy.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          Ty.a,
+                          hy.a,
                           null,
                           n.a.createElement(
                             fe,
@@ -27044,13 +27026,13 @@
                           Ma.a,
                           null,
                           n.a.createElement(
-                            by.a,
+                            xy.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          Ty.a,
+                          hy.a,
                           null,
                           n.a.createElement(
                             fe,
@@ -27088,7 +27070,7 @@
                       Ie,
                       { block: !0 },
                       "Form dialogs allow users to fill out form fields within a dialog. For example, if your site prompts for potential subscribers to fill in their email address, they can fill out the email field and touch ",
-                      n.a.createElement(Qt, { row: !0, inline: !0 }, "Submit")
+                      n.a.createElement(zt, { row: !0, inline: !0 }, "Submit")
                     ),
                     n.a.createElement(
                       y.a,
@@ -27122,7 +27104,7 @@
                           Ma.a,
                           null,
                           n.a.createElement(
-                            by.a,
+                            xy.a,
                             null,
                             "To subscribe to this website, please enter your email address here. We will send updates occasionally."
                           ),
@@ -27136,7 +27118,7 @@
                           })
                         ),
                         n.a.createElement(
-                          Ty.a,
+                          hy.a,
                           null,
                           n.a.createElement(
                             fe,
@@ -27177,13 +27159,13 @@
                   "Utilize the Material UI grid system within a modal by nesting",
                   " ",
                   n.a.createElement(
-                    Qt,
+                    zt,
                     { row: !0, inline: !0 },
                     "<Grid container>"
                   ),
                   " within the",
                   " ",
-                  n.a.createElement(Qt, { row: !0, inline: !0 }, "<Dialog>"),
+                  n.a.createElement(zt, { row: !0, inline: !0 }, "<Dialog>"),
                   ". Then, use the normal grid system classes as you would anywhere else."
                 ),
                 n.a.createElement(
@@ -27208,7 +27190,7 @@
                       f.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         '\n  <Grid container>\n    <Box display="flex" flexDirection="column">\n      <Box display="flex" flexDirection="row" justifyContent="flex-end">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n      </Box>\n      <Box display="flex" flexDirection="row" justifyContent="flex-around">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n      </Box>\n      <Box display="flex" flexDirection="row" justifyContent="flex-between">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n        <Grid item xs={3}>3</Grid>Code\n      </Box>\n    </Box>\n  </Grid>\n                  '
                       )
@@ -27236,7 +27218,7 @@
                     Ma.a,
                     null,
                     n.a.createElement(
-                      by.a,
+                      xy.a,
                       { id: "alert-dialog-description", component: "div" },
                       n.a.createElement(
                         y.a,
@@ -27360,7 +27342,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Ty.a,
+                    hy.a,
                     null,
                     n.a.createElement(
                       fe,
@@ -27390,11 +27372,11 @@
           )
         );
       }
-      var Oy = t(468),
-        Sy = t.n(Oy),
-        ky = t(224),
-        By = t.n(ky),
-        My = Object(D.a)(function(e) {
+      var Ty = t(461),
+        vy = t.n(Ty),
+        Ay = t(223),
+        wy = t.n(Ay),
+        Cy = Object(D.a)(function(e) {
           return {
             root: { flexGrow: 1 },
             menuButton: { marginRight: e.spacing(2) },
@@ -27448,7 +27430,7 @@
             }
           };
         });
-      function jy() {
+      function Py() {
         var e = n.a.useState(null),
           a = Object(u.a)(e, 2),
           t = a[0],
@@ -27461,7 +27443,7 @@
           s = Object(u.a)(i, 2),
           o = s[0],
           E = s[1],
-          p = My();
+          p = Cy();
         return n.a.createElement(
           "div",
           null,
@@ -27499,7 +27481,7 @@
                             color: "inherit",
                             "aria-label": "menu"
                           },
-                          n.a.createElement(By.a, null)
+                          n.a.createElement(wy.a, null)
                         ),
                         n.a.createElement(
                           Ie,
@@ -27528,7 +27510,7 @@
                       f.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Qt,
+                        zt,
                         null,
                         '\n  <AppBar>\n    <Toolbar>\n      <IconButton>\n        <MenuIcon />\n      </IconButton>\n      <Typography variant="h6">\n        Nav\n      </Typography>\n      <Button color="inherit">Link</Button>\n      <Button color="inherit">Link2</Button>\n      <Button color="inherit">Another Link</Button>\n      <Button disabled>Disabled Link</Button>\n    </Toolbar>\n  </AppBar>\n                  '
                       )
@@ -27553,7 +27535,7 @@
                           color: "inherit",
                           "aria-label": "menu"
                         },
-                        n.a.createElement(By.a, null)
+                        n.a.createElement(wy.a, null)
                       ),
                       n.a.createElement(
                         Ie,
@@ -27571,7 +27553,7 @@
                           },
                           color: "inherit"
                         },
-                        n.a.createElement(Sy.a, null)
+                        n.a.createElement(vy.a, null)
                       ),
                       n.a.createElement(
                         V.a,
@@ -27633,7 +27615,7 @@
                             color: "inherit",
                             "aria-label": "menu"
                           },
-                          n.a.createElement(By.a, null)
+                          n.a.createElement(wy.a, null)
                         ),
                         n.a.createElement(
                           Ie,
@@ -27678,8 +27660,8 @@
           )
         );
       }
-      var Ly = t(1262),
-        Dy = Object(D.a)(function(e) {
+      var Oy = t(1251),
+        Sy = Object(D.a)(function(e) {
           return {
             button: {
               boxShadow: e.customShadows.widget,
@@ -27691,7 +27673,7 @@
             typography: { padding: e.spacing(2) }
           };
         });
-      function Fy(e, a) {
+      function ky(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -27703,16 +27685,16 @@
         }
         return t;
       }
-      function Ry(e) {
+      function By(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? Fy(t, !0).forEach(function(a) {
+            ? ky(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : Fy(t).forEach(function(a) {
+            : ky(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -27722,79 +27704,79 @@
         }
         return e;
       }
-      var Wy = function(e, a) {
+      var My = function(e, a) {
         switch (a.type) {
           case "OPEN_TOOLTIP":
-            return Ry({}, e, { tooltipOpened: !0 });
+            return By({}, e, { tooltipOpened: !0 });
           case "CLOSE_TOOLTIP":
-            return Ry({}, e, { tooltipOpened: !1 });
+            return By({}, e, { tooltipOpened: !1 });
           case "OPEN_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               togglePopover: !0,
               popoverSibling: a.setSibling
             });
           case "CLOSE_POPOVER":
-            return Ry({}, e, { togglePopover: !1, popoverSibling: null });
+            return By({}, e, { togglePopover: !1, popoverSibling: null });
           case "OPEN_HOVER_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleHoverPopover: !0,
               hoverPopoverSibling: a.setHoverPopoverSibling
             });
           case "CLOSE_HOVER_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleHoverPopover: !1,
               hoverPopoverSibling: null
             });
           case "OPEN_TOP_TOOLTIP":
-            return Ry({}, e, { toggleTopTooltip: !0 });
+            return By({}, e, { toggleTopTooltip: !0 });
           case "CLOSE_TOP_TOOLTIP":
-            return Ry({}, e, { toggleTopTooltip: !1 });
+            return By({}, e, { toggleTopTooltip: !1 });
           case "OPEN_RIGHT_TOOLTIP":
-            return Ry({}, e, { toggleRightTooltip: !0 });
+            return By({}, e, { toggleRightTooltip: !0 });
           case "CLOSE_RIGHT_TOOLTIP":
-            return Ry({}, e, { toggleRightTooltip: !1 });
+            return By({}, e, { toggleRightTooltip: !1 });
           case "OPEN_BOTTOM_TOOLTIP":
-            return Ry({}, e, { toggleBottomTooltip: !0 });
+            return By({}, e, { toggleBottomTooltip: !0 });
           case "CLOSE_BOTTOM_TOOLTIP":
-            return Ry({}, e, { toggleBottomTooltip: !1 });
+            return By({}, e, { toggleBottomTooltip: !1 });
           case "OPEN_LEFT_TOOLTIP":
-            return Ry({}, e, { toggleLeftTooltip: !0 });
+            return By({}, e, { toggleLeftTooltip: !0 });
           case "CLOSE_LEFT_TOOLTIP":
-            return Ry({}, e, { toggleLeftTooltip: !1 });
+            return By({}, e, { toggleLeftTooltip: !1 });
           case "OPEN_TOP_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleTopPopover: !0,
               topPopoverSibling: a.setTopPopoverSibling
             });
           case "CLOSE_TOP_POPOVER":
-            return Ry({}, e, { toggleTopPopover: !1, topPopoverSibling: null });
+            return By({}, e, { toggleTopPopover: !1, topPopoverSibling: null });
           case "OPEN_RIGHT_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleRightPopover: !0,
               rightPopoverSibling: a.setRightPopoverSibling
             });
           case "CLOSE_RIGHT_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleRightPopover: !1,
               rightPopoverSibling: null
             });
           case "OPEN_BOTTOM_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleBottomPopover: !0,
               bottomPopoverSibling: a.setBottomPopoverSibling
             });
           case "CLOSE_BOTTOM_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleBottomPopover: !1,
               bottomPopoverSibling: null
             });
           case "OPEN_LEFT_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleLeftPopover: !0,
               leftPopoverSibling: a.setLeftPopoverSibling
             });
           case "CLOSE_LEFT_POPOVER":
-            return Ry({}, e, {
+            return By({}, e, {
               toggleLeftPopover: !1,
               leftPopoverSibling: null
             });
@@ -27802,9 +27784,9 @@
             return {};
         }
       };
-      function Hy() {
-        var e = Dy(),
-          a = n.a.useReducer(Wy, !1),
+      function jy() {
+        var e = Sy(),
+          a = n.a.useReducer(My, !1),
           t = Object(u.a)(a, 2),
           l = t[0],
           r = t[1];
@@ -27831,7 +27813,7 @@
                     y.a,
                     { mt: 2, display: "flex" },
                     n.a.createElement(
-                      Ly.a,
+                      Oy.a,
                       {
                         onClickAway: function() {
                           return r({ type: "CLOSE_TOOLTIP" });
@@ -28013,7 +27995,7 @@
                   y.a,
                   { mt: 2, display: "flex" },
                   n.a.createElement(
-                    Ly.a,
+                    Oy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_TOP_TOOLTIP" });
@@ -28053,7 +28035,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Ly.a,
+                    Oy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_RIGHT_TOOLTIP" });
@@ -28093,7 +28075,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Ly.a,
+                    Oy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_BOTTOM_TOOLTIP" });
@@ -28133,7 +28115,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Ly.a,
+                    Oy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_LEFT_TOOLTIP" });
@@ -28375,13 +28357,13 @@
           )
         );
       }
-      var zy = t(2202),
-        Gy = t(1267),
-        Vy = t(1266),
-        Uy = t(302),
-        Yy = t.n(Uy),
-        Ky = t(26),
-        Qy = Object(D.a)(function(e) {
+      var Ly = t(2191),
+        Dy = t(1256),
+        Fy = t(1255),
+        Ry = t(295),
+        Wy = t.n(Ry),
+        Hy = t(26),
+        zy = Object(D.a)(function(e) {
           return {
             expansion: {
               backgroundColor: e.palette.primary.light,
@@ -28389,7 +28371,7 @@
             }
           };
         });
-      function Jy(e) {
+      function Gy(e) {
         var a = e.children,
           t = e.value,
           l = e.index,
@@ -28409,15 +28391,15 @@
           n.a.createElement(y.a, { p: 3 }, a)
         );
       }
-      function qy(e) {
+      function Vy(e) {
         return {
           id: "full-width-tab-".concat(e),
           "aria-controls": "full-width-tabpanel-".concat(e)
         };
       }
-      function Zy() {
-        var e = Qy(),
-          a = Object(Ky.a)(),
+      function Uy() {
+        var e = zy(),
+          a = Object(Hy.a)(),
           t = n.a.useState(0),
           l = Object(u.a)(t, 2),
           r = l[0],
@@ -28463,20 +28445,20 @@
                     },
                     n.a.createElement(
                       I.a,
-                      Object.assign({ label: "Item One" }, qy(0))
+                      Object.assign({ label: "Item One" }, Vy(0))
                     ),
                     n.a.createElement(
                       I.a,
-                      Object.assign({ label: "Item Two" }, qy(1))
+                      Object.assign({ label: "Item Two" }, Vy(1))
                     ),
                     n.a.createElement(
                       I.a,
-                      Object.assign({ label: "Item Three" }, qy(2))
+                      Object.assign({ label: "Item Three" }, Vy(2))
                     )
                   )
                 ),
                 n.a.createElement(
-                  Yy.a,
+                  Wy.a,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
@@ -28485,7 +28467,7 @@
                     }
                   },
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: r, index: 0, dir: a.direction },
                     "Tabs-enabled widget You will never know exactly how something will go until you try it. You can think three hundred times and still have no precise result. If you see attractive girl all you need to do is to go and ask her to give you her phone. You don\u2019t need to think about HOW it can turn out. All you have to do is to GO and DO IT. It should be super-fast and easy. No hesitation. You ask me: \u201cWhat to do with these fearful thoughts preventing me from doing that?\u201d The answer is to ignore them, because they can\u2019t disappear immediately. The same thing is for startups and ideas. If you have an idea right away after it appears in your mind you should go and make a first step to implement it.",
                     n.a.createElement(
@@ -28512,12 +28494,12 @@
                     )
                   ),
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: r, index: 1, dir: a.direction },
                     "Why don't use Lore Ipsum? I think if some one says don't use lore ipsum it's very controversial point. I think the opposite actually. Everyone knows what is lore ipsum - it is easy to understand if text is lore ipsum."
                   ),
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: r, index: 2, dir: a.direction },
                     "If you will think too much it will sink in the swamp of never implemented plans and ideas or will just go away or will be implemented by someone else. 5 months of doing everything to achieve nothing. You'll automatically skip - because you know - it's just non-informative stub. But what if there some text like this one?"
                   )
@@ -28558,9 +28540,9 @@
                       Object.assign(
                         {
                           label: "Item One",
-                          icon: n.a.createElement(qu.a, null)
+                          icon: n.a.createElement(Vu.a, null)
                         },
-                        qy(0)
+                        Vy(0)
                       )
                     ),
                     n.a.createElement(
@@ -28568,9 +28550,9 @@
                       Object.assign(
                         {
                           label: "Item Two",
-                          icon: n.a.createElement(qu.a, null)
+                          icon: n.a.createElement(Vu.a, null)
                         },
-                        qy(1)
+                        Vy(1)
                       )
                     ),
                     n.a.createElement(
@@ -28578,15 +28560,15 @@
                       Object.assign(
                         {
                           label: "Item Three",
-                          icon: n.a.createElement(qu.a, null)
+                          icon: n.a.createElement(Vu.a, null)
                         },
-                        qy(2)
+                        Vy(2)
                       )
                     )
                   )
                 ),
                 n.a.createElement(
-                  Yy.a,
+                  Wy.a,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: s,
@@ -28595,7 +28577,7 @@
                     }
                   },
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: s, index: 0, dir: a.direction },
                     "Tabs-enabled widget You will never know exactly how something will go until you try it. You can think three hundred times and still have no precise result. If you see attractive girl all you need to do is to go and ask her to give you her phone. You don\u2019t need to think about HOW it can turn out. All you have to do is to GO and DO IT. It should be super-fast and easy. No hesitation. You ask me: \u201cWhat to do with these fearful thoughts preventing me from doing that?\u201d The answer is to ignore them, because they can\u2019t disappear immediately. The same thing is for startups and ideas. If you have an idea right away after it appears in your mind you should go and make a first step to implement it.",
                     n.a.createElement(
@@ -28622,12 +28604,12 @@
                     )
                   ),
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: s, index: 1, dir: a.direction },
                     "Why don't use Lore Ipsum? I think if some one says don't use lore ipsum it's very controversial point. I think the opposite actually. Everyone knows what is lore ipsum - it is easy to understand if text is lore ipsum."
                   ),
                   n.a.createElement(
-                    Jy,
+                    Gy,
                     { value: s, index: 2, dir: a.direction },
                     "If you will think too much it will sink in the swamp of never implemented plans and ideas or will just go away or will be implemented by someone else. 5 months of doing everything to achieve nothing. You'll automatically skip - because you know - it's just non-informative stub. But what if there some text like this one?"
                   )
@@ -28645,10 +28627,10 @@
                   inheritHeight: !0
                 },
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   null,
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel1a-content",
@@ -28657,7 +28639,7 @@
                     n.a.createElement(Ie, null, "Expansion Panel 1")
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Fy.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -28667,10 +28649,10 @@
                   )
                 ),
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   null,
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel2a-content",
@@ -28679,7 +28661,7 @@
                     n.a.createElement(Ie, null, "Expansion Panel 2")
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Fy.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -28689,10 +28671,10 @@
                   )
                 ),
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   { disabled: !0 },
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel3a-content",
@@ -28714,10 +28696,10 @@
                   inheritHeight: !0
                 },
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   { classes: { root: e.expansion } },
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel1a-content",
@@ -28726,7 +28708,7 @@
                     n.a.createElement(Ie, null, "Expansion Panel 1")
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Fy.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -28736,10 +28718,10 @@
                   )
                 ),
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   { classes: { root: e.expansion } },
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel2a-content",
@@ -28748,7 +28730,7 @@
                     n.a.createElement(Ie, null, "Expansion Panel 2")
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Fy.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -28758,10 +28740,10 @@
                   )
                 ),
                 n.a.createElement(
-                  zy.a,
+                  Ly.a,
                   { disabled: !0 },
                   n.a.createElement(
-                    Gy.a,
+                    Dy.a,
                     {
                       expandIcon: n.a.createElement(Aa.a, null),
                       "aria-controls": "panel3a-content",
@@ -28775,8 +28757,8 @@
           )
         );
       }
-      var _y = t(1120),
-        Xy = Object(D.a)(function(e) {
+      var Yy = t(1109),
+        Ky = Object(D.a)(function(e) {
           return {
             root: { "&:hover": { backgroundColor: "transparent" } },
             icon: {
@@ -28815,32 +28797,32 @@
             horizontalFormTop: { paddingTop: e.spacing(2) }
           };
         }),
-        $y = t(470),
+        Qy = t(463),
+        Jy = t.n(Qy),
+        qy = t(462),
+        Zy = t.n(qy),
+        _y = t(464),
+        Xy = t.n(_y),
+        $y = t(465),
         eb = t.n($y),
-        ab = t(469),
+        ab = t(466),
         tb = t.n(ab),
-        lb = t(471),
+        lb = t(467),
         nb = t.n(lb),
-        rb = t(472),
-        mb = t.n(rb),
-        cb = t(473),
-        ib = t.n(cb),
-        sb = t(474),
-        ob = t.n(sb),
-        Eb = Object(ue.a)({
+        rb = Object(ue.a)({
           root: { color: "green", "&$checked": { color: "green" } }
         })(function(e) {
           return n.a.createElement(
-            Et.a,
+            rt.a,
             Object.assign({ color: "default" }, e)
           );
         }),
-        db = Object(ue.a)({
+        mb = Object(ue.a)({
           root: { color: "green", "&$checked": { color: "green" } }
         })(function(e) {
           return n.a.createElement(O.a, Object.assign({ color: "default" }, e));
         }),
-        ub = Object(ue.a)(function(e) {
+        cb = Object(ue.a)(function(e) {
           return {
             root: {
               "& .MuiInputLabel-root": { color: "green" },
@@ -28857,14 +28839,14 @@
         })(function(e) {
           return n.a.createElement(ba.a, e);
         }),
-        pb = [
+        ib = [
           { id: 0, value: "Action" },
           { id: 1, value: "Another action" },
           { id: 2, value: "Something else here" },
           { id: 3, type: "divider" },
           { id: 4, value: "Separated link" }
         ];
-      function gb() {
+      function sb() {
         var e = n.a.useState({ default: !1, horizontal: !1 }),
           a = Object(u.a)(e, 2),
           t = a[0],
@@ -28876,7 +28858,7 @@
           s = function(e) {
             i(e.target.value);
           },
-          o = Xy();
+          o = Ky();
         return n.a.createElement(
           "div",
           null,
@@ -28936,7 +28918,7 @@
                         style: { width: "100%" }
                       }),
                       n.a.createElement(
-                        _y.a,
+                        Yy.a,
                         { id: "component-helper-text" },
                         "Some important helper text"
                       )
@@ -29004,7 +28986,7 @@
                           startAdornment: n.a.createElement(
                             Ra.a,
                             { position: "start" },
-                            n.a.createElement(El.a, null)
+                            n.a.createElement(rl.a, null)
                           )
                         },
                         style: { width: "100%" }
@@ -29028,7 +29010,7 @@
                           startAdornment: n.a.createElement(
                             Ra.a,
                             { position: "start" },
-                            n.a.createElement(MI.a, null)
+                            n.a.createElement(CI.a, null)
                           )
                         },
                         style: { width: "100%" }
@@ -29084,7 +29066,7 @@
                           startAdornment: n.a.createElement(
                             Ra.a,
                             { position: "start" },
-                            n.a.createElement(ol.a, null)
+                            n.a.createElement(nl.a, null)
                           ),
                           endAdornment: n.a.createElement(
                             Ra.a,
@@ -29210,10 +29192,10 @@
                     { item: !0 },
                     "If",
                     " ",
-                    n.a.createElement(Qt, { row: !0, inline: !0 }, "dense"),
+                    n.a.createElement(zt, { row: !0, inline: !0 }, "dense"),
                     "or",
                     " ",
-                    n.a.createElement(Qt, { row: !0, inline: !0 }, "normal"),
+                    n.a.createElement(zt, { row: !0, inline: !0 }, "normal"),
                     ", will adjust vertical spacing of this and contained components.",
                     n.a.createElement(ba.a, {
                       label: 'margin="dense"',
@@ -29259,14 +29241,14 @@
                     f.a,
                     { xs: 6, item: !0 },
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         labelId: "demo-simple-select-label",
                         id: "demo-simple-select",
                         value: c,
                         onChange: s
                       },
-                      pb.map(function(e) {
+                      ib.map(function(e) {
                         return "divider" === e.type
                           ? n.a.createElement(Na.a, { key: e.id })
                           : n.a.createElement(
@@ -29294,14 +29276,14 @@
                     f.a,
                     { xs: 6, item: !0 },
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         labelId: "demo-simple-select-label",
                         id: "demo-simple-select",
                         value: c,
                         onChange: s
                       },
-                      pb.map(function(e) {
+                      ib.map(function(e) {
                         return "divider" === e.type
                           ? n.a.createElement(Na.a, { key: e.id })
                           : n.a.createElement(
@@ -29337,7 +29319,7 @@
                     f.a,
                     { item: !0 },
                     n.a.createElement(P.a, {
-                      control: n.a.createElement(Et.a, {
+                      control: n.a.createElement(rt.a, {
                         disabled: !0,
                         defaultChecked: t.default,
                         onChange: function(e) {
@@ -29348,7 +29330,7 @@
                       label: "Disabled"
                     }),
                     n.a.createElement(P.a, {
-                      control: n.a.createElement(Eb, {
+                      control: n.a.createElement(rb, {
                         defaultChecked: t.default,
                         onChange: function(e) {
                           return l(Object(d.a)({}, e.target.value, !t.default));
@@ -29358,17 +29340,17 @@
                       label: "Custom color"
                     }),
                     n.a.createElement(P.a, {
-                      control: n.a.createElement(Et.a, {
-                        icon: n.a.createElement(tb.a, null),
-                        checkedIcon: n.a.createElement(eb.a, null),
+                      control: n.a.createElement(rt.a, {
+                        icon: n.a.createElement(Zy.a, null),
+                        checkedIcon: n.a.createElement(Jy.a, null),
                         value: "checkedH"
                       }),
                       label: "Custom icon"
                     }),
                     n.a.createElement(P.a, {
-                      control: n.a.createElement(Et.a, {
-                        icon: n.a.createElement(nb.a, { fontSize: "small" }),
-                        checkedIcon: n.a.createElement(mb.a, {
+                      control: n.a.createElement(rt.a, {
+                        icon: n.a.createElement(Xy.a, { fontSize: "small" }),
+                        checkedIcon: n.a.createElement(eb.a, {
                           fontSize: "small"
                         }),
                         value: "checkedI"
@@ -29393,7 +29375,7 @@
                       label: "Disabled"
                     }),
                     n.a.createElement(P.a, {
-                      control: n.a.createElement(db, {
+                      control: n.a.createElement(mb, {
                         defaultChecked: t.default,
                         onChange: function(e) {
                           return l(Object(d.a)({}, e.target.value, !t.default));
@@ -29414,8 +29396,8 @@
                         color: "default",
                         name: "radio-button-demo",
                         inputProps: { "aria-label": "E" },
-                        icon: n.a.createElement(ib.a, { fontSize: "small" }),
-                        checkedIcon: n.a.createElement(ob.a, {
+                        icon: n.a.createElement(tb.a, { fontSize: "small" }),
+                        checkedIcon: n.a.createElement(nb.a, {
                           fontSize: "small"
                         })
                       }),
@@ -29455,7 +29437,7 @@
                         variant: "outlined",
                         fullWidth: !0
                       }),
-                      n.a.createElement(ub, {
+                      n.a.createElement(cb, {
                         label: "Success input",
                         placeholder: "Input with success",
                         margin: "normal",
@@ -29504,7 +29486,7 @@
           )
         );
       }
-      var xb = function() {
+      var ob = function() {
           var e = n.a.useRef(null),
             a = n.a.useState(!1),
             t = Object(u.a)(a, 2),
@@ -29622,13 +29604,13 @@
             )
           );
         },
-        hb = t(1256),
-        Nb = t(1259),
-        Ib = t(1258),
-        fb = t(1257),
-        yb = t(1261),
-        bb = t(1260),
-        Tb = Object(D.a)(function(e) {
+        Eb = t(1245),
+        db = t(1248),
+        ub = t(1247),
+        pb = t(1246),
+        gb = t(1250),
+        xb = t(1249),
+        hb = Object(D.a)(function(e) {
           return {
             card: {
               minWidth: "100%",
@@ -29645,17 +29627,17 @@
             cardActions: { padding: e.spacing(2) }
           };
         }),
-        vb = t(475),
-        Ab = t.n(vb),
-        wb = t(476),
-        Cb = t.n(wb),
-        Pb = t(221),
-        Ob = t.n(Pb),
-        Sb = t(477),
-        kb = t.n(Sb);
-      function Bb() {
-        var e = { card: Ab.a },
-          a = Tb(e);
+        Nb = t(468),
+        Ib = t.n(Nb),
+        fb = t(469),
+        yb = t.n(fb),
+        bb = t(220),
+        Tb = t.n(bb),
+        vb = t(470),
+        Ab = t.n(vb);
+      function wb() {
+        var e = { card: Ib.a },
+          a = hb(e);
         return n.a.createElement(
           "div",
           null,
@@ -29666,10 +29648,10 @@
               f.a,
               { item: !0, md: 12, xs: 12 },
               n.a.createElement(
-                hb.a,
+                Eb.a,
                 { className: a.card },
                 n.a.createElement(
-                  Nb.a,
+                  db.a,
                   null,
                   n.a.createElement(
                     Ie,
@@ -29692,7 +29674,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Ib.a,
+                  ub.a,
                   null,
                   n.a.createElement(
                     fe,
@@ -29706,18 +29688,18 @@
               f.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                hb.a,
+                Eb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
-                  fb.a,
+                  pb.a,
                   null,
-                  n.a.createElement(yb.a, {
+                  n.a.createElement(gb.a, {
                     className: a.media,
-                    image: Cb.a,
+                    image: yb.a,
                     title: "Contemplative Reptile"
                   }),
                   n.a.createElement(
-                    Nb.a,
+                    db.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -29736,7 +29718,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Ib.a,
+                  ub.a,
                   { classes: { root: a.cardActions } },
                   n.a.createElement(
                     fe,
@@ -29761,10 +29743,10 @@
                   y.a,
                   { mb: 6 },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: a.cardMedia },
                     n.a.createElement(
-                      Nb.a,
+                      db.a,
                       null,
                       n.a.createElement(
                         Ie,
@@ -29783,11 +29765,11 @@
                         n.a.createElement(
                           y.a,
                           null,
-                          n.a.createElement(uh.a, { className: a.starIcon }),
-                          n.a.createElement(uh.a, { className: a.starIcon }),
-                          n.a.createElement(uh.a, { className: a.starIcon }),
-                          n.a.createElement(uh.a, { className: a.starIcon }),
-                          n.a.createElement(uh.a, { className: a.starIcon })
+                          n.a.createElement(ch.a, { className: a.starIcon }),
+                          n.a.createElement(ch.a, { className: a.starIcon }),
+                          n.a.createElement(ch.a, { className: a.starIcon }),
+                          n.a.createElement(ch.a, { className: a.starIcon }),
+                          n.a.createElement(ch.a, { className: a.starIcon })
                         ),
                         n.a.createElement(
                           y.a,
@@ -29807,7 +29789,7 @@
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       { classes: { root: a.cardActions } },
                       n.a.createElement(
                         fe,
@@ -29825,9 +29807,9 @@
                   y.a,
                   null,
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: a.cardMedia },
-                    n.a.createElement(bb.a, {
+                    n.a.createElement(xb.a, {
                       avatar: n.a.createElement(
                         ye,
                         { "aria-label": "", color: "primary" },
@@ -29841,13 +29823,13 @@
                       title: "Weekly Inspiration",
                       subheader: "September 14, 2016"
                     }),
-                    n.a.createElement(yb.a, {
+                    n.a.createElement(gb.a, {
                       className: a.media,
-                      image: Ob.a,
+                      image: Tb.a,
                       title: "Paella dish"
                     }),
                     n.a.createElement(
-                      Nb.a,
+                      db.a,
                       null,
                       n.a.createElement(
                         Ie,
@@ -29860,17 +29842,17 @@
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       { disableSpacing: !0 },
                       n.a.createElement(
                         v.a,
                         { "aria-label": "add to favorites" },
-                        n.a.createElement(Ii.a, null)
+                        n.a.createElement(ui.a, null)
                       ),
                       n.a.createElement(
                         v.a,
                         { "aria-label": "share" },
-                        n.a.createElement(Nx.a, null)
+                        n.a.createElement(dx.a, null)
                       )
                     )
                   )
@@ -29881,18 +29863,18 @@
               f.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                hb.a,
+                Eb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
-                  fb.a,
+                  pb.a,
                   null,
-                  n.a.createElement(yb.a, {
+                  n.a.createElement(gb.a, {
                     className: a.media,
-                    image: kb.a,
+                    image: Ab.a,
                     title: "Technology"
                   }),
                   n.a.createElement(
-                    Nb.a,
+                    db.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -29912,7 +29894,7 @@
                 ),
                 n.a.createElement("hr", null),
                 n.a.createElement(
-                  Ib.a,
+                  ub.a,
                   { classes: { root: a.cardActions } },
                   n.a.createElement(
                     Ie,
@@ -29935,9 +29917,9 @@
           )
         );
       }
-      var Mb = t(200),
-        jb = t(395),
-        Lb = Object(Mb.a)(function(e) {
+      var Cb = t(199),
+        Pb = t(389),
+        Ob = Object(Cb.a)(function(e) {
           return {
             root: {
               flexShrink: 0,
@@ -29946,9 +29928,9 @@
             }
           };
         });
-      function Db(e) {
-        var a = Lb(),
-          t = Object(Ky.a)(),
+      function Sb(e) {
+        var a = Ob(),
+          t = Object(Hy.a)(),
           l = e.count,
           r = e.page,
           m = e.rowsPerPage,
@@ -29966,8 +29948,8 @@
               "aria-label": "first page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(dE.a, null)
-              : n.a.createElement(Zi.a, null)
+              ? n.a.createElement(mE.a, null)
+              : n.a.createElement(Ui.a, null)
           ),
           n.a.createElement(
             v.a,
@@ -29979,8 +29961,8 @@
               "aria-label": "previous page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(qo.a, null)
-              : n.a.createElement(Jo.a, null)
+              ? n.a.createElement(Vo.a, null)
+              : n.a.createElement(Go.a, null)
           ),
           n.a.createElement(
             v.a,
@@ -29992,8 +29974,8 @@
               "aria-label": "next page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(Jo.a, null)
-              : n.a.createElement(qo.a, null)
+              ? n.a.createElement(Go.a, null)
+              : n.a.createElement(Vo.a, null)
           ),
           n.a.createElement(
             v.a,
@@ -30005,50 +29987,50 @@
               "aria-label": "last page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(Zi.a, null)
-              : n.a.createElement(dE.a, null)
+              ? n.a.createElement(Ui.a, null)
+              : n.a.createElement(mE.a, null)
           )
         );
       }
-      var Fb = [
-        Rb("Cupcake", 305, 3.7),
-        Rb("Donut", 452, 25),
-        Rb("Eclair", 262, 16),
-        Rb("Frozen yoghurt", 159, 6),
-        Rb("Gingerbread", 356, 16),
-        Rb("Honeycomb", 408, 3.2),
-        Rb("Ice cream sandwich", 237, 9),
-        Rb("Jelly Bean", 375, 0),
-        Rb("KitKat", 518, 26),
-        Rb("Lollipop", 392, 0.2),
-        Rb("Marshmallow", 318, 0),
-        Rb("Nougat", 360, 19),
-        Rb("Oreo", 437, 18)
+      var kb = [
+        Bb("Cupcake", 305, 3.7),
+        Bb("Donut", 452, 25),
+        Bb("Eclair", 262, 16),
+        Bb("Frozen yoghurt", 159, 6),
+        Bb("Gingerbread", 356, 16),
+        Bb("Honeycomb", 408, 3.2),
+        Bb("Ice cream sandwich", 237, 9),
+        Bb("Jelly Bean", 375, 0),
+        Bb("KitKat", 518, 26),
+        Bb("Lollipop", 392, 0.2),
+        Bb("Marshmallow", 318, 0),
+        Bb("Nougat", 360, 19),
+        Bb("Oreo", 437, 18)
       ].sort(function(e, a) {
         return e.calories < a.calories ? -1 : 1;
       });
-      function Rb(e, a, t, l, n) {
+      function Bb(e, a, t, l, n) {
         return { name: e, calories: a, fat: t, carbs: l, protein: n };
       }
-      var Wb = [
-        Rb("Cupcake", 305, 3.7, 67, 4.3),
-        Rb("Donut", 452, 25, 51, 4.9),
-        Rb("Eclair", 262, 16, 24, 6),
-        Rb("Frozen yoghurt", 159, 6, 24, 4),
-        Rb("Gingerbread", 356, 16, 49, 3.9),
-        Rb("Honeycomb", 408, 3.2, 87, 6.5),
-        Rb("Ice cream sandwich", 237, 9, 37, 4.3),
-        Rb("Jelly Bean", 375, 0, 94, 0),
-        Rb("KitKat", 518, 26, 65, 7),
-        Rb("Lollipop", 392, 0.2, 98, 0),
-        Rb("Marshmallow", 318, 0, 81, 2),
-        Rb("Nougat", 360, 19, 9, 37),
-        Rb("Oreo", 437, 18, 63, 4)
+      var Mb = [
+        Bb("Cupcake", 305, 3.7, 67, 4.3),
+        Bb("Donut", 452, 25, 51, 4.9),
+        Bb("Eclair", 262, 16, 24, 6),
+        Bb("Frozen yoghurt", 159, 6, 24, 4),
+        Bb("Gingerbread", 356, 16, 49, 3.9),
+        Bb("Honeycomb", 408, 3.2, 87, 6.5),
+        Bb("Ice cream sandwich", 237, 9, 37, 4.3),
+        Bb("Jelly Bean", 375, 0, 94, 0),
+        Bb("KitKat", 518, 26, 65, 7),
+        Bb("Lollipop", 392, 0.2, 98, 0),
+        Bb("Marshmallow", 318, 0, 81, 2),
+        Bb("Nougat", 360, 19, 9, 37),
+        Bb("Oreo", 437, 18, 63, 4)
       ];
-      function Hb(e, a, t) {
+      function jb(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var zb = [
+      var Lb = [
         {
           id: "name",
           numeric: !1,
@@ -30060,7 +30042,7 @@
         { id: "carbs", numeric: !0, disablePadding: !1, label: "Carbs (g)" },
         { id: "protein", numeric: !0, disablePadding: !1, label: "Protein (g)" }
       ];
-      function Gb(e) {
+      function Db(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -30069,24 +30051,24 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          it.a,
+          tt.a,
           null,
           n.a.createElement(
-            st.a,
+            lt.a,
             null,
             n.a.createElement(
-              ot.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(Et.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
                 inputProps: { "aria-label": "select all desserts" }
               })
             ),
-            zb.map(function(e) {
+            Lb.map(function(e) {
               return n.a.createElement(
-                ot.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "right" : "left",
@@ -30094,7 +30076,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  dt.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -30119,7 +30101,7 @@
           )
         );
       }
-      var Vb = Object(Mb.a)(function(e) {
+      var Fb = Object(Cb.a)(function(e) {
           return {
             root: {
               paddingLeft: e.spacing(2),
@@ -30130,7 +30112,7 @@
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Ct.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -30144,15 +30126,15 @@
             title: { flex: "0 0 auto" }
           };
         }),
-        Ub = Object(Mb.a)(function(e) {
+        Rb = Object(Cb.a)(function(e) {
           return {
             root: { width: "100%", marginTop: e.spacing(3) },
             table: { minWidth: 500 },
             tableWrapper: { overflowX: "auto", marginTop: e.spacing(3) }
           };
         }),
-        Yb = function(e) {
-          var a = Vb(),
+        Wb = function(e) {
+          var a = Fb(),
             t = e.numSelected;
           return n.a.createElement(
             z.a,
@@ -30184,7 +30166,7 @@
                     n.a.createElement(
                       v.a,
                       { "aria-label": "delete" },
-                      n.a.createElement(At.a, null)
+                      n.a.createElement(It.a, null)
                     )
                   )
                 : n.a.createElement(
@@ -30193,13 +30175,13 @@
                     n.a.createElement(
                       v.a,
                       { "aria-label": "filter list" },
-                      n.a.createElement(wt.a, null)
+                      n.a.createElement(ft.a, null)
                     )
                   )
             )
           );
         },
-        Kb = Object(Mb.a)(function(e) {
+        Hb = Object(Cb.a)(function(e) {
           return {
             root: { width: "100%", marginTop: e.spacing(3) },
             paper: { width: "100%", marginBottom: e.spacing(2) },
@@ -30218,8 +30200,8 @@
             }
           };
         });
-      function Qb() {
-        var e = Ub(),
+      function zb() {
+        var e = Rb(),
           a = n.a.useState(0),
           t = Object(u.a)(a, 2),
           l = t[0],
@@ -30228,14 +30210,14 @@
           c = Object(u.a)(m, 2),
           i = c[0],
           s = c[1],
-          o = i - Math.min(i, Fb.length - l * i);
+          o = i - Math.min(i, kb.length - l * i);
         function E(e, a) {
           r(a);
         }
         function d(e) {
           s(parseInt(e.target.value, 10)), r(0);
         }
-        var p = Kb(),
+        var p = Hb(),
           g = n.a.useState("asc"),
           x = Object(u.a)(g, 2),
           h = x[0],
@@ -30256,7 +30238,7 @@
           M = Object(u.a)(B, 2),
           j = M[0],
           L = M[1];
-        var D = j - Math.min(j, Wb.length - S * j);
+        var D = j - Math.min(j, Mb.length - S * j);
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -30274,36 +30256,36 @@
                   { block: !0 },
                   "This example demonstrates the use of",
                   " ",
-                  n.a.createElement(Qt, { inline: !0, row: !0 }, "Checkbox"),
+                  n.a.createElement(zt, { inline: !0, row: !0 }, "Checkbox"),
                   " and clickable rows for selection, with a custom ",
-                  n.a.createElement(Qt, { inline: !0, row: !0 }, "Toolbar"),
+                  n.a.createElement(zt, { inline: !0, row: !0 }, "Toolbar"),
                   ". It uses the ",
                   n.a.createElement(
-                    Qt,
+                    zt,
                     { inline: !0, row: !0 },
                     "TableSortLabel1"
                   ),
                   "component to help style column headings."
                 ),
-                n.a.createElement(Yb, { numSelected: w.length }),
+                n.a.createElement(Wb, { numSelected: w.length }),
                 n.a.createElement(
                   "div",
                   { className: p.tableWrapper },
                   n.a.createElement(
-                    gt.a,
+                    st.a,
                     {
                       className: p.table,
                       "aria-labelledby": "tableTitle",
                       size: "small"
                     },
-                    n.a.createElement(Gb, {
+                    n.a.createElement(Db, {
                       classes: p,
                       numSelected: w.length,
                       order: h,
                       orderBy: b,
                       onSelectAllClick: function(e) {
                         if (e.target.checked) {
-                          var a = Wb.map(function(e) {
+                          var a = Mb.map(function(e) {
                             return e.name;
                           });
                           C(a);
@@ -30312,10 +30294,10 @@
                       onRequestSort: function(e, a) {
                         N(b === a && "desc" === h ? "asc" : "desc"), T(a);
                       },
-                      rowCount: Wb.length
+                      rowCount: Mb.length
                     }),
                     n.a.createElement(
-                      xt.a,
+                      ot.a,
                       null,
                       (function(e, a) {
                         var t = e.map(function(e, a) {
@@ -30331,14 +30313,14 @@
                           })
                         );
                       })(
-                        Wb,
+                        Mb,
                         (function(e, a) {
                           return "desc" === e
                             ? function(e, t) {
-                                return Hb(e, t, a);
+                                return jb(e, t, a);
                               }
                             : function(e, t) {
-                                return -Hb(e, t, a);
+                                return -jb(e, t, a);
                               };
                         })(h, b)
                       )
@@ -30348,7 +30330,7 @@
                             l = ((t = e.name), -1 !== w.indexOf(t)),
                             r = "enhanced-table-checkbox-".concat(a);
                           return n.a.createElement(
-                            st.a,
+                            lt.a,
                             {
                               hover: !0,
                               onClick: function(a) {
@@ -30376,15 +30358,15 @@
                               selected: l
                             },
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { padding: "checkbox" },
-                              n.a.createElement(Et.a, {
+                              n.a.createElement(rt.a, {
                                 checked: l,
                                 inputProps: { "aria-labelledby": r }
                               })
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               {
                                 component: "th",
                                 id: r,
@@ -30394,18 +30376,18 @@
                               e.name
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { align: "right" },
                               e.calories
                             ),
-                            n.a.createElement(ot.a, { align: "right" }, e.fat),
+                            n.a.createElement(nt.a, { align: "right" }, e.fat),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { align: "right" },
                               e.carbs
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { align: "right" },
                               e.protein
                             )
@@ -30413,17 +30395,17 @@
                         }),
                       D > 0 &&
                         n.a.createElement(
-                          st.a,
+                          lt.a,
                           { style: { height: 49 * D } },
-                          n.a.createElement(ot.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     )
                   )
                 ),
-                n.a.createElement(ht.a, {
+                n.a.createElement(Et.a, {
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
-                  count: Wb.length,
+                  count: Mb.length,
                   rowsPerPage: j,
                   page: S,
                   backIconButtonProps: { "aria-label": "previous page" },
@@ -30450,11 +30432,11 @@
                   Ie,
                   { block: !0 },
                   "The ",
-                  n.a.createElement(Qt, { inline: !0, row: !0 }, "Action"),
+                  n.a.createElement(zt, { inline: !0, row: !0 }, "Action"),
                   " property of the",
                   " ",
                   n.a.createElement(
-                    Qt,
+                    zt,
                     { inline: !0, row: !0 },
                     "TablePagination"
                   ),
@@ -30464,26 +30446,26 @@
                   "div",
                   { className: e.tableWrapper },
                   n.a.createElement(
-                    gt.a,
+                    st.a,
                     { className: e.table },
                     n.a.createElement(
-                      xt.a,
+                      ot.a,
                       null,
-                      Fb.slice(l * i, l * i + i).map(function(e) {
+                      kb.slice(l * i, l * i + i).map(function(e) {
                         return n.a.createElement(
-                          st.a,
+                          lt.a,
                           { key: e.name },
                           n.a.createElement(
-                            ot.a,
+                            nt.a,
                             { component: "th", scope: "row" },
                             e.name
                           ),
                           n.a.createElement(
-                            ot.a,
+                            nt.a,
                             { align: "right" },
                             e.calories
                           ),
-                          n.a.createElement(ot.a, { align: "right" }, e.fat)
+                          n.a.createElement(nt.a, { align: "right" }, e.fat)
                         );
                       }),
                       o > 0 &&
@@ -30491,27 +30473,27 @@
                           "div",
                           { className: e.tableWrapper },
                           n.a.createElement(
-                            gt.a,
+                            st.a,
                             { className: p.table },
                             n.a.createElement(
-                              xt.a,
+                              ot.a,
                               null,
-                              Fb.slice(l * i, l * i + i).map(function(e) {
+                              kb.slice(l * i, l * i + i).map(function(e) {
                                 return n.a.createElement(
-                                  st.a,
+                                  lt.a,
                                   { key: e.name },
                                   n.a.createElement(
-                                    ot.a,
+                                    nt.a,
                                     { component: "th", scope: "row" },
                                     e.name
                                   ),
                                   n.a.createElement(
-                                    ot.a,
+                                    nt.a,
                                     { align: "right" },
                                     e.calories
                                   ),
                                   n.a.createElement(
-                                    ot.a,
+                                    nt.a,
                                     { align: "right" },
                                     e.fat
                                   )
@@ -30519,21 +30501,21 @@
                               }),
                               o > 0 &&
                                 n.a.createElement(
-                                  st.a,
+                                  lt.a,
                                   { style: { height: 48 * o } },
-                                  n.a.createElement(ot.a, { colSpan: 6 })
+                                  n.a.createElement(nt.a, { colSpan: 6 })
                                 )
                             ),
                             n.a.createElement(
-                              jb.a,
+                              Pb.a,
                               null,
                               n.a.createElement(
-                                st.a,
+                                lt.a,
                                 null,
-                                n.a.createElement(ht.a, {
+                                n.a.createElement(Et.a, {
                                   rowsPerPageOptions: [5, 10, 25],
                                   colSpan: 3,
-                                  count: Fb.length,
+                                  count: kb.length,
                                   rowsPerPage: i,
                                   page: l,
                                   SelectProps: {
@@ -30544,28 +30526,28 @@
                                   },
                                   onChangePage: E,
                                   onChangeRowsPerPage: d,
-                                  ActionsComponent: Db
+                                  ActionsComponent: Sb
                                 })
                               )
                             )
                           )
                         ) &&
                         n.a.createElement(
-                          st.a,
+                          lt.a,
                           { style: { height: 48 * D } },
-                          n.a.createElement(ot.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     ),
                     n.a.createElement(
-                      jb.a,
+                      Pb.a,
                       null,
                       n.a.createElement(
-                        st.a,
+                        lt.a,
                         null,
-                        n.a.createElement(ht.a, {
+                        n.a.createElement(Et.a, {
                           rowsPerPageOptions: [5, 10, 25],
                           colSpan: 3,
-                          count: Fb.length,
+                          count: kb.length,
                           rowsPerPage: i,
                           page: l,
                           SelectProps: {
@@ -30574,7 +30556,7 @@
                           },
                           onChangePage: E,
                           onChangeRowsPerPage: d,
-                          ActionsComponent: Db
+                          ActionsComponent: Sb
                         })
                       )
                     )
@@ -30585,11 +30567,11 @@
           )
         );
       }
-      var Jb = Object(D.a)(function(e) {
+      var Gb = Object(D.a)(function(e) {
         return { paper: { margin: "24px 0", backgroundColor: "#f3f3f3" } };
       });
-      function qb() {
-        var e = Jb();
+      function Vb() {
+        var e = Gb();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -30606,7 +30588,7 @@
                   Ie,
                   { block: !0 },
                   "It appears in the top of the page container. It have to be the first component after ",
-                  n.a.createElement(Qt, { row: !0, inline: !0 }, "return"),
+                  n.a.createElement(zt, { row: !0, inline: !0 }, "return"),
                   " ",
                   "statement."
                 ),
@@ -30619,7 +30601,7 @@
                     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, rem?"
                   ),
                   n.a.createElement(
-                    Qt,
+                    zt,
                     null,
                     '\n  <Widget title="Simple Widget" disableWidgetMenu>\n    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,\n    rem?\n  </Widget>\n              '
                   )
@@ -30640,7 +30622,7 @@
                   Ie,
                   { block: !0 },
                   "It appears in the top of the page container. It have to be the first component after ",
-                  n.a.createElement(Qt, { row: !0, inline: !0 }, "return"),
+                  n.a.createElement(zt, { row: !0, inline: !0 }, "return"),
                   " ",
                   "statement."
                 ),
@@ -30648,7 +30630,7 @@
                   y.a,
                   { mt: 1 },
                   n.a.createElement(
-                    Qt,
+                    zt,
                     null,
                     '\n              <PageTitle title="Widget" />\n              '
                   )
@@ -30658,7 +30640,7 @@
           )
         );
       }
-      function Zb() {
+      function Ub() {
         var e = n.a.useState(0),
           a = Object(u.a)(e, 2),
           t = a[0],
@@ -30777,8 +30759,8 @@
           )
         );
       }
-      var _b = t(397),
-        Xb = Object(D.a)(function(e) {
+      var Yb = t(391),
+        Kb = Object(D.a)(function(e) {
           return {
             form: { flexGrow: 1 },
             selectEmpty: { marginTop: e.spacing(2) },
@@ -30802,10 +30784,10 @@
             denseSelect: { "& .MuiOutlinedInput-input": { padding: 17 } }
           };
         }),
-        $b = t(285),
-        eT = t(286),
-        aT = t(42),
-        tT = Object(D.a)(function(e) {
+        Qb = t(282),
+        Jb = t(283),
+        qb = t(42),
+        Zb = Object(D.a)(function(e) {
           return {
             pageTitleContainer: {
               display: "flex",
@@ -30821,8 +30803,8 @@
             }
           };
         });
-      function lT(e) {
-        var a = tT();
+      function _b(e) {
+        var a = Zb();
         return n.a.createElement(
           "div",
           { className: a.pageTitleContainer },
@@ -30844,30 +30826,30 @@
             )
         );
       }
-      var nT = t(96),
+      var Xb = t(96),
+        $b = t.n(Xb),
+        eT = t(97),
+        aT = t.n(eT),
+        tT = t(98),
+        lT = t.n(tT),
+        nT = t(99),
         rT = t.n(nT),
-        mT = t(97),
+        mT = t(148),
         cT = t.n(mT),
-        iT = t(98),
+        iT = t(149),
         sT = t.n(iT),
-        oT = t(99),
+        oT = t(471),
         ET = t.n(oT),
-        dT = t(148),
+        dT = t(472),
         uT = t.n(dT),
-        pT = t(149),
+        pT = t(473),
         gT = t.n(pT),
-        xT = t(478),
+        xT = t(474),
         hT = t.n(xT),
-        NT = t(479),
-        IT = t.n(NT),
-        fT = t(480),
-        yT = t.n(fT),
-        bT = t(481),
-        TT = t.n(bT),
-        vT = [
+        NT = [
           {
             id: 1,
-            img: rT.a,
+            img: $b.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -30878,7 +30860,7 @@
           },
           {
             id: 2,
-            img: cT.a,
+            img: aT.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 37,
@@ -30889,7 +30871,7 @@
           },
           {
             id: 3,
-            img: sT.a,
+            img: lT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 70,
@@ -30900,7 +30882,7 @@
           },
           {
             id: 4,
-            img: ET.a,
+            img: rT.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 85,
@@ -30911,7 +30893,7 @@
           },
           {
             id: 5,
-            img: uT.a,
+            img: cT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 12,
@@ -30922,7 +30904,7 @@
           },
           {
             id: 6,
-            img: gT.a,
+            img: sT.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -30933,7 +30915,7 @@
           },
           {
             id: 7,
-            img: rT.a,
+            img: $b.a,
             title: "Boots",
             subtitle: "Trainers In White",
             price: 76,
@@ -30944,7 +30926,7 @@
           },
           {
             id: 8,
-            img: cT.a,
+            img: aT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 76,
@@ -30955,7 +30937,7 @@
           },
           {
             id: 9,
-            img: sT.a,
+            img: lT.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -30966,7 +30948,7 @@
           },
           {
             id: 10,
-            img: ET.a,
+            img: rT.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -30977,7 +30959,7 @@
           },
           {
             id: 11,
-            img: uT.a,
+            img: cT.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 71,
@@ -30988,7 +30970,7 @@
           },
           {
             id: 12,
-            img: gT.a,
+            img: sT.a,
             title: "Flat sandals",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -30998,7 +30980,7 @@
             process: "0%"
           }
         ],
-        AT = function(e) {
+        IT = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useState(0),
             l = Object(u.a)(t, 2),
@@ -31007,7 +30989,7 @@
           n.a.useEffect(function() {
             m(a.current.offsetWidth);
           }, []);
-          var c = Xb(),
+          var c = Kb(),
             i = n.a.useState(""),
             s = Object(u.a)(i, 2),
             o = s[0],
@@ -31036,13 +31018,13 @@
                       { item: !0, md: 6, xs: 12 },
                       e.match.params.id
                         ? n.a.createElement("img", {
-                            src: vT[e.match.params.id - 1].img,
-                            alt: vT[e.match.params.id - 1].title,
+                            src: NT[e.match.params.id - 1].img,
+                            alt: NT[e.match.params.id - 1].title,
                             style: { width: "100%", maxHeight: 500 }
                           })
                         : n.a.createElement("img", {
-                            src: vT[0].img,
-                            alt: vT[0].title,
+                            src: NT[0].img,
+                            alt: NT[0].title,
                             style: { width: "100%", maxHeight: 500 }
                           })
                     ),
@@ -31068,14 +31050,14 @@
                                 n.a.createElement(
                                   Ie,
                                   {
-                                    style: { color: aT.yellow[700] },
+                                    style: { color: qb.yellow[700] },
                                     display: "inline"
                                   },
-                                  vT[e.match.params.id - 1].rating
+                                  NT[e.match.params.id - 1].rating
                                 ),
-                                n.a.createElement(uh.a, {
+                                n.a.createElement(ch.a, {
                                   style: {
-                                    color: aT.yellow[700],
+                                    color: qb.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -31085,13 +31067,13 @@
                                 {
                                   style: {
                                     fontSize: "1.5rem",
-                                    color: aT.yellow[700]
+                                    color: qb.yellow[700]
                                   }
                                 },
-                                vT[0].rating,
-                                n.a.createElement(uh.a, {
+                                NT[0].rating,
+                                n.a.createElement(ch.a, {
                                   style: {
-                                    color: aT.yellow[700],
+                                    color: qb.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -31108,12 +31090,12 @@
                                 n.a.createElement(
                                   Ie,
                                   { variant: "h3", uppercase: !0 },
-                                  vT[e.match.params.id - 1].title
+                                  NT[e.match.params.id - 1].title
                                 ),
                                 n.a.createElement(
                                   Ie,
                                   null,
-                                  vT[e.match.params.id].subtitle
+                                  NT[e.match.params.id].subtitle
                                 )
                               )
                             : n.a.createElement(
@@ -31122,9 +31104,9 @@
                                 n.a.createElement(
                                   Ie,
                                   { variant: "h3", uppercase: !0 },
-                                  vT[0].title
+                                  NT[0].title
                                 ),
-                                n.a.createElement(Ie, null, vT[0].subtitle)
+                                n.a.createElement(Ie, null, NT[0].subtitle)
                               ),
                           " "
                         ),
@@ -31139,7 +31121,7 @@
                                   Ie,
                                   { weight: "medium" },
                                   "$",
-                                  vT[e.match.params.id].price
+                                  NT[e.match.params.id].price
                                 )
                               )
                             : n.a.createElement(
@@ -31149,7 +31131,7 @@
                                   Ie,
                                   { weight: "medium", variant: "h5" },
                                   "$",
-                                  vT[0].price
+                                  NT[0].price
                                 )
                               ),
                           " "
@@ -31163,19 +31145,19 @@
                           y.a,
                           { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            $b.a,
+                            Qb.a,
                             {
                               variant: "outlined",
                               className: c.form,
                               style: { marginRight: 15 }
                             },
                             n.a.createElement(
-                              eT.a,
+                              Jb.a,
                               { htmlFor: "size-simple", ref: a },
                               "Select size"
                             ),
                             n.a.createElement(
-                              ut.a,
+                              ct.a,
                               {
                                 value: o,
                                 onChange: function(e) {
@@ -31193,10 +31175,10 @@
                             )
                           ),
                           n.a.createElement(
-                            $b.a,
+                            Qb.a,
                             { className: c.form },
                             n.a.createElement(
-                              ut.a,
+                              ct.a,
                               {
                                 value: g,
                                 onChange: function(e) {
@@ -31239,22 +31221,22 @@
                           y.a,
                           null,
                           n.a.createElement("img", {
-                            src: hT.a,
+                            src: ET.a,
                             alt: "mastercard",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: IT.a,
+                            src: uT.a,
                             alt: "paypal",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: yT.a,
+                            src: gT.a,
                             alt: "visa",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: TT.a,
+                            src: hT.a,
                             alt: "americanexpress",
                             style: { width: 40 }
                           })
@@ -31429,14 +31411,14 @@
                                   n.a.createElement(
                                     Ie,
                                     {
-                                      style: { color: aT.yellow[700] },
+                                      style: { color: qb.yellow[700] },
                                       display: "inline"
                                     },
-                                    vT[e.match.params.id - 1].rating
+                                    NT[e.match.params.id - 1].rating
                                   ),
-                                  n.a.createElement(uh.a, {
+                                  n.a.createElement(ch.a, {
                                     style: {
-                                      color: aT.yellow[700],
+                                      color: qb.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -31446,13 +31428,13 @@
                                   {
                                     style: {
                                       fontSize: "1.5rem",
-                                      color: aT.yellow[700]
+                                      color: qb.yellow[700]
                                     }
                                   },
-                                  vT[0].rating,
-                                  n.a.createElement(uh.a, {
+                                  NT[0].rating,
+                                  n.a.createElement(ch.a, {
                                     style: {
-                                      color: aT.yellow[700],
+                                      color: qb.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -31471,7 +31453,7 @@
                 )
               )
             ),
-            n.a.createElement(lT, { title: "You may also like" }),
+            n.a.createElement(_b, { title: "You may also like" }),
             n.a.createElement(
               f.a,
               { item: !0, xs: 12 },
@@ -31482,33 +31464,33 @@
                   y.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: c.card },
                     n.a.createElement(
-                      fb.a,
+                      pb.a,
                       null,
-                      n.a.createElement(yb.a, {
+                      n.a.createElement(gb.a, {
                         className: c.media,
-                        image: rT.a,
-                        title: vT[0].title
+                        image: $b.a,
+                        title: NT[0].title
                       }),
                       n.a.createElement(
-                        Nb.a,
+                        db.a,
                         null,
                         n.a.createElement(
                           Ie,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          vT[0].title
+                          NT[0].title
                         ),
                         n.a.createElement(
                           Ie,
                           { variant: "body2", component: "p" },
-                          vT[0].subtitle
+                          NT[0].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       {
                         style: {
                           display: "flex",
@@ -31519,14 +31501,14 @@
                         Ie,
                         { variant: "body2", component: "p" },
                         "$",
-                        vT[0].price
+                        NT[0].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: aT.yellow[700] } },
-                        vT[0].rating,
-                        n.a.createElement(uh.a, {
-                          style: { color: aT.yellow[700], marginTop: -5 }
+                        { style: { color: qb.yellow[700] } },
+                        NT[0].rating,
+                        n.a.createElement(ch.a, {
+                          style: { color: qb.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -31536,33 +31518,33 @@
                   y.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: c.card },
                     n.a.createElement(
-                      fb.a,
+                      pb.a,
                       null,
-                      n.a.createElement(yb.a, {
+                      n.a.createElement(gb.a, {
                         className: c.media,
-                        image: cT.a,
-                        title: vT[1].img
+                        image: aT.a,
+                        title: NT[1].img
                       }),
                       n.a.createElement(
-                        Nb.a,
+                        db.a,
                         null,
                         n.a.createElement(
                           Ie,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          vT[1].title
+                          NT[1].title
                         ),
                         n.a.createElement(
                           Ie,
                           { variant: "body2", component: "p" },
-                          vT[1].subtitle
+                          NT[1].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       {
                         style: {
                           display: "flex",
@@ -31573,14 +31555,14 @@
                         Ie,
                         { variant: "body2", component: "p" },
                         "$",
-                        vT[1].price
+                        NT[1].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: aT.yellow[700] } },
-                        vT[1].rating,
-                        n.a.createElement(uh.a, {
-                          style: { color: aT.yellow[700], marginTop: -5 }
+                        { style: { color: qb.yellow[700] } },
+                        NT[1].rating,
+                        n.a.createElement(ch.a, {
+                          style: { color: qb.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -31590,33 +31572,33 @@
                   y.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: c.card },
                     n.a.createElement(
-                      fb.a,
+                      pb.a,
                       null,
-                      n.a.createElement(yb.a, {
+                      n.a.createElement(gb.a, {
                         className: c.media,
-                        image: sT.a,
-                        title: vT[2].img
+                        image: lT.a,
+                        title: NT[2].img
                       }),
                       n.a.createElement(
-                        Nb.a,
+                        db.a,
                         null,
                         n.a.createElement(
                           Ie,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          vT[2].title
+                          NT[2].title
                         ),
                         n.a.createElement(
                           Ie,
                           { variant: "body2", component: "p" },
-                          vT[2].subtitle
+                          NT[2].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       {
                         style: {
                           display: "flex",
@@ -31627,14 +31609,14 @@
                         Ie,
                         { variant: "body2", component: "p" },
                         "$",
-                        vT[2].price
+                        NT[2].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: aT.yellow[700] } },
-                        vT[2].rating,
-                        n.a.createElement(uh.a, {
-                          style: { color: aT.yellow[700], marginTop: -5 }
+                        { style: { color: qb.yellow[700] } },
+                        NT[2].rating,
+                        n.a.createElement(ch.a, {
+                          style: { color: qb.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -31644,33 +31626,33 @@
                   y.a,
                   { flexGrow: 1, mb: 3 },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     { className: c.card },
                     n.a.createElement(
-                      fb.a,
+                      pb.a,
                       null,
-                      n.a.createElement(yb.a, {
+                      n.a.createElement(gb.a, {
                         className: c.media,
-                        image: ET.a,
-                        title: vT[3].img
+                        image: rT.a,
+                        title: NT[3].img
                       }),
                       n.a.createElement(
-                        Nb.a,
+                        db.a,
                         null,
                         n.a.createElement(
                           Ie,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          vT[3].title
+                          NT[3].title
                         ),
                         n.a.createElement(
                           Ie,
                           { variant: "body2", component: "p" },
-                          vT[3].subtitle
+                          NT[3].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       {
                         style: {
                           display: "flex",
@@ -31681,14 +31663,14 @@
                         Ie,
                         { variant: "body2", component: "p" },
                         "$",
-                        vT[3].price
+                        NT[3].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: aT.yellow[700] } },
-                        vT[3].rating,
-                        n.a.createElement(uh.a, {
-                          style: { color: aT.yellow[700], marginTop: -5 }
+                        { style: { color: qb.yellow[700] } },
+                        NT[3].rating,
+                        n.a.createElement(ch.a, {
+                          style: { color: qb.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -31698,10 +31680,10 @@
             )
           );
         };
-      function wT(e, a, t) {
+      function fT(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var CT = [
+      var yT = [
         { id: "id", numeric: !0, disablePadding: !0, label: "ID" },
         { id: "image", numeric: !0, disablePadding: !1, label: "Image" },
         { id: "title", numeric: !0, disablePadding: !1, label: "Title" },
@@ -31711,7 +31693,7 @@
         { id: "status", numeric: !0, disablePadding: !1, label: "Status" },
         { id: "actions", numeric: !0, disablePadding: !1, label: "Actions" }
       ];
-      function PT(e) {
+      function bT(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -31720,24 +31702,24 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          it.a,
+          tt.a,
           null,
           n.a.createElement(
-            st.a,
+            lt.a,
             null,
             n.a.createElement(
-              ot.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(Et.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
                 inputProps: { "aria-label": "select all rows" }
               })
             ),
-            CT.map(function(e) {
+            yT.map(function(e) {
               return n.a.createElement(
-                ot.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "left" : "right",
@@ -31745,7 +31727,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  dt.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -31770,14 +31752,14 @@
           )
         );
       }
-      var OT = Object(Mb.a)(function(e) {
+      var TT = Object(Cb.a)(function(e) {
           return {
             root: { paddingLeft: e.spacing(2), paddingRight: e.spacing(1) },
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Ct.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -31789,8 +31771,8 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        ST = function(e) {
-          var a = OT(),
+        vT = function(e) {
+          var a = TT(),
             t = e.numSelected;
           return n.a.createElement(
             z.a,
@@ -31821,7 +31803,7 @@
                   n.a.createElement(
                     v.a,
                     { "aria-label": "delete" },
-                    n.a.createElement(At.a, null)
+                    n.a.createElement(It.a, null)
                   )
                 )
               : n.a.createElement(
@@ -31830,13 +31812,13 @@
                   n.a.createElement(
                     v.a,
                     { "aria-label": "filter list" },
-                    n.a.createElement(wt.a, null)
+                    n.a.createElement(ft.a, null)
                   )
                 )
           );
         };
-      function kT() {
-        var e = Xb(),
+      function AT() {
+        var e = Kb(),
           a = n.a.useState("asc"),
           t = Object(u.a)(a, 2),
           l = t[0],
@@ -31857,7 +31839,7 @@
           T = Object(u.a)(b, 2),
           v = T[0],
           A = T[1],
-          w = v - Math.min(v, vT.length - N * v);
+          w = v - Math.min(v, NT.length - N * v);
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -31885,25 +31867,25 @@
                   },
                   "Create Product"
                 ),
-                n.a.createElement(ST, { numSelected: p.length }),
+                n.a.createElement(vT, { numSelected: p.length }),
                 n.a.createElement(
                   "div",
                   { className: e.tableWrapper },
                   n.a.createElement(
-                    gt.a,
+                    st.a,
                     {
                       className: e.table,
                       "aria-labelledby": "tableTitle",
                       "aria-label": "enhanced table"
                     },
-                    n.a.createElement(PT, {
+                    n.a.createElement(bT, {
                       classes: e,
                       numSelected: p.length,
                       order: l,
                       orderBy: i,
                       onSelectAllClick: function(e) {
                         if (e.target.checked) {
-                          var a = vT.map(function(e) {
+                          var a = NT.map(function(e) {
                             return e.id;
                           });
                           g(a);
@@ -31912,10 +31894,10 @@
                       onRequestSort: function(e, a) {
                         r(i === a && "desc" === l ? "asc" : "desc"), s(a);
                       },
-                      rowCount: vT.length
+                      rowCount: NT.length
                     }),
                     n.a.createElement(
-                      xt.a,
+                      ot.a,
                       null,
                       (function(e, a) {
                         var t = e.map(function(e, a) {
@@ -31931,14 +31913,14 @@
                           })
                         );
                       })(
-                        vT,
+                        NT,
                         (function(e, a) {
                           return "desc" === e
                             ? function(e, t) {
-                                return wT(e, t, a);
+                                return fT(e, t, a);
                               }
                             : function(e, t) {
-                                return -wT(e, t, a);
+                                return -fT(e, t, a);
                               };
                         })(l, i)
                       )
@@ -31948,7 +31930,7 @@
                             l = ((t = e.id), -1 !== p.indexOf(t)),
                             r = "enhanced-table-checkbox-".concat(a);
                           return n.a.createElement(
-                            st.a,
+                            lt.a,
                             {
                               hover: !0,
                               onClick: function(a) {
@@ -31976,15 +31958,15 @@
                               selected: l
                             },
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               { padding: "checkbox" },
-                              n.a.createElement(Et.a, {
+                              n.a.createElement(rt.a, {
                                 checked: l,
                                 inputProps: { "aria-labelledby": r }
                               })
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               {
                                 component: "th",
                                 id: r,
@@ -31994,7 +31976,7 @@
                               e.id
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement("img", {
                                 src: e.img,
@@ -32003,7 +31985,7 @@
                               })
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 o.b,
@@ -32011,26 +31993,26 @@
                                 e.title
                               )
                             ),
-                            n.a.createElement(ot.a, null, e.subtitle),
-                            n.a.createElement(ot.a, null, "$", e.price),
+                            n.a.createElement(nt.a, null, e.subtitle),
+                            n.a.createElement(nt.a, null, "$", e.price),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 Ie,
                                 {
-                                  style: { color: _b.a[700] },
+                                  style: { color: Yb.a[700] },
                                   display: "inline"
                                 },
                                 e.rating
                               ),
                               " ",
-                              n.a.createElement(uh.a, {
-                                style: { color: _b.a[700], marginTop: -5 }
+                              n.a.createElement(ch.a, {
+                                style: { color: Yb.a[700], marginTop: -5 }
                               })
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 y.a,
@@ -32068,7 +32050,7 @@
                               )
                             ),
                             n.a.createElement(
-                              ot.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 y.a,
@@ -32098,17 +32080,17 @@
                         }),
                       w > 0 &&
                         n.a.createElement(
-                          st.a,
+                          lt.a,
                           { style: { height: 53 * w } },
-                          n.a.createElement(ot.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     )
                   )
                 ),
-                n.a.createElement(ht.a, {
+                n.a.createElement(Et.a, {
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
-                  count: vT.length,
+                  count: NT.length,
                   rowsPerPage: v,
                   page: N,
                   backIconButtonProps: { "aria-label": "previous page" },
@@ -32125,7 +32107,7 @@
           )
         );
       }
-      function BT(e, a) {
+      function wT(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -32137,16 +32119,16 @@
         }
         return t;
       }
-      function MT(e) {
+      function CT(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? BT(t, !0).forEach(function(a) {
+            ? wT(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : BT(t).forEach(function(a) {
+            : wT(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -32156,10 +32138,10 @@
         }
         return e;
       }
-      var jT = [
+      var PT = [
           {
             id: 1,
-            img: rT.a,
+            img: $b.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -32167,7 +32149,7 @@
           },
           {
             id: 2,
-            img: cT.a,
+            img: aT.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 37,
@@ -32175,7 +32157,7 @@
           },
           {
             id: 3,
-            img: sT.a,
+            img: lT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 70,
@@ -32183,7 +32165,7 @@
           },
           {
             id: 4,
-            img: ET.a,
+            img: rT.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 85,
@@ -32191,7 +32173,7 @@
           },
           {
             id: 5,
-            img: uT.a,
+            img: cT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 12,
@@ -32199,7 +32181,7 @@
           },
           {
             id: 6,
-            img: gT.a,
+            img: sT.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -32207,7 +32189,7 @@
           },
           {
             id: 7,
-            img: rT.a,
+            img: $b.a,
             title: "Boots",
             subtitle: "Trainers In White",
             price: 76,
@@ -32215,7 +32197,7 @@
           },
           {
             id: 8,
-            img: cT.a,
+            img: aT.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 76,
@@ -32223,7 +32205,7 @@
           },
           {
             id: 9,
-            img: sT.a,
+            img: lT.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -32231,7 +32213,7 @@
           },
           {
             id: 10,
-            img: ET.a,
+            img: rT.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -32239,7 +32221,7 @@
           },
           {
             id: 11,
-            img: uT.a,
+            img: cT.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 71,
@@ -32247,14 +32229,14 @@
           },
           {
             id: 12,
-            img: gT.a,
+            img: sT.a,
             title: "Flat sandals",
             subtitle: "Trainers In Blue",
             price: 76,
             rating: 4.6
           }
         ],
-        LT = function(e) {
+        OT = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useRef(null),
             l = n.a.useRef(null),
@@ -32265,19 +32247,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "TYPE":
-                    return MT({}, e, { type: a.typeWidth });
+                    return CT({}, e, { type: a.typeWidth });
                   case "BRANDS":
-                    return MT({}, e, { brands: a.brandsWidth });
+                    return CT({}, e, { brands: a.brandsWidth });
                   case "SIZE":
-                    return MT({}, e, { size: a.sizeWidth });
+                    return CT({}, e, { size: a.sizeWidth });
                   case "COLOUR":
-                    return MT({}, e, { colour: a.colourWidth });
+                    return CT({}, e, { colour: a.colourWidth });
                   case "RANGE":
-                    return MT({}, e, { range: a.rangeWidth });
+                    return CT({}, e, { range: a.rangeWidth });
                   case "SORT":
-                    return MT({}, e, { sort: a.sortWidth });
+                    return CT({}, e, { sort: a.sortWidth });
                   default:
-                    return MT({}, e);
+                    return CT({}, e);
                 }
               },
               { type: 0, brands: 0, size: 0, colour: 0, range: 0, sort: 0 }
@@ -32293,24 +32275,24 @@
               E({ type: "RANGE", rangeWidth: m.current.offsetWidth }),
               E({ type: "SORT", sortWidth: c.current.offsetWidth });
           }, []);
-          var d = Xb(),
+          var d = Kb(),
             p = n.a.useReducer(
               function(e, a) {
                 switch (a.type) {
                   case "SELECT_TYPE":
-                    return MT({}, e, { valueType: a.valueType });
+                    return CT({}, e, { valueType: a.valueType });
                   case "SELECT_BRANDS":
-                    return MT({}, e, { valueBrands: a.valueBrands });
+                    return CT({}, e, { valueBrands: a.valueBrands });
                   case "SELECT_SIZE":
-                    return MT({}, e, { valueSize: a.valueSize });
+                    return CT({}, e, { valueSize: a.valueSize });
                   case "SELECT_COLOUR":
-                    return MT({}, e, { valueColor: a.valueColor });
+                    return CT({}, e, { valueColor: a.valueColor });
                   case "SELECT_RANGE":
-                    return MT({}, e, { valueRange: a.valueRange });
+                    return CT({}, e, { valueRange: a.valueRange });
                   case "SELECT_SORT":
-                    return MT({}, e, { valueSort: a.valueSort });
+                    return CT({}, e, { valueSort: a.valueSort });
                   default:
-                    return MT({}, e);
+                    return CT({}, e);
                 }
               },
               {
@@ -32338,19 +32320,19 @@
                   y.a,
                   { display: "flex" },
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "type_select", ref: a },
                       "Type"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueType,
                         onChange: function(e) {
@@ -32368,19 +32350,19 @@
                     )
                   ),
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "brands_select", ref: t },
                       "Brands"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueBrands,
                         onChange: function(e) {
@@ -32398,19 +32380,19 @@
                     )
                   ),
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "size_select", ref: l },
                       "Size"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueSize,
                         onChange: function(e) {
@@ -32433,19 +32415,19 @@
                     )
                   ),
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "colour_select", ref: r },
                       "Colour"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueColour,
                         onChange: function(e) {
@@ -32463,19 +32445,19 @@
                     )
                   ),
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "range_select", ref: m },
                       "Range"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueRange,
                         onChange: function(e) {
@@ -32493,19 +32475,19 @@
                     )
                   ),
                   n.a.createElement(
-                    $b.a,
+                    Qb.a,
                     {
                       variant: "outlined",
                       className: d.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      eT.a,
+                      Jb.a,
                       { htmlFor: "sort_select", ref: c },
                       "Sort"
                     ),
                     n.a.createElement(
-                      ut.a,
+                      ct.a,
                       {
                         value: x.valueSort,
                         onChange: function(e) {
@@ -32533,18 +32515,18 @@
                   n.a.createElement(
                     f.a,
                     { container: !0, item: !0, spacing: 3 },
-                    jT.map(function(e) {
+                    PT.map(function(e) {
                       return n.a.createElement(
                         f.a,
                         { item: !0, xs: 12, md: 3, key: e.id },
                         n.a.createElement(
-                          hb.a,
+                          Eb.a,
                           { className: d.card },
                           n.a.createElement(
-                            fb.a,
+                            pb.a,
                             null,
                             n.a.createElement(
-                              yb.a,
+                              gb.a,
                               {
                                 className: d.media,
                                 image: e.img,
@@ -32561,7 +32543,7 @@
                                   })
                             ),
                             n.a.createElement(
-                              Nb.a,
+                              db.a,
                               null,
                               n.a.createElement(
                                 Ie,
@@ -32585,7 +32567,7 @@
                             )
                           ),
                           n.a.createElement(
-                            Ib.a,
+                            ub.a,
                             { style: { padding: 16 } },
                             n.a.createElement(
                               y.a,
@@ -32606,11 +32588,11 @@
                                 { block: !0 },
                                 n.a.createElement(
                                   "div",
-                                  { style: { color: aT.yellow[700] } },
-                                  jT[0].rating,
-                                  n.a.createElement(uh.a, {
+                                  { style: { color: qb.yellow[700] } },
+                                  PT[0].rating,
+                                  n.a.createElement(ch.a, {
                                     style: {
-                                      color: aT.yellow[700],
+                                      color: qb.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32627,17 +32609,17 @@
             )
           );
         },
-        DT = t(88),
-        FT = Object(D.a)(function(e) {
+        ST = t(88),
+        kT = Object(D.a)(function(e) {
           return {
             mapContainer: { height: "100%" },
             vectorContainer: { margin: -e.spacing(3) }
           };
         }),
-        RT = Object(DT.withScriptjs)(
-          Object(DT.withGoogleMap)(function() {
+        BT = Object(ST.withScriptjs)(
+          Object(ST.withGoogleMap)(function() {
             return n.a.createElement(
-              DT.GoogleMap,
+              ST.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -32645,18 +32627,18 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(DT.Marker, {
+              n.a.createElement(ST.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function WT() {
-        var e = FT();
+      function MT() {
+        var e = kT();
         return n.a.createElement(
           "div",
           { className: e.mapContainer },
-          n.a.createElement(RT, {
+          n.a.createElement(BT, {
             googleMapURL:
               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
             loadingElement: n.a.createElement("div", {
@@ -32669,22 +32651,22 @@
           })
         );
       }
-      var HT = t(124),
-        zT = t(484),
-        GT = [
+      var jT = t(124),
+        LT = t(477),
+        DT = [
           {
             markerOffset: -25,
             name: "Buenos Aires",
             coordinates: [-58.3816, -34.6037]
           }
         ];
-      var VT = function() {
-          var e = FT();
+      var FT = function() {
+          var e = kT();
           return n.a.createElement(
             "div",
             { className: e.vectorContainer },
             n.a.createElement(
-              HT.ComposableMap,
+              jT.ComposableMap,
               {
                 projectionConfig: { scale: 205, rotation: [-11, 0, 0] },
                 width: 980,
@@ -32692,16 +32674,16 @@
                 style: { width: "100%", height: "auto", overflow: "auto" }
               },
               n.a.createElement(
-                HT.ZoomableGroup,
+                jT.ZoomableGroup,
                 { center: [0, 20], disablePanning: !0 },
-                n.a.createElement(HT.Geographies, { geography: zT }, function(
+                n.a.createElement(jT.Geographies, { geography: LT }, function(
                   e,
                   a
                 ) {
                   return e.map(function(e, t) {
                     return (
                       "ATA" !== e.id &&
-                      n.a.createElement(HT.Geography, {
+                      n.a.createElement(jT.Geography, {
                         key: t,
                         geography: e,
                         projection: a,
@@ -32730,11 +32712,11 @@
                   });
                 }),
                 n.a.createElement(
-                  HT.Markers,
+                  jT.Markers,
                   null,
-                  GT.map(function(e, a) {
+                  DT.map(function(e, a) {
                     return n.a.createElement(
-                      HT.Marker,
+                      jT.Marker,
                       {
                         key: a,
                         marker: e,
@@ -32773,7 +32755,7 @@
             )
           );
         },
-        UT = Object(D.a)(function(e) {
+        RT = Object(D.a)(function(e) {
           return {
             icon: { fontSize: e.spacing(2) },
             divider: { margin: "0px -".concat(e.spacing(3), "px") },
@@ -32783,17 +32765,17 @@
             }
           };
         }),
-        YT = t(173),
+        WT = t(172),
+        HT = t.n(WT),
+        zT = t(297),
+        GT = t.n(zT),
+        VT = t(298),
+        UT = t.n(VT),
+        YT = t(478),
         KT = t.n(YT),
-        QT = t(304),
+        QT = t(479),
         JT = t.n(QT),
-        qT = t(305),
-        ZT = t.n(qT),
-        _T = t(485),
-        XT = t.n(_T),
-        $T = t(486),
-        ev = t.n($T),
-        av = Object(D.a)(function(e) {
+        qT = Object(D.a)(function(e) {
           return {
             border: {
               position: "relative",
@@ -32809,7 +32791,7 @@
             circle: { border: "rgba(255,255,255,.2) 5px solid" }
           };
         }),
-        tv = function(e) {
+        ZT = function(e) {
           return n.a.createElement(
             y.a,
             { width: "45%", align: e.right && "right" },
@@ -32821,10 +32803,10 @@
             )
           );
         },
-        lv = function(e) {
+        _T = function(e) {
           var a = e.children,
             t = Object(s.a)(e, ["children"]),
-            l = av();
+            l = qT();
           return n.a.createElement(
             y.a,
             { className: l.border, display: "flex" },
@@ -32835,7 +32817,7 @@
             )
           );
         },
-        nv = function(e) {
+        XT = function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -32850,10 +32832,10 @@
             )
           );
         },
-        rv = Object(DT.withScriptjs)(
-          Object(DT.withGoogleMap)(function() {
+        $T = Object(ST.withScriptjs)(
+          Object(ST.withGoogleMap)(function() {
             return n.a.createElement(
-              DT.GoogleMap,
+              ST.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -32861,14 +32843,14 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(DT.Marker, {
+              n.a.createElement(ST.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function mv() {
-        var e = UT(),
+      function ev() {
+        var e = RT(),
           a = n.a.useState(!1),
           t = Object(u.a)(a, 2),
           l = t[0],
@@ -32891,7 +32873,7 @@
                   className: e.wrapper
                 },
                 n.a.createElement(
-                  nv,
+                  XT,
                   null,
                   n.a.createElement(
                     y.a,
@@ -32906,7 +32888,7 @@
                           y.a,
                           { display: "flex" },
                           n.a.createElement(ye, {
-                            src: KT.a,
+                            src: HT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -32932,7 +32914,7 @@
                         n.a.createElement(
                           y.a,
                           { height: 200, width: "100%", mx: "-24px", mt: 2 },
-                          n.a.createElement(rv, {
+                          n.a.createElement($T, {
                             googleMapURL:
                               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
                             loadingElement: n.a.createElement("div", {
@@ -32955,12 +32937,12 @@
                           n.a.createElement(
                             v.a,
                             { "aria-label": "like" },
-                            n.a.createElement(Ii.a, null)
+                            n.a.createElement(ui.a, null)
                           ),
                           n.a.createElement(
                             v.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(mt.a, null)
+                            n.a.createElement(et.a, null)
                           )
                         ),
                         n.a.createElement(Na.a, { className: e.divider }),
@@ -32968,7 +32950,7 @@
                           y.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(ye, {
-                            src: KT.a,
+                            src: HT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33010,7 +32992,7 @@
                           y.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(ye, {
-                            src: JT.a,
+                            src: GT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33065,27 +33047,27 @@
                     )
                   ),
                   n.a.createElement(
-                    lv,
+                    _T,
                     { color: "primary" },
-                    n.a.createElement(_d.a, { className: e.icon })
+                    n.a.createElement(Yd.a, { className: e.icon })
                   ),
-                  n.a.createElement(tv, {
+                  n.a.createElement(ZT, {
                     day: "yesterday",
                     timestep: "8:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  nv,
+                  XT,
                   null,
-                  n.a.createElement(tv, {
+                  n.a.createElement(ZT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
                   n.a.createElement(
-                    lv,
+                    _T,
                     { color: "secondary" },
-                    n.a.createElement($r.a, { className: e.icon })
+                    n.a.createElement(Qr.a, { className: e.icon })
                   ),
                   n.a.createElement(
                     y.a,
@@ -33100,7 +33082,7 @@
                           y.a,
                           { display: "flex" },
                           n.a.createElement(ye, {
-                            src: ZT.a,
+                            src: UT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33135,12 +33117,12 @@
                           n.a.createElement(
                             v.a,
                             { "aria-label": "like" },
-                            n.a.createElement(Ii.a, null)
+                            n.a.createElement(ui.a, null)
                           ),
                           n.a.createElement(
                             v.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(mt.a, null)
+                            n.a.createElement(et.a, null)
                           )
                         )
                       )
@@ -33148,7 +33130,7 @@
                   )
                 ),
                 n.a.createElement(
-                  nv,
+                  XT,
                   null,
                   n.a.createElement(
                     y.a,
@@ -33163,7 +33145,7 @@
                           y.a,
                           { display: "flex" },
                           n.a.createElement(ye, {
-                            src: KT.a,
+                            src: HT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33199,7 +33181,7 @@
                           y.a,
                           { height: 400, width: "100%", mx: "-24px", mt: 2 },
                           n.a.createElement("img", {
-                            src: Ob.a,
+                            src: Tb.a,
                             alt: "mountains",
                             style: {
                               height: "100%",
@@ -33213,23 +33195,23 @@
                           n.a.createElement(
                             v.a,
                             { "aria-label": "like" },
-                            n.a.createElement(Ii.a, null)
+                            n.a.createElement(ui.a, null)
                           ),
                           n.a.createElement(
                             v.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(mt.a, null)
+                            n.a.createElement(et.a, null)
                           ),
                           n.a.createElement(
                             y.a,
                             { ml: "auto", display: "flex" },
-                            n.a.createElement(ye, { src: KT.a }),
+                            n.a.createElement(ye, { src: HT.a }),
                             n.a.createElement(ye, {
-                              src: JT.a,
+                              src: GT.a,
                               style: { marginLeft: 8 }
                             }),
                             n.a.createElement(ye, {
-                              src: ZT.a,
+                              src: UT.a,
                               style: { marginLeft: 8 }
                             })
                           )
@@ -33239,7 +33221,7 @@
                           y.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(ye, {
-                            src: ev.a,
+                            src: JT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33294,24 +33276,24 @@
                     )
                   ),
                   n.a.createElement(
-                    lv,
+                    _T,
                     { color: "warning" },
-                    n.a.createElement(zs.a, { className: e.icon })
+                    n.a.createElement(Ls.a, { className: e.icon })
                   ),
-                  n.a.createElement(tv, {
+                  n.a.createElement(ZT, {
                     day: "yesterday",
                     timestep: "9:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  nv,
+                  XT,
                   null,
-                  n.a.createElement(tv, {
+                  n.a.createElement(ZT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
-                  n.a.createElement(lv, { color: "success" }, "J"),
+                  n.a.createElement(_T, { color: "success" }, "J"),
                   n.a.createElement(
                     y.a,
                     { width: "45%" },
@@ -33325,7 +33307,7 @@
                           y.a,
                           { display: "flex" },
                           n.a.createElement(ye, {
-                            src: XT.a,
+                            src: KT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33381,7 +33363,7 @@
                             Ta.a,
                             { in: l, timeout: "auto", unmountOnExit: !0 },
                             n.a.createElement(
-                              Nb.a,
+                              db.a,
                               null,
                               n.a.createElement(
                                 Ie,
@@ -33407,12 +33389,12 @@
                           n.a.createElement(
                             v.a,
                             { "aria-label": "like" },
-                            n.a.createElement(Ii.a, null)
+                            n.a.createElement(ui.a, null)
                           ),
                           n.a.createElement(
                             v.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(mt.a, null)
+                            n.a.createElement(et.a, null)
                           )
                         )
                       )
@@ -33424,8 +33406,8 @@
           )
         );
       }
-      var cv = t(1255),
-        iv = Object(D.a)(function(e) {
+      var av = t(1244),
+        tv = Object(D.a)(function(e) {
           return {
             filter: { width: 130 },
             adjustRightBorderRadius: {
@@ -33438,10 +33420,10 @@
             }
           };
         }),
-        sv = t(487),
-        ov = t(488),
-        Ev = t.n(ov),
-        dv = Object(D.a)(function(e) {
+        lv = t(480),
+        nv = t(481),
+        rv = t.n(nv),
+        mv = Object(D.a)(function(e) {
           return {
             wrapper: { textAlign: "center", margin: e.spacing(3) },
             container: {
@@ -33462,14 +33444,14 @@
             next: { "& a": { color: e.palette.primary.main } }
           };
         }),
-        uv = function(e) {
-          var a = Object(sv.a)({}, e),
-            t = dv();
+        cv = function(e) {
+          var a = Object(lv.a)({}, e),
+            t = mv();
           return n.a.createElement(
             "div",
             { className: t.wrapper },
             n.a.createElement(
-              Ev.a,
+              rv.a,
               Object.assign(
                 {
                   pageClassName: t.element,
@@ -33485,7 +33467,7 @@
             )
           );
         };
-      function pv() {
+      function iv() {
         var e = n.a.useState({ row: !0, grid: !1 }),
           a = Object(u.a)(e, 2),
           t = a[0],
@@ -33503,7 +33485,7 @@
               return { row: !e.row, grid: !e.grid };
             });
           },
-          g = iv();
+          g = tv();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -33517,14 +33499,14 @@
                 y.a,
                 { display: "flex", alignItems: "center" },
                 n.a.createElement(
-                  $b.a,
+                  Qb.a,
                   {
                     variant: "outlined",
                     className: g.filter,
                     style: { marginRight: 8 }
                   },
                   n.a.createElement(
-                    ut.a,
+                    ct.a,
                     {
                       value: c,
                       onChange: function(e) {
@@ -33542,10 +33524,10 @@
                   )
                 ),
                 n.a.createElement(
-                  $b.a,
+                  Qb.a,
                   { variant: "outlined", className: g.filter },
                   n.a.createElement(
-                    ut.a,
+                    ct.a,
                     {
                       value: E,
                       onChange: function(e) {
@@ -33567,7 +33549,7 @@
                   y.a,
                   { style: { display: "inline-flex", marginLeft: "auto" } },
                   n.a.createElement(
-                    cv.a,
+                    av.a,
                     {
                       color: "primary",
                       size: "large",
@@ -33582,7 +33564,7 @@
                         },
                         className: g.adjustRightBorderRadius
                       },
-                      n.a.createElement(ds.a, null)
+                      n.a.createElement(ms.a, null)
                     ),
                     n.a.createElement(
                       fe,
@@ -33593,7 +33575,7 @@
                         },
                         className: g.adjustLeftBorderRadius
                       },
-                      n.a.createElement(_a.a, null)
+                      n.a.createElement(Ya.a, null)
                     )
                   )
                 )
@@ -33717,7 +33699,7 @@
                         f.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: rT.a,
+                          src: $b.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -33803,7 +33785,7 @@
                         f.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: cT.a,
+                          src: aT.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -33895,7 +33877,7 @@
                         f.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: sT.a,
+                          src: lT.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -33981,7 +33963,7 @@
                         f.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: ET.a,
+                          src: rT.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -34049,7 +34031,7 @@
                       )
                     )
                   ),
-                  n.a.createElement(uv, {
+                  n.a.createElement(cv, {
                     pageCount: 10,
                     previousLabel: "<",
                     nextLabel: ">",
@@ -34061,79 +34043,79 @@
           )
         );
       }
-      var gv = t(489),
+      var sv = t(482),
+        ov = t.n(sv),
+        Ev = t(483),
+        dv = t.n(Ev),
+        uv = t(484),
+        pv = t.n(uv),
+        gv = t(485),
         xv = t.n(gv),
-        hv = t(490),
+        hv = t(486),
         Nv = t.n(hv),
-        Iv = t(491),
+        Iv = t(487),
         fv = t.n(Iv),
-        yv = t(492),
+        yv = t(488),
         bv = t.n(yv),
-        Tv = t(493),
+        Tv = t(489),
         vv = t.n(Tv),
-        Av = t(494),
+        Av = t(490),
         wv = t.n(Av),
-        Cv = t(495),
+        Cv = t(491),
         Pv = t.n(Cv),
-        Ov = t(496),
+        Ov = t(492),
         Sv = t.n(Ov),
-        kv = t(497),
+        kv = t(493),
         Bv = t.n(kv),
-        Mv = t(498),
-        jv = t.n(Mv),
-        Lv = t(499),
-        Dv = t.n(Lv),
-        Fv = t(500),
-        Rv = t.n(Fv),
-        Wv = [
-          { img: xv.a, id: 1 },
-          { img: Nv.a, id: 2 },
-          { img: fv.a, id: 3 },
-          { img: bv.a, id: 4 },
-          { img: vv.a, id: 5 },
-          { img: wv.a, id: 6 },
-          { img: Pv.a, id: 7 },
-          { img: Sv.a, id: 8 },
-          { img: Bv.a, id: 9 },
-          { img: jv.a, id: 10 },
-          { img: Dv.a, id: 11 },
-          { img: Rv.a, id: 12 }
+        Mv = [
+          { img: ov.a, id: 1 },
+          { img: dv.a, id: 2 },
+          { img: pv.a, id: 3 },
+          { img: xv.a, id: 4 },
+          { img: Nv.a, id: 5 },
+          { img: fv.a, id: 6 },
+          { img: bv.a, id: 7 },
+          { img: vv.a, id: 8 },
+          { img: wv.a, id: 9 },
+          { img: Pv.a, id: 10 },
+          { img: Sv.a, id: 11 },
+          { img: Bv.a, id: 12 }
         ],
-        Hv = function() {
+        jv = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
             n.a.createElement(
               f.a,
               { container: !0, spacing: 6 },
-              Wv.map(function(e, a) {
+              Mv.map(function(e, a) {
                 return n.a.createElement(
                   f.a,
                   { item: !0, md: 3, xs: 12, key: e.id },
                   n.a.createElement(
-                    hb.a,
+                    Eb.a,
                     null,
                     n.a.createElement(
-                      fb.a,
+                      pb.a,
                       null,
-                      n.a.createElement(yb.a, {
+                      n.a.createElement(gb.a, {
                         image: e.img,
                         title: "Gallery",
                         style: { height: 200 }
                       })
                     ),
                     n.a.createElement(
-                      Ib.a,
+                      ub.a,
                       null,
                       n.a.createElement(
                         v.a,
                         { "aria-label": "like" },
-                        n.a.createElement(Ii.a, null)
+                        n.a.createElement(ui.a, null)
                       ),
                       n.a.createElement(
                         v.a,
                         { "aria-label": "comments" },
-                        n.a.createElement(mt.a, null)
+                        n.a.createElement(et.a, null)
                       )
                     )
                   )
@@ -34142,7 +34124,7 @@
             )
           );
         },
-        zv = Object(D.a)(function(e) {
+        Lv = Object(D.a)(function(e) {
           return {
             table: {
               "& .MuiTableRow-root:nth-child(odd)": {
@@ -34158,9 +34140,9 @@
             iconButton: { marginRight: e.spacing(1) }
           };
         }),
-        Gv = t(501),
-        Vv = t.n(Gv),
-        Uv = [
+        Dv = t(494),
+        Fv = t.n(Dv),
+        Rv = [
           {
             id: 1,
             item: "Brand-new 27 monitor",
@@ -34195,11 +34177,11 @@
             total: 2
           }
         ],
-        Yv = function() {
+        Wv = function() {
           window.print();
         },
-        Kv = function() {
-          var e = zv();
+        Hv = function() {
+          var e = Lv();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34216,7 +34198,7 @@
                     y.a,
                     { display: "flex", justifyContent: "space-between", mb: 3 },
                     n.a.createElement("img", {
-                      src: Vv.a,
+                      src: Fv.a,
                       alt: "Flatlogic",
                       style: {
                         maxHeight: 100,
@@ -34382,35 +34364,35 @@
                       "div",
                       { className: e.tableWrapper },
                       n.a.createElement(
-                        gt.a,
+                        st.a,
                         { className: e.table, "aria-label": "simple table" },
                         n.a.createElement(
-                          it.a,
+                          tt.a,
                           null,
                           n.a.createElement(
-                            st.a,
+                            lt.a,
                             { className: e.tableFooter },
-                            n.a.createElement(ot.a, null, "#"),
-                            n.a.createElement(ot.a, null, "ITEM"),
-                            n.a.createElement(ot.a, null, "DESCRIPTION"),
-                            n.a.createElement(ot.a, null, "QUANTITY"),
-                            n.a.createElement(ot.a, null, "PRICE PER UNIT"),
-                            n.a.createElement(ot.a, null, "TOTAL")
+                            n.a.createElement(nt.a, null, "#"),
+                            n.a.createElement(nt.a, null, "ITEM"),
+                            n.a.createElement(nt.a, null, "DESCRIPTION"),
+                            n.a.createElement(nt.a, null, "QUANTITY"),
+                            n.a.createElement(nt.a, null, "PRICE PER UNIT"),
+                            n.a.createElement(nt.a, null, "TOTAL")
                           )
                         ),
                         n.a.createElement(
-                          xt.a,
+                          ot.a,
                           null,
-                          Uv.map(function(e) {
+                          Rv.map(function(e) {
                             return n.a.createElement(
-                              st.a,
+                              lt.a,
                               { key: e.id },
-                              n.a.createElement(ot.a, null, e.id),
-                              n.a.createElement(ot.a, null, e.item),
-                              n.a.createElement(ot.a, null, e.desc),
-                              n.a.createElement(ot.a, null, e.quantity),
-                              n.a.createElement(ot.a, null, e.price),
-                              n.a.createElement(ot.a, null, e.total)
+                              n.a.createElement(nt.a, null, e.id),
+                              n.a.createElement(nt.a, null, e.item),
+                              n.a.createElement(nt.a, null, e.desc),
+                              n.a.createElement(nt.a, null, e.quantity),
+                              n.a.createElement(nt.a, null, e.price),
+                              n.a.createElement(nt.a, null, e.total)
                             );
                           })
                         )
@@ -34490,9 +34472,9 @@
                           variant: "contained",
                           style: { marginRight: 8 },
                           "aria-label": "Print",
-                          onClick: Yv
+                          onClick: Wv
                         },
-                        n.a.createElement(Rp.a, { className: e.iconButton }),
+                        n.a.createElement(Bp.a, { className: e.iconButton }),
                         "Print"
                       ),
                       n.a.createElement(
@@ -34502,7 +34484,7 @@
                           color: "success",
                           "aria-label": "Proceed"
                         },
-                        n.a.createElement(bt.a, { className: e.iconButton }),
+                        n.a.createElement(xt.a, { className: e.iconButton }),
                         "Proceed with Payment"
                       )
                     )
@@ -34512,7 +34494,7 @@
             )
           );
         },
-        Qv = function() {
+        zv = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34717,20 +34699,20 @@
             )
           );
         },
-        Jv = t(502),
-        qv = t(503),
-        Zv = t(513),
-        _v = t(504),
-        Xv = t(514),
-        $v = t(505),
-        eA = t(151),
-        aA = t(506),
-        tA = t(307),
-        lA = t(174),
-        nA = t.n(lA),
-        rA = (t(1103), t(1104), t(1105), t(226)),
-        mA = t.n(rA);
-      function cA(e, a) {
+        Gv = t(495),
+        Vv = t(496),
+        Uv = t(504),
+        Yv = t(497),
+        Kv = t(505),
+        Qv = t(498),
+        Jv = t(151),
+        qv = t(499),
+        Zv = t(300),
+        _v = t(173),
+        Xv = t.n(_v),
+        $v = (t(1092), t(1093), t(1094), t(225)),
+        eA = t.n($v);
+      function aA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -34742,16 +34724,16 @@
         }
         return t;
       }
-      function iA(e) {
+      function tA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? cA(t, !0).forEach(function(a) {
+            ? aA(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : cA(t).forEach(function(a) {
+            : aA(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -34761,19 +34743,19 @@
         }
         return e;
       }
-      var sA = (function(e) {
+      var lA = (function(e) {
         function a(e) {
           var t;
-          Object(Jv.a)(this, a),
-            ((t = Object(Zv.a)(
+          Object(Gv.a)(this, a),
+            ((t = Object(Uv.a)(
               this,
-              Object(_v.a)(a).call(this, e)
+              Object(Yv.a)(a).call(this, e)
             )).drop = function(e) {
               e.draggedEl.parentNode.removeChild(e.draggedEl);
             }),
             (t.handleChange = function(e) {
               t.setState({
-                event: iA({}, t.state.event, { title: e.target.value })
+                event: tA({}, t.state.event, { title: e.target.value })
               });
             }),
             (t.createEvent = function() {
@@ -34814,7 +34796,7 @@
                 t.setState({ calendarView: e });
             }),
             (t.getFormattedDate = function(e) {
-              return mA()(e).format("YYYY-MM-DD");
+              return eA()(e).format("YYYY-MM-DD");
             }),
             (t.toggleModal = function() {
               t.setState({ modal: !t.state.modal });
@@ -34832,8 +34814,8 @@
               modal: !1,
               modalEvent: !1,
               calendarView: "dayGridMonth",
-              currentMonth: mA()().format("MMM YYYY"),
-              currentDay: mA()().format("dddd"),
+              currentMonth: eA()().format("MMM YYYY"),
+              currentDay: eA()().format("dddd"),
               calendarOptions: {
                 header: { left: "", center: "", right: "" },
                 events: [
@@ -34900,19 +34882,19 @@
                 editable: !0,
                 droppable: !0
               },
-              calendarPlugins: [eA.d, aA.a, tA.b],
+              calendarPlugins: [Jv.d, qv.a, Zv.b],
               dragOptions: { zIndex: 999, revert: !0, revertDuration: 0 }
             }),
             t
           );
         }
         return (
-          Object(Xv.a)(a, e),
-          Object(qv.a)(a, [
+          Object(Kv.a)(a, e),
+          Object(Vv.a)(a, [
             {
               key: "componentDidMount",
               value: function() {
-                new tA.a(this.externalEvents, {
+                new Zv.a(this.externalEvents, {
                   itemSelector: ".external-event"
                 });
               }
@@ -34962,7 +34944,7 @@
                               "align-items-center",
                               "draggable",
                               "external-event",
-                              nA.a.widget
+                              Xv.a.widget
                             )
                           },
                           n.a.createElement(Sa, {
@@ -34985,7 +34967,7 @@
                               "align-items-center",
                               "draggable",
                               "external-event",
-                              nA.a.widget
+                              Xv.a.widget
                             )
                           },
                           n.a.createElement(Sa, {
@@ -35008,7 +34990,7 @@
                               "align-items-center",
                               "draggable",
                               "external-event",
-                              nA.a.widget
+                              Xv.a.widget
                             )
                           },
                           n.a.createElement(Sa, {
@@ -35047,12 +35029,12 @@
                                 onClick: this.prev,
                                 "aria-label": "previous page"
                               },
-                              n.a.createElement(Jo.a, null)
+                              n.a.createElement(Go.a, null)
                             ),
                             n.a.createElement(
                               v.a,
                               { onClick: this.next, "aria-label": "next page" },
-                              n.a.createElement(qo.a, null)
+                              n.a.createElement(Vo.a, null)
                             ),
                             n.a.createElement(
                               fe,
@@ -35119,7 +35101,7 @@
                           )
                         ),
                         n.a.createElement(
-                          $v.a,
+                          Qv.a,
                           Object.assign(
                             {
                               ref: function(a) {
@@ -35159,7 +35141,7 @@
                       ),
                       n.a.createElement(ba.a, {
                         onChange: this.handleChange,
-                        className: nA.a.calendarModalInput,
+                        className: Xv.a.calendarModalInput,
                         value: t.title,
                         name: "title",
                         placeholder: "Title"
@@ -35235,7 +35217,7 @@
           a
         );
       })(n.a.Component);
-      function oA(e, a) {
+      function nA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -35247,16 +35229,16 @@
         }
         return t;
       }
-      var EA = n.a.createContext(),
-        dA = n.a.createContext();
-      function uA(e, a) {
+      var rA = n.a.createContext(),
+        mA = n.a.createContext();
+      function cA(e, a) {
         switch (a.type) {
           case "TOGGLE_COLOR_THEME":
             return (function(e) {
               for (var a = 1; a < arguments.length; a++) {
                 var t = null != arguments[a] ? arguments[a] : {};
                 a % 2
-                  ? oA(t, !0).forEach(function(a) {
+                  ? nA(t, !0).forEach(function(a) {
                       Object(d.a)(e, a, t[a]);
                     })
                   : Object.getOwnPropertyDescriptors
@@ -35264,7 +35246,7 @@
                       e,
                       Object.getOwnPropertyDescriptors(t)
                     )
-                  : oA(t).forEach(function(a) {
+                  : nA(t).forEach(function(a) {
                       Object.defineProperty(
                         e,
                         a,
@@ -35273,17 +35255,17 @@
                     });
               }
               return e;
-            })({}, e, { theme: sy[a.theme] });
+            })({}, e, { theme: ly[a.theme] });
           default:
             throw new Error("Unhandled action type: ".concat(a.type));
         }
       }
-      var pA = Object(L.a)(function(e) {
+      var iA = Object(L.a)(function(e) {
         return { root: { minWidth: 72 } };
       })(function(e) {
         return n.a.createElement(I.a, e);
       });
-      var gA = Object(E.h)(function(e) {
+      var sA = Object(E.h)(function(e) {
         var a = W(),
           t = n.a.useState(2),
           l = Object(u.a)(t, 2),
@@ -35297,7 +35279,7 @@
           x = p ? "add-section-popover" : void 0,
           I = ea(),
           L = (function() {
-            var e = n.a.useContext(dA);
+            var e = n.a.useContext(mA);
             if (void 0 === e)
               throw new Error(
                 "useTheemDispatch must be used within a ThemeProvider"
@@ -35317,7 +35299,7 @@
           "div",
           { className: a.root },
           n.a.createElement(da, { history: e.history }),
-          n.a.createElement(Da, { structure: ct }),
+          n.a.createElement(Da, { structure: at }),
           n.a.createElement(
             "div",
             {
@@ -35340,7 +35322,7 @@
                   wrap: "nowrap",
                   style: { overflow: "auto" }
                 },
-                ct.map(function(e) {
+                at.map(function(e) {
                   return !e.children &&
                     window.location.hash.includes(e.link) &&
                     e.link
@@ -35364,19 +35346,19 @@
                               style: { marginLeft: 38 }
                             },
                             n.a.createElement(
-                              pA,
+                              iA,
                               Object.assign({ label: "Today" }, F(0))
                             ),
                             n.a.createElement(
-                              pA,
+                              iA,
                               Object.assign({ label: "This week" }, F(1))
                             ),
                             n.a.createElement(
-                              pA,
+                              iA,
                               Object.assign({ label: "This month" }, F(2))
                             ),
                             n.a.createElement(
-                              pA,
+                              iA,
                               Object.assign({ label: "This year" }, F(3))
                             )
                           )
@@ -35461,86 +35443,86 @@
             n.a.createElement(
               E.d,
               null,
-              n.a.createElement(E.b, { path: "/app/dashboard", component: Ft }),
+              n.a.createElement(E.b, { path: "/app/dashboard", component: kt }),
               n.a.createElement(E.b, {
                 path: "/app/core/typography",
-                component: Ht
+                component: jt
               }),
-              n.a.createElement(E.b, { path: "/app/core/grid", component: dy }),
+              n.a.createElement(E.b, { path: "/app/core/grid", component: my }),
               n.a.createElement(E.b, {
                 path: "/app/ui/notifications",
-                component: qt
+                component: Vt
               }),
               n.a.createElement(E.b, {
                 path: "/app/forms/elements",
-                component: gb
+                component: sb
               }),
               n.a.createElement(E.b, {
                 path: "/app/forms/validation",
-                component: xb
+                component: ob
               }),
-              n.a.createElement(E.b, { path: "/app/ui/badge", component: py }),
+              n.a.createElement(E.b, { path: "/app/ui/badge", component: iy }),
               n.a.createElement(E.b, {
                 path: "/app/ui/carousel",
-                component: fy
+                component: py
               }),
-              n.a.createElement(E.b, { path: "/app/ui/modal", component: Py }),
-              n.a.createElement(E.b, { path: "/app/ui/navbar", component: jy }),
+              n.a.createElement(E.b, { path: "/app/ui/modal", component: by }),
+              n.a.createElement(E.b, { path: "/app/ui/navbar", component: Py }),
               n.a.createElement(E.b, {
                 path: "/app/ui/tooltips",
-                component: Hy
+                component: jy
               }),
-              n.a.createElement(E.b, { path: "/app/ui/tabs", component: Zy }),
-              n.a.createElement(E.b, { path: "/app/ui/cards", component: Bb }),
-              n.a.createElement(E.b, { path: "/app/ui/widget", component: qb }),
+              n.a.createElement(E.b, { path: "/app/ui/tabs", component: Uy }),
+              n.a.createElement(E.b, { path: "/app/ui/cards", component: wb }),
+              n.a.createElement(E.b, { path: "/app/ui/widget", component: Vb }),
               n.a.createElement(E.b, {
                 path: "/app/ui/progress",
-                component: Zb
+                component: Ub
               }),
               n.a.createElement(E.b, {
                 path: "/app/tables/static",
-                component: tl
+                component: Zt
               }),
               n.a.createElement(E.b, {
                 path: "/app/tables/dynamic",
-                component: Qb
+                component: zb
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/overview",
-                component: Pf
+                component: bf
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/line",
-                component: Vf
+                component: Ff
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/bar",
-                component: Jf
+                component: Gf
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/pie",
-                component: $f
+                component: Qf
               }),
               n.a.createElement(E.b, {
                 exact: !0,
                 path: "/app/ecommerce/management",
-                component: kT
+                component: AT
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/management/create",
-                component: Qv
+                component: zv
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product/:id",
-                component: AT
+                component: IT
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product",
-                component: AT
+                component: IT
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/gridproducts",
-                component: LT
+                component: OT
               }),
               n.a.createElement(E.b, {
                 exact: !0,
@@ -35602,52 +35584,49 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/timeline",
-                component: mv
+                component: ev
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/search",
-                component: pv
+                component: iv
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/gallery",
-                component: Hv
+                component: jv
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/invoice",
-                component: Kv
+                component: Hv
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/calendar",
-                component: sA
+                component: lA
               }),
               n.a.createElement(E.b, {
                 path: "/app/core/colors",
-                component: oy
+                component: ny
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/google",
-                component: WT
+                component: MT
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/vector",
-                component: VT
+                component: FT
               }),
-              n.a.createElement(E.b, { path: "/app/ui/icons", component: of })
+              n.a.createElement(E.b, { path: "/app/ui/icons", component: lf })
             ),
             n.a.createElement(
-              Qa,
-              null,
-              n.a.createElement(
-                A.a,
-                {
-                  color: "primary",
-                  "aria-label": "settings",
-                  onClick: function(e) {
-                    o(e.currentTarget);
-                  }
+              A.a,
+              {
+                color: "primary",
+                "aria-label": "settings",
+                onClick: function(e) {
+                  o(e.currentTarget);
                 },
-                n.a.createElement(h.a, { path: N.h, size: 1, color: "#fff" })
-              )
+                className: a.changeThemeFab
+              },
+              n.a.createElement(h.a, { path: N.h, size: 1, color: "#fff" })
             ),
             n.a.createElement(
               w.a,
@@ -35808,7 +35787,7 @@
           )
         );
       });
-      function xA(e, a) {
+      function oA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -35820,16 +35799,16 @@
         }
         return t;
       }
-      function hA(e) {
+      function EA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? xA(t, !0).forEach(function(a) {
+            ? oA(t, !0).forEach(function(a) {
                 Object(d.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : xA(t).forEach(function(a) {
+            : oA(t).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -35839,7 +35818,7 @@
         }
         return e;
       }
-      var NA = Object(D.a)(function(e) {
+      var dA = Object(D.a)(function(e) {
           return {
             root: { display: "flex", maxWidth: "100vw", overflowX: "hidden" },
             content: {
@@ -35855,13 +35834,13 @@
                 duration: e.transitions.duration.enteringScreen
               })
             },
-            fakeToolbar: hA({}, e.mixins.toolbar),
+            fakeToolbar: EA({}, e.mixins.toolbar),
             margin: { marginBottom: 24 }
           };
         }),
-        IA = t(507),
-        fA = t.n(IA),
-        yA = function() {
+        uA = t(500),
+        pA = t.n(uA),
+        gA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -35880,7 +35859,7 @@
                     "React Material Admin Full is an admin dashboard template built with React 16.8.6. Sing App goes beyond usual admin templates and provides you entire intuitive programming framework. You can use React Material Admin Full to build any type of web applications like SAAS, CMS, financial dashboards, project management tools, etc."
                   ),
                   n.a.createElement("img", {
-                    src: fA.a,
+                    src: pA.a,
                     alt: "React Material Admin Full",
                     style: { width: "100%", height: "100%", marginTop: 24 }
                   }),
@@ -36018,7 +35997,7 @@
                           color: "primary"
                         },
                         "Licences ",
-                        n.a.createElement(Ul.a, null)
+                        n.a.createElement(Rl.a, null)
                       )
                     ),
                     n.a.createElement(
@@ -36037,7 +36016,7 @@
                           color: "primary"
                         },
                         "How to start project ",
-                        n.a.createElement(Ul.a, null)
+                        n.a.createElement(Rl.a, null)
                       )
                     )
                   )
@@ -36046,14 +36025,14 @@
             )
           );
         },
-        bA = t(2195),
-        TA = Object(D.a)(function(e) {
+        xA = t(2184),
+        hA = Object(D.a)(function(e) {
           return {
             successIcon: { color: e.palette.success.main },
             failIcon: { color: "red" }
           };
         }),
-        vA = [
+        NA = [
           {
             advantage: "Hundreds unique components",
             single: "plus",
@@ -36067,8 +36046,8 @@
           },
           { advantage: "Paying users allowed", single: "no", extended: "plus" }
         ],
-        AA = function() {
-          var e = TA();
+        IA = function() {
+          var e = hA();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36087,53 +36066,53 @@
                     "A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. If your end product including an item is going to be free to the end user then a Single License is what you need. An Extended License is required if the end user must pay to use the end product."
                   ),
                   n.a.createElement(
-                    gt.a,
+                    st.a,
                     {
                       "aria-label": "licences table",
                       style: { marginTop: 48 }
                     },
                     n.a.createElement(
-                      it.a,
+                      tt.a,
                       null,
                       n.a.createElement(
-                        st.a,
+                        lt.a,
                         null,
-                        n.a.createElement(ot.a, null),
-                        n.a.createElement(ot.a, null, "Single"),
-                        n.a.createElement(ot.a, null, "Extended")
+                        n.a.createElement(nt.a, null),
+                        n.a.createElement(nt.a, null, "Single"),
+                        n.a.createElement(nt.a, null, "Extended")
                       )
                     ),
                     n.a.createElement(
-                      xt.a,
+                      ot.a,
                       null,
-                      vA.map(function(a) {
+                      NA.map(function(a) {
                         return n.a.createElement(
-                          st.a,
+                          lt.a,
                           { key: a.advantage },
                           n.a.createElement(
-                            ot.a,
+                            nt.a,
                             { component: "th", scope: "row" },
                             a.advantage
                           ),
                           n.a.createElement(
-                            ot.a,
+                            nt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(bA.a, {
+                              ? n.a.createElement(xA.a, {
                                   className: e.successIcon
                                 })
-                              : n.a.createElement(tg.a, {
+                              : n.a.createElement(Zp.a, {
                                   className: e.failIcon
                                 })
                           ),
                           n.a.createElement(
-                            ot.a,
+                            nt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(bA.a, {
+                              ? n.a.createElement(xA.a, {
                                   className: e.successIcon
                                 })
-                              : n.a.createElement(tg.a, {
+                              : n.a.createElement(Zp.a, {
                                   className: e.failIcon
                                 })
                           )
@@ -36174,7 +36153,7 @@
             )
           );
         },
-        wA = function() {
+        fA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36274,7 +36253,7 @@
             )
           );
         },
-        CA = Object(E.h)(function(e) {
+        yA = Object(E.h)(function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36294,31 +36273,31 @@
                     "User authorization is build via",
                     " ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       "React Hooks and React Router Dom"
                     ),
                     " ",
                     "to redirect. We're using ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { inline: !0, row: !0 },
                       "localStorage"
                     ),
                     " ",
                     "to keep that the user is login. When a user is coming in",
                     " ",
-                    n.a.createElement(Qt, { row: !0, inline: !0 }, "id_token"),
+                    n.a.createElement(zt, { row: !0, inline: !0 }, "id_token"),
                     " ",
                     "value is recorded with the number key. You can see a logic specified in ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       "/src/components/App.js"
                     )
                   ),
                   n.a.createElement(
-                    Qt,
+                    zt,
                     null,
                     '\n  function PrivateRoute({ component, ...rest }) {\n    return (\n      <Route\n        {...rest}\n        render={props =>\n          isAuthenticated ? (\n            React.createElement(component, props)\n          ) : (\n            <Redirect\n              to={{\n                pathname: "/login",\n                state: {\n                  from: props.location\n                }\n              }}\n            />\n          )\n        }\n      />\n    );\n  }\n\n  function PublicRoute({ component, ...rest }) {\n    return (\n      <Route\n        {...rest}\n        render={props =>\n          isAuthenticated ? (\n            <Redirect\n              to={{\n                pathname: "/"\n              }}\n            />\n          ) : (\n            React.createElement(component, props)\n          )\n        }\n      />\n    );\n  }\n            '
                   ),
@@ -36329,7 +36308,7 @@
                     "We have build a dynamic dashboard that visualized via",
                     " ",
                     n.a.createElement(
-                      Qt,
+                      zt,
                       { row: !0, inline: !0 },
                       "Recharts and Apexcharts"
                     ),
@@ -36357,7 +36336,7 @@
             )
           );
         }),
-        PA = function() {
+        bA = function() {
           return n.a.createElement(
             za,
             { title: "Typography", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -36366,22 +36345,22 @@
               { variant: "body1" },
               "Typography component is the wrapper of native",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "Material-UI"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "Material-UI"),
               " ",
               "typography component. We'he override Typography screen size in",
               " ",
               n.a.createElement(
-                Qt,
+                zt,
                 { row: !0, inline: !0 },
                 "src/themes/index.js"
               ),
               "Also we attached prop called",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "size"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "size"),
               " ",
               "with the values",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "sm, md, xl, xxl")
+              n.a.createElement(zt, { inline: !0, row: !0 }, "sm, md, xl, xxl")
             ),
             n.a.createElement(
               Ie,
@@ -36389,7 +36368,7 @@
               "Function define sizing"
             ),
             n.a.createElement(
-              Qt,
+              zt,
               null,
               '\n  function getFontSize(size, variant = "", theme) {\n    let multiplier;\n    \n    switch (size) {\n    case "sm":\n      multiplier = 0.8;\n      break;\n    case "md":\n      multiplier = 1.5;\n      break;\n    case "xl":\n      multiplier = 2;\n      break;\n    case "xxl":\n      multiplier = 3;\n      break;\n    default:\n      multiplier = 1;\n      break;\n    }\n\n  const defaultSize =\n    variant && theme.typography[variant]\n      ? theme.typography[variant].fontSize\n      : theme.typography.fontStyle + "px";\n\n  return `calc(${defaultSize} * ${multiplier})`;\n}\n        '
             ),
@@ -36398,21 +36377,21 @@
               { variant: "body1", style: { margin: "16px 0" } },
               "You can define",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "weight"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "weight"),
               " ",
               "prop to add",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "font-weight"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "font-weight"),
               "property to your text. Take a look at the function:"
             ),
             n.a.createElement(
-              Qt,
+              zt,
               null,
               '\n  function getFontWeight(style) {\n      switch (style) {\n        case "light":\n          return 300;\n        case "medium":\n          return 500;\n        case "bold":\n          return 600;\n        default:\n          return 400;\n      }\n  }\n        '
             )
           );
         },
-        OA = function() {
+        TA = function() {
           return n.a.createElement(
             za,
             { title: "Widget", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -36421,7 +36400,7 @@
               { variant: "body1" },
               "Widget is the wrapper of native",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "Paper"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "Paper"),
               " ",
               "component. But there are a couple of useful props. Such as:",
               " "
@@ -36475,21 +36454,21 @@
               { variant: "body1" },
               "If",
               " ",
-              n.a.createElement(Qt, { rowi: !0, inline: !0 }, "inheritHeight"),
+              n.a.createElement(zt, { rowi: !0, inline: !0 }, "inheritHeight"),
               " ",
               "prop doesn't add to your element,",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "Widget", " "),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "Widget", " "),
               " ",
               "will fill",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "100%"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "100%"),
               "of the parent container. To make",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "Widget"),
               "inherit height of the children, ypu have to add",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "inheritHeight"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "inheritHeight"),
               " ",
               "prop."
             ),
@@ -36498,15 +36477,15 @@
               { variant: "body1", style: { marginTop: 16 } },
               "If you want to add",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "className"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "className"),
               " ",
               "to your",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "Widget"),
               " ",
               "add",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "bodyClass"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "bodyClass"),
               " ",
               "prop."
             ),
@@ -36515,11 +36494,11 @@
               { variant: "body1", style: { marginTop: 16 } },
               "By default widget menu is appears in the top right corner of the",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "Widget"),
               ". To delete it type",
               " ",
               n.a.createElement(
-                Qt,
+                zt,
                 { row: !0, inline: !0 },
                 "disableWidgetMenu."
               )
@@ -36529,13 +36508,13 @@
               { variant: "body1", style: { marginTop: 16 } },
               "You can perform a lot of things inside",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "header"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "header"),
               ". To do this add a",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "JSX"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "JSX"),
               "element to",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "header"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "header"),
               " ",
               "prop."
             ),
@@ -36544,11 +36523,11 @@
               { variant: "body1", style: { marginTop: 16 } },
               "By default we make available search field in",
               " ",
-              n.a.createElement(Qt, { row: !0, inline: !0 }, "Widget"),
+              n.a.createElement(zt, { row: !0, inline: !0 }, "Widget"),
               " ",
               "component by adding",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "searchField"),
+              n.a.createElement(zt, { inline: !0, row: !0 }, "searchField"),
               " ",
               "prop. Demo:"
             ),
@@ -36564,10 +36543,7 @@
             )
           );
         },
-        SA = t(508),
-        kA = t(509),
-        BA = n.a.createElement(SA.a, { icon: kA.a }),
-        MA = function() {
+        vA = function() {
           return n.a.createElement(
             za,
             { title: "Libs", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -36577,13 +36553,12 @@
               { variant: "h6" },
               "Library can be used among native",
               " ",
-              n.a.createElement(Qt, { inline: !0, row: !0 }, "Material Icons")
+              n.a.createElement(zt, { inline: !0, row: !0 }, "Material Icons")
             ),
-            n.a.createElement(Ie, { variant: "h6" }, "Examples:"),
-            n.a.createElement(BA, null)
+            n.a.createElement(Ie, { variant: "h6" }, "Examples:")
           );
         },
-        jA = Object(D.a)(function(e) {
+        AA = Object(D.a)(function(e) {
           var a;
           return {
             menuIcon: { marginRight: e.spacing(2) },
@@ -36615,10 +36590,10 @@
             })
           };
         }),
-        LA = t(2196),
-        DA = Object(E.h)(function(e) {
+        wA = t(2185),
+        CA = Object(E.h)(function(e) {
           var a = Object(Y.a)(),
-            t = jA(),
+            t = AA(),
             r = ea(),
             m = aa(),
             c = Object(l.useState)(!1),
@@ -36693,7 +36668,7 @@
                       n.a.createElement(
                         v.a,
                         null,
-                        n.a.createElement(LA.a, { style: { color: "#fff" } })
+                        n.a.createElement(wA.a, { style: { color: "#fff" } })
                       )
                     ),
                     n.a.createElement(
@@ -36787,7 +36762,7 @@
             )
           );
         }),
-        FA = [
+        PA = [
           {
             id: 0,
             label: "Getting Started",
@@ -36811,7 +36786,7 @@
             id: 1,
             label: "Pages",
             link: "/documentation/pages",
-            icon: n.a.createElement(tt.a, null)
+            icon: n.a.createElement(Za.a, null)
           },
           {
             id: 2,
@@ -36833,18 +36808,18 @@
             id: 3,
             label: "Libs",
             link: "/documentation/libs",
-            icon: n.a.createElement(VE.a, null)
+            icon: n.a.createElement(FE.a, null)
           }
         ],
-        RA = Object(E.h)(function(e) {
+        OA = Object(E.h)(function(e) {
           var a = ea(),
-            t = NA(),
+            t = dA(),
             l = Object(E.g)().path;
           return n.a.createElement(
             "div",
             { className: t.root },
-            n.a.createElement(DA, null),
-            n.a.createElement(Da, { structure: FA }),
+            n.a.createElement(CA, null),
+            n.a.createElement(Da, { structure: PA }),
             n.a.createElement(
               "div",
               {
@@ -36869,7 +36844,7 @@
                     justify: "space-between",
                     alignItems: "center"
                   },
-                  FA.map(function(e) {
+                  PA.map(function(e) {
                     return !e.children &&
                       window.location.hash.includes(e.link) &&
                       e.link
@@ -36919,43 +36894,43 @@
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/overview") },
-                  n.a.createElement(yA, null)
+                  n.a.createElement(gA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/licences") },
-                  n.a.createElement(AA, null)
+                  n.a.createElement(IA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/quick-start") },
-                  n.a.createElement(wA, null)
+                  n.a.createElement(fA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/pages") },
-                  n.a.createElement(CA, null)
+                  n.a.createElement(yA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/typography") },
-                  n.a.createElement(PA, null)
+                  n.a.createElement(bA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/widget") },
-                  n.a.createElement(OA, null)
+                  n.a.createElement(TA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/libs") },
-                  n.a.createElement(MA, null)
+                  n.a.createElement(vA, null)
                 )
               )
             )
           );
         }),
-        WA = Object(D.a)(function(e) {
+        SA = Object(D.a)(function(e) {
           return {
             container: {
               height: "100vh",
@@ -37001,10 +36976,10 @@
             backButton: { textTransform: "none", fontSize: 22 }
           };
         }),
-        HA = t(510),
-        zA = t.n(HA);
-      function GA() {
-        var e = WA();
+        kA = t(501),
+        BA = t.n(kA);
+      function MA() {
+        var e = SA();
         return n.a.createElement(
           f.a,
           { container: !0, className: e.container },
@@ -37013,7 +36988,7 @@
             { className: e.logotype },
             n.a.createElement("img", {
               className: e.logotypeIcon,
-              src: zA.a,
+              src: BA.a,
               alt: "logo"
             }),
             n.a.createElement(
@@ -37064,8 +37039,8 @@
           )
         );
       }
-      var VA = t(518),
-        UA = Object(D.a)(function(e) {
+      var jA = t(507),
+        LA = Object(D.a)(function(e) {
           var a;
           return {
             container: {
@@ -37181,11 +37156,11 @@
             )
           };
         }),
-        YA = t(511),
-        KA = t.n(YA),
-        QA = t(309),
-        JA = t.n(QA),
-        qA = function() {
+        DA = t(502),
+        FA = t.n(DA),
+        RA = t(301),
+        WA = t.n(RA),
+        HA = function() {
           var e = new Date();
           return e.getHours() >= 4 && e.getHours() <= 12
             ? "Good Morning"
@@ -37195,8 +37170,8 @@
             ? "Good Evening"
             : "Good Night";
         };
-      var ZA = Object(E.h)(function(e) {
-        var a = UA(),
+      var zA = Object(E.h)(function(e) {
+        var a = LA(),
           t = ia(),
           r = Object(l.useState)(!1),
           m = Object(u.a)(r, 2),
@@ -37229,7 +37204,7 @@
             "div",
             { className: a.logotypeContainer },
             n.a.createElement("img", {
-              src: KA.a,
+              src: FA.a,
               alt: "logo",
               className: a.logotypeImage
             }),
@@ -37272,14 +37247,14 @@
                   n.a.createElement(
                     Ie,
                     { variant: "h1", className: a.greeting },
-                    qA(),
+                    HA(),
                     ", User"
                   ),
                   n.a.createElement(
                     fe,
                     { size: "large", className: a.googleButton },
                     n.a.createElement("img", {
-                      src: JA.a,
+                      src: WA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -37297,7 +37272,7 @@
                     n.a.createElement("div", { className: a.formDivider })
                   ),
                   n.a.createElement(
-                    VA.a,
+                    jA.a,
                     {
                       in: E,
                       style: E
@@ -37385,7 +37360,7 @@
                     "Create your account"
                   ),
                   n.a.createElement(
-                    VA.a,
+                    jA.a,
                     { in: E },
                     n.a.createElement(
                       Ie,
@@ -37477,7 +37452,7 @@
                       className: g()(a.googleButton, a.googleButtonCreating)
                     },
                     n.a.createElement("img", {
-                      src: JA.a,
+                      src: WA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -37493,7 +37468,7 @@
           )
         );
       });
-      function _A() {
+      function GA() {
         var e = (function() {
           var e = n.a.useContext(ra);
           if (void 0 === e)
@@ -37520,7 +37495,7 @@
                 return n.a.createElement(E.a, { to: "/app/dashboard" });
               }
             }),
-            n.a.createElement(E.b, { path: "/documentation", component: RA }),
+            n.a.createElement(E.b, { path: "/documentation", component: OA }),
             n.a.createElement(
               function(a) {
                 var t = a.component,
@@ -37541,7 +37516,7 @@
                   })
                 );
               },
-              { path: "/app", component: gA }
+              { path: "/app", component: sA }
             ),
             n.a.createElement(
               function(a) {
@@ -37558,9 +37533,9 @@
                   })
                 );
               },
-              { path: "/login", component: ZA }
+              { path: "/login", component: zA }
             ),
-            n.a.createElement(E.b, { component: GA })
+            n.a.createElement(E.b, { component: MA })
           )
         );
       }
@@ -37571,7 +37546,7 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      t(1106);
+      t(1095);
       m.a.render(
         n.a.createElement(
           function(e) {
@@ -37606,25 +37581,25 @@
             n.a.createElement(
               function(e) {
                 var a = e.children,
-                  t = n.a.useReducer(uA, {
-                    theme: sy[localStorage.getItem("theme")] || sy.default
+                  t = n.a.useReducer(cA, {
+                    theme: ly[localStorage.getItem("theme")] || ly.default
                   }),
                   l = Object(u.a)(t, 2),
                   r = l[0],
                   m = l[1];
                 return n.a.createElement(
-                  EA.Provider,
+                  rA.Provider,
                   { value: r },
-                  n.a.createElement(dA.Provider, { value: m }, a)
+                  n.a.createElement(mA.Provider, { value: m }, a)
                 );
               },
               null,
-              n.a.createElement(EA.Consumer, null, function(e) {
+              n.a.createElement(rA.Consumer, null, function(e) {
                 return n.a.createElement(
                   c.a,
                   { theme: e.theme },
                   n.a.createElement(i.a, null),
-                  n.a.createElement(_A, null)
+                  n.a.createElement(GA, null)
                 );
               })
             )
@@ -37643,119 +37618,119 @@
     149: function(e, a, t) {
       e.exports = t.p + "static/media/img6.3795ab4e.jpg";
     },
-    173: function(e, a, t) {
+    172: function(e, a, t) {
       e.exports = t.p + "static/media/a2.65b83bd6.jpg";
     },
-    174: function(e, a, t) {
+    173: function(e, a, t) {
       e.exports = { widget: "Calendar_widget__1VaC5" };
     },
-    220: function(e, a, t) {
+    219: function(e, a, t) {
       e.exports = t.p + "static/media/2.5008e7f6.jpg";
     },
-    221: function(e, a, t) {
+    220: function(e, a, t) {
       e.exports = t.p + "static/media/mountains.4130575d.jpeg";
     },
-    304: function(e, a, t) {
+    297: function(e, a, t) {
       e.exports = t.p + "static/media/a4.3ceb7ef6.jpg";
     },
-    305: function(e, a, t) {
+    298: function(e, a, t) {
       e.exports = t.p + "static/media/profile.84f014f0.jpg";
     },
-    309: function(e, a, t) {
+    301: function(e, a, t) {
       e.exports = t.p + "static/media/google.695a3160.svg";
     },
-    443: function(e, a, t) {
+    438: function(e, a, t) {
       e.exports = t.p + "static/media/main-profile.d7f2a278.png";
     },
-    466: function(e, a, t) {
+    459: function(e, a, t) {
       e.exports = t.p + "static/media/1.f5c976d0.jpg";
     },
-    467: function(e, a, t) {
+    460: function(e, a, t) {
       e.exports = t.p + "static/media/3.635e4791.jpg";
     },
-    475: function(e, a, t) {
+    468: function(e, a, t) {
       e.exports = t.p + "static/media/lifestyle.52254d52.jpg";
     },
-    476: function(e, a, t) {
+    469: function(e, a, t) {
       e.exports = t.p + "static/media/isometric.3414e66f.jpg";
     },
-    477: function(e, a, t) {
+    470: function(e, a, t) {
       e.exports = t.p + "static/media/rns.95da0675.png";
     },
-    478: function(e, a, t) {
+    471: function(e, a, t) {
       e.exports = t.p + "static/media/mastercard.39748d61.svg";
     },
-    479: function(e, a, t) {
+    472: function(e, a, t) {
       e.exports = t.p + "static/media/paypal.7c552892.svg";
     },
-    480: function(e, a, t) {
+    473: function(e, a, t) {
       e.exports = t.p + "static/media/visa.868e1896.svg";
     },
-    481: function(e, a, t) {
+    474: function(e, a, t) {
       e.exports = t.p + "static/media/aexpress.2f7bff60.svg";
     },
-    484: function(e) {
+    477: function(e) {
       e.exports = JSON.parse(
         '{"arcs":[[[7080,7327],[-5,4],[-10,-10],[5,-6]],[[7070,7315],[-16,-12],[-9,5],[-28,-4],[-12,-6],[-1,-5],[-17,-18],[-11,-16],[6,-10],[6,-18],[-2,-15],[3,-8],[-18,-35],[4,-12],[-2,-18],[-7,-5],[-13,0],[-13,4],[3,-16],[6,-6],[-1,-9],[4,-9],[-12,-14],[-8,0],[-6,-18],[2,-7],[-6,-11],[2,-30],[-8,-17],[-6,-1],[-2,8],[-15,4],[-3,-8],[-14,-12],[6,-9],[-11,-7],[-13,6],[-7,-15],[-8,-7],[-3,-19],[2,-9],[-4,-35],[-32,-17],[-16,2],[-11,-11],[-14,6],[-30,-5],[-46,26]],[[6689,6902],[27,56],[1,10],[-4,21],[-24,7],[-1,9],[1,35],[-7,43],[0,9],[7,14],[1,9],[-10,5],[0,31],[11,8],[-5,13],[7,6],[5,26],[-1,11],[4,19]],[[6701,7234],[8,-10],[13,-1],[6,-7],[1,-9],[5,8],[5,-4],[13,13],[0,24],[9,0],[4,6],[20,11],[9,15],[0,16],[5,14],[-1,9],[9,8],[12,0],[4,16],[4,3],[15,-14],[5,2]],[[6847,7334],[14,2],[7,-12],[6,6],[8,-6]],[[6882,7324],[7,-15],[7,10],[15,9],[2,5],[10,-14],[5,7],[-2,13],[4,8],[21,2],[-3,18],[5,4],[12,26],[9,-2],[7,-9],[-1,-21],[6,3],[2,-8],[-3,-14],[-1,-35],[3,-12],[7,-4],[15,19],[9,1],[3,11],[14,14],[13,-2],[-1,-12],[14,8],[12,2],[7,-9]],[[5665,4557],[3,-32],[-3,-9],[0,-36],[2,-12],[-5,-22],[4,-12],[-56,0],[0,-182],[3,-21],[6,-7],[15,-33],[6,-7],[3,-10],[6,-7]],[[5649,4167],[-53,-21],[-11,4],[-8,-4],[-13,9],[-8,-3],[-17,2],[-5,4],[-10,0],[-7,9],[-5,14],[-52,0],[-66,0],[-7,-1],[-12,17],[-4,9],[-6,1],[-18,-16],[-15,4],[-6,-6]],[[5326,4189],[0,28],[2,-1],[-2,58],[7,9],[1,23],[6,24],[2,20],[0,23],[5,12],[0,26],[4,4],[8,20],[0,10],[6,12],[5,0],[8,20],[5,28],[-1,20],[2,29],[-2,15],[-7,15],[-8,46],[-7,29],[6,16],[6,7],[-1,21],[-3,9],[-10,48],[-2,4],[0,21],[-8,16],[-8,30],[16,4],[10,11]],[[5366,4846],[4,-2],[18,2],[12,-3],[21,2],[32,1],[7,-4],[4,-15],[0,-22],[3,-16],[3,-3],[0,-19],[10,-23],[0,-8],[9,-20],[7,4],[6,-4],[2,6],[33,0],[1,20],[4,12],[-2,8],[2,18],[21,0],[9,5],[-3,-22],[36,0],[1,-22],[-2,-20],[5,-23],[-4,-53],[1,-14],[6,-17],[3,-2],[4,-23],[0,-22],[-4,-9],[3,-18],[6,7],[13,-4],[14,9],[12,-3],[2,8]],[[5363,4916],[-7,-5],[-8,-18],[-1,-40],[-8,-2]],[[5339,4851],[-2,5],[2,14],[-6,24]],[[5333,4894],[10,23],[7,3],[4,10],[9,-14]],[[5582,7537],[-1,0]],[[5581,7537],[1,0]],[[5537,7617],[1,0]],[[5538,7617],[-1,0]],[[5557,7633],[4,-13],[7,-4],[3,-22]],[[5571,7594],[-4,-21],[6,-24]],[[5573,7549],[2,-10]],[[5575,7539],[6,-2]],[[5581,7537],[1,-1]],[[5582,7536],[0,0]],[[5582,7536],[0,-5]],[[5582,7531],[1,-5]],[[5583,7526],[0,0]],[[5583,7526],[-2,-13],[-5,-2],[-2,-17],[-11,-8],[3,-12],[-6,-8],[-5,3]],[[5555,7469],[-3,19],[-11,9],[-1,22],[-4,4],[4,16],[-1,29],[5,23],[-7,2]],[[5537,7593],[1,14]],[[5538,7607],[0,13]],[[5538,7620],[9,19],[3,-11],[7,5]],[[5553,8659],[10,-5],[-7,-11],[-10,6],[7,10]],[[5047,7630],[-7,-5],[-1,11]],[[5039,7636],[8,1],[0,-7]],[[6563,6637],[0,0]],[[6563,6659],[2,-2],[1,-36]],[[6566,6621],[-8,-14],[-3,13],[-6,-4],[-1,-38],[7,-9],[-11,-3],[-4,-6],[2,-9],[-10,-44],[0,-17]],[[6532,6490],[-2,-5],[-70,18],[-3,5],[-25,63],[0,9]],[[6432,6580],[6,-1],[0,-13],[12,-3],[10,11],[24,-2],[11,-4],[15,12],[6,14],[1,15],[11,12],[13,31],[11,13],[5,19]],[[6557,6684],[3,-2],[-1,-22],[4,-1]],[[6562,6642],[0,0]],[[3093,2021],[0,6]],[[3093,2027],[0,-6]],[[3093,2028],[0,123]],[[3093,2151],[10,-17],[-8,-15],[11,-6],[5,-17],[12,-13],[7,-13],[17,-13],[11,-14],[12,-7],[20,0],[-5,-16],[-18,1],[-11,-8],[-12,6],[-51,9]],[[3259,3902],[11,-14],[7,-29],[9,-17],[15,-17],[3,-11],[17,-13],[11,-1],[15,-18],[4,-9],[15,-17],[9,-5],[5,-8],[13,-5],[8,-20],[-6,-14],[-3,-19],[-8,-10],[-1,-25],[-3,-14],[-5,-4],[-5,-15],[4,-5],[13,1],[19,-8],[5,-5],[7,4],[5,-5],[6,3],[4,-8],[3,12],[5,5],[10,-9],[5,8],[-1,8],[6,12],[6,0],[11,18],[5,40],[0,22]],[[3483,3710],[5,-4],[6,7],[9,-9],[1,-17],[5,-14],[-2,-9],[0,-25],[-2,-17],[-13,-19],[-15,-5],[-6,-19],[-8,-4],[-6,-13],[-7,-5],[3,-10],[-6,-4],[-20,-39],[-2,-11],[-12,-25],[-5,-2],[-1,-10],[-8,-11]],[[3399,3445],[0,-7],[-7,-12],[2,-23],[-3,-20],[-5,-13],[3,-4],[-2,-14],[-4,-5],[3,-25],[-3,-8]],[[3383,3314],[2,-25],[-2,-12],[-6,0],[-4,-34],[5,-29],[-4,-14],[5,-12],[23,-21],[11,-25],[-7,-19],[0,-13],[7,-17],[12,-6],[1,-29],[-11,-30],[-13,-26],[-2,-16],[-27,-24],[-37,-16],[-27,-8],[-27,0],[-15,11],[3,-32],[5,-9],[-2,-21],[-4,3],[-1,-21],[-4,-5],[6,-17],[-2,-18],[-20,-16],[-21,0],[-26,20],[-8,2],[-4,-10],[5,-32],[-2,-24],[6,-16],[11,-4],[-4,-10],[13,0],[2,10],[-6,0],[14,11],[5,-13],[1,-17],[-3,-12],[-12,-5],[-3,16],[-13,5],[-9,-15],[19,-13],[-20,-17],[-8,-19],[3,-43],[-4,-11],[-9,-7],[0,-20],[-14,3],[-8,-5],[-1,-8],[-14,-5],[-9,-18],[0,-9],[-6,-9],[-2,-14],[7,-25],[7,-6],[8,-16],[6,-4],[17,0],[6,-6],[2,-20],[-5,-33],[-6,-2],[-12,-18],[-16,-14],[-3,-10],[-9,-10],[-6,-22],[2,-16],[-5,-18],[-5,-6],[-23,-14],[-5,-12],[-2,-21],[2,-24],[9,-34],[11,-24],[-3,-1]],[[3098,2168],[-15,10],[-26,10],[-55,1],[-4,12],[-11,13],[6,19],[-5,7],[5,13],[-2,14],[-13,1],[-11,-8],[-3,26],[-7,9],[2,22],[-3,11],[3,15],[9,1],[3,17],[12,10],[1,22],[7,7],[-1,15],[-5,7],[6,30],[8,13],[2,22],[8,9],[-3,32],[4,11],[-4,4],[0,15],[8,5],[5,13],[-8,17],[-14,5],[7,5],[17,3],[2,17],[-18,3],[-1,18],[5,7],[-4,14],[3,7],[-6,16],[5,9],[-11,7],[0,45],[3,8],[8,1],[-5,26],[2,43],[-3,11],[4,27],[5,21],[-2,18],[8,13],[0,25],[15,13],[-3,15],[-1,21],[-5,20],[3,35],[-2,24],[3,12],[10,4],[-1,8],[10,14],[-2,40],[-4,4],[6,6],[0,12],[9,39],[6,2],[-2,34],[3,18],[-9,9],[3,18],[-4,6],[0,16],[-5,12],[-2,14],[3,9],[-5,2],[-3,15],[1,24],[6,8],[0,13],[5,19],[7,8],[2,10],[-4,4],[2,16],[-4,31],[7,10],[1,26],[4,17],[13,33],[9,38],[6,-3],[8,7],[0,10],[-8,21],[0,10],[5,9],[-2,26],[-3,17],[2,15],[5,4],[-6,14],[2,14],[7,13],[25,20],[9,54],[-5,17]],[[3133,3869],[5,9],[0,8],[7,6],[2,12],[9,5],[4,19],[3,-2],[10,-17],[21,0],[12,-5],[6,-38],[3,20],[8,29],[32,1],[4,-14]],[[6265,7522],[0,0]],[[6249,7560],[2,-10],[15,-14],[-6,-16],[6,-11],[11,-10],[-3,-13],[-7,2],[15,-25],[9,-1],[-3,-13],[5,-7],[-5,-5],[3,-15]],[[6291,7422],[-10,-2]],[[6281,7420],[-4,23],[-7,7],[1,10],[-13,-1],[-8,14],[-7,-4]],[[6243,7469],[-8,16],[-12,1],[-11,7],[-3,20],[5,12],[-3,17],[-5,8]],[[6206,7550],[9,0],[11,7],[10,-3],[13,6]],[[6249,7546],[0,0]],[[6255,7542],[0,0]],[[488,408],[24,-7],[-48,-4],[-13,16],[37,-5]],[[542,484],[-90,7],[20,11],[65,-10],[5,-8]],[[3331,592],[8,-3],[-1,-57],[-23,-11],[-52,4],[-17,17],[-32,-10],[-67,20],[3,10],[19,-10],[115,3],[8,27],[39,10]],[[4135,588],[34,-2],[-10,-10],[-44,8],[-5,11],[25,-7]],[[3120,602],[25,-4],[35,-20],[-20,-7],[-40,31]],[[3137,618],[-11,-15],[-30,6],[41,9]],[[4054,618],[1,-6],[-76,3],[30,13],[45,-10]],[[547,618],[21,-9],[14,-23],[-47,-2],[-90,25],[-10,7],[5,17],[24,15],[25,0],[58,-30]],[[3143,666],[-58,-38],[-39,-36],[-31,3],[-10,10],[11,23],[23,11],[92,33],[12,-6]],[[9654,680],[-35,-8],[-8,14],[21,-7],[22,11],[0,-10]],[[3740,650],[1,-7],[44,2],[21,-39],[-7,-30],[-18,-1],[9,-11],[-158,-26],[-16,-9],[-121,-4],[1,17],[22,27],[26,-4],[60,37],[-13,14],[14,40],[31,33],[52,14],[37,-3],[38,-11],[19,-13],[-4,-20],[-38,-6]],[[9641,732],[63,-13],[-27,-10],[-42,-2],[-19,12],[25,13]],[[839,754],[14,-14],[-32,3],[-11,7],[29,4]],[[938,754],[-21,-7],[-2,12],[23,-5]],[[951,834],[16,-10],[-24,3],[8,7]],[[9561,885],[-8,-14],[-7,9],[15,5]],[[1342,903],[19,-12],[-6,-6],[-27,12],[14,6]],[[1458,897],[-1,-13],[-17,20],[18,-7]],[[1760,918],[-17,-8],[-3,7],[26,11],[-6,-10]],[[1680,914],[-12,3],[10,17],[17,-2],[-1,-10],[-14,-8]],[[1635,935],[17,0],[7,-14],[-23,-10],[0,-10],[-32,-4],[-22,7],[3,11],[15,12],[-27,3],[7,10],[55,-5]],[[4425,917],[9,-22],[-14,0],[-4,16],[-29,3],[20,7],[12,19],[11,1],[-5,-24]],[[9717,944],[-11,3],[8,14],[3,-17]],[[1498,961],[13,-7],[9,-16],[-11,-7],[29,6],[17,-9],[7,-11],[-6,-12],[-22,3],[-48,22],[0,8],[-19,7],[-3,16],[34,0]],[[2955,972],[-2,-10],[-13,0],[15,10]],[[2514,979],[-20,-5],[-4,5],[22,8],[2,-8]],[[2918,987],[18,-3],[-8,-40],[-36,14],[-7,10],[11,7],[18,0],[-19,10],[23,2]],[[2474,988],[-3,-19],[-14,-1],[6,17],[-10,16],[23,1],[-2,-14]],[[2365,999],[-10,3],[18,7],[-8,-10]],[[2270,1031],[14,-3],[-2,14],[10,0],[2,-17],[10,19],[19,1],[5,-10],[-23,-11],[8,-3],[27,11],[-6,-10],[13,-10],[-15,-1],[1,-9],[-72,2],[2,5],[-24,-1],[6,7],[-29,6],[-58,7],[6,10],[57,7],[8,-11],[7,7],[23,-12],[-13,13],[17,9],[15,-6],[-8,-14]],[[4919,1112],[8,-10],[14,1],[-17,-19],[-8,18],[-16,10],[19,0]],[[2947,1119],[8,-13],[-22,-10],[-48,-11],[-9,4],[2,12],[33,5],[9,12],[8,-13],[3,14],[16,0]],[[3313,1111],[-7,10],[11,1],[-4,-11]],[[4835,1126],[-5,-10],[-10,9],[15,1]],[[5082,1116],[-11,6],[19,4],[-8,-10]],[[4913,1121],[-10,0],[6,12],[12,3],[2,-14],[-10,-1]],[[7004,1113],[-10,3],[-5,16],[16,-11],[-1,-8]],[[5124,1122],[-12,11],[12,5],[0,-16]],[[5745,1129],[-22,0],[-2,11],[19,6],[5,-17]],[[5040,1146],[-7,-18],[-5,21],[12,-3]],[[2924,1165],[8,-12],[-12,-13],[-23,5],[-1,13],[8,7],[20,0]],[[5449,1148],[-17,8],[11,12],[19,-1],[-11,-8],[-2,-11]],[[3001,1170],[-23,2],[-6,7],[17,4],[12,-13]],[[3283,1179],[-6,-12],[-16,30],[11,2],[11,-20]],[[3055,1197],[19,-24],[1,-17],[16,-26],[11,-25],[3,-60],[-6,-23],[-20,-7],[-2,-10],[-40,-7],[-49,0],[-21,13],[10,8],[16,-3],[45,-2],[14,8],[-7,6],[-28,-9],[-18,10],[35,8],[1,5],[-31,0],[-14,17],[-11,-17],[-31,2],[10,-8],[-14,-9],[-38,14],[-1,15],[15,8],[16,-8],[-4,12],[9,4],[16,-13],[-4,14],[29,-2],[9,7],[-23,7],[10,6],[30,-6],[19,11],[20,0],[13,-11],[-2,16],[-35,7],[5,17],[24,8],[15,-4],[-18,14],[-20,-4],[-27,14],[7,34],[-10,5],[0,20],[45,10],[9,-7],[2,-18]],[[7385,1327],[-15,4],[8,9],[7,-13]],[[3111,1321],[9,-5],[-16,-13],[-8,-22],[-11,0],[-7,9],[22,44],[15,12],[5,-5],[-10,-11],[1,-9]],[[7686,1378],[4,-8],[-14,-2],[10,10]],[[3174,1408],[-3,-16],[-10,-2],[6,17],[7,1]],[[7805,1401],[-19,0],[-1,7],[12,10],[15,-7],[-7,-10]],[[7870,1413],[-16,19],[9,-2],[7,-17]],[[3410,1465],[-6,6],[14,7],[-8,-13]],[[3242,1481],[-2,-9],[14,-8],[-14,-12],[-26,3],[20,26],[8,0]],[[3270,1492],[2,-17],[-12,-8],[10,25]],[[3394,1508],[-2,-9],[20,-7],[-8,-17],[-7,6],[-7,-7],[-14,20],[5,8],[13,6]],[[3446,1521],[-9,7],[15,-2],[-6,-5]],[[0,324],[46,3],[68,-14],[19,8],[194,-14],[21,-11],[128,-2],[122,-11],[81,-3],[-58,13],[54,1],[-124,12],[-104,7],[24,11],[-55,17],[37,2],[-52,17],[-71,-3],[-37,23],[-127,27],[73,-2],[18,-14],[73,-4],[20,4],[70,-3],[6,-14],[50,10],[19,-11],[127,8],[18,9],[-44,5],[81,5],[16,14],[70,14],[-10,10],[-54,26],[31,11],[-19,10],[-74,13],[17,11],[109,6],[135,7],[0,5],[-77,24],[-11,11],[13,10],[43,-4],[46,10],[-17,11],[-75,12],[-55,17],[-3,5],[-68,8],[-43,21],[14,11],[48,6],[-2,14],[-71,-7],[-47,23],[14,18],[-3,26],[9,1],[24,-17],[21,17],[21,-5],[18,4],[38,-10],[-9,-10],[36,-3],[2,10],[72,-30],[30,16],[30,6],[-36,7],[7,14],[32,-17],[21,7],[13,-13],[27,0],[-16,13],[21,1],[-31,15],[29,-5],[-22,20],[-27,16],[-38,-3],[-33,3],[2,9],[28,4],[9,7],[69,-21],[6,8],[-27,13],[9,11],[56,6],[1,10],[41,4],[2,6],[19,-3],[9,-14],[18,0],[-10,14],[29,6],[16,14],[61,4],[30,-4],[-16,9],[4,14],[30,0],[11,11],[22,-4],[18,-16],[30,9],[58,-4],[20,-5],[64,13],[93,0],[8,-7],[45,3],[41,0],[59,10],[-3,10],[24,6],[6,-12],[33,-3],[51,6],[-7,21],[11,10],[21,0],[-9,-7],[19,2],[-8,-12],[4,-14],[15,3],[-18,-16],[-6,-21],[9,6],[46,8],[15,0],[-10,11],[0,20],[15,6],[35,-17],[-5,-19],[-34,-18],[4,-7],[45,4],[84,-10],[53,13],[28,-3],[14,4],[49,-4],[-3,-8],[20,-8],[70,13],[-27,6],[2,10],[-34,3],[17,7],[3,14],[-46,3],[5,11],[-7,15],[-33,5],[-4,20],[42,-4],[3,-6],[47,2],[-5,21],[-41,3],[-46,0],[-11,7],[-4,20],[11,7],[26,-4],[-17,-12],[21,-4],[33,4],[84,-1],[9,-7],[44,-11],[17,7],[24,-7],[21,8],[46,0],[33,-7],[16,10],[25,1],[6,10],[-10,17],[33,-4],[1,-10],[-15,-14],[9,-9],[30,6],[8,-11],[38,11],[5,-13],[28,-10],[20,2],[43,-19],[29,9],[-2,28],[24,-11],[-8,25],[28,-2],[24,-17],[-2,-16],[55,8],[5,-7],[-15,-14],[48,6],[7,5],[34,-5],[26,15],[57,12],[21,-2],[42,10],[35,16],[22,43],[-1,7],[-20,21],[-4,13],[6,23],[-15,38],[-15,16],[4,21],[-13,16],[15,0],[-1,7],[25,-14],[5,14],[11,6],[0,11],[-18,7],[14,5],[-5,17],[6,14],[-9,16],[12,3],[6,21],[-10,5],[-19,-1],[15,30],[6,0],[-2,-17],[15,-6],[1,26],[-4,14],[8,4],[14,-7],[5,34],[14,-2],[-5,11],[19,-4],[3,23],[16,1],[-5,27],[11,6],[16,-7],[-4,11],[20,14],[11,-3],[9,12],[10,1],[-1,10],[14,4],[-1,13],[30,14],[13,-2],[3,10],[12,2],[1,8],[21,4],[7,8],[13,6],[11,-3],[7,-20],[-10,-3],[-2,12],[-15,-12],[-10,0],[-15,-17],[-9,-22],[-9,-6],[-7,7],[-6,-6],[-19,-5],[-17,-29],[-20,3],[6,-10],[-18,-10],[9,-14],[-14,-14],[13,-19],[16,3],[0,10],[21,-2],[-16,-14],[-16,0],[-2,-16],[-5,16],[-19,-3],[1,-28],[-16,27],[-15,3],[-10,-29],[11,-10],[-9,-4],[-14,11],[-12,-15],[6,-16],[-15,-6],[-8,5],[-3,-33],[10,-6],[-12,-11],[21,6],[6,-6],[-20,-7],[14,-6],[-10,-7],[36,-17],[-2,17],[23,7],[-14,-17],[15,-6],[-5,-8],[14,-25],[14,-7],[-2,-21],[15,-13],[-1,-11],[-10,4],[5,-18],[22,1],[-16,-24],[20,4],[9,-21],[-5,-12],[-12,-1],[-14,-13],[14,-1],[11,10],[9,-8],[-7,-12],[-38,-3],[36,-14],[13,10],[0,-26],[-19,-2],[6,-18],[17,8],[-7,-24],[25,4],[-11,-19],[-9,8],[-3,-13],[-15,12],[-21,5],[13,-17],[21,-10],[-7,-23],[-21,5],[21,-13],[-23,-13],[31,7],[-9,-17],[-36,6],[17,-17],[-10,-13],[-13,-3],[-2,17],[-17,2],[6,-15],[-14,3],[-10,-10],[18,2],[7,-9],[-35,-4],[-2,-7],[33,-3],[-85,-34],[-52,-9],[4,-3],[-60,-13],[4,-11],[-17,-7],[-31,-1],[-20,4],[-46,0],[-31,8],[-64,0],[34,-42],[23,-15],[10,6],[66,-8],[-25,-26],[-38,-9],[-61,13],[-95,13],[-30,-6],[118,-34],[-9,-17],[-71,-7],[-61,21],[-37,30],[12,-23],[-13,-4],[17,-20],[42,-17],[17,-23],[18,-7],[2,20],[108,-4],[17,-13],[-20,-24],[-22,-3],[-62,0],[55,-10],[39,6],[24,-26],[-8,-7],[24,-16],[19,7],[38,-10],[7,13],[39,9],[21,-6],[9,-14],[46,-9],[89,-24],[77,-3],[-92,-8],[62,-5],[-2,-4],[-62,-1],[-6,-25],[26,-5],[52,8],[75,3],[-64,-17],[33,-33],[-6,-17],[66,-4],[49,30],[72,31],[52,14],[16,-1],[53,11],[65,5],[59,-2],[6,-17],[-17,-11],[31,-7],[67,24],[-2,10],[36,18],[9,16],[79,27],[42,-13],[34,10],[18,17],[53,0],[40,12],[42,-3],[-21,10],[37,0],[5,7],[153,6],[48,10],[-61,7],[-165,11],[31,17],[-27,0],[9,15],[-73,-12],[-96,23],[-5,14],[12,23],[11,3],[8,18],[24,0],[-7,12],[28,18],[34,10],[17,0],[5,10],[28,7],[15,13],[36,16],[52,10],[29,14],[48,10],[53,7],[31,-4],[22,14],[17,-6],[43,6],[-18,11],[29,26],[-3,10],[14,17],[24,3],[23,-7],[39,33],[-10,4],[-27,-10],[-22,3],[17,4],[-20,7],[1,13],[28,23],[18,3],[12,-9],[16,11],[-15,16],[29,-7],[14,11],[42,13],[3,19],[10,20],[-18,0],[-18,7],[-1,18],[16,2],[1,-9],[21,-10],[7,17],[16,9],[-12,10],[13,4],[3,-10],[22,-7],[10,-28],[15,7],[15,-5],[-4,9],[6,23],[-11,13],[13,5],[25,-7],[16,14],[13,-8],[-20,-29],[71,-3],[7,-9],[4,12],[18,3],[5,-6],[28,-5],[7,11],[12,-7],[-4,-14],[12,-9],[21,25],[13,8],[41,14],[105,20],[19,0],[28,7],[-5,17],[12,2],[-1,-17],[11,-3],[25,9],[-8,8],[9,9],[22,-23],[31,-14],[21,-5],[14,25],[18,7],[-16,10],[16,1],[8,-13],[22,-4],[22,3],[27,-4],[3,9],[17,3],[-3,-18],[45,-4],[11,1],[-6,11],[17,9],[11,-10],[-10,-23],[10,-10],[23,-1],[26,4],[3,13],[16,24],[24,-18],[-21,-6],[14,-7],[26,-5],[13,26],[15,-4],[0,-15],[27,-15],[31,-3],[35,17],[23,3],[38,21],[40,5],[38,11],[7,7],[2,33],[-12,13],[-1,13],[20,12],[28,0],[4,-8],[-21,-13],[24,-1],[20,-13],[-2,-23],[45,4],[8,-15],[7,9],[26,-1],[-5,-7],[19,-19],[2,12],[13,7],[-1,10],[15,4],[-2,32],[4,14],[26,6],[21,15],[28,4],[8,17],[32,8],[24,0],[-6,5],[34,13],[14,-6],[-2,23],[18,5],[14,-8],[-13,-7],[10,-3],[6,-12],[9,8],[16,-6],[-5,-17],[13,20],[-3,14],[16,5],[2,11],[-19,-3],[-6,13],[27,6],[-2,-9],[15,2],[0,-13],[11,8],[11,-7],[10,7],[-14,3],[10,16],[-16,1],[-1,12],[9,14],[23,4],[11,12],[30,4],[25,7],[40,-6],[19,-10],[15,-20],[11,3],[13,-8],[1,-9],[-36,3],[15,-8],[-11,-23],[1,-12],[7,13],[33,10],[23,-11],[12,1],[5,-20],[12,-4],[4,11],[24,0],[18,-7],[45,-7],[24,9],[30,-9],[45,-7],[48,-4],[9,-3],[35,8],[-1,-15],[14,-30],[-13,-3],[-7,-17],[13,0],[-16,-9],[12,-8],[0,-9],[-27,-3],[17,-14],[-13,-6],[9,-5],[-17,-12],[-13,18],[-18,-29],[13,-14],[34,8],[1,-21],[-15,-30],[-17,-8],[-5,-19],[-10,-7],[-6,-33],[-12,-36],[-15,-8],[25,-10],[22,10],[-3,26],[14,11],[34,3],[8,20],[20,6],[-6,7],[17,12],[14,3],[-11,7],[16,40],[17,7],[14,12],[-6,15],[22,23],[15,5],[8,-12],[28,6],[5,-7],[13,8],[-3,16],[35,18],[22,5],[7,21],[16,4],[-7,13],[9,12],[19,10],[73,24],[30,4],[13,-3],[-6,13],[29,18],[36,-4],[9,7],[18,0],[34,17],[8,-5],[14,4],[23,-4],[23,1],[19,14],[25,5],[12,-6],[34,1],[4,-10],[31,17],[11,-4],[8,-10],[13,6],[16,0],[16,6],[13,-10],[14,13],[9,0],[8,-26],[8,11],[13,3],[9,9],[27,7],[14,17],[0,7],[27,0],[8,6],[27,-9],[24,-3],[65,-22],[29,-6],[-3,-17],[12,13],[16,-19],[18,0],[29,17],[7,0],[-5,20],[13,14],[62,17],[35,-27],[-3,-15],[21,2],[16,-8],[3,-10],[-17,-16],[-31,-8],[-11,-15],[25,3],[22,10],[32,6],[13,10],[-3,-10],[19,3],[5,-6],[32,-1],[41,14],[0,-3],[-45,-17],[5,-7],[73,19],[18,14],[58,14],[13,-9],[11,6],[8,14],[14,6],[12,-14],[14,6],[-8,-12],[3,-11],[11,0],[0,-16],[28,6],[11,-7],[10,7],[6,-10],[11,13],[2,21],[16,19],[18,8],[28,-7],[30,4],[8,6],[19,-2],[13,-11],[-5,-11],[19,10],[11,0],[9,12],[4,-14],[13,7],[8,-8],[30,1],[20,-11],[35,-3],[12,-6],[28,-3],[10,-5],[20,3],[14,-13],[27,10],[12,-6],[-4,-11],[21,8],[5,-6],[-22,-38],[0,-10],[11,0],[26,23],[9,-10],[14,7],[14,-31],[13,5],[-8,-14],[8,-7],[23,3],[4,-6],[39,4],[35,-1],[10,4],[-1,-21],[16,-13],[0,14],[24,0],[17,-11],[23,7],[-5,24],[5,3],[24,-14],[2,-10],[16,-13],[14,-3],[17,-14],[19,3],[6,-10],[6,8],[17,-1],[45,-17],[14,-20],[-16,0],[28,-13],[19,-34],[-3,-13],[18,0],[2,34],[16,3],[22,-23],[21,2],[-3,7],[38,-3],[13,-6],[12,5],[13,-6],[-9,-6],[27,2],[18,-20],[10,-3],[48,-30],[2,21],[19,-31],[-5,-6],[-13,7],[-13,-34],[12,6],[-5,-17],[-39,15],[-11,-1],[16,-13],[29,-8],[-8,-19],[-20,-10],[-14,16],[-2,-13],[-32,1],[-12,5],[1,-16],[9,6],[23,-6],[-20,-4],[-5,-9],[-34,0],[9,-14],[-26,-1],[1,15],[-11,9],[-4,-20],[17,-14],[-15,0],[13,-30],[-24,1],[-20,-6],[-3,16],[-30,-30],[9,-7],[-5,-13],[-22,2],[-34,-12],[45,-1],[-4,-7],[21,-16],[-2,-16],[-18,-5],[18,-3],[4,-13],[-13,-11],[14,-5],[-14,-17],[18,0],[20,-30],[-7,-11],[27,-7],[-11,-20],[14,-7],[20,8],[12,-14],[36,-4],[-15,-13],[-12,9],[-47,-2],[-37,-7],[-14,-13],[-34,22],[20,-29],[-38,2],[-9,-8],[9,-14],[-23,-14],[27,3],[-37,-16],[52,-4],[-72,-17],[-6,-13],[61,6],[7,-8],[-35,-4],[40,-4],[-17,-13],[9,-23],[-22,5],[25,-20],[40,-9],[38,-31],[-89,-12],[59,-2],[53,8],[73,-27],[12,-14],[24,3],[-3,-20],[86,-9],[66,-23],[124,-12],[-9955,-15]],[[3456,1546],[12,-3],[-1,-9],[-17,4],[-19,-9],[3,13],[22,4]],[[3431,1556],[12,-2],[-6,-9],[-6,11]],[[3331,1581],[7,-5],[-12,-7],[-4,7],[-20,-3],[-1,6],[30,2]],[[3392,1616],[7,-6],[-33,-7],[10,13],[16,0]],[[3470,1665],[-6,-10],[-5,8],[11,2]],[[6916,2373],[5,-3],[-5,-12],[16,-14],[19,13],[7,-1],[-1,-15],[-9,1],[-11,-5],[2,-7],[13,1],[-1,-9],[-22,3],[-7,8],[-5,-13],[-8,4],[5,20],[-5,14],[1,12],[6,3]],[[9093,2685],[-7,-6],[5,12],[2,-6]],[[9020,2837],[14,-3],[13,-8],[2,-6],[17,-8],[24,13],[5,-4],[5,11],[5,-4],[4,9],[10,-13],[-1,-28],[1,-39],[-7,1],[-1,-22],[-4,-21],[3,-1],[0,-21],[-10,9],[6,10],[-14,1],[-4,-23],[-2,6],[-8,-26],[-9,6],[-14,-1],[-3,20],[-2,-6],[-4,15],[-7,9],[-6,24],[0,13],[9,-9],[-13,31],[-11,37],[-2,13],[4,15]],[[9121,2859],[-9,-6],[0,6],[9,0]],[[9109,2896],[9,-16],[1,-14],[-5,-2],[-11,22],[6,10]],[[9001,2876],[-5,-4],[-1,25],[7,3],[-1,-24]],[[8822,3134],[-1,-10],[12,1],[0,-11],[-11,1],[-5,-10],[-20,1],[-4,17],[21,11],[8,0]],[[9263,3604],[-1,-18],[-2,14],[3,4]],[[9261,3608],[-2,17],[3,2],[-1,-19]],[[8136,3714],[7,-36],[-7,19],[0,17]],[[9257,3758],[2,-20],[-10,-37],[1,32],[5,7],[-2,14],[4,4]],[[9195,3832],[5,-3],[0,-17],[-7,17],[2,3]],[[9061,4133],[3,-7],[-3,-7],[-4,13],[4,1]],[[8880,4236],[-7,-7],[0,-6],[-8,0],[1,8],[10,8],[4,-3]],[[8805,4285],[2,-15],[-4,8],[2,7]],[[8797,4395],[0,-9],[6,2],[-5,-8],[-1,-14],[6,-6],[-8,0],[-6,5],[-1,14],[9,16]],[[8621,4522],[5,-21],[-7,4],[-8,-2],[5,9],[-2,9],[6,10],[1,-9]],[[8624,4533],[6,-6],[14,10],[6,-2],[1,-21],[-14,-18],[-13,16],[-3,29],[3,-8]],[[8682,4547],[1,-13],[-4,6],[3,7]],[[8959,4566],[-1,-8],[6,-7],[3,-19],[0,-30],[10,-9],[-4,-20],[6,-4],[4,-11],[-2,-17],[5,2],[-1,-13],[3,-19],[-2,-19],[5,-20],[3,-22],[5,-2],[15,18],[4,-22],[18,-23],[-3,-12],[2,-6],[2,-37],[3,-8],[-2,-16],[6,-22],[9,-9],[-1,-11],[5,-19],[1,-16],[-3,-34],[9,-15],[-2,-17],[5,-14],[13,-15],[4,7],[2,-12],[8,0],[4,-6],[1,-14],[19,-12],[1,-10],[7,5],[3,-13],[4,1],[1,-10],[-4,-1],[-1,-10],[15,-24],[-1,-8],[8,-30],[0,-14],[3,-20],[8,-7],[5,-13],[-3,22],[4,5],[3,-9],[10,-13],[2,13],[6,-21],[-2,-15],[3,-36],[4,0],[4,-13],[5,-4],[6,-13],[6,3],[4,-6],[6,-27],[8,-7],[4,-25],[10,-6],[0,-27],[6,-16],[-2,-19],[4,-40],[-4,-3],[10,-41],[1,-17],[3,-4],[1,-40],[-7,-21],[-2,-39],[-7,-32],[0,-30],[-3,-28],[-5,-21],[-6,-11],[0,-23],[-13,-15],[-11,-20],[-6,-26],[-5,-3],[0,-26],[-9,-18],[-3,-27],[-4,-14],[2,-9],[-8,-7],[-9,-34],[0,-24],[-7,-34],[4,-21],[-2,-14],[-13,-16],[-33,-2],[-16,-10],[-10,-13],[-13,-24],[-19,-4],[3,-12],[4,7],[-2,-20],[-6,16],[-8,-3],[-4,16],[-3,-3],[-8,9],[5,8],[-2,9],[-6,0],[-1,-10],[-8,-5],[-6,8],[8,1],[3,17],[-6,10],[-15,-14],[10,-2],[-2,-8],[-6,0],[-10,-11],[-14,-22],[-32,28],[-5,-2],[-8,7],[-9,-1],[1,-6],[-8,1],[-4,13],[-14,5],[-10,11],[-3,13],[-13,23],[-3,18],[5,6],[0,13],[-9,34],[-14,26],[6,2],[3,10],[-4,3],[-21,-20],[-8,0],[-1,7],[9,12],[3,33],[-8,16],[-3,16],[-7,-13],[-1,-20],[-5,-23],[-7,4],[-15,-11],[3,23],[11,-3],[3,21],[-1,25],[4,17],[9,19],[-3,19],[6,4],[-8,34],[0,-26],[-3,2],[-6,-11],[-5,-27],[-25,-26],[-8,-24],[-4,-3],[-4,-16],[6,2],[0,-12],[-5,7],[-6,-5],[-6,18],[-1,21],[-3,17],[-11,20],[-4,27],[-12,0],[-2,13],[-4,1],[7,15],[-5,12],[-8,-5],[3,9],[-8,16],[-14,-5],[-10,14],[-7,1],[-9,-6],[-12,18],[-18,14],[-9,-7],[-18,2],[-33,-7],[-27,-23],[-20,-11],[-17,-2],[-14,5],[-18,-19],[-15,-10],[-2,-6],[-17,-8],[-4,-5],[-5,-28],[-7,-16],[-6,-7],[-4,3],[-6,-7],[-3,9],[-19,-3],[-8,-6],[0,8],[-14,3],[-20,-2],[-13,-6],[-16,-1],[-9,-16],[-2,-12],[-16,1],[-3,-11],[-7,-4],[-2,-11],[-20,-8],[-2,-5],[-12,7],[-18,-1],[-15,14],[-10,19],[-10,9],[-4,-3],[-4,15],[0,32],[6,-7],[7,3],[6,18],[-1,36],[3,8],[0,43],[-18,66],[-4,34],[1,32],[-5,22],[-7,17],[0,16],[-11,24],[-2,38],[-5,16],[-11,32],[-7,13],[5,14],[6,-26],[7,6],[0,9],[-9,14],[-4,27],[2,4],[7,-20],[-1,-17],[5,14],[2,-22],[7,-2],[0,30],[-5,13],[-6,26],[-4,4],[-3,21],[-5,16],[1,26],[4,22],[5,6],[0,24],[2,10],[-5,22],[3,7],[7,33],[4,4],[-2,-20],[1,-21],[7,4],[8,34],[23,20],[13,26],[21,22],[5,-3],[8,6],[7,-7],[12,7],[8,14],[17,3],[10,20],[12,-6],[7,6],[12,3],[16,11],[11,13],[9,25],[3,19],[4,4],[16,39],[-4,1],[-2,36],[3,14],[8,17],[6,3],[0,10],[7,12],[-1,-15],[5,-3],[0,-14],[12,-37],[-1,10],[3,13],[-2,11],[7,-10],[-3,24],[-6,5],[6,13],[-5,8],[5,2],[7,-7],[-1,9],[7,-9],[16,-1],[-10,3],[-1,9],[6,4],[1,18],[-4,-11],[-3,18],[1,9],[6,1],[3,9],[5,0],[4,-9],[1,10],[-6,3],[4,17],[11,-10],[0,9],[-8,16],[10,14],[3,-4],[7,6],[1,-11],[3,5],[4,26],[-5,5],[4,7],[3,-19],[9,16],[1,-16],[4,14],[4,0],[-3,11],[6,4],[4,-14],[9,1],[11,-28],[10,-16],[-3,-17],[0,-13],[4,-1],[-1,11],[5,14],[4,3],[12,-5],[9,-11],[-1,11],[7,-5],[3,-14],[4,1],[-3,18],[5,-1],[-6,15],[-7,11],[4,20],[7,4],[1,18],[4,9],[11,12],[-5,9],[0,14],[6,2],[0,12],[6,6],[2,11],[7,-14],[0,17],[4,-2],[-1,12],[9,5],[3,-13],[13,4],[4,-5],[9,5],[7,9],[2,24],[-7,12],[-9,-5],[-5,12],[-5,0],[7,11],[10,-1],[9,-21],[6,10],[7,-21],[14,-7],[4,6],[4,-11],[3,4],[4,-12],[6,-1],[8,7],[11,-18],[13,11],[6,2],[-4,-8],[2,-6],[5,7],[5,-5],[-2,-11],[7,-1],[3,14],[-5,3],[10,9],[4,-17],[3,7],[4,-11],[-12,-28],[4,-6],[-9,-21],[0,9],[-5,-6],[0,8],[-7,-9],[0,-26],[4,3],[-4,-29],[-3,-3],[-7,-24],[-4,-4],[2,-13],[22,-27],[0,-8],[10,-11],[4,-9],[7,1],[10,-14],[10,-7],[9,-21],[7,-8],[20,-9],[4,-7],[1,-15],[22,-24],[14,4],[10,13],[3,24],[7,18],[3,26],[3,9],[-2,9],[3,25],[5,20],[-4,40],[3,16],[-4,13],[1,21],[5,21],[-2,18],[6,14],[-2,11],[-5,-4],[6,28],[6,1],[-2,8],[6,41],[0,14],[5,2],[6,11]],[[5470,7982],[-2,-9],[5,-23],[3,-3]],[[5476,7947],[-3,-17],[-12,3],[-6,-6],[7,-3],[-5,-12],[-1,-22],[-9,-9]],[[5447,7881],[-19,-12],[-16,-2],[-9,-14],[-23,9]],[[5380,7862],[-32,7],[-12,17],[2,7],[-12,-5],[-17,-1],[-4,-11],[-15,6]],[[5290,7882],[-2,7],[-6,-8],[-16,12]],[[5266,7893],[-2,12]],[[5264,7905],[1,14]],[[5265,7919],[4,2]],[[5269,7921],[7,0],[8,-16],[6,15],[12,-1],[2,-7],[9,1],[9,10],[32,4],[6,-11],[3,9],[-5,5],[1,13],[-6,9],[4,7],[12,5],[4,16],[7,-3],[3,13]],[[5383,7990],[7,-9],[18,0],[7,11],[0,12],[11,-1],[20,-13],[10,3],[13,-6],[1,-5]],[[6281,7420],[-19,8],[-9,14],[-9,24]],[[6244,7466],[-1,3]],[[6289,7594],[9,-6],[11,-12],[5,-17],[16,-3],[5,15],[9,6],[5,16]],[[6349,7593],[15,-31],[1,-11],[10,-28],[15,-3],[8,-10],[-11,-3],[-13,-11],[0,-11],[-6,-28],[4,-11],[-5,0],[-1,-17],[-7,10],[-2,-43]],[[6357,7396],[-7,-2],[-6,12],[-11,12],[1,8],[7,2],[-5,18],[6,7],[-10,16],[-4,-1],[-26,-29],[-11,-17]],[[6249,7560],[8,10],[13,-8],[8,-9],[6,1],[6,-8],[4,3],[1,15],[-10,9],[-3,13],[7,8]],[[5848,5045],[-4,-15],[2,-14],[9,-5],[0,-17],[-9,-13],[-9,-34],[-11,-21],[-3,1]],[[5823,4927],[-9,39],[1,21],[-4,4]],[[5811,4991],[0,18],[-4,5],[-2,12]],[[5805,5026],[4,7],[5,-4],[0,-9],[11,1],[5,7],[1,21],[6,-6],[7,7],[4,-5]],[[5166,8104],[10,-14],[1,-10],[-8,-11]],[[5169,8069],[-7,-3],[-4,-16],[2,-14]],[[5160,8036],[-9,-3],[-4,10],[-13,7],[-1,21],[-9,-13],[-10,3],[2,15],[-5,5],[-10,0],[0,6],[-11,5],[-4,15],[-7,-6],[-7,8],[-2,15]],[[5070,8124],[16,14],[7,3]],[[5093,8141],[0,-6],[16,-3],[8,9]],[[5117,8141],[1,0]],[[5118,8141],[3,3],[16,-1],[7,-8],[9,0],[9,-11],[-6,-13],[10,-7]],[[5099,5856],[-3,-17],[7,-16],[0,-19],[3,-5],[-1,-16],[-5,0],[1,-14],[-3,-18],[-6,-3],[0,-9],[-5,-12],[-2,-20],[-8,-4],[-2,-15],[0,-41],[-1,-12],[2,-25],[1,-42],[-2,-18]],[[5075,5550],[-31,-9]],[[5044,5541],[5,3],[-5,18],[1,24],[0,73],[-1,5],[0,43],[-6,13],[-1,37],[-16,23],[0,19],[4,17]],[[5025,5816],[5,3],[1,13],[4,-1],[3,11],[6,-3],[11,2],[8,13],[3,14]],[[5066,5868],[-1,19],[14,10],[10,-21],[2,-8],[6,-4],[2,-8]],[[5006,6041],[-2,-21],[6,-16],[-1,-9],[7,-24],[5,0],[7,-13],[7,-7],[-9,-1],[0,-15],[6,-6],[11,-19],[8,-1],[3,7],[5,-3],[3,-15],[-6,-4],[10,-26]],[[5025,5816],[-12,0],[-18,8]],[[4995,5824],[-8,-3],[-5,-10],[-2,5],[-59,0],[-3,-22],[3,-11],[2,-25],[0,-24],[2,-5]],[[4925,5729],[-4,-4],[-10,24],[-6,5],[-10,1],[-11,-7],[-4,-11],[-11,3],[-4,12],[-3,-1],[-4,24],[-9,1],[-3,7]],[[4846,5783],[3,24],[-2,14],[6,9],[1,19],[-4,14],[8,10],[9,1],[10,18],[-1,24],[6,0],[0,14],[-3,11],[10,13],[15,-13],[5,7],[0,25],[6,-5],[5,21],[11,16],[12,-6],[1,16],[8,3],[11,13],[8,5],[8,15],[8,-4],[8,2],[11,-8]],[[7529,6456],[0,16],[3,-11],[-3,-5]],[[7521,6458],[-5,-7],[2,29],[-4,4],[3,11],[6,-20],[-2,-17]],[[7571,6448],[0,-29],[2,-10],[-12,7],[1,-20]],[[7562,6396],[1,-15],[-7,20],[-1,27],[-3,9],[-2,29],[-11,31],[-5,-14],[-9,0],[-8,26],[1,14],[-4,6],[-9,4],[11,-11],[-4,-10],[2,-12],[-3,-8],[5,-13],[-2,-18],[-6,-9],[-1,-11],[-7,1],[1,7],[-5,6],[-2,-15],[-12,-7],[0,14],[-4,-18],[-4,10],[-1,18]],[[7473,6457],[-6,48],[2,14],[-7,2],[3,13],[-6,8],[0,11],[5,8],[0,22],[-7,0],[-11,12],[-2,7],[4,12],[5,1],[3,18],[13,-1],[-3,18],[-8,1],[-3,11],[-9,14],[2,12],[5,4],[4,14],[5,-9],[11,-3],[7,-14],[7,-2],[2,15],[6,-18],[-2,-4],[1,-32],[15,-8],[23,2],[7,-3],[18,3],[11,-14],[-6,-2],[-5,-31],[-5,-2],[0,-9],[-8,2],[0,-6],[-7,0],[-7,-21],[2,-14],[9,-30],[7,5],[0,15],[5,8],[-1,11],[5,4],[8,-22],[0,-25],[3,-12],[3,-42]],[[5793,7702],[0,-17],[-11,-3],[-6,-14],[-2,-26],[-4,1],[-8,-16],[5,1],[11,-28]],[[5778,7600],[-13,-4],[-6,9],[-21,-5],[-7,-15]],[[5731,7585],[-8,0],[2,-21],[-25,-7],[-9,10],[-8,1],[-2,6],[-14,0],[-8,-7],[-13,0],[-10,-4]],[[5636,7563],[3,22],[-5,18],[-9,5],[-5,11]],[[5620,7619],[5,6],[-3,23],[9,5],[7,17],[-13,15],[-4,15],[1,17],[8,13]],[[5630,7730],[9,-8],[-4,-15],[17,3],[18,-8],[10,3],[21,-5],[4,-4],[11,5],[9,16],[25,10],[10,-10],[15,-2],[8,-13],[10,0]],[[6402,6694],[3,0],[0,-24],[-4,8],[1,16]],[[2971,6401],[-3,-10],[-15,-3],[-1,6],[9,10],[4,-4],[6,12],[0,-11]],[[2969,6475],[8,-3],[-7,-3],[-1,6]],[[2948,6491],[0,-14],[-5,9],[5,5]],[[2889,6546],[9,-13],[-10,9],[1,4]],[[2908,6546],[6,-21],[0,-8],[7,-10],[0,-8],[-7,15],[-1,14],[-5,18]],[[2840,6572],[6,0],[0,-20],[-8,5],[-3,13],[5,2]],[[2908,6577],[-3,0],[-4,16],[7,-16]],[[2830,6632],[3,0],[8,-40],[-8,-11],[-10,14],[7,37]],[[2869,6655],[0,-4],[16,-20],[-1,-29],[-2,7],[3,17],[-6,14],[-11,8],[1,7]],[[2819,6722],[15,-4],[-21,-5],[6,9]],[[2839,6733],[5,0],[16,-25],[0,-11],[-4,-3],[0,-19],[-6,5],[4,8],[0,18],[-8,23],[-7,4]],[[5528,7765],[9,0],[-7,-29],[14,-17],[-10,-5],[7,-13],[-1,-8],[-7,-3]],[[5533,7690],[-8,-3],[0,-8],[-7,-6],[-1,-13],[-4,0],[-1,-26]],[[5512,7634],[-22,19]],[[5490,7653],[-2,3]],[[5488,7656],[0,8],[-35,57],[-8,32],[-7,3],[0,29],[6,2],[10,-12],[3,10],[9,-1],[4,7],[4,-7],[22,-6],[4,4],[19,-3],[2,-11],[7,-3]],[[5781,8416],[4,-6],[9,3],[3,-8],[9,4],[11,-6],[1,-13],[12,9],[16,-3],[11,-11],[-2,-19],[6,-15],[-7,-13],[11,-10],[-3,-7],[7,-14],[15,-15],[-3,-11],[10,1],[11,-9],[6,-11],[-15,-22],[-22,5],[-4,-9],[8,-10],[2,-30],[5,-13]],[[5882,8183],[-23,-2],[-12,-29],[3,-14],[-7,-1],[-6,11],[-15,-1],[-9,-6],[-5,14],[-13,-11],[-11,13],[-16,-10],[1,7],[-13,0],[-1,7],[-21,5],[-10,6],[-28,2],[-19,-4],[-11,-18],[-11,3],[0,-5]],[[5655,8150],[0,34],[-12,10],[6,13],[15,11],[0,18],[-7,25],[-5,28]],[[5652,8289],[20,1],[5,-4],[12,5],[-1,7],[19,11],[1,-8],[8,6],[-7,3],[9,37],[8,1],[3,10],[9,-1],[6,10],[-8,1],[2,20]],[[5738,8388],[11,10],[17,-2],[8,17],[7,3]],[[2547,6247],[-3,-6],[9,0],[-1,-18],[-5,-28],[4,-4],[-4,-10],[2,-16],[-2,-24],[-7,-21],[-5,-2],[-5,-20]],[[2530,6098],[-9,0],[2,51],[0,60]],[[2523,6209],[4,10],[4,-6],[9,26],[0,6],[7,2]],[[3084,4249],[-4,-1]],[[3080,4248],[4,1]],[[3384,4022],[-1,21],[-24,29],[-24,0],[-51,-22],[-4,-23],[-10,-28],[0,-29],[-8,-54],[-3,-14]],[[3133,3869],[-10,-5],[-9,4],[1,16],[-3,11],[0,16],[-4,7],[-3,23],[0,15],[-6,20],[-4,2],[2,18],[-6,6],[1,10],[-3,14],[6,2],[1,8],[-5,11],[7,16],[-13,23],[-3,34],[-3,18],[2,6],[-7,5],[0,8],[-5,18]],[[3069,4175],[-4,17],[7,8],[10,30]],[[3082,4230],[5,-3],[-1,11],[8,5],[0,6],[-7,0],[-1,9],[4,4],[-7,3],[0,7],[-10,17]],[[3073,4289],[6,16],[-7,15],[6,28],[5,6],[3,20],[-6,22],[4,8],[-1,36],[7,11],[2,12],[-16,55],[-9,34]],[[3067,4552],[23,-3],[-1,-8],[10,6],[9,20],[11,3],[11,19],[7,3],[11,20],[19,8],[7,1],[4,-5],[5,9],[3,-32],[-4,-13],[3,-21],[-2,-18],[2,-19],[3,-2],[1,-14],[4,-2],[1,-12],[5,-1],[4,-10],[6,-4],[1,-11],[13,-4],[4,4],[10,-7],[4,-8],[5,4],[9,-20],[4,1],[8,-10],[7,0],[0,-6],[8,-17],[22,4],[18,-27],[-2,-20],[5,-18],[1,-28],[-9,-1],[9,-20],[3,-47],[47,-4],[3,3],[0,-13],[-4,-8],[2,-34],[11,-15],[6,-1],[0,-8],[6,-27],[0,-10],[-6,-46],[-9,-38],[7,-13],[-8,-10]],[[3651,3581],[1,22],[3,0],[-4,-22]],[[3650,3661],[-4,8],[6,7],[-2,-15]],[[3919,4412],[0,-16],[-4,16],[4,0]],[[3660,5124],[-3,3],[4,9],[-1,-12]],[[3588,5149],[0,-7],[-8,-7],[1,9],[7,5]],[[3577,5151],[2,-5],[-4,-19],[-3,-11],[-15,-19],[0,13],[7,10],[0,14],[2,11],[8,8],[3,-2]],[[3573,5156],[5,19],[0,-10],[-5,-9]],[[3608,5175],[11,-6],[9,5],[27,-7],[-2,-14],[-1,-20],[-4,-14],[-5,-5],[0,-14],[-7,-5],[-3,7],[0,-11],[-9,1],[-6,-12],[-14,3],[-4,-6],[-5,2],[-7,28],[1,13],[6,-5],[1,8],[-7,-1],[0,23],[2,17],[4,10],[5,5],[8,-2]],[[3586,5165],[-4,4],[1,13],[7,3],[2,-9],[-6,-11]],[[3625,5187],[3,-5],[-2,-7],[-11,2],[10,10]],[[3599,5183],[-5,0],[-2,9],[6,-1],[1,-8]],[[3624,5200],[-6,-5],[-3,-12],[-14,0],[-1,12],[8,1],[15,9],[1,-5]],[[3600,5213],[1,-14],[-2,-7],[0,23],[1,-2]],[[3609,5216],[-6,-13],[1,14],[5,-1]],[[3608,5236],[0,-10],[-5,0],[5,10]],[[3600,5305],[1,-11],[-5,4],[4,7]],[[3431,5295],[13,-7],[2,14],[-6,10],[5,17],[6,-8],[11,2],[0,4],[10,2],[8,-5],[3,-7]],[[3483,5317],[3,-7],[8,-3],[7,3],[6,9],[5,-7],[6,5],[9,-9],[9,11],[8,31],[1,14],[4,7],[15,44]],[[3564,5415],[5,24],[8,-16],[1,-21],[3,4],[-1,-29],[3,-31],[7,-22],[1,-18],[6,-18],[13,-4],[4,-8],[0,-19],[-7,-4],[7,-3],[-11,-17],[-5,-12],[-4,-17],[-5,-11],[-5,-1],[-9,-17],[-4,-19],[-8,-19],[0,-14],[-7,-8],[-1,-13],[-6,4],[-14,-13],[13,2],[0,-10],[9,7],[7,10],[11,11],[13,17],[-5,-12],[5,-5],[0,-14],[4,-9],[0,-11],[7,-14],[4,9],[6,4],[5,-7],[12,10],[1,-7],[-5,-41],[2,-2],[8,40],[7,18],[2,-8],[8,21],[3,-12],[1,19],[4,-2],[4,16],[1,15],[5,0],[5,12],[2,-11],[4,10],[11,-7],[19,-9],[0,-10],[7,-6],[8,5],[1,-7],[10,-9],[1,-8],[6,9],[-2,-11],[1,-13],[3,11],[5,4],[10,-14],[-3,-5],[6,-1],[3,-8],[-5,-16],[5,5],[3,-14],[-4,0],[-5,-36],[2,-9],[6,14],[1,23],[8,8],[1,-9],[-7,-12],[7,-2],[2,14],[9,4],[6,-4],[-1,12],[4,0],[18,-13],[6,-11],[15,-5],[3,6],[5,-9],[29,4],[3,2],[14,-3],[25,-31],[3,-1],[8,-15],[5,-2],[11,-27],[14,-26],[9,-6],[4,-12],[6,-1],[6,-8],[16,-1],[5,3],[13,-6],[4,-13],[9,-57],[1,-24],[5,-21],[-1,-53],[-7,-40],[-7,-25],[-10,-27],[-3,5],[-2,-16],[-12,-24],[-3,-13],[-10,-10],[-5,-9],[-11,-37],[-15,-52],[-13,-34],[-5,0],[0,14],[-4,9],[-4,-16],[0,-17],[-4,-7],[0,-27],[-2,-5],[2,-28],[-3,-20],[2,-9],[0,-24],[2,-28],[2,-6],[-4,-25],[-6,-53],[1,-31],[-2,-9],[-7,-8],[-7,-30],[2,-51],[-3,-13],[-6,-6],[-9,-44],[-13,-31],[-8,-25],[4,-27],[-5,-10],[-12,-7],[-13,-20],[0,-21],[-17,1],[-11,-3],[0,18],[-7,-5],[2,-13],[-22,-7],[10,7],[-9,3],[-8,-7],[-2,7],[-9,-7],[1,-17],[-10,-3],[-2,-6],[-10,-7],[-1,-11],[-12,4],[-8,-7],[-1,-7],[-11,-6],[-11,-13],[-5,-12],[-10,-9],[-10,-15],[-1,-15],[-8,-7],[-6,4],[1,-17],[-4,-17],[-1,-19],[-5,-6],[4,-6],[-3,-16],[3,-6],[2,-32],[-2,-52],[-4,-17],[-17,-23],[-5,-12],[-14,-39],[-8,-37],[-10,-34],[-12,-25],[-22,-27],[-3,-9],[0,17],[5,-4],[11,20],[5,3],[4,11],[-1,12],[5,1],[0,10],[9,9],[-1,22],[4,-6],[1,12],[-12,-4],[-9,8],[3,-7],[-6,-21],[-1,-24],[-6,-10],[-9,-4],[-3,-21],[-4,-3],[-1,-14],[5,-10],[-5,-7],[-6,-30],[-7,-26],[-18,-28]],[[3517,3240],[-4,10]],[[3513,3250],[2,1],[1,23],[5,4],[2,13],[5,6],[5,-10],[6,18],[-4,16],[-12,-19]],[[3523,3302],[-11,11],[-5,23],[-15,14],[-9,21],[-8,3],[-4,8],[-7,3],[-2,10],[-8,11],[-6,-13],[-4,0],[0,16],[-23,40],[-7,0],[-2,-8],[-11,-2],[-2,6]],[[3483,3710],[0,8]],[[3483,3718],[5,3],[0,26],[4,16],[0,34]],[[3492,3797],[-9,15],[-10,-10],[-13,1],[-3,21],[1,11],[-4,23],[1,21],[-7,19],[-9,1],[-6,12],[-12,-10],[-31,8],[0,36],[3,16],[-9,61]],[[3067,4552],[-11,2],[-7,-8],[-12,3],[0,41],[1,29],[2,20],[-10,-14],[-2,-7],[-9,-11],[-25,0],[-3,27],[-14,7],[-11,0],[7,16],[0,8],[-6,17],[-4,2],[-1,11],[-5,6],[-2,15],[-5,9],[2,9],[-8,14],[1,11],[7,2],[-3,13],[2,13],[11,17],[5,3],[1,12],[-3,14],[8,24],[1,30],[14,14],[14,21],[17,5],[10,6],[5,11],[9,1],[3,-6],[10,-5],[0,5]],[[3056,4939],[6,58],[0,9],[5,46],[0,10],[5,54],[-4,13],[-2,24],[-13,21],[1,42],[12,4],[3,5],[10,-6],[-2,21],[-4,4],[-14,0],[0,37],[8,4],[5,-3],[34,0],[-1,16],[7,-15],[5,4],[9,19],[4,-5],[7,-29],[-1,-21],[6,2]],[[3142,5253],[11,-21],[10,-7],[10,14],[6,-1],[-1,-17],[11,17],[1,10],[11,6],[10,16],[0,-8],[9,16],[0,14],[19,16],[1,14],[-20,4],[2,15],[-6,20],[0,30],[-13,22],[-4,12],[2,5],[4,-10],[12,0],[4,-14],[10,4],[4,-5],[4,7],[4,-5],[7,-18],[7,5],[-1,20],[6,1],[4,9],[7,-6],[18,12],[0,6],[16,10],[10,22],[-2,13],[-3,1]],[[3312,5482],[11,0],[3,4],[8,-12],[-3,-33],[6,0],[5,-8],[-2,-8],[4,-14],[0,-10],[-7,-12],[1,-13],[-4,-17],[-1,-22],[2,-17],[5,-5],[0,-26],[6,-8],[8,-19],[8,-4],[4,-7],[8,5],[0,10],[5,9],[9,-5],[6,11],[7,0],[3,11],[9,7],[9,-8],[9,4]],[[3347,5935],[-4,3],[0,13],[6,-10],[-2,-6]],[[8198,5465],[5,-34],[-7,5],[-2,24]],[[8194,5460],[4,5]],[[8166,5448],[6,-1],[7,5],[7,12],[9,10],[-2,-10]],[[8193,5464],[-7,-9],[2,-17],[0,-14],[-7,-10],[-7,23],[-8,11]],[[7545,6781],[-2,-8],[5,-11],[6,3],[3,-10],[-3,-11],[3,-13],[-5,-4],[-33,-3],[-10,8],[-6,-9],[-11,-3],[-12,9],[-6,-2],[-7,7],[-3,12],[4,10]],[[7468,6756],[3,13],[13,29],[11,14],[12,3],[0,-5],[9,-1],[-4,-10],[18,-5],[5,6],[10,-8],[0,-11]],[[5701,4158],[-1,-8],[8,-27],[7,-13],[6,-21],[4,-29],[8,-13],[14,-17],[7,-3],[3,-9],[0,-15],[12,-1],[-1,-34],[6,-12],[3,-15],[18,-5],[12,-10],[1,-14],[7,-7]],[[5815,3905],[-9,-3],[-3,-13],[-8,-7],[-12,-4],[-12,-27],[-5,-6],[-2,-10],[-11,-7],[-4,-13],[-5,-31],[-8,-10],[-3,-10],[-15,-6],[0,-10],[-8,-41],[-5,-7],[-10,1],[-4,-5],[-17,5],[-10,6],[-13,20],[-7,1],[-7,-5],[-6,-23],[0,-14],[-6,-13],[-8,-7],[-6,-18],[-7,-2],[-2,-10],[-15,0],[-15,4],[0,21],[5,11],[0,19],[-4,13],[-1,14],[-10,29],[-8,10]],[[5554,3757],[0,159],[28,0],[0,212],[23,4],[21,9],[21,5],[9,-27],[15,26],[7,4],[4,-6],[7,13],[12,2]],[[5634,5812],[4,-14],[8,-14],[10,-31],[1,-16],[-1,-21],[-5,-6],[3,-9],[-2,-17],[19,-1]],[[5671,5683],[2,-7],[-4,-11],[3,-6],[16,-5],[8,-17],[5,-3],[1,-11],[-4,-4],[6,-14],[18,-19],[2,-10],[8,-10],[-2,-16],[8,-21],[6,-2],[13,-23],[-1,-15],[6,-14]],[[5762,5475],[-12,7],[-4,-8],[-10,-1],[-12,12],[-6,-3],[-11,9],[-4,-5],[0,-13],[-18,-7],[-5,11],[-6,-10],[-27,-19],[-12,12],[-9,-34],[-3,-5],[-23,9],[-2,-3],[-20,12],[-7,-2],[-6,20],[-13,14],[-3,7],[-10,1],[-17,-34],[-1,-7],[-6,-3],[2,-12],[-1,-27],[1,-13]],[[5517,5383],[-4,9],[-11,-4],[-16,7],[-8,-6],[-15,-2],[-4,-7],[-3,-27],[1,-7],[-8,-34]],[[5449,5312],[-2,8],[0,26],[-4,13],[-5,3],[-15,32],[-6,21],[4,1],[-3,14],[-10,19],[-1,31],[-4,6],[2,8],[1,27],[-7,10],[10,13],[5,24],[3,4],[6,30],[6,14]],[[5429,5616],[9,-4],[7,8],[10,5],[4,11],[2,-12],[5,-7],[23,26],[7,-2],[5,4],[15,1],[15,36],[-6,7],[0,8],[5,5],[17,0],[10,7],[9,-1],[4,12],[8,5],[5,19],[13,24],[5,4],[3,10],[-1,14],[8,5],[0,5],[14,9],[9,-3]],[[2957,7804],[-12,-5],[13,16],[-1,-11]],[[2699,7829],[2,-7],[13,9],[3,-9],[5,9],[9,-4],[2,-11],[-7,-12],[-23,15],[-15,6],[11,4]],[[2665,7849],[6,-2],[-2,-11],[-4,13]],[[3319,7889],[6,-10],[-2,-13],[-7,-22],[5,3],[-19,-34],[10,5],[9,11],[-10,0],[12,21],[4,-8],[11,0],[-7,-23],[-16,-12],[-6,3],[-13,-5],[-5,21],[1,13],[6,7],[10,30],[7,14],[4,-1]],[[3221,7879],[6,-21],[3,6],[12,-8],[33,3],[3,-3],[-17,-10],[4,-13],[-11,-3],[-2,12],[-19,2],[-4,11],[-11,0],[2,14],[-9,-1],[4,16],[7,9],[-1,-14]],[[3503,7956],[10,3],[-1,-7],[-9,4]],[[2562,7993],[-9,-6],[0,8],[9,-2]],[[2924,7774],[20,14],[8,11],[6,0],[2,17],[7,17],[14,11],[5,9],[17,17],[5,-2],[32,22],[14,22],[0,4],[14,20],[0,5],[16,23],[21,20],[44,28],[28,8],[18,-3],[10,-5],[11,-14],[1,-8],[-11,8],[11,-15],[-4,-13],[-11,-4],[-1,-6],[-18,-13],[-16,11],[-3,-5],[-11,0],[18,-11],[9,-15],[8,9],[12,0],[3,-6],[-7,-14],[-1,-10],[-11,-13],[16,0],[-3,-15],[11,-32],[20,-8],[-8,-6],[7,-7],[10,0],[4,-9],[5,5],[24,-6],[10,10],[5,-15],[7,3],[7,-12],[-7,-5],[14,-3],[-1,-4],[-18,-7],[0,-3],[-32,-21],[-9,4],[-4,-9],[-8,1],[1,-9],[-11,0],[1,10],[-9,-5],[-4,-8],[2,-10],[-6,-5],[-8,-19],[-9,-10],[-6,1],[-9,-11],[-5,14],[-9,5],[-1,14],[7,29],[21,24],[22,18],[1,-13],[7,8],[20,9],[-34,2],[-5,-6],[-4,6],[13,15],[-3,9],[-5,-12],[-16,-9],[-17,-16],[-4,4],[-10,-10],[-12,-1],[-8,6]],[[3134,7784],[-9,6],[1,19]],[[3126,7809],[-10,9]],[[3116,7818],[1,1],[-1,74],[-14,17],[-16,-11],[-9,17],[-19,-37],[-4,-23],[-7,-12],[1,-17],[-12,-20],[1,-11],[-18,-5],[-6,-16],[-89,-1]],[[1546,8044],[6,-11],[-14,13],[8,-2]],[[1479,8054],[4,-13],[-7,0],[-4,9],[7,4]],[[3218,8058],[33,-11],[15,-14],[11,-6],[10,-14],[-16,-6],[-24,11],[-14,9],[-2,9],[-22,16],[9,6]],[[1494,8104],[-11,-4],[6,9],[5,-5]],[[1448,8112],[20,-17],[22,-5],[26,-13],[5,-19],[9,-12],[4,-16],[22,-13],[10,-22],[8,-25],[-6,-6],[-11,3],[-22,14],[-14,12],[9,11],[-18,-4],[-9,9],[4,11],[-8,0],[-1,10],[-14,-3],[0,11],[7,3],[-8,5],[-1,10],[-15,-2],[-33,43],[-2,7],[16,8]],[[3447,8155],[6,-8],[7,7],[-5,-17],[-12,4],[2,-12],[7,-5],[-28,-60],[-3,-27],[6,13],[13,21],[12,-13],[7,0],[-17,-14],[11,-17],[15,9],[-2,-16],[12,1],[8,14],[9,-8],[5,3],[15,-10],[-4,-13],[-17,-15],[10,3],[-3,-15],[12,-7],[3,10],[4,-6],[7,9],[-5,-19],[-11,-9],[-7,0],[6,-14],[-6,-9],[8,-15],[2,13],[6,14],[12,6],[-9,-18],[-1,-22],[8,8],[3,14],[5,-19],[-5,-10],[-2,-19],[-5,-17],[-6,3],[-10,-3],[4,26],[-2,5],[-14,-23],[-4,1],[8,31],[1,14],[-5,15],[-18,-29],[-10,-9],[0,-8],[-8,-11],[-9,-1],[-9,5],[3,7],[11,3],[15,28],[-11,3],[-6,-12],[-10,12],[-28,-4],[-25,3],[-6,4],[-18,-6],[-15,-2],[-4,17],[27,37],[-9,3],[-14,-6],[8,9],[6,-3],[9,33],[10,-9],[-2,9],[8,4],[-11,4],[25,78],[8,11],[8,28],[24,18]],[[1448,8147],[-7,0],[2,14],[5,-14]],[[1445,8181],[-2,-17],[-4,14],[6,3]],[[2798,8181],[-3,-7],[-8,3],[11,4]],[[1462,8192],[-15,-17],[2,14],[17,12],[-4,-9]],[[1430,8212],[1,-9],[-8,2],[7,7]],[[2738,8248],[8,-1],[10,-15],[3,-12],[-10,1],[-29,15],[6,10],[12,2]],[[1339,8249],[4,-12],[-6,-9],[6,-21],[17,-18],[-5,-5],[-20,26],[-16,32],[20,7]],[[1427,8244],[3,-10],[-2,-21],[-14,7],[-3,12],[2,20],[14,-8]],[[1419,8255],[-7,1],[4,10],[3,-11]],[[1382,8268],[9,-8],[5,-15],[-7,0],[-15,26],[8,-3]],[[1386,8270],[-9,4],[2,6],[7,-10]],[[1395,8273],[11,-17],[-5,-9],[-21,36],[3,5],[12,-15]],[[1380,8293],[-2,-10],[-7,7],[9,3]],[[1305,8302],[20,-3],[5,-14],[-15,-10],[13,-2],[2,21],[12,6],[-8,-28],[0,-22],[-13,-7],[-9,10],[7,6],[-11,3],[-7,25],[4,15]],[[2815,8428],[-1,-10],[-7,-3],[4,17],[4,-4]],[[2787,8429],[-11,-11],[1,8],[10,3]],[[2801,8446],[-3,-6],[9,-8],[-12,-27],[-8,-3],[2,12],[-9,-16],[-3,4],[14,23],[3,-5],[3,26],[4,0]],[[3293,8462],[1,-19],[-7,7],[6,12]],[[3204,8666],[5,-10],[-11,7],[6,3]],[[3109,8672],[7,-7],[-4,-10],[-10,-6],[-3,7],[5,16],[5,0]],[[3200,8731],[-2,-16],[-16,19],[18,-3]],[[2793,8775],[5,-7],[-8,-30],[-8,-9],[-10,11],[-2,14],[12,23],[11,-2]],[[3203,8784],[8,0],[-6,-10],[-9,3],[7,7]],[[3033,8802],[15,-11],[0,-7],[-13,1],[-7,15],[5,2]],[[2719,8809],[7,-3],[-2,-12],[-27,-27],[-23,-5],[-6,18],[18,27],[8,-5],[9,6],[16,1]],[[2822,8839],[21,-4],[4,-9],[-13,-10],[-16,17],[4,6]],[[3216,8833],[-8,14],[5,2],[3,-16]],[[2857,8849],[12,-6],[0,-11],[-20,14],[8,3]],[[3204,8862],[4,-12],[-12,8],[8,4]],[[3186,8910],[2,-6],[-13,-6],[11,12]],[[2625,8972],[12,-9],[-7,-5],[11,-20],[9,16],[14,-17],[20,-4],[4,-10],[19,-12],[5,2],[16,-14],[5,-23],[19,-8],[-1,8],[22,-21],[-8,-2],[-19,-16],[-26,14],[-12,-1],[-1,17],[-15,-1],[2,13],[-19,-10],[2,-14],[-19,-8],[-9,-19],[-25,-10],[-5,33],[-27,-2],[-14,-5],[8,20],[20,13],[-6,24],[6,15],[0,28],[5,23],[13,12],[1,-7]],[[2638,8984],[9,-10],[0,-16],[-12,13],[3,13]],[[2657,8990],[18,-11],[-3,-6],[15,-10],[-15,2],[-15,25]],[[2936,9103],[24,-5],[1,-12],[-28,0],[-10,16],[13,1]],[[2601,9095],[-7,-12],[-8,5],[-3,16],[9,13],[7,-6],[2,-16]],[[2900,9117],[16,-9],[-4,-11],[3,-24],[-9,-11],[-14,-6],[-31,-1],[-7,12],[0,22],[15,25],[31,3]],[[2096,9122],[-15,8],[14,1],[1,-9]],[[2919,9131],[3,-14],[-16,10],[2,12],[11,-8]],[[2173,9144],[-3,-12],[-12,5],[15,7]],[[2218,9152],[-13,-10],[2,17],[11,-7]],[[2820,9179],[-10,-28],[-16,-3],[26,31]],[[2860,9180],[10,-6],[-13,-11],[-6,16],[9,1]],[[2315,9189],[14,0],[-4,-11],[-10,11]],[[2342,9191],[8,-12],[-14,-3],[6,15]],[[3114,9197],[-2,-10],[-10,3],[12,7]],[[2834,9196],[-16,-12],[-9,1],[20,15],[5,-4]],[[2787,9204],[9,-8],[-21,-3],[4,-8],[-24,10],[16,8],[16,1]],[[2294,9191],[5,5],[10,-12],[22,-14],[6,-20],[18,-3],[-17,-6],[-13,-15],[-33,4],[-9,7],[-25,7],[-3,8],[-11,-6],[-11,11],[33,17],[-4,16],[12,-9],[-6,16],[10,11],[18,-11],[-2,-6]],[[3004,9275],[14,-3],[-20,-12],[-5,8],[11,7]],[[2924,7774],[-11,-4],[-19,-25]],[[2894,7745],[-6,-7],[-19,-10],[-11,-18],[-17,9],[-5,-3],[-30,-8],[-17,-15],[-5,-17],[13,-6],[7,4]],[[2804,7674],[-1,-9]],[[2803,7665],[5,-11],[-36,-7],[-9,-13],[-11,6],[-12,-1],[-32,-36],[-12,-2],[-5,4],[0,12],[5,4],[13,-1],[1,10],[-6,4]],[[2704,7634],[5,9],[1,17]],[[2710,7660],[8,4],[12,20],[-1,38],[4,14],[9,16],[0,12],[-12,25],[11,0],[1,-14],[14,-17],[18,-14],[0,17],[4,6],[6,-5],[-9,17],[2,14],[-10,3],[-10,32],[-12,0],[-10,8],[-39,6],[-3,0],[-30,10]],[[2663,7852],[0,10],[-10,-4]],[[2653,7858],[-3,4],[4,24],[-8,1],[3,23],[-11,14],[5,20],[-25,0],[-8,9],[-12,39],[-22,-2],[-24,14],[-2,-22],[-7,-2],[3,15],[-6,-2],[-5,-26],[-5,-3],[3,16],[-10,-5],[-5,-22],[-7,-6]],[[2511,7947],[-9,-1],[-4,7],[-20,0],[-2,7],[-16,-11],[-8,4],[-10,14],[-8,-7],[-3,12],[-14,11],[-22,-6],[-3,7],[-17,3],[-6,5],[-4,31],[-9,3],[0,-22],[-79,0],[-80,0],[-55,0],[-79,0],[-79,0],[-49,0],[-49,0],[-80,0],[-61,0],[-74,0],[-81,0]],[[1590,8004],[-8,0]],[[1582,8004],[-1,0]],[[1581,8004],[-7,20],[2,14],[-8,-11],[-12,8],[-1,15],[-14,0],[-6,8],[3,18],[-3,5],[-9,0],[-20,12],[-13,-2],[6,17],[-14,1],[-10,6],[-4,-6],[-14,11],[-8,12],[9,23],[13,3],[-9,3],[-10,-15],[-4,12],[0,14],[19,25],[0,13],[-12,-16],[-7,-5],[-8,17],[-4,-12],[4,26],[-10,9],[-10,34],[10,-5],[-8,12],[5,21],[-17,-20],[-3,-14],[-21,32],[-4,26],[-6,-3],[1,17],[7,4],[10,33],[-5,0],[-4,28],[2,8]],[[1387,8402],[0,0]],[[1387,8402],[-1,12],[-9,1],[-9,13],[-10,3],[-14,11],[-7,0],[0,11],[-7,4],[2,10],[-29,56],[-20,40],[-12,8],[-4,12],[-21,22],[3,8],[-13,13],[-25,-11],[-2,-20],[-27,-20],[-5,17],[-43,50],[3,16],[-17,-1],[-9,-8],[-12,6],[-16,1],[0,538]],[[1083,9194],[29,-2],[23,-6],[15,-16],[50,-21],[26,2],[-3,18],[20,5],[-1,8],[29,8],[12,-5],[-9,-9],[24,4],[10,14],[16,0],[45,28],[22,-4],[5,11],[9,-11],[-45,-25],[-27,-6],[-3,-10],[-18,-6],[-4,-15],[-9,3],[-4,-11],[24,-3],[-11,15],[29,13],[15,12],[12,-9],[14,21],[35,9],[0,-10],[23,16],[-2,9],[22,7],[-13,3],[0,17],[23,-16],[14,-32],[15,-16],[20,-9],[9,4],[-8,12],[10,9],[8,18],[10,-1],[-2,-19],[12,0],[-13,-19],[24,-2],[14,8],[6,20],[36,-3],[23,-10],[23,-16],[31,-5],[23,-13],[57,-13],[-9,8],[11,4],[38,-17],[18,-18],[-3,-9],[-26,2],[-8,-18],[-9,-3],[47,-13],[40,-1],[3,4],[36,1],[22,14],[13,-16],[18,0],[7,-21],[6,15],[20,-23],[-7,-21],[25,-29],[-12,23],[1,18],[16,-14],[-4,15],[-9,8],[0,15],[-12,12],[7,19],[35,18],[21,5],[1,13],[-24,-7],[2,-8],[-22,-7],[-16,5],[7,-11],[-22,-3],[-2,12],[-10,-3],[14,20],[27,5],[31,14],[12,-3],[9,-11],[4,-20],[19,-6],[4,-12],[20,-1],[9,8],[5,-11],[27,-14],[21,-3],[23,10],[26,-1],[15,-7],[25,5],[22,-12],[12,11],[-16,12],[-10,-9],[-10,10],[3,9],[-11,11],[27,1],[-8,9],[21,-3],[5,-12],[18,3],[-11,-15],[26,12],[-16,-41],[11,-19],[10,8],[11,-20],[4,16],[-15,26],[7,19],[17,-3],[18,14],[18,33],[-10,8],[-5,-13],[-15,0],[11,34],[18,-2],[2,13],[-22,-5],[-9,14],[-7,-7],[-25,10],[-21,22],[1,14],[9,15],[-12,9],[5,30],[14,6],[8,-7],[5,12],[-13,4],[18,9],[2,13],[18,3],[4,-19],[7,7],[32,-24],[4,-30],[37,-41],[-25,2],[-4,-6],[18,-3],[-25,-18],[20,-9],[18,7],[10,-9],[19,-1],[-23,-12],[14,-11],[6,-20],[-2,-17],[9,-12],[11,12],[4,31],[11,15],[9,1],[28,-27],[5,-32],[-16,2],[1,-19],[8,-19],[17,-15],[-1,-14],[15,7],[-3,7],[14,-1],[1,20],[17,23],[7,37],[25,0],[-10,13],[11,7],[-20,11],[-2,10],[6,23],[7,-4],[20,5],[16,-9],[30,-1],[15,-23],[22,-5],[-6,-12],[-12,-5],[20,-5],[1,-10],[-20,-13],[-17,6],[-2,-7],[18,-11],[-5,-13],[26,-30],[-7,-27],[-13,-1],[-17,-24],[-12,-1],[-10,-11],[-25,21],[16,-30],[-4,-2],[-19,14],[4,-14],[-25,7],[-5,17],[-19,-5],[-18,2],[7,-12],[19,-9],[-16,-15],[-3,-13],[-23,-20],[-16,0],[-17,15],[-31,20],[-10,-3],[-30,2],[32,-7],[14,-11],[11,-16],[56,-5],[2,-11],[-16,-20],[-14,-27],[-18,-15],[-24,1],[-12,10],[4,-14],[-10,-17],[-21,-3],[-19,10],[-14,0],[-37,16],[-8,-2],[11,-10],[4,5],[31,-11],[-10,-11],[18,11],[6,-8],[25,-12],[2,-18],[-22,-16],[-19,5],[-10,-3],[15,-16],[-19,5],[-2,-20],[-8,-12],[-18,-12],[11,-4],[-17,-12],[-19,-60],[-8,-31],[3,-40],[-3,-17],[13,-17],[3,4],[29,-1],[2,-15],[10,-37],[9,-24],[-3,-25],[12,2],[30,12],[15,-3],[15,-12],[30,-8],[12,-15],[13,-10],[7,-15],[10,-12],[11,-1],[32,-17],[21,-20],[12,-3],[19,5],[15,-6],[12,1],[18,-9],[3,-14],[-6,-25],[0,-12],[8,-17],[-2,-23],[3,-13],[-5,-19],[20,-28],[6,-21],[10,-5],[15,-30],[1,-10],[19,-11],[1,16],[10,15],[11,-20],[6,11],[-9,15],[13,19],[2,22],[-6,4],[1,19],[-5,0],[-5,42],[-2,32],[-7,2],[-6,25],[-5,1],[39,22],[16,14],[19,23],[12,21],[4,16],[0,44],[-8,34],[-9,20],[-24,23],[-13,16],[-2,16],[22,21],[-1,20],[14,6],[-1,13],[-7,2],[-7,35],[6,6],[-16,2],[10,15],[2,20],[6,5],[-13,13],[-4,34],[18,16],[21,-4],[32,-14],[34,-1],[14,12],[18,-9],[17,-14],[-1,-8],[30,-19],[-9,-10],[14,-16],[23,-5],[11,2],[2,-11],[12,-1],[2,12],[5,-18],[-12,-15],[6,-26],[2,-26],[-6,-6],[3,-9],[11,-2],[-8,-8],[2,-18],[-19,-7],[10,-3],[15,12],[13,1],[11,-6],[5,-24],[7,10],[9,-20],[28,15],[6,21],[10,-9],[5,18],[7,3],[-2,12],[8,8],[-3,22],[8,2],[7,25],[14,2],[0,-12],[9,-6],[-1,-17],[6,0],[5,-15],[12,-13],[-11,-9],[13,3],[1,-13],[7,1],[4,-11],[-9,-11],[16,0],[-2,-19],[15,-12],[7,-20],[-14,-11],[10,2],[6,-6],[-6,-7],[18,-7],[-8,-18],[-7,0],[5,-13],[-9,-4],[11,-10],[-12,-2],[5,-5],[14,1],[-3,-13],[10,-2],[1,-7],[22,-5],[-4,-5],[3,-16],[-4,-16],[20,12],[-2,-10],[10,-5],[10,9],[6,-22],[30,-6],[14,-10],[-9,-11],[-15,-1],[-1,-6],[-33,-12],[21,5],[3,-3],[-30,-15],[-13,-3],[2,-15],[-11,-14],[38,24],[6,15],[19,9],[-5,7],[24,-1],[11,-22],[-12,-11],[6,-9],[9,15],[30,-19],[4,-15],[-6,-7],[5,-9],[-7,-12],[8,-9],[4,-17],[-8,-15],[-20,-17],[-10,-13],[-8,5],[-25,-14],[-8,3],[-7,-12],[-8,-5],[1,-12],[-13,-8],[0,-8],[-11,-6],[-3,-10],[-38,-3],[-10,-5],[-6,7],[-51,4],[-26,-2],[-37,0],[-5,-5],[-8,5],[-19,-25],[-3,-23],[-4,-6],[-19,-3],[-4,-11],[-24,-18],[-10,-28],[-7,-9],[-19,14],[-5,-2],[22,-14],[-5,-20],[-10,-17],[-6,-3],[-6,-17],[-17,-23],[-15,-1],[-21,-24],[-10,-4],[-7,-18],[-12,-11],[-7,-11],[-6,-2],[5,-8],[-15,-12],[-6,-8]],[[1827,9404],[6,-29],[-17,-11],[32,3],[-4,6],[17,15],[49,-17],[-3,-15],[17,6],[18,-8],[8,4],[-26,29],[23,-2],[24,-23],[11,-1],[-1,-11],[13,-38],[6,-4],[21,15],[-15,14],[-9,45],[0,25],[29,-10],[8,7],[26,-17],[18,-30],[4,-24],[19,-29],[-7,-28],[16,-17],[25,-16],[8,1],[35,-23],[16,4],[4,-24],[-13,-6],[-4,13],[-5,-14],[-19,11],[-14,-26],[22,5],[-2,-17],[9,-10],[-19,-8],[-24,-5],[-49,6],[4,12],[-40,5],[-4,18],[-10,-16],[-17,-13],[-28,-6],[-12,-9],[-56,-11],[-59,-3],[-16,19],[2,22],[-18,5],[-26,-3],[-22,4],[-18,9],[0,6],[-18,12],[-4,14],[39,12],[41,5],[53,-7],[9,7],[22,-3],[-18,14],[-19,2],[-18,8],[-58,-6],[-19,4],[-40,-1],[-19,23],[17,8],[41,11],[13,11],[-48,-10],[-21,6],[13,5],[-36,7],[0,11],[16,17],[13,3],[-13,15],[34,25],[50,16],[27,11],[10,-5]],[[2094,9405],[-16,-22],[-8,1],[-18,19],[-26,12],[13,13],[42,1],[16,-10],[-3,-14]],[[2768,9430],[25,-7],[37,2],[19,-6],[32,-26],[-1,-17],[-52,5],[-28,-9],[-22,6],[-4,22],[-21,5],[1,25],[14,0]],[[2595,9436],[41,-3],[4,-8],[-30,-21],[-18,-26],[10,-20],[-3,-28],[9,-14],[19,-16],[14,-5],[-16,-13],[-13,0],[-8,-10],[21,10],[18,-2],[8,17],[-4,14],[-16,-1],[-8,13],[2,21],[16,1],[-18,12],[-3,25],[14,2],[-6,11],[26,-5],[-19,15],[63,24],[37,-1],[11,-27],[14,-5],[0,-14],[10,-10],[-26,-24],[18,11],[-11,-18],[5,-13],[12,5],[16,25],[23,-13],[11,14],[26,14],[67,-15],[7,-14],[-14,-14],[33,4],[0,-15],[-32,-17],[31,12],[19,-1],[-10,-9],[-4,-17],[12,19],[3,-12],[15,-7],[13,23],[32,-12],[8,-11],[-10,-12],[-11,3],[-13,-14],[4,-6],[25,7],[4,9],[15,2],[3,-9],[-13,-17],[30,15],[-3,-16],[15,10],[31,-11],[-10,-16],[-31,-9],[32,3],[-1,-16],[12,9],[6,14],[24,-23],[2,-12],[-26,3],[-15,-11],[19,-8],[19,1],[16,-11],[-2,-8],[-26,2],[-15,8],[-22,3],[22,-8],[13,-10],[-8,-4],[5,-11],[-43,2],[33,-6],[-9,-8],[29,-2],[23,-6],[-10,-6],[8,-11],[37,-12],[12,7],[-2,-12],[18,-4],[13,-28],[-21,-10],[47,10],[-7,-18],[22,-5],[5,9],[18,-10],[10,-16],[-20,-10],[14,-3],[-30,-8],[14,-7],[-7,-17],[-15,-3],[7,-7],[-17,-1],[-7,16],[3,-21],[-9,-4],[9,-9],[-5,-24],[-17,9],[-9,14],[-1,-9],[-18,16],[-1,14],[-9,5],[19,17],[-31,-5],[-2,9],[-22,20],[2,8],[-13,-6],[-6,-11],[-16,12],[7,-15],[16,-12],[-1,-7],[-20,-1],[-9,18],[-2,-18],[12,-16],[14,3],[-2,-10],[10,-2],[10,-39],[1,14],[31,-16],[-3,-16],[17,0],[-10,-10],[11,-14],[11,-5],[-9,-11],[12,-6],[0,-25],[-7,5],[-4,18],[-2,-14],[10,-29],[-17,5],[8,-19],[-7,-5],[-1,13],[-12,11],[-12,-3],[-13,13],[-5,-5],[-20,21],[-6,12],[-1,-16],[-27,24],[-8,-3],[23,-33],[17,-6],[17,-21],[5,0],[16,-26],[7,-2],[-9,-20],[-30,16],[-35,7],[-12,7],[-25,24],[-9,-2],[-38,22],[-5,14],[15,10],[-16,12],[-2,-7],[-15,9],[-13,14],[-15,33],[-20,-9],[4,15],[-14,-6],[-5,-14],[-30,14],[-5,-12],[-24,-12],[-14,2],[-18,11],[-4,27],[5,9],[18,8],[-3,15],[21,-2],[25,-11],[9,-9],[-6,-7],[10,-12],[-2,16],[-16,17],[23,-3],[1,7],[15,-3],[11,12],[19,-5],[-7,19],[-8,4],[-13,18],[41,32],[5,19],[15,6],[-4,22],[-12,18],[-4,23],[-23,5],[3,18],[-19,-6],[-13,16],[2,15],[-9,-11],[-10,2],[-32,-14],[0,20],[28,3],[1,9],[-30,19],[-15,5],[10,9],[-23,0],[0,21],[-20,2],[-10,12],[-21,2],[21,-15],[3,-13],[-29,-7],[-6,8],[-39,3],[15,-14],[-9,-2],[-14,13],[-15,-11],[-25,12],[-15,-3],[-31,3],[-5,4],[-39,2],[-21,21],[1,-11],[-47,11],[-21,25],[9,7],[22,-4],[27,0],[-15,18],[-6,-3],[-47,6],[-5,7],[5,17],[-9,11],[5,24],[25,52],[36,27],[33,8]],[[2227,9438],[17,-9],[57,6],[4,-12],[-12,-6],[8,-7],[-19,-7],[-19,-16],[35,-3],[9,-16],[12,3],[5,-18],[-9,-6],[3,-27],[-25,-13],[-26,2],[9,-8],[-13,-13],[-19,3],[-13,25],[-27,24],[-21,3],[-34,24],[-4,9],[14,16],[11,-4],[16,-18],[24,2],[10,8],[-4,14],[-11,1],[-28,20],[11,7],[16,-9],[3,8],[-13,12],[33,5]],[[2287,9448],[-13,-11],[-23,-4],[-12,7],[34,10],[14,-2]],[[2423,9449],[18,-8],[8,5],[45,-7],[-28,-33],[-12,-21],[-14,-14],[-33,4],[-13,-4],[10,-16],[-18,-22],[-29,-6],[-2,33],[-11,9],[-2,60],[11,2],[1,14],[44,9],[25,-5]],[[1623,9476],[28,-12],[41,-10],[46,4],[58,-41],[-3,-6],[-28,-9],[-76,-37],[-3,-15],[-14,-8],[-13,1],[-3,-32],[-7,-11],[-22,-7],[-9,5],[-11,-12],[-27,-10],[-26,36],[-34,14],[-14,0],[0,10],[14,22],[9,4],[-4,18],[17,2],[-12,9],[14,21],[16,15],[-10,9],[-14,28],[87,12]],[[2118,9518],[-3,-12],[-30,4],[15,17],[18,-9]],[[2378,9537],[25,-20],[2,-24],[-5,-11],[-41,1],[-43,18],[23,30],[25,8],[14,-2]],[[2325,9539],[-16,-17],[-5,9],[21,8]],[[2164,9558],[-14,-12],[-20,-1],[7,9],[27,4]],[[2380,9546],[-17,10],[11,3],[6,-13]],[[2157,9563],[-38,-10],[11,8],[27,2]],[[1732,9567],[5,-3],[-22,-28],[-10,-5],[-22,5],[20,18],[29,13]],[[2805,9567],[0,-15],[-16,-3],[16,18]],[[2149,9575],[-6,-11],[-43,0],[2,8],[47,3]],[[2113,9595],[25,-12],[-38,-5],[-7,16],[20,1]],[[2266,9598],[21,-11],[7,-58],[-18,1],[14,-20],[-11,-7],[-47,-3],[-20,3],[-11,19],[33,20],[-52,-5],[-33,-7],[2,14],[20,10],[-6,28],[18,3],[35,-31],[7,21],[-30,12],[15,9],[23,0],[13,-10],[20,12]],[[2213,9601],[-38,-8],[20,9],[18,-1]],[[2508,9589],[-10,-2],[-15,15],[17,6],[8,-19]],[[1981,9607],[-3,-11],[20,-20],[-11,-11],[22,-7],[-10,-10],[27,5],[12,10],[31,-10],[1,-18],[-15,-30],[-28,-8],[-21,7],[-19,-7],[-5,8],[-25,-11],[-22,-4],[-24,-12],[-34,-10],[-29,0],[-27,17],[52,17],[27,0],[19,13],[-36,-6],[-3,5],[-44,-9],[-5,24],[-10,-23],[-35,-6],[-55,16],[12,13],[30,0],[31,14],[-30,-8],[-32,0],[10,12],[57,5],[-39,0],[-12,12],[23,10],[10,12],[36,1],[7,-17],[28,5],[33,-21],[14,-22],[62,-1],[6,7],[-32,17],[18,11],[-30,11],[18,11],[15,19],[15,0]],[[1840,9610],[3,-10],[-34,3],[31,7]],[[2354,9618],[44,-6],[16,-16],[46,3],[26,-13],[-26,0],[59,-9],[-2,-7],[-52,-1],[30,-6],[28,-18],[2,-16],[14,11],[11,-8],[26,6],[13,-9],[59,10],[21,10],[23,-5],[16,6],[39,-3],[40,-18],[6,-11],[-25,-15],[16,1],[10,-9],[-23,-7],[-1,-11],[-29,0],[-12,-6],[-33,5],[-7,16],[-11,-16],[-84,-5],[-53,2],[2,20],[-21,-15],[-21,-3],[-30,10],[-10,-4],[-19,9],[1,10],[-13,14],[11,38],[-14,8],[-14,21],[-17,-6],[-37,-3],[6,7],[-27,3],[-11,14],[-18,4],[15,6],[-15,7],[13,6],[32,-1]],[[1774,9644],[20,-9],[-25,-7],[-2,-15],[13,-14],[-30,-8],[-9,-17],[-20,9],[5,24],[-19,-6],[-1,-22],[-34,-26],[-19,-3],[-7,19],[-15,-12],[-46,8],[9,15],[31,5],[9,14],[22,7],[15,17],[27,15],[26,1],[18,-6],[32,11]],[[2491,9653],[17,-10],[-11,-14],[-30,11],[0,13],[24,0]],[[2083,9641],[18,-11],[-11,-7],[-23,12],[-14,25],[13,0],[17,-19]],[[2350,9662],[51,0],[13,-7],[-11,-10],[-70,0],[-6,13],[23,4]],[[2196,9660],[-42,-1],[0,9],[21,1],[21,-9]],[[1824,9675],[20,-11],[-15,-6],[-27,14],[22,3]],[[1955,9679],[-35,-12],[21,-5],[-3,-16],[-52,-10],[-31,11],[3,23],[51,10],[46,-1]],[[1933,9718],[31,-15],[-4,-11],[-50,5],[-52,-7],[-5,8],[40,8],[40,12]],[[2308,9715],[18,-10],[40,-9],[-15,-7],[9,-16],[-51,-11],[-22,18],[22,2],[-33,10],[-10,12],[7,18],[35,-7]],[[2120,9752],[22,-6],[10,-21],[25,12],[58,-29],[-8,-16],[22,-13],[0,-11],[-25,-6],[-19,5],[-12,19],[-45,10],[-50,-6],[-10,18],[38,-3],[1,15],[-18,11],[-27,-9],[10,11],[-26,2],[4,16],[50,1]],[[2237,9796],[21,-8],[-5,-17],[-36,22],[20,3]],[[2423,9866],[56,-44],[40,-1],[1,-15],[22,9],[22,-2],[19,-26],[-9,-26],[20,9],[23,-2],[24,-19],[-46,-14],[-69,-50],[-26,25],[15,-26],[-24,10],[0,-11],[-49,4],[-22,17],[34,3],[-45,2],[-28,21],[25,12],[79,3],[-58,1],[0,12],[-36,-11],[-3,7],[-33,-6],[-14,15],[27,4],[-31,3],[-21,14],[-4,14],[53,-6],[21,9],[-36,-4],[-32,9],[14,17],[41,2],[7,8],[-33,3],[17,15],[39,0],[7,9],[-28,8],[41,-2]],[[3064,9969],[92,-13],[-63,-13],[33,0],[64,14],[63,-22],[36,-2],[8,-17],[-85,-27],[-75,-6],[11,-7],[-78,-18],[137,21],[-4,-9],[-119,-45],[-9,-11],[-28,-4],[-23,-32],[-31,-8],[-32,7],[7,-13],[-52,-10],[-85,-2],[20,-4],[80,-3],[-1,-11],[-35,3],[-9,7],[-57,-2],[56,-5],[-45,-3],[55,-3],[-14,-6],[38,-1],[8,-15],[-22,-5],[-30,2],[38,-10],[-14,-14],[-35,-13],[-43,0],[19,-17],[-14,-13],[-47,-6],[-38,9],[-17,14],[5,-14],[18,-8],[57,-7],[-10,-14],[19,-6],[18,11],[7,-22],[-21,-10],[-5,7],[-22,-15],[-42,-11],[8,17],[-36,5],[-6,-7],[-40,2],[-13,10],[-6,-17],[-23,-1],[-61,10],[-4,-7],[-37,4],[-15,10],[-1,17],[33,15],[23,-1],[15,8],[-21,5],[-15,25],[29,7],[27,-6],[22,-23],[54,-3],[27,35],[-39,-27],[-38,10],[15,39],[-21,-13],[-21,5],[-35,-4],[1,19],[24,20],[44,7],[35,-5],[56,1],[-53,4],[-30,6],[11,9],[-23,27],[-37,6],[0,32],[75,-4],[67,-35],[-7,16],[-44,23],[80,9],[54,8],[-44,0],[94,17],[-62,-3],[-2,9],[57,26],[-37,-9],[-40,-28],[-44,-11],[-53,-5],[27,11],[-48,2],[1,-13],[-55,-1],[-26,5],[26,19],[85,11],[-93,-8],[-33,-21],[-58,14],[99,12],[30,12],[-43,-8],[-98,-8],[-15,8],[12,11],[45,14],[-57,-12],[12,13],[-22,4],[-21,-8],[-14,7],[27,11],[83,15],[87,-6],[-56,12],[43,5],[-12,10],[30,1],[59,-23],[-11,12],[82,-19],[-75,24],[18,17],[41,-8],[-28,15],[47,-2],[16,12],[41,-3],[44,-11],[-31,15],[35,4],[54,-3],[10,-8],[24,12],[91,2]],[[5255,7927],[0,0]],[[5255,7927],[0,0]],[[5255,7927],[10,-8]],[[5264,7905],[2,-12]],[[5290,7882],[-2,-13],[-10,-7],[4,-15],[-6,6],[-12,-4],[-2,10],[-5,0],[-1,-14],[-5,-6],[-1,-18],[-7,10],[2,5],[-11,9],[0,13],[-10,-11],[1,-8],[-9,-12],[-8,4],[-13,-4]],[[5195,7827],[-7,15],[0,14]],[[5188,7856],[-5,6],[-8,-4],[-3,-9]],[[5172,7849],[-4,7],[2,10],[8,9],[0,11],[7,4],[12,28],[8,-5],[5,10]],[[5210,7923],[14,-1],[9,5],[4,9],[9,-9],[9,0]],[[3101,2016],[-9,-10],[13,-7],[6,-18],[-2,-7],[-8,14],[-15,-2],[2,19],[-18,-5],[-1,-4],[-14,10],[3,5],[39,9],[4,-4]],[[3116,2021],[14,-1],[7,-9],[-5,-12],[-7,7],[-9,-6],[-8,1],[-2,15],[10,5]],[[3041,2018],[7,-9],[-19,2],[-1,8],[13,-1]],[[3069,2021],[8,-5],[-19,-3],[-1,8],[12,0]],[[3013,2074],[7,-1],[8,-15],[-5,-7],[-8,10],[-4,-3],[-2,16],[4,0]],[[3003,2080],[6,-2],[-5,-24],[-11,16],[0,7],[10,3]],[[3044,2081],[2,-8],[-9,4],[3,-17],[-9,10],[-1,10],[8,1],[-2,10],[6,7],[2,-17]],[[2972,2103],[2,3],[22,-21],[-6,-2],[-14,-18],[4,15],[-9,1],[-7,-7],[1,12],[-8,1],[3,17],[12,-1]],[[2925,2147],[15,-16],[8,0],[21,-22],[-10,3],[-11,14],[-13,-1],[-10,22]],[[3093,2028],[0,-1]],[[3093,2021],[-12,-3],[-17,9],[-13,-4],[-23,10],[-10,10],[-17,-8],[-1,12],[8,-7],[10,12],[7,-9],[6,12],[-2,12],[20,-15],[7,5],[13,-4],[10,-11],[3,8],[-28,18],[-4,19],[24,15],[-1,8],[-25,-6],[-6,8],[1,17],[9,1],[0,8],[12,7],[2,13],[6,4],[5,-11],[16,0]],[[2952,2165],[-2,-17],[-9,0],[-2,7],[13,10]],[[2921,2176],[8,-2],[-6,-7],[-2,9]],[[2938,2182],[8,-11],[-5,-6],[-3,17]],[[2920,2209],[3,-4],[-3,-19],[-5,7],[5,16]],[[2943,2211],[3,-10],[-9,5],[6,5]],[[2925,2234],[1,-8],[-9,1],[8,7]],[[2931,2257],[2,-13],[-14,-1],[-1,9],[9,-2],[4,7]],[[2924,2263],[1,-11],[-8,7],[7,4]],[[2906,2275],[8,0],[-10,-15],[2,15]],[[2931,2276],[3,1],[5,-22],[-5,0],[-6,13],[3,8]],[[2908,2302],[14,-5],[0,-6],[-18,-9],[1,12],[7,-5],[-4,13]],[[2903,2329],[8,-14],[-12,3],[4,11]],[[2914,2359],[5,-2],[0,-12],[-9,10],[4,4]],[[2906,2359],[2,-6],[-9,-5],[7,11]],[[2925,2377],[5,0],[2,-27],[-3,-27],[3,-13],[-9,-10],[-4,6],[1,25],[-4,-21],[-7,11],[-2,25],[13,-3],[2,12],[-7,18],[10,4]],[[2906,2392],[1,-9],[-7,-5],[-2,13],[8,1]],[[2924,2406],[4,-8],[2,-18],[-14,4],[-1,6],[9,16]],[[2913,2413],[9,-4],[-1,-11],[-7,-2],[-5,19],[4,-2]],[[2907,2415],[7,-32],[-6,0],[0,16],[-5,-5],[-3,20],[7,1]],[[2921,2430],[3,-17],[-11,6],[-1,6],[9,5]],[[2945,2427],[4,-6],[-19,2],[7,7],[8,-3]],[[2914,2436],[-3,-8],[-5,6],[8,2]],[[2924,2545],[-1,-11],[-10,7],[11,4]],[[2936,2556],[-5,-9],[0,15],[5,-6]],[[2955,2556],[-6,-2],[3,11],[3,-9]],[[2948,2591],[3,-16],[-7,2],[-6,12],[10,2]],[[2946,2594],[-9,-4],[3,9],[6,-5]],[[2946,2613],[2,-4],[-11,-6],[-4,10],[13,0]],[[2974,2623],[6,-4],[-12,-23],[-4,-1],[-5,16],[7,2],[-1,11],[9,-1]],[[2948,2662],[3,-7],[-11,0],[8,7]],[[2945,2775],[11,1],[5,-30],[-8,-2],[-4,-15],[9,-10],[-6,-5],[6,-13],[-7,-2],[2,-14],[-17,3],[-3,4],[7,21],[-1,36],[4,8],[2,18]],[[3098,2168],[-21,9],[-7,-4],[-3,-12],[-8,-1],[-27,-20],[-3,-19],[-1,-36],[-7,-5],[-24,11],[-10,15],[5,11],[15,1],[10,5],[6,18],[-5,1],[-22,-19],[-5,6],[-7,-20],[1,-10],[-20,22],[9,0],[-1,20],[14,1],[13,9],[14,0],[-2,5],[-21,3],[-19,-19],[1,-11],[-6,-4],[-8,6],[6,5],[-9,6],[9,1],[2,11],[-11,-5],[0,29],[6,-2],[15,16],[9,-1],[0,13],[-7,-6],[-15,13],[10,-15],[-6,-4],[-4,-13],[-8,7],[0,17],[-9,7],[-1,13],[6,2],[1,13],[-6,-6],[-7,4],[-1,17],[11,-2],[-1,9],[-6,-4],[-5,21],[-13,14],[9,8],[1,26],[3,6],[-5,9],[0,44],[10,11],[-11,13],[-3,13],[21,-4],[6,-13],[5,5],[-10,27],[-1,-6],[-21,1],[-2,12],[9,-2],[-7,11],[6,12],[5,0],[6,11],[-6,2],[-3,12],[-11,0],[-1,-5],[-11,14],[4,11],[-13,-16],[2,-11],[-6,-3],[-4,19],[13,13],[3,10],[12,11],[0,11],[14,3],[6,-14],[-1,-8],[7,-4],[-7,-18],[4,-3],[5,16],[4,49],[8,10],[-3,20],[4,-1],[14,13],[1,15],[-14,13],[4,39],[-1,17],[9,12],[-3,14],[0,18],[5,2],[-3,15],[5,3],[4,-15],[0,27],[-8,-3],[-4,6],[8,12],[-10,13],[-3,-13],[-12,-6],[-7,4],[2,7],[-5,11],[-2,27],[5,20],[1,37],[9,7],[4,19],[1,19],[-9,38],[2,30],[-6,26],[1,22],[9,-3],[5,16],[0,18],[4,-4],[5,42],[6,9],[-1,15],[6,18],[5,6],[1,15],[4,12],[1,31],[6,21],[4,4],[1,12],[-4,23],[6,5],[4,37],[-4,9],[1,25],[-5,52],[0,24],[2,12],[7,5],[2,44],[-5,10],[-1,19],[6,11],[4,20],[0,18],[3,22],[4,2],[-1,30],[4,5],[2,15],[2,41],[-2,11],[2,19],[6,8],[-1,24],[-2,5],[1,62],[3,17],[-6,0],[1,25],[6,1],[4,33],[0,23],[2,25],[2,3],[0,24],[-3,10],[0,37],[2,6],[-1,31],[-5,51],[0,21],[-2,8]],[[3044,4127],[12,4],[4,9],[0,26],[9,9]],[[8073,6343],[8,-9],[1,-20],[-9,-13],[-7,-43],[-4,0],[-5,-15],[-9,-1],[-2,-11],[-14,6],[-14,12],[-1,42],[10,19],[8,9],[-1,10],[7,-3],[5,9],[8,-6],[10,10],[8,-9],[1,13]],[[8066,6398],[4,-5],[-8,-2],[4,7]],[[8393,6916],[2,-7],[-8,4],[6,3]],[[8386,6994],[-10,4],[-11,15],[6,2],[9,-11],[8,-5],[-2,-5]],[[8689,7778],[-2,10],[-10,6],[-11,-7]],[[8666,7787],[-4,7],[-12,-22],[-11,-4],[0,-9],[6,-40],[-2,-28],[3,-6],[-5,-31],[-19,-10],[3,-13]],[[8625,7631],[-8,13],[0,9],[-9,7],[-4,-13],[-1,-19],[-14,-5],[-1,-10],[-7,-10],[-26,-3],[8,-20],[-3,-13],[-30,7],[-2,12],[-9,1],[-12,-34],[-9,-16],[-6,0],[-8,-10],[-16,-14],[-14,-21]],[[8454,7492],[-5,-13],[-6,-5],[-9,3],[-11,-3],[-28,-28],[-3,-9],[-8,-11],[-3,5],[-7,-13],[-10,-4],[0,12],[15,8],[-10,29],[6,0],[-2,11],[12,12],[11,27],[-3,13],[-22,14],[-12,-7],[0,-7],[-10,-13],[-4,-16],[-14,-7],[-17,-19],[-1,-19],[-10,-15],[-10,0],[-7,-8],[-11,11],[-6,-6],[-5,-28],[5,-14],[10,-13],[14,-4],[7,5],[12,-25],[-7,-1],[-2,-21],[10,-12],[13,1],[2,11],[10,10],[3,9],[12,10],[11,-8],[0,-6],[9,-7],[34,-4],[-7,-15],[3,-13],[-9,-5],[-5,9],[-28,-23],[-6,3],[4,-11],[-7,-1],[0,-17],[-11,-5],[2,8],[-8,2],[2,-13],[-7,-22],[-8,-4],[-7,-26],[-5,-3],[1,-16],[12,-14],[17,-12],[6,-38],[11,-36],[-1,-21],[15,-16],[0,-13],[11,-10],[4,-16],[-8,1],[-9,9],[-10,-3],[-4,11],[-11,2],[-5,-7],[-7,4],[-3,16],[-6,2],[3,-11],[11,-13],[16,4],[2,-9],[7,-5],[8,-15],[9,-9],[6,-12],[2,-13],[-9,-2],[-12,-10],[-8,-11],[-5,-15],[6,-2],[6,9],[6,-1],[8,-19],[13,-6],[-13,-19],[7,5],[0,-22],[-4,-6],[-5,3],[1,-27],[-5,-3],[5,-23],[-5,2],[-4,-10],[-3,12],[-9,-28],[-8,-17],[-3,-23],[-6,-4],[-1,-11],[-9,-7],[-1,-8],[-5,9],[-4,-6],[5,-6],[2,-11],[-5,4],[2,-10],[-5,-15],[5,-3],[-3,-18],[-4,0],[6,-17],[-11,10],[-4,-8],[5,-14],[-9,1],[-3,-9],[3,-10],[-10,0],[4,-9],[-3,-8],[-6,3],[-5,-5],[-2,8],[-5,-13],[3,-11],[-5,-4],[-1,-10],[-6,-1],[-7,-13],[-4,1],[-5,-14],[-6,5],[0,-9],[-10,-21],[-1,-10],[-6,1],[-13,-12],[-7,6],[0,-11],[-14,8],[-5,-13],[-6,11],[-5,-7],[4,-8],[-4,-3],[-2,9],[-5,-3]],[[8172,6482],[-4,-2]],[[8168,6480],[-7,-3],[-2,17],[-3,-1],[-2,15],[-6,-8],[6,-17],[0,-15],[-2,-9],[-10,20],[7,-19],[-10,-14],[-5,1],[-13,-12],[-10,3],[-11,-15],[-25,-8],[-3,-10],[-6,-1],[-7,-13],[5,-7],[-1,-13],[7,-9],[-4,-10],[-13,-2],[-1,10],[-7,25],[3,28],[5,0],[0,8],[-8,1],[-2,14],[-1,-16],[-12,1],[0,6],[-9,2],[-9,13],[2,-16],[-6,7],[0,-8],[-9,-5]],[[7999,6420],[-7,10],[-9,-4],[-12,14],[1,6],[-10,2],[0,14],[-4,7],[0,14],[5,0],[0,16],[-14,0],[-18,12],[-7,14],[-14,-13],[1,-9],[-14,-14],[-3,8],[-6,-8],[0,-9],[-11,16],[-4,-12],[-5,11],[-7,-21],[-5,10],[-13,9],[-4,-20],[-3,0]],[[7836,6473],[-13,3],[-4,-12],[1,-10],[5,-15],[0,-39],[-5,6],[-9,-2],[-2,20]],[[7809,6424],[-2,12],[-7,-6],[-3,-8],[-8,-4],[-2,5],[-5,-6],[-2,13],[-4,3],[-1,19],[-14,5],[-6,-1],[0,16],[4,5],[-1,14],[6,11],[-5,13],[-8,-2],[-7,5],[2,6],[-6,40],[6,9],[-9,-3],[-13,1],[-14,-14],[-2,5],[5,10],[-1,18],[-4,0],[0,17],[7,8],[-2,12],[4,11],[2,-3],[6,10],[0,13],[6,-3],[3,13],[7,6],[-4,6],[5,33],[0,29],[-2,31],[-7,4],[-1,-9],[-7,20],[0,16],[-8,13],[-9,9],[-5,-18]],[[7703,6808],[-7,9],[-4,-3],[-7,15],[-7,1],[5,6],[-4,17],[-9,21],[-12,-9],[-6,0],[-6,-9],[-9,4],[-9,11],[-8,-6],[-3,-16],[-9,-6],[-6,-8],[-7,-1],[-9,-16],[-12,-14],[0,-11],[-9,-9],[-12,-5],[-8,2]],[[7468,6756],[-4,12],[3,18],[-1,10],[-6,5],[-13,-14]],[[7447,6787],[-8,2],[-4,-5],[-15,1],[-3,7],[-14,9],[-4,-11],[-9,10],[-3,-11],[-2,13],[-6,7],[-16,3],[2,17],[-4,3],[-7,-6],[-9,11],[-7,12],[-2,16],[-5,5],[-13,-7],[-9,26],[-9,2],[-9,15],[-10,8],[-1,15],[-14,5],[-11,-23],[-7,11]],[[7248,6922],[-11,15],[-10,6],[1,9],[-14,15],[-4,-3],[-9,13],[-5,16],[-9,-8],[-2,12],[4,5],[-4,7],[2,15],[-9,14],[-2,20],[9,4],[6,-16],[10,8],[7,13],[-5,14],[0,12],[-7,3],[-8,16],[-3,33],[8,8],[0,7],[-10,12],[-9,5],[-8,41],[1,9],[-7,0]],[[7160,7227],[-18,1],[-11,8]],[[7131,7236],[-5,6],[0,8],[-13,-4],[-4,10],[1,27],[-7,15],[-9,1],[0,7],[-8,7],[-7,-2],[-9,4]],[[7080,7327],[7,10],[-8,13],[3,7],[-5,17],[-1,26],[-12,9],[-6,0],[-2,-9],[-6,3],[-4,16],[4,9],[-6,12],[1,14]],[[7045,7454],[8,8],[-3,9],[4,18],[11,3],[10,14],[3,10],[11,-4],[8,11],[4,-20],[18,4],[9,13],[0,10],[5,15],[18,-2],[11,5],[5,-2],[8,19],[26,23],[27,15],[-1,8]],[[7227,7611],[1,3],[-3,23],[3,11],[9,6],[-7,5],[13,6],[-4,13],[2,7],[-11,37],[0,32],[5,5],[-18,8],[7,9],[21,5],[23,13],[3,-9],[13,3],[7,-7],[4,17],[-11,7],[7,21],[9,47],[5,14],[0,14],[24,-13],[21,1],[4,-10],[13,13],[7,0],[5,9],[-4,41],[4,25],[25,10],[4,10],[0,17],[4,6],[12,-1]],[[7424,8009],[15,5]],[[7439,8014],[-4,-17],[9,-8],[-2,-9],[16,-10],[2,-12],[14,-12],[11,1],[7,-11],[9,3],[11,-21],[0,-11],[15,-34],[1,-11],[-5,-14],[3,-17],[-7,-13],[-2,-16],[6,-17],[6,2],[16,-9],[23,-4],[11,2],[23,-8],[6,-13],[7,0],[14,-19],[9,-5],[11,2],[-2,-16],[6,-3],[9,-41],[12,-19],[2,-11],[23,4],[63,-13],[14,6],[49,-12],[7,-15],[29,-11],[18,-15],[23,7],[0,-12],[13,-5],[6,10],[44,30],[36,10],[20,-3],[20,4],[25,19],[15,29],[18,12],[10,13],[-9,18],[-7,23],[11,33],[5,4],[13,-1],[5,-10],[14,-6],[13,-3],[16,16],[14,24],[6,-3],[23,5],[15,18],[-1,7],[11,24],[6,3],[15,-1],[1,13],[9,-4],[16,12],[12,-3],[3,5],[14,-8],[11,-1],[5,6],[-4,23],[-18,25],[0,6],[-10,7],[-6,11],[-10,5],[-12,-3]],[[8270,7946],[-7,-13]],[[8263,7933],[-5,-6],[-13,13],[-17,-1],[-11,-9],[-7,10],[-2,13],[8,8],[-1,12],[25,79]],[[8240,8052],[16,-12],[14,-6],[12,9],[13,17],[12,1],[7,6],[1,14],[-4,6],[8,27],[7,10],[1,11],[8,23],[16,14],[3,17],[-4,7],[3,13],[-8,5],[-12,-1],[22,37],[12,1],[26,11],[19,0],[11,6],[28,-11],[4,-9],[20,-1],[17,-13],[23,-49],[-3,-10],[6,-23],[6,-9],[1,-20],[10,-19],[1,-23],[7,-6],[-2,-23],[5,-9],[11,-7],[20,2],[7,-14],[13,-3],[9,-7],[11,-17],[12,0],[-4,-13],[6,-8],[2,-13],[-4,-13],[7,-20],[15,2],[13,-5],[17,3],[3,9],[12,14],[12,-1],[6,9],[18,8],[9,-7],[-4,-13],[6,-17],[-8,-19],[-9,-6],[-4,-38],[-5,-13],[2,-9],[-11,-22],[-1,-15],[-8,-8],[-2,-21],[-8,-3]],[[4913,5477],[0,-1]],[[4913,5476],[0,1]],[[4925,5729],[-2,-26],[3,-1],[4,-47],[-8,-15],[-6,-39],[-7,-28],[2,-31],[2,-4],[4,-31],[5,-1],[2,-13],[-3,-14]],[[4921,5479],[-10,3],[-3,-4],[-15,4],[-5,4],[-18,3],[-3,-9],[16,7],[6,-3],[-22,-5],[-22,-3],[-38,-25],[-5,-8],[-12,-10]],[[4790,5433],[-1,2],[0,41],[5,10],[-1,33],[-10,7],[-1,13],[-6,7],[-10,3],[-6,8],[8,15],[1,23],[-5,23]],[[4764,5618],[7,-1],[3,10],[3,27],[-7,4],[2,14],[7,0],[5,-7],[2,15],[-8,9],[1,12],[5,5],[-5,6],[2,13],[-5,-2],[-3,7],[1,32],[4,6]],[[4778,5768],[4,2],[5,14],[5,1],[3,-12],[9,-6],[2,12],[7,-1],[1,18],[8,-5],[-1,8],[5,2],[2,-15],[-2,-13],[6,-3],[3,9],[11,4]],[[5402,5930],[2,-13],[7,-8],[3,-17],[-1,-10],[5,-3],[2,-34],[-2,-3],[-1,-26],[3,-28],[9,-22],[6,-8],[-7,-3],[-9,3],[-10,-4],[-15,3],[-7,-19],[11,-27],[17,-29],[3,-1],[8,-30],[2,-17],[4,-2],[-3,-16]],[[5449,5312],[-3,-5],[2,-25],[-18,15],[-7,3],[-10,-2],[-8,12],[-9,-3],[-27,0]],[[5369,5307],[-6,5],[-48,3],[-1,-7]],[[5314,5308],[-38,0],[-4,10]],[[5272,5318],[0,12],[4,27],[-1,12],[-8,18],[-2,13],[6,11],[-2,8],[-10,-11],[-10,10],[-2,29],[-11,-4],[2,17]],[[5238,5460],[6,19],[1,41],[4,2],[10,24],[10,13],[2,14],[10,13],[3,-8],[7,1],[1,9],[8,-5],[7,-14],[1,-16],[7,1],[6,15],[-1,8],[10,15],[-2,17],[5,9],[0,9],[5,14],[1,25],[16,23],[2,34],[9,9],[2,17],[-1,14],[6,5],[3,30],[12,34],[6,-1],[11,14],[1,37],[-3,10],[-10,4],[-3,40]],[[5390,5936],[7,0]],[[5397,5936],[-1,-11],[6,5]],[[5398,5936],[1,0]],[[5399,5936],[-1,0]],[[5944,7202],[0,0]],[[5944,7202],[-3,0]],[[5941,7202],[0,0]],[[5941,7202],[3,0]],[[5905,7208],[0,1]],[[5905,7209],[1,0]],[[5906,7209],[1,0]],[[5907,7209],[-2,-1]],[[5935,7200],[1,-2]],[[5936,7198],[-7,-1],[-1,11],[-17,-6],[-3,7]],[[5908,7209],[0,0]],[[5908,7209],[3,-5],[17,6],[1,-10],[6,0]],[[5807,5072],[0,-19],[-2,6],[2,13]],[[5762,5475],[2,-10],[7,-8],[0,-10],[16,-18],[12,12],[6,1],[5,-9],[7,12],[0,6],[10,-5],[0,-12],[4,-3],[7,-21],[10,-6],[0,-14],[6,4],[2,-10]],[[5856,5384],[2,-7],[-5,-19],[3,-15],[-4,-19],[8,-3],[8,-13]],[[5868,5308],[-10,-15],[-12,-24],[0,-15]],[[5846,5254],[-7,-6],[-2,-13],[-6,-5],[0,-21],[-3,-7],[-4,-25]],[[5824,5177],[-7,-9],[-3,-12],[1,-13],[8,12]],[[5823,5155],[-1,-6],[-1,-46]],[[5821,5103],[-7,-8],[-3,-9]],[[5811,5086],[-3,1],[-7,-28],[3,-9],[-3,-10]],[[5801,5040],[4,-14]],[[5811,4991],[-2,-3],[-1,-49],[4,11],[-1,-27],[-3,-5],[0,-30],[7,-28],[-1,-13],[-4,-5],[10,-49],[6,-14],[6,-6],[6,-13],[2,-29],[7,-10],[2,-12]],[[5849,4709],[-28,-8],[-19,-7]],[[5802,4694],[-16,-35],[0,-23],[4,-2],[2,9]],[[5792,4643],[4,-21],[-1,-21],[1,-34],[-5,-16],[0,-10],[-4,-17],[4,-25],[9,-11],[6,-17],[14,-4],[-2,11],[9,5],[0,-75],[-5,1],[-1,12],[-10,-10],[-7,1],[-2,14],[-6,17],[-4,-2],[-1,13],[-5,13],[-16,7],[-6,6],[-3,16],[-5,7],[-1,12],[-5,0],[-1,-16],[-7,-8],[-10,6],[-11,0],[-4,7],[-14,8],[0,26],[-17,-7],[-8,-8],[-4,5],[3,14],[-8,6],[-4,9]],[[5366,4846],[-9,2],[-4,-10],[-7,-3],[-7,16]],[[5363,4916],[8,-9],[0,-6],[8,11],[1,14],[7,-2],[12,12],[2,-8],[-3,-7],[1,-20],[9,0],[4,6],[10,27],[8,8],[1,8],[9,4],[10,35],[-1,29],[1,13],[-1,26],[12,25],[0,7],[11,30],[8,5],[12,27],[0,21],[3,25],[3,7],[-2,14],[1,28],[5,27],[-1,34],[16,57],[0,19]],[[5333,4894],[-5,13],[0,10],[-15,33],[-5,6]],[[5308,4956],[2,12],[8,13],[5,-10],[5,-2],[4,22],[-8,9],[3,10],[-7,12],[2,7],[-1,20],[4,-5],[6,5],[4,-5],[11,5],[-1,24],[5,5],[5,-5],[5,-26],[11,-4],[9,13],[1,6],[9,-22],[5,9],[0,20],[5,5],[1,41],[-2,10],[3,23],[-9,9],[-3,11],[-5,0],[0,27],[5,19],[5,0],[6,16],[-5,18],[0,11],[-14,6],[-7,-9],[-7,-3],[-4,22],[2,23],[3,9]],[[3018,5865],[-19,-13],[-7,-27],[-6,-1],[-7,-26],[-5,-13],[-2,-37],[-11,-37],[11,7],[1,-11],[4,2],[4,-28],[8,-16],[1,-19],[-4,-7],[1,-28],[7,-3],[3,-18],[7,-5],[5,4],[18,-4],[9,7],[10,-10],[7,-1],[18,-46],[5,-2],[7,8],[11,-5],[29,8],[4,-18],[-6,-10],[0,-17],[-5,-6],[0,-66],[5,-28],[4,-2],[5,-17],[-15,-35],[7,-6],[11,-18],[0,-12],[4,-17],[5,-39]],[[3056,4939],[-8,22],[-6,-2],[-7,6],[18,59],[0,7],[-26,25],[-10,-10],[-2,7],[-8,7],[-6,-11],[-10,-7],[-8,6],[-9,-5],[-7,8],[2,12],[-2,17],[-10,6],[1,12],[-4,13],[-7,3],[-5,10],[-5,2],[-4,26],[-6,11],[-5,2],[-8,14],[-5,-2]],[[2909,5177],[-11,11],[-3,-1],[-7,15],[-8,7],[-3,-12],[-9,-1],[-19,10],[-1,14],[-7,11],[-11,5],[-13,16],[-7,13]],[[2810,5265],[-5,10],[5,13],[7,-2],[-3,14],[0,13],[7,19],[10,-5],[0,9],[9,-4],[1,22],[12,29],[0,6],[7,20],[-6,-5],[-4,5],[-1,15],[3,16],[-2,57],[-5,2],[9,12],[0,7],[-7,20],[3,5],[1,19],[-5,6],[-3,17],[-7,14]],[[2836,5599],[2,14],[13,12],[1,13],[4,2],[-6,28],[-3,3],[3,11]],[[2850,5682],[12,-31],[1,-12],[5,0],[-1,29],[-4,10],[7,5],[10,15],[6,23],[12,4],[2,15],[-3,1],[3,13],[-1,20],[3,2],[0,16],[8,14],[11,14],[9,-5],[-3,-8],[7,-4],[4,18],[1,14],[10,-3],[15,1],[6,12],[10,13],[13,10],[3,11],[-1,9],[6,1],[12,10],[8,-6],[3,-18],[-6,-10]],[[6235,4487],[1,-17],[-4,8],[3,9]],[[6207,4496],[-7,9],[1,21],[4,1],[-1,-12],[3,-19]],[[4324,6037],[-5,9],[5,2],[0,-11]],[[4340,6065],[8,-16],[-5,-7],[-4,7],[1,16]],[[4365,6116],[5,-8],[-8,-3],[3,11]],[[4303,6173],[3,-6],[-7,-10],[-3,11],[7,5]],[[2676,5812],[7,-32],[16,-36],[7,-10]],[[2706,5734],[-3,-5],[-5,7],[-2,-8],[0,-23],[6,-10],[-5,-4],[2,-19],[-6,-11],[4,-16]],[[2697,5645],[-2,11],[-5,9],[0,15],[-9,5],[5,-10],[0,-10],[-12,12],[3,27],[-8,14],[-10,11],[-11,8],[1,10],[-12,21],[-4,-7],[9,-12],[-6,-16],[-6,15],[-10,5],[-5,19],[1,16],[3,2],[1,15],[-8,5],[7,2],[0,9]],[[2619,5821],[2,7],[21,-15],[5,7],[13,-10],[0,-5],[8,-5],[8,5],[0,7]],[[2698,6446],[5,-3],[4,-17],[-10,-9],[-8,8],[7,1],[-4,15],[6,5]],[[2836,6454],[6,-1],[-1,-7],[-5,8]],[[2823,6481],[-2,-7],[-7,5],[9,2]],[[2914,6329],[-1,4]],[[2913,6333],[-1,0]],[[2912,6333],[-2,-4]],[[2910,6329],[-10,-1],[-15,6],[-21,-3],[-2,-3],[-21,-3],[6,17],[9,10],[3,9],[-8,15],[-19,-1],[-13,20],[-1,18],[-6,16],[-14,-5],[-10,8],[-8,0],[-10,11],[-5,10],[-13,-1],[-13,8],[-13,4],[-7,11],[12,1],[1,7],[-7,6],[-25,1],[-10,-21],[-7,-9],[-15,0],[-2,-15],[-3,2],[-11,-11],[1,10],[-11,-3],[10,9],[5,0],[-2,15],[3,11],[12,15],[14,8],[3,6],[19,3],[9,8],[27,-2],[3,-6],[15,2],[6,-8],[10,1],[11,-12],[9,-20],[15,-1],[13,-13],[5,-1],[7,-16],[12,-5],[-3,9],[12,-16],[5,-11],[23,-17],[0,-5],[12,2],[3,-6],[-5,-10],[2,-9],[20,1],[7,-5],[9,-19],[5,2],[2,-9],[-3,-6],[-13,0],[-10,-9]],[[3089,5876],[-11,16],[3,2],[8,-18]],[[5905,7209],[1,0]],[[5941,7202],[-6,-2]],[[5908,7209],[6,1],[0,11],[14,-4],[17,8],[15,13],[0,-3],[-19,-22],[3,-11]],[[5938,7197],[0,0]],[[5938,7197],[0,0]],[[5937,7198],[0,0]],[[5944,7202],[-3,-6]],[[5941,7196],[0,6]],[[5936,7198],[0,-1]],[[5936,7197],[-3,-9],[-16,-11]],[[5917,7177],[-8,1]],[[5909,7178],[-7,3],[-5,11],[1,9],[7,7]],[[5907,7209],[1,0]],[[5411,8112],[4,8],[9,-9],[14,-7],[6,-6],[12,-3],[-7,-8],[13,-20],[10,7],[-4,12],[9,-2],[19,-24],[4,4],[7,-7],[8,0],[8,-23]],[[5523,8034],[-8,-1],[-12,-15],[-1,-11],[-15,-14],[-9,4],[-8,-15]],[[5383,7990],[-10,11],[-13,20],[-10,9],[-7,17],[3,13],[-5,11],[6,13],[26,11],[3,8],[9,1],[13,9],[-2,8],[15,-9]],[[5255,7927],[0,0]],[[5394,8289],[0,-4]],[[5394,8285],[0,4]],[[5371,8330],[6,-3],[4,-14],[-11,-5],[-6,4],[1,12],[6,6]],[[5262,8339],[4,3],[12,-11],[5,-15],[13,-5],[11,2],[1,-9],[-10,-8],[12,-2],[8,-7],[5,14],[11,2],[14,11],[13,4],[3,-10],[10,-8],[6,2],[3,-17],[13,-10]],[[5396,8275],[3,-23],[-5,-27],[12,-14],[-3,-9],[7,-21],[-4,-20],[2,-11],[7,-4],[2,-14],[-6,-20]],[[5269,7921],[-15,12],[1,-6]],[[5210,7923],[-2,4],[8,55],[9,11],[2,10],[-16,4],[-4,7],[-18,-1],[-13,17]],[[5176,8030],[4,20],[-6,3],[-5,16]],[[5166,8104],[-3,14],[9,22],[0,9],[-8,12],[5,10],[8,-4],[10,5],[8,28],[-10,5],[2,9],[8,1],[4,18],[0,16]],[[5199,8249],[-3,19],[6,6],[21,2],[6,-18],[0,12],[8,-4],[2,20],[9,1],[-8,29],[10,6],[-9,13],[-1,9]],[[5240,8344],[22,-5]],[[6201,5844],[-9,-28]],[[6192,5816],[-6,4],[-22,-7],[-4,8]],[[6160,5821],[0,12]],[[6160,5833],[0,24],[10,22],[7,22]],[[6177,5901],[8,-6],[3,9],[9,11]],[[6197,5915],[6,-14],[2,-25],[-10,-14],[-7,-3],[-3,-11],[13,3],[3,-7]],[[3294,6081],[4,-5],[0,-15],[-3,-3],[-3,16],[2,7]],[[5312,8347],[17,-10],[-1,-7],[-10,-1],[-8,6],[2,12]],[[5348,8350],[-12,-5],[4,7],[8,-2]],[[5272,8355],[7,-12],[-8,2],[1,10]],[[5413,8363],[6,-13],[-9,3],[3,10]],[[5287,8385],[7,0],[6,-15],[-2,-16],[-19,1],[-11,24],[19,6]],[[5342,8415],[7,-3],[0,-22],[-11,-12],[8,-11],[-13,-8],[5,-3],[-8,-10],[8,-5],[-9,-11],[-4,32],[-13,0],[-2,28],[13,12],[5,-13],[14,26]],[[5247,8463],[-2,-13],[-9,0],[11,13]],[[5240,8344],[-2,32],[-14,7],[3,14],[6,5],[-4,11],[-4,-6],[0,34],[16,1],[7,12],[9,-10],[-3,15],[18,12],[-32,-9],[-5,-13],[-7,3],[11,20],[17,1],[9,6],[10,19],[20,10],[-6,-10],[3,-20],[-7,-15],[2,-23],[12,-1],[5,-6],[-6,-16],[-11,2],[-4,-20],[-20,-21],[6,-16],[-7,-5],[8,-8],[-8,-10]],[[3006,6222],[2,16],[-6,10]],[[3002,6248],[0,0]],[[3002,6248],[-1,2]],[[3001,6250],[-1,4]],[[3000,6254],[8,11],[-2,9],[4,12],[-4,32]],[[3006,6318],[3,11],[14,-4],[4,6],[11,-10],[5,1],[4,-8],[11,0],[4,-20],[6,2],[11,-3],[-2,-5],[-11,2],[0,-8],[24,-7],[12,-20],[-9,-23],[-8,11],[-17,0],[-9,4],[-8,-14],[-9,-2],[-3,12],[-9,-8],[-5,2],[1,-9],[-10,-31],[-6,8],[-4,17]],[[5238,7310],[2,-6],[-7,-4],[1,-6],[-8,-8],[6,-5],[-4,-35],[3,-10],[-1,-19],[4,-5],[-4,-8],[-3,-30],[-11,-11],[-1,-9],[-7,-8],[-1,-14],[7,-25],[0,-11],[10,-7],[6,-15],[2,-20],[19,-24],[7,-62],[6,-44]],[[5264,6924],[-7,-7],[11,-29],[5,-37],[-2,-44],[4,-19],[-5,-34],[2,-21],[3,-4],[-2,-20],[-10,-9],[-3,-10],[18,-52],[0,-25],[5,-5],[1,-10],[6,-6],[7,5],[21,-13],[3,-4],[11,-43]],[[5332,6537],[-28,-35],[-99,-122],[-24,-40],[-17,-32],[-8,-8],[-39,-15]],[[5117,6285],[-26,-9],[-5,7],[4,15],[-2,11],[1,14],[-8,8],[-12,4],[-9,16],[-2,-4],[-9,5],[-4,14],[-14,12],[1,19],[-14,18],[-28,40],[-8,9],[-36,49],[-21,30],[-8,9],[-51,70]],[[4866,6622],[-64,78],[-16,21],[-28,33]],[[4758,6754],[0,22]],[[4758,6776],[0,59],[12,18],[18,22],[7,0],[8,8],[10,0],[27,5],[6,-5],[7,21],[11,17],[11,11],[6,11],[17,8],[3,14],[-8,21],[4,4],[1,15],[23,9],[-3,14],[12,5],[35,-3],[0,17],[6,7],[-11,14],[-4,11],[2,8],[-5,10],[2,18],[-4,8],[2,24],[-4,15],[3,6],[-4,7],[2,9],[-12,19]],[[4938,7203],[8,0],[18,16],[2,12],[11,12],[8,0],[1,7],[6,-5],[8,2],[5,15],[24,22],[25,4],[10,4],[8,-2],[11,13],[3,-4],[12,2],[9,8],[21,-1],[13,-7],[8,-8],[10,11],[14,5],[6,10],[12,-12],[8,2],[0,9],[9,-1],[7,-10],[13,4],[10,-1]],[[2774,5010],[-4,-1],[0,11],[5,9],[5,-3],[-6,-16]],[[2519,5143],[-4,-14],[-5,0],[9,14]],[[2493,5154],[0,-14],[-8,2],[1,11],[7,1]],[[2459,5168],[2,-12],[-7,2],[-1,8],[6,2]],[[2478,5174],[6,-6],[-5,-6],[-4,5],[3,7]],[[2463,5192],[4,-22],[6,-11],[-1,-9],[6,-10],[-4,-13],[-13,-3],[-3,10],[12,14],[-9,21],[-3,18],[5,5]],[[2909,5177],[-10,0],[6,-20],[4,-4],[-1,-13],[2,-13],[-5,0],[-4,-27],[-15,-40],[-16,-25],[-33,-24],[-9,-21],[1,-7],[-6,5],[-1,-22],[-8,-31],[-1,-17],[-4,-3],[-1,-12],[-4,-7],[-8,2],[-5,16],[0,9],[-8,2],[-9,11],[-8,-11],[-2,5],[4,10],[-5,9],[10,10],[-2,22],[-3,6]],[[2768,4987],[11,12],[6,40],[-3,5],[-4,-11],[-1,15],[-7,-22],[-11,18],[-7,5],[5,13],[-1,22],[-2,5],[2,15],[-4,19],[10,7],[3,21],[-1,11],[12,24],[1,31],[-2,13],[12,11],[19,9],[4,15]],[[5949,6986],[2,-6]],[[5951,6980],[17,-99]],[[5968,6881],[-4,-12],[-3,-33],[-5,-16],[0,-26],[-5,-14],[-13,15],[-6,17],[-10,16],[-1,26],[-8,12],[-5,14],[-2,23],[-4,-1],[-4,-16],[6,-10],[3,-16],[0,-14],[4,-6],[14,-42],[5,-5],[5,-36],[4,-4],[5,-25],[0,-11],[11,-43],[15,-51],[8,-35],[15,-29],[-8,3],[2,-41],[3,-16],[6,-13],[10,-6],[2,-8],[16,-29]],[[6024,6449],[-78,0],[-73,0],[0,14],[-6,-14],[-57,0],[-71,0],[-46,0]],[[5693,6449],[0,421],[-3,10],[-1,24],[-4,13],[6,20],[3,17],[-4,22],[0,14],[8,16]],[[5698,7006],[1,-7],[7,-2],[12,7],[14,-6],[27,-8],[1,-7],[8,-5],[5,4],[4,-9],[21,-6],[8,-9],[13,7],[16,22],[4,-4],[4,14],[3,-3],[11,6],[-9,-10],[9,2],[7,11],[13,-9],[8,5],[-3,-15],[7,-4],[1,-7],[6,2],[0,9],[6,-10],[7,-4],[31,7],[9,9]],[[6111,6097],[3,-11],[8,-6],[-12,2],[-2,8],[3,7]],[[6177,5901],[-6,15],[-8,12],[-5,18],[-14,19],[-7,23],[-5,10],[-10,7],[-5,9],[-9,-1],[-10,9],[-10,-6],[-5,10],[-3,-8],[-13,-5],[-6,16],[-3,-1],[-6,12],[-9,-45],[-6,19],[-5,1],[-2,-8],[-10,1],[-6,-4]],[[6014,6004],[-3,51],[6,17],[1,18],[3,5],[5,24],[-2,23],[3,6],[-1,17],[12,-2],[3,17],[21,13],[5,18],[5,9]],[[6072,6220],[9,-35],[0,-9],[6,-31],[1,-24],[3,-23],[4,-4],[0,-17],[5,-2],[2,-22],[4,-1],[-2,18],[3,4],[6,-7],[0,-17],[6,-8],[3,5],[6,-3],[3,-12],[12,-6],[12,-31],[2,-9],[9,-6],[3,-12],[3,1],[4,-13],[1,-13],[4,2],[6,-13],[0,-8],[10,-9]],[[5941,7196],[-3,1]],[[5938,7197],[-2,0]],[[4503,6784],[-3,-9],[-5,3],[8,6]],[[4571,6803],[1,-17],[-5,-6],[-6,6],[2,19],[8,-2]],[[4552,6828],[-7,-11],[-2,-14],[-7,-8],[-6,21],[12,4],[4,8],[6,0]],[[4604,6803],[7,35],[5,-4],[-4,-26],[-8,-5]],[[4503,6844],[4,-7],[-3,-16],[-4,14],[3,9]],[[4626,6861],[0,-6],[-9,-10],[-1,11],[10,5]],[[4919,7214],[-1,3]],[[4918,7217],[1,-3]],[[4851,7247],[-1,5]],[[4850,7252],[1,-5]],[[5043,7435],[2,-6],[-6,-9],[-6,2],[10,13]],[[5088,7483],[0,-11],[8,0],[-7,-23],[-4,-6],[-8,7],[-3,10],[-9,0],[9,14],[14,9]],[[5114,7490],[6,-11],[-3,-3],[-12,12],[9,2]],[[5055,7627],[0,0]],[[4950,7681],[11,-8],[1,-9],[16,-8],[6,-11],[6,3],[8,-7],[20,0],[0,9],[18,-7],[3,-7]],[[5047,7630],[8,-9],[8,4],[6,-5],[12,8],[7,-3]],[[5088,7625],[4,-5],[-6,-6],[3,-18],[-4,-6],[-23,-20],[-3,-10],[-17,-6],[-15,-8],[-8,-13],[5,-6],[-8,-7],[-7,-18],[-8,-14],[-11,-32],[3,-21],[6,-15],[7,-7],[-21,-22],[-9,-36],[4,-6],[-19,-4],[-12,-20],[-2,-15],[-7,-12],[-5,6],[-7,-1],[-3,-8],[-6,4],[-42,-1],[-7,-13],[-15,-5],[-4,-16]],[[4851,7264],[0,0]],[[4851,7264],[-6,-7],[-14,11],[-9,24],[-2,18],[-12,13],[-14,2]],[[4794,7325],[-3,18],[7,27],[6,2],[3,10],[-5,0],[-6,14],[1,17],[6,6],[3,12],[-5,3],[-5,22],[-6,12],[14,0],[4,14],[-4,17],[7,8],[-1,30],[-3,6],[8,16],[6,4],[6,14],[-10,6],[0,16],[-16,2],[-2,-7],[-11,-3],[-3,3],[-13,-3],[3,13],[-4,6],[-15,-10]],[[4756,7600],[-4,7],[8,12],[-7,6],[1,13],[-6,-4],[1,10],[-7,18],[12,17],[5,-3],[11,5],[-2,4],[13,17],[6,2],[13,-13],[36,2],[14,-2],[17,-9],[16,0],[17,6],[3,-6],[11,-2],[10,4],[16,-8],[10,5]],[[5628,8557],[8,2],[12,-10],[-17,-13],[-15,-4],[-10,7],[0,13],[22,5]],[[5631,8581],[8,-10],[-15,-8],[-3,11],[-9,4],[19,3]],[[5778,8608],[4,-7]],[[5782,8601],[-5,-1]],[[5777,8600],[3,-1]],[[5780,8599],[-7,-9]],[[5773,8590],[-4,-10]],[[5769,8580],[-12,1],[-9,-8],[13,-28],[6,-22]],[[5767,8523],[5,-8],[-7,-3],[-6,-16]],[[5759,8496],[-14,5],[-8,-6],[-15,19],[-26,13],[-21,-12]],[[5675,8515],[7,26],[-10,-3],[-13,5],[-6,13],[-3,20],[6,3],[-5,14],[18,5],[6,10],[30,1],[8,10],[35,-13],[27,-2],[3,4]],[[6160,5833],[0,-12]],[[6192,5816],[-8,-22],[5,-23],[5,-13],[6,-8],[1,-13],[4,-12],[5,-4],[12,-21],[51,-34],[31,-23],[28,0]],[[6332,5643],[-21,-43],[-31,-61],[-14,-31],[-14,-34],[-5,-9],[-27,3],[-20,-14],[-8,-12],[-1,-8],[-9,-7],[-12,-2],[-7,-13]],[[6163,5412],[-19,-3],[-3,2],[-9,19],[-26,-24],[-8,-27],[-25,12],[-15,0],[-7,11],[-28,36],[-23,1],[-3,10]],[[5997,5449],[-4,8],[0,27],[-2,9],[-11,-2],[-1,9],[-5,7],[-3,12],[0,13],[-4,11],[-3,24],[-6,5],[0,8],[-6,4],[-7,24],[-9,16],[-19,8],[-1,9],[5,9],[0,17],[12,3],[2,-5],[7,3],[5,9],[-1,50]],[[5946,5727],[4,33],[3,9],[-1,22],[7,18],[6,-7],[5,5],[0,25],[4,16],[-1,14],[6,8],[2,12],[11,31],[11,1],[0,19],[3,19],[6,24],[2,28]],[[5634,8649],[-3,-11],[-9,9],[12,2]],[[5804,9158],[-14,-7],[8,-9],[-8,-12],[7,-21],[18,-7],[18,-21],[-2,-10],[-23,-30],[-1,-9],[13,-20],[11,-25],[5,-23],[-10,-1],[2,-32],[-7,-6],[6,-11],[9,-1],[-2,-23],[14,-8],[1,-11],[-17,-18],[14,-16],[21,-15],[9,-17],[-9,-24],[-25,-28],[-15,-23],[-18,-22],[-10,-7],[-27,-31]],[[5772,8670],[-31,-8],[-19,-2],[-8,-8],[-15,0],[-6,-6],[-38,-11],[-10,-6],[-10,17],[3,10],[-12,-6],[2,10],[-10,0],[-12,14],[-5,-7],[-8,8],[-2,23],[5,3],[3,23],[-5,25],[-5,3],[3,22],[-6,2],[3,27],[13,9],[-5,12],[11,-3],[13,8],[-5,9],[17,9],[3,10],[13,6],[10,18],[17,18],[5,16],[25,8],[-4,14],[2,17],[-33,19]],[[5671,8973],[-15,37],[10,20],[-12,20],[5,16],[-7,26],[5,3],[-23,26],[-21,5],[-41,32]],[[5572,9158],[12,1],[7,14],[10,-2],[21,-31],[22,-6],[20,12],[27,-15],[7,13],[18,12],[-1,17],[6,22],[15,15],[16,-2],[22,10],[17,-16],[18,-7],[6,-12],[-14,-14],[3,-11]],[[9954,4093],[-5,-13],[-7,0],[12,13]],[[9951,4184],[0,-5],[9,-12],[2,-26],[-10,-2],[-3,-6],[-10,-2],[-15,11],[-1,12],[5,7],[-2,6],[7,12],[18,5]],[[0,4252],[9987,-23],[-2,-11],[4,2],[7,14],[0,-17],[-16,-2],[-1,7],[-11,-10],[-4,-9],[-7,15],[12,16],[13,4],[2,8],[-9984,6]],[[3351,2225],[4,-3],[-17,-28],[-11,-4],[-4,-11],[-8,-4],[-11,12],[16,3],[-4,17],[12,1],[-13,15],[11,-5],[9,6],[15,-3],[1,4]],[[3368,2227],[7,2],[4,-8],[12,3],[4,-18],[-17,-11],[-16,0],[8,-4],[-12,-6],[1,-10],[-11,5],[3,-11],[-9,12],[6,17],[13,11],[-3,14],[10,4]],[[6541,3981],[5,-2],[5,-13],[-1,-13],[-7,-1],[-6,6],[-4,14],[8,9]],[[6252,4454],[4,-5],[-1,-13],[-3,-1],[0,19]],[[3483,5317],[7,10],[4,16],[2,29],[4,19],[-10,24],[-3,26],[-1,25],[4,16],[5,9]],[[3495,5491],[3,5],[3,18],[12,-10],[11,-4],[6,-6],[10,-19],[22,-31],[3,-18],[-1,-11]],[[3306,6034],[4,-11],[-1,-7],[-9,13],[1,11],[5,-6]],[[3288,6120],[2,-14],[-4,-5],[-3,22],[5,-3]],[[3295,6124],[5,-5],[-9,-3],[1,18],[3,-10]],[[5262,7641],[2,-7],[1,-27],[-4,-7],[-2,-24],[-7,-9],[-8,9],[3,8],[-7,3],[2,19],[-5,15],[3,10],[13,13],[6,-1],[3,16],[0,-18]],[[5160,8036],[5,-6],[11,0]],[[5172,7849],[16,7]],[[5195,7827],[-7,-5],[5,-18],[5,-6],[-2,-11],[-13,-6],[3,-11],[8,-5],[1,-9],[-6,-11],[4,-14],[10,-7],[9,3],[-4,-22]],[[5208,7705],[-2,-3]],[[5206,7702],[-2,-1]],[[5204,7701],[-11,-10],[-9,-23],[-14,-6],[-22,9],[0,7],[-15,1],[-7,6],[-11,0],[-5,6],[-13,-17],[-10,-6],[-3,-9],[0,-26],[4,-8]],[[4950,7681],[9,13],[6,48],[-1,11],[4,49],[11,-11],[0,8],[-14,16],[3,6],[1,26],[-20,14],[-9,18],[4,14],[-5,12],[-8,1],[-3,15],[-6,-3],[-11,11],[-18,6],[-4,6],[-11,-5],[0,7],[-9,7],[12,5],[-14,12],[1,13],[10,6],[22,0],[2,9],[12,2],[10,-20],[12,9],[16,-4],[4,8],[-1,28],[-6,8],[0,18],[16,0],[-1,-11],[5,-6],[30,-4],[8,7],[-5,3],[2,11],[10,9],[18,7],[11,15],[0,37],[10,8],[17,4]],[[4800,8771],[13,-21],[-14,13],[1,8]],[[4808,8772],[9,-11],[-11,3],[2,8]],[[9394,5584],[3,-9],[-4,-1],[1,10]],[[5308,4956],[-3,13],[-10,15],[0,9],[-17,28],[-8,19],[7,-8],[5,3],[-8,8],[-7,1],[-2,13],[-9,21],[1,10],[8,2],[-2,7],[-4,-5],[-9,16],[-1,11],[-6,18],[5,6],[2,-7],[2,12],[6,13],[1,14],[-1,27],[2,-7],[11,-2],[-8,7],[-5,19],[9,-6],[-2,24],[3,7],[4,-4]],[[5272,5240],[6,1],[36,-1],[0,68]],[[4964,8107],[6,-6],[-7,-6],[-6,6],[7,6]],[[4883,8252],[-4,-10],[-6,16],[10,-6]],[[4825,8298],[-11,-2],[-8,20],[-10,-17],[-14,5],[-9,13],[11,10],[-5,6],[11,2],[8,19]],[[4798,8354],[20,10],[13,-2],[0,-8],[18,-35],[-7,-6],[-11,-19],[-6,4]],[[4857,8375],[-7,14],[7,-1],[0,-13]],[[4830,8398],[2,-9],[-7,-6],[-6,6],[1,10],[10,-1]],[[4839,8409],[-5,-13],[-4,6],[9,7]],[[4832,8443],[11,-10],[-2,-5],[-18,-4],[7,10],[-7,5],[9,4]],[[4795,8489],[3,-18],[-4,1],[1,17]],[[4800,8503],[1,-8],[-10,7],[9,1]],[[4824,8506],[5,-20],[14,-6],[-9,-6],[-10,1],[-13,15],[11,5],[2,11]],[[4827,8543],[-5,-20],[-16,-15],[3,11],[-7,3],[2,15],[23,15],[0,-9]],[[4907,8560],[9,0],[-6,-20],[-22,-20],[6,-7],[-8,-14],[22,8],[20,-3],[16,2],[7,-13],[-6,-9],[-6,-24],[-9,-18],[-10,-8],[8,-10],[-21,-15],[9,-4],[11,6],[13,-8],[14,-19],[4,-29],[8,-27],[19,-9],[4,-13],[8,-7],[-4,-5],[11,-24],[-7,1],[12,-23],[-7,-19],[8,-7],[5,11],[20,-2],[11,-10],[3,-16],[-5,-24],[-4,0],[-14,-26],[-11,-12],[12,-3],[13,1],[-3,-14],[-11,-13],[-5,1],[-14,-11],[-12,6],[-18,-6],[-3,7],[-18,-7],[-14,-1],[2,-8],[-27,9],[-13,-6],[-2,-17],[-8,-7],[-11,10],[-16,-3],[-12,-21],[-8,10],[19,25],[7,14],[1,12],[6,-1],[2,11],[12,3],[11,-4],[11,2],[8,20],[-23,-9],[-8,12],[-13,-3],[0,6],[-10,3],[-8,-7],[-10,18],[13,6],[20,18],[2,9],[-2,24],[-17,-4],[11,12],[5,11],[27,10],[8,19],[-4,11],[5,2],[-1,14],[-9,-6],[-11,23],[9,26],[-19,-10],[-11,5],[1,-10],[-13,10],[-5,-5],[-1,21],[11,19],[-15,29],[-8,-15],[-4,-23],[-5,-1],[3,22],[-1,18],[5,24],[8,18],[-12,-13],[-5,11],[0,17],[5,10],[-6,19],[7,25],[12,0],[-5,20],[11,21],[20,-6],[26,7]],[[4912,8589],[-2,-13],[-4,10],[6,3]],[[4964,8673],[4,-27],[-15,5],[9,7],[2,15]],[[6206,7550],[-23,27],[-5,-9],[-8,5],[-9,-5],[-8,5]],[[6153,7573],[7,17],[-8,51],[-10,6],[-3,11],[-21,13],[-8,10]],[[6110,7681],[2,9],[16,0],[27,-19],[21,2],[7,-6],[6,1],[10,-14],[17,-9],[-2,-8],[6,-4],[16,12],[7,-8],[4,8],[11,-14],[11,0],[-2,-18],[8,-10],[14,-9]],[[4995,5824],[5,-3],[-3,-26],[10,-13],[3,-27],[-4,-30],[8,0],[-2,-24],[2,-8],[-4,-8],[9,-19],[-3,-11],[0,-28],[-3,-15],[4,-3],[-1,-23],[-3,-2],[6,-28],[8,-9],[5,-13]],[[5032,5534],[-7,-19],[-15,1],[-21,-17],[-12,-16],[-6,0],[-6,-7],[-11,-5],[-10,-15],[-7,8],[-24,12]],[[4913,5477],[8,2]],[[4851,7264],[0,0]],[[4683,5897],[-3,-14],[6,-9],[6,11],[4,0],[8,-17],[4,13],[5,5],[16,-11],[2,7],[14,19],[5,-5],[2,-20],[3,-1],[-1,-21],[13,-17],[-9,-23],[5,5],[6,-3],[0,-28],[9,-12],[0,-8]],[[4764,5618],[-6,8],[-1,-12],[-11,-17],[-5,13],[-4,0],[3,19],[-5,25],[0,11],[-8,10],[-7,-7],[-6,3]],[[4714,5671],[-3,1],[-5,-11],[-3,4],[5,15],[-3,10],[0,15],[-4,1],[2,13],[-15,39],[-19,0],[-17,-7],[-5,-26],[-12,-21],[-5,-1]],[[4630,5703],[4,8],[-12,23],[0,12],[-4,-2],[-6,13],[-20,29],[4,20],[-5,-10],[-3,21],[-4,-14],[-2,11]],[[4582,5814],[8,30],[12,8],[16,4],[0,19],[-6,11],[7,3],[-1,24]],[[4618,5913],[19,-3],[-1,-8],[17,-6],[3,-5],[7,6],[20,0]],[[4534,5935],[-2,17],[4,7],[8,-14],[5,5],[-8,2],[-1,13]],[[4540,5965],[29,0],[4,12],[7,2],[8,-5],[2,-7],[6,1],[4,-10],[12,7],[3,-14],[-15,-6],[-5,7],[-11,6],[-6,7],[-1,-9],[-5,-4],[-12,-1],[0,-11],[-24,1],[-2,-6]],[[4553,5826],[1,-7],[-6,3],[5,4]],[[4582,5814],[-1,9],[-5,-7],[-7,20],[5,15],[8,-2],[-9,7],[-2,-8],[-3,8],[2,11],[8,-1],[-5,6],[-6,-7],[-11,-6],[3,14],[-7,-6],[-6,6],[1,13],[-5,-2],[-7,9]],[[4535,5893],[14,7],[15,-1],[13,14],[41,0]],[[5272,5240],[-3,6],[-10,3],[3,15],[10,28],[0,26]],[[5243,5399],[5,-8],[-8,-24],[-6,4],[0,10],[4,1],[1,11],[4,6]],[[5663,7229],[13,-11],[9,5],[22,-8],[8,3],[-1,-12],[9,6],[7,-7],[-2,-5],[-25,-2],[-16,-4],[0,9],[-10,6],[-24,5],[1,17],[4,5],[5,-7]],[[5756,7245],[-1,-17],[-3,-5],[4,22]],[[5640,7268],[-4,-2],[0,12],[4,-10]],[[5784,7281],[-5,-19],[-8,-12],[-2,13],[5,13],[10,5]],[[5710,7319],[-4,-10],[-2,10],[6,0]],[[5731,7350],[-10,-7],[2,7],[8,0]],[[5748,7357],[-5,-6],[-5,6],[10,0]],[[5576,7363],[5,-7],[-4,-5],[-5,10],[4,2]],[[5690,7366],[3,-13],[-8,16],[5,-3]],[[5571,7398],[6,-23],[-8,2],[-3,14],[5,7]],[[5723,7405],[3,-16],[-4,-9],[-5,25],[6,0]],[[5651,7423],[11,-14],[8,0],[5,-29],[7,0],[0,-10],[-7,1],[-8,23],[-11,0],[-1,9],[-12,17],[-9,-1],[13,12],[4,-8]],[[5733,7446],[6,-17],[-13,0],[4,10],[-10,-4],[-2,8],[13,8],[2,-5]],[[5553,7474],[-2,-18],[-5,18],[7,0]],[[5706,7488],[-2,-14],[-9,3],[0,9],[11,2]],[[5688,7522],[-8,1],[4,10],[4,-11]],[[5586,7536],[18,3],[4,11],[23,3],[5,10]],[[5731,7585],[7,-8],[1,-14],[-8,-6],[0,-15],[-8,-13]],[[5723,7529],[-3,5],[-11,2],[-11,8],[-12,-10],[-8,6],[-9,-12],[-11,1],[4,-19],[-4,-10],[8,-6],[-1,-11],[-9,17],[-8,0],[0,-6],[10,-14],[-9,6],[-2,14],[-12,9],[0,14],[-6,-6],[-3,-28],[8,-15],[2,-11],[5,-6],[7,-17],[-11,9],[-4,-7],[6,-16],[-9,-6],[17,-11],[0,-9],[8,-2],[13,-15],[-2,-5],[2,-25],[-3,-1],[-12,22],[-15,-11],[5,-3],[0,-11],[10,-10],[-11,-8],[-11,16],[0,-8],[7,-21],[3,-20],[0,-17],[-11,22],[-5,-6],[-4,-14],[0,13],[-6,19],[-6,-1],[0,-14],[-7,3],[-3,13],[3,14],[-3,15],[-13,17],[7,16],[7,2],[6,9],[19,-10],[10,-12],[9,10],[-5,6],[-17,14],[-1,-6],[-12,4],[-12,-7],[-4,8],[-8,-4],[-5,24],[-4,-1],[-1,16],[-13,20],[-2,14],[-5,4]],[[5583,7526],[0,0]],[[5582,7531],[4,5]],[[3288,5876],[-5,-2],[5,13],[0,-11]],[[3786,8632],[-12,-4],[4,9],[8,-5]],[[3787,8645],[3,-11],[-11,4],[-4,10],[12,-3]],[[3846,8835],[12,-11],[-9,0],[-12,15],[9,-4]],[[3579,8886],[3,14],[6,-4],[-9,-10]],[[3876,8910],[-1,-14],[-10,26],[11,-12]],[[3961,8973],[2,-9],[-18,-2],[0,10],[16,1]],[[3583,9209],[9,-5],[-9,-16],[-11,9],[11,12]],[[3535,9210],[20,-7],[5,-10],[-9,-9],[-40,-14],[-19,9],[8,9],[-21,2],[3,11],[-6,23],[14,9],[30,-7],[15,-16]],[[4292,9258],[5,-6],[-22,-8],[-56,-5],[5,12],[24,14],[11,0],[27,11],[6,-18]],[[3513,9274],[-13,6],[9,10],[4,-16]],[[3537,9281],[-14,10],[21,1],[-7,-11]],[[3472,9375],[-13,-11],[-4,9],[17,2]],[[4335,9380],[22,-3],[33,-25],[-20,4],[17,-11],[-5,-9],[-50,20],[-10,8],[0,15],[13,1]],[[4354,9391],[36,-8],[-3,-13],[-17,-1],[-14,11],[-38,1],[0,5],[36,5]],[[4333,9407],[21,-8],[-47,6],[55,-12],[-48,-4],[-29,9],[13,12],[35,-3]],[[4418,9469],[11,-1],[11,-14],[-32,-5],[-18,7],[3,8],[25,5]],[[4439,9496],[13,-2],[-12,-10],[-14,7],[13,5]],[[4505,9520],[-7,-8],[21,-2],[-15,-6],[-30,-2],[2,17],[29,1]],[[4481,9596],[3,-41],[-16,34],[13,7]],[[2994,9643],[23,-5],[-21,-3],[-2,8]],[[4445,9674],[18,-11],[-32,9],[14,2]],[[4519,9788],[-33,-16],[-26,9],[49,14],[10,-7]],[[3575,9904],[-53,7],[4,13],[49,-20]],[[3722,9942],[44,-15],[-28,-11],[-44,11],[-20,15],[48,0]],[[3880,9983],[38,-14],[-47,9],[9,5]],[[4105,9998],[43,-1],[139,-17],[-12,-6],[-116,-3],[-142,-14],[100,5],[47,8],[96,-4],[39,6],[2,-18],[34,4],[72,-17],[-31,-17],[-54,-4],[-152,-7],[-81,-17],[1,-9],[30,8],[107,13],[89,-4],[-3,-12],[-44,-9],[-2,-11],[85,20],[2,14],[51,4],[11,-19],[-7,-14],[-56,-36],[-16,-18],[53,26],[58,30],[75,-8],[37,24],[53,-1],[57,-12],[13,-8],[-64,-27],[-24,0],[7,-12],[-31,-8],[-46,1],[36,-15],[-18,-11],[-40,-3],[-44,6],[-25,-22],[11,-12],[20,3],[-9,-21],[17,-12],[-27,-8],[0,-11],[-28,-2],[-11,-42],[-18,-22],[18,0],[10,17],[51,-16],[-6,-10],[-19,10],[-22,-2],[38,-26],[10,6],[21,-5],[2,-18],[-10,-12],[-35,13],[-27,-3],[-24,-13],[-13,12],[-14,-8],[10,-12],[18,1],[0,-16],[19,4],[30,-4],[6,-11],[-15,-4],[21,-14],[3,-29],[-17,-4],[-4,9],[-16,-2],[-26,17],[8,-12],[24,-14],[-8,-27],[30,-5],[7,6],[13,-11],[-18,-15],[-16,2],[-7,11],[-36,-2],[-11,-18],[9,-27],[-2,21],[9,3],[36,-10],[-7,-26],[-28,3],[-18,-14],[-36,11],[-14,9],[-1,13],[-10,-16],[-25,-4],[-17,-16],[24,-7],[-16,-14],[22,-6],[6,-12],[-19,-7],[21,1],[23,-15],[33,-16],[-17,-14],[20,9],[14,-3],[-17,-11],[2,-17],[9,14],[10,-1],[0,-35],[8,-18],[-13,-10],[-11,3],[-7,22],[-2,-22],[-19,0],[-16,10],[-9,27],[-24,13],[-15,14],[-20,5],[-16,-3],[-26,23],[-16,-2],[31,-13],[-8,-6],[26,-8],[25,1],[11,-12],[-16,-13],[-24,-7],[-44,2],[14,-7],[-11,-17],[2,-11],[40,7],[13,-6],[-17,-3],[-27,-14],[-16,-3],[34,-3],[11,16],[15,-4],[29,13],[23,-11],[25,-7],[33,0],[0,-8],[-14,0],[-4,-12],[-19,-2],[1,-10],[-13,-8],[-17,-1],[2,-9],[-26,-21],[-31,-10],[-13,-9],[-23,1],[1,-6],[-24,-7],[-9,4],[-5,-11],[-18,10],[-1,-16],[-30,-3],[-30,17],[6,-17],[-4,-12],[-11,1],[-16,-12],[-12,-33],[-13,-5],[-1,-15],[-27,-26],[-15,-2],[-14,-18],[-13,3],[-20,-12],[-17,14],[15,16],[-12,0],[-7,-21],[-14,-1],[8,-16],[-17,1],[-7,-6],[-8,9],[-14,-12],[2,-15],[-14,-14],[-10,8],[-13,-3],[1,-12],[14,-11],[-1,-13],[-13,-9],[-12,1],[3,-8],[18,-1],[7,-27],[-13,0],[6,-7],[-18,-12],[-13,6],[12,-15],[-4,-15],[-21,-8],[-6,-11],[9,-15],[-21,9],[12,-11],[9,-1],[-8,-21],[11,5],[-6,-22],[-8,-6],[7,-7],[-17,-13],[9,-6],[-3,-17],[-20,3],[20,-7],[-12,-15],[-11,5],[14,-18],[0,-9],[-29,6],[-13,-12],[-12,10],[3,19],[-9,0],[6,10],[-15,-11],[-11,20],[6,8],[-3,10],[-10,-9],[-22,-8],[3,7],[-19,-8],[-17,0],[14,12],[-20,6],[-4,9],[7,5],[-20,5],[-1,9],[-10,13],[8,10],[-10,16],[-15,2],[-8,9],[5,28],[-12,7],[15,8],[-28,-3],[-2,19],[-11,10],[3,23],[-6,8],[14,-1],[13,13],[6,16],[9,-13],[-4,16],[-11,4],[-15,-12],[2,10],[-19,-33],[-9,0],[1,29],[22,16],[-10,2],[-8,-13],[-23,50],[-12,0],[-4,23],[19,15],[18,9],[21,21],[-21,-13],[-3,-7],[-33,-23],[-9,1],[1,22],[11,11],[16,-1],[5,10],[-34,3],[-6,14],[49,13],[17,-3],[12,6],[-28,-2],[-28,-7],[-21,-2],[2,10],[25,18],[15,2],[12,-7],[24,4],[-49,5],[-24,-17],[0,18],[22,10],[-5,12],[15,-1],[16,-8],[21,2],[-6,8],[7,12],[-13,0],[9,-8],[-31,-6],[-3,7],[-15,-1],[13,14],[18,4],[23,-2],[-5,11],[7,22],[16,-8],[0,19],[-17,-7],[10,18],[-2,11],[15,4],[-8,11],[-24,0],[-25,5],[-25,17],[-22,4],[-15,18],[11,6],[48,-8],[25,-15],[24,-6],[5,11],[-14,-6],[1,16],[-24,21],[17,-6],[-5,9],[-22,-1],[16,9],[-4,6],[-19,-12],[5,13],[24,4],[-8,4],[-21,-8],[-7,9],[25,4],[-41,6],[-4,7],[-14,-11],[0,-11],[-14,-5],[-24,1],[-17,17],[17,13],[-8,8],[19,13],[-21,11],[17,5],[10,12],[-3,15],[-18,4],[4,18],[-30,38],[7,13],[-16,5],[7,11],[-21,13],[4,8],[-31,10],[-14,17],[13,3],[-7,17],[-16,-2],[-4,10],[-26,9],[-17,-2],[-4,9],[-42,5],[-31,8],[-6,-11],[-27,5],[1,-9],[-35,-1],[7,10],[-15,1],[-6,-12],[-18,11],[-7,-6],[23,-12],[-58,9],[-30,15],[36,17],[-57,7],[-26,11],[12,12],[50,5],[21,6],[50,-3],[14,9],[-19,13],[-24,-11],[-45,-4],[-29,6],[21,8],[-33,-1],[13,9],[-30,-4],[-44,23],[8,21],[91,16],[8,10],[43,9],[42,-2],[31,23],[-5,30],[-56,2],[-12,15],[39,20],[28,7],[8,12],[46,13],[44,-9],[16,6],[6,19],[-19,15],[104,24],[90,11],[24,-14],[-6,-33],[24,17],[-1,11],[85,-18],[-31,13],[44,0],[-31,12],[-15,20],[65,-8],[77,-19],[22,-14],[25,1],[-8,28],[38,-1],[-68,26],[132,2],[-157,7],[28,14],[74,4],[6,5],[54,-17],[95,1],[-42,3],[53,5],[-49,3],[0,13],[180,11]],[[2530,6098],[8,-8],[4,5],[7,-7]],[[2549,6088],[-17,-28],[-9,-9],[-2,-15],[2,-14],[-6,-9]],[[2517,6013],[-6,-1],[2,-10],[-5,-3],[-10,-17],[-1,-9]],[[2497,5973],[-15,12],[-19,1],[-9,9],[-17,25]],[[2437,6020],[3,7],[-1,33],[1,10],[11,38],[36,0],[2,20],[-7,4],[-4,17],[-8,7],[-1,7],[-9,13],[12,0],[1,33],[50,0]],[[9022,5957],[-2,-11],[-3,10],[5,12],[4,-3],[-4,-8]],[[3409,5499],[-2,-9],[4,-10],[-2,-8],[-13,-2],[-5,-8],[2,-9],[-6,-39],[4,-7],[2,-13],[5,-8],[0,-8],[10,0],[2,-28],[6,-15],[0,-8],[9,-27],[6,-5]],[[3312,5482],[-18,43],[8,14],[-2,28],[9,7],[5,-2],[11,21],[-7,0],[-5,21],[5,19],[5,3],[15,22],[-6,18]],[[3332,5676],[4,-9],[7,-3],[15,-20],[17,-36],[1,-15],[-4,-18],[1,-10],[3,13],[4,2],[10,-8],[9,-18],[2,-9],[6,-1],[5,-11],[0,-27],[-3,-7]],[[8172,6482],[5,-7],[-5,-9],[-9,5],[5,9]],[[7037,2130],[10,-6],[-7,-4],[-3,10]],[[2691,6046],[-12,-1],[-4,-8],[-12,-4],[-8,-7],[-8,2],[-3,9],[-6,-6],[-4,-11],[0,-12],[-5,-3],[-5,-13],[-6,-5],[0,-7],[-8,9],[-8,-14],[-13,-2],[2,-26],[-6,-2],[0,-10],[-11,-5]],[[2574,5930],[-4,22],[-10,3]],[[2560,5955],[3,17],[-2,12],[-6,-1],[-3,6],[-10,-8],[0,7],[-7,3],[-8,17],[-10,5]],[[2549,6088],[8,9],[7,2],[7,-7],[2,4],[12,-6],[4,3],[12,-1],[13,11],[15,-6],[11,6],[18,-9],[13,-22],[-8,6],[10,-19],[8,0],[-7,9],[9,-6],[4,-13],[4,-3]],[[5512,7634],[1,-9]],[[5513,7625],[-8,12],[-27,21],[12,-5]],[[5466,7679],[-8,-5],[-2,8],[10,-3]],[[5412,7751],[11,-14],[-10,8],[-1,6]],[[5401,7772],[0,-20],[-5,27],[5,-7]],[[5404,7789],[3,-10],[-5,-3],[2,13]],[[5458,7861],[5,-3],[18,-29],[6,0],[9,-10],[17,0],[11,9]],[[5524,7828],[3,-33],[12,-10],[-10,-3],[-1,-17]],[[5488,7656],[-12,12],[-6,13],[-14,10],[-11,-4],[-2,10],[-14,14],[-9,17],[8,5],[-15,23],[-1,23],[-9,12],[-7,2],[-3,-20],[-8,-11],[-8,20],[0,20]],[[5377,7802],[9,-3],[13,3],[6,6],[20,-9],[-2,17],[12,6],[-2,20],[9,5],[8,12],[8,2]],[[3002,6248],[-1,2]],[[2977,6260],[-12,8],[1,7],[11,-10],[0,-5]],[[3000,6254],[2,-6]],[[3006,6222],[-8,11],[-24,-5],[-11,6],[-8,0],[-6,-5],[1,-8],[-12,16],[-7,4],[2,15],[6,2],[16,-10],[24,-4],[4,8],[7,-2],[0,7],[-13,23],[1,19],[3,2],[-9,11],[-11,1],[-2,6],[8,10],[11,2],[13,-11],[15,-2]],[[5614,7970],[21,-26]],[[5635,7944],[-8,-11],[-4,2],[-13,-17],[-4,-19],[-5,-6],[-4,-21],[-6,-5],[-1,-12],[-6,-10],[-7,2],[-5,-8],[-10,-1]],[[5562,7838],[-16,4],[-11,-11],[-11,-3]],[[5458,7861],[-7,21],[-4,-1]],[[5476,7947],[6,-1],[10,-13],[15,0],[14,3],[-1,10],[7,4],[14,3],[4,7],[8,-7],[12,11],[3,13],[9,3],[9,-5],[11,3],[5,-11],[12,3]],[[8426,4574],[2,-3],[-6,-11],[-11,-6],[0,8],[6,3],[10,17],[-1,-8]],[[8386,4582],[-1,-10],[-6,2],[7,8]],[[8333,4644],[9,-18],[4,2],[10,-24],[-10,-15],[-9,5],[-5,14],[-10,12],[-15,3],[-4,11],[10,10],[20,0]],[[8473,4637],[-2,-11],[-16,-29],[-8,0],[-2,-6],[-12,-5],[-3,9],[7,6],[-5,10],[2,16],[10,18]],[[8444,4645],[2,-5],[7,4],[3,10]],[[8456,4654],[13,13]],[[8469,4667],[7,-5],[0,-8],[-6,-2],[3,-15]],[[8318,4695],[-3,-16],[1,18],[2,-2]],[[8424,4708],[1,-8],[-8,-2],[4,11],[3,-1]],[[8242,4700],[-7,-24],[3,-4],[-11,-3],[-10,6],[6,6],[-1,15],[7,13],[8,-1],[5,-8]],[[8442,4708],[-5,-4],[-10,-16],[-5,4],[7,9],[-2,6],[12,4],[3,-3]],[[8450,4700],[-5,-10],[-4,6],[11,16],[-2,-12]],[[8858,4702],[-10,-1],[7,12],[3,-11]],[[8265,4700],[-2,12],[5,2],[-3,-14]],[[8459,4715],[2,-3],[13,1],[1,-11],[-22,-6],[3,18],[3,1]],[[8550,4716],[8,-3],[-2,-6],[-6,9]],[[8276,4716],[4,0],[5,-15],[6,7],[6,-6],[8,2],[1,-19],[-18,-12],[0,10],[-7,-11],[-12,-2],[-9,-9],[-7,-2],[-11,5],[2,11],[-1,13],[12,14],[6,-8],[4,5],[6,-18],[14,4],[-6,11],[-4,1],[-6,16],[7,3]],[[8415,4713],[2,-8],[-7,-8],[2,-8],[-13,-10],[-8,1],[-9,-9],[-11,5],[-1,-7],[-12,0],[-2,6],[-7,2],[-9,-3],[-13,4],[0,11],[13,18],[19,-4],[15,-16],[15,11],[6,-12],[6,1],[0,7],[12,12],[-4,4],[3,8],[3,-5]],[[8208,4712],[5,-15],[-14,-15],[-7,13],[-11,8],[-3,14],[12,-6],[8,8],[10,-7]],[[8604,4733],[0,-14],[-5,14],[5,0]],[[8519,4741],[-6,-15],[-15,2],[-5,-7],[5,21],[11,-2],[8,7],[2,-6]],[[8857,4720],[-12,-20],[-23,0],[5,24],[6,21],[6,8],[11,6],[5,-1],[7,-11],[-5,-27]],[[8656,4770],[0,-26],[-8,-16],[-7,-6],[3,28],[10,23],[2,-3]],[[8664,4774],[1,-9],[-7,7],[6,2]],[[8166,4787],[3,-6],[-12,-8],[-3,-6],[-12,-1],[-12,5],[4,15],[32,1]],[[8204,4789],[6,-5],[-10,-1],[4,6]],[[8738,4813],[-1,-5],[-6,7],[3,6],[4,-8]],[[8733,4812],[3,-8],[-6,-16],[-7,2],[2,30],[-1,7],[9,-15]],[[7948,4837],[3,4],[13,-9],[8,1],[0,9],[9,-3],[2,-10],[7,-5],[6,2],[5,-8],[8,5],[5,-14],[2,-16],[11,-1],[10,-5],[4,4],[11,-7],[7,4],[5,-7],[7,8],[2,19],[4,5],[7,-1],[3,-15],[12,3],[12,-14],[16,1],[0,-13],[6,-8],[-2,-17],[16,-15],[12,4],[7,6],[13,-11],[-3,-41],[7,-10],[-18,4],[-20,20],[-6,-1],[-10,-8],[-9,6],[-16,4],[-2,-6],[-9,6],[-11,0],[-13,8],[-14,14],[-18,10],[-23,1],[-2,-7],[-18,4],[-11,14],[-25,5],[-4,10],[4,15],[-7,-1],[-7,10],[-20,-2],[3,10],[2,-8],[4,17],[5,1],[1,18],[5,17],[4,-6]],[[8346,4810],[-1,39],[3,-8],[-2,-31]],[[8685,4859],[3,-16],[-4,0],[1,16]],[[8737,4870],[5,-12],[1,-27],[-5,-14],[-8,8],[-1,9],[2,19],[6,17]],[[7843,4868],[-9,8],[9,-3],[0,-5]],[[8386,4889],[2,1],[2,-20],[-3,-2],[-4,10],[3,11]],[[8410,4898],[-4,-6],[0,-18],[-10,-1],[3,23],[-2,8],[11,13],[2,-19]],[[8422,4913],[0,-9],[-5,6],[-2,-24],[7,-6],[-2,-7],[-8,-5],[0,-10],[-6,-1],[-2,9],[5,17],[3,22],[0,15],[4,10],[6,-17]],[[8418,4952],[5,-5],[-3,-8],[-5,6],[3,7]],[[8564,4977],[-2,-8],[-9,-3],[3,10],[8,1]],[[8225,4951],[-3,23],[3,18],[4,5],[1,-36],[-5,-10]],[[8523,5004],[7,-6],[-2,-7],[6,-2],[0,-14],[-15,-15],[-15,15],[-5,14],[1,12],[11,5],[12,-2]],[[8598,5023],[14,-13],[8,1],[7,-8],[1,-15],[7,-11],[-1,-17],[-24,23],[-3,8],[-9,2],[-2,-10],[-15,7],[-2,8],[-6,-10],[-7,-2],[-6,20],[-4,-17],[-6,11],[8,6],[1,12],[21,0],[5,-5],[13,10]],[[7789,5006],[0,-13],[-7,21],[0,8],[6,-7],[1,-9]],[[7994,5036],[13,-12],[-2,-21],[-6,-7],[-3,11],[-8,-10],[0,26],[2,12],[4,1]],[[7782,5024],[-5,-4],[0,20],[5,-16]],[[7769,5060],[4,-12],[-4,1],[-5,11],[5,0]],[[8501,5041],[-3,3],[-3,21],[4,3],[2,-27]],[[8483,5079],[15,1],[11,-2],[-2,-3],[-24,-4],[0,8]],[[8620,5085],[2,-15],[-6,-6],[-14,10],[10,9],[8,2]],[[8458,5089],[22,-6],[0,-9],[-8,-3],[-7,2],[-10,-6],[-1,20],[4,2]],[[8762,5091],[20,-3],[6,-5],[14,-4],[-11,-5],[-15,5],[-14,12]],[[7940,5097],[5,-5],[4,-17],[0,-18],[4,-16],[14,-6],[-5,-8],[-2,-12],[4,-10],[-22,15],[0,21],[-3,4],[-1,14],[-18,4],[0,8],[7,9],[-3,5],[9,9],[2,-13],[3,1],[-2,12],[4,3]],[[8550,5100],[9,-9],[-6,-5],[-11,-3],[-5,6],[1,9],[6,8],[6,-6]],[[8421,5116],[1,-14],[3,9],[6,-1],[0,-10],[-4,-5],[-3,6],[-1,-12],[-3,18],[-6,-15],[-4,10],[3,13],[8,1]],[[8044,5127],[4,-10],[-9,-8],[0,18],[5,0]],[[7746,5129],[7,-31],[4,-7],[-2,-11],[-9,6],[-9,29],[3,13],[6,1]],[[8636,5129],[4,-8],[-2,-16],[-7,6],[-3,15],[8,3]],[[8634,5139],[-7,-9],[-4,6],[11,3]],[[8761,5145],[12,-2],[9,-20],[6,-4],[-7,-7],[-7,2],[-4,22],[-3,-4],[-6,13]],[[8536,5138],[-5,0],[3,9],[2,-9]],[[8915,5033],[0,-218],[-3,-12],[3,-17],[0,-128]],[[8915,4658],[-10,18],[-4,12],[-15,28],[-17,-5],[-3,6],[-7,-8],[-1,19],[5,19],[-4,4],[-7,18],[13,-3],[-12,8],[-4,13],[10,2],[-8,7],[1,5],[-7,13],[-3,32],[-8,7],[0,12],[-4,8],[-15,20],[-21,12],[-18,18],[-14,4],[-7,-1],[-16,20],[1,11],[-4,-6],[-5,9],[-1,-9],[-5,7],[1,8],[-6,-4],[-4,14],[-3,-5],[0,28],[6,6],[-1,9],[-6,-11],[0,-14],[-7,-21],[1,-8],[-5,-11],[-7,-3],[-6,11],[-2,14],[6,8],[-9,15],[-3,12],[-6,8],[-6,-2],[-2,12],[5,5],[10,-2],[4,-6],[9,18],[7,5],[7,-10],[8,7],[4,12],[-1,9],[-7,-8],[-11,2],[-16,-6],[-4,7],[-6,-5],[-8,11],[-4,22],[-5,11],[-9,2],[-5,-3],[-7,4],[3,13],[5,6],[0,18],[7,5],[8,0],[10,17],[8,5],[8,-1],[12,-10],[6,-11],[17,0],[5,-8],[-4,-5],[7,-22],[-1,-12],[-4,-7],[2,-39],[5,-10],[3,-17],[1,17],[5,-3],[1,-23],[5,-17],[6,-6],[11,0],[2,7],[10,16],[1,11],[9,14],[3,18],[9,-2],[14,10],[-3,16],[19,18],[4,0],[11,-13],[9,-4],[5,-10],[7,-3],[20,-21],[10,3],[16,-10],[-2,-6],[8,0]],[[7903,5160],[0,-12],[-8,7],[6,9],[2,-4]],[[8544,5159],[1,-17],[6,0],[-1,-9],[-5,6],[-5,-3],[0,10],[-5,11],[6,9],[3,-7]],[[8533,5168],[1,-14],[-4,-1],[0,14],[3,1]],[[7735,5153],[-4,0],[3,16],[1,-16]],[[7881,5163],[-8,-1],[3,8],[5,-7]],[[8633,5183],[14,-10],[-2,-13],[-6,2],[-11,13],[8,-16],[-6,-1],[-1,8],[-9,2],[-2,9],[15,6]],[[7737,5167],[-5,8],[0,8],[5,-16]],[[7904,5183],[11,-16],[-7,4],[-8,-1],[4,13]],[[7850,5240],[4,0],[7,-11],[-14,-1],[-1,20],[4,-8]],[[7861,5243],[2,-12],[-8,11],[-5,-1],[5,9],[6,-7]],[[7892,5248],[-1,-8],[-5,3],[6,5]],[[7904,5252],[2,-10],[-2,-11],[-3,13],[-6,-3],[2,9],[7,2]],[[7845,5238],[-6,7],[-1,17],[3,2],[5,-9],[-1,-17]],[[7704,5270],[3,-2],[6,-18],[6,-7],[-2,-28],[-4,1],[-3,14],[-5,7],[-8,26],[7,7]],[[7839,5273],[7,-4],[0,-13],[-10,11],[-2,10],[5,-4]],[[8473,5279],[5,-11],[-3,-3],[-6,-26],[-5,-5],[-7,-25],[-24,-11],[-11,3],[-4,10],[-24,0],[-12,-4],[-6,6],[-13,-7],[-11,7],[-10,-4],[-7,-19],[-3,-19],[3,-26],[4,-13],[5,-1],[5,-12],[2,-17],[13,1],[2,12],[8,18],[5,-3],[13,0],[1,9],[15,-2],[7,4],[-7,4],[10,6],[9,-5],[0,-20],[-3,-4],[-4,11],[-9,-3],[-8,-23],[-9,-17],[-12,-6],[-3,-12],[-10,8],[0,-8],[8,-15],[5,-3],[11,-32],[7,-26],[-5,-8],[-1,-14],[13,-17],[-1,-9],[7,-3],[0,-15],[-4,-6],[-4,6],[-14,-7],[-2,-7],[2,-12],[-12,1],[-5,9],[1,25],[3,8],[-8,7],[-13,25],[0,9],[5,10],[1,26],[-8,8],[-17,-20],[6,-16],[0,-25],[-2,-12],[1,-36],[2,-7],[-4,-14],[-1,-14],[5,-24],[-15,-2],[-4,-8],[-11,16],[0,14],[3,7],[0,18],[4,19],[0,23],[-5,19],[2,12],[-6,3],[-10,-8],[-3,14],[2,27],[-4,0],[1,13],[3,-1],[7,11],[-1,15],[3,13],[4,2],[-2,14],[0,26],[5,11],[1,11],[7,11],[1,50],[3,16],[4,4],[-1,10],[9,8],[7,-3],[6,14],[0,15],[3,3],[10,-7],[5,3],[0,-9],[5,-4],[8,2],[8,-5],[7,1],[10,-12],[4,8],[19,-6],[8,1],[10,8],[9,23],[10,19],[2,-4]],[[7825,5301],[0,-16],[-7,-2],[-2,18],[9,0]],[[8556,5309],[-6,-20],[5,-6],[0,-25],[-11,-20],[3,-8],[6,3],[0,8],[7,8],[-3,5],[3,9],[11,11],[4,-1],[-1,-29],[-11,-9],[0,-14],[11,-6],[0,-13],[-20,8],[-3,-10],[1,-20],[5,-25],[10,-24],[-11,11],[-5,20],[-5,6],[1,34],[-4,4],[-2,38],[-3,10],[4,12],[0,12],[4,16],[10,15]],[[8571,5333],[3,-7],[-3,-21],[-8,-7],[-3,16],[5,13],[6,6]],[[7663,5350],[2,-7],[14,-20],[-5,0],[-14,13],[-4,9],[7,5]],[[8268,5370],[-4,6],[4,4],[0,-10]],[[8489,5385],[-4,-3],[0,16],[4,-13]],[[8269,5423],[5,-1]],[[8274,5422],[-2,-7],[-3,8]],[[8008,5418],[2,-16],[-2,-7],[-8,11],[-1,9],[7,11],[2,-8]],[[8265,5422],[-5,1],[11,-21],[-1,-10],[-15,-1],[7,-13],[-5,-10],[11,-13],[-4,-4],[16,-37],[-8,-15],[1,-8],[7,-13],[9,-10],[10,-16],[6,-14],[-7,-9],[-16,4],[-8,12],[4,-17],[-6,2],[-6,-18],[-4,-26],[2,-2],[-3,-17],[1,-14],[4,4],[-3,-14],[4,-4],[-9,-8],[-1,5],[-7,-22],[-14,-16],[1,-8],[-9,-10],[6,1],[-2,-24],[6,0],[-2,-19],[-4,-2],[0,-18],[-5,-7],[-6,-36],[-38,-32],[0,28],[-14,23],[-6,-9],[-9,3],[0,12],[-6,-6],[-9,20],[-3,-10],[3,-3],[-14,-16],[-9,6],[-7,-11],[-4,-1],[1,27],[-4,17],[0,-10],[-4,-4],[-7,5],[-9,-9],[-7,6],[-2,-5],[-3,12],[-7,-8],[-6,62],[-5,8],[3,3],[2,20],[-4,16],[-7,11],[-7,4],[-2,-4],[-7,21],[0,34],[5,-2],[-5,14],[-5,4],[0,20],[3,50],[7,9],[1,14],[9,9]],[[8045,5303],[-3,-16],[3,-12],[17,-35],[7,-8],[8,3],[2,6],[10,4],[7,-6],[9,2],[8,7],[2,18],[8,7],[15,0],[-2,-8],[9,-3],[11,-8],[7,12],[16,-1],[5,12],[1,13],[3,2],[-1,20],[12,14],[-4,12],[1,10],[5,10],[6,-1],[4,65],[5,11],[6,-4],[3,5],[7,-4],[10,4],[13,0],[10,-12]],[[8523,5442],[2,-13],[-3,-14],[-4,-2],[2,32],[3,-3]],[[7652,5506],[11,-6],[4,-11],[10,-6],[12,4],[10,-8],[9,6],[11,-21],[3,-16],[6,-9],[0,-16],[13,-17],[3,-9],[6,-5],[20,-26],[7,-15],[-1,-13],[3,-5],[3,6],[6,-23],[14,-21],[-2,19],[6,1],[8,-16],[1,-14],[10,-6],[12,-18],[1,-19],[7,-15],[13,-3],[5,-14],[-13,-13],[8,1],[12,15],[11,-13],[2,-18],[-7,0],[-6,-21],[7,-4],[-5,-5],[1,-12],[4,-12],[9,-1],[7,-6],[6,2],[2,-16],[1,-28],[4,-14],[7,-5],[-1,-9],[8,-5],[13,-1],[0,-13],[5,-6],[0,-10],[6,-4],[2,-14],[-6,-14],[-1,-15],[3,-5],[-4,-25],[2,-13],[0,-26],[-2,-53],[-7,2],[-7,19],[-3,-6],[0,-12],[-8,6],[-9,11],[-1,-4],[5,-19],[-4,-3],[-3,11],[-10,17],[-5,19],[-7,10],[-11,12],[-28,46],[-1,17],[-17,23],[-8,29],[-9,16],[-5,17],[2,7],[-9,34],[0,8],[-5,3],[1,11],[-9,30],[-9,14],[0,13],[-4,9],[-9,10],[-5,1],[-1,21],[-9,45],[0,20],[-3,0],[-7,14],[-5,2],[-9,14],[-7,6],[-2,27],[-5,5],[-4,14],[-3,5],[-8,23],[-11,6],[-8,21],[-6,5],[-13,28],[-5,27],[-3,6],[0,17],[8,2]],[[4872,8298],[-4,5],[8,13],[4,-7],[-8,-11]],[[7606,5598],[2,-16],[-2,-11],[-5,16],[0,9],[5,2]],[[7571,5804],[0,-12],[-5,0],[-1,12],[6,0]],[[7583,5964],[1,-29],[-3,1],[1,-36],[-3,-2],[1,-13],[-5,-6],[2,-9],[-2,-25],[-5,13],[5,34],[0,29],[2,1],[0,26],[6,16]],[[7448,6428],[-4,1],[4,13],[0,-14]],[[7248,6922],[-16,-24],[0,-12],[-5,-9],[1,-17],[-7,-14],[9,-14],[9,-1],[7,-10],[9,-6],[2,-11],[15,-17],[6,3],[11,-14],[7,2],[1,-11],[12,-4],[18,0],[8,4],[6,-8],[8,-2],[1,-18],[8,-3],[10,-14],[9,7],[7,-16],[4,5],[9,-3],[11,-11],[7,7],[9,-11],[13,6],[7,-5],[4,17],[0,13],[-6,11],[2,24],[3,21]],[[7703,6808],[0,-19],[-13,-15],[0,-11],[7,-21],[-7,6],[-4,10],[-21,-9],[-2,-10],[-14,-19],[-9,-5],[-2,-21],[4,-12],[-4,-6],[0,-10],[-10,-18],[-2,-16],[3,-3],[-2,-22],[-3,-2],[-6,-22],[-5,-27],[-11,9],[-11,-2],[4,-18],[-2,-30],[-9,-21],[2,-34],[-3,1],[-1,-12],[-8,9],[-3,-10]],[[7473,6457],[-4,-11],[5,-18],[-6,2],[-4,-6],[-2,22],[-5,-3],[-1,-16],[-7,0],[-1,26],[-8,-18],[-21,-14],[-8,-19],[6,-28],[-7,-10],[-4,-16],[-4,-3],[-6,-16],[-19,-10],[-5,9],[-5,-13],[5,1],[-15,-26],[-9,-26],[-13,-29],[-9,-8],[-6,-10],[-9,-22],[-21,-21],[-6,-16],[3,-5],[-1,-14],[-6,-9],[-11,-8],[-10,4],[-4,-3],[-1,-20],[-10,-15],[-1,10],[-6,-1],[-9,-10],[-3,-17],[-2,-18],[3,-24],[-1,-30],[3,-29],[-5,-4],[7,-9],[0,-14],[-3,-37],[-8,-24],[-4,-26],[2,-16],[0,-46],[1,-17],[-15,0],[-2,-15],[-8,-21],[-2,-13],[5,-9],[-20,-12],[-5,-12],[-2,-22],[-2,-8],[-16,-16],[-7,6],[-11,22],[-7,19],[-6,25],[-3,32],[4,-10],[0,11],[-6,7],[-2,18],[-6,30],[-1,14],[-9,36],[-9,17],[-6,25],[-6,34],[-2,33],[-8,39],[-1,14],[-7,14],[-2,12],[-4,5],[0,15],[-3,4],[-4,24],[-4,8],[-5,29],[-1,37],[-5,30],[-6,45],[1,7],[-3,22],[-1,23],[-3,24],[2,33],[4,12],[-2,36],[-3,-4],[-3,11],[2,16],[12,11],[-16,-3],[2,14],[-2,14],[9,5],[-13,4],[-2,-15],[-8,-7],[8,-18],[-6,-25],[-17,-17],[-14,-11],[-5,0],[-10,9],[-11,17],[-15,33],[-15,29],[0,10],[7,1],[0,-9],[14,12],[3,-3],[9,7],[7,23],[-10,-1],[-9,-10],[-13,5],[-11,10],[-9,15],[-4,19],[-6,14]],[[6893,6556],[5,7],[10,0],[0,19],[13,-3],[11,2],[5,-7],[6,0],[3,8],[13,7],[0,-8],[6,-3],[9,10],[-4,12],[3,3],[-5,27],[-6,14],[0,17],[-10,1],[-6,14],[2,35],[-9,2],[-10,11],[1,17],[10,20],[6,22],[7,12],[6,1],[4,-16],[4,-2],[9,7],[20,8],[0,9],[8,16],[5,21],[16,16],[9,29],[3,22],[12,8],[4,7],[-2,10],[6,11],[6,19],[10,12],[-4,2],[3,17],[-2,24],[7,10],[14,8],[1,10],[-8,8],[-11,2],[0,14],[-9,2],[0,13],[-9,10],[4,22],[-5,5],[1,10],[7,10],[-9,1],[1,16],[-5,3],[4,19],[13,6],[7,-5],[16,-2],[11,-9],[11,11],[17,3],[3,10],[5,1],[4,11]],[[7140,7205],[20,22]],[[4825,8298],[2,-37],[6,-29],[-6,-16],[-4,-28],[-10,1],[-8,-4],[-12,0],[-5,-10],[-7,0],[-4,-8],[-7,-1],[-12,-14],[-20,0],[-11,-8],[10,14],[-20,-4],[12,13],[-11,-6],[-7,10],[13,14],[-15,-2],[5,10],[13,-2],[-1,11],[8,12],[-10,-5],[12,12],[5,21],[10,8],[-16,-2],[-14,9],[-3,9],[6,13],[0,24],[-5,4],[22,4],[23,-3],[-5,4],[12,9],[3,8],[-15,-1],[-2,7],[10,6],[2,18],[15,2],[6,-6],[4,17],[13,-9],[-9,-9]],[[6560,6732],[-4,-9],[-5,0],[-16,-12],[0,7],[13,7],[13,13],[-1,-6]],[[6357,7396],[3,-38],[4,-9],[9,-7],[13,-2],[9,-5],[2,-13],[21,-24],[23,-9],[43,18],[16,-4],[-3,30]],[[6497,7333],[8,-1],[16,11],[1,13],[9,13],[9,7],[24,0],[3,10],[17,-4],[5,4],[3,-17],[23,-10],[8,-9],[10,3],[11,-10],[10,-21],[13,-7],[8,-22],[23,0],[2,-31],[-3,-8],[4,-5],[0,-15]],[[6689,6902],[14,-27],[0,-8],[6,-21],[10,-20],[14,-8],[5,-10],[5,-1],[-1,-12],[2,-18],[-1,-26],[11,2],[4,-8],[-4,-17],[0,-11],[-12,0],[-12,-7],[-2,-10],[-11,-7],[-7,-59]],[[6710,6634],[-5,-8],[-10,9],[-12,4],[-1,9],[-5,-6],[-24,3],[-2,4],[-12,-4],[-6,10],[-7,2],[-14,-2],[-4,8],[-17,5],[-4,19],[-4,42],[-6,17],[-11,3],[-8,-2],[-5,-8],[-9,-4],[-3,-11],[-6,2],[-13,-17],[-11,5],[-3,7],[-17,0],[-8,16],[-10,6],[-13,16],[-4,16],[-12,11],[-9,-1],[-8,6],[-9,35],[0,12],[-8,13],[2,10],[-6,0],[1,16],[-15,30],[0,10],[-5,6],[-11,-12],[-2,9],[-7,-1],[-9,13],[8,-1],[0,9],[-9,-8],[1,-20],[-11,-4]],[[6347,6908],[-3,15],[-11,14],[0,31],[-9,0],[0,23],[4,21],[-9,22],[-5,19],[-6,-1],[-14,21],[-16,15],[4,5],[-4,15],[-11,15],[-5,22],[3,14],[-4,8],[2,8],[6,-3],[-2,9],[7,21],[7,2],[1,7],[-6,16],[1,10],[6,2],[-4,9],[-6,-3],[-14,14],[-3,21],[-5,0],[-1,18],[-6,5],[2,12],[-3,7]],[[6243,7322],[0,10],[-6,6],[1,17],[-10,17],[6,20],[-4,0],[-3,45],[-5,13],[11,4],[4,19],[7,-7]],[[6347,6908],[-13,5],[-3,-3]],[[6331,6910],[-7,6],[-9,0],[-6,-5],[-8,-33],[-9,-20]],[[6292,6858],[-5,-2],[-46,8],[-62,91],[-11,18],[-47,49],[-34,10]],[[6087,7032],[4,8],[-7,3],[0,11],[-8,51]],[[6076,7105],[4,3],[43,44],[14,11],[7,22],[1,40],[3,8],[-2,23]],[[6146,7256],[0,0]],[[6146,7256],[0,20],[3,10],[13,5],[15,26],[-1,3]],[[6176,7320],[6,2],[6,13],[9,0],[10,-7],[12,-2],[8,4],[1,-18],[11,12],[4,-2]],[[4554,9014],[7,-14],[12,-7],[12,13],[-4,-20],[10,2],[-2,-20],[12,4],[0,-8],[21,-10],[-4,-10],[6,-8],[-13,-25],[-13,-4],[-2,-15],[-24,-8],[-39,-26],[-31,-6],[-1,-11],[-23,-7],[-27,8],[-12,0],[-28,20],[-42,-4],[4,9],[14,4],[10,10],[2,11],[-13,-6],[-9,29],[-32,1],[-11,-4],[-3,8],[23,2],[15,8],[25,-2],[-21,7],[22,16],[-39,7],[-20,-9],[-18,6],[7,8],[12,-7],[-8,15],[17,-5],[-9,12],[10,17],[20,-8],[-5,7],[9,16],[11,-11],[25,-14],[-2,-19],[9,-29],[0,13],[9,15],[9,-10],[5,13],[-5,20],[9,3],[13,-22],[6,-1],[-1,19],[22,6],[16,-26],[-6,27],[10,-1],[10,-11],[12,14],[6,-6],[13,3],[-3,19],[15,2]],[[5993,7068],[-6,-5],[0,-15]],[[5987,7048],[-10,8],[-6,-14],[0,-19],[6,-9],[-7,-11],[-2,-14],[10,1],[5,6]],[[5983,6996],[0,-9]],[[5983,6987],[0,-6]],[[5983,6981],[1,-8]],[[5984,6973],[-8,-34],[0,-21],[-6,-33]],[[5970,6885],[-2,-4]],[[5951,6980],[8,18],[-2,4]],[[5957,7002],[7,21],[6,44],[5,21]],[[5975,7088],[10,0],[1,9],[8,10]],[[5994,7107],[-1,-9],[3,-19],[-3,-11]],[[5434,7386],[-12,-29],[-3,-25],[6,-18],[-6,-11],[1,-8],[-10,1],[-8,6],[-3,10],[-7,8],[-7,-1],[-25,27],[-10,1],[-4,6],[0,19],[7,6],[6,-6],[4,10],[7,1],[10,-13],[9,4],[9,-2],[17,10],[4,-4],[12,11],[3,-3]],[[5256,7557],[8,-6],[8,-34],[-5,-14],[3,-13],[-2,-30],[-6,-24],[-10,6],[-5,-19],[-8,0],[-7,17],[5,39],[-4,1],[2,23],[-5,17],[-4,0],[2,16],[8,-2],[9,6],[11,17]],[[5380,7862],[-9,-16],[7,-7],[-4,-8],[3,-12],[8,-10],[-5,-1]],[[5380,7808],[1,7],[-18,1],[-3,-5],[-16,-12],[-4,2],[-1,-16],[9,-13],[-6,-7],[-2,-13],[2,-18],[8,-16],[9,-7],[19,-21],[12,-54],[18,-28],[12,-11],[25,0],[4,-9],[-8,-15],[19,-17],[13,-7],[14,-18],[13,-8],[0,-6],[12,-15],[2,-10],[-4,-18],[-9,6],[-5,23],[-11,0],[-14,11],[-11,-25],[-2,-21],[9,-5],[9,-11],[-1,-29],[-11,-1],[-5,-8],[1,-18],[-8,-10],[-8,-20],[-10,4],[0,15],[5,3],[3,12],[-3,8],[9,5],[2,12],[-4,8],[-2,21],[-4,6],[-2,20],[-7,11],[-5,-5],[-12,13],[2,8],[-6,18],[-8,1],[-5,8],[-7,3],[-10,22],[-10,1],[-8,-3],[-5,11],[-7,2],[-12,24],[-10,10],[-8,18],[-10,5],[-3,12],[-9,9],[1,6],[-8,2],[1,18],[-7,17],[0,14],[-5,13],[-7,1],[-16,17],[-15,5],[-14,-19],[-3,-11],[-17,-6]],[[5344,7711],[0,0]],[[5345,7596],[0,0]],[[2849,6246],[15,-3],[3,-8],[12,-7],[4,-14],[-9,-3],[-10,6],[-1,-7],[-6,3],[-1,-11],[-7,10],[-8,-1],[-7,10],[-3,10],[-8,2],[5,12],[10,5],[11,-4]],[[6087,7032],[-4,-6],[-57,-30],[15,-28],[13,-29],[-9,-10],[-4,-18],[-21,-8],[-7,-22],[-12,-17],[-31,9]],[[5970,6873],[0,12]],[[5984,6973],[-1,8]],[[5983,6987],[4,0],[0,25]],[[5987,7012],[0,36]],[[5993,7068],[7,-5],[10,-16],[12,-3],[54,61]],[[8563,6721],[-5,-10],[-7,-5],[-4,-21],[0,20],[7,8],[-3,7],[7,-1],[4,12],[1,-10]],[[8603,6820],[-13,-15],[0,9],[11,11],[2,-5]],[[8624,6937],[5,-5],[-7,-8],[2,13]],[[8639,6942],[-5,-5],[6,22],[-1,-17]],[[8616,7056],[0,-12],[-6,-7],[1,18],[5,1]],[[8578,7069],[-1,-10],[-6,2],[7,8]],[[8638,7135],[3,-16],[7,-3],[9,6],[1,-15],[-5,-9],[10,1],[0,-17],[5,-2],[-11,-22],[-6,-38],[0,-16],[-3,-14],[-7,5],[1,-11],[-12,-13],[2,20],[-5,12],[-2,-4],[0,-22],[-9,5],[4,18],[-5,12],[1,21],[2,-2],[8,19],[-2,11],[3,12],[-5,15],[-8,2],[7,-19],[-6,-11],[1,11],[-10,-10],[-6,18],[1,10],[4,-14],[5,-1],[-1,10],[-11,11],[1,10],[6,-2],[18,22],[2,9],[6,4],[7,-3]],[[8726,7162],[8,-9],[5,1],[-1,-13],[4,-10],[-10,-11],[-5,-23],[-8,15],[-5,2],[-13,-11],[0,-7],[-7,-11],[-1,-16],[-10,0],[3,9],[-6,1],[-6,31],[11,14],[2,17],[6,6],[5,-10],[10,2],[3,14],[8,9],[7,0]],[[8747,7160],[-3,-8],[-3,8],[8,15],[-2,-15]],[[8595,7181],[-2,-23],[-3,4],[1,16],[4,3]],[[8845,7375],[1,-10],[-6,-6],[-1,17],[8,13],[-2,-14]],[[8923,7564],[5,3],[-1,-34],[2,-14],[8,-11],[5,-22],[4,-26],[-5,-14],[0,-12],[-7,-6],[-5,-25],[1,-17],[-6,9],[-7,-6],[-3,-24],[3,-14],[-2,-39],[-5,-8],[-5,-19],[-1,-20],[8,-27],[-11,-7],[-2,-21],[-16,-17],[2,30],[5,11],[-8,0],[-4,-12],[1,-16],[-7,11],[-8,-5],[0,-21],[-9,-16],[-1,25],[-6,4],[-6,-11],[-4,-18],[-17,5],[-15,-6],[7,9],[-13,1],[0,16],[-5,-3],[-3,-22],[9,-9],[1,-10],[-7,3],[-10,-9],[0,-10],[-6,-8],[-3,-15],[-5,-7],[-10,5],[-1,8],[-9,11],[3,8],[-3,14],[10,17],[-2,9],[-11,-4],[-6,7],[-7,0],[-20,-18],[-10,1],[-3,-9],[-6,2],[-15,-9],[-1,9],[-8,-6],[-2,-24],[-11,13],[-16,-7],[-4,7],[-3,-8],[-1,25],[3,5],[12,-1],[3,10],[7,5],[17,28],[7,7],[-1,9],[17,8],[5,-8],[24,6],[7,7],[11,-2],[8,7],[-1,-12],[13,-4],[12,10],[-3,18],[5,16],[7,8],[10,28],[-1,26],[11,10],[6,1],[-3,-13],[-9,-5],[4,-6],[-2,-13],[10,-6],[3,10],[21,13],[10,12],[10,29],[14,15],[1,16],[9,23],[3,24],[4,10],[1,17],[-4,11],[-5,-3],[7,19],[1,11],[-5,13],[5,10],[7,3],[1,26],[9,-5],[3,-20],[3,9],[8,-6],[3,19],[-13,-5],[3,23],[10,-10]],[[8944,7799],[15,-24],[4,-13],[19,-27],[11,-7],[0,-6],[12,0],[3,-7],[13,-4],[15,25],[1,-8],[-7,-17],[-1,-9],[8,-28],[8,6],[-4,-12],[-6,0],[-8,-10],[-27,-4],[-11,-14],[-8,-20],[-3,-23],[-8,11],[-14,9],[-8,11],[-12,9],[-8,-3],[-12,-15],[-9,15],[-5,0],[-6,-18],[12,-8],[13,-20],[-13,-1],[-8,-7],[-6,-13],[-7,10],[5,14],[-3,17],[-7,6],[3,26],[12,7],[5,11],[-5,13],[6,8],[8,-9],[10,-3],[7,10],[-3,22],[9,14],[0,22],[3,6],[1,20],[-6,23],[3,12],[9,3]],[[6762,7807],[-15,8],[-3,11],[1,13],[12,14],[11,-3],[7,-11],[1,-13],[-4,-11],[-10,-8]],[[7140,7205],[-9,31]],[[6651,7782],[-20,19]],[[6631,7801],[12,18],[8,-37]],[[7227,7611],[-6,13],[-15,4],[-12,17],[-14,6],[-14,0],[-19,2],[-14,5],[-13,-5],[-16,1],[-3,-6],[-13,2],[-12,8],[-12,13],[-21,-10],[-5,-27],[3,-9],[-22,14],[-27,9],[-10,-1],[-10,-13],[-5,-15],[3,-3]],[[6970,7616],[-6,-3],[-4,-11],[-4,5],[-9,-16],[-20,-15],[0,-5],[-10,-5],[0,-10],[-13,-17],[1,-19],[-4,0],[-13,13],[4,14],[-5,7],[-33,-3],[-5,20],[-2,30],[-14,0],[2,57],[-8,-7],[-8,26],[-7,5],[-10,19],[-12,-10],[-37,4],[-32,-8],[-23,38],[-2,12],[-28,28]],[[6668,7765],[0,34],[-2,9],[-7,-1],[3,20],[17,-5],[8,16],[12,7],[2,14],[-11,2],[-3,9],[-13,3],[-8,-7],[4,-13],[17,0],[2,-11],[-4,-6],[-24,2],[-2,12],[-7,0],[7,-14],[-3,-17],[-8,-6],[-4,5],[4,13],[-15,-3],[-6,-23]],[[6627,7805],[-73,-31],[0,-212]],[[6554,7562],[-14,-3],[-15,32],[0,6],[-20,23],[-20,-3],[-14,-9],[-15,-21]],[[6456,7587],[-1,20],[6,15],[3,22],[-15,9],[-8,-3],[-6,18],[-12,0],[1,23],[-4,4],[-8,33],[-17,9],[1,17],[16,-1],[4,-6],[16,-2],[-17,20],[12,28],[9,5],[22,0],[11,-6],[10,2],[-15,10],[0,6],[9,18],[4,40],[-8,19],[-13,2],[-10,-10],[-16,14],[-9,3],[-12,-11],[-9,-2],[-18,-21],[-13,2],[-2,-14]],[[6367,7850],[-9,9],[-10,5],[0,12],[6,-6],[7,6],[-9,19],[-4,15],[-14,23],[-11,0],[-7,5],[-1,-9],[-7,7],[0,26],[-18,8],[8,30],[8,10],[-7,14],[3,28],[12,12],[-1,14],[9,9],[22,-37],[13,11],[-5,20],[0,13],[20,17],[0,15],[11,0],[15,12],[6,17],[5,6],[14,-3],[1,-11],[11,-1],[6,12],[11,6],[5,-16],[23,0],[9,-7],[1,-9],[7,-1],[6,-13],[10,-7],[-3,-16],[8,2],[1,24],[10,-13],[16,-15],[13,11],[11,20],[18,0],[5,-11],[11,1],[1,13],[22,-4],[0,-11],[10,-11],[16,-3],[1,-9],[7,4],[5,18],[9,-10],[15,-1],[17,10],[2,19],[4,6],[-7,11],[-10,1],[-3,8],[-16,3],[3,8],[-12,4],[11,15],[7,1],[10,11],[-10,23],[22,16],[17,-3],[1,7],[-13,9],[-14,3],[2,12],[-6,8],[5,11],[-6,3],[12,10],[4,-6],[43,7],[25,14],[25,5],[9,-4],[-1,10],[7,7],[15,-1],[15,6],[33,8],[13,6],[2,13],[10,0],[2,9],[8,-4],[-1,9],[8,-6],[13,0],[14,-11],[8,9],[14,-12],[1,-18],[6,-3],[-1,-23],[-6,0],[6,-13],[3,6],[11,-4],[10,5],[3,9],[9,-14],[-3,-13],[9,3],[-4,10],[11,-1],[3,-8],[11,-2],[8,7],[-3,-12],[-6,1],[-6,-17],[6,-8],[13,12],[14,-10],[1,12],[9,9],[7,-2],[12,11],[-2,4],[31,15],[12,8],[-7,-19],[-8,1],[3,-9],[34,-36],[7,-11],[42,-97],[12,-38],[15,7],[-1,14],[6,6],[15,-7],[-3,-15],[9,2],[2,-13],[11,3],[6,-4],[17,5],[18,12],[13,-7],[11,-20],[0,-15],[23,-14],[-2,-7],[9,-19],[19,-1],[6,-7],[12,20],[0,-10],[12,-22],[7,-9]],[[6163,5412],[-17,-50],[-9,-17],[0,-175],[1,-39],[15,-39],[0,-7]],[[6153,5085],[-6,-15],[-9,-4],[-4,-20],[-5,-9],[-5,0],[-9,-13],[2,-12],[-3,-18],[-6,-12],[-3,-25],[-4,-11],[-7,-30],[-6,-3]],[[6088,4913],[-21,33],[-19,27],[-5,13],[4,6],[-1,14],[-100,116]],[[5946,5122],[3,12],[-4,7],[0,10],[4,7],[9,-1],[-2,6],[11,4],[-4,11],[-10,-6],[2,-6],[-9,7],[-3,12],[1,12]],[[5944,5197],[4,21],[7,12],[2,15],[9,9],[2,18],[3,6],[0,26],[-3,18],[2,3],[-14,40],[-2,17],[2,13],[-8,5],[-3,24],[-2,2]],[[5943,5426],[11,23],[15,14],[14,9],[4,-7],[2,-16],[8,0]],[[7045,7454],[-13,-5],[-15,2],[-9,-5],[-2,-6],[-5,10],[-7,-7],[-2,12],[-8,8],[-12,-11],[-8,-1],[-4,11],[-36,-5],[-2,14],[7,20],[14,6],[18,-12],[1,7],[8,8]],[[6970,7500],[12,3],[11,-7],[9,15],[8,-3],[0,14],[7,-6],[4,9],[10,8],[-13,3],[-5,9],[-9,-1],[0,10],[-8,0],[-6,22],[-1,-10],[-6,-2],[0,-13],[-6,-1],[-12,7],[-4,14],[-4,-4],[-9,10],[8,7],[22,29],[-8,3]],[[6976,7489],[-6,4],[2,-14],[4,10]],[[6993,7480],[0,0]],[[6961,7477],[0,0]],[[7901,5783],[-6,7],[-11,2],[-7,-4],[-3,5],[5,13],[0,15],[-4,5],[-3,-16],[-9,2],[-2,38],[-3,3]],[[7858,5853],[0,7],[-6,22],[0,22],[-6,7],[0,21],[-3,7],[-2,25],[6,0],[10,26],[1,11],[9,8],[12,5],[9,-5],[5,3],[11,-2],[5,4],[6,-3],[2,-10],[4,8]],[[7921,6009],[3,-14],[13,-1],[3,-9],[6,-1],[2,7],[-6,19],[7,7],[6,-2],[3,6],[8,-14],[4,0],[8,11],[5,2],[2,10]],[[7985,6030],[0,-14],[-3,-2],[-2,-19],[3,-10],[0,-10],[5,-22],[-5,-20],[4,-24],[-2,-15],[-2,-6],[-4,5],[-8,-14],[-8,-7],[-8,-1],[0,-17],[-11,7],[-4,-13],[-1,-15],[9,-13],[1,-17],[-9,3],[-3,10],[-10,-2],[-3,-7],[-7,6],[1,-11],[-6,-13],[-9,0],[-2,-6]],[[627,5299],[5,-18],[-8,8],[3,10]],[[8522,7115],[1,-14],[-17,-6],[-2,8],[5,8],[13,4]],[[8508,7172],[1,-8],[-7,2],[6,6]],[[8575,7196],[-1,-14],[-5,11],[6,3]],[[8518,7361],[8,22],[5,6],[27,0],[7,17]],[[8565,7406],[7,-27],[14,-31],[6,-25],[4,-25],[-2,-7],[-1,-33],[4,-6],[-2,-25],[-9,-23],[-18,0],[-1,-15],[-3,6],[-17,1],[-2,-20],[-4,14],[0,-13],[-5,-9],[-3,13],[-6,-5],[-3,-11],[-4,3],[-4,-10],[-2,15],[-7,2],[0,9],[6,-7],[2,11],[-4,1],[-2,18],[2,17],[6,9],[-4,4],[8,7],[-7,10],[5,1],[-5,11],[-1,31],[-3,8],[3,12],[7,-1],[-6,42],[4,3]],[[5598,7616],[-9,-9],[-3,6],[-10,-8],[0,-11],[-5,0]],[[5557,7633],[8,15]],[[5565,7648],[9,17],[-2,6],[14,-7],[8,-19],[10,-5],[-6,-24]],[[6338,6909],[5,-15],[-4,-7],[-5,12],[4,10]],[[6345,6826],[-22,0],[-6,27],[-25,5]],[[6331,6910],[7,-26],[-6,2],[-7,-12],[10,-1],[2,-19],[8,-28]],[[7836,6473],[2,-9],[8,-12],[6,-22],[2,9],[5,-5],[0,-9],[-2,-23],[7,-19],[15,-11],[2,8],[9,10],[5,-4],[9,-13],[-1,-9],[-6,-3],[9,-6],[0,-8],[7,-2],[0,-11],[-2,-10],[-9,-12],[-8,6],[-4,-15],[-6,-7],[18,-21],[4,-8],[9,-5],[5,-6],[-2,-12],[6,-14],[5,0],[7,-30],[13,-24],[9,-17],[0,-18],[4,-11],[5,5],[4,-14],[8,-12],[4,-1],[-1,-8],[-6,-5],[2,-12],[7,-8],[5,-12],[-5,-33]],[[7921,6009],[9,11],[0,20],[1,5],[-3,11],[3,6],[2,24],[-5,5],[0,13],[-11,7],[0,8],[-8,15],[0,29],[2,20],[-3,9],[-7,7],[-6,14],[-7,24],[-18,8],[-2,-10],[-9,-15],[-9,-6],[-16,16],[-4,-9],[-19,-26],[-4,-7],[-5,6],[3,19],[4,9],[0,17],[-3,3],[5,14],[0,15],[3,7],[-3,6],[-1,19],[2,7],[-12,2],[-2,-7],[-7,0],[-3,9],[3,29],[-5,15],[-6,-5]],[[7780,6353],[0,15],[7,14],[4,-1],[0,13],[6,16],[3,0],[9,14]],[[5975,7088],[14,52],[1,19],[9,12],[0,7]],[[5999,7178],[13,-3],[4,-23],[-9,-14],[2,-8],[-6,2],[-6,-12],[3,-5],[-6,-8]],[[4790,5433],[-19,13],[-21,22],[-9,12],[-21,40],[-9,19],[-12,7],[-1,10],[-14,13],[-3,12]],[[4681,5581],[3,14],[6,12],[15,23],[0,16],[8,8],[1,17]],[[5693,6449],[0,-115],[-27,0],[0,-28]],[[5666,6306],[-66,66],[-3,4],[-45,45],[-34,36],[-45,45],[-30,31],[-27,-26]],[[5416,6507],[-22,-22],[-20,33],[-42,19]],[[5264,6924],[10,7],[11,30],[-5,31],[6,17],[5,1],[10,22],[19,18],[-2,10],[1,34]],[[5319,7094],[10,-6],[12,-14],[15,-2],[14,6],[6,-6],[17,-5],[8,-12],[20,-6],[5,-13],[0,-14],[7,-25],[4,-7],[17,-9],[10,0],[18,-8],[23,-18],[3,-7],[18,-22],[8,0],[14,14],[10,24],[1,18],[-6,24],[0,16],[3,12],[15,24],[14,13],[10,1],[5,7],[21,-3],[21,-14],[-1,-18],[6,-6],[19,-7],[2,-5],[25,-2],[5,-18]],[[3307,5973],[-4,11],[5,10],[-1,-21]],[[7235,5735],[7,-13],[17,-49],[5,-36],[5,-8],[4,-24],[0,-20],[-2,-22],[-12,-22],[-22,-17],[-9,5],[-4,7],[-7,43],[-1,50],[1,40],[2,10],[0,17],[6,17],[-2,7],[4,10],[6,1],[-14,10],[2,7],[7,-3],[7,-10]],[[5798,3530],[6,-12],[10,-10],[3,-14],[-4,-17],[-5,-7],[1,-10],[-8,-9],[-13,-4],[-5,-7],[-4,-22],[-8,2],[-16,35],[-5,22],[8,6],[12,35],[8,2],[4,10],[13,8],[3,-8]],[[5582,8366],[-1,0]],[[5581,8366],[1,0]],[[5652,8289],[0,9],[-14,16],[-6,-1]],[[5632,8313],[-3,6],[5,24],[-8,11],[-15,1],[-21,9]],[[5590,8364],[-6,32],[0,16]],[[5584,8412],[8,9],[22,11],[15,-4],[8,3],[29,-5],[4,-4],[22,8],[5,-12],[15,-2],[26,-28]],[[5759,8496],[14,-14],[-6,-26],[14,-17],[0,-23]],[[5584,8412],[-2,19],[2,24],[10,12],[0,15],[8,15],[22,11],[18,-21],[4,-17],[12,-7],[19,15],[-2,37]],[[3249,6221],[-2,2]],[[3247,6223],[2,-2]],[[4851,7247],[2,-14],[14,-21],[11,-5],[19,8],[6,-5],[15,7]],[[4919,7214],[2,-9],[17,-2]],[[4758,6776],[-3,0],[1,-30],[-18,-3],[-7,-11],[-16,-2],[-9,7],[-10,1],[-13,-7],[2,-15],[-4,-6],[-8,-25],[-8,-3],[-4,-23],[-3,-30],[-3,-13],[-6,-12],[-12,-16],[-6,-22],[-16,-16],[-4,-13],[-6,-53],[0,-16],[-12,-26],[1,-7],[-4,-14],[-11,-4],[-22,4],[-18,-1],[-12,-4]],[[4527,6416],[1,21],[4,20],[10,13],[4,26],[5,11],[-2,5],[13,42],[-4,0],[8,12],[11,26],[5,4],[5,17],[0,22],[10,45],[0,9],[9,16],[7,4],[10,14],[10,53],[7,16],[24,8],[16,14],[11,23],[15,15],[21,49],[5,19],[1,14],[-7,13],[0,26],[2,26],[3,11],[9,18],[3,24],[-1,7],[11,17],[10,23],[26,19],[21,25],[15,48],[2,15],[9,39],[14,7]],[[5206,7702],[-2,-1]],[[5783,7801],[-3,21],[1,26],[3,22],[-4,18],[-6,5],[-17,36],[-10,30],[-8,3]],[[5739,7962],[20,10],[14,-2],[6,-9],[21,-8],[10,-13],[-1,-25],[7,-10],[5,2],[0,-20],[10,-9],[-1,-16],[6,-9],[-15,0],[-3,6],[-7,-6],[-1,9],[-7,-4],[1,-26],[-13,-19],[0,-11],[-8,-1]],[[6384,4200],[0,8],[5,14],[-5,-22]],[[6370,4487],[-2,-11],[7,-4],[1,-18],[7,-8],[4,-13],[-1,-9],[5,-25],[3,-37],[0,-29],[8,-27],[-4,-34],[-3,-9],[-6,7],[-3,25],[-8,-7],[3,-23],[-2,-5],[5,-11],[-1,-25],[-5,-13],[-6,-24],[2,-29],[-4,-39],[-3,-11],[-10,-59],[-2,-19],[-7,-32],[-3,-29],[-10,-57],[-4,-16],[-2,-24],[-7,-48],[-1,-16],[-4,-13],[-8,-47],[-14,-15],[-11,-2],[-13,-11],[-6,-9],[-12,-2],[-11,17],[-10,2],[-10,15],[-2,20],[-7,14],[-1,45],[3,10],[-4,6],[-1,16],[-6,12],[-4,36],[3,27],[4,6],[0,17],[7,4],[11,46],[4,7],[6,29],[-3,4],[2,24],[-6,18],[1,16],[-6,22],[-1,35],[-3,15],[15,49],[0,30],[12,-1],[11,16],[10,-2],[0,7],[8,4],[4,-6],[1,9],[6,5],[18,25],[3,-7],[-3,-10],[7,2],[-4,18],[4,5],[2,12],[6,8],[-3,-22],[11,28],[-3,11],[3,11],[4,-2],[3,11],[-4,9],[0,19],[7,-1],[1,-10],[4,-1],[0,14],[5,1],[-1,9],[6,-4],[3,5],[1,16],[3,8],[-2,22],[3,13],[5,4],[3,18],[2,-8]],[[2590,6367],[-7,-17],[2,17],[5,0]],[[1889,6595],[7,-4],[1,-9],[-8,13]],[[1800,6801],[-5,-1],[5,12],[0,-11]],[[1880,6866],[3,-12],[-3,-16],[-7,7],[2,17],[5,4]],[[1847,6884],[4,-14],[5,-1],[2,-17],[-11,17],[-3,9],[3,6]],[[2186,6889],[0,-8],[7,-2]],[[2193,6879],[11,-20],[1,-12],[9,-31],[6,-12],[9,-27],[7,-6],[-1,-15],[2,-15]],[[2237,6741],[3,-16],[3,2],[2,-14]],[[2245,6713],[2,-9],[20,-12],[4,-8],[16,-2],[9,-10],[5,6]],[[2301,6678],[0,-14],[-8,-31],[-6,-38],[-2,-30],[-1,-43],[1,-16],[-4,-22],[3,-29],[5,-34],[15,-57],[9,-17],[9,-27],[3,-25],[5,-5],[1,-9],[7,-19],[7,-4],[11,2],[5,-9],[6,-2],[8,-21],[10,3],[16,11],[17,3],[15,13],[10,2],[6,-12],[10,-3],[6,17],[-5,8],[14,16],[5,11],[1,21],[7,14],[-1,6],[1,39],[3,15],[16,17],[19,4],[17,12],[14,2],[20,-9],[6,9],[6,-10],[2,-17],[-3,-16],[-9,-18],[-7,-19],[-1,-19],[-8,-16],[9,-8],[-6,-40],[-3,-10],[-2,-23],[-3,14],[-4,3],[2,18],[-5,-4],[-3,-15]],[[2437,6020],[-20,42],[-19,33],[-11,16],[-10,10],[-1,-6],[-8,1],[-4,13],[-5,-9],[9,-4],[-11,-1],[-8,-12],[-15,-9],[-7,-8],[-8,-2],[-15,10],[-4,6],[-17,3],[-8,13],[-13,6],[-6,14],[-5,0],[-15,8],[-5,0],[-5,9],[-31,22],[-6,11],[-13,14],[-4,13],[-7,6],[-5,-4],[-32,20],[-8,21],[-9,14],[-12,13],[-15,12],[-3,14],[-5,6],[-8,22],[0,10],[-4,8],[3,8],[10,6],[-7,15],[7,12],[1,22],[-6,8],[-7,23],[-2,32],[-9,17],[-15,34],[-12,32],[-21,28],[7,-7],[0,9],[-5,-1],[-9,13],[-6,18],[7,0],[-22,24],[0,5],[-9,-3],[6,9],[-7,-1],[-8,9],[0,14],[4,9],[0,19],[-4,9],[-10,3],[-5,23],[-9,2],[-7,13],[-2,26],[2,3],[-14,4],[-8,12],[-5,13],[-5,5],[-13,29],[-2,20],[-5,2],[1,9],[-11,23],[0,16],[-10,36],[3,20],[-16,10],[-1,10],[-7,6],[-9,-6],[-10,15],[-8,2],[0,-41],[4,-8],[3,-27],[-1,-19],[7,-21],[4,-1],[17,-27],[3,-23],[7,-3],[11,-32],[3,-25],[4,-12],[8,-6],[4,-20],[6,-7],[-1,-6],[8,-25],[-3,20],[8,-10],[0,-9],[5,-13],[1,-29],[9,-25],[10,-36],[-2,-15],[3,-15],[8,-8],[0,13],[14,-16],[4,-23],[7,-10],[0,-14],[-11,-19],[-7,0],[-6,36],[-8,9],[-12,22],[-14,16],[-5,14],[-4,-3],[-4,14],[-3,-1],[-2,25],[3,3],[0,27],[-9,30],[-3,0],[-17,21],[-1,21],[-4,-13],[-10,-1],[-5,13],[-8,9],[-10,6],[0,9],[-16,20],[-1,8],[15,-5],[7,6],[5,-13],[-1,17],[2,28],[-9,26],[-4,3],[-12,26],[-6,2],[-14,19],[-4,12],[0,19],[-5,4],[-1,26],[-7,9],[0,11],[-10,22],[1,15],[-8,14],[-6,28]],[[1746,7056],[66,10],[-1,-12],[46,-30],[58,-37],[79,0],[0,26],[46,0],[11,-20],[8,-8],[14,-26],[6,-4],[7,-12],[6,-21],[-1,-10],[5,-21],[14,-20],[25,-19],[8,14],[4,30],[8,2],[3,6],[5,-5],[20,-2],[3,-8]],[[2290,6649],[-4,-5],[0,-32],[-2,-53],[6,67],[4,13],[-4,10]],[[5582,7536],[0,0]],[[5586,7536],[-4,1]],[[5581,7537],[0,0]],[[5575,7539],[-2,10]],[[5598,7616],[20,7],[2,-4]],[[5117,6285],[0,-124],[-1,-33],[-4,-7],[-4,-29],[-11,-17],[0,-8],[-14,4],[0,-5],[-47,-3],[-9,-17],[-9,-3],[-13,3],[1,-5]],[[4683,5897],[-1,36],[-6,21],[-5,-5],[-8,23],[4,5],[-2,28],[-5,6],[1,18],[-2,5]],[[4659,6034],[5,-2],[7,8],[0,24],[3,11],[6,7],[14,-22],[3,-2],[4,13],[12,1],[14,-4],[13,7],[65,0],[41,0],[5,45],[-8,15],[-1,33],[-2,21],[-1,36],[-2,22],[-6,109],[0,17],[-3,39],[-6,104],[0,14],[-3,39],[0,16],[-3,37],[50,0]],[[7737,5862],[0,-11],[-4,-2],[-1,13],[5,0]],[[7733,5907],[-2,-14],[-1,20],[3,-6]],[[7622,6095],[-2,9],[7,13],[2,-6],[-7,-16]],[[7710,6117],[-4,12],[2,5],[2,-17]],[[7602,6269],[-2,-10],[-5,9],[7,1]],[[7604,6305],[6,-6],[-6,-6],[-3,10],[3,2]],[[7780,6353],[-9,6],[0,-6],[-10,2],[3,-11],[-6,-6],[-8,1],[-1,-17],[-21,-7],[-6,8],[0,-9],[-5,-4],[-2,-10],[1,-18],[-4,-10],[3,-19],[-10,-8],[5,-6],[5,-22],[-2,-10],[11,-23],[4,-17],[7,-8],[-1,-11],[6,-28],[6,5],[-2,-15],[-7,-3],[0,-40],[-9,-4],[-2,-12],[2,-16],[6,-13],[3,-15],[11,-14],[4,-11],[3,-67],[6,-9],[1,-25],[2,1],[3,-19],[-6,-12],[-1,-12],[-5,-17],[-6,-8],[0,-8],[-5,-4],[-2,-23]],[[7742,5779],[-7,-20],[0,24],[-1,18],[7,10],[1,45],[-5,2],[4,20],[-6,11],[5,21],[-3,32],[-9,31],[-4,-1],[0,27],[-3,9],[-5,30],[0,32],[-2,26],[-4,14],[2,25],[-8,-2],[-5,13],[0,18],[-3,12],[-6,8],[0,-23],[-2,-16],[-5,-11],[-11,3],[2,-12],[-16,-8],[-2,-16],[-7,-13],[-9,8],[-6,-4],[0,12],[-5,-9],[-3,5],[3,21],[-12,-19],[-1,11],[4,22],[2,38],[4,9],[0,22],[-2,3],[-2,30],[-6,24],[-5,8],[0,20],[-2,-4],[-1,-16],[-7,9],[-6,22],[9,-10],[6,14],[-11,14],[3,13],[-4,-3],[-6,11],[-10,-1],[2,16],[-4,-12],[-5,6],[5,4],[-5,9],[0,-11],[-7,22],[-3,3],[-3,21]],[[5533,7690],[8,-17],[11,-8],[13,-12],[0,-5]],[[5538,7620],[0,-3]],[[5537,7617],[-6,0],[7,-10]],[[5537,7593],[-14,24],[-10,8]],[[8263,7933],[2,-6],[9,9],[-4,10]],[[7439,8014],[9,6],[1,10],[19,0],[8,3],[15,13],[-2,11],[25,18],[5,0],[8,12],[11,0],[12,16],[9,-2],[7,10],[7,-10],[9,6],[2,-10],[33,-2],[3,-22],[8,-10],[8,1],[15,-8],[9,7],[21,-9],[11,2],[9,-10],[7,11],[15,6],[5,15],[2,14],[-8,6],[-6,22],[7,27],[5,0],[3,14],[8,4],[7,20],[11,-11],[11,-3],[9,-10],[14,0],[23,-15],[7,1],[17,-9],[2,-43],[17,-15],[11,-7],[20,-3],[13,10],[19,4],[4,6],[21,-6],[4,-6],[13,3],[14,-20],[22,-3],[-1,-15],[17,-20],[16,1],[31,-10],[3,4],[9,-6],[20,14],[18,1],[11,8],[10,-2],[8,5],[3,12],[27,27],[17,-1],[17,-20],[9,-1],[12,8],[12,-5],[3,-6]],[[5913,3637],[-22,0]],[[5891,3637],[1,15],[-3,17],[1,16],[-3,3]],[[5887,3688],[1,16],[0,71],[-4,30],[-3,5],[-6,24],[1,14],[-7,44]],[[5869,3892],[31,64],[-2,10],[4,10],[-1,17],[6,7],[9,29],[1,14],[-6,6],[1,36],[-5,2],[0,11],[6,3],[-1,14],[4,4],[-2,36],[3,14],[-1,17],[-5,22],[4,14],[-7,-1],[-1,6],[-13,9],[-9,1],[-5,12],[-5,1],[-7,10],[-9,-2],[-2,4],[-13,-1],[0,21]],[[5844,4282],[-1,18],[-4,20],[19,14],[14,6],[19,16],[4,1],[27,19]],[[5922,4376],[6,-21],[7,-13],[1,6],[17,6],[5,-11],[2,-41],[-5,-11],[0,-9],[-5,-10],[5,-13],[1,-14],[9,-15],[5,-13],[5,-4],[0,-17],[5,0],[-2,38],[4,19],[9,2],[3,5],[1,35],[-1,16],[3,15],[-2,14],[-21,54],[-6,11]],[[5968,4405],[-2,10],[-1,28],[2,8],[-4,14],[0,16],[6,10],[2,25]],[[5971,4516],[19,0],[5,10],[9,-10],[1,-7],[15,1],[7,6],[12,-8],[11,10],[1,13],[7,4],[11,-8],[11,13],[11,0],[5,9],[9,4],[18,27]],[[6123,4580],[6,-13],[-7,-32],[0,-23],[3,-18],[0,-28],[3,-20],[-6,-8],[5,-1],[-2,-39],[4,-23],[-4,-8],[6,-2],[-3,-8],[6,-5],[0,-22],[-5,-7],[1,-8],[-3,-24],[-13,-26],[-3,-14],[-7,-7],[3,-7],[-21,-26],[-1,-7],[-11,-2],[-16,-16],[-6,-3],[-20,-22],[-11,-32],[-8,-15],[-2,-13],[-5,5],[1,-12],[-4,6],[-13,-18],[-6,-17],[-16,-26],[-3,4],[0,-25],[-3,-12],[6,-15],[3,0],[4,-39],[4,-16],[2,-20],[-1,-24],[5,16],[2,-16],[-2,-10],[3,-20],[-7,-50],[6,-4],[-3,-17],[-9,-26],[-13,-11],[-26,-17],[-11,-10],[-12,-16],[-5,-18],[-4,-6],[3,-12],[7,-5],[-1,-33]],[[4659,6034],[-6,12],[-12,16],[-1,13],[-8,8],[-2,17],[-5,13],[-10,-2],[-6,16],[-8,14],[-16,0],[-20,-9],[-19,1],[-1,-15],[-3,-3],[-2,-22]],[[4540,6093],[0,30],[2,18],[8,33],[4,26],[0,28],[-3,40],[-5,20],[-6,11],[9,24],[0,28],[-9,26],[0,-9],[-5,11],[-4,19],[-4,-3],[-1,-16]],[[4526,6379],[-1,6],[3,26],[55,0],[55,0],[0,15],[-4,71],[3,10],[12,16],[17,11],[0,146],[56,0],[36,0],[0,74]],[[6603,4026],[2,-11],[-3,-12],[-9,-1],[0,15],[4,13],[6,-4]],[[5969,4525],[0,2]],[[5969,4527],[0,-2]],[[5964,4534],[0,2]],[[5964,4536],[0,-2]],[[5952,4624],[-3,6]],[[5949,4630],[3,-6]],[[5946,4634],[0,1]],[[5946,4635],[0,-1]],[[5941,4623],[2,-16],[8,-22],[-1,-51],[3,-25],[-8,-21],[0,-15],[4,-4],[0,-16],[4,-12],[-1,-26],[2,-9],[7,-10],[-2,-24],[7,-10],[2,11],[8,-16],[4,0],[-6,34],[-6,2],[0,12]],[[5922,4376],[-7,-1],[-2,12],[-6,14],[6,8],[4,49],[9,3],[5,11],[-4,0],[-4,11],[2,15],[-3,27],[5,15],[-4,17],[7,6],[5,11],[-4,20],[-6,8],[1,15],[-4,12],[-7,1],[-1,11]],[[5914,4641],[10,-5],[4,-7],[9,1],[4,-7]],[[8093,5320],[-2,3],[0,20],[2,-2],[0,-21]],[[8269,5423],[5,-1]],[[7786,5497],[-1,-11],[-3,11],[4,0]],[[7773,5553],[-3,-8],[-3,8],[6,0]],[[7834,5543],[9,-7],[3,-14],[18,-29],[9,-33],[1,-32],[-4,-8],[0,-23],[4,-12],[-2,-6],[1,-32],[10,-15],[3,-23],[8,-23],[1,-24],[-16,4],[-4,-10],[-5,15],[-15,19],[-7,11],[-10,9],[-11,21],[-14,15],[2,9],[-2,17],[-6,17],[-11,19],[2,9],[-4,6],[1,21],[-2,19],[-6,11],[2,6],[-2,23],[0,26],[-7,25]],[[7780,5554],[2,15],[4,-9],[12,-7],[2,-11],[7,1],[0,-19],[-3,-9],[3,-8],[5,9],[9,7],[6,-10],[7,30]],[[8045,5303],[0,-10],[8,-13],[9,1],[16,-8],[6,-6],[0,16],[5,22],[0,18],[4,0],[2,16],[5,8],[11,2],[20,10],[9,9],[12,33],[7,12],[6,19],[1,16]],[[8193,5464],[1,-4]],[[8198,5465],[6,1],[6,15],[-6,9],[6,11],[6,0],[3,14],[4,4],[1,17],[6,6],[1,8],[8,18],[3,19],[3,-3],[-2,-22],[6,8],[3,15],[4,-2],[1,-18],[7,-3],[6,-10],[-4,-13],[5,-16],[6,9],[3,-14],[8,-1],[9,-15],[15,-10],[0,-11],[-15,-13],[-7,-1],[-2,6],[-7,-8],[5,-14],[9,-13],[-18,-12],[-11,10],[-1,-14]],[[8256,5598],[-5,-6],[0,10],[6,4],[-1,-8]],[[5649,4167],[22,9],[17,-1],[7,-5],[6,-12]],[[5554,3757],[1,-13],[0,-196],[-12,-8],[-2,-9],[-7,-5],[-3,-11],[-11,7],[-16,-4],[-16,13],[-5,-1],[-2,28],[-4,0],[-3,11],[-5,-2],[-4,-12],[0,-11],[-8,-7]],[[5457,3537],[-5,4],[-15,27],[-12,41],[-2,21],[-5,18],[2,11],[-5,7],[0,21],[-3,11],[-1,23],[1,20],[-11,53],[1,33],[-2,25],[3,10],[-1,27],[-14,39],[-4,18],[-13,37],[-5,37],[-3,3],[-4,20],[-7,22],[-3,18],[-8,23],[-8,14],[-5,21],[-3,36],[1,12]],[[9665,3952],[5,-3],[-1,-13],[-7,3],[-2,12],[5,1]],[[9646,3990],[4,-27],[-9,7],[-1,8],[6,12]],[[9555,4026],[7,-13],[6,0],[16,-24],[5,-3],[11,-30],[7,-3],[15,-20],[4,-10],[11,-14],[2,-10],[-3,-5],[-12,8],[-2,-4],[-6,8],[-2,13],[-4,-1],[-7,14],[-13,7],[-4,13],[-12,16],[-1,8],[-6,6],[-12,44]],[[5416,6507],[4,-53],[1,-34],[12,-31],[-1,-12],[11,-21],[-7,-29],[0,-21],[-6,-142],[-1,-9],[-22,-46],[-12,-29],[-13,-39],[0,-11],[-9,-19],[4,-39]],[[5377,5972],[-6,1],[-4,-10],[-5,0],[-14,-18],[-2,-10],[-10,2],[-7,9],[-12,6],[-22,1],[-13,-6],[-7,-7],[-8,-20],[-18,2],[-10,7],[-15,20],[-9,1],[-10,-12],[-6,0],[-3,-7],[-7,4],[-4,15],[-12,21],[-3,-3],[-16,14],[-8,-8],[-12,2],[-11,-6],[-9,-11],[-1,-28],[-4,-14],[-8,-13],[-1,-25],[1,-21],[-2,-2]],[[5377,5972],[13,-36]],[[5238,5460],[-5,-4],[-6,14],[5,-21],[-2,-4],[-17,-3],[-14,10],[0,-10],[-4,-4],[0,13],[-4,2],[3,-18],[-25,-6],[-7,6],[-8,17],[-3,12],[-3,27],[-4,8],[-3,17],[-6,13],[-13,20],[-15,4],[-12,-1],[4,6],[-5,2],[0,-9],[-19,-1]],[[2691,6046],[-6,-4],[4,-35],[-7,-20],[-4,-40],[2,-21],[-1,-19],[2,-10],[-4,-2],[1,15],[-5,-4],[4,-12],[-5,-31],[3,2],[1,-14],[-6,-11],[1,-16],[5,-12]],[[2619,5821],[-6,13],[-12,18],[-7,15],[-4,17],[-26,41],[4,10],[6,-5]],[[5093,8141],[24,0]],[[5162,8210],[-10,-17],[-10,7],[15,13],[5,-3]],[[5118,8141],[-21,6],[1,7],[9,1],[7,-11],[-3,33],[8,7],[6,13],[6,36],[10,-1],[14,21],[11,5],[24,3],[9,-12]],[[5140,8230],[7,-10],[-8,-8],[0,-15],[12,-5],[12,14],[-12,20],[-2,13],[-9,-9]],[[5157,8665],[-10,4],[10,9],[0,-13]],[[5249,8849],[3,-8],[-16,-5],[-3,7],[16,6]],[[5244,8857],[-2,-7],[-13,0],[15,7]],[[5344,8955],[3,-6],[-12,-11],[9,17]],[[5387,9114],[3,-5],[-17,-6],[5,13],[9,-2]],[[5420,9124],[-11,-11],[-15,-6],[9,15],[17,2]],[[5441,9154],[2,-15],[8,12],[8,-5],[-1,-15],[-21,-8],[-4,-7],[-17,-3],[6,18],[6,0],[6,23],[7,0]],[[5421,9152],[6,-15],[-9,-5],[-18,7],[21,13]],[[5439,9158],[-11,-3],[20,19],[-9,-16]],[[5492,9188],[10,-7],[-3,-14],[-32,-8],[9,12],[-6,8],[22,9]],[[5523,9207],[6,-7],[-8,-11],[-17,-2],[5,15],[14,5]],[[5533,9218],[12,-6],[-15,-10],[-9,7],[12,9]],[[5652,9249],[5,-8],[-16,-11],[-6,7],[17,12]],[[5649,9262],[-11,-16],[-24,-4],[7,13],[17,-3],[11,10]],[[5856,9203],[2,-15],[-17,4],[-10,-15],[-16,-3],[-11,-16]],[[5572,9158],[-14,0],[7,-8],[-11,-20],[0,-11],[-42,13],[-8,-3],[1,-19],[-8,-13],[-16,8],[-15,-11],[-5,-16],[-14,-13],[9,-12],[-1,-10],[-27,-31],[2,-13],[-12,-7],[-15,-1],[3,-17],[-3,-30],[-5,-12],[-20,-30],[14,-8],[1,-15],[-5,-10],[-21,5],[-15,-8],[-14,-21],[-5,-18],[6,-16],[-4,-24],[7,-20],[-5,-30],[20,-20],[-4,-18],[-13,-4],[10,-29],[-3,-21],[-10,-13],[-7,0],[-6,-16],[4,-21],[-6,-21],[-5,6]],[[5317,8580],[-2,7],[-16,4],[-5,22],[-5,-3],[1,-15],[-5,-12],[-15,-2],[-28,-36],[-16,-16],[-15,-5],[-30,5],[4,7],[-19,9],[-10,9],[-4,11],[2,18],[14,-10],[-5,13],[9,14],[-12,11],[2,-11],[-10,-4],[-8,9],[8,18],[11,0],[-5,7],[7,5],[5,15],[10,13],[-13,-9],[-6,-16],[-6,16],[-6,-8],[-6,8],[3,14],[12,-3],[-1,14],[-10,-9],[-10,14],[3,16],[10,0],[-13,10],[0,10],[11,7],[-11,5],[11,16],[33,-6],[-31,8],[-7,-3],[7,17],[13,1],[25,16],[-12,-3],[12,13],[22,-8],[-1,10],[-16,2],[-2,12],[10,5],[7,-6],[16,2],[4,11],[12,-2],[-5,11],[34,19],[7,-14],[24,5],[-2,8],[19,14],[2,9],[-18,-7],[2,-9],[-26,-14],[-12,16],[15,11],[-3,9],[14,10],[12,17],[13,-11],[0,17],[11,5],[4,17],[19,3],[-10,6],[10,12],[-8,12],[27,33],[-8,8],[9,16],[12,10],[-7,6],[20,4],[10,13],[22,-3],[0,5],[-28,1],[28,31],[-15,-9],[4,15],[30,7],[-22,1],[23,8],[5,-17],[6,8],[-11,14],[17,8],[32,-1],[-9,8],[-29,-5],[2,11],[24,6],[6,22],[10,6],[4,14],[19,5],[11,13],[26,10],[8,-11],[15,2],[11,14],[19,-17],[-5,14],[-18,15],[28,3],[20,-6],[5,-14],[11,25],[29,23],[0,11],[37,-7],[-19,-17],[-9,-26],[8,-1],[6,15],[33,35],[-3,-34],[17,22],[11,6],[-8,10],[28,3],[8,-5],[-19,-29],[14,2],[11,20],[9,1],[21,-14],[8,4],[27,-25],[-16,-2],[-10,-10],[-39,6],[-3,-4],[29,-8],[-2,-12],[34,3]],[[5713,9281],[11,-11],[-15,-3],[-6,9],[10,5]],[[4778,9282],[-1,-9],[-15,-2],[16,11]],[[5647,9686],[-7,-11],[38,-10],[-33,-33],[-23,0],[10,17],[-53,-6],[22,27],[-22,9],[23,8],[45,-1]],[[5596,9708],[21,-5],[1,-13],[-43,-4],[-15,17],[36,5]],[[5313,9706],[24,-18],[-29,12],[-16,19],[13,4],[8,-17]],[[5467,9783],[4,5],[53,-31],[2,-16],[23,1],[8,-9],[40,-9],[-5,-12],[-44,-1],[-22,-10],[3,-21],[-18,-4],[-5,-31],[-14,1],[-11,-30],[-12,-11],[3,-11],[-20,6],[-35,25],[-18,3],[-9,22],[50,-2],[-31,7],[59,9],[-36,4],[-50,-9],[-5,19],[40,3],[17,12],[27,1],[-3,22],[-14,-14],[-16,-1],[-1,23],[-28,-21],[10,-6],[-25,-10],[-23,-1],[-17,20],[-20,10],[21,16],[-19,4],[10,14],[-23,-12],[-16,26],[31,17],[9,-10],[47,12],[-3,-10],[-33,-9],[37,-1],[19,16],[20,-12],[5,-15],[28,-25],[-14,23],[-7,33],[24,9],[7,-9]],[[5642,9812],[113,-16],[-1,-15],[-37,-13],[-5,-13],[-38,-5],[-6,-7],[-32,2],[-1,11],[-57,-2],[-32,10],[22,8],[39,1],[0,7],[-66,-7],[-28,4],[-12,23],[33,-5],[33,19],[53,-25],[3,26],[19,-3]],[[9617,2273],[0,-19],[-6,6],[6,13]],[[9665,2494],[6,-10],[0,-14],[-12,-2],[-5,-8],[1,13],[5,6],[-1,14],[6,1]],[[96,2665],[10,-1],[-9,-6],[6,-11],[-9,-5],[3,13],[-9,8],[8,2]],[[9802,2850],[-4,0],[-2,-14],[9,-2],[1,-21],[4,-9],[10,14],[6,3],[3,-10],[3,13],[9,-2],[-4,-7],[3,-10],[-6,-8],[6,-18],[-8,-17],[-3,-13],[-9,-13],[-6,-23],[-15,-16],[-1,-24],[9,-5],[1,-9],[-7,-4],[-10,10],[-7,-9],[-25,-22],[-4,-20],[0,-17],[-7,-15],[-5,-25],[0,-16],[-8,-3],[-17,-24],[-4,-11],[-13,-7],[-11,0],[-1,6],[-13,-4],[-5,16],[-11,-2],[-2,10],[-8,3],[-3,-7],[-16,3],[1,13],[-9,0],[0,10],[9,6],[-2,8],[4,17],[8,-7],[-4,16],[36,56],[2,7],[10,1],[19,21],[8,4],[16,27],[14,12],[13,29],[6,37],[9,4],[8,16],[1,31],[15,21],[7,0]],[[9872,3102],[4,-10],[-7,5],[3,5]],[[9807,3201],[-1,-14],[3,-11],[8,-8],[8,2],[10,-9],[2,-9],[5,4],[1,-13],[5,-10],[-2,-23],[9,-16],[-3,-21],[7,-17],[8,0],[4,-17],[5,3],[-4,18],[3,20],[3,-14],[7,-9],[1,-35],[2,-7],[14,-7],[19,-13],[10,4],[5,14],[8,7],[8,0],[7,-10],[-6,-15],[-1,-32],[-10,-9],[-2,-34],[-1,12],[-12,1],[-10,-8],[-4,-10],[1,-13],[4,-3],[-5,-25],[-8,-21],[-6,-9],[-9,-30],[-8,-14],[-13,-14],[-3,11],[-9,-1],[-8,12],[4,4],[10,24],[4,27],[-5,17],[-15,10],[-6,12],[-9,4],[-6,8],[1,14],[22,19],[3,41],[4,20],[-3,30],[4,10],[-3,8],[-8,-6],[-2,16],[-6,19],[7,-12],[-2,22],[-11,8],[1,-9],[-26,61],[2,16],[-12,29],[10,1]],[[6629,6344],[-1,12],[8,19],[-7,-31]],[[6474,6141],[-8,37],[-2,0],[-11,55],[-10,44]],[[6443,6277],[13,8],[52,37],[19,12],[9,56],[9,61],[-13,39]],[[6566,6621],[6,-28],[6,-15],[10,-17],[31,-18],[8,2],[6,-11],[13,-39],[7,-13],[8,-2],[0,-17],[-9,-27],[-4,-19],[-12,-17],[-11,-42],[-8,1],[1,11],[-5,-3],[-3,-13],[-4,-4],[-1,-20],[-3,-10],[2,-31],[2,-11],[-3,-4],[-15,-2],[-8,-6],[-7,-12],[-3,-28],[-5,-10],[-5,1],[-21,-7],[-6,-19],[2,-9],[-7,-20],[-8,-3],[-4,5],[-16,-3],[-12,-14],[-7,0],[-7,-6]],[[6557,6684],[2,8],[9,-6],[-5,-27]],[[6893,6556],[-1,-9],[-8,10],[-6,-3],[-8,15],[-5,42],[-13,5],[1,20],[-5,7],[-3,13],[-7,1],[2,-7],[-16,-8],[-13,2],[-1,-4],[-23,-1],[-19,6],[-4,-11],[-28,4],[-5,-6],[-17,-8],[1,8],[-5,2]],[[2729,5623],[3,-19],[-7,12],[4,7]],[[2836,5599],[-8,16],[-7,31],[5,4],[0,10],[5,8],[-5,3],[-4,-7],[-3,16],[-10,15],[-6,5],[-10,2],[-9,-12],[0,-13],[-8,-11],[-12,-10],[0,-8],[10,-19],[4,-14],[-10,-6],[-2,-9],[-13,-2],[0,7],[-8,30],[-1,-14],[-10,8],[-3,19],[-9,8],[-6,-1],[0,8],[-8,-4],[-9,2],[-2,-16]],[[2706,5734],[6,-10],[3,-23],[13,-4],[-4,11],[5,-3],[6,-15],[10,-1],[9,5],[7,12],[14,8],[14,22],[10,-4],[7,2],[-2,-7],[16,-2],[17,-19],[3,-9],[10,-15]],[[3073,4289],[-8,13],[-7,0],[2,-20],[-3,4],[-3,-15],[17,-10],[-2,-8],[7,-8],[4,3]],[[3084,4249],[-2,-19]],[[3044,4127],[-14,19],[0,3],[-13,15],[0,13],[-3,10],[-18,16],[-6,15],[-10,5],[-17,20],[-17,13],[-3,8],[-32,34],[-1,9],[-9,19],[-10,12],[-6,25],[-4,2],[0,15],[3,23],[-10,34],[0,7],[-8,20],[1,6],[-7,9],[-3,11],[-2,23],[-4,10],[-8,9],[1,11],[-4,20],[-12,36],[-1,20],[-4,9],[-2,18],[-5,8],[-4,33],[-6,23],[-14,29],[-6,35],[-7,12],[-6,16],[-16,16],[-11,17],[0,11],[8,6],[-2,16],[-7,11],[3,15],[-8,19],[2,25],[12,23],[0,5],[14,21]],[[8339,5486],[-9,-12],[-3,4],[12,8]],[[8361,5534],[5,-6],[-8,-6],[3,12]],[[8390,5552],[-3,0],[-4,14],[7,5],[7,-7],[-7,-12]],[[8493,5581],[-3,9],[3,5],[0,-14]],[[8251,5645],[-2,-13],[-1,14],[3,-1]],[[8489,5736],[9,-8],[3,-13],[4,4],[-1,-13],[4,-7],[0,-10],[-6,-9],[8,-6],[-1,-20],[3,3],[-2,-23],[5,-6],[1,-27],[-4,-16],[-6,-12],[-1,-28],[-4,20],[1,8],[-6,19],[-1,14],[-5,-4],[0,-9],[-5,-8],[-3,-22],[6,-6],[3,-20],[-1,-12],[-7,-21],[-7,13],[3,8],[-3,9],[-3,-14],[-10,5],[-13,14],[-5,15],[0,20],[-2,0],[1,19],[6,8],[0,9],[-5,11],[-15,13],[-3,-12],[1,-15],[-4,9],[-4,-1],[0,12],[-4,-14],[-6,0],[1,16],[-9,-3],[-7,-26],[-2,-17],[-3,-3],[-5,9],[7,30],[-1,11],[7,16],[16,6],[3,21],[8,1],[2,11],[3,-6],[6,1],[4,-13],[0,-15],[11,6],[2,17],[3,4],[6,-8],[3,5],[0,23],[4,1],[5,-9],[5,10],[7,1],[0,17],[-4,21],[2,8],[5,-12]],[[8503,5750],[-4,-2],[2,14],[2,-12]],[[8453,5767],[7,-6],[-1,-12],[-7,-13],[-12,2],[-2,9],[7,10],[3,10],[5,0]],[[8479,5754],[-4,9],[3,3],[1,-12]],[[8490,5782],[1,-31],[-5,11],[0,15],[4,5]],[[8332,5791],[-6,-5],[2,10],[4,-5]],[[8408,5792],[-5,-9],[0,11],[4,7],[1,-9]],[[8423,5815],[8,-4],[1,-7],[-7,-25],[-1,-15],[-4,-13],[0,-19],[5,-11],[-2,-12],[-7,-5],[-3,15],[-9,8],[-5,15],[2,15],[11,6],[-1,23],[4,23],[8,6]],[[8444,5821],[1,-35],[-2,-9],[-9,-14],[0,-7],[-6,-27],[-3,-4],[2,34],[9,27],[5,33],[3,2]],[[8319,5836],[0,-30],[6,-17],[-10,-11],[-4,-14],[-13,-9],[1,-12],[-9,-26],[-10,-10],[-1,-9],[-8,-14],[-6,-2],[-1,-9],[-9,0],[19,43],[4,0],[9,23],[7,11],[6,20],[12,17],[4,32],[0,14],[3,3]],[[8456,5842],[7,-8],[4,7],[6,-10],[-1,-30],[5,-8],[2,-19],[-8,-4],[2,-10],[-8,7],[-1,14],[2,19],[-2,11],[-5,5],[-4,-4],[1,30]],[[8456,5856],[5,-12],[-5,0],[0,12]],[[8396,5860],[10,-14],[4,6],[3,-11],[7,8],[-1,-24],[-9,-10],[-1,-11],[-6,-6],[-9,-2],[-6,-13],[-2,20],[4,17],[0,39],[-6,1],[3,10],[9,-10]],[[8332,5870],[2,-13],[-3,-2],[-2,15],[3,0]],[[8331,5890],[11,-11],[0,-5],[-10,1],[-1,15]],[[8405,5890],[-5,12],[6,0],[-1,-12]],[[8469,5906],[10,-3],[2,-13],[5,-4],[-2,-6],[1,-33],[6,-24],[-14,0],[-2,10],[-4,0],[-4,10],[6,17],[-5,0],[-6,16],[-8,11],[-3,20],[7,-3],[11,2]],[[8426,5905],[6,-6],[5,-13],[4,-1],[4,-15],[0,-12],[-17,28],[-8,-17],[3,13],[-1,26],[4,-3]],[[8392,5910],[-3,-30],[-3,11],[2,17],[4,2]],[[8434,5912],[3,-18],[-5,16],[2,2]],[[8421,5926],[-7,8],[2,6],[5,-14]],[[8360,5962],[15,-22],[-1,-23],[-3,-26],[-4,-5],[-9,17],[-4,15],[0,14],[-7,12],[-4,18],[10,-4],[7,4]],[[8385,5963],[7,-9],[-4,-11],[-5,8],[2,12]],[[8450,5993],[5,-11],[0,-12],[-7,-8],[-4,7],[3,5],[0,20],[3,-1]],[[8387,6049],[2,-18],[-3,-5],[-3,23],[4,0]],[[8358,6252],[7,4],[10,-14],[13,-6],[4,13],[3,0],[2,-15],[-4,-8],[-1,-29],[3,-15],[4,0],[2,-28],[-8,-32],[1,-4],[-18,-18],[2,-10],[-7,-28],[9,-32],[-3,-1],[4,-30],[5,-10],[10,-2],[-3,13],[8,9],[8,-1],[9,-20],[-1,-12],[5,-3],[3,17],[17,-13],[1,-4],[-12,-1],[0,-8],[5,-8],[4,-16],[6,-8],[2,-12],[-2,-14],[-6,5],[-1,13],[-7,1],[-8,7],[0,14],[-3,11],[-7,6],[-5,16],[-9,7],[2,-18],[5,-15],[-3,-12],[-7,25],[-17,19],[-8,-8],[1,-6],[-11,-4],[-4,16],[-6,2],[-2,-7],[-1,24],[11,17],[-4,14],[-9,-4],[2,-13],[-4,-3],[-4,23],[-7,4],[-1,23],[-4,8],[1,26],[-4,3],[0,23],[9,-15],[9,5],[-3,17],[0,21],[4,10],[-1,11],[0,43],[5,23],[-1,10],[10,4]],[[8740,5620],[-2,-13],[-3,3],[5,10]],[[9256,4529],[13,-10],[0,-5],[-10,3],[-3,12]],[[9195,4611],[7,-2],[-2,-10],[-8,2],[-5,23],[8,-13]],[[9184,4640],[3,2],[5,-15],[-14,1],[0,16],[6,-4]],[[9176,4644],[-1,-9],[-5,5],[-1,9],[6,1],[1,-6]],[[9234,4667],[10,-3],[5,-11],[-10,2],[-5,12]],[[8989,4680],[-11,16],[11,-11],[0,-5]],[[8981,4701],[6,0],[1,-7],[-7,7]],[[9105,4867],[7,-7],[-1,-11],[-7,10],[1,8]],[[9299,4867],[8,-4],[3,-17],[6,-8],[1,-9],[5,-4],[8,-16],[2,-14],[-7,-8],[-5,1],[-10,17],[1,14],[-14,25],[0,19],[2,4]],[[9089,4870],[-4,0],[-2,11],[3,3],[3,-14]],[[9296,4889],[-2,-21],[-1,25],[3,-4]],[[9228,4941],[-2,-6],[7,-2],[0,-17],[-5,-20],[-8,-1],[5,-25],[-8,-9],[-11,3],[2,-8],[-14,-21],[-15,-13],[-24,-2],[-3,10],[-6,4],[-6,-5],[-2,7],[-10,12],[-9,7],[4,14],[11,-5],[3,4],[7,-8],[20,6],[2,24],[4,-27],[8,6],[8,-5],[8,6],[0,10],[10,20],[7,-3],[2,5],[-2,23],[-3,16],[7,0],[5,-8],[2,8],[6,0]],[[8915,5033],[7,-1],[25,-25],[25,-17],[13,-4],[9,-11],[5,-11],[15,-2],[0,-8],[9,-6],[5,-15],[8,-3],[13,-25],[-1,-38],[14,-4],[18,-16],[5,-7],[12,-3],[9,-22],[0,-18],[-25,-3],[0,-12],[5,-13],[1,-15],[7,-6],[8,-21],[12,-8],[3,-30],[7,-9],[2,-19],[21,3],[-4,-19],[1,-9],[7,-6],[15,-2],[1,-5],[-9,-5],[8,-16],[10,-7],[12,-3],[-4,-5],[-9,-1],[10,-10],[-7,-9],[-13,6],[2,7],[-9,8],[-7,-1],[-8,6],[-12,0],[1,5],[-11,-3],[-2,5],[-17,1],[-11,33],[-5,2],[-7,22],[-8,6],[-4,23],[-10,30],[-13,9],[-5,-1],[-7,8],[-9,2],[-6,12],[-6,-1],[2,-13],[-7,10],[1,-8],[-13,8],[4,-19],[-11,-4],[1,-12],[-18,-5],[-6,1],[11,-10],[7,-15],[1,-11],[-22,-23],[-11,10],[-20,-3],[-6,4],[-3,-5],[-6,7]],[[9195,5027],[10,-11],[11,-17],[7,-3],[14,-33],[11,-10],[5,-22],[-2,-14],[-5,-10],[-6,14],[1,21],[-5,19],[-10,21],[-6,2],[-9,16],[-5,4],[-9,15],[-10,7],[8,1]],[[9172,5046],[6,-5],[0,-12],[-8,0],[-3,9],[5,8]],[[9079,5070],[12,-5],[-3,-8],[-17,0],[0,11],[8,2]],[[9154,5105],[6,-13],[-6,5],[0,8]],[[5544,8319],[0,-1]],[[5544,8318],[4,-1]],[[5548,8317],[63,-4],[21,0]],[[5655,8150],[1,-13],[14,-27],[-5,0],[4,-18],[-10,-8],[-18,-24],[-13,-25],[4,-28],[-6,2]],[[5626,8009],[-15,8],[-11,12],[-16,-2],[-4,-6],[-6,6],[-10,0],[-14,-12],[-1,12],[-10,11],[-7,-11],[-9,7]],[[5396,8275],[8,-3],[0,13],[-10,0]],[[5394,8289],[54,20],[12,16],[10,2],[11,9],[27,5],[7,-23],[12,-6],[17,7]],[[3138,6248],[29,-2],[9,-6],[2,-7],[-7,-13],[-9,-5],[-17,3],[-12,-1],[1,15],[-3,7],[3,10],[4,-1]],[[8625,7631],[5,-14]],[[8630,7617],[-7,4],[-11,-15],[-11,-27],[4,-15],[-3,-11],[1,-19],[-11,-5],[-7,-16],[-13,-11],[-8,-14],[-9,1],[-4,-9],[-10,-8],[2,-9],[-6,-13],[2,-13],[9,-2],[17,-29]],[[8518,7361],[-8,4],[-8,-9],[-8,15],[-7,1],[2,-14],[-10,9],[-7,-2],[3,9],[-13,4],[9,5],[-3,9],[10,20],[-3,4],[4,21],[5,14],[-4,8],[-16,7],[-11,14],[1,12]],[[4525,7072],[11,-2],[-3,-7],[-10,3],[2,6]],[[4286,7362],[15,1],[0,-6],[-10,-3],[-5,8]],[[4220,7396],[-11,-2],[-2,9],[13,-7]],[[4248,7409],[-8,0],[0,8],[6,0],[2,-8]],[[4794,7325],[-12,-12],[-21,8],[-10,-7],[4,24],[1,44],[-4,18],[-8,-2],[-1,11],[8,6],[-2,7],[-4,-11],[-9,1],[4,38],[6,7],[7,36],[-1,3],[7,47],[-6,50],[3,7]],[[3492,3797],[-1,-17],[-4,-23],[-1,-22],[-3,-17]],[[5949,6986],[8,16]],[[5987,7012],[-4,-16]],[[853,4163],[-9,-2],[-1,11],[5,3],[5,-12]],[[6422,6601],[-8,-2],[-3,9]],[[6411,6608],[1,10],[-3,15],[1,20],[3,6],[4,24],[6,6],[4,-12],[5,-2],[1,-9],[-4,-14],[4,-14],[0,-15],[-4,-17],[-7,-5]],[[5783,7801],[3,-8],[11,-6],[14,12],[10,-3],[2,-9]],[[5823,7787],[-1,-22],[-14,-4],[-3,13],[-4,-3],[-6,-35],[1,-21],[-3,-13]],[[5630,7730],[-6,15],[8,5],[-10,9],[-6,-14],[-5,9],[-10,2],[-9,9],[5,16],[-15,12],[-6,9],[1,16],[-13,13],[-2,7]],[[5635,7944],[10,8],[7,-5],[20,-6],[10,3],[9,-14],[10,11],[26,6],[3,12],[9,3]],[[9064,7741],[7,1],[-12,-10],[-16,-24],[15,37],[6,-4]],[[9133,7793],[-15,-6],[-10,-15],[-5,0],[-7,-11],[-18,-19],[10,17],[-3,3],[25,28],[9,0],[12,15],[2,-12]],[[9182,7845],[-21,-27],[-10,-9],[15,27],[16,9]],[[9227,7898],[-1,-8],[-10,-14],[11,22]],[[9301,8041],[-1,-17],[-6,3],[7,14]],[[9336,8091],[-7,-15],[-9,-4],[-5,-11],[-5,16],[15,9],[4,15],[7,3],[0,-13]],[[9344,8100],[-7,6],[7,7],[0,-13]],[[8967,8309],[5,-11],[-3,-7],[8,-35],[4,-38],[-6,-46],[5,-11],[-2,-12],[6,0],[9,-69],[10,-33],[0,-7],[8,-36],[-9,14],[-23,9],[3,-6],[-10,-7],[-2,-16],[-12,-57],[6,-26],[8,-11],[0,-11],[5,-21],[9,4],[1,-28],[-3,-6],[-2,22],[-17,3],[-2,6],[-7,-5],[-6,-32],[-5,-9],[-3,6],[-4,29],[7,30],[-3,31],[7,21],[-3,26],[-5,12],[7,55],[0,46],[-3,10],[1,17],[5,19],[-5,18],[-11,14],[-1,38],[4,5],[3,26],[-4,26],[13,9],[1,-9],[10,9],[-4,8],[9,2],[-2,12],[-10,21],[5,-2],[5,11],[3,-8]],[[9669,8321],[-19,19],[4,0],[15,-19]],[[8810,8355],[-14,-11],[8,11],[6,0]],[[8827,8358],[9,-8],[-12,-22],[-6,15],[-6,1],[8,17],[7,-3]],[[5548,8317],[18,15],[-10,2],[-12,-16]],[[5544,8319],[10,17],[0,12],[12,-1],[15,19]],[[5582,8366],[-12,-19],[12,-3],[7,5],[1,15]],[[9609,8371],[18,-27],[1,-11],[-13,14],[-4,13],[-7,6],[5,5]],[[9571,8591],[3,-16],[-8,-2],[-23,-18],[9,26],[19,10]],[[5777,8600],[3,-1]],[[6924,9029],[21,-5],[-5,-13],[-16,18]],[[6396,9167],[-24,-22],[-23,-4],[-10,9],[1,19],[15,16],[13,1],[28,-19]],[[9482,9188],[-3,-8],[6,-25],[-10,6],[-2,19],[9,8]],[[9705,9201],[-6,-12],[-29,7],[-11,8],[14,11],[32,-8],[0,-6]],[[6648,9234],[5,-8],[26,-17],[0,-11],[-25,-1],[-5,11],[-10,-2],[-13,12],[-1,15],[13,8],[10,-7]],[[6464,9295],[14,-14],[-6,-11],[-7,12],[-15,9],[14,4]],[[0,9271],[9990,-7],[-25,-4],[-4,14],[8,11],[30,17],[-9999,-31]],[[8829,9305],[-3,-9],[-20,5],[23,4]],[[0,9302],[26,4],[18,-3],[27,-17],[-12,-12],[-42,-8],[-17,5],[0,31]],[[7160,9347],[-27,1],[22,18],[21,-9],[-16,-10]],[[8580,9366],[-7,-7],[-15,7],[22,0]],[[8592,9374],[-28,2],[18,7],[10,-9]],[[7209,9382],[0,-11],[-19,1],[-8,7],[16,13],[11,-10]],[[7078,9392],[-5,-14],[-16,10],[21,4]],[[6536,9406],[31,-6],[-8,-26],[-15,-9],[-7,-32],[5,-18],[16,-29],[23,-20],[19,-10],[-49,-5],[-16,3],[-2,-8],[-14,12],[-18,-1],[-11,7],[-11,34],[-11,-4],[-10,10],[-19,-6],[-8,6],[-3,22],[11,12],[15,-5],[9,22],[11,9],[-20,7],[7,8],[21,1],[-7,12],[17,12],[13,-2],[20,9],[11,-5]],[[6970,9416],[1,-13],[11,-6],[-42,-7],[3,20],[27,6]],[[8951,9436],[32,-18],[0,-21],[-33,3],[-40,10],[-27,-4],[2,8],[17,1],[17,22],[32,-1]],[[8903,9439],[-10,16],[20,5],[2,-17],[-12,-4]],[[8148,9464],[-16,-15],[-37,13],[18,14],[34,-4],[1,-8]],[[7281,9528],[-4,-16],[-14,11],[18,5]],[[9075,9530],[47,-4],[5,-12],[15,3],[49,-6],[-8,-15],[-25,-8],[-43,2],[-58,24],[7,20],[11,-4]],[[8773,9524],[-11,-1],[6,29],[14,-16],[-9,-12]],[[8863,9565],[40,-20],[10,14],[19,1],[-8,10],[35,-19],[29,1],[50,-20],[-19,-5],[5,-8],[-16,-15],[-40,6],[-11,13],[15,13],[-3,8],[-25,-4],[5,-18],[12,-15],[30,-9],[-38,-6],[-14,10],[-49,-10],[-6,8],[-17,-18],[-33,8],[-25,20],[-2,34],[18,1],[-9,9],[42,18],[5,-7]],[[7674,9577],[3,-9],[-30,3],[27,6]],[[8125,9595],[2,-10],[-18,11],[16,-1]],[[9145,9596],[-23,0],[29,8],[-6,-8]],[[6893,9615],[24,-15],[-21,-24],[-51,-17],[-116,-32],[-47,-18],[0,-15],[-22,-8],[-2,-8],[-17,8],[1,-16],[-26,8],[15,-17],[-16,-8],[-16,-31],[-24,-20],[-36,4],[-11,6],[-20,-6],[-4,9],[24,12],[-30,-4],[-2,8],[26,12],[-3,6],[26,13],[-3,20],[24,4],[-14,7],[18,4],[-18,4],[-3,9],[21,-4],[14,19],[19,-4],[-5,11],[38,20],[23,3],[14,11],[23,-2],[0,12],[52,-5],[61,15],[49,28],[35,1]],[[7679,9622],[-33,-4],[35,11],[-2,-7]],[[8666,7787],[3,-13],[-2,-13],[9,-14],[7,9],[6,22]],[[6367,7850],[-12,-15],[-2,-14],[-4,9],[-10,-14],[-17,0],[-7,-31],[-8,-23],[-10,-8],[0,-13],[14,-11],[8,-28],[-2,-14],[6,19],[-5,-26],[0,-21],[7,-10],[4,-16],[12,-26],[2,-11],[6,-4]],[[6110,7681],[-15,21],[-1,6],[-18,24],[-15,7],[-11,15],[-9,1],[-8,19],[-17,11],[8,3],[-1,11],[8,-6],[11,2],[5,-4],[0,16],[-4,2],[8,10],[2,14],[4,-6],[2,11],[11,0],[-13,17],[-5,0],[-4,15],[6,-3],[13,14],[24,9],[0,13],[-30,-8]],[[6061,7895],[-1,12],[5,17],[11,5],[3,10],[25,-3],[0,13],[6,12],[-8,29],[10,5],[-8,3],[11,26],[-1,14],[-10,-2],[-5,10],[-7,0],[-5,9],[-6,-5],[-8,10],[-18,-4],[-8,11],[-8,20],[-16,-6],[-6,-7],[-10,4],[-5,8],[-13,-5],[-6,10],[2,10],[-4,19],[-7,12],[-11,-3],[-13,12],[-3,17],[8,9],[-8,8],[-1,10],[-11,13],[-13,1],[-9,-8],[-15,5],[-1,-11],[-12,-7],[-3,5]],[[5767,8523],[9,-9],[6,9],[-6,10],[-10,-2],[7,19],[-4,30]],[[5773,8590],[9,11]],[[5778,8608],[-1,16],[11,-5],[3,11],[10,-4],[7,12],[29,-8],[2,8],[-9,9],[-25,2],[-10,28],[-16,-9],[-7,2]],[[5856,9203],[15,-9],[19,18],[16,-11],[14,-3],[-7,-8],[-20,4],[6,-7],[19,-3],[-6,-7],[19,4],[5,-5],[35,-7],[23,-1],[52,-28],[21,-21],[14,-2],[16,-14],[13,-3],[30,-21],[1,-23],[7,-2],[-5,-24],[-21,-24],[-30,-15],[-22,-4],[-28,5],[-22,9],[-27,3],[-27,15],[-36,7],[-24,23],[-11,0],[8,-15],[18,-11],[3,-9],[13,-6],[-4,-7],[14,-3],[21,-20],[-4,-21],[-6,-7],[13,-46],[-6,-4],[16,-15],[15,2],[12,-18],[31,-13],[16,9],[1,21],[-25,5],[-16,19],[-3,12],[10,2],[7,12],[18,-9],[10,-13],[0,-9],[10,10],[31,-15],[9,7],[18,-7],[-4,22],[-19,30],[4,9],[18,12],[6,9],[18,5],[22,27],[11,-8],[20,3],[22,-21],[1,11],[11,23],[0,16],[-20,19],[10,28],[3,31],[-25,18],[18,-4],[37,0],[18,-6],[16,-18],[5,-18],[-38,-5],[-12,-22],[17,-9],[8,-17],[20,-5],[34,13],[5,22],[-3,11],[26,7],[1,6],[24,9],[31,22],[8,-1],[31,13],[-1,-12],[16,4],[-12,10],[32,18],[15,-3],[-7,-14],[6,-13],[-21,-8],[29,-3],[7,6],[11,-7],[1,12],[29,14],[38,-5],[18,17],[25,8],[15,-13],[-10,-8],[1,-13],[16,-4],[8,10],[-6,7],[20,5],[13,11],[0,10],[-22,28],[15,6],[2,10],[74,-10],[20,-7],[19,-15],[62,-29],[33,-25],[2,-9],[17,25],[7,19],[-21,2],[-10,16],[-1,12],[-35,14],[3,16],[12,3],[-6,9],[6,15],[-1,20],[-16,-3],[-2,17],[8,14],[28,12],[15,17],[14,51],[12,16],[5,-5],[52,1],[39,-11],[1,-25],[-16,-26],[1,-7],[-15,-11],[8,-13],[16,-10],[5,-15],[-2,-25],[-10,-9],[8,-25],[-5,-11],[3,-21],[-3,-16],[5,-8],[26,-20],[-15,-16],[3,-22],[-18,-13],[-9,-27],[-20,-14],[2,-15],[-15,-1],[-10,-7],[-22,21],[-22,-6],[8,-15],[27,-10],[22,2],[24,-8],[10,6],[2,16],[13,2],[26,20],[1,17],[24,24],[-1,25],[-11,15],[3,17],[29,12],[31,4],[1,-11],[19,-15],[-5,-15],[5,-20],[-7,-7],[18,-13],[18,-1],[-25,13],[0,18],[20,10],[-11,14],[-5,24],[-19,5],[-24,13],[-17,1],[-20,-10],[-27,5],[3,18],[-10,15],[6,25],[17,20],[-21,41],[-15,12],[14,22],[39,16],[5,17],[-4,28],[15,-7],[6,-30],[-13,-17],[7,-17],[-5,-18],[11,-4],[57,-7],[6,-11],[12,0],[-4,17],[-17,2],[-39,16],[-8,20],[27,8],[17,-13],[15,3],[-5,14],[-15,-2],[15,14],[16,5],[28,-3],[51,-35],[23,-3],[18,5],[14,-7],[-14,-16],[-16,-6],[-2,-17],[7,-12],[-10,-12],[11,2],[0,11],[10,11],[9,-6],[-4,-27],[-10,-9],[14,-10],[-7,14],[18,0],[6,8],[-17,44],[13,23],[-6,11],[-32,15],[-3,11],[-26,4],[-14,11],[4,23],[-11,9],[2,28],[39,5],[43,-1],[59,10],[40,3],[-23,-18],[25,2],[10,13],[-19,21],[-22,4],[14,18],[-21,4],[13,10],[16,-7],[68,47],[67,8],[66,16],[-28,9],[19,3],[22,-5],[25,7],[21,-3],[-16,-13],[58,10],[32,12],[29,-10],[-29,24],[18,-3],[40,4],[1,26],[63,39],[43,3],[33,-17],[-21,-13],[-24,-3],[82,-7],[6,-6],[-27,-21],[36,-1],[4,12],[38,1],[19,-4],[27,5],[47,-24],[3,-16],[19,4],[3,-28],[-21,5],[1,-12],[22,-1],[-2,-14],[-20,-17],[-20,-6],[-12,-13],[-47,-16],[-2,-9],[-32,-15],[-20,-19],[-27,-1],[-12,-18],[-17,-2],[-6,-15],[-15,-12],[23,6],[7,17],[37,-2],[15,8],[51,12],[23,10],[-7,6],[-25,-5],[-6,8],[13,10],[25,-6],[7,7],[8,-13],[19,-6],[22,5],[-2,12],[16,-20],[-8,-12],[44,9],[19,7],[100,-13],[-18,-4],[1,-11],[38,-12],[36,-5],[25,2],[21,-8],[-7,11],[19,-6],[11,17],[-8,10],[3,16],[17,-2],[10,10],[23,-14],[29,0],[12,-16],[7,15],[30,-4],[7,-12],[34,-14],[-34,-12],[30,-6],[-39,-3],[20,-10],[18,-1],[6,-12],[-15,-11],[-19,8],[27,-37],[13,-27],[40,-21],[13,12],[18,43],[10,14],[13,-19],[23,-12],[22,0],[4,6],[31,8],[22,-6],[19,-11],[11,-13],[7,27],[16,4],[12,-13],[17,2],[-3,27],[15,17],[-29,0],[12,16],[37,2],[4,10],[-12,9],[23,-1],[23,-9],[38,0],[50,-8],[39,-12],[-37,1],[-16,4],[-13,-15],[27,6],[42,2],[-26,-26],[10,16],[-12,4],[-3,-17],[-23,-12],[29,4],[30,31],[36,0],[34,-9],[13,-13],[-12,-9],[-7,7],[-9,-11],[25,-2],[-2,-11],[20,2],[0,-13],[24,3],[18,-20],[-13,0],[26,-9],[28,3],[65,12],[45,-1],[26,-6],[33,-17],[11,-25],[-11,-19],[3,-8],[31,-8],[3,-28],[11,-11],[-10,-25],[14,22],[-2,26],[19,17],[51,7],[23,-12],[23,2],[11,-5],[24,-1],[21,16],[16,-13],[2,-19],[29,-8],[7,-18],[22,4],[17,12],[-13,32],[-11,-1],[11,11],[-1,19],[41,-7],[22,-1],[17,-10],[1,9],[37,-6],[20,2],[28,-7],[71,-27],[17,-16],[-9958,-15],[3,-12],[28,-11],[2,-9],[12,1],[20,-19],[16,-2],[-10,-7],[12,-5],[0,10],[12,-7],[8,-20],[10,-2],[-3,-18],[5,-13],[-7,-6],[14,-8],[-1,-14],[17,13],[-11,3],[9,6],[-2,17],[-9,6],[27,1],[20,-12],[-5,9],[32,-6],[10,-17],[13,-7],[10,-17],[5,4],[17,-14],[-9,0],[-14,-11],[-5,-15],[-21,13],[11,-20],[-32,3],[4,-27],[-19,-12],[-8,-11],[16,-5],[6,-9],[-13,-1],[-12,-9],[-23,10],[-2,8],[-16,10],[-33,12],[-4,29],[-29,10],[-12,-10],[-30,4],[-11,27],[9,7],[2,15],[-7,-11],[-28,-4],[0,-16],[13,-11],[-7,-23],[9982,-11],[-10,-13],[-34,-9],[-21,8],[-1,8],[-16,9],[12,-16],[-24,2],[-11,7],[20,-23],[20,12],[-3,-16],[17,-17],[8,8],[12,-25],[2,-16],[-5,-13],[18,-9],[2,-20],[7,-16],[-12,-7],[0,-10],[-28,12],[-22,3],[-10,16],[2,-16],[-21,-16],[-25,-11],[-25,-18],[-12,2],[-7,-10],[-8,4],[-1,-10],[-10,-10],[-11,2],[5,-8],[-22,-13],[-3,-12],[-17,-4],[-1,-9],[-15,-7],[-10,-16],[-6,-18],[-8,8],[-7,21],[-13,9],[-32,0],[-35,-20],[-16,-23],[-4,0],[8,39],[-33,-24],[-5,-14],[-7,-2],[-2,11],[-30,3],[2,-9],[-9,-4],[-5,-19],[4,-12],[-12,-10],[4,-10],[-18,-16],[-10,-26],[1,-19],[13,-7],[1,11],[18,-8],[3,-6],[-15,-21],[1,-36],[11,1],[4,-32],[-9,-10],[-12,13],[8,11],[-6,4],[-8,-7],[6,-6],[-16,-12],[-7,-25],[-1,-16],[11,-34],[-11,-14],[-13,-1],[-6,6],[-15,-9],[-13,-15],[-6,-22],[4,-13],[-3,-6],[5,-22],[-13,10],[-9,-5],[-21,-25],[1,-26],[-7,-19],[-10,-20],[-11,-7],[-2,-8],[-17,-22],[-9,17],[-1,40],[-4,33],[-7,23],[-4,46],[-9,60],[-2,29],[4,46],[6,29],[6,15],[17,15],[7,17],[-5,22],[16,0],[7,14],[15,0],[20,19],[24,33],[3,13],[13,12],[5,12],[8,2],[18,25],[14,14],[-1,8],[30,21],[21,9],[-8,4],[15,18],[-7,9],[8,12],[2,33],[14,12],[17,-5],[-18,17],[-15,-1],[-22,-8],[3,-11],[-8,-6],[3,-9],[-6,-15],[10,-9],[-10,-7],[-5,11],[-10,-2],[-12,-18],[-32,-32],[-19,-14],[8,27],[-17,-7],[5,11],[-3,9],[14,29],[-3,10],[-12,-14],[-10,-2],[-3,12],[-13,2],[-26,-10],[-15,3],[-22,-15],[-1,-18],[-20,-20],[0,-9],[-27,-20],[-13,-28],[-7,-1],[-2,-23],[14,5],[16,-14],[-1,-7],[-11,-3],[-8,5],[-13,-10],[-19,11],[0,-8],[-10,-2],[-2,-8],[-16,8],[-9,-11],[-17,-2],[-9,15],[10,4],[18,-1],[6,4],[-15,8],[-10,14],[-13,-8],[-12,2],[-2,7],[-23,8],[-16,-8],[5,-5],[-14,-5],[6,-12],[-14,2],[-2,7],[-12,0],[-10,-9],[-31,13],[-3,-16],[-8,-3],[-6,9],[4,6],[-27,-1],[-32,2],[-19,-3],[-25,-13],[-19,-30],[-17,-11],[-8,-13],[-5,-20],[-15,-9],[-4,-11],[-11,-12],[-14,-9],[-22,-32],[-12,-26],[-26,-27],[-8,-4],[-15,-23],[-19,-15],[0,-12],[14,-9],[30,5],[0,-28],[-4,-21],[12,0],[5,14],[-6,6],[10,10],[8,-2],[-8,-11],[9,-11],[-12,-22],[16,4],[11,9],[7,14],[1,-9],[-10,-15],[7,-3],[8,26],[-1,20],[16,-8],[9,5],[17,-12],[0,-11],[27,-32],[6,-10],[-13,-12],[8,-5],[1,-15],[-4,-13],[11,-12],[-6,-3],[3,-9],[-9,-16],[-6,-3],[0,-12],[-6,-8],[0,-18],[-4,-4],[-3,-20],[1,-32],[3,-23],[-6,-17],[1,-17],[-6,-17],[0,-14],[-26,-38],[-7,-28],[-13,-18],[-5,-27],[-18,-41],[-15,-25],[-10,-11],[-8,-20],[-6,-6],[-5,-15],[-7,-5],[-11,-25],[-3,-14],[-5,0],[-1,-12],[-18,-20],[-9,-6],[-7,-11],[-8,0],[-12,-10],[-6,7],[-4,-4],[-12,10],[-3,-4],[-1,23],[-9,-11],[1,15],[-16,-21],[-1,-11],[-14,-11],[-4,-17]],[[7858,9748],[0,-12],[30,4],[14,-16],[16,-1],[8,-19],[-16,-10],[-31,-5],[-68,-3],[-33,-14],[-21,5],[21,17],[6,19],[36,39],[19,-6],[2,11],[17,-9]],[[7118,9769],[37,-6],[-27,-3],[-10,9]],[[7523,9794],[79,-8],[-18,-13],[-55,8],[-6,13]],[[6659,9787],[-27,3],[21,7],[6,-10]],[[7715,9797],[-5,-21],[25,17],[20,0],[24,-16],[-9,-24],[-19,-5],[25,-18],[-39,-10],[-38,4],[-11,8],[-50,2],[-18,12],[-1,14],[-33,3],[29,14],[23,19],[77,1]],[[6585,9810],[-4,-16],[-28,0],[1,14],[31,2]],[[6481,9813],[15,-7],[-35,-6],[20,13]],[[6646,9809],[-52,-12],[-13,20],[42,0],[23,-8]],[[6329,9836],[-38,-20],[-39,11],[77,9]],[[6729,9835],[-5,-10],[-29,-12],[-38,1],[-13,13],[14,11],[65,2],[6,-5]],[[6537,9839],[-13,-8],[-22,8],[35,0]],[[6388,9840],[7,-8],[30,3],[-9,-14],[-60,-9],[4,-14],[-38,-4],[16,15],[-22,8],[63,10],[-18,7],[27,6]],[[7225,9845],[-28,-9],[2,9],[26,0]],[[6560,9854],[57,-11],[-29,-1],[-28,12]],[[6542,9848],[13,2],[47,-13],[-19,-7],[-41,18]],[[6797,9859],[20,-16],[-28,-11],[-36,-3],[-17,9],[46,10],[15,11]],[[7536,9852],[-37,1],[2,7],[38,-2],[-3,-6]],[[7665,9859],[54,-29],[-20,-3],[0,-24],[-75,-6],[-22,-7],[-63,20],[36,9],[15,17],[-22,-3],[16,14],[81,12]],[[6577,9869],[28,-6],[-38,-6],[10,12]],[[6605,9878],[14,-9],[-44,4],[30,5]],[[5846,5121],[2,-14],[5,-5],[3,-11],[1,-26],[-1,-18],[-8,-2]],[[5801,5040],[6,7],[8,22],[-4,17]],[[5821,5103],[7,4],[4,-9],[5,7],[5,16],[4,0]],[[4526,6379],[-1,15],[2,22]],[[6163,6147],[4,4],[4,-6],[-8,2]],[[6345,6826],[6,-29],[6,-11],[0,-14],[11,-4],[-4,-5],[5,-5],[11,-23],[8,-6],[0,-16],[6,-10],[-2,-18],[-4,4],[7,-31],[8,-17],[0,-12],[8,-21]],[[6422,6601],[7,-4],[-5,-9],[8,-8]],[[6443,6277],[-4,-2],[-58,-16],[-17,-4],[-27,-27],[-16,-40],[-3,-19],[-9,-11],[-5,1],[-7,19],[-11,-3],[-25,5],[-5,6],[-16,1],[-15,-5],[-11,0],[-7,10],[-9,-11],[-1,-24],[2,-15],[-11,-16]],[[6188,6126],[-2,21],[-5,8],[0,8],[-6,9],[0,15],[-15,23],[-9,25],[0,8],[-7,16],[-2,14],[-11,49],[-18,29],[-9,3],[-6,13],[-13,43],[3,7],[-7,28],[4,20],[0,19],[-8,23],[0,8],[-14,46],[-18,21],[-2,-3],[-12,35],[3,0],[0,20],[-4,7],[-4,18],[-8,11],[1,11],[-5,5],[-8,30],[-4,7],[-8,26],[-7,15],[-6,24],[-8,14],[-6,-3],[-6,7],[5,20],[4,47]],[[6024,6449],[0,-20],[6,-21],[2,-34],[2,-65],[5,-40],[4,-8],[10,-8],[5,-9],[1,-10],[10,-6],[3,-8]],[[5946,5727],[-6,5],[3,17],[-2,21],[-20,35],[-3,45],[2,5],[2,31],[-13,0],[0,-12],[-18,0],[7,-17],[0,-27],[2,-11],[-14,-24],[-1,-9],[-18,-39],[-13,-4],[-14,23],[-7,8],[-11,-12],[-4,-17],[-13,-9],[-5,-10],[1,-6],[-23,0],[-4,15],[-22,1],[-14,-7],[-11,27],[-8,12],[-2,15],[-21,-7],[-3,-21],[-5,-6],[0,-19],[-3,-6],[-3,-29],[-11,-12]],[[5634,5812],[3,13],[-1,15],[-4,-1],[-7,16],[3,23],[-5,-2],[0,34],[-7,7],[-6,-7],[-5,9],[6,21],[7,14],[-5,25],[4,9],[9,9],[-4,7],[-1,18],[8,6],[0,10],[7,15],[2,15],[-2,11],[7,9],[12,2],[11,-2],[0,218]],[[5943,5426],[-14,-28],[-9,2],[-3,6],[-5,-5],[-13,-3],[-6,-13],[-7,5],[-4,12],[-7,-8],[-11,7],[-8,-17]],[[4535,5893],[-1,42]],[[4540,5965],[-5,11],[-1,13],[-14,41],[-8,3],[11,9],[8,18],[9,33]],[[7884,5266],[4,-3],[-4,-7],[-7,2],[7,8]],[[3953,2073],[22,-4],[11,-7],[17,-21],[3,-11],[-10,-7],[-10,20],[-12,11],[-22,11],[1,8]],[[9445,4521],[15,-17],[-6,0],[-3,9],[-8,4],[2,4]],[[9612,4569],[-6,-12],[-3,7],[9,5]],[[9481,4595],[13,-14],[8,0],[5,-13],[0,-8],[-12,4],[-9,10],[-1,11],[-6,3],[2,7]],[[9483,4641],[4,-12],[0,-10],[-5,7],[1,15]],[[9442,4640],[13,0],[11,-20],[-4,-9],[-10,7],[-13,1],[-6,13],[0,16],[3,2],[6,-10]],[[9388,4691],[3,-9],[-6,0],[3,9]],[[9371,4689],[-5,3],[5,6],[0,-9]],[[9466,4701],[6,-16],[-2,-11],[5,-5],[7,-34],[-14,21],[-3,10],[-5,37],[6,-2]],[[9378,4711],[4,-3],[3,-19],[-7,4],[-2,13],[-9,-2],[-1,6],[6,13],[5,-1],[1,-11]],[[9365,4716],[-5,1],[-1,9],[4,5],[2,-15]],[[9349,4747],[6,-9],[-4,-9],[-5,14],[3,4]],[[9405,4746],[4,0],[9,-16],[12,-12],[9,-15],[1,-13],[-7,12],[-11,9],[-18,25],[-3,13],[4,-3]],[[9349,4800],[13,-15],[3,-16],[10,-7],[-2,-7],[-15,13],[-7,18],[-6,9],[4,5]],[[4650,5621],[2,-12],[-12,10],[10,2]],[[4681,5581],[-6,9],[-23,18],[1,15],[-7,4],[-6,10],[2,3],[-3,18],[-5,-4],[-3,18],[7,1],[-6,7],[0,11],[4,7],[-6,5]],[[2560,5955],[-2,-14],[-12,0],[-13,5],[-14,14],[-14,2],[-8,11]],[[6359,5831],[0,-104],[-27,-84]],[[6201,5844],[18,-44],[13,-18],[15,0],[11,15],[4,0],[10,12],[11,-4],[6,-7],[6,4],[21,25],[8,-5],[14,3],[9,10],[12,-4]],[[6359,5831],[14,5],[4,7],[7,0],[12,7],[13,23],[15,-9],[-5,-19],[-1,-18],[2,-35],[8,-8],[-14,-6],[-3,-53],[-4,-8],[-1,-12],[-6,-10],[-3,-22],[-6,-20],[-8,-13],[0,-11],[-6,-25],[-10,-29],[-4,-29],[-12,-48],[-13,-33],[-7,-26],[-12,-30],[-14,-28],[-10,-24],[-9,-15],[-8,-19],[-21,-26],[-8,-7],[-18,-27],[-8,-17],[-10,-15],[-22,-48],[-11,-21],[-18,-49],[-9,-28]],[[5183,5187],[-3,-2],[-1,13],[5,8],[3,-11],[-4,-8]],[[3409,5499],[3,3],[1,20],[5,7],[8,-2],[20,-10],[2,10],[33,0],[18,-8],[-1,-20],[-3,-8]],[[5626,8009],[-12,-39]],[[5377,7802],[3,6]],[[5474,8485],[-7,-30],[-12,-34],[0,19],[19,45]],[[5521,8514],[8,1],[-8,-14],[-2,-22],[-10,-8],[-5,7],[-1,19],[10,16],[8,1]],[[5327,8537],[-2,-9],[-9,3],[11,6]],[[5671,8973],[-41,-2],[-9,5],[1,-19],[-16,0],[3,-8],[-13,0],[4,-13],[-10,-13],[-4,-15],[12,-15],[-17,-17],[-4,-15],[-13,-13],[-8,1],[-11,-13],[-32,-24],[0,-9],[-17,-3],[5,-11],[-5,-7],[-15,-2],[5,-14],[-5,-29],[-7,-9],[5,-32],[0,-18],[10,-10],[10,4],[14,-25],[9,-2],[6,-19],[-20,-23],[-6,3],[8,-16],[-17,-16],[-18,-13],[-13,-2],[8,-8],[-6,-3],[3,-15],[-10,-16],[6,-8],[0,-17],[-6,-10],[-3,-37],[-3,0],[-6,-23],[-5,-8],[-6,5],[-27,-3],[-11,-14],[-2,-11],[5,-10],[-6,-9],[-11,3],[-10,-5],[-14,2],[4,15],[-14,31],[8,6],[-6,8],[8,2],[-15,26],[-18,47],[4,27],[-4,8],[-9,-4],[-4,9],[-1,39],[6,-6]],[[5891,3637],[-3,2],[-1,-29],[-12,0],[-11,7],[-9,22],[0,24],[7,17],[1,10],[8,11],[14,-15],[2,2]],[[3249,6221],[-2,2]],[[5999,7178],[-3,27],[1,18],[-4,4],[1,20],[3,4]],[[5997,7251],[7,-5],[5,9],[0,11],[9,3],[-4,14],[4,21],[8,-5],[2,-7],[12,0],[5,6],[18,10],[10,-11],[16,-3],[21,8],[20,17],[22,-1],[16,7],[4,7],[4,-12]],[[5402,5930],[5,0],[0,13],[-4,3],[-6,-5],[2,-5]],[[5398,5936],[-1,0]],[[5044,5541],[-12,-7]],[[7728,5654],[6,-7],[0,-10],[-6,-6],[0,23]],[[7840,5883],[5,-11],[-4,1],[-1,10]],[[7858,5853],[-4,22],[-5,11],[-1,-7],[-12,18],[0,8],[-5,0],[-8,10],[-7,-5],[-16,5],[3,15],[-3,7],[4,21],[-11,5],[-15,-8],[-2,-9],[4,-13],[-4,-16],[0,-27],[2,-5],[-7,-15],[0,-11],[-4,-13],[-5,-20],[0,-15],[-9,-32],[2,-7],[-2,-27],[5,-21],[-3,-10],[16,5],[4,-12],[1,-29],[9,-16],[0,-12],[4,-37],[4,-16],[-4,4],[-3,29],[-6,-2],[2,-13],[6,-18],[6,0],[9,-18],[12,1],[6,-4],[6,-21],[7,-12]],[[7780,5554],[-4,13],[-8,12],[2,14],[-6,2],[-5,10],[-2,18],[-7,5],[1,7],[-5,11],[-4,1],[-3,18],[-5,-2],[-2,-12],[-4,5],[-2,18],[2,14],[4,19],[0,16],[3,16],[7,40]],[[6962,7540],[0,0]],[[6882,7324],[1,20],[12,24],[3,15],[-7,12],[-2,14],[4,10],[-2,9],[-12,1],[0,7],[-9,4],[2,16],[8,9],[18,-6],[7,6],[0,11],[8,4],[1,14],[-10,2],[13,4],[7,-3],[1,9],[-4,11],[5,14],[8,-8],[18,14],[5,7],[8,-18],[-11,-19],[7,-10],[9,3]],[[6497,7333],[-3,23],[2,30],[-1,22],[4,15],[-12,17],[0,9],[-11,0],[1,8],[14,2],[-9,14],[6,10],[-5,3],[-14,-3],[-5,6],[0,25],[4,9],[2,19],[4,-11],[13,-1],[5,-8],[16,6],[1,12],[8,-6],[3,14],[-19,23],[-4,34],[-6,5],[-16,-3],[-5,-6],[-5,-17],[4,0],[-3,-19],[-7,9],[-3,13]],[[6554,7562],[29,-5],[4,7],[-4,7],[-2,23],[4,3]],[[6585,7597],[4,-18],[11,-2],[7,14],[-6,6],[0,13]],[[6601,7610],[5,1],[4,19],[7,-2],[-3,10],[11,1],[2,6],[8,-12],[7,-2],[7,-14],[13,2],[5,-8],[-1,-12],[6,-8],[-5,-4],[4,-10],[-3,-10],[11,-11],[18,1],[6,-3],[7,6],[9,-10],[8,-36],[4,-2],[5,-29],[27,-31],[4,-10],[13,-16],[5,2],[10,-14],[27,-29],[7,1],[19,-14],[3,-4],[-4,-9],[0,-25]],[[8444,4645],[12,9]],[[8469,4667],[5,9],[1,10],[20,8],[10,-1],[6,5],[3,-4],[11,10],[11,-6],[-13,-19],[-8,-3],[-4,-9],[-7,-2],[-6,-8],[-10,-3],[-15,-17]],[[130,3966],[6,0],[-1,-7],[-5,7]],[[3308,5807],[-4,-9],[1,-31],[-4,-4],[-14,-1],[-5,4],[10,7],[0,20],[-5,5],[8,7],[13,2]],[[5303,7135],[4,-6],[-9,-6],[0,11],[5,1]],[[5238,7310],[7,2],[10,15],[13,6],[17,-9],[-4,-1],[6,-17],[-5,-4],[10,-3],[14,20],[3,-14],[-10,-23],[-6,-4],[-3,-16],[6,-18],[11,-10],[-1,-16],[3,-7],[-3,-11],[-12,-28],[-14,-14],[-2,-16],[4,-12],[9,-10],[6,4],[0,-13],[11,4],[2,-20],[9,-1]],[[5778,7600],[-2,-9],[6,-15],[20,-17],[6,-2],[-3,-13],[-14,-1],[-9,6],[-6,-7],[-12,1],[-9,-20],[-14,-10],[-15,-24],[2,17],[13,10],[3,7],[-20,-3],[-1,9]],[[5997,7251],[2,5],[-6,17],[12,18],[0,11],[-6,7],[-10,-18],[-8,-3],[-18,15],[-11,-13],[-17,-26],[-7,1],[-17,-8],[-13,9],[-7,18],[-21,18],[-18,5],[-3,-3],[0,-18],[-5,-18],[-4,6],[-13,-10],[-12,5],[-7,9],[0,16],[-7,-1],[-7,9],[-10,3],[-3,-6],[-11,1],[-2,-6],[-9,3],[8,5],[12,0],[-1,7],[8,7],[-15,-3],[-12,2],[-1,8],[7,-2],[-10,13],[0,14],[-5,5],[7,4],[-1,13],[-17,7],[-11,9],[7,6],[-4,14],[4,3],[5,-20],[14,8],[-7,0],[-5,16],[6,2],[3,10],[-6,-2],[0,14],[-6,9],[9,16],[-24,-6],[2,29],[16,25],[16,3],[2,-7],[11,-1],[-1,11],[8,-2],[-2,-7],[11,3],[19,-3],[1,7],[-8,3],[5,6],[27,5],[-15,3],[-11,13],[6,13],[19,-6],[11,5],[15,-8],[9,1],[7,11],[29,28],[14,6],[10,9],[28,-6],[10,0],[10,9],[1,-10],[6,-11],[9,-5],[10,6],[4,-16],[8,-13],[5,8],[12,-5],[0,-6],[13,-8],[8,0],[15,-7],[32,11],[4,-6],[14,-5],[12,7],[24,20],[3,7]],[[8378,6635],[10,-12],[-5,-8],[1,-22],[-6,-18],[-4,-43],[-3,-19],[-6,-20],[-4,-5],[-4,-17],[-1,-27],[-5,7],[-1,16],[-11,20],[-2,22],[-3,0],[2,15],[0,20],[17,58],[3,3],[4,18],[12,7],[2,9],[4,-4]],[[6108,4736],[-7,-14],[1,11],[6,3]],[[6093,4842],[6,-26],[-4,-4],[-7,16],[0,15],[5,-1]],[[6102,4899],[5,-11],[-3,-19],[-2,30]],[[5914,5071],[5,-1],[2,-12],[-9,7],[2,6]],[[5882,5125],[1,0]],[[5883,5125],[1,0]],[[5884,5125],[-1,-28],[-2,0],[-1,-30],[-2,-20],[4,2],[0,-28],[2,8],[4,-3],[0,13],[5,-3],[-3,10],[7,6],[2,-10],[12,-2],[8,5],[3,-7],[17,17],[-2,8],[-4,-6],[-10,4],[5,8],[-3,9],[5,-1],[5,9],[-1,12],[6,0],[-2,7],[8,17]],[[6088,4913],[1,-10],[-4,-16],[-3,-25],[-5,-21],[2,-26],[5,-5],[12,-22],[2,-15],[-4,-5],[-4,-23],[1,-10],[4,-2],[0,-13],[-4,-14],[2,-25],[4,-7],[0,-16],[4,-4],[0,-15],[4,-21],[-2,-8],[15,-16],[5,-14]],[[5971,4516],[-2,9]],[[5969,4527],[-5,7]],[[5964,4536],[-4,14],[2,20],[-2,4],[-1,30],[-7,20]],[[5949,4630],[-3,4]],[[5946,4635],[-4,-2],[-1,-10]],[[5914,4641],[-12,10],[-3,6],[-13,6],[-6,6],[-4,13],[-11,6]],[[5865,4688],[0,10],[-4,5],[-1,11],[-11,36],[1,11],[-3,8],[2,12],[-5,9],[-7,21],[-6,-1],[-6,12],[0,13],[6,7],[-5,32],[1,21],[-6,5],[2,27]],[[5846,5121],[10,4],[26,0]],[[5883,5125],[1,0]],[[5944,5197],[-8,-3],[1,8],[-8,-8],[-3,15],[-5,-3],[-2,-12],[-6,-7],[0,7],[-6,-6],[0,10],[-8,-17],[-9,0],[-4,-9],[3,-7],[-9,-26],[2,-14]],[[5823,5155],[5,6],[2,14],[-6,2]],[[5846,5254],[4,-12],[9,28],[10,11],[3,11],[-1,25],[-3,-9]],[[6061,7895],[-18,0],[-6,-11],[-4,2],[-12,-13],[-4,3],[-22,-8],[-14,-18],[-4,3],[-11,-12],[4,-22],[15,-28],[18,10],[13,-3],[-5,-9],[1,-11],[-17,-4],[-9,7],[-4,-10],[-23,-12],[-12,-18],[-10,-2],[-11,11],[5,5],[1,24],[-8,3],[-11,13],[-9,-2],[-1,8],[24,21],[8,2],[-1,14],[-6,-3],[-5,10],[-3,-6],[-18,-3],[-17,14],[4,8],[-7,6],[17,-5],[4,9],[-11,-4],[-6,5],[-25,-2],[-24,-46],[-5,1],[-10,-23],[4,2],[-3,-14]],[[5836,7853],[9,-17],[2,3],[-11,14]],[[5948,7848],[0,-9],[-11,7],[3,-13],[4,5],[21,-17],[6,-8],[4,-20],[9,-4],[-12,23],[-7,26],[-10,-6],[-7,16]],[[3523,3302],[-5,-5],[0,-12],[-8,-5],[3,-30]],[[3517,3240],[-4,-18],[-7,-13],[0,-7],[-13,-16],[-20,-17],[-12,10],[-14,0],[-7,-8],[-20,15],[-8,13],[-18,-1],[-16,29],[-2,10],[3,27],[-1,10],[9,9],[-4,31]],[[677,6342],[13,-11],[2,-12],[8,-13],[-6,-10],[-16,-13],[-3,-11],[-7,9],[1,15],[-4,25],[5,12],[-1,17],[8,-8]],[[649,6394],[3,-7],[7,2],[8,-8],[0,-7],[-9,-6],[-4,2],[0,10],[-7,7],[2,7]],[[631,6405],[16,-4],[-2,-5],[-15,2],[1,7]],[[613,6427],[6,-8],[1,-12],[-13,2],[-3,14],[7,10],[2,-6]],[[571,6463],[4,-3],[-1,-14],[-8,-3],[-6,11],[11,9]],[[2301,6687],[-6,35],[0,12],[6,-47]],[[2761,6828],[-2,-18],[-2,17],[4,1]],[[2366,6873],[3,-1],[-11,-13],[8,14]],[[1707,7111],[7,-9],[-6,0],[-1,9]],[[1671,7144],[8,-4],[-8,-2],[0,6]],[[2993,7551],[-6,-11],[8,7],[8,-1],[-20,-15],[-36,-12],[-4,1],[4,11],[7,6],[29,6],[10,8]],[[2582,7791],[0,-10],[-7,-17],[-3,8],[10,19]],[[2679,7836],[1,-8],[-10,3],[9,5]],[[2563,7913],[-19,-17],[-6,0],[5,14],[8,6],[12,-3]],[[2541,7956],[-2,-6],[-15,-14],[0,8],[17,12]],[[1595,7969],[-3,-9],[8,-13],[-1,-5],[-9,17],[5,10]],[[1582,8004],[-1,0]],[[2511,7947],[-14,-11],[-19,-11],[-20,-29],[-17,-21],[9,-3],[22,14],[6,0],[-5,-19],[14,-2],[11,5],[7,9],[14,4],[10,7],[7,13],[7,-14],[-1,-10],[10,6],[9,-1],[12,-22],[11,0],[9,-4],[14,14],[18,-2],[13,6],[0,-17],[15,-1]],[[2663,7852],[-3,-10],[9,-12],[-16,1],[-5,4],[-2,-11],[-7,9],[-15,5],[-3,-7],[-25,-7],[-13,0],[-15,-39],[-3,-12],[-10,-17],[2,-8],[10,17],[7,-3],[-11,-49],[1,-13],[-6,-26],[0,-14],[4,-15],[-2,-28],[9,-33],[8,-4],[16,14],[7,22],[5,26],[0,15],[-9,37],[3,10],[-3,17],[8,20],[0,14],[5,15],[7,2],[7,15],[-3,-22],[4,-4],[4,14],[0,16],[11,5],[-3,15],[9,10],[13,-8],[6,-11],[16,-7],[6,-13],[-4,-11],[4,-6],[-1,-28],[-6,-5],[-1,-13],[-7,-2],[-3,-18],[6,-5],[7,6],[6,16],[9,5],[7,-10],[4,-37],[3,-14]],[[2704,7634],[-5,5],[-3,-17],[-6,-8],[-3,-17],[-6,-12],[15,-11],[7,0],[5,-7],[9,4],[14,3],[9,12],[24,15],[26,21],[14,21],[5,2],[-1,17],[-5,3]],[[2804,7674],[10,6],[16,2],[13,-8],[18,0],[8,5],[15,19],[-3,9],[4,4],[-7,11],[15,16],[1,7]],[[3116,7818],[10,-9]],[[3134,7784],[3,-9],[-3,-20],[-20,-16],[-6,5],[-13,-5],[1,-9],[-12,11],[-3,-22],[-14,-14],[-10,3],[-8,-8],[1,-9],[-11,-15],[-6,-22],[1,-15],[5,1],[-13,-19],[9,-7],[5,-23],[17,-8],[-14,-3],[-6,-6],[0,11],[-15,-14],[0,12],[-5,5],[-1,-17],[-12,-9],[-29,-2],[-6,-9],[-8,-1],[-23,-27],[-1,-10],[8,-1],[-2,-29],[-3,-14],[-7,-9],[-1,-11],[-12,-24],[-1,15],[-7,2],[-10,13],[3,-23],[9,-21],[1,-16],[-10,-31],[-7,-13],[-8,-30],[-2,11],[4,20],[6,17],[-6,-2],[1,9],[-13,21],[-1,17],[4,11],[-2,15],[11,15],[-5,0],[-11,-10],[2,-16],[-4,-6],[0,-23],[4,-6],[1,-20],[-9,11],[-8,-2],[9,-4],[11,-13],[-2,-17],[-6,3],[8,-12],[-7,-12],[6,-8],[-4,-8],[12,-4],[5,-35],[7,-23],[-5,9],[-6,38],[-2,-15],[6,-17],[-9,5],[0,-7],[-15,-4],[-2,-6],[15,3],[13,-8],[-1,-17],[-3,2],[-5,-13],[-13,1],[-2,9],[-4,-8],[7,-6],[-2,-11],[-11,-8],[17,-2],[-7,-11],[-15,-4],[-15,-18],[-9,-27],[-11,1],[-13,-12],[-5,-10],[-4,-21],[-22,-32],[-14,-8],[1,-8],[-12,-15],[1,-5],[-11,-14],[-3,-12],[2,-18],[-4,-5],[-3,-19],[8,-63],[9,-38],[9,-26],[-5,0],[0,-10],[18,-75],[3,-31],[-2,-12],[-1,-28],[-4,-11],[-4,-29],[-12,-1],[-7,-4],[0,14],[-6,25],[-6,7],[-6,0],[-3,31],[-6,5],[0,20],[-7,-2],[-6,21],[-3,18],[7,15],[-1,8],[-7,6],[0,-19],[-5,8],[2,21],[4,14],[0,26],[-4,16],[-7,0],[-10,20],[-6,20],[-11,14],[-10,-4],[-10,-15],[-16,-5],[0,7],[-11,20],[-22,14],[-15,-1],[-2,9],[-4,-11],[-14,-5],[-4,7],[-1,16],[-3,2],[-2,-22],[-5,5],[-5,-5],[-10,6],[-14,-7],[-7,-9],[-11,7],[-4,7],[-8,-12],[2,-7],[10,-1],[3,4],[6,-14],[5,12],[3,-3],[-8,-29],[4,-8],[11,-5],[3,-9],[-4,-9],[-3,10],[-15,9],[2,4],[-12,11],[4,-9],[-2,-16],[-10,12],[-8,-14],[-15,9],[0,13],[-7,3],[-3,12],[-6,5],[-9,-8],[4,-6],[-13,-2],[-21,13],[-16,-5],[2,17],[-8,-18],[-17,-13],[-1,19],[-8,-5],[-1,-9],[4,-12],[-8,-12],[1,-4],[-14,-18],[-16,-9],[-12,8],[1,-9],[6,-8],[-7,-6],[-5,6],[1,-12],[-12,-8],[1,-14],[-7,-33],[-3,-26],[7,-32],[1,-16],[3,-1]],[[2245,6713],[1,7],[-9,21]],[[2193,6879],[-7,10]],[[1746,7056],[-4,10],[-2,27],[-8,16],[-15,18],[-6,2],[-3,12],[-9,0],[-10,6],[-10,18],[-21,3],[-9,5],[0,33],[-7,5],[0,12],[-12,15],[-5,18],[-9,13],[-4,23],[5,9],[-3,11],[-6,-1],[-8,13],[-3,21],[3,5],[9,-11],[-10,29],[8,6],[-7,6],[-2,-19],[-16,13],[5,3],[-7,20],[-7,6],[-10,20],[1,10],[-4,16],[2,10],[-2,15],[-7,17],[-8,9],[0,19],[8,15],[-2,17],[3,16],[-2,16],[-5,5],[3,12],[-5,8],[-1,32],[-5,10],[9,41],[4,25],[2,52],[2,11],[1,62],[13,7],[-14,-2],[1,29],[-4,-2],[6,13],[-7,6],[-10,44],[-7,20],[6,11],[15,-11],[24,0],[7,-6],[4,-14],[-9,-15],[12,8],[2,-20],[-7,-10],[2,-4],[10,14],[-1,29],[5,8],[-5,18],[-9,6],[8,12],[-10,16],[1,6]],[[60,8169],[1,-9],[-11,9],[10,0]],[[80,8161],[-11,0],[12,11],[-1,-11]],[[96,8175],[2,-14],[-10,0],[1,14],[7,0]],[[177,8186],[18,-5],[-12,-3],[-15,5],[9,3]],[[162,8200],[5,-4],[-4,-12],[-7,-4],[-27,-2],[22,6],[9,7],[-7,4],[9,5]],[[9827,8206],[-2,-8],[-9,2],[11,6]],[[9802,8235],[12,-10],[-11,-5],[-1,15]],[[332,8268],[5,-12],[-32,-29],[11,24],[7,1],[-1,9],[10,7]],[[367,8291],[6,-8],[9,8],[-9,-15],[8,1],[-14,-16],[-4,1],[-20,-13],[-6,4],[19,9],[1,25],[10,4]],[[391,8303],[7,-5],[-10,-3],[3,8]],[[451,8354],[5,-1],[6,-16],[-8,-9],[-16,0],[-4,-9],[-14,-3],[-3,11],[7,3],[10,16],[3,-2],[14,10]],[[1304,8361],[8,-30],[-14,25],[6,5]],[[558,8363],[-9,-20],[4,19],[5,1]],[[1355,8404],[7,-16],[-1,-16],[-6,-11],[-13,9],[-5,8],[5,20],[13,6]],[[1295,8417],[2,-9],[-14,-4],[5,11],[7,2]],[[1319,8419],[9,-1],[0,-12],[-13,5],[4,8]],[[1289,8428],[10,-1],[4,-16],[13,-7],[9,-30],[9,-9],[-1,-33],[-16,17],[2,8],[-21,10],[8,20],[-11,-1],[6,13],[-3,17],[-9,2],[0,10]],[[1315,8433],[-5,-12],[-6,8],[11,4]],[[1328,8428],[4,-13],[-9,9],[0,12],[5,-8]],[[1308,8454],[9,-14],[-10,-3],[1,17]],[[1278,8457],[7,-4],[1,-11],[-6,-6],[-6,-28],[-3,4],[0,20],[-4,26],[11,-1]],[[1283,8470],[24,-10],[-2,-17],[-9,13],[7,-18],[-16,-4],[0,23],[-10,9],[6,4]],[[745,8475],[8,0],[-14,-10],[6,10]],[[1234,8479],[-1,-12],[-6,-2],[-1,19],[8,-5]],[[1237,8491],[8,2],[9,-14],[7,-29],[-1,-30],[-5,0],[-13,33],[-1,15],[-10,18],[6,5]],[[749,8519],[11,0],[7,-8],[-2,-10],[8,0],[-4,-10],[-18,4],[10,-7],[-18,-9],[-14,-22],[-10,-6],[6,10],[-12,-1],[-12,22],[3,14],[7,7],[10,0],[7,-19],[-4,28],[5,5],[16,-5],[-3,10],[7,-3]],[[1229,8536],[23,-12],[-1,-13],[-7,-1],[-18,12],[14,-15],[13,1],[1,-16],[-7,0],[-19,17],[7,-17],[-4,-6],[-8,6],[-1,10],[-12,12],[1,20],[18,2]],[[1252,8544],[6,-11],[14,-6],[8,-16],[-2,-5],[2,-21],[-19,-19],[-1,12],[4,10],[-5,13],[-7,43]],[[761,8550],[18,-11],[-6,-8],[-18,-4],[-10,2],[1,9],[10,1],[5,11]],[[913,8659],[5,-3],[-25,-29],[20,32]],[[385,8661],[13,-6],[2,-22],[-19,-5],[-10,2],[-19,13],[-4,7],[16,0],[9,9],[12,2]],[[929,8665],[13,-4],[-15,-9],[2,13]],[[897,8667],[-2,-19],[-4,10],[6,9]],[[231,8857],[0,-6],[17,-7],[20,7],[23,-20],[21,-2],[-2,-9],[-15,1],[-9,-13],[-3,10],[-28,19],[-17,-8],[-13,10],[6,18]],[[1387,8402],[-3,-8],[4,-28],[-10,-21],[-9,-8],[-7,2],[-3,23],[6,6],[-1,24],[-15,16],[-8,-7],[-7,-22],[-9,13],[7,4],[5,24],[-18,22],[-11,25],[-19,8],[12,9],[-11,10],[-3,12],[14,-6],[-15,12],[-15,23],[-16,11],[-4,24],[-6,1],[-1,17],[-6,-11],[7,-17],[1,-24],[-13,11],[-8,-2],[2,13],[-8,12],[-3,-4],[-17,8],[19,-18],[2,-12],[-9,-4],[-20,5],[-23,23],[-9,16],[-34,19],[-11,9],[12,10],[-5,11],[-18,-12],[-9,0],[-21,9],[3,11],[-13,-5],[-31,8],[-30,-6],[-12,12],[-16,5],[3,18],[-11,-14],[-21,5],[9,13],[-18,-1],[-16,19],[-12,1],[-2,-7],[-15,-3],[-3,6],[9,19],[-17,-18],[2,-20],[8,-8],[-6,-3],[-8,-27],[-18,1],[-5,-5],[-2,13],[-12,-25],[-13,3],[-7,-13],[-19,-17],[-16,-2],[-6,6],[3,9],[19,10],[2,8],[-11,-6],[-10,7],[4,16],[8,10],[5,19],[-5,8],[27,21],[6,-6],[18,3],[-14,10],[4,5],[-19,4],[-15,-15],[-9,-2],[-20,-27],[-7,-16],[-11,-2],[9,-10],[-18,-24],[-11,0],[-4,-11],[-9,-5],[-3,-20],[10,3],[13,-8],[2,-6],[-11,-12],[-5,0],[-14,-31],[-4,7],[-2,-11],[-12,1],[-9,-17],[-9,2],[-2,-13],[-10,-1],[-14,-15],[7,-5],[-7,-12],[-5,4],[-12,-16],[-17,-5],[-2,-11],[-13,-1],[-4,-8],[7,-10],[-10,-4],[-1,-7],[-22,-6],[-5,-17],[-6,16],[-20,-21],[-10,2],[-12,-10],[-5,2],[6,12],[-10,1],[-6,-22],[-9,-11],[-12,8],[-4,-14],[-7,2],[-9,-9],[0,18],[10,3],[22,30],[12,12],[9,3],[34,-7],[-10,9],[5,17],[16,15],[24,17],[9,-4],[-1,15],[10,16],[18,15],[2,46],[12,18],[5,16],[-8,-7],[-25,-13],[-11,12],[1,10],[-9,-10],[4,-20],[-11,-2],[-14,29],[-8,-10],[-12,17],[-19,-11],[-20,-18],[-11,4],[11,7],[-1,13],[6,7],[-12,2],[0,15],[7,6],[-20,46],[-1,-17],[-16,-8],[-23,-4],[-9,6],[-13,23],[-19,12],[20,19],[18,-3],[7,-12],[9,7],[-4,7],[-29,2],[-20,20],[-7,-6],[-9,14],[0,21],[-6,7],[15,2],[-4,13],[18,26],[8,-3],[-3,14],[5,17],[11,0],[-8,7],[7,5],[17,0],[2,-11],[17,1],[20,24],[25,-1],[18,17],[-6,30],[-13,9],[10,4],[9,13],[-10,12],[-41,-24],[-17,-5],[-12,9],[-18,0],[-19,-8],[-33,8],[-8,6],[3,12],[-11,10],[7,9],[13,2],[-38,8],[-18,10],[37,28],[24,9],[16,13],[16,7],[29,2],[-7,-11],[7,-19],[26,2],[24,-8],[11,18],[13,-3],[-13,10],[-11,-2],[-2,11],[-15,10],[-5,9],[9,3],[7,-17],[12,-11],[10,4],[14,-9],[16,2],[-3,14],[-23,0],[-9,-7],[-10,10],[2,20],[-23,-2],[-30,5],[-10,27],[-34,25],[-20,9],[-16,11],[9,17],[0,14],[16,-2],[37,4],[19,11],[15,16],[2,19],[29,33],[26,0],[45,27],[39,4],[21,14],[12,13],[33,-7],[-12,-12],[11,-6],[16,16],[13,-7],[2,-12],[19,5],[38,-1],[9,-4],[-12,-15],[24,0],[-6,-6],[32,3],[11,-5],[30,5],[31,-8],[27,-11],[40,0],[30,-12],[40,9],[52,-27],[12,0]],[[2912,6333],[-2,-4]],[[2914,6329],[-1,4]],[[6651,7782],[-7,-26],[12,-19],[-3,-12],[11,5],[3,8],[-2,16],[3,11]],[[6601,7610],[-7,11],[-5,-2],[-4,-22]],[[6627,7805],[-10,-35],[2,-18],[4,-10],[9,17],[-3,20],[3,6],[-1,16]],[[3301,5940],[-4,4],[5,8],[-1,-12]],[[3313,5694],[1,-6],[-5,-8],[-9,-2],[1,7],[12,9]],[[3303,5691],[4,12],[2,-5],[-6,-7]],[[3228,5816],[-8,-8],[-9,6],[4,7],[6,-5],[4,10],[3,-10]],[[3018,5865],[-3,-7],[-14,-7],[0,-13],[10,-38],[-1,-16],[-4,-6],[-10,-30],[5,-18],[6,-7],[-1,-15],[6,-5],[9,7],[5,10],[-1,32],[-11,30],[-2,23],[3,10],[4,0],[12,13],[18,8],[5,9],[8,-2],[-2,13],[-11,-5],[-2,13],[2,16],[5,5],[6,-10],[2,-22],[4,-10],[12,3],[15,-10],[7,-12],[4,-15],[-2,-7],[5,-15],[8,-1],[17,4],[6,4],[21,2],[11,-20],[11,-9],[11,-5],[8,2],[4,9],[5,0],[2,8],[20,5],[-5,5],[-9,1],[10,6],[7,-3],[11,6],[12,1],[16,-4],[8,4],[-2,-6],[-10,-6],[-16,0],[1,-9],[5,-5],[1,-12],[-9,-1],[5,-4],[8,8],[5,-25],[2,17],[11,-10],[7,-3],[-2,7],[13,-19],[4,1],[7,-12],[-9,-24],[-3,-22],[-12,0],[10,-11],[3,6],[14,6],[6,-4],[3,6],[9,-4]],[[7888,5785],[0,-17],[-4,12],[4,5]],[[7999,6420],[-7,1],[-4,-12],[-7,-3],[1,-12],[-6,-6],[-5,4],[-9,-2],[4,-16],[-8,-8],[2,-17],[-7,-4],[-4,-11],[-7,-4],[-3,-15],[-1,-23],[-5,-13],[7,-30],[7,-15],[11,-17],[-1,-15],[8,-21],[9,-14],[4,-12],[16,-29],[6,-2],[16,-47],[8,-11],[1,-21],[5,-18],[-2,-5],[6,-25],[0,-35],[2,-3],[0,-23],[3,-13],[-6,-10],[0,-42],[-3,-5],[4,-7],[-4,-10],[-2,4],[0,-16],[-7,-2],[-2,-8],[-4,0],[-8,-14],[-6,-1],[-2,-13],[-5,0],[-11,-13],[-13,0],[-5,12],[1,-23],[-11,2],[11,-9],[-4,-11],[-6,4],[7,-11],[-3,-2],[-12,24],[0,-5],[10,-18],[2,-11],[-5,-6],[-10,15],[4,-19],[-1,-6],[-17,-13],[-12,-29],[-11,-2],[5,9],[-2,10],[0,36],[2,17],[6,7],[-10,15],[-5,-5],[-3,16]],[[9706,4050],[-7,13],[4,7],[3,-20]],[[9699,4104],[2,-14],[-8,6],[0,12],[6,-4]],[[9675,4172],[7,-8],[-6,-8],[-6,7],[5,9]],[[9671,4228],[8,-15],[-7,1],[-1,14]],[[9675,4243],[-6,-2],[-6,7],[7,9],[5,-14]],[[9650,4255],[10,-14],[1,-7],[-10,-6],[-4,27],[-5,1],[1,12],[4,-1],[3,-12]],[[9672,4262],[-3,21],[1,9],[3,-20],[-1,-10]],[[9662,4292],[-5,2],[9,9],[-4,-11]],[[9671,4298],[-2,1],[-1,24],[2,-2],[1,-23]],[[9633,4310],[4,2],[0,11],[5,-11],[3,-23],[-11,-7],[-7,15],[1,11],[-3,15],[1,17],[5,-11],[2,-19]],[[9653,4368],[1,-9],[-5,0],[4,9]],[[9654,4385],[-4,-3],[-1,10],[5,-7]],[[5917,7177],[-8,1]],[[233,4380],[5,-6],[-14,2],[-4,7],[7,5],[6,-8]],[[213,4406],[3,-6],[-1,-12],[-9,0],[-5,15],[12,3]],[[6488,5914],[7,-6],[7,6],[10,-9],[-9,-11],[-10,-3],[-6,2],[-5,12],[6,9]],[[6474,6141],[-14,-9],[-10,-18],[-2,-12],[2,-20],[-10,-7],[-13,-15],[-23,-11],[-11,-11],[-4,0],[-25,-18],[-3,-12],[-8,-16],[-6,-3],[-14,3],[-10,-9],[-6,-13],[-15,-8],[-5,-6],[-14,0],[-16,-6],[-7,-15],[-15,-17],[-7,3],[-4,-8],[-14,-5],[-10,9],[-3,-4],[-7,35],[2,25],[-6,21],[-2,16],[-3,43],[-6,7],[4,2],[-3,17],[3,18],[-1,29]],[[5913,3637],[-1,-16],[-5,-23],[-3,-38],[-5,-21],[-10,-19],[-7,-3],[-13,-27],[-21,-68],[-4,-16],[-15,-32],[-4,-4],[-16,-28],[-9,-21],[-13,-22],[-25,-35],[-27,-26],[-15,4],[-9,-9],[0,-11],[-17,5],[-4,-12],[-11,1],[-8,6],[-16,4],[-6,-7],[-23,6],[-10,-4],[-12,-19],[-7,3],[-6,-5],[-11,4],[-1,-6],[-11,0],[-14,-20],[-9,3],[-9,9],[0,11],[-6,4],[-8,-2],[0,17],[-10,-2],[0,-13],[-4,19],[5,10],[-2,12],[-7,16],[-4,20],[-4,-1],[1,18],[7,-2],[4,8],[1,20],[-2,22],[-4,17],[-9,20],[-7,28],[-8,24],[-6,42],[-6,29],[-7,15],[-3,15]],[[5815,3905],[12,3],[14,-12],[15,3],[13,-7]],[[5844,4282],[-15,1],[-13,-5],[-15,-18],[0,-21],[-3,-8]],[[5798,4231],[-3,3],[-13,-9],[-5,-13],[-12,-14],[-13,-38],[-2,-11]],[[5750,4149],[-9,-7],[-14,11],[-7,-7],[-7,11],[-12,1]],[[5792,4643],[5,5],[9,23],[3,15],[-7,8]],[[5849,4709],[-4,-14],[7,-1],[9,-18],[5,4],[-1,8]],[[5750,4149],[10,22],[5,5],[4,17],[11,9],[0,11],[8,0],[8,9],[1,-7],[8,12],[-7,4]]],"type":"Topology","objects":{"units":{"geometries":[{"arcs":[[0,1,2,3,4,5]],"type":"Polygon","id":"AFG","properties":{"name":"Afghanistan"}},{"arcs":[[[6,7,8,9]],[[10,11,12]]],"type":"MultiPolygon","id":"AGO","properties":{"name":"Angola"}},{"arcs":[[[13,14]],[[15,16]],[[17,18,19,20,21,22,23,24,25,26,27,28,29,30]]],"type":"MultiPolygon","id":"ALB","properties":{"name":"Albania"}},{"arcs":[[[31]]],"type":"MultiPolygon","id":"ALD","properties":{"name":"Aland"}},{"arcs":[[32,33]],"type":"Polygon","id":"AND","properties":{"name":"Andorra"}},{"arcs":[[[34]],[[35,36,37,38,39],[40]]],"type":"MultiPolygon","id":"ARE","properties":{"name":"United Arab Emirates"}},{"arcs":[[[41,42]],[[43,44]],[[45,46,47,48,49,50]]],"type":"MultiPolygon","id":"ARG","properties":{"name":"Argentina"}},{"arcs":[[[51]],[[52,53,54,55,56],[57],[58]]],"type":"MultiPolygon","id":"ARM","properties":{"name":"Armenia"}},{"arcs":[[[59]],[[60]],[[61]],[[62]],[[63]],[[64]],[[65]],[[66]],[[67]],[[68]],[[69]],[[70]],[[71]],[[72]],[[73]],[[74]],[[75]],[[76]],[[77]],[[78]],[[79]],[[80]],[[81]],[[82]],[[83]],[[84]],[[85]],[[86]],[[87]],[[88]],[[89]],[[90]],[[91]],[[92]],[[93]],[[94]],[[95]],[[96]],[[97]],[[98]],[[99]],[[100]],[[101]],[[102]],[[103]],[[104]],[[105]],[[106]],[[107]],[[108]],[[109]],[[110]],[[111]],[[112]],[[113]],[[114]],[[115]],[[116]],[[117]],[[118]],[[119]],[[120]]],"type":"MultiPolygon","id":"ATA","properties":{"name":"Antarctica"}},{"arcs":[[[121]]],"type":"MultiPolygon","id":"ATF","properties":{"name":"Fr. S. Antarctic Lands"}},{"arcs":[[[122]],[[123]],[[124]],[[125]],[[126]],[[127]],[[128]],[[129]],[[130]],[[131]],[[132]],[[133]],[[134]],[[135]],[[136]],[[137]],[[138]],[[139]],[[140]]],"type":"MultiPolygon","id":"AUS","properties":{"name":"Australia"}},{"arcs":[[141,142,143,144,145,146,147,148,149,150]],"type":"Polygon","id":"AUT","properties":{"name":"Austria"}},{"arcs":[[[151,152,-55]],[[-59]],[[-58]],[[153,154,155,-53,156],[-52]]],"type":"MultiPolygon","id":"AZE","properties":{"name":"Azerbaijan"}},{"arcs":[[157,158,159,160]],"type":"Polygon","id":"BDI","properties":{"name":"Burundi"}},{"arcs":[[161,162,163,164,165,166,167]],"type":"Polygon","id":"BEL","properties":{"name":"Belgium"}},{"arcs":[[168,169,170,171,172]],"type":"Polygon","id":"BEN","properties":{"name":"Benin"}},{"arcs":[[173,-172,174,175,176,177]],"type":"Polygon","id":"BFA","properties":{"name":"Burkina Faso"}},{"arcs":[[[178]],[[179]],[[180,181,182]]],"type":"MultiPolygon","id":"BGD","properties":{"name":"Bangladesh"}},{"arcs":[[183,184,185,186,187,188]],"type":"Polygon","id":"BGR","properties":{"name":"Bulgaria"}},{"arcs":[[189]],"type":"Polygon","id":"BHR","properties":{"name":"Bahrain"}},{"arcs":[[[190]],[[191]],[[192]],[[193]],[[194]],[[195]],[[196]],[[197]],[[198]],[[199]],[[200]]],"type":"MultiPolygon","id":"BHS","properties":{"name":"Bahamas"}},{"arcs":[[201,202,203,204,205]],"type":"Polygon","id":"BIH","properties":{"name":"Bosnia and Herz."}},{"arcs":[[206,207,208,209,210]],"type":"Polygon","id":"BLR","properties":{"name":"Belarus"}},{"arcs":[[[211,212,213]]],"type":"MultiPolygon","id":"BLZ","properties":{"name":"Belize"}},{"arcs":[[[214,215]],[[216,-51,217,218,219,220,221]]],"type":"MultiPolygon","id":"BOL","properties":{"name":"Bolivia"}},{"arcs":[[[222]],[[223]],[[224]],[[225]],[[226]],[[227]],[[228]],[[229]],[[230]],[[231]],[[232]],[[233]],[[234]],[[235]],[[236]],[[237]],[[238,239,240,241,242,243,-47,244,245,246,-222,247,248,249,250]]],"type":"MultiPolygon","id":"BRA","properties":{"name":"Brazil"}},{"arcs":[[251]],"type":"Polygon","id":"BRB","properties":{"name":"Barbados"}},{"arcs":[[[252,253]],[[254,255]]],"type":"MultiPolygon","id":"BRN","properties":{"name":"Brunei"}},{"arcs":[[256,257]],"type":"Polygon","id":"BTN","properties":{"name":"Bhutan"}},{"arcs":[[258,259,260]],"type":"Polygon","id":"BWA","properties":{"name":"Botswana"}},{"arcs":[[261,262,263,264,265,266]],"type":"Polygon","id":"CAF","properties":{"name":"Central African Rep."}},{"arcs":[[[267]],[[268]],[[269]],[[270]],[[271]],[[272]],[[273]],[[274,275,276,277]],[[278]],[[279]],[[280]],[[281]],[[282]],[[283]],[[284]],[[285]],[[286]],[[287]],[[288]],[[289]],[[290]],[[291]],[[292]],[[293]],[[294]],[[295]],[[296]],[[297]],[[298]],[[299]],[[300]],[[301]],[[302]],[[303]],[[304]],[[305]],[[306]],[[307]],[[308]],[[309]],[[310]],[[311]],[[312]],[[313]],[[314]],[[315]],[[316]],[[317]],[[318]],[[319]],[[320]],[[321]],[[322]],[[323]],[[324]],[[325]],[[326]],[[327]],[[328]],[[329]],[[330]],[[331]],[[332]],[[333,334,335,336,337,338,339,340,341,342,343,344,345,-346,346,347]],[[348]],[[349]],[[350]],[[351]],[[352]],[[353]],[[354]],[[355]],[[356]],[[357]],[[358]],[[359]],[[360]],[[361]],[[362]],[[363]],[[364]],[[365]],[[366]],[[367]],[[368]],[[369]],[[370]],[[371]],[[372]],[[373]],[[374]],[[375]],[[376]],[[377]],[[378]],[[379]],[[380]],[[381]],[[382]],[[383]],[[384]]],"type":"MultiPolygon","id":"CAN","properties":{"name":"Canada"}},{"arcs":[[385,386,387,-148,388,-146,389,390,391,392,393]],"type":"Polygon","id":"CHE","properties":{"name":"Switzerland"}},{"arcs":[[[394]],[[395]],[[396]],[[397]],[[398]],[[399]],[[400]],[[401]],[[402]],[[-44,403,-42,404]],[[405]],[[406]],[[407]],[[408]],[[409]],[[410]],[[411]],[[412]],[[413]],[[414]],[[415]],[[416]],[[417]],[[418]],[[419]],[[420]],[[421]],[[422]],[[423]],[[424]],[[425]],[[426]],[[427]],[[428]],[[429]],[[430]],[[431]],[[432]],[[433]],[[434]],[[435]],[[-50,436,437,-218]]],"type":"MultiPolygon","id":"CHL","properties":{"name":"Chile"}},{"arcs":[[[438]],[[439]],[[440]],[[441]],[[442,443,444,445,446,447,448,449,450,451,-258,452,453,454,455,456,-1,457,458,459,460,461,462,463,464]]],"type":"MultiPolygon","id":"CHN","properties":{"name":"China"}},{"arcs":[[[465,466]],[[-177,467,468,469,470,471]]],"type":"MultiPolygon","id":"CIV","properties":{"name":"C\xf4te d\'Ivoire"}},{"arcs":[[[472,-266,473,474,475,476,477,478,479]],[[480,481]]],"type":"MultiPolygon","id":"CMR","properties":{"name":"Cameroon"}},{"arcs":[[[482,483,484,485]],[[486,487,488,489]],[[490,491,492,493]]],"type":"MultiPolygon","id":"CNM","properties":{"name":"Cyprus U.N. Buffer Zone"}},{"arcs":[[[494]],[[495,496,497,498,499,500,501,502,503,-160,504,505,506,507,-10,508,-11,509,-264]]],"type":"MultiPolygon","id":"COD","properties":{"name":"Dem. Rep. Congo"}},{"arcs":[[-510,-13,510,511,-474,-265]],"type":"Polygon","id":"COG","properties":{"name":"Congo"}},{"arcs":[[[512,-249,513,514,515,516,517]]],"type":"MultiPolygon","id":"COL","properties":{"name":"Colombia"}},{"arcs":[[[518]],[[519]]],"type":"MultiPolygon","id":"COM","properties":{"name":"Comoros"}},{"arcs":[[[520]],[[521]],[[522]],[[523]]],"type":"MultiPolygon","id":"CPV","properties":{"name":"Cape Verde"}},{"arcs":[[[524,525,526,527]]],"type":"MultiPolygon","id":"CRI","properties":{"name":"Costa Rica"}},{"arcs":[[[528]],[[529]],[[530]],[[531,532,533,534]]],"type":"MultiPolygon","id":"CUB","properties":{"name":"Cuba"}},{"arcs":[[535]],"type":"Polygon","id":"CUW","properties":{"name":"Cura\xe7ao"}},{"arcs":[[[536,-488]],[[-486,537,-494,538]]],"type":"MultiPolygon","id":"CYN","properties":{"name":"N. Cyprus"}},{"arcs":[[[539,540]],[[541]],[[542,543,-484]],[[544,545,546,547,-490,548,-492]]],"type":"MultiPolygon","id":"CYP","properties":{"name":"Cyprus"}},{"arcs":[[549,550,-151,551]],"type":"Polygon","id":"CZE","properties":{"name":"Czech Rep."}},{"arcs":[[[-387,552]],[[553,554]],[[555]],[[556,557,-552,-150,558,-394,559,560,-162,561,562,563]]],"type":"MultiPolygon","id":"DEU","properties":{"name":"Germany"}},{"arcs":[[564,565,566,567,568,569]],"type":"Polygon","id":"DJI","properties":{"name":"Djibouti"}},{"arcs":[[570]],"type":"Polygon","id":"DMA","properties":{"name":"Dominica"}},{"arcs":[[[571]],[[572]],[[573]],[[574]],[[575]],[[576]],[[577]],[[-564,578]]],"type":"MultiPolygon","id":"DNK","properties":{"name":"Denmark"}},{"arcs":[[[579,580,581,582,583,584]]],"type":"MultiPolygon","id":"DOM","properties":{"name":"Dominican Rep."}},{"arcs":[[585,586,587,588,589,590,591,592]],"type":"Polygon","id":"DZA","properties":{"name":"Algeria"}},{"arcs":[[[593]],[[594]],[[595]],[[596]],[[597]],[[598]],[[599,600,-515]]],"type":"MultiPolygon","id":"ECU","properties":{"name":"Ecuador"}},{"arcs":[[[601,602,603,604,605,606]]],"type":"MultiPolygon","id":"EGY","properties":{"name":"Egypt"}},{"arcs":[[[607]],[[-569,608,609,610]]],"type":"MultiPolygon","id":"ERI","properties":{"name":"Eritrea"}},{"arcs":[[-485,-544,611,-541,612,-545,-491,-538],[-542]],"type":"Polygon","id":"ESB","properties":{"name":"Dhekelia"}},{"arcs":[[[613]],[[614]],[[615]],[[616]],[[617]],[[618]],[[619,620]],[[621,622]],[[623]],[[624]],[[625]],[[626]],[[627,-33,628,629,630,631,632,633]]],"type":"MultiPolygon","id":"ESP","properties":{"name":"Spain"}},{"arcs":[[[634]],[[635]],[[636,637,638,639,640,641,642,643,644]]],"type":"MultiPolygon","id":"EST","properties":{"name":"Estonia"}},{"arcs":[[-568,645,-566,646,647,648,649,650,-609]],"type":"Polygon","id":"ETH","properties":{"name":"Ethiopia"}},{"arcs":[[[651]],[[652,653,654,655]]],"type":"MultiPolygon","id":"FIN","properties":{"name":"Finland"}},{"arcs":[[[656]],[[657]],[[658]]],"type":"MultiPolygon","id":"FJI","properties":{"name":"Fiji"}},{"arcs":[[[659]],[[660]]],"type":"MultiPolygon","id":"FLK","properties":{"name":"Falkland Is."}},{"arcs":[[[661]],[[662]],[[-240,663,664]],[[665]],[[666]],[[667]],[[668]],[[669,-560,-393,670,-391,671,672,673,674,-629,-34,-628,675,-164],[-627]]],"type":"MultiPolygon","id":"FRA","properties":{"name":"France"}},{"arcs":[[[676]],[[677]]],"type":"MultiPolygon","id":"FRO","properties":{"name":"Faeroe Is."}},{"arcs":[[[678]]],"type":"MultiPolygon","id":"FSM","properties":{"name":"Micronesia"}},{"arcs":[[[-512,679,680,-475]]],"type":"MultiPolygon","id":"GAB","properties":{"name":"Gabon"}},{"arcs":[[[681]],[[682]],[[683,684]],[[685]],[[686]],[[687]],[[688]],[[689]],[[690]],[[691]],[[692]],[[693]],[[694]],[[695]]],"type":"MultiPolygon","id":"GBR","properties":{"name":"United Kingdom"}},{"arcs":[[-157,-57,696,697,698]],"type":"Polygon","id":"GEO","properties":{"name":"Georgia"}},{"arcs":[[699,700,-466,701,-468,-176]],"type":"Polygon","id":"GHA","properties":{"name":"Ghana"}},{"arcs":[[-631,702]],"type":"Polygon","id":"GIB","properties":{"name":"Gibraltar"}},{"arcs":[[703,-471,704,705,706,707,708]],"type":"Polygon","id":"GIN","properties":{"name":"Guinea"}},{"arcs":[[709,710]],"type":"Polygon","id":"GMB","properties":{"name":"Gambia"}},{"arcs":[[[711]],[[712,713,-708]]],"type":"MultiPolygon","id":"GNB","properties":{"name":"Guinea-Bissau"}},{"arcs":[[[-681,714,-476]],[[715]]],"type":"MultiPolygon","id":"GNQ","properties":{"name":"Eq. Guinea"}},{"arcs":[[[716]],[[717]],[[718]],[[719]],[[720]],[[721]],[[722]],[[723]],[[724]],[[725]],[[726]],[[727]],[[728]],[[729]],[[730]],[[731]],[[732,-186,733,734,-27,735,-25,736]]],"type":"MultiPolygon","id":"GRC","properties":{"name":"Greece"}},{"arcs":[[[737]]],"type":"MultiPolygon","id":"GRD","properties":{"name":"Grenada"}},{"arcs":[[[738]],[[739]],[[740]],[[741]],[[742]],[[743]],[[744]],[[745]],[[746]],[[747]],[[748]],[[749]],[[750]],[[751]],[[752]],[[753]],[[754]],[[755]],[[756]],[[757]],[[758]],[[759]],[[760]],[[761]],[[762]],[[763]]],"type":"MultiPolygon","id":"GRL","properties":{"name":"Greenland"}},{"arcs":[[-213,764,765,766,767,768]],"type":"Polygon","id":"GTM","properties":{"name":"Guatemala"}},{"arcs":[[769]],"type":"Polygon","id":"GUM","properties":{"name":"Guam"}},{"arcs":[[[770,-251,771,772]]],"type":"MultiPolygon","id":"GUY","properties":{"name":"Guyana"}},{"arcs":[[[773,-447]]],"type":"MultiPolygon","id":"HKG","properties":{"name":"Hong Kong"}},{"arcs":[[774]],"type":"Polygon","id":"HMD","properties":{"name":"Heard I. and McDonald Is."}},{"arcs":[[[775,776,777,-766,778]]],"type":"MultiPolygon","id":"HND","properties":{"name":"Honduras"}},{"arcs":[[[-204,779,780]],[[781]],[[782]],[[783]],[[784]],[[785,786,-206,787,788]]],"type":"MultiPolygon","id":"HRV","properties":{"name":"Croatia"}},{"arcs":[[[-582,789]],[[790]],[[-584,791,-580,792]]],"type":"MultiPolygon","id":"HTI","properties":{"name":"Haiti"}},{"arcs":[[793,794,795,-786,796,-143,797]],"type":"Polygon","id":"HUN","properties":{"name":"Hungary"}},{"arcs":[[[798]],[[799]],[[800]],[[801,802,803,804]],[[805]],[[806]],[[807]],[[808]],[[809]],[[810]],[[811]],[[812]],[[813]],[[814]],[[815]],[[816]],[[817]],[[818]],[[819]],[[820]],[[821]],[[822]],[[823]],[[824]],[[825]],[[826]],[[827]],[[828]],[[829]],[[830]],[[831]],[[832]],[[833]],[[834]],[[835]],[[836]],[[837]],[[838]],[[839]],[[840]],[[841]],[[842]],[[843]],[[844]],[[845]],[[846]],[[847]],[[848]],[[849]],[[850]],[[851]],[[852]],[[853]],[[854]],[[855]],[[856]],[[857,858]],[[859]],[[860]],[[861]],[[862]],[[863]],[[864]],[[865]],[[866]],[[867]],[[868]],[[869]],[[870]],[[871]],[[872]],[[873]],[[874]],[[875]],[[876]],[[877]],[[878]],[[879]],[[880]],[[881,882]],[[883]],[[884,885]],[[886]],[[887]]],"type":"MultiPolygon","id":"IDN","properties":{"name":"Indonesia"}},{"arcs":[[888]],"type":"Polygon","id":"IMN","properties":{"name":"Isle of Man"}},{"arcs":[[[889]],[[890]],[[891]],[[892]],[[893,-453,-257,-452,894,-183,895,896,897,-455]]],"type":"MultiPolygon","id":"IND","properties":{"name":"India"}},{"arcs":[[[-684,898]]],"type":"MultiPolygon","id":"IRL","properties":{"name":"Ireland"}},{"arcs":[[[899]],[[-54,-156,900,901,-3,902,903,904,905,-152]]],"type":"MultiPolygon","id":"IRN","properties":{"name":"Iran"}},{"arcs":[[-905,906,907,908,909,910,911,912,913]],"type":"Polygon","id":"IRQ","properties":{"name":"Iraq"}},{"arcs":[[[914]]],"type":"MultiPolygon","id":"ISL","properties":{"name":"Iceland"}},{"arcs":[[915,916,917,918,919,920,921,-603,922,923,924,925]],"type":"Polygon","id":"ISR","properties":{"name":"Israel"}},{"arcs":[[[926]],[[927]],[[928,929,-672,-390,-145],[930],[931]]],"type":"MultiPolygon","id":"ITA","properties":{"name":"Italy"}},{"arcs":[[932]],"type":"Polygon","id":"JAM","properties":{"name":"Jamaica"}},{"arcs":[[933,934,-921,935,-919,936,937,-916,938,-910]],"type":"Polygon","id":"JOR","properties":{"name":"Jordan"}},{"arcs":[[[939]],[[940]],[[941]],[[942]],[[943]],[[944]],[[945]],[[946]],[[947]],[[948]],[[949]],[[950]],[[951]]],"type":"MultiPolygon","id":"JPN","properties":{"name":"Japan"}},{"arcs":[[952]],"type":"Polygon","id":"KAB","properties":{"name":"Baikonur"}},{"arcs":[[-898,953,-456]],"type":"Polygon","id":"KAS","properties":{"name":"Siachen Glacier"}},{"arcs":[[[954,955]],[[-460,956,957,958,959,960,961,962],[-953]]],"type":"MultiPolygon","id":"KAZ","properties":{"name":"Kazakhstan"}},{"arcs":[[[-649,963,964,965,966,967,968]]],"type":"MultiPolygon","id":"KEN","properties":{"name":"Kenya"}},{"arcs":[[-459,969,970,-957],[971],[972],[973]],"type":"Polygon","id":"KGZ","properties":{"name":"Kyrgyzstan"}},{"arcs":[[[974,975,976,977]]],"type":"MultiPolygon","id":"KHM","properties":{"name":"Cambodia"}},{"arcs":[[[978]]],"type":"MultiPolygon","id":"KIR","properties":{"name":"Kiribati"}},{"arcs":[[[979]],[[980]],[[981]],[[982,983]]],"type":"MultiPolygon","id":"KOR","properties":{"name":"Korea"}},{"arcs":[[984,-18,985,986]],"type":"Polygon","id":"XKX","properties":{"name":"Kosovo"}},{"arcs":[[[987]],[[988,-908,989]]],"type":"MultiPolygon","id":"KWT","properties":{"name":"Kuwait"}},{"arcs":[[990,-977,991,992,-450]],"type":"Polygon","id":"LAO","properties":{"name":"Lao PDR"}},{"arcs":[[-925,993,994]],"type":"Polygon","id":"LBN","properties":{"name":"Lebanon"}},{"arcs":[[-470,995,996,-705]],"type":"Polygon","id":"LBR","properties":{"name":"Liberia"}},{"arcs":[[-606,997,998,999,-587,1000,1001]],"type":"Polygon","id":"LBY","properties":{"name":"Libya"}},{"arcs":[[1002]],"type":"Polygon","id":"LCA","properties":{"name":"Saint Lucia"}},{"arcs":[[-389,-147]],"type":"Polygon","id":"LIE","properties":{"name":"Liechtenstein"}},{"arcs":[[[1003]]],"type":"MultiPolygon","id":"LKA","properties":{"name":"Sri Lanka"}},{"arcs":[[1004]],"type":"Polygon","id":"LSO","properties":{"name":"Lesotho"}},{"arcs":[[[1005,1006]],[[-210,1007,1008,1009,1010]]],"type":"MultiPolygon","id":"LTU","properties":{"name":"Lithuania"}},{"arcs":[[-561,-670,-163]],"type":"Polygon","id":"LUX","properties":{"name":"Luxembourg"}},{"arcs":[[1011,-211,-1011,1012,-644]],"type":"Polygon","id":"LVA","properties":{"name":"Latvia"}},{"arcs":[[1013,1014]],"type":"Polygon","id":"MAF","properties":{"name":"St-Martin"}},{"arcs":[[-622,1015,-620,1016,-592,1017,1018]],"type":"Polygon","id":"MAR","properties":{"name":"Morocco"}},{"arcs":[[1019,-674]],"type":"Polygon","id":"MCO","properties":{"name":"Monaco"}},{"arcs":[[1020,1021]],"type":"Polygon","id":"MDA","properties":{"name":"Moldova"}},{"arcs":[[[1022]],[[1023]]],"type":"MultiPolygon","id":"MDG","properties":{"name":"Madagascar"}},{"arcs":[[[1024]],[[1025]],[[1026]],[[1027]],[[1028]],[[1029,1030,1031,1032,1033,-214,-769,1034,1035],[1036]]],"type":"MultiPolygon","id":"MEX","properties":{"name":"Mexico"}},{"arcs":[[[-23,1037]],[[-187,-733,1038,-15,1039,-21,1040,-19,-985,1041]]],"type":"MultiPolygon","id":"MKD","properties":{"name":"Macedonia"}},{"arcs":[[1042,-178,-472,-704,1043,1044,-589]],"type":"Polygon","id":"MLI","properties":{"name":"Mali"}},{"arcs":[[[1045]],[[1046]],[[1047]],[[1048]],[[1049]],[[1050]],[[-993,1051,1052,-181,-895,-451]]],"type":"MultiPolygon","id":"MMR","properties":{"name":"Myanmar"}},{"arcs":[[1053,-986,-31,1054,-16,1055,-29,1056,-780,-203]],"type":"Polygon","id":"MNE","properties":{"name":"Montenegro"}},{"arcs":[[-464,1057,-462,1058]],"type":"Polygon","id":"MNG","properties":{"name":"Mongolia"}},{"arcs":[[[1059,1060,1061,1062,1063,1064,1065,1066,1067]]],"type":"MultiPolygon","id":"MOZ","properties":{"name":"Mozambique"}},{"arcs":[[[1068,1069,1070,-590,-1045]]],"type":"MultiPolygon","id":"MRT","properties":{"name":"Mauritania"}},{"arcs":[[[1071]]],"type":"MultiPolygon","id":"MUS","properties":{"name":"Mauritius"}},{"arcs":[[[1072,1073]],[[1074,1075]],[[1076,1077]],[[1078,1079]],[[1080,-1065,1081,1082]]],"type":"MultiPolygon","id":"MWI","properties":{"name":"Malawi"}},{"arcs":[[[1083]],[[-882,1084]],[[1085]],[[1086]],[[1087,1088]],[[-886,1089,-256,1090,-253,1091]],[[1092]]],"type":"MultiPolygon","id":"MYS","properties":{"name":"Malaysia"}},{"arcs":[[1093,-261,1094,1095,-8]],"type":"Polygon","id":"NAM","properties":{"name":"Namibia"}},{"arcs":[[[1096]],[[1097]],[[1098]]],"type":"MultiPolygon","id":"NCL","properties":{"name":"New Caledonia"}},{"arcs":[[1099,1100,-173,-174,-1043,-588,-1000]],"type":"Polygon","id":"NER","properties":{"name":"Niger"}},{"arcs":[[[1101,-478,1102,-169,-1101]]],"type":"MultiPolygon","id":"NGA","properties":{"name":"Nigeria"}},{"arcs":[[[1103,-528,1104,-776]]],"type":"MultiPolygon","id":"NIC","properties":{"name":"Nicaragua"}},{"arcs":[[[-166,1105]],[[1106]],[[-562,-168,1107],[1108]]],"type":"MultiPolygon","id":"NLD","properties":{"name":"Netherlands"}},{"arcs":[[[1109]],[[1110]],[[1111]],[[1112]],[[1113]],[[1114]],[[1115]],[[1116]],[[1117]],[[1118]],[[1119]],[[1120]],[[1121]],[[1122]],[[1123,-656,1124,1125]],[[1126]],[[1127]],[[1128]],[[1129]],[[1130]],[[1131]],[[1132]]],"type":"MultiPolygon","id":"NOR","properties":{"name":"Norway"}},{"arcs":[[-894,-454]],"type":"Polygon","id":"NPL","properties":{"name":"Nepal"}},{"arcs":[[[1133]],[[1134]],[[1135]],[[1136]],[[1137]],[[1138]]],"type":"MultiPolygon","id":"NZL","properties":{"name":"New Zealand"}},{"arcs":[[[1139]],[[1140,1141,-37,1142]],[[-41],[-35]],[[-40,1143]]],"type":"MultiPolygon","id":"OMN","properties":{"name":"Oman"}},{"arcs":[[[-954,-897,1144,-903,-2,-457]]],"type":"MultiPolygon","id":"PAK","properties":{"name":"Pakistan"}},{"arcs":[[[1145]],[[-517,1146,-526,1147]]],"type":"MultiPolygon","id":"PAN","properties":{"name":"Panama"}},{"arcs":[[[-248,-221,1148,-215,1149,-219,-438,1150,-600,-514]]],"type":"MultiPolygon","id":"PER","properties":{"name":"Peru"}},{"arcs":[[[1151]],[[1152]],[[1153]],[[1154]],[[1155]],[[1156]],[[1157]],[[1158]],[[1159]],[[1160]],[[1161]],[[1162]],[[1163]],[[1164]],[[1165]],[[1166]],[[1167]],[[1168]],[[1169]],[[1170]],[[1171]],[[1172]],[[1173]],[[1174]],[[1175]],[[1176]],[[1177]],[[1178]],[[1179]],[[1180]],[[1181]]],"type":"MultiPolygon","id":"PHL","properties":{"name":"Philippines"}},{"arcs":[[[1182]]],"type":"MultiPolygon","id":"PLW","properties":{"name":"Palau"}},{"arcs":[[[1183]],[[1184]],[[1185]],[[1186]],[[1187]],[[1188]],[[1189]],[[1190]],[[1191]],[[1192]],[[1193]],[[1194]],[[-858,1195]],[[1196]],[[1197]],[[1198]],[[1199]]],"type":"MultiPolygon","id":"PNG","properties":{"name":"Papua New Guinea"}},{"arcs":[[1200,1201,1202,-1008,-209,1203,1204,-550,-558,1205,-554,1206]],"type":"Polygon","id":"POL","properties":{"name":"Poland"}},{"arcs":[[[1207]]],"type":"MultiPolygon","id":"PRI","properties":{"name":"Puerto Rico"}},{"arcs":[[[1208,1209,-983,1210,-445]]],"type":"MultiPolygon","id":"PRK","properties":{"name":"Dem. Rep. Korea"}},{"arcs":[[[1211]],[[1212]],[[1213]],[[1214]],[[1215,-633]]],"type":"MultiPolygon","id":"PRT","properties":{"name":"Portugal"}},{"arcs":[[-247,1216,-245,-46,-217]],"type":"Polygon","id":"PRY","properties":{"name":"Paraguay"}},{"arcs":[[[-602,1217,-923]],[[-938,1218,-917]]],"type":"MultiPolygon","id":"PSX","properties":{"name":"Palestine"}},{"arcs":[[[1219]]],"type":"MultiPolygon","id":"PYF","properties":{"name":"Fr. Polynesia"}},{"arcs":[[1220,1221]],"type":"Polygon","id":"QAT","properties":{"name":"Qatar"}},{"arcs":[[1222,1223,-189,1224,-795,1225,-1021]],"type":"Polygon","id":"ROU","properties":{"name":"Romania"}},{"arcs":[[[1226]],[[1227]],[[1228]],[[1229]],[[1230]],[[1231]],[[1232]],[[1233]],[[1234]],[[1235]],[[1236]],[[-1203,1237,-1201,1238,-1006,1239,-1009]],[[1240]],[[1241]],[[1242,-639]],[[1243]],[[1244]],[[1245]],[[1246]],[[1247]],[[1248]],[[1249]],[[1250]],[[1251]],[[1252]],[[1253]],[[1254]],[[1255]],[[1256]],[[1257]],[[1258]],[[1259]],[[1260]],[[1261]],[[1262]],[[1263]],[[1264]],[[1265]],[[1266]],[[1267]],[[1268]],[[1269]],[[1270]],[[-1209,-444,1271,-465,-1059,-461,-963,1272,-154,-699,1273,1274,-207,-1012,-643,1275,-641,1276,-637,1277,-653,-1124,1278]],[[1279]],[[1280]],[[1281]],[[1282]],[[1283]],[[1284]],[[1285]],[[1286]],[[1287]],[[1288]],[[1289]],[[1290]],[[1291]],[[1292]],[[1293]],[[1294]],[[1295]],[[1296]],[[1297]],[[1298]]],"type":"MultiPolygon","id":"RUS","properties":{"name":"Russia"}},{"arcs":[[1299,-161,-504,1300,-502,1301]],"type":"Polygon","id":"RWA","properties":{"name":"Rwanda"}},{"arcs":[[-591,-1071,1302,-1018]],"type":"Polygon","id":"ESH","properties":{"name":"W. Sahara"}},{"arcs":[[[1303]],[[-989,1304,-1221,1305,-38,-1142,1306,1307,-934,-909]]],"type":"MultiPolygon","id":"SAU","properties":{"name":"Saudi Arabia"}},{"arcs":[[[1308,-610,-651,1309,-262,1310,-998,-605]]],"type":"MultiPolygon","id":"SDN","properties":{"name":"Sudan"}},{"arcs":[[-650,-969,1311,-496,-263,-1310]],"type":"Polygon","id":"SSD","properties":{"name":"S. Sudan"}},{"arcs":[[-1044,-709,-714,1312,-711,1313,-1069]],"type":"Polygon","id":"SEN","properties":{"name":"Senegal"}},{"arcs":[[1314]],"type":"Polygon","id":"SGP","properties":{"name":"Singapore"}},{"arcs":[[[1315]]],"type":"MultiPolygon","id":"SGS","properties":{"name":"S. Geo. and S. Sandw. Is."}},{"arcs":[[[1316]],[[1317]],[[1318]],[[1319]],[[1320]],[[1321]],[[1322]],[[1323]],[[1324]],[[1325]],[[1326]],[[1327]],[[1328]]],"type":"MultiPolygon","id":"SLB","properties":{"name":"Solomon Is."}},{"arcs":[[[1329]],[[-997,1330,-706]]],"type":"MultiPolygon","id":"SLE","properties":{"name":"Sierra Leone"}},{"arcs":[[[-778,1331,-767]]],"type":"MultiPolygon","id":"SLV","properties":{"name":"El Salvador"}},{"arcs":[[-931]],"type":"Polygon","id":"SMR","properties":{"name":"San Marino"}},{"arcs":[[1332,-647,-565,1333]],"type":"Polygon","id":"SOL","properties":{"name":"Somaliland"}},{"arcs":[[-964,-648,-1333,1334]],"type":"Polygon","id":"SOM","properties":{"name":"Somalia"}},{"arcs":[[-1225,-188,-1042,-987,-1054,-202,-787,-796]],"type":"Polygon","id":"SRB","properties":{"name":"Serbia"}},{"arcs":[[[1335]]],"type":"MultiPolygon","id":"STP","properties":{"name":"S\xe3o Tom\xe9 and Principe"}},{"arcs":[[-664,-239,-771,1336]],"type":"Polygon","id":"SUR","properties":{"name":"Suriname"}},{"arcs":[[1337,-798,-142,-551,-1205]],"type":"Polygon","id":"SVK","properties":{"name":"Slovakia"}},{"arcs":[[-789,1338,-929,-144,-797]],"type":"Polygon","id":"SVN","properties":{"name":"Slovenia"}},{"arcs":[[[1339]],[[1340]],[[1341]],[[1342,-1125,-655]]],"type":"MultiPolygon","id":"SWE","properties":{"name":"Sweden"}},{"arcs":[[-1061,1343]],"type":"Polygon","id":"SWZ","properties":{"name":"Swaziland"}},{"arcs":[[1344,-1014]],"type":"Polygon","id":"SXM","properties":{"name":"Sint Maarten"}},{"arcs":[[-913,911,-911,-939,-926,-995,1345,1346]],"type":"Polygon","id":"SYR","properties":{"name":"Syria"}},{"arcs":[[-1311,-267,-473,1347,-481,1348,-479,-1102,-1100,-999]],"type":"Polygon","id":"TCD","properties":{"name":"Chad"}},{"arcs":[[-171,1349,-700,-175]],"type":"Polygon","id":"TGO","properties":{"name":"Togo"}},{"arcs":[[[1350]],[[1351]],[[-992,-976,1352,-1089,1353,-1052]]],"type":"MultiPolygon","id":"THA","properties":{"name":"Thailand"}},{"arcs":[[[-974]],[[1354]],[[-970,-458,-6,1355]]],"type":"MultiPolygon","id":"TJK","properties":{"name":"Tajikistan"}},{"arcs":[[[-4,-902,1356,-961,1357,1358,1359]]],"type":"MultiPolygon","id":"TKM","properties":{"name":"Turkmenistan"}},{"arcs":[[[1360,-803]],[[-805,1361]]],"type":"MultiPolygon","id":"TLS","properties":{"name":"Timor-Leste"}},{"arcs":[[[1362]]],"type":"MultiPolygon","id":"TON","properties":{"name":"Tonga"}},{"arcs":[[[1363]]],"type":"MultiPolygon","id":"TTO","properties":{"name":"Trinidad and Tobago"}},{"arcs":[[[1364]],[[-1001,-586,1365]]],"type":"MultiPolygon","id":"TUN","properties":{"name":"Tunisia"}},{"arcs":[[[1366,-734,-185]],[[-697,-56,-153,-906,-914,-1347,1367]]],"type":"MultiPolygon","id":"TUR","properties":{"name":"Turkey"}},{"arcs":[[[1368]]],"type":"MultiPolygon","id":"TWN","properties":{"name":"Taiwan"}},{"arcs":[[[1369]],[[1370]],[[1371]],[[1372]],[[1373,1374,1375,-966,1376,-1067,1377,-1074,1378,-1076,1379,-1078,1380,-1080,1381,-1083,1382,1383,-158,-1300,1384]]],"type":"MultiPolygon","id":"TZA","properties":{"name":"Tanzania"}},{"arcs":[[[-1375,1385]],[[1386,-1385,-1302,-501,1387,-499,1388,-497,-1312,-968]]],"type":"MultiPolygon","id":"UGA","properties":{"name":"Uganda"}},{"arcs":[[[1389,-1223,-1022,-1226,-794,-1338,-1204,-208,-1275],[1390],[1391]]],"type":"MultiPolygon","id":"UKR","properties":{"name":"Ukraine"}},{"arcs":[[1392,-242,1393,-48,-244]],"type":"Polygon","id":"URY","properties":{"name":"Uruguay"}},{"arcs":[[[1394]],[[1395]],[[1396]],[[1397]],[[1398]],[[1399]],[[1400]],[[1401]],[[1402]],[[1403]],[[1404]],[[1405]],[[1406]],[[1407]],[[1408]],[[1409]],[[1410,-344]],[[1411,-340,1412,-338,1413,-336,1414,-334,-278,1415,-276,1416,-1033,1417,-1031,1418,-1036,1419,-342]],[[1420]],[[1421]],[[1422]],[[1423]],[[1424]],[[1425]],[[1426]],[[1427]],[[1428]],[[1429]],[[1430]],[[1431]],[[1432]],[[1433]],[[1434]],[[1435]],[[1436]],[[1437]],[[1438]],[[1439]],[[1440]],[[1441]],[[1442]],[[1443]],[[1444]],[[1445]],[[1446]],[[1447]],[[1448]],[[1449]],[[1450]],[[1451]],[[1452]],[[1453]],[[-347,345,1454]]],"type":"MultiPolygon","id":"USA","properties":{"name":"United States"}},{"arcs":[[[-534,1455]],[[1456,-532]]],"type":"MultiPolygon","id":"USG","properties":{"name":"USNB Guantanamo Bay"}},{"arcs":[[[-973]],[[-972]],[[-955,1457,-958,-971,-1356,-5,-1360,1458,-1358,-960,1459],[-1355]]],"type":"MultiPolygon","id":"UZB","properties":{"name":"Uzbekistan"}},{"arcs":[[-932]],"type":"Polygon","id":"VAT","properties":{"name":"Vatican"}},{"arcs":[[[1460]]],"type":"MultiPolygon","id":"VCT","properties":{"name":"St. Vin. and Gren."}},{"arcs":[[[1461]],[[1462]],[[1463]],[[-772,-250,-513,1464]]],"type":"MultiPolygon","id":"VEN","properties":{"name":"Venezuela"}},{"arcs":[[[1465]],[[1466,-978,-991,-449]]],"type":"MultiPolygon","id":"VNM","properties":{"name":"Vietnam"}},{"arcs":[[[1467]],[[1468]],[[1469]],[[1470]],[[1471]],[[1472]],[[1473]],[[1474]],[[1475]],[[1476]],[[1477]],[[1478]]],"type":"MultiPolygon","id":"VUT","properties":{"name":"Vanuatu"}},{"arcs":[[1479,-547]],"type":"Polygon","id":"WSB","properties":{"name":"Akrotiri"}},{"arcs":[[[1480]],[[1481]]],"type":"MultiPolygon","id":"WSM","properties":{"name":"Samoa"}},{"arcs":[[[1482]],[[1483,-1307,-1141]]],"type":"MultiPolygon","id":"YEM","properties":{"name":"Yemen"}},{"arcs":[[[-1062,-1344,-1060,1484,-1095,-260,1485],[-1005]]],"type":"MultiPolygon","id":"ZAF","properties":{"name":"South Africa"}},{"arcs":[[-1383,-1082,-1064,1486,1487,1488,-1094,-7,-508,1489,-506,1490]],"type":"Polygon","id":"ZMB","properties":{"name":"Zambia"}},{"arcs":[[-1063,-1486,-259,-1489,1491,-1487]],"type":"Polygon","id":"ZWE","properties":{"name":"Zimbabwe"}}],"type":"GeometryCollection"}},"transform":{"translate":[-180,-90],"scale":[0.036003600360036005,0.01736514657995801]}}'
       );
     },
-    485: function(e, a, t) {
+    478: function(e, a, t) {
       e.exports = t.p + "static/media/a6.2966ab8e.jpg";
     },
-    486: function(e, a, t) {
+    479: function(e, a, t) {
       e.exports = t.p + "static/media/a1.617f6789.jpg";
     },
-    489: function(e, a, t) {
+    482: function(e, a, t) {
       e.exports = t.p + "static/media/gallery1.d9686514.jpg";
     },
-    490: function(e, a, t) {
+    483: function(e, a, t) {
       e.exports = t.p + "static/media/gallery2.5376cbbd.jpg";
     },
-    491: function(e, a, t) {
+    484: function(e, a, t) {
       e.exports = t.p + "static/media/gallery3.94f2ed11.jpg";
     },
-    492: function(e, a, t) {
+    485: function(e, a, t) {
       e.exports = t.p + "static/media/gallery4.7579f3bc.jpg";
     },
-    493: function(e, a, t) {
+    486: function(e, a, t) {
       e.exports = t.p + "static/media/gallery5.58b8cde0.jpg";
     },
-    494: function(e, a, t) {
+    487: function(e, a, t) {
       e.exports = t.p + "static/media/gallery6.00c03d37.jpg";
     },
-    495: function(e, a, t) {
+    488: function(e, a, t) {
       e.exports = t.p + "static/media/gallery7.067c3fdf.jpg";
     },
-    496: function(e, a, t) {
+    489: function(e, a, t) {
       e.exports = t.p + "static/media/gallery8.3d5afddd.jpg";
     },
-    497: function(e, a, t) {
+    490: function(e, a, t) {
       e.exports = t.p + "static/media/gallery9.7bf418ba.jpg";
     },
-    498: function(e, a, t) {
+    491: function(e, a, t) {
       e.exports = t.p + "static/media/gallery10.197bc1fa.jpg";
     },
-    499: function(e, a, t) {
+    492: function(e, a, t) {
       e.exports = t.p + "static/media/gallery11.335d0c40.jpg";
     },
-    500: function(e, a, t) {
+    493: function(e, a, t) {
       e.exports = t.p + "static/media/gallery12.9a31993c.jpg";
     },
-    501: function(e, a) {
+    494: function(e, a) {
       e.exports =
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAH4QAHAB8ADgAyABFhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB+AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIAZABkAMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABAUGAQIDBwj/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAwQFAgEG/9oADAMBAAIQAxAAAAH7KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi+3HXoO+QAAAADw9+fQ68AAAAAHjz77DrwAAAAACFB8aXC0dArXPVtb5fUaNTEX9Bf5V24H0eUAA69oEfXab8/39KxyNGrldVldVm2w0qgAAAADLamBTnni3AHoAAAADPQZ0H5zV14+jygMRf0F/wDOatxWWGE0atj1lTqFmn9u9XDJsspr6LSqUFjXajJu8XMOZ9HlZXVZXVVZuM7K9Cu4073ynuMvouvPamss94550zz3L2veJF3d0V7lp49SRrleuh86XMuZmzs1qELkAAAGepLuq+Y2JC1WIubiFN16OIv6C/xNCww25w0nO5keHvt51RnNHnMDT3UCfA3M7Hb/AAG/yrvI3M7K6rK6rNt0FnWWfiYNOpQWlXaZtvitsq3xfDTqV8SXEzLd3ltTlvWpgT4FuCFeUd5F2FyAAAADPQZ0H5zV14+jygMRf0F/85q2GG3+El42sjMTb1fvnJEfGv7qBPj/AEmTh9/gL3A09Gr7D6DLyuqyuqo2aCzh9ufbYalOgtKHSZlzwrL3J+NcrebkCLX2Gdau8tqctPHqYE+Pcr1d5mdNXmC9WAAAAqIuhU5wuQAZi2sVOdXWKxFlONYoWaCNqHfIaFaqqNYo2KG+J46K9PXGf0LlmGnVpqm2LkDy9fHrmAmqs8Hzh3FaWdR3jQrBNHTwNOo2MxaWb3wLsAAAAAAAAAAAAAAAAACnuEXdDzeq8tfYFmEJOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPQmmfPp9GxslVaWYuRLwAAAAAAAAAAAAAAAAAAKws+uPoTaZ+mHPB4mSevb4/eSI6LvSXOC9NSnvGdu9nP8AcWYgAAAAAAAPP0/POtPrLMaU7AAAHmejP0BtaDJiZDAAB7+E+hZ9h8vsgAOeBb3uLaFX6Ax99sULIX6wAAAAB0zZ8YAmQxu9l8SH6N5+Bao+pVXz/kv6TzAAAAAHayiy/m9YMy4AAAABKvcwtQ77thLvZz9A8vXTpkTKett4/I8wfWsnjBJjAAAAAkxhe2ePG5ZG0Lp4e4AAPWPqb3Pjd8PPQAAAAAAO1PbVd2vh+p9VigAAAAAAAAAJ0EaGzxfJuGWtC1mwLbIvcj5/UAAAAAAAAccj51G0ua+uwgsxAAAAAAAAAAAAX+vrbL5PbCpOAAAAAAAABC+ffTsDtZ1eN3OAAAAAAAAAAATIepqzaTk+S3AAAAAAAAAAGd0XhPH84duv1+CHoAAAAAAAAADn6LkNvgaYY98AAAAAAAAAADEVGzxn1OKF6uB//8QALBAAAQQBAQYGAwEBAQAAAAAAAwABAgQFNBATIDAzQBESFBUxNQYhUCKAkP/aAAgBAQABBQL/AM+JWAxlCcZtzImFKfOkUcZc61YiBe4jXuI17iNDvjlNWtTidPxzk0I+qr8FT7HnZPWNzswhQkSfobC9DYQaR2KrWpxOn48hpE3xsqfY849UZSc7MLHavgtanE6dW7cQu96wvW2F62wg3DuWzJ4AJaMSC9bYWOOQzqp9ipO0WLfnKW+vp7F6KqXWJLZbu7uTHvSW+vqVi7FseaZhq7ZKKzstXvJJj3nW+vqjOxLk5hY7V8FrU4nTzfywlJ5SqUmIP28CvVRhEDrki04WqYhATY8PhXrjBsqfYrLSdg40TRBsyY2GUMvOE8vIHGCYhdmR0mI6KyesZWpeSvihNKXLzCFOQ5+usL11hY+wQzq1qcTp7OnVboLK6YHXWQ0ib42VPsVl/ilpNmX+Kelu6TD/ABsyOkxHRWT1jLIaTEdPl5hVRsU/twl7cJVq0AbLWpxOns6dV+gsrpgddZDSJvjZU+xWX+KWk2Zf4p6W7pMP8bMjpMR0Vk9YyyGkxHT5eYWO1fBa1OJ09nTqt0FldODrrIaRR+NlT7FZf4paTZl/inpbulw/xsyWkxHRWT1jLIaTEdPl5hY7V8FrU4nTzbzRnF4SqXd0P3Eat2JHkDrqzDeAVe/5R17cDTVT7FZWDuHGmaQdmSKxTBj5BSZpRg86VmN6u7Pdrq3YlYbEdFZPWMrMPODFmaE+XkQEMqVUo7HAemeRqAphCrdWJ1Kgdk1A6lRdq4aR2LstU4ld6B1QrFEZV6xYXE7M7GoSaXprq9LckqlOIn2EHAjegAvQAV2EB0sR0VdrFLY2WqTEl6W4y9PdVEZx/wAZyjZ98Fb8KyFmJWojcVf+aajEhfbYr22KBUEJ/wDk8xhCY+WgynbsHkG0YSDeFNN+/wCVKUYsfJgGj5KwRO7u6A362BOUSBkIuoSjNv4p71YKPlSyRCEI/AzeDcEJzg4cg6EUZW7IZIEjzT2AhR8syPaObjC3+uNndnBfJBBsiL2IDmBKp+RWxqpnaB1GUZNxknAbHygYI+Qsl5Qm8I8oNww0G6EnNnOEI2s7jwcFa1YrSqfkliCp5mhZTOzsnfwR8hWEj5Q01OcyS5UW8Zc0NgokC/CSjJpNxFKIUbf5BRCrX5FcIjnMeXHVu2qri/JLPkfIeqfmgbsBkmNw5BDJAjKxZr12tfkdSCt5++ZEJMkuaM5Rod9DOInLg3hHsYyeL5m/fipSlJ+zHYNBDvshlGTjE3jPs8mLeVO3HaNBCvQdQJCfAFv89paHubHcN+kO2aCHeG6HKM036btM2L993hR+Y3a3R72t3eOFuqvbZAW6tdzSFvrPb5oXiPucIL/PbnhvQu3g/bs3i9ce6D3GWFu7Xb4kW8tdzmB+etw//8QALxEAAgEDAQYFAwQDAAAAAAAAAQIDAAQREhAgITAxMhMUMzRRQEFxIkJSkWBwof/aAAgBAwEBPwH/AFoVI443yCOu+BnkQ28bR6mrwrb5q4WNSNFXPobiDUwFXMAixjZedw/G/byCN8nkR+2/vbc+hVrAJDk00lupxilWKRNSirV4xwbrU7xrjWKmKs+V6Vedw/FRqiR+IwzXmF/gKnRcB1+9QIuku/2rzC/wFMVeEtjFWihn40Bk4qRo4ToC5p5gwxpG7bkCDjXi23x/ypipfK9KufQqw7TT9xq19Gou8Vf/ALdl53D8U/t12P7daT27bF9sfzVn6lReoKufVO9H7b+9tz6FWB4EU9tJqPCoYzHFg1GcODV3E0gGmmQocGrzuH4pv1W4x9tko0wqDUA1xMg614MnxRjKW5Bqz9Sozhwau1IlO8Lhgmja9wzrpNI5Q5FedkoXcmMbEupEGKkkMhyakkMhyajlaPtrzb/Ap3ZzlqXOeFeJN8mmykGG6mo5DGcjYt06jFPcM4xj6NJGTiteal+aZyxyf8FitmkXIp42TuH1ESaEC0QDwNSWSnt4VJA8fUfS2ia5N2S0R+nCpLWRPo7KPSmfnfkt0k61JZOvbxojHXnoupsUBgYHJuYw6Hn2KZbVy5k0ORzraPRGOXfJ0bmwJrcDmTJrQrzbFOBbm3SaJDt//8QANhEAAQMBBAgDBgYDAAAAAAAAAwABAgQFERIxEBMhMDRRcYEUIDMVMkBBUqEiQlNhwdFgcJH/2gAIAQIBAT8B/wBaMSLvcz+dpNLLzvJmz3FXWngdxwXiK/l9lRTPNn1zKg4t+/kLPBB5clQVkqjFibLRZnpy6+euDIw8Mdwfj+7fxpoOLfurRq5AizQzdQDXEbFi+6nOpCVoTl91aIjy2wfZcqQRyX6p7lSwJAbMTNWZ6cuqPMhTakb3c14Kf6rqkLPFIRM2VWWeOIR5uvBT/VdDaYqphvJ3a5WjOUBXxdSlhjidBgaqbWSnd0QqWUJYnm7+WtaT1jtHPYvDV31fdUsSREzEzVBxb91bHvxQ/cZWjxTdlU+jLorG/P20WZ6cuqFxs+n9aA8bPoi8dDp/eifHR6K1PR7qo9GXRUHDx8x+P7t/Gmg4t+6tiL3xkg14MDXyVUaJqjFHJHi8hyZuSsyogGUmn80MkSNfF1Znpy6qD4K6V/zbRTvjqySbJVb6qogZ8l4oP1MomiWtZ45XK1PR7ozYhSZuSs6bSp2ZvNKiHIutfPSKiGImsbNEFEscMmXsoH7p7NC7s/LQWzwlfE6ACII4YoIIha6KPTDO3417NHzf/qEGAo4YMp4bvxLUUvJkN4krLx5RZHBE0cMtBLPFOWLLohUUBSxM7/BlDAzXTZez6f6UMcBtdFv8FqK6AJtCSGaBWvg/xFSXWleajJ4vfFAtWcdhNqDViN7r/C2ibVhf9/KC0jC2PtZAtAJdmT/B2qbGXDy84K0ocn2IFqDnsnsTOzte2/JNhweT/JSk8nxPuaA7iK3Lf2sbDBh893Sl1omlvq42tM77uyC5j3tYbUheW8pi6orT3trmvkw23tnm1oG/bT//xAA4EAABAgMECQIEBgEFAAAAAAABAAIDEBESIVFyMDEyQEFhcYGRICITM0KSI1BSYoKhBICQorHh/9oACAEBAAY/Av8Ab4smI0FVY4EaWwHguw09lzwDp22gTXBfLevlvXy3oNsOFZRMyObQWnGgC+aPR3OnHQaeF3QY3WtTfK1N8ppNmgOMomZHNoHyE+509txNdPC7pvf0xMyOaVkC09awOy2x4W2PCaC4UJwT3t1gIsc648pbf9J4iGtJdzKp1BUgtWy77FUtP2qxEFl07EMVcqhp+xbLvsVXAgZU4vNaGQYw3UwnYhCpxVQ0/Ytl32J3xwRhdoYXdN7+mJmRzIuwCLjrKD4hIrqAWt/lWml1a8UzMix2opz2l1RLW/yjYrfjLuZBv6ig/wCp0w9l1pNdiE92ATnuvszen5pDoJPcME6I6+zq0kLurbda2h4W0PCcH0ulEzI5k/LKHlEv5JmaT5CfcyhqH0nDUPKonRRO03p+aQ6CT0/rpIXdBhNxW25bbkbJJrjKJmRzJ+WTMol/JMzSfIT7mUNQ+k4fdQ8qidFE7Ten5pDoJPT+ukhd03v6YmZHMn5ZQ8okMyZmk+Qn3Moah9Jw+6h5VE6KJ2m5PzSHQSen9dJC7pvf0xMyOZFuKLTrCsPbUDUthy1UaNQTM0nsxEg2I0mnEKwAQaS7mQcPpKEP6mzDGX0TW4BFp4q8f+raI7Lb/pewUY29PzSHQSe0YIw3XWtWkZYpcg94FBz9L3AChOKLX66ytbL8VdZPdfSO6o2jolU0kCgOM7TTZcvpPdW3gUpL4hAs1MqHUqwXdito/cqF12ZW3m07/qdHtBX1eV9XlODGgJ+aQe0ClJ24ZsniqB3/ACW0fuTvjGuF/wCTUL2g9V8xvlfMb5Xw4d44lAHWbz+XOfbIqvmHwvmHwrW07E/6UKxHhqpBZa5lUdENMAtqowKo72FXflVXEAc1RlYh5alRp+GOSqTUyrP2O7KkUWeYVWkEfk1C+0cGqkJoZzN6rEeXdfTT01Y4hUitrzCqxwO52ob2ubiDpvxIgHJUgw+7l74hph664aCoNFSJ7x/a9rr8DuNqDFdDP7SqR2tjDwVQvMJ2D1aaQRiNBV7g0c1SGDEP9LasDBu667QwKofYeeltPcGjElUEQxXYMHorAjPh9Cqf5EJsUYi4qgjfDd+l9yqDK9bVs4NVIYEMK09xceejppva67BUiCwf6VWmo9dqLEawcyqQrUd37dSpBDII8lWo0V8Q/uOgrAjvby4KzEhMJ/UF7o5PI3aau4VY4hUit7hVY4GVY0ZjOpVIDHxjjqCIY5sFv7datRHuecSdN7XlfiM8L2vHTR03KrSQUwNjubDI4KriScTulz/K/EbTova8He3YtvG8bVRzXvaWr2uB9Fd1fDwN283K82hzXvBava4HdmRh0O+OicG7s9nGl2+NHE3nd3DgbxvTGcOO8Nij6bjvTox43DeHQzxCoeG8UCbDwG8l3B9+8Bx1Mv3q3xZ6v//EACwQAAECBAUEAgICAwAAAAAAAAEAERAhMaFBUWFx8CAwQLGBkVDB0fGAkOH/2gAIAQEAAT8h/wBfBsHKgla3iB7pAHMBn3xIrYE9/FzWTmBcwLmBTfozloXJXLsEgVUSg90Nbv8AwWao71XDBBZBOjmNahfAAmC5K5dizHuFtGt38LEgAJHv1cMFb+nTclcobaxgEcXGmC/1lf1lF3gQZVi8AIUM1gyACGZ9UGgwGk0K0MpOwHJVC/AkOT8QYAkuqgQhKEUMQmEFUmgQR1GkDDcTYlRViZEmwgKCGiyCkBHAFIlRB5DpAyg0advZq4YK39Om5K5J0sQoyLkcoIUmyEIB8sBMrUnfGWLLXKQwJA4CHDdNToVoYXnM2Cb7ivpEJ2NLMLTNKONqUhCD3MzH1va4GghwWaoRayEiBxgOz7lXDBBZWGkQhMaTAQwaFyVyVyWC4jKFLYrVCzHuFtGtDvD0HeFWKE3f7R9b2uBoIcFmqFY/tW/13KuGCOuDlFwQuCEZMlXBclclelgucyhS2K1Qsx7hbRrQ7w9B3iWKE3f7R9b2uBoIcFmqFY/tW/13KuGCt/TpuSuSuUOIygYazBWqFmPcLKNaHeHoO8SxKZUpOv7RIDXb2uBoIcFmqFY/tW/13KuGCt/TpuSuSCWoBCBWxGKZDqwFxQhpIWqBRFZG6IIJBDEVQDKAwQbzcThWhieepsUbpAkNmIkFbK4xJWi+FTYBijwPCh0ZpwEnIkgw7jsaMgWbPiuBoIcFmqEaujIia5g59x1CU7uWyQdAB6R2UkhGwAT5GEmH2N0QodEJMxuIdnIAkmUsggLoBMR++65FCmQ2EKwDorA4GOK5wMxOUiEyKBgRiPmBSI73KFgBplE386olNB2UBNC3ULxlTdcDQQISNCZQpA+ALQaFM3LaQ9nFc0zvwx+OKgwWIA6wQ+6+Yhjt+OgqXl2aLHD4Agpgf4ofKjGaeSy2QmOmOWE2AfLU1/L0+0QByBGY/FayqJk/fS32TmDk1/aMiiYkvBk88SM8DNMJjctwLVPQP4UyT4DuifAzcJ9j1dADlgmnJ0vuOhQzcRwWyGYjwxcxUdDvB53qn9IZ3XKiqXyJDre7EeSIYhMQNSiS9jaHwfiSgm3M/wDemstYLXohMt0I4PY1T4TJ+zYojgPql0SSXJJJxPZ30z7bSOdxTQXRo+0CCHHcMg/VkE4ADNXp0PTGIkH4omTiDYJiALgu/hAABBoRAAOQAzKfAPml07ZgVK1g4T9tq7yt+pMJm1RVGISYg9euhGk6E0hvsU96Ei4V8+YewOgOpy+DJBfE0sjvGM7071X4+A/26KnxOSb7dIMHemE+6APdNOLLL7FGxBzR72EDIzCwvkXGJmke2zeE1LUCpaopQC+6Mz3iOfErsRlMjZFLOYL6SMetmyE/EkQP45CRcKW7KdSQxmJhCX209Dep4hAIYzBWSH0MPJIk5EHMKWcbipWRzqEwznIoAADDxWBFf+XmFK0W+T40nMTcPMeYNfvHa8TviPlagn2DyGvTL4D5TAyr+fyA0I0jHrEx8gwJhJYIAbKO/ksIJTd8fIZBKfvh5UlCY/xj1f/aAAwDAQACAAMAAAAQ8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888+888888+88888887+fC888px888888889e888888r88Co+tOF88Y+V/8AtbVxffPPPOslAtdv6gfPP/FA/F/lPfPPPPK/PAsvl7CtvMvEMsHvk9PPPPPPfPPbzz/HfvD7/K+q7HDz/PPPPPPPPPPPPPPPPPPLnvPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP8A7zzzzzzzzzzzzzzzzzzzSRCcpPLXzzzzzzzzxjDzzzjhiAAAIEEFCHrTzzzzzABADCCAAAAADMEEEEEGLnXiCAAAAAABQggAAIIEEEEEEEESAAAAAAAAAACCAgIEEEEEEEEEGIAAAAAAAAAAAAAoEEEEEEEEEHMAAAAAAAAAAABaEEEEEEEEEEFQIAAAAAAAAAADoEEEEEEEEEEEGoAD/8QAKhEAAQIDBgcBAAMAAAAAAAAAAQARITFBEDBRYXGhIECBkbHB8NFgcPH/2gAIAQMBAT8Q/rQM4m44IDcZCYB7gdznjmsl3QgNxWLqR04BkakBR9Jd59LNk46U2uJ+ntbI6IykhExjDJEgLRoEZYcjCCmaeUHRYFk2RR0hLALG7CDHsKMCmbOKMSsLsIRRIFoDRMUXDFHGFUwgQmSi0BZgcICZWL9ysoh8FkkdFuVuFP6rfjyper1Zsi3x92bw+1vh6s+LReIrcjyvrpxT9Pa2R0QcVBDsODo1nxKEakCPKOQO3tNRYrZEBLqR3sNN0StSQfdFGZ/ZTmXfSS8RQCFCPKIBE+Jv2aI72jrTficmxUNodkARMXsbAuM1X+gyiGR9ymv8hPqcqae+Sp+RDWo8Z/QVe9gobEDEI5MA+A5My4xXzb8T2XP8FIjogzHLgPALLhDWHCj5u2WBWNOVZCZCP5wEOo9Ey/FGWcZcnEc/DjjQRxCjEDdEJgY35RDVDFIFyVmiIi/dDp5N3h7TS+YhmYnrdww6H1ev7Kul5mx5Urxs2sBewVIx+62//8QAKxEAAQMBBQgDAAMAAAAAAAAAAQARITFBUXGh8BAgMGGRscHRQIHhYHDx/9oACAECAQE/EP60a0JucPvinMHDfEuTDgFZiGDPUD2uZ0wRyYLxDLSc9wwaoE9AibAQpzf1sz3xvhtVwUN+npja0nNYgRcAhkSAMyQRQLxaNUBLYScO2MWwjFMZ5a9kQp5uXe29Z74UPsByt+skbPqo829reCn4tVNw06Fv1UWyiMnH0hkgFxSEM1AB+idsE0EIQODCwmDu1ERZiwZc0hUXm8vbetJzWSPdZUdlpOazLsqtFuzPfCy7YyLsFnWxrcVRweVnXZZc9zvU9MbWk5q4ZiERGFg4LoJuA6KoUSGSLi0Jwf2pfgs98IAEWm509HYKRsAfnHopqsXBNzv7yQOHzgqTwgDfX/FRweUeoiXZGkkOD1O8/wCMgaxDNZy2nhS57Yn6Ro6BRefu/EKoIhAN2w9AQTVoU92rKN3mJeeaAAFKG0J+utgokAiiaxvpmrXsq6RIpbTrkpGM7xsJAcjVzIZNEXmLrvhjjwCVpk+0y8By/goeDIdxYmoCNWfHJADlFvoxhZkh4xBvCZwMvofR1KvuuMHWHxWMKwH3XLcBILhMBcavX26ZSPIPunw2Ead5r432MPXDI/PpM4H9R199UNEccemEDo7qEvwQmTIsRZNv1x2krI4D97cO/wDacRB4zHUEDAfs8NsnxHY+OKwVaDE6fiFsoGcLckC8jiXBJOJpl34rgNYH6pk23//EACwQAQABAgMHBAMBAAMAAAAAAAERACExUfAQQWFxgZGhMECx0SDB8VCAkOH/2gAIAQEAAT8Q/wCvhBZxcRyq/wCNLok3eqzaEZNmPrlhoQ4s4euLJbSFoiZl4laH71ofvWh+9AhRmQC8nZqedatkegN1JwRSwEixv+qLkm3VeNHraLmrB5et41c+YYQFiW9fzf1X839UydKJsDOEbNbzrVsj0NYyVv614z4267xo9aBdAIEGT5oIIPW8avXM3463nWrZGyCKKWUc1/VJx+4D8zWsP1WsP1QcECCReVOoD1SQaj5BAUwziGw+IQgn6KOjIgYS8Nmu8aKC6wjACnxiUJ8cblDEkPJ9VBuOMceCreg3X8uDtsW1dfy4tSznCKPJX8V9VixiMB1ipgRYNkHdz2IBykGVUbvKlIeGxBv4sHIDGpE7wgjyV/FfVWmGCp4zz3ej41euZvx1vOtWyKMhIyciaS4kzvWjb3YByKudfw/1SliaCkM8K0HMq+0syGHKmlDEDS6GXGt9NadC2fVKgSClsZW2a7xopRQYPeEx3ik2UFouSsHz12NH4gUWA2J4pm8WeaV5w8It5ooxIhdM13s96Nml4dt2m5qweVPJD5ZLYfND1kAEkrrz+/U8asZc2SSXIbV/PV/PVNvYyiVnZredatkVquVfpVmqs2abxrQczZrGSt/WvGfG3XeNFarkV4nbquRWv5V5r5K0bLa0vDtu03NWDyrwnw9Uzxqy3Ylx2Fr+r9K/q/SgjACRYMo2a3nWrZFaLlTi5Vr2TZpvGtBzNmsZK39a8Z8bdd40VquRXiduqZFa/lXmvkrRstrS8O27Tc1YPKvCfD1TPGr1zN+Ot51q2RV+ltW7pSFhn6mwjG8Ds1oOZs1jJW/rV0WT4267xorXcivE7dUyK1/KijC82guiZI6bQAsSJzhtu03NWDyrwnw9Uzxq9czfjredatkVYYW9SKd8uTmVgGyskMkaYWFcv6pXbjcm7irnWg5mzEL55jyUzZCBxHKjXKSJQwkd9DyiMSEEnDns13jRULRPwhE94ooJsjeWyfGxQJWCg2ScYKwM91TXijzCjHl/KSKUbHBgT2DnQzexLHYaWBeUjyVEJtcSWBcsbG2bTc1YPKg+l8M0ufFBOKGwA2hyn9epMUwneLPipYnEBWSPxYu5wLLQgsoyQQbFrEIASDIfulpCYME96LBmcvxTJhmhCdG+k6pUGwztENcOJfibniUiCM4fmoaSMFVU+tkFqJCqSi3XYIsqgsjSmeJQ5EUjYWOOrgRiMnatyASRxjN47YgVhC5ycSnicIkUcXh0innNtGLDF30Gbc7Md4KRERVt1oQDhscb8iv52waAIThJFan90ZELeziZ5Yn+M2GIAEr+XpYjDhpxgEBj3BUrAJZLu7R/nMBpALFfw1En6lYsGDPMGB/xQg7okLzkYtdIT/yMXxQPGPAeTF3rVua4SODiVOFTc5fL7UNaiRJH/KUjGIB5q1Aai/U1PBNz8l+0UtTJXJ6uyQMXByNsxk97j0aUXw/mTE80ESMJR/ioCqAYrUQR43qljq1IF8PgcDzTpt3qxyMD8GHEWCiKwEfiSD98U8zfUWYwih64O1HcwhjmGJ7PAbITdT1pBALXH0XoBB4Cwc4X80qzLfx9D87sLCevoD8JSQlQAnvWOuD1qKK3/kZ9PY5tlVnzCz1ps8wO4chD1KwCWtM8DK70LHZB5BLegtINxoIBcB8zd6FRyW3ODypm4JUlevowam9fr0iyJZMKm2BvJtwxFTorv7nhg+KAII3E3+pgpKAurasItLDPNHl+EiIZS6yu7VEfMX8OLxQkQBiLgt3Ro0TSiR5OxKVYpAVMoe5xccBU0csD52x2pwh4vXnD01C3t+VAABgeqqGp2N3Sl1U3bn7KL4TJR+bsbJjnzURgwO+xeBqXFWG1djsVkeVQnIwOh6BY0y9/TLtQrB+N6psT1qYI4RhywdqMLYerec4P37ApviFZ5mDXaOL5+lAOMy5zMTYpK84eRi0ifLCuedztQ1gCJ4dZOkUmOJVt1fWSIg33gaC0LNv01FiHvPA+ljYxrM4L8/ZFgDCE02utTM4ySbib6Rrkq06vs981CgfhvNFm/p/A3ooWuKOxv+dwG8e0+rzsfE+3SCIlxG5UEGWo41B6yzeUFFZXO2P4TSLvx7RmYCEd5TwDKk73fw9yNKsEhKOCBuEv7VEseT4b0jGnAk1ghCD2uEAZzMuu0nvBISKyfqJ8e2EuS8qNcaRLJD7u3kevg8R7ez95SR0ZPdK4M+XvP11oAAAAwDd7e8hJux5+fdYtEg5F13g6e4OSV8rue8UfsMDJGH3AfQwZrYovQj4mJe8+5s5ckYB3v19xcw4IcA736e6xfS7x2/R/L//Z";
     },
-    507: function(e, a, t) {
+    500: function(e, a, t) {
       e.exports = t.p + "static/media/overview.53d95513.png";
     },
-    510: function(e, a, t) {
+    501: function(e, a, t) {
       e.exports = t.p + "static/media/logo.a0185b04.svg";
     },
-    511: function(e, a, t) {
+    502: function(e, a, t) {
       e.exports = t.p + "static/media/logo.a0185b04.svg";
     },
-    554: function(e, a, t) {
-      e.exports = t(1108);
+    543: function(e, a, t) {
+      e.exports = t(1097);
     },
     96: function(e, a, t) {
       e.exports = t.p + "static/media/img1.d1ac149f.jpg";
@@ -37770,6 +37745,6 @@
       e.exports = t.p + "static/media/img4.eaac9c6a.jpg";
     }
   },
-  [[554, 1, 2]]
+  [[543, 1, 2]]
 ]);
-//# sourceMappingURL=main.3af64fbb.chunk.js.map
+//# sourceMappingURL=main.8de8e79d.chunk.js.map
