@@ -36699,8 +36699,7 @@
                   -1 === e.indexOf("Mobile Safari") ||
                   -1 !== e.indexOf("Chrome") ||
                   -1 !== e.indexOf("Windows Phone")) &&
-              window.history &&
-              "pushState" in window.history
+              window.history && "pushState" in window.history
             );
           })(),
           a = !(-1 === window.navigator.userAgent.indexOf("Trident")),
@@ -41663,8 +41662,7 @@
               n = e.tagName;
             return (
                 !("INPUT" !== n || !u[t] || e.readOnly) ||
-                ("TEXTAREA" === n && !e.readOnly) ||
-                !!e.isContentEditable
+                ("TEXTAREA" === n && !e.readOnly) || !!e.isContentEditable
             );
           })(t)
         );
@@ -50347,9 +50345,7 @@
                 null != e &&
                 !a(e)
             ) ||
-            o.test(e) ||
-            !i.test(e) ||
-            (null != t && e in Object(t))
+            o.test(e) || !i.test(e) || (null != t && e in Object(t))
         );
       };
     },
@@ -76740,12 +76736,16 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                          var o = t.graphics.group().attr({
-                              class: "apexcharts-series",
-                              seriesName: m.escapeString(n.globals.seriesNames[i]),
-                              rel: i + 1,
-                              "data:realIndex": i
-                          });
+                          var o = t.graphics
+                              .group()
+                              .attr({
+                                  class: "apexcharts-series",
+                                  seriesName: m.escapeString(
+                                      n.globals.seriesNames[i]
+                                  ),
+                                  rel: i + 1,
+                                  "data:realIndex": i
+                              });
                           (t.dataRadiusOfPercent[i] = []),
                               (t.dataRadius[i] = []),
                               (t.angleArr[i] = []),
@@ -76756,16 +76756,16 @@
                                       (t.angleArr[i][n] = n * t.disAngle);
                               }),
                               (l = t.getDataPointsPos(
-                            t.dataRadius[i],
-                            t.angleArr[i]
-                          ));
-                        var s = t.createPaths(l, { x: 0, y: 0 });
-                        (c = t.graphics.group({
-                          class: "apexcharts-series-markers-wrap hidden"
-                        })),
-                          n.globals.delayedElements.push({
-                            el: c.node,
-                            index: i
+                                  t.dataRadius[i],
+                                  t.angleArr[i]
+                              ));
+                          var s = t.createPaths(l, {x: 0, y: 0});
+                          (c = t.graphics.group({
+                              class: "apexcharts-series-markers-wrap hidden"
+                          })),
+                              n.globals.delayedElements.push({
+                                  el: c.node,
+                                  index: i
                           });
                         var d = {
                             i: i,
@@ -97219,7 +97219,7 @@
         }
       }
       function xe(e, t, n, r) {
-        var a = be.hasOwnProperty(t) ? be[t] : null;
+          var a = be.hasOwnProperty(t) ? be[t] : null;
           (null !== a
               ? 0 === a.type
               : !r &&
@@ -97236,16 +97236,16 @@
                           case "function":
                           case "symbol":
                               return !0;
-                  case "boolean":
-                    return (
-                      !r &&
-                      (null !== n
-                        ? !n.acceptsBooleans
-                        : "data-" !== (e = e.toLowerCase().slice(0, 5)) &&
-                          "aria-" !== e)
-                    );
-                  default:
-                    return !1;
+                          case "boolean":
+                              return (
+                                  !r &&
+                                  (null !== n
+                                      ? !n.acceptsBooleans
+                                      : "data-" !== (e = e.toLowerCase().slice(0, 5)) &&
+                                      "aria-" !== e)
+                              );
+                          default:
+                              return !1;
                 }
               })(e, t, n, r)
             )
@@ -99838,8 +99838,7 @@
               ? e.shouldComponentUpdate(r, i, o)
               : !t.prototype ||
               !t.prototype.isPureReactComponent ||
-              !na(n, r) ||
-              !na(a, i);
+              !na(n, r) || !na(a, i);
       }
       function Ri(e, t, n) {
         var r = !1,
@@ -122682,9 +122681,7 @@
                   null != e &&
                   !ht(e)
               ) ||
-              R.test(e) ||
-              !A.test(e) ||
-              (null != t && e in Object(t))
+              R.test(e) || !A.test(e) || (null != t && e in Object(t))
           );
         }
         function Ke(e) {
@@ -132559,12 +132556,16 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                          var o = t.graphics.group().attr({
-                              class: "apexcharts-series",
-                              seriesName: g.escapeString(n.globals.seriesNames[i]),
-                              rel: i + 1,
-                              "data:realIndex": i
-                          });
+                          var o = t.graphics
+                              .group()
+                              .attr({
+                                  class: "apexcharts-series",
+                                  seriesName: g.escapeString(
+                                      n.globals.seriesNames[i]
+                                  ),
+                                  rel: i + 1,
+                                  "data:realIndex": i
+                              });
                           (t.dataRadiusOfPercent[i] = []),
                               (t.dataRadius[i] = []),
                               (t.angleArr[i] = []),
@@ -132575,16 +132576,16 @@
                                       (t.angleArr[i][n] = n * t.disAngle);
                               }),
                               (l = t.getDataPointsPos(
-                            t.dataRadius[i],
-                            t.angleArr[i]
-                          ));
-                        var s = t.createPaths(l, { x: 0, y: 0 });
-                        (c = t.graphics.group({
-                          class: "apexcharts-series-markers-wrap hidden"
-                        })),
-                          n.globals.delayedElements.push({
-                            el: c.node,
-                            index: i
+                                  t.dataRadius[i],
+                                  t.angleArr[i]
+                              ));
+                          var s = t.createPaths(l, {x: 0, y: 0});
+                          (c = t.graphics.group({
+                              class: "apexcharts-series-markers-wrap hidden"
+                          })),
+                              n.globals.delayedElements.push({
+                                  el: c.node,
+                                  index: i
                           });
                         var u = {
                             i: i,
