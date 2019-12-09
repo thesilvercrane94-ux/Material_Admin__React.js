@@ -36695,11 +36695,12 @@
             var e = window.navigator.userAgent;
             return (
               ((-1 === e.indexOf("Android 2.") &&
-                -1 === e.indexOf("Android 4.0")) ||
-                -1 === e.indexOf("Mobile Safari") ||
-                -1 !== e.indexOf("Chrome") ||
-                -1 !== e.indexOf("Windows Phone")) &&
-              window.history && "pushState" in window.history
+                  -1 === e.indexOf("Android 4.0")) ||
+                  -1 === e.indexOf("Mobile Safari") ||
+                  -1 !== e.indexOf("Chrome") ||
+                  -1 !== e.indexOf("Windows Phone")) &&
+              window.history &&
+              "pushState" in window.history
             );
           })(),
           a = !(-1 === window.navigator.userAgent.indexOf("Trident")),
@@ -41661,8 +41662,9 @@
             var t = e.type,
               n = e.tagName;
             return (
-              !("INPUT" !== n || !u[t] || e.readOnly) ||
-              ("TEXTAREA" === n && !e.readOnly) || !!e.isContentEditable
+                !("INPUT" !== n || !u[t] || e.readOnly) ||
+                ("TEXTAREA" === n && !e.readOnly) ||
+                !!e.isContentEditable
             );
           })(t)
         );
@@ -50338,14 +50340,16 @@
         if (r(e)) return !1;
         var n = typeof e;
         return (
-          !(
-            "number" != n &&
-            "symbol" != n &&
-            "boolean" != n &&
-            null != e &&
-            !a(e)
-          ) ||
-          o.test(e) || !i.test(e) || (null != t && e in Object(t))
+            !(
+                "number" != n &&
+                "symbol" != n &&
+                "boolean" != n &&
+                null != e &&
+                !a(e)
+            ) ||
+            o.test(e) ||
+            !i.test(e) ||
+            (null != t && e in Object(t))
         );
       };
     },
@@ -76736,26 +76740,22 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                        var o = t.graphics
-                          .group()
-                          .attr({
-                            class: "apexcharts-series",
-                            seriesName: m.escapeString(
-                              n.globals.seriesNames[i]
-                            ),
-                            rel: i + 1,
-                            "data:realIndex": i
+                          var o = t.graphics.group().attr({
+                              class: "apexcharts-series",
+                              seriesName: m.escapeString(n.globals.seriesNames[i]),
+                              rel: i + 1,
+                              "data:realIndex": i
                           });
-                        (t.dataRadiusOfPercent[i] = []),
-                          (t.dataRadius[i] = []),
-                          (t.angleArr[i] = []),
-                          e.forEach(function(e, n) {
-                            (t.dataRadiusOfPercent[i][n] = e / t.maxValue),
-                              (t.dataRadius[i][n] =
-                                t.dataRadiusOfPercent[i][n] * t.size),
-                              (t.angleArr[i][n] = n * t.disAngle);
-                          }),
-                          (l = t.getDataPointsPos(
+                          (t.dataRadiusOfPercent[i] = []),
+                              (t.dataRadius[i] = []),
+                              (t.angleArr[i] = []),
+                              e.forEach(function (e, n) {
+                                  (t.dataRadiusOfPercent[i][n] = e / t.maxValue),
+                                      (t.dataRadius[i][n] =
+                                          t.dataRadiusOfPercent[i][n] * t.size),
+                                      (t.angleArr[i][n] = n * t.disAngle);
+                              }),
+                              (l = t.getDataPointsPos(
                             t.dataRadius[i],
                             t.angleArr[i]
                           ));
@@ -97220,22 +97220,22 @@
       }
       function xe(e, t, n, r) {
         var a = be.hasOwnProperty(t) ? be[t] : null;
-        (null !== a
-          ? 0 === a.type
-          : !r &&
-            2 < t.length &&
+          (null !== a
+              ? 0 === a.type
+              : !r &&
+              2 < t.length &&
               ("o" === t[0] || "O" === t[0]) &&
               ("n" === t[1] || "N" === t[1])) ||
-          ((function(e, t, n, r) {
-            if (
-              null === t ||
-              "undefined" === typeof t ||
-              (function(e, t, n, r) {
-                if (null !== n && 0 === n.type) return !1;
-                switch (typeof t) {
-                  case "function":
-                  case "symbol":
-                    return !0;
+          ((function (e, t, n, r) {
+              if (
+                  null === t ||
+                  "undefined" === typeof t ||
+                  (function (e, t, n, r) {
+                      if (null !== n && 0 === n.type) return !1;
+                      switch (typeof t) {
+                          case "function":
+                          case "symbol":
+                              return !0;
                   case "boolean":
                     return (
                       !r &&
@@ -99834,11 +99834,12 @@
         }
       };
       function Ai(e, t, n, r, a, i, o) {
-        return "function" === typeof (e = e.stateNode).shouldComponentUpdate
-          ? e.shouldComponentUpdate(r, i, o)
-          : !t.prototype ||
+          return "function" === typeof (e = e.stateNode).shouldComponentUpdate
+              ? e.shouldComponentUpdate(r, i, o)
+              : !t.prototype ||
               !t.prototype.isPureReactComponent ||
-              !na(n, r) || !na(a, i);
+              !na(n, r) ||
+              !na(a, i);
       }
       function Ri(e, t, n) {
         var r = !1,
@@ -122674,14 +122675,16 @@
           if (ot(e)) return !1;
           var n = typeof e;
           return (
-            !(
-              "number" != n &&
-              "symbol" != n &&
-              "boolean" != n &&
-              null != e &&
-              !ht(e)
-            ) ||
-            R.test(e) || !A.test(e) || (null != t && e in Object(t))
+              !(
+                  "number" != n &&
+                  "symbol" != n &&
+                  "boolean" != n &&
+                  null != e &&
+                  !ht(e)
+              ) ||
+              R.test(e) ||
+              !A.test(e) ||
+              (null != t && e in Object(t))
           );
         }
         function Ke(e) {
@@ -132556,26 +132559,22 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, i) {
-                        var o = t.graphics
-                          .group()
-                          .attr({
-                            class: "apexcharts-series",
-                            seriesName: g.escapeString(
-                              n.globals.seriesNames[i]
-                            ),
-                            rel: i + 1,
-                            "data:realIndex": i
+                          var o = t.graphics.group().attr({
+                              class: "apexcharts-series",
+                              seriesName: g.escapeString(n.globals.seriesNames[i]),
+                              rel: i + 1,
+                              "data:realIndex": i
                           });
-                        (t.dataRadiusOfPercent[i] = []),
-                          (t.dataRadius[i] = []),
-                          (t.angleArr[i] = []),
-                          e.forEach(function(e, n) {
-                            (t.dataRadiusOfPercent[i][n] = e / t.maxValue),
-                              (t.dataRadius[i][n] =
-                                t.dataRadiusOfPercent[i][n] * t.size),
-                              (t.angleArr[i][n] = n * t.disAngle);
-                          }),
-                          (l = t.getDataPointsPos(
+                          (t.dataRadiusOfPercent[i] = []),
+                              (t.dataRadius[i] = []),
+                              (t.angleArr[i] = []),
+                              e.forEach(function (e, n) {
+                                  (t.dataRadiusOfPercent[i][n] = e / t.maxValue),
+                                      (t.dataRadius[i][n] =
+                                          t.dataRadiusOfPercent[i][n] * t.size),
+                                      (t.angleArr[i][n] = n * t.disAngle);
+                              }),
+                              (l = t.getDataPointsPos(
                             t.dataRadius[i],
                             t.angleArr[i]
                           ));
