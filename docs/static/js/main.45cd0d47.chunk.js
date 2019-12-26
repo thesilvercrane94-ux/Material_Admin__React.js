@@ -23,7 +23,7 @@
         m = t.n(r),
         c = t(67),
         i = t.n(c),
-        s = t(488),
+        s = t(487),
         o = t(32),
         d = t(54),
         E = t(120),
@@ -39,16 +39,16 @@
         b = t(2413),
         v = t(2417),
         T = t(2414),
-        A = t(241),
+        A = t(240),
         w = t(1435),
         C = t(2017),
-        P = t(1602),
-        O = t(1635),
+        O = t(1602),
+        P = t(1635),
         k = t(2410),
         S = t(2252),
         B = t(1327),
-        M = t(615);
-      function j(e, a) {
+        j = t(615);
+      function M(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -64,12 +64,12 @@
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? j(Object(t), !0).forEach(function(a) {
+            ? M(Object(t), !0).forEach(function(a) {
                 Object(u.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : j(Object(t)).forEach(function(a) {
+            : M(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -79,7 +79,7 @@
         }
         return e;
       }
-      var D = Object(M.a)(function(e) {
+      var D = Object(j.a)(function(e) {
           return {
             root: { display: "flex", maxWidth: "100vw", overflowX: "hidden" },
             content: {
@@ -133,15 +133,23 @@
               borderRadius: 0,
               borderTopLeftRadius: "50%",
               borderBottomLeftRadius: "50%"
+            },
+            navPadding: {
+              paddingTop: "".concat(e.spacing(1), "px !important"),
+              paddingBottom: "6px !important"
+            },
+            date: {
+              marginRight: 38,
+              color: "dark" === e.palette.type ? "#D6D6D6" : "#4A494A"
             }
           };
         }),
         F = t(1415),
-        R = t(427),
+        R = t(426),
         W = t(612),
-        H = t(550),
-        z = t(428),
-        G = t(195),
+        H = t(549),
+        z = t(427),
+        G = t(194),
         U = t(1431),
         V = t(1432),
         Y = t(1433),
@@ -149,14 +157,15 @@
         Q = t(1434),
         J = t(1436),
         q = t(1437),
-        Z = t(547),
+        Z = t(546),
         _ = t.n(Z),
         X = t(100),
-        $ = Object(M.a)(function(e) {
+        $ = Object(j.a)(function(e) {
           return {
             logotype: Object(u.a)(
               {
-                color: "white",
+                color:
+                  "dark" === e.palette.type ? e.palette.primary.main : "white",
                 marginLeft: e.spacing(2.5),
                 marginRight: e.spacing(2.5),
                 fontWeight: 500,
@@ -231,7 +240,10 @@
             },
             headerMenuButtonCollapse: { marginRight: e.spacing(2) },
             headerIcon: { fontSize: 28, color: "rgba(255, 255, 255, 0.35)" },
-            headerIconCollapse: { color: "white" },
+            headerIconCollapse: {
+              color:
+                "dark" === e.palette.type ? e.palette.primary.main : "white"
+            },
             profileMenu: { minWidth: 265 },
             profileMenuUser: {
               display: "flex",
@@ -276,11 +288,11 @@
           };
         }),
         ee = t(1412),
-        ae = t(541),
+        ae = t(540),
         te = t(63),
-        le = t(338),
+        le = t(337),
         ne = t(1414),
-        re = t(381),
+        re = t(380),
         me = t(121),
         ce = t(1416),
         ie = t(1417),
@@ -318,7 +330,7 @@
         }
         return e;
       }
-      var pe = Object(M.a)(function(e) {
+      var pe = Object(j.a)(function(e) {
         return {
           badge: {
             fontWeight: 600,
@@ -337,7 +349,7 @@
           l = e.color,
           r = Object(o.a)(e, ["children", "colorBrightness", "color"]),
           m = pe(r),
-          c = Pe({
+          c = Oe({
             badge: { backgroundColor: Ae(l, Object(G.a)(), t), color: "white" }
           });
         return n.a.createElement(c, null, function(e) {
@@ -355,7 +367,7 @@
         var a = e.colorBrightness,
           t = e.color,
           l = Object(o.a)(e, ["colorBrightness", "color"]),
-          r = Pe({
+          r = Oe({
             root: { backgroundColor: Ae(t, Object(G.a)(), a), color: "white" }
           });
         return n.a.createElement(r, null, function(e) {
@@ -410,7 +422,7 @@
           t = e.color,
           l = e.className,
           r = Object(o.a)(e, ["children", "color", "className"]),
-          m = Object(M.a)(function(e) {
+          m = Object(j.a)(function(e) {
             return {
               root: { color: Ae(t, e) },
               contained: {
@@ -451,7 +463,7 @@
           t = e.color,
           l = e.colorBrightness,
           r = Object(o.a)(e, ["children", "color", "colorBrightness"]),
-          m = Pe({
+          m = Oe({
             colorDefault: { backgroundColor: Ae(t, Object(G.a)(), l) }
           });
         return n.a.createElement(m, null, function(e) {
@@ -467,7 +479,7 @@
         var a = e.children,
           t = e.color,
           l = Object(o.a)(e, ["children", "color"]),
-          r = Pe({
+          r = Oe({
             tooltip: { backgroundColor: Ae(t, Object(G.a)()), color: "white" }
           });
         return n.a.createElement(r, null, function(e) {
@@ -483,7 +495,7 @@
         var a = e.children,
           t = e.color,
           l = Object(o.a)(e, ["children", "color"]),
-          r = Pe({ root: { backgroundColor: Ae(t, Object(G.a)()) } });
+          r = Oe({ root: { backgroundColor: Ae(t, Object(G.a)()) } });
         return n.a.createElement(r, null, function(e) {
           var t = e.classes;
           return n.a.createElement(
@@ -497,7 +509,7 @@
         var a = e.children,
           t = e.color,
           l = Object(o.a)(e, ["children", "color"]),
-          r = Object(M.a)(function(e) {
+          r = Object(j.a)(function(e) {
             return { root: { backgroundColor: Ae(t, e) } };
           })();
         return n.a.createElement(
@@ -510,7 +522,7 @@
         var a = e.children,
           t = e.color,
           l = Object(o.a)(e, ["children", "color"]),
-          r = Object(M.a)(function(e) {
+          r = Object(j.a)(function(e) {
             return {
               root: {
                 color: t
@@ -529,7 +541,7 @@
         var a = e.children,
           t = e.color,
           l = Object(o.a)(e, ["children", "color"]),
-          r = Object(M.a)(function(e) {
+          r = Object(j.a)(function(e) {
             return {
               root: {
                 color: t
@@ -590,17 +602,17 @@
             : l.typography.fontStyle + "px";
         return "calc(".concat(n, " * ").concat(a, ")");
       }
-      function Pe(e, a) {
+      function Oe(e, a) {
         return Object(de.a)(e, a)(function(e) {
           return (0, e.children)(Object(o.a)(e, ["children"]));
         });
       }
-      var Oe = t(1418),
+      var Pe = t(1418),
         ke = t(1420),
         Se = t(1421),
         Be = t(1422),
-        Me = t(1423),
-        je = t(1424),
+        je = t(1423),
+        Me = t(1424),
         Le = t(1425),
         De = t(1426),
         Fe = t(1427),
@@ -609,7 +621,7 @@
         He = t(1430),
         ze = t(17),
         Ge = t.n(ze),
-        Ue = Object(M.a)(function(e) {
+        Ue = Object(j.a)(function(e) {
           return {
             notificationContainer: { display: "flex", alignItems: "center" },
             notificationContained: {
@@ -646,13 +658,13 @@
           };
         }),
         Ve = {
-          "e-commerce": n.a.createElement(Oe.a, null),
+          "e-commerce": n.a.createElement(Pe.a, null),
           notification: n.a.createElement(K.a, null),
           offer: n.a.createElement(ke.a, null),
           info: n.a.createElement(Se.a, null),
           message: n.a.createElement(Be.a, null),
-          feedback: n.a.createElement(Me.a, null),
-          customer: n.a.createElement(je.a, null),
+          feedback: n.a.createElement(je.a, null),
+          customer: n.a.createElement(Me.a, null),
           shipped: n.a.createElement(Le.a, null),
           delivered: n.a.createElement(De.a, null),
           defence: n.a.createElement(Fe.a, null),
@@ -758,7 +770,7 @@
           )
         );
       }
-      var Ke = Object(M.a)(function() {
+      var Ke = Object(j.a)(function() {
         return {
           avatar: {
             width: 30,
@@ -854,7 +866,7 @@
       var ea = function(e) {
           e({ type: "TOGGLE_SIDEBAR" });
         },
-        aa = t(549),
+        aa = t(548),
         ta = t.n(aa),
         la = "https://flatlogic-node-backend.herokuapp.com",
         na = {
@@ -1025,14 +1037,14 @@
           v = y[1],
           T = Object(l.useState)(!0),
           C = Object(p.a)(T, 2),
-          P = C[0],
-          O = C[1],
+          O = C[0],
+          P = C[1],
           k = Object(l.useState)(null),
           S = Object(p.a)(k, 2),
           B = S[0],
-          M = S[1],
-          j = Object(l.useState)(!1),
-          L = Object(p.a)(j, 2),
+          j = S[1],
+          M = Object(l.useState)(!1),
+          L = Object(p.a)(M, 2),
           D = L[0],
           Z = L[1],
           X = Object(l.useState)(!1),
@@ -1113,13 +1125,13 @@
                   "aria-haspopup": "true",
                   "aria-controls": "mail-menu",
                   onClick: function(e) {
-                    v(e.currentTarget), O(!1);
+                    v(e.currentTarget), P(!1);
                   },
                   className: a.headerMenuButton
                 },
                 n.a.createElement(
                   ge,
-                  { badgeContent: P ? pa.length : null, color: "warning" },
+                  { badgeContent: O ? pa.length : null, color: "warning" },
                   n.a.createElement(K.a, { classes: { root: a.headerIcon } })
                 )
               ),
@@ -1148,7 +1160,7 @@
                   className: a.headerMenuButton,
                   "aria-controls": "profile-menu",
                   onClick: function(e) {
-                    return M(e.currentTarget);
+                    return j(e.currentTarget);
                   }
                 },
                 n.a.createElement(Ie, {
@@ -1295,7 +1307,7 @@
                   open: Boolean(B),
                   anchorEl: B,
                   onClose: function() {
-                    return M(null);
+                    return j(null);
                   },
                   className: a.headerMenu,
                   classes: { paper: a.profileMenu },
@@ -1402,7 +1414,7 @@
         }
         return e;
       }
-      var fa = Object(M.a)(function(e) {
+      var fa = Object(j.a)(function(e) {
           var a;
           return {
             menuButton: { marginLeft: 12, marginRight: 36 },
@@ -1461,13 +1473,13 @@
         ya = t(1441),
         ba = t(1334),
         va = t(1442),
-        Ta = t(430),
-        Aa = t(339),
-        wa = t(429),
+        Ta = t(429),
+        Aa = t(338),
+        wa = t(428),
         Ca = t(1445),
-        Pa = t(1443),
-        Oa = t(1444),
-        ka = Object(M.a)(function(e) {
+        Oa = t(1443),
+        Pa = t(1444),
+        ka = Object(j.a)(function(e) {
           return {
             link: {
               textDecoration: "none",
@@ -1568,7 +1580,7 @@
         }
         return e;
       }
-      var Ma = Object(M.a)(function(e) {
+      var ja = Object(j.a)(function(e) {
         return {
           dotBase: {
             minWidth: 5,
@@ -1581,13 +1593,13 @@
           dotLarge: { minWidth: 18, minHeight: 18 }
         };
       });
-      function ja(e) {
+      function Ma(e) {
         var a,
           t = e.size,
           l = void 0 === t ? "small" : t,
           r = e.color,
           m = e.style,
-          c = Ma(),
+          c = ja(),
           i = Object(G.a)();
         return n.a.createElement("div", {
           className: x()(
@@ -1632,7 +1644,7 @@
               n.a.createElement(
                 b.a,
                 { display: "flex", alignItems: "center" },
-                n.a.createElement(ja, { color: "success", size: "medium" }),
+                n.a.createElement(Ma, { color: "success", size: "medium" }),
                 "\xa013"
               )
             )
@@ -1711,14 +1723,14 @@
             "toggleDrawer",
             "click"
           ]),
-          P = Object(l.useState)(!1),
-          O = Object(p.a)(P, 2),
-          k = O[0],
-          S = O[1],
+          O = Object(l.useState)(!1),
+          P = Object(p.a)(O, 2),
+          k = P[0],
+          S = P[1],
           B = n.a.useState(null),
-          M = Object(p.a)(B, 2),
-          j = M[0],
-          L = M[1],
+          j = Object(p.a)(B, 2),
+          M = j[0],
+          L = j[1],
           D = Object(l.useState)(!1),
           F = Object(p.a)(D, 2),
           R = F[0],
@@ -1746,7 +1758,7 @@
           return n.a.createElement(ya.a, { className: z.divider });
         if ("margin" === T)
           return n.a.createElement("section", { style: { marginTop: 240 } });
-        var V = Boolean(j),
+        var V = Boolean(M),
           Y = V ? "add-section-popover" : void 0;
         function K(e) {
           L(e.currentTarget);
@@ -1788,7 +1800,7 @@
                           Object(u.a)({}, z.linkIconActive, U)
                         )
                       },
-                      h || n.a.createElement(Pa.a, null)
+                      h || n.a.createElement(Oa.a, null)
                     ),
                     n.a.createElement(
                       ge,
@@ -1806,7 +1818,7 @@
                         primary: N
                       })
                     ),
-                    n.a.createElement(Oa.a, {
+                    n.a.createElement(Pa.a, {
                       className: x()(
                         ((c = {}),
                         Object(u.a)(c, z.expand, k),
@@ -1840,7 +1852,7 @@
                           Object(u.a)({}, z.linkIconActive, U)
                         )
                       },
-                      h || n.a.createElement(Pa.a, null)
+                      h || n.a.createElement(Oa.a, null)
                     ),
                     n.a.createElement(Ta.a, {
                       classes: {
@@ -1854,7 +1866,7 @@
                       },
                       primary: N
                     }),
-                    n.a.createElement(Oa.a, {
+                    n.a.createElement(Pa.a, {
                       className: x()(
                         ((E = {}),
                         Object(u.a)(E, z.expand, k),
@@ -1932,7 +1944,7 @@
                     ),
                     style: { margin: v && -11 }
                   },
-                  v ? n.a.createElement(ja, { color: U && "primary" }) : h
+                  v ? n.a.createElement(Ma, { color: U && "primary" }) : h
                 ),
                 n.a.createElement(Ta.a, {
                   classes: {
@@ -1958,7 +1970,7 @@
                 {
                   id: Y,
                   open: V,
-                  anchorEl: j,
+                  anchorEl: M,
                   onClose: Q,
                   anchorOrigin: { vertical: "bottom", horizontal: "left" },
                   transformOrigin: { vertical: "top", horizontal: "left" },
@@ -2104,7 +2116,7 @@
         },
         Ga = t(1446),
         Ua = t(1447),
-        Va = Object(M.a)(function(e) {
+        Va = Object(j.a)(function(e) {
           return {
             widgetWrapper: { display: "flex", minHeight: "100%" },
             inheritHeight: { minHeight: "auto" },
@@ -2178,10 +2190,10 @@
           T = Object(p.a)(v, 2),
           w = T[0],
           C = T[1],
-          P = Object(l.useState)(!1),
-          O = Object(p.a)(P, 2),
-          k = O[0],
-          S = O[1];
+          O = Object(l.useState)(!1),
+          P = Object(p.a)(O, 2),
+          k = P[0],
+          S = P[1];
         return n.a.createElement(
           "div",
           {
@@ -2339,7 +2351,7 @@
               dark: Ge()("#FF5C93")
                 .darken(15)
                 .toHexString(),
-              contrastText: "#FFFFFF"
+              contrastText: "#ccc"
             },
             warning: {
               main: "#FFC260",
@@ -2532,6 +2544,7 @@
         },
         $a = {
           palette: {
+            contrastText: "#fff",
             type: "dark",
             primary: {
               main: "#536DFE",
@@ -2600,7 +2613,7 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        et = t(233);
+        et = t(232);
       function at(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -2842,18 +2855,18 @@
             return e.anchorEl === a.anchorEl;
           }
         ),
-        st = t(483),
-        ot = t(484),
-        dt = t(485),
-        Et = t(539),
-        ut = t(542),
-        pt = t(345),
+        st = t(482),
+        ot = t(483),
+        dt = t(484),
+        Et = t(538),
+        ut = t(541),
+        pt = t(344),
         gt = t(1339),
-        xt = t(486),
-        ht = t(487),
-        Nt = t(543),
+        xt = t(485),
+        ht = t(486),
+        Nt = t(542),
         It = t(22),
-        ft = Object(M.a)(function(e) {
+        ft = Object(j.a)(function(e) {
           return {
             card: {
               minHeight: "100%",
@@ -3158,9 +3171,9 @@
             }
           ]
         },
-        bt = t(245),
+        bt = t(244),
         vt = t(1452),
-        Tt = Object(M.a)(function(e) {
+        Tt = Object(j.a)(function(e) {
           return {
             title: {
               display: "flex",
@@ -3377,8 +3390,8 @@
       }
       var wt = t(1453),
         Ct = t(1454),
-        Pt = t(15),
-        Ot = [
+        Ot = t(15),
+        Pt = [
           { name: "Group A", value: 400, color: "primary" },
           { name: "Group B", value: 300, color: "secondary" },
           { name: "Group C", value: 300, color: "warning" },
@@ -3471,7 +3484,7 @@
       function Bt(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var Mt = [
+      var jt = [
         { id: "id", numeric: !0, disablePadding: !0, label: "Order ID" },
         { id: "customer", numeric: !0, disablePadding: !1, label: "Customer" },
         { id: "office", numeric: !0, disablePadding: !1, label: "Office" },
@@ -3496,7 +3509,7 @@
         },
         { id: "status", numeric: !0, disablePadding: !1, label: "Status" }
       ];
-      function jt(e) {
+      function Mt(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -3521,7 +3534,7 @@
                 classes: { root: a.checkboxColor }
               })
             ),
-            Mt.map(function(e) {
+            jt.map(function(e) {
               return n.a.createElement(
                 dt.a,
                 {
@@ -3561,13 +3574,13 @@
           )
         );
       }
-      var Lt = Object(M.a)(function(e) {
+      var Lt = Object(j.a)(function(e) {
           return {
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Pt.i)(
+                    backgroundColor: Object(Ot.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -3686,14 +3699,14 @@
             A = T[0],
             w = T[1],
             C = n.a.useState(5),
-            P = Object(p.a)(C, 2),
-            O = P[0],
-            k = P[1],
-            S = O - Math.min(O, St.length - A * O),
+            O = Object(p.a)(C, 2),
+            P = O[0],
+            k = O[1],
+            S = P - Math.min(P, St.length - A * P),
             B = n.a.useMemo(function() {
               return Ft(10);
             }, []),
-            M = n.a.useMemo(
+            j = n.a.useMemo(
               function() {
                 for (
                   var e = [],
@@ -3787,12 +3800,14 @@
                             paddingAngle: 5,
                             innerRadius: 30,
                             outerRadius: 35,
-                            dataKey: "value"
+                            dataKey: "value",
+                            style: { border: 0 }
                           },
                           kt.map(function(e, t) {
                             return n.a.createElement(It.f, {
                               key: "cell-".concat(t),
-                              fill: a.palette[e.color].main
+                              fill: a.palette[e.color].main,
+                              stroke: ""
                             });
                           })
                         )
@@ -3839,7 +3854,7 @@
                         },
                         "45"
                       ),
-                      n.a.createElement(ja, { color: "success" })
+                      n.a.createElement(Ma, { color: "success" })
                     )
                   ),
                   n.a.createElement(
@@ -3871,7 +3886,7 @@
                         },
                         "147"
                       ),
-                      n.a.createElement(ja, { color: "warning" })
+                      n.a.createElement(Ma, { color: "warning" })
                     )
                   ),
                   n.a.createElement(
@@ -3902,7 +3917,7 @@
                         },
                         "351"
                       ),
-                      n.a.createElement(ja, { color: "primary" })
+                      n.a.createElement(Ma, { color: "primary" })
                     )
                   )
                 )
@@ -3951,15 +3966,16 @@
                         n.a.createElement(
                           It.k,
                           {
-                            data: Ot,
+                            data: Pt,
                             innerRadius: 30,
                             outerRadius: 40,
                             dataKey: "value"
                           },
-                          Ot.map(function(e, t) {
+                          Pt.map(function(e, t) {
                             return n.a.createElement(It.f, {
                               key: "cell-".concat(t),
-                              fill: a.palette[e.color].main
+                              fill: a.palette[e.color].main,
+                              stroke: ""
                             });
                           })
                         )
@@ -3972,14 +3988,14 @@
                     n.a.createElement(
                       "div",
                       { className: e.pieChartLegendWrapper },
-                      Ot.map(function(a, t) {
+                      Pt.map(function(a, t) {
                         var l = a.name,
                           r = a.value,
                           m = a.color;
                         return n.a.createElement(
                           "div",
                           { key: m, className: e.legendItemContainer },
-                          n.a.createElement(ja, {
+                          n.a.createElement(Ma, {
                             color: m,
                             style: { marginRight: 5 }
                           }),
@@ -4024,7 +4040,7 @@
                   n.a.createElement(
                     "div",
                     { className: e.legendElement },
-                    n.a.createElement(ja, { color: "warning" }),
+                    n.a.createElement(Ma, { color: "warning" }),
                     n.a.createElement(
                       he,
                       {
@@ -4039,7 +4055,7 @@
                   n.a.createElement(
                     "div",
                     { className: e.legendElement },
-                    n.a.createElement(ja, { color: "primary" }),
+                    n.a.createElement(Ma, { color: "primary" }),
                     n.a.createElement(
                       he,
                       {
@@ -4235,7 +4251,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(ja, { color: "warning" }),
+                        n.a.createElement(Ma, { color: "warning" }),
                         n.a.createElement(
                           he,
                           { className: e.mainChartLegentElement },
@@ -4245,7 +4261,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(ja, { color: "primary" }),
+                        n.a.createElement(Ma, { color: "primary" }),
                         n.a.createElement(
                           he,
                           { className: e.mainChartLegentElement },
@@ -4255,7 +4271,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(ja, { color: "secondary" }),
+                        n.a.createElement(Ma, { color: "secondary" }),
                         n.a.createElement(
                           he,
                           { className: e.mainChartLegentElement },
@@ -4293,7 +4309,7 @@
                     It.g,
                     {
                       margin: { top: 0, right: -15, left: -15, bottom: 0 },
-                      data: M
+                      data: j
                     },
                     n.a.createElement(It.q, {
                       ticks: [0, 2500, 5e3, 7500],
@@ -4365,7 +4381,7 @@
                       "aria-labelledby": "tableTitle",
                       "aria-label": "recent orders"
                     },
-                    n.a.createElement(jt, {
+                    n.a.createElement(Mt, {
                       classes: e,
                       numSelected: I.length,
                       order: o,
@@ -4411,7 +4427,7 @@
                               };
                         })(o, g)
                       )
-                        .slice(A * O, A * O + O)
+                        .slice(A * P, A * P + P)
                         .map(function(a, t) {
                           var l,
                             r = ((l = a.id), -1 !== I.indexOf(l)),
@@ -4517,7 +4533,7 @@
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
                   count: St.length,
-                  rowsPerPage: O,
+                  rowsPerPage: P,
                   page: A,
                   backIconButtonProps: { "aria-label": "previous page" },
                   nextIconButtonProps: { "aria-label": "next page" },
@@ -4532,7 +4548,7 @@
             )
           );
         },
-        Wt = Object(M.a)(function(e) {
+        Wt = Object(j.a)(function(e) {
           return {
             dashedBorder: {
               border: "1px dashed",
@@ -4730,7 +4746,7 @@
         Gt = t(68),
         Ut =
           (t(937),
-          Object(M.a)(function(e) {
+          Object(j.a)(function(e) {
             return {
               layoutContainer: {
                 height: 200,
@@ -4803,7 +4819,7 @@
               notificationComponent: { paddingRight: e.spacing(4) }
             };
           })),
-        Vt = Object(M.a)(function(e) {
+        Vt = Object(j.a)(function(e) {
           return {
             codeContainer: {
               display: function(e) {
@@ -5269,9 +5285,9 @@
           t = e.className;
         return n.a.createElement(zt.a, { className: t, onClick: a });
       }
-      var _t = t(565),
+      var _t = t(564),
         Xt = t.n(_t),
-        $t = Object(M.a)(function(e) {
+        $t = Object(j.a)(function(e) {
           return { tableWrapper: { overflowX: "auto" } };
         }),
         el = { sent: "success", pending: "warning", declined: "secondary" };
@@ -5430,13 +5446,13 @@
         Al = t(1493),
         wl = t(1494),
         Cl = t(1495),
-        Pl = t(1496),
-        Ol = t(1497),
+        Ol = t(1496),
+        Pl = t(1497),
         kl = t(1498),
         Sl = t(1499),
         Bl = t(1500),
-        Ml = t(1501),
-        jl = t(1502),
+        jl = t(1501),
+        Ml = t(1502),
         Ll = t(1503),
         Dl = t(1504),
         Fl = t(1505),
@@ -5483,13 +5499,13 @@
         An = t(1546),
         wn = t(1547),
         Cn = t(1548),
-        Pn = t(1549),
-        On = t(1550),
+        On = t(1549),
+        Pn = t(1550),
         kn = t(1551),
         Sn = t(1552),
         Bn = t(1553),
-        Mn = t(1554),
-        jn = t(1555),
+        jn = t(1554),
+        Mn = t(1555),
         Ln = t(1556),
         Dn = t(1557),
         Fn = t(1558),
@@ -5537,13 +5553,13 @@
         Ar = t(1600),
         wr = t(1601),
         Cr = t(1603),
-        Pr = t(1604),
-        Or = t(1605),
+        Or = t(1604),
+        Pr = t(1605),
         kr = t(1606),
         Sr = t(1607),
         Br = t(1608),
-        Mr = t(1609),
-        jr = t(1610),
+        jr = t(1609),
+        Mr = t(1610),
         Lr = t(1611),
         Dr = t(1612),
         Fr = t(1613),
@@ -5591,13 +5607,13 @@
         Am = t(1656),
         wm = t(1657),
         Cm = t(1658),
-        Pm = t(1659),
-        Om = t(1660),
+        Om = t(1659),
+        Pm = t(1660),
         km = t(1661),
         Sm = t(1662),
         Bm = t(1663),
-        Mm = t(1664),
-        jm = t(1665),
+        jm = t(1664),
+        Mm = t(1665),
         Lm = t(1666),
         Dm = t(1667),
         Fm = t(1668),
@@ -5645,13 +5661,13 @@
         Ac = t(1710),
         wc = t(1711),
         Cc = t(1712),
-        Pc = t(1713),
-        Oc = t(1714),
+        Oc = t(1713),
+        Pc = t(1714),
         kc = t(1715),
         Sc = t(1716),
         Bc = t(1717),
-        Mc = t(1718),
-        jc = t(1719),
+        jc = t(1718),
+        Mc = t(1719),
         Lc = t(1720),
         Dc = t(1721),
         Fc = t(1722),
@@ -5699,13 +5715,13 @@
         Ai = t(1764),
         wi = t(1765),
         Ci = t(1766),
-        Pi = t(1767),
-        Oi = t(1768),
+        Oi = t(1767),
+        Pi = t(1768),
         ki = t(1769),
         Si = t(1770),
         Bi = t(1771),
-        Mi = t(1772),
-        ji = t(1773),
+        ji = t(1772),
+        Mi = t(1773),
         Li = t(1774),
         Di = t(1775),
         Fi = t(1776),
@@ -5753,13 +5769,13 @@
         As = t(1818),
         ws = t(1819),
         Cs = t(1820),
-        Ps = t(1821),
-        Os = t(1822),
+        Os = t(1821),
+        Ps = t(1822),
         ks = t(1823),
         Ss = t(1824),
         Bs = t(1825),
-        Ms = t(1826),
-        js = t(1827),
+        js = t(1826),
+        Ms = t(1827),
         Ls = t(1828),
         Ds = t(1829),
         Fs = t(1830),
@@ -5806,13 +5822,13 @@
         Ao = t(1871),
         wo = t(1872),
         Co = t(1873),
-        Po = t(1874),
-        Oo = t(1875),
+        Oo = t(1874),
+        Po = t(1875),
         ko = t(1876),
         So = t(1877),
         Bo = t(1878),
-        Mo = t(1879),
-        jo = t(1880),
+        jo = t(1879),
+        Mo = t(1880),
         Lo = t(1881),
         Do = t(1882),
         Fo = t(1883),
@@ -5860,13 +5876,13 @@
         Ad = t(1925),
         wd = t(1926),
         Cd = t(1927),
-        Pd = t(1928),
-        Od = t(1929),
+        Od = t(1928),
+        Pd = t(1929),
         kd = t(1930),
         Sd = t(1931),
         Bd = t(1932),
-        Md = t(1933),
-        jd = t(1934),
+        jd = t(1933),
+        Md = t(1934),
         Ld = t(1935),
         Dd = t(1936),
         Fd = t(1937),
@@ -5914,13 +5930,13 @@
         AE = t(1979),
         wE = t(1980),
         CE = t(1981),
-        PE = t(1982),
-        OE = t(1983),
+        OE = t(1982),
+        PE = t(1983),
         kE = t(1984),
         SE = t(1985),
         BE = t(1986),
-        ME = t(1987),
-        jE = t(1988),
+        jE = t(1987),
+        ME = t(1988),
         LE = t(1989),
         DE = t(1990),
         FE = t(1991),
@@ -5968,13 +5984,13 @@
         Au = t(2034),
         wu = t(2035),
         Cu = t(2036),
-        Pu = t(2037),
-        Ou = t(2038),
+        Ou = t(2037),
+        Pu = t(2038),
         ku = t(2039),
         Su = t(2040),
         Bu = t(2041),
-        Mu = t(2042),
-        ju = t(2043),
+        ju = t(2042),
+        Mu = t(2043),
         Lu = t(2044),
         Du = t(2045),
         Fu = t(2046),
@@ -6022,13 +6038,13 @@
         Ap = t(2088),
         wp = t(2089),
         Cp = t(2090),
-        Pp = t(2091),
-        Op = t(2092),
+        Op = t(2091),
+        Pp = t(2092),
         kp = t(2093),
         Sp = t(2094),
         Bp = t(2095),
-        Mp = t(2096),
-        jp = t(2097),
+        jp = t(2096),
+        Mp = t(2097),
         Lp = t(2098),
         Dp = t(2099),
         Fp = t(2100),
@@ -6076,13 +6092,13 @@
         Ag = t(2142),
         wg = t(2143),
         Cg = t(2144),
-        Pg = t(2145),
-        Og = t(2146),
+        Og = t(2145),
+        Pg = t(2146),
         kg = t(2147),
         Sg = t(2148),
         Bg = t(2149),
-        Mg = t(2150),
-        jg = t(2151),
+        jg = t(2150),
+        Mg = t(2151),
         Lg = t(2152),
         Dg = t(2153),
         Fg = t(2154),
@@ -6130,13 +6146,13 @@
         Ax = t(2196),
         wx = t(2197),
         Cx = t(2198),
-        Px = t(2199),
-        Ox = t(2200),
+        Ox = t(2199),
+        Px = t(2200),
         kx = t(2201),
         Sx = t(2202),
         Bx = t(2203),
-        Mx = t(2204),
-        jx = t(2205),
+        jx = t(2204),
+        Mx = t(2205),
         Lx = t(2206),
         Dx = t(2207),
         Fx = t(2208),
@@ -6184,13 +6200,13 @@
         Ah = t(2250),
         wh = t(2251),
         Ch = t(2253),
-        Ph = t(2254),
-        Oh = t(2255),
+        Oh = t(2254),
+        Ph = t(2255),
         kh = t(2256),
         Sh = t(2257),
         Bh = t(2258),
-        Mh = t(2259),
-        jh = t(2260),
+        jh = t(2259),
+        Mh = t(2260),
         Lh = t(2261),
         Dh = t(2262),
         Fh = t(2263),
@@ -6238,13 +6254,13 @@
         AN = t(2305),
         wN = t(2306),
         CN = t(2307),
-        PN = t(2308),
-        ON = t(2309),
+        ON = t(2308),
+        PN = t(2309),
         kN = t(2310),
         SN = t(2311),
         BN = t(2312),
-        MN = t(2313),
-        jN = t(2314),
+        jN = t(2313),
+        MN = t(2314),
         LN = t(2315),
         DN = t(2316),
         FN = t(2317),
@@ -6292,13 +6308,13 @@
         AI = t(2359),
         wI = t(2360),
         CI = t(2361),
-        PI = t(2362),
-        OI = t(2363),
+        OI = t(2362),
+        PI = t(2363),
         kI = t(2364),
         SI = t(2365),
         BI = t(2366),
-        MI = t(2367),
-        jI = t(2368),
+        jI = t(2367),
+        MI = t(2368),
         LI = t(2369),
         DI = t(2370),
         FI = t(2371),
@@ -6339,7 +6355,7 @@
         If = t(2406),
         ff = t(2407),
         yf = t(2408),
-        bf = Object(M.a)(function(e) {
+        bf = Object(j.a)(function(e) {
           return {
             titleBold: { fontWeight: 600 },
             iconsBar: {
@@ -6550,7 +6566,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(je.a, null),
+                    n.a.createElement(Me.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -6839,7 +6855,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pl.a, null),
+                    n.a.createElement(Ol.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -6856,7 +6872,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ol.a, null),
+                    n.a.createElement(Pl.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -6924,7 +6940,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ml.a, null),
+                    n.a.createElement(jl.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -6941,7 +6957,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jl.a, null),
+                    n.a.createElement(Ml.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -7774,7 +7790,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pn.a, null),
+                    n.a.createElement(On.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -7791,7 +7807,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(On.a, null),
+                    n.a.createElement(Pn.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -7859,7 +7875,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mn.a, null),
+                    n.a.createElement(jn.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -7876,7 +7892,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jn.a, null),
+                    n.a.createElement(Mn.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -8692,7 +8708,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(P.a, null),
+                    n.a.createElement(O.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -8726,7 +8742,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pr.a, null),
+                    n.a.createElement(Or.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -8743,7 +8759,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Or.a, null),
+                    n.a.createElement(Pr.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -8811,7 +8827,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mr.a, null),
+                    n.a.createElement(jr.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -8828,7 +8844,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jr.a, null),
+                    n.a.createElement(Mr.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -9253,7 +9269,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(O.a, null),
+                    n.a.createElement(P.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -9678,7 +9694,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pm.a, null),
+                    n.a.createElement(Om.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -9695,7 +9711,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Om.a, null),
+                    n.a.createElement(Pm.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -9763,7 +9779,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mm.a, null),
+                    n.a.createElement(jm.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -9780,7 +9796,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jm.a, null),
+                    n.a.createElement(Mm.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -10613,7 +10629,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pc.a, null),
+                    n.a.createElement(Oc.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -10630,7 +10646,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oc.a, null),
+                    n.a.createElement(Pc.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -10698,7 +10714,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mc.a, null),
+                    n.a.createElement(jc.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -10715,7 +10731,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jc.a, null),
+                    n.a.createElement(Mc.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -11327,7 +11343,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oa.a, null),
+                    n.a.createElement(Pa.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -11616,7 +11632,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pi.a, null),
+                    n.a.createElement(Oi.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -11633,7 +11649,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oi.a, null),
+                    n.a.createElement(Pi.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -11701,7 +11717,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mi.a, null),
+                    n.a.createElement(ji.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -11718,7 +11734,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ji.a, null),
+                    n.a.createElement(Mi.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -12551,7 +12567,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ps.a, null),
+                    n.a.createElement(Os.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -12568,7 +12584,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Os.a, null),
+                    n.a.createElement(Ps.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -12636,7 +12652,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ms.a, null),
+                    n.a.createElement(js.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -12653,7 +12669,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(js.a, null),
+                    n.a.createElement(Ms.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -13452,7 +13468,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Po.a, null),
+                    n.a.createElement(Oo.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -13469,7 +13485,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oo.a, null),
+                    n.a.createElement(Po.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -13537,7 +13553,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mo.a, null),
+                    n.a.createElement(jo.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -13554,7 +13570,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jo.a, null),
+                    n.a.createElement(Mo.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -13724,7 +13740,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pa.a, null),
+                    n.a.createElement(Oa.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -14387,7 +14403,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pd.a, null),
+                    n.a.createElement(Od.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -14404,7 +14420,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Od.a, null),
+                    n.a.createElement(Pd.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -14472,7 +14488,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Md.a, null),
+                    n.a.createElement(jd.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -14489,7 +14505,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jd.a, null),
+                    n.a.createElement(Md.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -15322,7 +15338,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PE.a, null),
+                    n.a.createElement(OE.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -15339,7 +15355,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OE.a, null),
+                    n.a.createElement(PE.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -15407,7 +15423,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ME.a, null),
+                    n.a.createElement(jE.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -15441,7 +15457,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jE.a, null),
+                    n.a.createElement(ME.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -16308,7 +16324,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pu.a, null),
+                    n.a.createElement(Ou.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -16325,7 +16341,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ou.a, null),
+                    n.a.createElement(Pu.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -16393,7 +16409,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mu.a, null),
+                    n.a.createElement(ju.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -16410,7 +16426,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ju.a, null),
+                    n.a.createElement(Mu.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -17243,7 +17259,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pp.a, null),
+                    n.a.createElement(Op.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -17260,7 +17276,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Op.a, null),
+                    n.a.createElement(Pp.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -17328,7 +17344,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mp.a, null),
+                    n.a.createElement(jp.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -17345,7 +17361,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jp.a, null),
+                    n.a.createElement(Mp.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -18178,7 +18194,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pg.a, null),
+                    n.a.createElement(Og.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -18212,7 +18228,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Og.a, null),
+                    n.a.createElement(Pg.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -18280,7 +18296,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mg.a, null),
+                    n.a.createElement(jg.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -18297,7 +18313,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jg.a, null),
+                    n.a.createElement(Mg.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19147,7 +19163,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Px.a, null),
+                    n.a.createElement(Ox.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19164,7 +19180,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ox.a, null),
+                    n.a.createElement(Px.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19232,7 +19248,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mx.a, null),
+                    n.a.createElement(jx.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19249,7 +19265,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oe.a, null),
+                    n.a.createElement(Pe.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19266,7 +19282,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jx.a, null),
+                    n.a.createElement(Mx.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -19878,7 +19894,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Me.a, null),
+                    n.a.createElement(je.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -20116,7 +20132,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ph.a, null),
+                    n.a.createElement(Oh.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -20133,7 +20149,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oh.a, null),
+                    n.a.createElement(Ph.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -20201,7 +20217,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mh.a, null),
+                    n.a.createElement(jh.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -20218,7 +20234,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jh.a, null),
+                    n.a.createElement(Mh.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21034,7 +21050,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PN.a, null),
+                    n.a.createElement(ON.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21051,7 +21067,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ON.a, null),
+                    n.a.createElement(PN.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21136,7 +21152,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MN.a, null),
+                    n.a.createElement(jN.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21153,7 +21169,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jN.a, null),
+                    n.a.createElement(MN.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21969,7 +21985,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PI.a, null),
+                    n.a.createElement(OI.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -21986,7 +22002,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OI.a, null),
+                    n.a.createElement(PI.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -22054,7 +22070,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MI.a, null),
+                    n.a.createElement(jI.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -22071,7 +22087,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jI.a, null),
+                    n.a.createElement(MI.a, null),
                     n.a.createElement(
                       te.a,
                       { className: e.materialIconText },
@@ -24341,13 +24357,13 @@
       function Cf() {
         var e = Object(G.a)();
         return n.a.createElement(Af.a, {
-          options: Pf(e),
+          options: Of(e),
           series: wf,
           type: "area",
           height: 350
         });
       }
-      function Pf(e) {
+      function Of(e) {
         return {
           dataLabels: { enabled: !1 },
           stroke: { curve: "smooth" },
@@ -24370,7 +24386,7 @@
           legend: { show: !1 }
         };
       }
-      var Of = [
+      var Pf = [
         { name: "Metric1", data: Sf(18, { min: 0, max: 90 }) },
         { name: "Metric2", data: Sf(18, { min: 0, max: 90 }) },
         { name: "Metric3", data: Sf(18, { min: 0, max: 90 }) },
@@ -24385,7 +24401,7 @@
         var e = Object(G.a)();
         return n.a.createElement(Af.a, {
           options: Bf(e),
-          series: Of,
+          series: Pf,
           type: "heatmap",
           height: 350
         });
@@ -24405,7 +24421,7 @@
           colors: [e.palette.primary.main]
         };
       }
-      var Mf = function(e) {
+      var jf = function(e) {
           return {
             options: {
               labels: ["January", "February", "March", "April", "May", "June"]
@@ -24422,15 +24438,15 @@
             colors: [e.palette.primary.main, e.palette.success.main]
           };
         },
-        jf = {
+        Mf = {
           series: [{ name: "Series 1", data: [80, 50, 30, 40, 100, 20] }]
         },
         Lf = function() {
           var e = Object(G.a)(),
-            a = Object(l.useState)(jf),
+            a = Object(l.useState)(Mf),
             t = Object(p.a)(a, 1)[0];
           return n.a.createElement(Af.a, {
-            options: Mf(e),
+            options: jf(e),
             series: t.series,
             type: "radar",
             height: "350"
@@ -24700,7 +24716,7 @@
         );
       }
       var Uf,
-        Vf = t(566),
+        Vf = t(565),
         Yf = 0,
         Kf = [],
         Qf = 864e5,
@@ -25416,7 +25432,7 @@
           )
         );
       }
-      var uy = Object(M.a)(function(e) {
+      var uy = Object(j.a)(function(e) {
         return {
           dashedBorder: {
             border: "1px dashed",
@@ -25473,7 +25489,7 @@
                       n.a.createElement(
                         dt.a,
                         null,
-                        n.a.createElement(ja, {
+                        n.a.createElement(Ma, {
                           color: "primary",
                           size: "large"
                         })
@@ -25504,7 +25520,7 @@
                       n.a.createElement(
                         dt.a,
                         null,
-                        n.a.createElement(ja, {
+                        n.a.createElement(Ma, {
                           color: "secondary",
                           size: "large"
                         })
@@ -25536,7 +25552,7 @@
                       n.a.createElement(
                         dt.a,
                         null,
-                        n.a.createElement(ja, {
+                        n.a.createElement(Ma, {
                           color: "warning",
                           size: "large"
                         })
@@ -25567,7 +25583,7 @@
                       n.a.createElement(
                         dt.a,
                         null,
-                        n.a.createElement(ja, {
+                        n.a.createElement(Ma, {
                           color: "success",
                           size: "large"
                         })
@@ -25598,7 +25614,7 @@
                       n.a.createElement(
                         dt.a,
                         { align: "right" },
-                        n.a.createElement(ja, { color: "info", size: "large" })
+                        n.a.createElement(Ma, { color: "info", size: "large" })
                       ),
                       n.a.createElement(
                         dt.a,
@@ -25755,7 +25771,7 @@
           )
         );
       }
-      var gy = Object(M.a)(function(e) {
+      var gy = Object(j.a)(function(e) {
         return {
           paperItem: {
             textAlign: "center",
@@ -26268,7 +26284,7 @@
           )
         );
       }
-      var hy = Object(M.a)(function(e) {
+      var hy = Object(j.a)(function(e) {
         return {
           paddingTop: { paddingTop: e.spacing(1) },
           badge: { margin: e.spacing(2, 2, 0, 0) },
@@ -26507,7 +26523,7 @@
                         className: e.margin,
                         variant: "dot"
                       },
-                      n.a.createElement(Oe.a, null)
+                      n.a.createElement(Pe.a, null)
                     ),
                     n.a.createElement(
                       ge,
@@ -26564,7 +26580,7 @@
                         className: e.margin,
                         variant: "dot"
                       },
-                      n.a.createElement(Oe.a, null)
+                      n.a.createElement(Pe.a, null)
                     ),
                     n.a.createElement(
                       ge,
@@ -26642,7 +26658,7 @@
         );
       }
       var Iy = t(1470),
-        fy = t(232),
+        fy = t(231),
         yy = t(28),
         by = t(135),
         vy = t.n(by),
@@ -26650,13 +26666,13 @@
         Ay = t.n(Ty),
         wy = t(190),
         Cy = t.n(wy),
-        Py = t(567),
-        Oy = t(255),
-        ky = t.n(Oy),
-        Sy = t(256),
+        Oy = t(566),
+        Py = t(254),
+        ky = t.n(Py),
+        Sy = t(255),
         By = t.n(Sy),
-        My = Object(Py.autoPlay)(Cy.a),
-        jy = [
+        jy = Object(Oy.autoPlay)(Cy.a),
+        My = [
           {
             label: "San Francisco \u2013 Oakland Bay Bridge, United States",
             imgPath: ky.a
@@ -26715,7 +26731,7 @@
             l = Object(p.a)(t, 2),
             r = l[0],
             m = l[1],
-            c = jy.length,
+            c = My.length,
             i = function() {
               m(function(e) {
                 return e + 1;
@@ -26740,19 +26756,19 @@
                 {
                   square: !0,
                   elevation: 0,
-                  header: n.a.createElement(he, null, jy[r].label),
+                  header: n.a.createElement(he, null, My[r].label),
                   disableWidgetMenu: !0,
                   noBodyPadding: !0
                 },
                 n.a.createElement(
-                  My,
+                  jy,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
                     onChangeIndex: o,
                     enableMouseEvents: !0
                   },
-                  jy.map(function(a, t) {
+                  My.map(function(a, t) {
                     return n.a.createElement(
                       "div",
                       { key: a.label },
@@ -26804,7 +26820,7 @@
                   noBodyPadding: !0
                 },
                 n.a.createElement(
-                  My,
+                  jy,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
@@ -26863,7 +26879,7 @@
                   noBodyPadding: !0
                 },
                 n.a.createElement(
-                  My,
+                  jy,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
@@ -26911,10 +26927,10 @@
             )
           );
         },
-        Wy = t(191),
+        Wy = t(608),
         Hy = t(1467),
         zy = t(1466),
-        Gy = Object(M.a)(function(e) {
+        Gy = Object(j.a)(function(e) {
           return {
             marginRight: { marginRight: "10px" },
             marginTop: { marginTop: "10px" },
@@ -27622,11 +27638,11 @@
           )
         );
       }
-      var Qy = t(568),
+      var Qy = t(567),
         Jy = t.n(Qy),
-        qy = t(257),
+        qy = t(256),
         Zy = t.n(qy),
-        _y = Object(M.a)(function(e) {
+        _y = Object(j.a)(function(e) {
           return {
             root: { flexGrow: 1 },
             menuButton: { marginRight: e.spacing(2) },
@@ -27898,7 +27914,7 @@
         );
       }
       var $y = t(1464),
-        eb = Object(M.a)(function(e) {
+        eb = Object(j.a)(function(e) {
           return {
             button: {
               boxShadow: e.customShadows.widget,
@@ -28597,7 +28613,7 @@
       var rb = t(2418),
         mb = t(1469),
         cb = t(1468),
-        ib = Object(M.a)(function(e) {
+        ib = Object(j.a)(function(e) {
           return {
             expansion: {
               backgroundColor: e.palette.primary.light,
@@ -28866,7 +28882,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel1a-content",
                       id: "panel1a-header"
                     },
@@ -28888,7 +28904,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel2a-content",
                       id: "panel2a-header"
                     },
@@ -28910,7 +28926,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel3a-content",
                       id: "panel3a-header"
                     },
@@ -28935,7 +28951,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel1a-content",
                       id: "panel1a-header"
                     },
@@ -28957,7 +28973,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel2a-content",
                       id: "panel2a-header"
                     },
@@ -28979,7 +28995,7 @@
                   n.a.createElement(
                     mb.a,
                     {
-                      expandIcon: n.a.createElement(Oa.a, null),
+                      expandIcon: n.a.createElement(Pa.a, null),
                       "aria-controls": "panel3a-content",
                       id: "panel3a-header"
                     },
@@ -28992,7 +29008,7 @@
         );
       }
       var Eb = t(1337),
-        ub = Object(M.a)(function(e) {
+        ub = Object(j.a)(function(e) {
           return {
             root: { "&:hover": { backgroundColor: "transparent" } },
             icon: {
@@ -29031,18 +29047,18 @@
             horizontalFormTop: { paddingTop: e.spacing(2) }
           };
         }),
-        pb = t(500),
-        gb = t(570),
+        pb = t(499),
+        gb = t(569),
         xb = t.n(gb),
-        hb = t(569),
+        hb = t(568),
         Nb = t.n(hb),
-        Ib = t(571),
+        Ib = t(570),
         fb = t.n(Ib),
-        yb = t(572),
+        yb = t(571),
         bb = t.n(yb),
-        vb = t(573),
+        vb = t(572),
         Tb = t.n(vb),
-        Ab = t(574),
+        Ab = t(573),
         wb = t.n(Ab),
         Cb = Object(de.a)({
           root: { color: "green", "&$checked": { color: "green" } }
@@ -29052,7 +29068,7 @@
             Object.assign({ color: "default" }, e)
           );
         }),
-        Pb = Object(de.a)({
+        Ob = Object(de.a)({
           root: { color: "green", "&$checked": { color: "green" } }
         })(function(e) {
           return n.a.createElement(
@@ -29060,7 +29076,7 @@
             Object.assign({ color: "default" }, e)
           );
         }),
-        Ob = Object(de.a)(function(e) {
+        Pb = Object(de.a)(function(e) {
           return {
             root: {
               "& .MuiInputLabel-root": { color: "green" },
@@ -29613,7 +29629,7 @@
                       label: "Disabled"
                     }),
                     n.a.createElement(pb.a, {
-                      control: n.a.createElement(Pb, {
+                      control: n.a.createElement(Ob, {
                         defaultChecked: t.default,
                         onChange: function(e) {
                           return l(Object(u.a)({}, e.target.value, !t.default));
@@ -29675,7 +29691,7 @@
                         variant: "outlined",
                         fullWidth: !0
                       }),
-                      n.a.createElement(Ob, {
+                      n.a.createElement(Pb, {
                         label: "Success input",
                         placeholder: "Input with success",
                         margin: "normal",
@@ -29842,13 +29858,13 @@
             )
           );
         },
-        Mb = t(1458),
-        jb = t(1461),
+        jb = t(1458),
+        Mb = t(1461),
         Lb = t(1460),
         Db = t(1459),
         Fb = t(1463),
         Rb = t(1462),
-        Wb = Object(M.a)(function(e) {
+        Wb = Object(j.a)(function(e) {
           return {
             card: {
               minWidth: "100%",
@@ -29865,13 +29881,13 @@
             cardActions: { padding: e.spacing(2) }
           };
         }),
-        Hb = t(575),
+        Hb = t(574),
         zb = t.n(Hb),
-        Gb = t(576),
+        Gb = t(575),
         Ub = t.n(Gb),
-        Vb = t(252),
+        Vb = t(251),
         Yb = t.n(Vb),
-        Kb = t(577),
+        Kb = t(576),
         Qb = t.n(Kb);
       function Jb() {
         var e = { card: zb.a },
@@ -29886,10 +29902,10 @@
               y.a,
               { item: !0, md: 12, xs: 12 },
               n.a.createElement(
-                Mb.a,
+                jb.a,
                 { className: a.card },
                 n.a.createElement(
-                  jb.a,
+                  Mb.a,
                   null,
                   n.a.createElement(
                     he,
@@ -29926,7 +29942,7 @@
               y.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                Mb.a,
+                jb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
                   Db.a,
@@ -29937,7 +29953,7 @@
                     title: "Contemplative Reptile"
                   }),
                   n.a.createElement(
-                    jb.a,
+                    Mb.a,
                     null,
                     n.a.createElement(
                       he,
@@ -29981,10 +29997,10 @@
                   b.a,
                   { mb: 6 },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: a.cardMedia },
                     n.a.createElement(
-                      jb.a,
+                      Mb.a,
                       null,
                       n.a.createElement(
                         he,
@@ -30045,7 +30061,7 @@
                   b.a,
                   null,
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: a.cardMedia },
                     n.a.createElement(Rb.a, {
                       avatar: n.a.createElement(
@@ -30067,7 +30083,7 @@
                       title: "Paella dish"
                     }),
                     n.a.createElement(
-                      jb.a,
+                      Mb.a,
                       null,
                       n.a.createElement(
                         he,
@@ -30101,7 +30117,7 @@
               y.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                Mb.a,
+                jb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
                   Db.a,
@@ -30112,7 +30128,7 @@
                     title: "Technology"
                   }),
                   n.a.createElement(
-                    jb.a,
+                    Mb.a,
                     null,
                     n.a.createElement(
                       he,
@@ -30155,7 +30171,7 @@
           )
         );
       }
-      var qb = t(497),
+      var qb = t(496),
         Zb = Object(fy.a)(function(e) {
           return {
             root: {
@@ -30349,7 +30365,7 @@
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Pt.i)(
+                    backgroundColor: Object(Ot.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -30467,15 +30483,15 @@
           A = Object(p.a)(T, 2),
           w = A[0],
           C = A[1],
-          P = n.a.useState(0),
-          O = Object(p.a)(P, 2),
-          k = O[0],
-          S = O[1],
+          O = n.a.useState(0),
+          P = Object(p.a)(O, 2),
+          k = P[0],
+          S = P[1],
           B = n.a.useState(5),
-          M = Object(p.a)(B, 2),
-          j = M[0],
-          L = M[1];
-        var D = j - Math.min(j, ev.length - k * j);
+          j = Object(p.a)(B, 2),
+          M = j[0],
+          L = j[1];
+        var D = M - Math.min(M, ev.length - k * M);
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -30561,7 +30577,7 @@
                               };
                         })(h, b)
                       )
-                        .slice(k * j, k * j + j)
+                        .slice(k * M, k * M + M)
                         .map(function(e, a) {
                           var t,
                             l = ((t = e.name), -1 !== w.indexOf(t)),
@@ -30643,7 +30659,7 @@
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
                   count: ev.length,
-                  rowsPerPage: j,
+                  rowsPerPage: M,
                   page: k,
                   backIconButtonProps: { "aria-label": "previous page" },
                   nextIconButtonProps: { "aria-label": "next page" },
@@ -30800,7 +30816,7 @@
           )
         );
       }
-      var sv = Object(M.a)(function(e) {
+      var sv = Object(j.a)(function(e) {
         return { paper: { margin: "24px 0", backgroundColor: "#f3f3f3" } };
       });
       function ov() {
@@ -30992,8 +31008,8 @@
           )
         );
       }
-      var Ev = t(499),
-        uv = Object(M.a)(function(e) {
+      var Ev = t(498),
+        uv = Object(j.a)(function(e) {
           return {
             form: { flexGrow: 1 },
             selectEmpty: { marginTop: e.spacing(2) },
@@ -31220,12 +31236,12 @@
         }
         return t;
       }
-      var Pv = n.a.createContext(),
-        Ov = function(e, a) {
+      var Ov = n.a.createContext(),
+        Pv = function(e, a) {
           switch (a.type) {
             case "UPDATE_PRODUCTS":
             case "EDIT_PRODUCT":
-              return Object(Wy.a)(a.payload);
+              return { isLoaded: !0, products: a.payload };
             default:
               return (function(e) {
                 for (var a = 1; a < arguments.length; a++) {
@@ -31253,29 +31269,35 @@
         },
         kv = function(e) {
           var a = e.children,
-            t = n.a.useReducer(Ov, wv),
+            t = n.a.useReducer(Pv, { isLoaded: !1, products: wv }),
             l = Object(p.a)(t, 2),
             r = l[0],
             m = l[1];
           return n.a.createElement(
-            Pv.Provider,
+            Ov.Provider,
             { value: { products: r, setProducts: m } },
             a
           );
         },
         Sv = function() {
-          return n.a.useContext(Pv);
+          return n.a.useContext(Ov);
         };
       function Bv(e) {
-        na.isBackend &&
-          i.a.get("/products").then(function(a) {
+        if (na.isBackend)
+          return i.a.get("/products").then(function(a) {
             e({ type: "UPDATE_PRODUCTS", payload: a.data });
+          });
+      }
+      function jv(e, a) {
+        na.isBackend &&
+          i.a.put("/products/" + e.id, e).then(function(e) {
+            a({ type: "EDIT_PRODUCT", payload: e.data });
           });
       }
       function Mv(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var jv = [
+      var Lv = [
         { id: "id", numeric: !0, disablePadding: !0, label: "ID" },
         { id: "image", numeric: !0, disablePadding: !1, label: "Image" },
         { id: "title", numeric: !0, disablePadding: !1, label: "Title" },
@@ -31284,7 +31306,7 @@
         { id: "rating", numeric: !0, disablePadding: !1, label: "Rating" },
         { id: "actions", numeric: !0, disablePadding: !1, label: "Actions" }
       ];
-      function Lv(e) {
+      function Dv(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -31308,7 +31330,7 @@
                 inputProps: { "aria-label": "select all rows" }
               })
             ),
-            jv.map(function(e) {
+            Lv.map(function(e) {
               return n.a.createElement(
                 dt.a,
                 {
@@ -31343,14 +31365,14 @@
           )
         );
       }
-      var Dv = Object(fy.a)(function(e) {
+      var Fv = Object(fy.a)(function(e) {
           return {
             root: { paddingLeft: e.spacing(2), paddingRight: e.spacing(1) },
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(Pt.i)(
+                    backgroundColor: Object(Ot.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -31362,8 +31384,8 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        Fv = function(e) {
-          var a = Dv(),
+        Rv = function(e) {
+          var a = Fv(),
             t = e.numSelected;
           return n.a.createElement(
             R.a,
@@ -31408,12 +31430,12 @@
                 )
           );
         };
-      function Rv(e) {
+      function Wv(e) {
         var a = e.closeToast,
           t = e.className;
         return n.a.createElement(zt.a, { className: t, onClick: a });
       }
-      var Wv = Object(E.j)(function(e) {
+      var Hv = Object(E.j)(function(e) {
           var a = e.history,
             t = uv(),
             r = Sv(),
@@ -31434,10 +31456,10 @@
             A = T[0],
             w = T[1],
             C = n.a.useState(5),
-            P = Object(p.a)(C, 2),
-            O = P[0],
-            k = P[1],
-            S = r.products;
+            O = Object(p.a)(C, 2),
+            P = O[0],
+            k = O[1],
+            S = r.products.products;
           Object(l.useEffect)(function() {
             !(function() {
               var e = {
@@ -31466,9 +31488,7 @@
               );
             })(),
               Bv(r.setProducts);
-          }, []),
-            console.log(r.products),
-            console.log(S, "--");
+          }, []);
           var B = function(e, a, t) {
               !(function(e) {
                 var a = e.id,
@@ -31483,7 +31503,7 @@
               })({ id: e, history: a, dispatch: r.setProducts }),
                 t.stopPropagation();
             },
-            M = O - Math.min(O, S.length - A * O);
+            j = P - Math.min(P, S.length - A * P);
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -31492,7 +31512,7 @@
               { container: !0, spacing: 3 },
               n.a.createElement(Gt.a, {
                 className: t.toastsContainer,
-                closeButton: n.a.createElement(Rv, {
+                closeButton: n.a.createElement(Wv, {
                   className: t.notificationCloseButton
                 }),
                 closeOnClick: !1,
@@ -31519,231 +31539,250 @@
                     },
                     "Create Product"
                   ),
-                  n.a.createElement(Fv, { numSelected: I.length }),
-                  n.a.createElement(
-                    "div",
-                    { className: t.tableWrapper },
-                    n.a.createElement(
-                      xt.a,
-                      {
-                        className: t.table,
-                        "aria-labelledby": "tableTitle",
-                        "aria-label": "enhanced table"
-                      },
-                      n.a.createElement(Lv, {
-                        classes: t,
-                        numSelected: I.length,
-                        order: s,
-                        orderBy: g,
-                        onSelectAllClick: function(e) {
-                          if (e.target.checked) {
-                            var a = S.map(function(e) {
-                              return e.id;
-                            });
-                            f(a);
-                          } else f([]);
+                  n.a.createElement(Rv, { numSelected: I.length }),
+                  na.isBackend && !r.products.isLoaded
+                    ? n.a.createElement(
+                        b.a,
+                        {
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center"
                         },
-                        onRequestSort: function(e, a) {
-                          o(g === a && "desc" === s ? "asc" : "desc"), x(a);
-                        },
-                        rowCount: S.length
-                      }),
-                      n.a.createElement(
-                        kv,
-                        null,
-                        n.a.createElement(
-                          ht.a,
-                          null,
-                          (function(e, a) {
-                            var t = e.map(function(e, a) {
-                              return [e, a];
-                            });
-                            return (
-                              t.sort(function(e, t) {
-                                var l = a(e[0], t[0]);
-                                return 0 !== l ? l : e[1] - t[1];
-                              }),
-                              t.map(function(e) {
-                                return e[0];
-                              })
-                            );
-                          })(
-                            S,
-                            (function(e, a) {
-                              return "desc" === e
-                                ? function(e, t) {
-                                    return Mv(e, t, a);
-                                  }
-                                : function(e, t) {
-                                    return -Mv(e, t, a);
-                                  };
-                            })(s, g)
-                          )
-                            .slice(A * O, A * O + O)
-                            .map(function(e, t) {
-                              var l,
-                                r = ((l = e.id), -1 !== I.indexOf(l)),
-                                m = "enhanced-table-checkbox-".concat(t);
-                              return n.a.createElement(
-                                ot.a,
-                                {
-                                  hover: !0,
-                                  onClick: function(a) {
-                                    return (function(e, a) {
-                                      var t = I.indexOf(a),
-                                        l = [];
-                                      -1 === t
-                                        ? (l = l.concat(I, a))
-                                        : 0 === t
-                                        ? (l = l.concat(I.slice(1)))
-                                        : t === I.length - 1
-                                        ? (l = l.concat(I.slice(0, -1)))
-                                        : t > 0 &&
-                                          (l = l.concat(
-                                            I.slice(0, t),
-                                            I.slice(t + 1)
-                                          )),
-                                        f(l);
-                                    })(0, e.id);
-                                  },
-                                  role: "checkbox",
-                                  "aria-checked": r,
-                                  tabIndex: -1,
-                                  key: e.id,
-                                  selected: r
-                                },
-                                n.a.createElement(
-                                  dt.a,
-                                  { padding: "checkbox" },
-                                  n.a.createElement(Et.a, {
-                                    checked: r,
-                                    inputProps: { "aria-labelledby": m }
-                                  })
-                                ),
-                                n.a.createElement(
-                                  dt.a,
-                                  {
-                                    component: "th",
-                                    id: m,
-                                    scope: "row",
-                                    padding: "none"
-                                  },
-                                  e.id
-                                ),
-                                n.a.createElement(
-                                  dt.a,
-                                  null,
-                                  n.a.createElement("img", {
-                                    src: e.img,
-                                    alt: e.title,
-                                    style: { width: 100 }
-                                  })
-                                ),
-                                n.a.createElement(
-                                  dt.a,
-                                  null,
-                                  n.a.createElement(
-                                    ve,
-                                    {
-                                      component: "button",
-                                      variant: "body2",
-                                      onClick: function(t) {
-                                        return (
-                                          (l = e.id),
-                                          (n = t),
-                                          a.push("/app/ecommerce/product/" + l),
-                                          void n.stopPropagation()
-                                        );
-                                        var l, n;
-                                      },
-                                      color: "primary"
-                                    },
-                                    e.title.split("").map(function(e, a) {
-                                      return 0 === a ? e.toUpperCase() : e;
-                                    })
-                                  )
-                                ),
-                                n.a.createElement(dt.a, null, e.subtitle),
-                                n.a.createElement(dt.a, null, "$", e.price),
-                                n.a.createElement(
-                                  dt.a,
-                                  null,
-                                  n.a.createElement(
-                                    b.a,
-                                    { display: "flex", alignItems: "center" },
-                                    n.a.createElement(
-                                      he,
-                                      {
-                                        style: { color: Ev.a[700] },
-                                        display: "inline"
-                                      },
-                                      e.rating
-                                    ),
-                                    " ",
-                                    n.a.createElement(wh.a, {
-                                      style: { color: Ev.a[700], marginTop: -5 }
-                                    })
-                                  )
-                                ),
-                                n.a.createElement(
-                                  dt.a,
-                                  null,
-                                  n.a.createElement(
-                                    b.a,
-                                    { display: "flex", alignItems: "center" },
-                                    n.a.createElement(
-                                      Ne,
-                                      {
-                                        color: "success",
-                                        size: "small",
-                                        style: { marginRight: 8 },
-                                        variant: "contained",
-                                        onClick: function(t) {
-                                          return (
-                                            (l = t),
-                                            (n = e.id),
-                                            a.push(
-                                              "/app/ecommerce/management/edit/" +
-                                                n
-                                            ),
-                                            void l.stopPropagation()
-                                          );
-                                          var l, n;
-                                        }
-                                      },
-                                      "Edit"
-                                    ),
-                                    n.a.createElement(
-                                      Ne,
-                                      {
-                                        color: "secondary",
-                                        size: "small",
-                                        variant: "contained",
-                                        onClick: function(t) {
-                                          return B(e.id, a, t);
-                                        }
-                                      },
-                                      "Delete"
-                                    )
-                                  )
-                                )
-                              );
-                            }),
-                          M > 0 &&
-                            n.a.createElement(
-                              ot.a,
-                              { style: { height: 53 * M } },
-                              n.a.createElement(dt.a, { colSpan: 6 })
-                            )
-                        )
+                        n.a.createElement(ie.a, { size: 26 })
                       )
-                    )
-                  ),
+                    : n.a.createElement(
+                        "div",
+                        { className: t.tableWrapper },
+                        n.a.createElement(
+                          xt.a,
+                          {
+                            className: t.table,
+                            "aria-labelledby": "tableTitle",
+                            "aria-label": "enhanced table"
+                          },
+                          n.a.createElement(Dv, {
+                            classes: t,
+                            numSelected: I.length,
+                            order: s,
+                            orderBy: g,
+                            onSelectAllClick: function(e) {
+                              if (e.target.checked) {
+                                var a = S.map(function(e) {
+                                  return e.id;
+                                });
+                                f(a);
+                              } else f([]);
+                            },
+                            onRequestSort: function(e, a) {
+                              o(g === a && "desc" === s ? "asc" : "desc"), x(a);
+                            },
+                            rowCount: S.length
+                          }),
+                          n.a.createElement(
+                            kv,
+                            null,
+                            n.a.createElement(
+                              ht.a,
+                              null,
+                              (function(e, a) {
+                                var t = e.map(function(e, a) {
+                                  return [e, a];
+                                });
+                                return (
+                                  t.sort(function(e, t) {
+                                    var l = a(e[0], t[0]);
+                                    return 0 !== l ? l : e[1] - t[1];
+                                  }),
+                                  t.map(function(e) {
+                                    return e[0];
+                                  })
+                                );
+                              })(
+                                S,
+                                (function(e, a) {
+                                  return "desc" === e
+                                    ? function(e, t) {
+                                        return Mv(e, t, a);
+                                      }
+                                    : function(e, t) {
+                                        return -Mv(e, t, a);
+                                      };
+                                })(s, g)
+                              )
+                                .slice(A * P, A * P + P)
+                                .map(function(e, t) {
+                                  var l,
+                                    r = ((l = e.id), -1 !== I.indexOf(l)),
+                                    m = "enhanced-table-checkbox-".concat(t);
+                                  return n.a.createElement(
+                                    ot.a,
+                                    {
+                                      hover: !0,
+                                      onClick: function(a) {
+                                        return (function(e, a) {
+                                          var t = I.indexOf(a),
+                                            l = [];
+                                          -1 === t
+                                            ? (l = l.concat(I, a))
+                                            : 0 === t
+                                            ? (l = l.concat(I.slice(1)))
+                                            : t === I.length - 1
+                                            ? (l = l.concat(I.slice(0, -1)))
+                                            : t > 0 &&
+                                              (l = l.concat(
+                                                I.slice(0, t),
+                                                I.slice(t + 1)
+                                              )),
+                                            f(l);
+                                        })(0, e.id);
+                                      },
+                                      role: "checkbox",
+                                      "aria-checked": r,
+                                      selected: r
+                                    },
+                                    n.a.createElement(
+                                      dt.a,
+                                      { padding: "checkbox" },
+                                      n.a.createElement(Et.a, {
+                                        checked: r,
+                                        inputProps: { "aria-labelledby": m }
+                                      })
+                                    ),
+                                    n.a.createElement(
+                                      dt.a,
+                                      {
+                                        component: "th",
+                                        id: m,
+                                        scope: "row",
+                                        padding: "none"
+                                      },
+                                      e.id
+                                    ),
+                                    n.a.createElement(
+                                      dt.a,
+                                      null,
+                                      n.a.createElement("img", {
+                                        src: e.img,
+                                        alt: e.title,
+                                        style: { width: 100 }
+                                      })
+                                    ),
+                                    n.a.createElement(
+                                      dt.a,
+                                      null,
+                                      n.a.createElement(
+                                        ve,
+                                        {
+                                          component: "button",
+                                          variant: "body2",
+                                          onClick: function(t) {
+                                            return (
+                                              (l = e.id),
+                                              (n = t),
+                                              a.push(
+                                                "/app/ecommerce/product/" + l
+                                              ),
+                                              void n.stopPropagation()
+                                            );
+                                            var l, n;
+                                          },
+                                          color: "primary"
+                                        },
+                                        e.title.split("").map(function(e, a) {
+                                          return 0 === a ? e.toUpperCase() : e;
+                                        })
+                                      )
+                                    ),
+                                    n.a.createElement(dt.a, null, e.subtitle),
+                                    n.a.createElement(dt.a, null, "$", e.price),
+                                    n.a.createElement(
+                                      dt.a,
+                                      null,
+                                      n.a.createElement(
+                                        b.a,
+                                        {
+                                          display: "flex",
+                                          alignItems: "center"
+                                        },
+                                        n.a.createElement(
+                                          he,
+                                          {
+                                            style: { color: Ev.a[700] },
+                                            display: "inline"
+                                          },
+                                          e.rating
+                                        ),
+                                        " ",
+                                        n.a.createElement(wh.a, {
+                                          style: {
+                                            color: Ev.a[700],
+                                            marginTop: -5
+                                          }
+                                        })
+                                      )
+                                    ),
+                                    n.a.createElement(
+                                      dt.a,
+                                      null,
+                                      n.a.createElement(
+                                        b.a,
+                                        {
+                                          display: "flex",
+                                          alignItems: "center"
+                                        },
+                                        n.a.createElement(
+                                          Ne,
+                                          {
+                                            color: "success",
+                                            size: "small",
+                                            style: { marginRight: 8 },
+                                            variant: "contained",
+                                            onClick: function(t) {
+                                              return (
+                                                (l = t),
+                                                (n = e.id),
+                                                a.push(
+                                                  "/app/ecommerce/management/edit/" +
+                                                    n
+                                                ),
+                                                void l.stopPropagation()
+                                              );
+                                              var l, n;
+                                            }
+                                          },
+                                          "Edit"
+                                        ),
+                                        n.a.createElement(
+                                          Ne,
+                                          {
+                                            color: "secondary",
+                                            size: "small",
+                                            variant: "contained",
+                                            onClick: function(t) {
+                                              return B(e.id, a, t);
+                                            }
+                                          },
+                                          "Delete"
+                                        )
+                                      )
+                                    )
+                                  );
+                                }),
+                              j > 0 &&
+                                n.a.createElement(
+                                  ot.a,
+                                  { style: { height: 53 * j } },
+                                  n.a.createElement(dt.a, { colSpan: 6 })
+                                )
+                            )
+                          )
+                        )
+                      ),
                   n.a.createElement(Nt.a, {
                     rowsPerPageOptions: [5, 10, 25],
                     component: "div",
                     count: S.length,
-                    rowsPerPage: O,
+                    rowsPerPage: P,
                     page: A,
                     backIconButtonProps: { "aria-label": "previous page" },
                     nextIconButtonProps: { "aria-label": "next page" },
@@ -31759,10 +31798,10 @@
             )
           );
         }),
-        Hv = t(340),
-        zv = t(341),
-        Gv = t(43),
-        Uv = Object(M.a)(function(e) {
+        zv = t(339),
+        Gv = t(340),
+        Uv = t(43),
+        Vv = Object(j.a)(function(e) {
           return {
             pageTitleContainer: {
               display: "flex",
@@ -31778,8 +31817,8 @@
             }
           };
         });
-      function Vv(e) {
-        var a = Uv();
+      function Yv(e) {
+        var a = Vv();
         return n.a.createElement(
           "div",
           { className: a.pageTitleContainer },
@@ -31801,15 +31840,15 @@
             )
         );
       }
-      var Yv = t(578),
-        Kv = t.n(Yv),
-        Qv = t(579),
-        Jv = t.n(Qv),
-        qv = t(580),
-        Zv = t.n(qv),
-        _v = t(581),
-        Xv = t.n(_v),
-        $v = [
+      var Kv = t(577),
+        Qv = t.n(Kv),
+        Jv = t(578),
+        qv = t.n(Jv),
+        Zv = t(579),
+        _v = t.n(Zv),
+        Xv = t(580),
+        $v = t.n(Xv),
+        eT = [
           {
             id: 1,
             img: gv.a,
@@ -31943,7 +31982,7 @@
             process: "0%"
           }
         ],
-        eT = function(e) {
+        aT = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useState(0),
             l = Object(p.a)(t, 2),
@@ -31981,13 +32020,13 @@
                       { item: !0, md: 6, xs: 12 },
                       e.match.params.id
                         ? n.a.createElement("img", {
-                            src: $v[e.match.params.id - 1].img,
-                            alt: $v[e.match.params.id - 1].title,
+                            src: eT[e.match.params.id - 1].img,
+                            alt: eT[e.match.params.id - 1].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                         : n.a.createElement("img", {
-                            src: $v[0].img,
-                            alt: $v[0].title,
+                            src: eT[0].img,
+                            alt: eT[0].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                     ),
@@ -32013,14 +32052,14 @@
                                 n.a.createElement(
                                   he,
                                   {
-                                    style: { color: Gv.yellow[700] },
+                                    style: { color: Uv.yellow[700] },
                                     display: "inline"
                                   },
-                                  $v[e.match.params.id - 1].rating
+                                  eT[e.match.params.id - 1].rating
                                 ),
                                 n.a.createElement(wh.a, {
                                   style: {
-                                    color: Gv.yellow[700],
+                                    color: Uv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -32030,13 +32069,13 @@
                                 {
                                   style: {
                                     fontSize: "1.5rem",
-                                    color: Gv.yellow[700]
+                                    color: Uv.yellow[700]
                                   }
                                 },
-                                $v[0].rating,
+                                eT[0].rating,
                                 n.a.createElement(wh.a, {
                                   style: {
-                                    color: Gv.yellow[700],
+                                    color: Uv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -32053,12 +32092,12 @@
                                 n.a.createElement(
                                   he,
                                   { variant: "h3", uppercase: !0 },
-                                  $v[e.match.params.id - 1].title
+                                  eT[e.match.params.id - 1].title
                                 ),
                                 n.a.createElement(
                                   he,
                                   null,
-                                  $v[e.match.params.id].subtitle
+                                  eT[e.match.params.id].subtitle
                                 )
                               )
                             : n.a.createElement(
@@ -32067,9 +32106,9 @@
                                 n.a.createElement(
                                   he,
                                   { variant: "h3", uppercase: !0 },
-                                  $v[0].title
+                                  eT[0].title
                                 ),
-                                n.a.createElement(he, null, $v[0].subtitle)
+                                n.a.createElement(he, null, eT[0].subtitle)
                               ),
                           " "
                         ),
@@ -32084,7 +32123,7 @@
                                   he,
                                   { weight: "medium" },
                                   "$",
-                                  $v[e.match.params.id].price
+                                  eT[e.match.params.id].price
                                 )
                               )
                             : n.a.createElement(
@@ -32094,7 +32133,7 @@
                                   he,
                                   { weight: "medium", variant: "h5" },
                                   "$",
-                                  $v[0].price
+                                  eT[0].price
                                 )
                               ),
                           " "
@@ -32108,14 +32147,14 @@
                           b.a,
                           { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            Hv.a,
+                            zv.a,
                             {
                               variant: "outlined",
                               className: c.form,
                               style: { marginRight: 15 }
                             },
                             n.a.createElement(
-                              zv.a,
+                              Gv.a,
                               { htmlFor: "size-simple", ref: a },
                               "Select size"
                             ),
@@ -32138,7 +32177,7 @@
                             )
                           ),
                           n.a.createElement(
-                            Hv.a,
+                            zv.a,
                             { className: c.form },
                             n.a.createElement(
                               pt.a,
@@ -32171,7 +32210,7 @@
                               style: { flexGrow: 3 }
                             },
                             "add to bag",
-                            n.a.createElement(Oe.a, {
+                            n.a.createElement(Pe.a, {
                               style: { marginLeft: 8 }
                             })
                           ),
@@ -32184,22 +32223,22 @@
                           b.a,
                           null,
                           n.a.createElement("img", {
-                            src: Kv.a,
+                            src: Qv.a,
                             alt: "mastercard",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Jv.a,
+                            src: qv.a,
                             alt: "paypal",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Zv.a,
+                            src: _v.a,
                             alt: "visa",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Xv.a,
+                            src: $v.a,
                             alt: "americanexpress",
                             style: { width: 40 }
                           })
@@ -32374,14 +32413,14 @@
                                   n.a.createElement(
                                     he,
                                     {
-                                      style: { color: Gv.yellow[700] },
+                                      style: { color: Uv.yellow[700] },
                                       display: "inline"
                                     },
-                                    $v[e.match.params.id - 1].rating
+                                    eT[e.match.params.id - 1].rating
                                   ),
                                   n.a.createElement(wh.a, {
                                     style: {
-                                      color: Gv.yellow[700],
+                                      color: Uv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32391,13 +32430,13 @@
                                   {
                                     style: {
                                       fontSize: "1.5rem",
-                                      color: Gv.yellow[700]
+                                      color: Uv.yellow[700]
                                     }
                                   },
-                                  $v[0].rating,
+                                  eT[0].rating,
                                   n.a.createElement(wh.a, {
                                     style: {
-                                      color: Gv.yellow[700],
+                                      color: Uv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32416,7 +32455,7 @@
                 )
               )
             ),
-            n.a.createElement(Vv, { title: "You may also like" }),
+            n.a.createElement(Yv, { title: "You may also like" }),
             n.a.createElement(
               y.a,
               { item: !0, xs: 12 },
@@ -32427,7 +32466,7 @@
                   b.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: c.card },
                     n.a.createElement(
                       Db.a,
@@ -32435,20 +32474,20 @@
                       n.a.createElement(Fb.a, {
                         className: c.media,
                         image: gv.a,
-                        title: $v[0].title
+                        title: eT[0].title
                       }),
                       n.a.createElement(
-                        jb.a,
+                        Mb.a,
                         null,
                         n.a.createElement(
                           he,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          $v[0].title
+                          eT[0].title
                         ),
                         n.a.createElement(
                           he,
                           { variant: "body2", component: "p" },
-                          $v[0].subtitle
+                          eT[0].subtitle
                         )
                       )
                     ),
@@ -32464,14 +32503,14 @@
                         he,
                         { variant: "body2", component: "p" },
                         "$",
-                        $v[0].price
+                        eT[0].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Gv.yellow[700] } },
-                        $v[0].rating,
+                        { style: { color: Uv.yellow[700] } },
+                        eT[0].rating,
                         n.a.createElement(wh.a, {
-                          style: { color: Gv.yellow[700], marginTop: -5 }
+                          style: { color: Uv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32481,7 +32520,7 @@
                   b.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: c.card },
                     n.a.createElement(
                       Db.a,
@@ -32489,20 +32528,20 @@
                       n.a.createElement(Fb.a, {
                         className: c.media,
                         image: hv.a,
-                        title: $v[1].img
+                        title: eT[1].img
                       }),
                       n.a.createElement(
-                        jb.a,
+                        Mb.a,
                         null,
                         n.a.createElement(
                           he,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          $v[1].title
+                          eT[1].title
                         ),
                         n.a.createElement(
                           he,
                           { variant: "body2", component: "p" },
-                          $v[1].subtitle
+                          eT[1].subtitle
                         )
                       )
                     ),
@@ -32518,14 +32557,14 @@
                         he,
                         { variant: "body2", component: "p" },
                         "$",
-                        $v[1].price
+                        eT[1].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Gv.yellow[700] } },
-                        $v[1].rating,
+                        { style: { color: Uv.yellow[700] } },
+                        eT[1].rating,
                         n.a.createElement(wh.a, {
-                          style: { color: Gv.yellow[700], marginTop: -5 }
+                          style: { color: Uv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32535,7 +32574,7 @@
                   b.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: c.card },
                     n.a.createElement(
                       Db.a,
@@ -32543,20 +32582,20 @@
                       n.a.createElement(Fb.a, {
                         className: c.media,
                         image: Iv.a,
-                        title: $v[2].img
+                        title: eT[2].img
                       }),
                       n.a.createElement(
-                        jb.a,
+                        Mb.a,
                         null,
                         n.a.createElement(
                           he,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          $v[2].title
+                          eT[2].title
                         ),
                         n.a.createElement(
                           he,
                           { variant: "body2", component: "p" },
-                          $v[2].subtitle
+                          eT[2].subtitle
                         )
                       )
                     ),
@@ -32572,14 +32611,14 @@
                         he,
                         { variant: "body2", component: "p" },
                         "$",
-                        $v[2].price
+                        eT[2].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Gv.yellow[700] } },
-                        $v[2].rating,
+                        { style: { color: Uv.yellow[700] } },
+                        eT[2].rating,
                         n.a.createElement(wh.a, {
-                          style: { color: Gv.yellow[700], marginTop: -5 }
+                          style: { color: Uv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32589,7 +32628,7 @@
                   b.a,
                   { flexGrow: 1, mb: 3 },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     { className: c.card },
                     n.a.createElement(
                       Db.a,
@@ -32597,20 +32636,20 @@
                       n.a.createElement(Fb.a, {
                         className: c.media,
                         image: yv.a,
-                        title: $v[3].img
+                        title: eT[3].img
                       }),
                       n.a.createElement(
-                        jb.a,
+                        Mb.a,
                         null,
                         n.a.createElement(
                           he,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          $v[3].title
+                          eT[3].title
                         ),
                         n.a.createElement(
                           he,
                           { variant: "body2", component: "p" },
-                          $v[3].subtitle
+                          eT[3].subtitle
                         )
                       )
                     ),
@@ -32626,14 +32665,14 @@
                         he,
                         { variant: "body2", component: "p" },
                         "$",
-                        $v[3].price
+                        eT[3].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Gv.yellow[700] } },
-                        $v[3].rating,
+                        { style: { color: Uv.yellow[700] } },
+                        eT[3].rating,
                         n.a.createElement(wh.a, {
-                          style: { color: Gv.yellow[700], marginTop: -5 }
+                          style: { color: Uv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32643,7 +32682,7 @@
             )
           );
         };
-      function aT(e, a) {
+      function tT(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -32655,16 +32694,16 @@
         }
         return t;
       }
-      function tT(e) {
+      function lT(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? aT(Object(t), !0).forEach(function(a) {
+            ? tT(Object(t), !0).forEach(function(a) {
                 Object(u.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : aT(Object(t)).forEach(function(a) {
+            : tT(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -32674,7 +32713,7 @@
         }
         return e;
       }
-      var lT = function(e) {
+      var nT = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useRef(null),
             l = n.a.useRef(null),
@@ -32685,19 +32724,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "TYPE":
-                    return tT({}, e, { type: a.typeWidth });
+                    return lT({}, e, { type: a.typeWidth });
                   case "BRANDS":
-                    return tT({}, e, { brands: a.brandsWidth });
+                    return lT({}, e, { brands: a.brandsWidth });
                   case "SIZE":
-                    return tT({}, e, { size: a.sizeWidth });
+                    return lT({}, e, { size: a.sizeWidth });
                   case "COLOUR":
-                    return tT({}, e, { colour: a.colourWidth });
+                    return lT({}, e, { colour: a.colourWidth });
                   case "RANGE":
-                    return tT({}, e, { range: a.rangeWidth });
+                    return lT({}, e, { range: a.rangeWidth });
                   case "SORT":
-                    return tT({}, e, { sort: a.sortWidth });
+                    return lT({}, e, { sort: a.sortWidth });
                   default:
-                    return tT({}, e);
+                    return lT({}, e);
                 }
               },
               { type: 0, brands: 0, size: 0, colour: 0, range: 0, sort: 0 }
@@ -32718,19 +32757,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "SELECT_TYPE":
-                    return tT({}, e, { valueType: a.valueType });
+                    return lT({}, e, { valueType: a.valueType });
                   case "SELECT_BRANDS":
-                    return tT({}, e, { valueBrands: a.valueBrands });
+                    return lT({}, e, { valueBrands: a.valueBrands });
                   case "SELECT_SIZE":
-                    return tT({}, e, { valueSize: a.valueSize });
+                    return lT({}, e, { valueSize: a.valueSize });
                   case "SELECT_COLOUR":
-                    return tT({}, e, { valueColor: a.valueColor });
+                    return lT({}, e, { valueColor: a.valueColor });
                   case "SELECT_RANGE":
-                    return tT({}, e, { valueRange: a.valueRange });
+                    return lT({}, e, { valueRange: a.valueRange });
                   case "SELECT_SORT":
-                    return tT({}, e, { valueSort: a.valueSort });
+                    return lT({}, e, { valueSort: a.valueSort });
                   default:
-                    return tT({}, e);
+                    return lT({}, e);
                 }
               },
               {
@@ -32758,14 +32797,14 @@
                   b.a,
                   { display: "flex" },
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "type_select", ref: a },
                       "Type"
                     ),
@@ -32788,14 +32827,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "brands_select", ref: t },
                       "Brands"
                     ),
@@ -32818,14 +32857,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "size_select", ref: l },
                       "Size"
                     ),
@@ -32853,14 +32892,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "colour_select", ref: r },
                       "Colour"
                     ),
@@ -32883,14 +32922,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "range_select", ref: m },
                       "Range"
                     ),
@@ -32913,14 +32952,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Hv.a,
+                    zv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      zv.a,
+                      Gv.a,
                       { htmlFor: "sort_select", ref: c },
                       "Sort"
                     ),
@@ -32958,7 +32997,7 @@
                         y.a,
                         { item: !0, xs: 12, md: 3, key: e.id },
                         n.a.createElement(
-                          Mb.a,
+                          jb.a,
                           { className: E.card },
                           n.a.createElement(
                             Db.a,
@@ -32981,7 +33020,7 @@
                                   })
                             ),
                             n.a.createElement(
-                              jb.a,
+                              Mb.a,
                               null,
                               n.a.createElement(
                                 he,
@@ -33026,11 +33065,11 @@
                                 { block: !0 },
                                 n.a.createElement(
                                   "div",
-                                  { style: { color: Gv.yellow[700] } },
+                                  { style: { color: Uv.yellow[700] } },
                                   wv[0].rating,
                                   n.a.createElement(wh.a, {
                                     style: {
-                                      color: Gv.yellow[700],
+                                      color: Uv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -33047,17 +33086,17 @@
             )
           );
         },
-        nT = t(97),
-        rT = Object(M.a)(function(e) {
+        rT = t(97),
+        mT = Object(j.a)(function(e) {
           return {
             mapContainer: { height: "100%" },
             vectorContainer: { margin: -e.spacing(3) }
           };
         }),
-        mT = Object(nT.withScriptjs)(
-          Object(nT.withGoogleMap)(function() {
+        cT = Object(rT.withScriptjs)(
+          Object(rT.withGoogleMap)(function() {
             return n.a.createElement(
-              nT.GoogleMap,
+              rT.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -33065,18 +33104,18 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(nT.Marker, {
+              n.a.createElement(rT.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function cT() {
-        var e = rT();
+      function iT() {
+        var e = mT();
         return n.a.createElement(
           "div",
           { className: e.mapContainer },
-          n.a.createElement(mT, {
+          n.a.createElement(cT, {
             googleMapURL:
               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
             loadingElement: n.a.createElement("div", {
@@ -33089,22 +33128,22 @@
           })
         );
       }
-      var iT = t(136),
-        sT = t(584),
-        oT = [
+      var sT = t(136),
+        oT = t(583),
+        dT = [
           {
             markerOffset: -25,
             name: "Buenos Aires",
             coordinates: [-58.3816, -34.6037]
           }
         ];
-      var dT = function() {
-          var e = rT();
+      var ET = function() {
+          var e = mT();
           return n.a.createElement(
             "div",
             { className: e.vectorContainer },
             n.a.createElement(
-              iT.ComposableMap,
+              sT.ComposableMap,
               {
                 projectionConfig: { scale: 205, rotation: [-11, 0, 0] },
                 width: 980,
@@ -33112,16 +33151,16 @@
                 style: { width: "100%", height: "auto", overflow: "auto" }
               },
               n.a.createElement(
-                iT.ZoomableGroup,
+                sT.ZoomableGroup,
                 { center: [0, 20], disablePanning: !0 },
-                n.a.createElement(iT.Geographies, { geography: sT }, function(
+                n.a.createElement(sT.Geographies, { geography: oT }, function(
                   e,
                   a
                 ) {
                   return e.map(function(e, t) {
                     return (
                       "ATA" !== e.id &&
-                      n.a.createElement(iT.Geography, {
+                      n.a.createElement(sT.Geography, {
                         key: t,
                         geography: e,
                         projection: a,
@@ -33150,11 +33189,11 @@
                   });
                 }),
                 n.a.createElement(
-                  iT.Markers,
+                  sT.Markers,
                   null,
-                  oT.map(function(e, a) {
+                  dT.map(function(e, a) {
                     return n.a.createElement(
-                      iT.Marker,
+                      sT.Marker,
                       {
                         key: a,
                         marker: e,
@@ -33193,7 +33232,7 @@
             )
           );
         },
-        ET = Object(M.a)(function(e) {
+        uT = Object(j.a)(function(e) {
           return {
             icon: { fontSize: e.spacing(2) },
             divider: { margin: "0px -".concat(e.spacing(3), "px") },
@@ -33203,17 +33242,17 @@
             }
           };
         }),
-        uT = t(193),
-        pT = t.n(uT),
-        gT = t(353),
-        xT = t.n(gT),
-        hT = t(354),
-        NT = t.n(hT),
-        IT = t(585),
-        fT = t.n(IT),
-        yT = t(586),
-        bT = t.n(yT),
-        vT = Object(M.a)(function(e) {
+        pT = t(192),
+        gT = t.n(pT),
+        xT = t(352),
+        hT = t.n(xT),
+        NT = t(353),
+        IT = t.n(NT),
+        fT = t(584),
+        yT = t.n(fT),
+        bT = t(585),
+        vT = t.n(bT),
+        TT = Object(j.a)(function(e) {
           return {
             border: {
               position: "relative",
@@ -33229,7 +33268,7 @@
             circle: { border: "rgba(255,255,255,.2) 5px solid" }
           };
         }),
-        TT = function(e) {
+        AT = function(e) {
           return n.a.createElement(
             b.a,
             { width: "45%", align: e.right && "right" },
@@ -33241,10 +33280,10 @@
             )
           );
         },
-        AT = function(e) {
+        wT = function(e) {
           var a = e.children,
             t = Object(o.a)(e, ["children"]),
-            l = vT();
+            l = TT();
           return n.a.createElement(
             b.a,
             { className: l.border, display: "flex" },
@@ -33255,7 +33294,7 @@
             )
           );
         },
-        wT = function(e) {
+        CT = function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -33270,10 +33309,10 @@
             )
           );
         },
-        CT = Object(nT.withScriptjs)(
-          Object(nT.withGoogleMap)(function() {
+        OT = Object(rT.withScriptjs)(
+          Object(rT.withGoogleMap)(function() {
             return n.a.createElement(
-              nT.GoogleMap,
+              rT.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -33281,14 +33320,14 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(nT.Marker, {
+              n.a.createElement(rT.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
       function PT() {
-        var e = ET(),
+        var e = uT(),
           a = n.a.useState(!1),
           t = Object(p.a)(a, 2),
           l = t[0],
@@ -33311,7 +33350,7 @@
                   className: e.wrapper
                 },
                 n.a.createElement(
-                  wT,
+                  CT,
                   null,
                   n.a.createElement(
                     b.a,
@@ -33326,7 +33365,7 @@
                           b.a,
                           { display: "flex" },
                           n.a.createElement(Ie, {
-                            src: pT.a,
+                            src: gT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33352,7 +33391,7 @@
                         n.a.createElement(
                           b.a,
                           { height: 200, width: "100%", mx: "-24px", mt: 2 },
-                          n.a.createElement(CT, {
+                          n.a.createElement(OT, {
                             googleMapURL:
                               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
                             loadingElement: n.a.createElement("div", {
@@ -33388,7 +33427,7 @@
                           b.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(Ie, {
-                            src: pT.a,
+                            src: gT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33430,7 +33469,7 @@
                           b.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(Ie, {
-                            src: xT.a,
+                            src: hT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33485,25 +33524,25 @@
                     )
                   ),
                   n.a.createElement(
-                    AT,
+                    wT,
                     { color: "primary" },
                     n.a.createElement(su.a, { className: e.icon })
                   ),
-                  n.a.createElement(TT, {
+                  n.a.createElement(AT, {
                     day: "yesterday",
                     timestep: "8:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  wT,
+                  CT,
                   null,
-                  n.a.createElement(TT, {
+                  n.a.createElement(AT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
                   n.a.createElement(
-                    AT,
+                    wT,
                     { color: "secondary" },
                     n.a.createElement(nm.a, { className: e.icon })
                   ),
@@ -33520,7 +33559,7 @@
                           b.a,
                           { display: "flex" },
                           n.a.createElement(Ie, {
-                            src: NT.a,
+                            src: IT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33568,7 +33607,7 @@
                   )
                 ),
                 n.a.createElement(
-                  wT,
+                  CT,
                   null,
                   n.a.createElement(
                     b.a,
@@ -33583,7 +33622,7 @@
                           b.a,
                           { display: "flex" },
                           n.a.createElement(Ie, {
-                            src: pT.a,
+                            src: gT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33643,13 +33682,13 @@
                           n.a.createElement(
                             b.a,
                             { ml: "auto", display: "flex" },
-                            n.a.createElement(Ie, { src: pT.a }),
+                            n.a.createElement(Ie, { src: gT.a }),
                             n.a.createElement(Ie, {
-                              src: xT.a,
+                              src: hT.a,
                               style: { marginLeft: 8 }
                             }),
                             n.a.createElement(Ie, {
-                              src: NT.a,
+                              src: IT.a,
                               style: { marginLeft: 8 }
                             })
                           )
@@ -33659,7 +33698,7 @@
                           b.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(Ie, {
-                            src: bT.a,
+                            src: vT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33714,24 +33753,24 @@
                     )
                   ),
                   n.a.createElement(
-                    AT,
+                    wT,
                     { color: "warning" },
                     n.a.createElement(qs.a, { className: e.icon })
                   ),
-                  n.a.createElement(TT, {
+                  n.a.createElement(AT, {
                     day: "yesterday",
                     timestep: "9:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  wT,
+                  CT,
                   null,
-                  n.a.createElement(TT, {
+                  n.a.createElement(AT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
-                  n.a.createElement(AT, { color: "success" }, "J"),
+                  n.a.createElement(wT, { color: "success" }, "J"),
                   n.a.createElement(
                     b.a,
                     { width: "45%" },
@@ -33745,7 +33784,7 @@
                           b.a,
                           { display: "flex" },
                           n.a.createElement(Ie, {
-                            src: fT.a,
+                            src: yT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33801,7 +33840,7 @@
                             Ca.a,
                             { in: l, timeout: "auto", unmountOnExit: !0 },
                             n.a.createElement(
-                              jb.a,
+                              Mb.a,
                               null,
                               n.a.createElement(
                                 he,
@@ -33844,8 +33883,8 @@
           )
         );
       }
-      var OT = t(1457),
-        kT = Object(M.a)(function(e) {
+      var kT = t(1457),
+        ST = Object(j.a)(function(e) {
           return {
             filter: { width: 130 },
             adjustRightBorderRadius: {
@@ -33858,10 +33897,10 @@
             }
           };
         }),
-        ST = t(587),
-        BT = t(588),
-        MT = t.n(BT),
-        jT = Object(M.a)(function(e) {
+        BT = t(586),
+        jT = t(587),
+        MT = t.n(jT),
+        LT = Object(j.a)(function(e) {
           return {
             wrapper: { textAlign: "center", margin: e.spacing(3) },
             container: {
@@ -33882,9 +33921,9 @@
             next: { "& a": { color: e.palette.primary.main } }
           };
         }),
-        LT = function(e) {
-          var a = Object(ST.a)({}, e),
-            t = jT();
+        DT = function(e) {
+          var a = Object(BT.a)({}, e),
+            t = LT();
           return n.a.createElement(
             "div",
             { className: t.wrapper },
@@ -33905,7 +33944,7 @@
             )
           );
         };
-      function DT() {
+      function FT() {
         var e = n.a.useState({ row: !0, grid: !1 }),
           a = Object(p.a)(e, 2),
           t = a[0],
@@ -33923,7 +33962,7 @@
               return { row: !e.row, grid: !e.grid };
             });
           },
-          g = kT();
+          g = ST();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -33937,7 +33976,7 @@
                 b.a,
                 { display: "flex", alignItems: "center" },
                 n.a.createElement(
-                  Hv.a,
+                  zv.a,
                   {
                     variant: "outlined",
                     className: g.filter,
@@ -33962,7 +34001,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Hv.a,
+                  zv.a,
                   { variant: "outlined", className: g.filter },
                   n.a.createElement(
                     pt.a,
@@ -33987,7 +34026,7 @@
                   b.a,
                   { style: { display: "inline-flex", marginLeft: "auto" } },
                   n.a.createElement(
-                    OT.a,
+                    kT.a,
                     {
                       color: "primary",
                       size: "large",
@@ -34469,7 +34508,7 @@
                       )
                     )
                   ),
-                  n.a.createElement(LT, {
+                  n.a.createElement(DT, {
                     pageCount: 10,
                     previousLabel: "<",
                     nextLabel: ">",
@@ -34481,57 +34520,57 @@
           )
         );
       }
-      var FT = t(589),
-        RT = t.n(FT),
-        WT = t(590),
-        HT = t.n(WT),
-        zT = t(591),
-        GT = t.n(zT),
-        UT = t(592),
-        VT = t.n(UT),
-        YT = t(593),
-        KT = t.n(YT),
-        QT = t(594),
-        JT = t.n(QT),
-        qT = t(595),
-        ZT = t.n(qT),
-        _T = t(596),
-        XT = t.n(_T),
-        $T = t(597),
-        eA = t.n($T),
-        aA = t(598),
-        tA = t.n(aA),
-        lA = t(599),
-        nA = t.n(lA),
-        rA = t(600),
-        mA = t.n(rA),
-        cA = [
-          { img: RT.a, id: 1 },
-          { img: HT.a, id: 2 },
-          { img: GT.a, id: 3 },
-          { img: VT.a, id: 4 },
-          { img: KT.a, id: 5 },
-          { img: JT.a, id: 6 },
-          { img: ZT.a, id: 7 },
-          { img: XT.a, id: 8 },
-          { img: eA.a, id: 9 },
-          { img: tA.a, id: 10 },
-          { img: nA.a, id: 11 },
-          { img: mA.a, id: 12 }
+      var RT = t(588),
+        WT = t.n(RT),
+        HT = t(589),
+        zT = t.n(HT),
+        GT = t(590),
+        UT = t.n(GT),
+        VT = t(591),
+        YT = t.n(VT),
+        KT = t(592),
+        QT = t.n(KT),
+        JT = t(593),
+        qT = t.n(JT),
+        ZT = t(594),
+        _T = t.n(ZT),
+        XT = t(595),
+        $T = t.n(XT),
+        eA = t(596),
+        aA = t.n(eA),
+        tA = t(597),
+        lA = t.n(tA),
+        nA = t(598),
+        rA = t.n(nA),
+        mA = t(599),
+        cA = t.n(mA),
+        iA = [
+          { img: WT.a, id: 1 },
+          { img: zT.a, id: 2 },
+          { img: UT.a, id: 3 },
+          { img: YT.a, id: 4 },
+          { img: QT.a, id: 5 },
+          { img: qT.a, id: 6 },
+          { img: _T.a, id: 7 },
+          { img: $T.a, id: 8 },
+          { img: aA.a, id: 9 },
+          { img: lA.a, id: 10 },
+          { img: rA.a, id: 11 },
+          { img: cA.a, id: 12 }
         ],
-        iA = function() {
+        sA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
             n.a.createElement(
               y.a,
               { container: !0, spacing: 6 },
-              cA.map(function(e, a) {
+              iA.map(function(e, a) {
                 return n.a.createElement(
                   y.a,
                   { item: !0, md: 3, xs: 12, key: e.id },
                   n.a.createElement(
-                    Mb.a,
+                    jb.a,
                     null,
                     n.a.createElement(
                       Db.a,
@@ -34562,7 +34601,7 @@
             )
           );
         },
-        sA = Object(M.a)(function(e) {
+        oA = Object(j.a)(function(e) {
           return {
             table: {
               "& .MuiTableRow-root:nth-child(odd)": {
@@ -34578,9 +34617,9 @@
             iconButton: { marginRight: e.spacing(1) }
           };
         }),
-        oA = t(601),
-        dA = t.n(oA),
-        EA = [
+        dA = t(600),
+        EA = t.n(dA),
+        uA = [
           {
             id: 1,
             item: "Brand-new 27 monitor",
@@ -34615,11 +34654,11 @@
             total: 2
           }
         ],
-        uA = function() {
+        pA = function() {
           window.print();
         },
-        pA = function() {
-          var e = sA();
+        gA = function() {
+          var e = oA();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34636,7 +34675,7 @@
                     b.a,
                     { display: "flex", justifyContent: "space-between", mb: 3 },
                     n.a.createElement("img", {
-                      src: dA.a,
+                      src: EA.a,
                       alt: "Flatlogic",
                       style: {
                         maxHeight: 100,
@@ -34821,7 +34860,7 @@
                         n.a.createElement(
                           ht.a,
                           null,
-                          EA.map(function(e) {
+                          uA.map(function(e) {
                             return n.a.createElement(
                               ot.a,
                               { key: e.id },
@@ -34910,7 +34949,7 @@
                           variant: "contained",
                           style: { marginRight: 8 },
                           "aria-label": "Print",
-                          onClick: uA
+                          onClick: pA
                         },
                         n.a.createElement(Zp.a, { className: e.iconButton }),
                         "Print"
@@ -34931,24 +34970,65 @@
               )
             )
           );
-        },
-        gA = function() {
-          var e = Sv();
+        };
+      function xA(e, a) {
+        var t = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var l = Object.getOwnPropertySymbols(e);
+          a &&
+            (l = l.filter(function(a) {
+              return Object.getOwnPropertyDescriptor(e, a).enumerable;
+            })),
+            t.push.apply(t, l);
+        }
+        return t;
+      }
+      var hA = function() {
+          var e = Object(E.h)().id,
+            a = Sv(),
+            t = n.a.useState(a.products.products[e - 1]),
+            r = Object(p.a)(t, 2),
+            m = r[0],
+            c = r[1];
           Object(l.useEffect)(function() {
-            Bv(e.setProducts);
-          }, []);
-          var a = Object(E.g)(),
-            t = Object(E.h)().id,
-            r = n.a.useState(e.products[t - 1]),
-            m = Object(p.a)(r, 2),
-            c = m[0];
-          m[1];
-          console.log(c);
-          var i = function(e) {
-              console.log(e.currentTarget);
+            Bv(a.setProducts);
+          }, []),
+            Object(l.useEffect)(
+              function() {
+                c(a.products.products[e - 1]);
+              },
+              [a]
+            );
+          var i = Object(E.g)();
+          console.log(m), console.log(a.products, "--");
+          var s = function(e) {
+              c(
+                (function(e) {
+                  for (var a = 1; a < arguments.length; a++) {
+                    var t = null != arguments[a] ? arguments[a] : {};
+                    a % 2
+                      ? xA(Object(t), !0).forEach(function(a) {
+                          Object(u.a)(e, a, t[a]);
+                        })
+                      : Object.getOwnPropertyDescriptors
+                      ? Object.defineProperties(
+                          e,
+                          Object.getOwnPropertyDescriptors(t)
+                        )
+                      : xA(Object(t)).forEach(function(a) {
+                          Object.defineProperty(
+                            e,
+                            a,
+                            Object.getOwnPropertyDescriptor(t, a)
+                          );
+                        });
+                  }
+                  return e;
+                })({}, m, Object(u.a)({}, e.target.id, e.currentTarget.value))
+              );
             },
-            s = c.technology ? c.technology.join(", ") : null,
-            o = "#/app/ecommerce/management/create" === window.location.hash;
+            o = m.technology ? m.technology.join(", ") : null,
+            d = "#/app/ecommerce/management/create" === window.location.hash;
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34961,283 +35041,317 @@
                 n.a.createElement(
                   Ya,
                   {
-                    title: o ? "New product" : "Edit product",
+                    title: d ? "New product" : "Edit product",
                     disableWidgetMenu: !0
                   },
-                  n.a.createElement(
-                    b.a,
-                    { display: "flex", flexDirection: "column" },
-                    n.a.createElement(
-                      "form",
-                      null,
-                      n.a.createElement(
+                  na.isBackend && !a.products.isLoaded
+                    ? n.a.createElement(
                         b.a,
-                        { display: "flex", alignItems: "center" },
+                        {
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center"
+                        },
+                        n.a.createElement(ie.a, { size: 26 })
+                      )
+                    : n.a.createElement(
+                        b.a,
+                        { display: "flex", flexDirection: "column" },
                         n.a.createElement(
                           b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Image")
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Image")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 200 },
+                            n.a.createElement(
+                              pt.a,
+                              { value: e, fullWidth: !0 },
+                              a.products.products.map(function(e) {
+                                return n.a.createElement(
+                                  z.a,
+                                  { value: e.id, key: e.id },
+                                  n.a.createElement("img", {
+                                    src: e.img,
+                                    alt: e.title,
+                                    style: { height: 100, width: 200 }
+                                  })
+                                );
+                              })
+                            )
+                          )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 200 },
+                          { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            pt.a,
-                            { value: t, fullWidth: !0 },
-                            e.products.map(function(e) {
-                              return n.a.createElement(
-                                z.a,
-                                { value: e.id },
-                                n.a.createElement("img", {
-                                  src: e.img,
-                                  alt: e.title,
-                                  style: { height: 100, width: 200 }
-                                })
-                              );
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Title")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "title",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? "" : m.title,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
                             })
                           )
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Title")
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? "" : c.title,
-                            fullWidth: !0,
-                            onChange: function(e) {
-                              return i(e);
-                            }
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Subtitle")
-                        ),
-                        n.a.createElement(
-                          b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? "" : c.subtitle,
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Price")
-                        ),
-                        n.a.createElement(
-                          b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? 0.01 : c.price,
-                            type: "number",
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Discount")
-                        ),
-                        n.a.createElement(
-                          b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? 0.01 : c.discount,
-                            type: "number",
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
+                          { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            he,
-                            { variant: "h6" },
-                            "Description"
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Subtitle")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "subtitle",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? "" : m.subtitle,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
                           )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            multiline: !0,
-                            value: o ? 0.01 : c.description_1,
-                            fullWidth: !0,
-                            onChange: function(e) {
-                              return i(e);
-                            }
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Code")
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Price")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "price",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? 0.01 : m.price,
+                              type: "number",
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? "" : c.code,
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Hashtag")
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Discount")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "discount",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? 0.01 : m.discount,
+                              type: "number",
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            value: o ? 0.01 : c.hashtag,
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Technology")
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(
+                              he,
+                              { variant: "h6" },
+                              "Description"
+                            )
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "description_1",
+                              margin: "normal",
+                              variant: "outlined",
+                              multiline: !0,
+                              value: d ? 0.01 : m.description_1,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            placeholder: "Add Tag",
-                            fullWidth: !0,
-                            value: o ? "" : s
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          b.a,
-                          { width: 300 },
-                          n.a.createElement(he, { variant: "h6" }, "Rating")
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Code")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "code",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? "" : m.code,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
                         ),
                         n.a.createElement(
                           b.a,
-                          { width: 500 },
-                          n.a.createElement(wa.a, {
-                            id: "outlined-name",
-                            margin: "normal",
-                            variant: "outlined",
-                            type: "number",
-                            value: o ? 5 : c.rating,
-                            fullWidth: !0
-                          })
-                        )
-                      ),
-                      n.a.createElement(
-                        b.a,
-                        { display: "flex", alignItems: "center" },
-                        n.a.createElement(
-                          Ne,
-                          {
-                            variant: "contained",
-                            color: "success",
-                            style: { marginRight: 8 }
-                          },
-                          o ? "Save" : "Edit"
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Hashtag")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "hashtag",
+                              margin: "normal",
+                              variant: "outlined",
+                              value: d ? 0.01 : m.hashtag,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
                         ),
                         n.a.createElement(
-                          Ne,
-                          {
-                            variant: "contained",
-                            onClick: function() {
-                              return a.push("/app/ecommerce/management");
-                            }
-                          },
-                          "Back"
+                          b.a,
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(
+                              he,
+                              { variant: "h6" },
+                              "Technology"
+                            )
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "technology",
+                              margin: "normal",
+                              variant: "outlined",
+                              placeholder: "Add Tag",
+                              fullWidth: !0,
+                              value: d ? "" : o,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
+                        ),
+                        n.a.createElement(
+                          b.a,
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            b.a,
+                            { width: 300 },
+                            n.a.createElement(he, { variant: "h6" }, "Rating")
+                          ),
+                          n.a.createElement(
+                            b.a,
+                            { width: 500 },
+                            n.a.createElement(wa.a, {
+                              id: "rating",
+                              margin: "normal",
+                              variant: "outlined",
+                              type: "number",
+                              value: d ? 5 : m.rating,
+                              fullWidth: !0,
+                              onChange: function(e) {
+                                return s(e);
+                              }
+                            })
+                          )
+                        ),
+                        n.a.createElement(
+                          b.a,
+                          { display: "flex", alignItems: "center" },
+                          n.a.createElement(
+                            Ne,
+                            {
+                              variant: "contained",
+                              color: "success",
+                              style: { marginRight: 8 },
+                              onClick: function() {
+                                jv(m, a.setProducts);
+                              }
+                            },
+                            d ? "Save" : "Edit"
+                          ),
+                          n.a.createElement(
+                            Ne,
+                            {
+                              variant: "contained",
+                              onClick: function() {
+                                return i.push("/app/ecommerce/management");
+                              }
+                            },
+                            "Back"
+                          )
                         )
                       )
-                    )
-                  )
                 )
               )
             )
           );
         },
-        xA = t(602),
-        hA = t(603),
-        NA = t(609),
-        IA = t(604),
-        fA = t(64),
-        yA = t(610),
-        bA = t(605),
-        vA = t(166),
-        TA = t(606),
-        AA = t(356),
-        wA = t(194),
-        CA = t.n(wA),
-        PA = (t(1321), t(1322), t(1323), t(259)),
-        OA = t.n(PA);
-      function kA(e, a) {
+        NA = t(601),
+        IA = t(602),
+        fA = t(609),
+        yA = t(603),
+        bA = t(64),
+        vA = t(610),
+        TA = t(604),
+        AA = t(166),
+        wA = t(605),
+        CA = t(355),
+        OA = t(193),
+        PA = t.n(OA),
+        kA = (t(1321), t(1322), t(1323), t(258)),
+        SA = t.n(kA);
+      function BA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -35249,16 +35363,16 @@
         }
         return t;
       }
-      function SA(e) {
+      function jA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? kA(Object(t), !0).forEach(function(a) {
+            ? BA(Object(t), !0).forEach(function(a) {
                 Object(u.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : kA(Object(t)).forEach(function(a) {
+            : BA(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -35268,25 +35382,25 @@
         }
         return e;
       }
-      var BA = (function(e) {
+      var MA = (function(e) {
           function a(e) {
             var t;
-            Object(xA.a)(this, a),
-              (t = Object(NA.a)(this, Object(IA.a)(a).call(this, e))),
-              Object(u.a)(Object(fA.a)(t), "drop", function(e) {
+            Object(NA.a)(this, a),
+              (t = Object(fA.a)(this, Object(yA.a)(a).call(this, e))),
+              Object(u.a)(Object(bA.a)(t), "drop", function(e) {
                 e.draggedEl.parentNode.removeChild(e.draggedEl);
               }),
-              Object(u.a)(Object(fA.a)(t), "handleChange", function(e) {
+              Object(u.a)(Object(bA.a)(t), "handleChange", function(e) {
                 t.setState({
-                  event: SA({}, t.state.event, { title: e.target.value })
+                  event: jA({}, t.state.event, { title: e.target.value })
                 });
               }),
-              Object(u.a)(Object(fA.a)(t), "createEvent", function() {
+              Object(u.a)(Object(bA.a)(t), "createEvent", function() {
                 t.fullCalendar.getApi().addEvent(t.state.event),
                   t.fullCalendar.getApi().unselect(),
                   t.toggleModal();
               }),
-              Object(u.a)(Object(fA.a)(t), "select", function(e) {
+              Object(u.a)(Object(bA.a)(t), "select", function(e) {
                 var a = e.start,
                   l = e.end,
                   n = e.allDay;
@@ -35302,29 +35416,29 @@
                 }),
                   t.toggleModal();
               }),
-              Object(u.a)(Object(fA.a)(t), "eventClick", function(e) {
+              Object(u.a)(Object(bA.a)(t), "eventClick", function(e) {
                 t.setState({ event: e.event }), t.toggleModalEvent();
               }),
-              Object(u.a)(Object(fA.a)(t), "prev", function() {
+              Object(u.a)(Object(bA.a)(t), "prev", function() {
                 t.fullCalendar.getApi().prev();
               }),
-              Object(u.a)(Object(fA.a)(t), "next", function() {
+              Object(u.a)(Object(bA.a)(t), "next", function() {
                 t.fullCalendar.getApi().next();
               }),
-              Object(u.a)(Object(fA.a)(t), "today", function() {
+              Object(u.a)(Object(bA.a)(t), "today", function() {
                 t.fullCalendar.getApi().today();
               }),
-              Object(u.a)(Object(fA.a)(t), "changeView", function(e) {
+              Object(u.a)(Object(bA.a)(t), "changeView", function(e) {
                 t.fullCalendar.getApi().changeView(e),
                   t.setState({ calendarView: e });
               }),
-              Object(u.a)(Object(fA.a)(t), "getFormattedDate", function(e) {
-                return OA()(e).format("YYYY-MM-DD");
+              Object(u.a)(Object(bA.a)(t), "getFormattedDate", function(e) {
+                return SA()(e).format("YYYY-MM-DD");
               }),
-              Object(u.a)(Object(fA.a)(t), "toggleModal", function() {
+              Object(u.a)(Object(bA.a)(t), "toggleModal", function() {
                 t.setState({ modal: !t.state.modal });
               }),
-              Object(u.a)(Object(fA.a)(t), "toggleModalEvent", function() {
+              Object(u.a)(Object(bA.a)(t), "toggleModalEvent", function() {
                 t.setState({ modalEvent: !t.state.modalEvent });
               });
             var l = new Date(),
@@ -35337,8 +35451,8 @@
                 modal: !1,
                 modalEvent: !1,
                 calendarView: "dayGridMonth",
-                currentMonth: OA()().format("MMM YYYY"),
-                currentDay: OA()().format("dddd"),
+                currentMonth: SA()().format("MMM YYYY"),
+                currentDay: SA()().format("dddd"),
                 calendarOptions: {
                   header: { left: "", center: "", right: "" },
                   events: [
@@ -35405,19 +35519,19 @@
                   editable: !0,
                   droppable: !0
                 },
-                calendarPlugins: [vA.d, TA.a, AA.b],
+                calendarPlugins: [AA.d, wA.a, CA.b],
                 dragOptions: { zIndex: 999, revert: !0, revertDuration: 0 }
               }),
               t
             );
           }
           return (
-            Object(yA.a)(a, e),
-            Object(hA.a)(a, [
+            Object(vA.a)(a, e),
+            Object(IA.a)(a, [
               {
                 key: "componentDidMount",
                 value: function() {
-                  new AA.a(this.externalEvents, {
+                  new CA.a(this.externalEvents, {
                     itemSelector: ".external-event"
                   });
                 }
@@ -35467,13 +35581,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                CA.a.widget
+                                PA.a.widget
                               )
                             },
                             n.a.createElement(
                               b.a,
                               { display: "flex" },
-                              n.a.createElement(ja, {
+                              n.a.createElement(Ma, {
                                 color: "success",
                                 size: "large"
                               }),
@@ -35494,13 +35608,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                CA.a.widget
+                                PA.a.widget
                               )
                             },
                             n.a.createElement(
                               b.a,
                               { display: "flex" },
-                              n.a.createElement(ja, {
+                              n.a.createElement(Ma, {
                                 color: "warning",
                                 size: "large"
                               }),
@@ -35521,13 +35635,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                CA.a.widget
+                                PA.a.widget
                               )
                             },
                             n.a.createElement(
                               b.a,
                               { display: "flex" },
-                              n.a.createElement(ja, {
+                              n.a.createElement(Ma, {
                                 color: "info",
                                 size: "large"
                               }),
@@ -35639,7 +35753,7 @@
                             )
                           ),
                           n.a.createElement(
-                            bA.a,
+                            TA.a,
                             Object.assign(
                               {
                                 ref: function(a) {
@@ -35679,7 +35793,7 @@
                         ),
                         n.a.createElement(wa.a, {
                           onChange: this.handleChange,
-                          className: CA.a.calendarModalInput,
+                          className: PA.a.calendarModalInput,
                           value: t.title,
                           name: "title",
                           placeholder: "Title"
@@ -35728,7 +35842,7 @@
                         n.a.createElement(
                           he,
                           { style: { marginBottom: 16 } },
-                          n.a.createElement(P.a, { style: { marginRight: 8 } }),
+                          n.a.createElement(O.a, { style: { marginRight: 8 } }),
                           this.getFormattedDate(t.start)
                         ),
                         n.a.createElement(
@@ -35755,20 +35869,20 @@
             a
           );
         })(n.a.Component),
-        MA = t(2409);
-      var jA = [
+        LA = t(2409);
+      var DA = [
           {
             id: 0,
             label: "Dashboard",
             link: "/app/dashboard",
-            icon: n.a.createElement(Po.a, null)
+            icon: n.a.createElement(Oo.a, null)
           },
           {
             id: 1,
             label: "E-commerce",
             badge: "NodeJS",
             link: "/app/ecommerce",
-            icon: n.a.createElement(Oe.a, null),
+            icon: n.a.createElement(Pe.a, null),
             children: [
               { label: "Product Manage", link: "/app/ecommerce/management" },
               { label: "Products Grid", link: "/app/ecommerce/gridproducts" },
@@ -35850,7 +35964,7 @@
             id: 10,
             label: "Maps",
             link: "/app/maps",
-            icon: n.a.createElement(PE.a, null),
+            icon: n.a.createElement(OE.a, null),
             children: [
               { label: "Google Maps", link: "/app/maps/google" },
               { label: "Vector Map", link: "/app/maps/vector" }
@@ -35909,7 +36023,7 @@
             id: 15,
             label: "Library",
             link: "",
-            icon: n.a.createElement(Pd.a, null)
+            icon: n.a.createElement(Od.a, null)
           },
           {
             id: 16,
@@ -35929,19 +36043,19 @@
             id: 20,
             label: "My recent",
             link: "",
-            icon: n.a.createElement(ja, { size: "medium", color: "secondary" })
+            icon: n.a.createElement(Ma, { size: "medium", color: "secondary" })
           },
           {
             id: 21,
             label: "Starred",
             link: "",
-            icon: n.a.createElement(ja, { size: "medium", color: "primary" })
+            icon: n.a.createElement(Ma, { size: "medium", color: "primary" })
           },
           {
             id: 22,
             label: "Background",
             link: "",
-            icon: n.a.createElement(ja, { size: "medium", color: "secondary" })
+            icon: n.a.createElement(Ma, { size: "medium", color: "secondary" })
           },
           { id: 23, type: "divider" },
           {
@@ -35949,7 +36063,7 @@
             label: "Add section",
             icon: n.a.createElement(function() {
               var e = Object(G.a)();
-              return n.a.createElement(MA.a, {
+              return n.a.createElement(LA.a, {
                 style: { color: e.palette.secondary.main, fontSize: 45 }
               });
             }, null),
@@ -35975,7 +36089,7 @@
             id: 28,
             label: "Chat",
             icon: n.a.createElement(function() {
-              var e = Object(M.a)(function(e) {
+              var e = Object(j.a)(function(e) {
                 return {
                   root: {
                     backgroundColor: e.palette.primary.main,
@@ -36015,12 +36129,14 @@
             }
           }
         ],
-        LA = Object(B.a)(function(e) {
-          return { root: { minWidth: 72 } };
+        FA = Object(B.a)(function(e) {
+          return {
+            root: { minWidth: 72, textTransform: "none", fontWeight: 400 }
+          };
         })(function(e) {
           return n.a.createElement(f.a, e);
         });
-      var DA = Object(E.j)(function(e) {
+      var RA = Object(E.j)(function(e) {
         var a = D(),
           t = n.a.useState(2),
           l = Object(p.a)(t, 2),
@@ -36046,7 +36162,7 @@
           "div",
           { className: a.root },
           n.a.createElement(ga, { history: e.history }),
-          n.a.createElement(Ha, { structure: jA }),
+          n.a.createElement(Ha, { structure: DA }),
           n.a.createElement(
             "div",
             {
@@ -36058,7 +36174,12 @@
             n.a.createElement("div", { className: a.fakeToolbar }),
             n.a.createElement(
               Ya,
-              { disableWidgetMenu: !0, inheritHeight: !0, className: a.margin },
+              {
+                disableWidgetMenu: !0,
+                inheritHeight: !0,
+                className: a.margin,
+                bodyClass: a.navPadding
+              },
               n.a.createElement(
                 y.a,
                 {
@@ -36069,7 +36190,7 @@
                   wrap: "nowrap",
                   style: { overflowX: "auto" }
                 },
-                jA.map(function(e) {
+                DA.map(function(e) {
                   return !e.children &&
                     window.location.hash.includes(e.link) &&
                     e.link
@@ -36093,19 +36214,19 @@
                               style: { marginLeft: 38 }
                             },
                             n.a.createElement(
-                              LA,
+                              FA,
                               Object.assign({ label: "Today" }, B(0))
                             ),
                             n.a.createElement(
-                              LA,
+                              FA,
                               Object.assign({ label: "This week" }, B(1))
                             ),
                             n.a.createElement(
-                              LA,
+                              FA,
                               Object.assign({ label: "This month" }, B(2))
                             ),
                             n.a.createElement(
-                              LA,
+                              FA,
                               Object.assign({ label: "This year" }, B(3))
                             )
                           )
@@ -36137,10 +36258,10 @@
                   n.a.createElement(
                     b.a,
                     { display: "flex", alignItems: "center" },
-                    n.a.createElement(P.a, { className: a.calendarIcon }),
+                    n.a.createElement(O.a, { className: a.calendarIcon }),
                     n.a.createElement(
                       he,
-                      { style: { marginRight: 38 } },
+                      { className: a.date },
                       "29 Oct 2019, Tuesday"
                     ),
                     n.a.createElement(
@@ -36163,7 +36284,7 @@
                       n.a.createElement(
                         A.a,
                         { "aria-label": "chat" },
-                        n.a.createElement(O.a, { className: a.ecommerceIcon })
+                        n.a.createElement(P.a, { className: a.ecommerceIcon })
                       )
                     ),
                     n.a.createElement(
@@ -36257,29 +36378,29 @@
                   "exact",
                   !0
                 ),
-                n.a.createElement(kv, null, n.a.createElement(Wv, null))
+                n.a.createElement(kv, null, n.a.createElement(Hv, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/edit/:id", exact: !0 },
-                n.a.createElement(kv, null, n.a.createElement(gA, null))
+                n.a.createElement(kv, null, n.a.createElement(hA, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/create" },
-                n.a.createElement(kv, null, n.a.createElement(gA, null))
+                n.a.createElement(kv, null, n.a.createElement(hA, null))
               ),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product/:id",
-                component: eT
+                component: aT
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product",
-                component: eT
+                component: aT
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/gridproducts",
-                component: lT
+                component: nT
               }),
               n.a.createElement(E.b, {
                 exact: !0,
@@ -36345,19 +36466,19 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/search",
-                component: DT
+                component: FT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/gallery",
-                component: iA
+                component: sA
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/invoice",
-                component: pA
+                component: gA
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/calendar",
-                component: BA
+                component: MA
               }),
               n.a.createElement(E.b, {
                 path: "/app/core/colors",
@@ -36365,11 +36486,11 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/google",
-                component: cT
+                component: iT
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/vector",
-                component: dT
+                component: ET
               }),
               n.a.createElement(E.b, { path: "/app/ui/icons", component: vf })
             ),
@@ -36478,7 +36599,7 @@
           )
         );
       });
-      function FA(e, a) {
+      function WA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -36490,16 +36611,16 @@
         }
         return t;
       }
-      function RA(e) {
+      function HA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? FA(Object(t), !0).forEach(function(a) {
+            ? WA(Object(t), !0).forEach(function(a) {
                 Object(u.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : FA(Object(t)).forEach(function(a) {
+            : WA(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -36509,7 +36630,7 @@
         }
         return e;
       }
-      var WA = Object(M.a)(function(e) {
+      var zA = Object(j.a)(function(e) {
           return {
             root: { display: "flex", maxWidth: "100vw", overflowX: "hidden" },
             content: {
@@ -36525,11 +36646,11 @@
                 duration: e.transitions.duration.enteringScreen
               })
             },
-            fakeToolbar: RA({}, e.mixins.toolbar),
+            fakeToolbar: HA({}, e.mixins.toolbar),
             margin: { marginBottom: 24 }
           };
         }),
-        HA = function() {
+        GA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36709,14 +36830,14 @@
             )
           );
         },
-        zA = t(2411),
-        GA = Object(M.a)(function(e) {
+        UA = t(2411),
+        VA = Object(j.a)(function(e) {
           return {
             successIcon: { color: e.palette.success.main },
             failIcon: { color: "red" }
           };
         }),
-        UA = [
+        YA = [
           {
             advantage: "Hundreds unique components",
             single: "plus",
@@ -36730,8 +36851,8 @@
           },
           { advantage: "Paying users allowed", single: "no", extended: "plus" }
         ],
-        VA = function() {
-          var e = GA();
+        KA = function() {
+          var e = VA();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36769,7 +36890,7 @@
                     n.a.createElement(
                       ht.a,
                       null,
-                      UA.map(function(a) {
+                      YA.map(function(a) {
                         return n.a.createElement(
                           ot.a,
                           { key: a.advantage },
@@ -36782,7 +36903,7 @@
                             dt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(zA.a, {
+                              ? n.a.createElement(UA.a, {
                                   className: e.successIcon
                                 })
                               : n.a.createElement(gg.a, {
@@ -36793,7 +36914,7 @@
                             dt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(zA.a, {
+                              ? n.a.createElement(UA.a, {
                                   className: e.successIcon
                                 })
                               : n.a.createElement(gg.a, {
@@ -36837,7 +36958,7 @@
             )
           );
         },
-        YA = function() {
+        QA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36937,7 +37058,7 @@
             )
           );
         },
-        KA = Object(E.j)(function(e) {
+        JA = Object(E.j)(function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -37020,7 +37141,7 @@
             )
           );
         }),
-        QA = function() {
+        qA = function() {
           return n.a.createElement(
             Ya,
             { title: "Typography", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37075,7 +37196,7 @@
             )
           );
         },
-        JA = function() {
+        ZA = function() {
           return n.a.createElement(
             Ya,
             { title: "Widget", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37227,7 +37348,7 @@
             )
           );
         },
-        qA = function() {
+        _A = function() {
           return n.a.createElement(
             Ya,
             { title: "Libs", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37242,7 +37363,7 @@
             n.a.createElement(he, { variant: "h6" }, "Examples:")
           );
         },
-        ZA = Object(M.a)(function(e) {
+        XA = Object(j.a)(function(e) {
           var a;
           return {
             menuIcon: { marginRight: e.spacing(2) },
@@ -37274,10 +37395,10 @@
             })
           };
         }),
-        _A = t(2412),
-        XA = Object(E.j)(function(e) {
+        $A = t(2412),
+        ew = Object(E.j)(function(e) {
           var a = Object(G.a)(),
-            t = ZA(),
+            t = XA(),
             r = Xe(),
             m = $e(),
             c = Object(l.useState)(!1),
@@ -37352,7 +37473,7 @@
                       n.a.createElement(
                         A.a,
                         null,
-                        n.a.createElement(_A.a, { style: { color: "#fff" } })
+                        n.a.createElement($A.a, { style: { color: "#fff" } })
                       )
                     ),
                     n.a.createElement(
@@ -37451,7 +37572,7 @@
             )
           );
         }),
-        $A = [
+        aw = [
           {
             id: 0,
             label: "Getting Started",
@@ -37475,7 +37596,7 @@
             id: 1,
             label: "Pages",
             link: "/documentation/pages",
-            icon: n.a.createElement(Pd.a, null)
+            icon: n.a.createElement(Od.a, null)
           },
           {
             id: 2,
@@ -37500,15 +37621,15 @@
             icon: n.a.createElement(eE.a, null)
           }
         ],
-        ew = Object(E.j)(function(e) {
+        tw = Object(E.j)(function(e) {
           var a = Xe(),
-            t = WA(),
+            t = zA(),
             l = Object(E.i)().path;
           return n.a.createElement(
             "div",
             { className: t.root },
-            n.a.createElement(XA, null),
-            n.a.createElement(Ha, { structure: $A }),
+            n.a.createElement(ew, null),
+            n.a.createElement(Ha, { structure: aw }),
             n.a.createElement(
               "div",
               {
@@ -37533,7 +37654,7 @@
                     justify: "space-between",
                     alignItems: "center"
                   },
-                  $A.map(function(e) {
+                  aw.map(function(e) {
                     return !e.children &&
                       window.location.hash.includes(e.link) &&
                       e.link
@@ -37583,43 +37704,43 @@
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/overview") },
-                  n.a.createElement(HA, null)
+                  n.a.createElement(GA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/licences") },
-                  n.a.createElement(VA, null)
-                ),
-                n.a.createElement(
-                  E.b,
-                  { path: "".concat(l, "/getting-started/quick-start") },
-                  n.a.createElement(YA, null)
-                ),
-                n.a.createElement(
-                  E.b,
-                  { path: "".concat(l, "/pages") },
                   n.a.createElement(KA, null)
                 ),
                 n.a.createElement(
                   E.b,
-                  { path: "".concat(l, "/components/typography") },
+                  { path: "".concat(l, "/getting-started/quick-start") },
                   n.a.createElement(QA, null)
                 ),
                 n.a.createElement(
                   E.b,
-                  { path: "".concat(l, "/components/widget") },
+                  { path: "".concat(l, "/pages") },
                   n.a.createElement(JA, null)
                 ),
                 n.a.createElement(
                   E.b,
-                  { path: "".concat(l, "/libs") },
+                  { path: "".concat(l, "/components/typography") },
                   n.a.createElement(qA, null)
+                ),
+                n.a.createElement(
+                  E.b,
+                  { path: "".concat(l, "/components/widget") },
+                  n.a.createElement(ZA, null)
+                ),
+                n.a.createElement(
+                  E.b,
+                  { path: "".concat(l, "/libs") },
+                  n.a.createElement(_A, null)
                 )
               )
             )
           );
         }),
-        aw = Object(M.a)(function(e) {
+        lw = Object(j.a)(function(e) {
           return {
             container: {
               height: "100vh",
@@ -37665,10 +37786,10 @@
             backButton: { textTransform: "none", fontSize: 22 }
           };
         }),
-        tw = t(607),
-        lw = t.n(tw);
-      function nw() {
-        var e = aw();
+        nw = t(606),
+        rw = t.n(nw);
+      function mw() {
+        var e = lw();
         return n.a.createElement(
           y.a,
           { container: !0, className: e.container },
@@ -37677,7 +37798,7 @@
             { className: e.logotype },
             n.a.createElement("img", {
               className: e.logotypeIcon,
-              src: lw.a,
+              src: rw.a,
               alt: "logo"
             }),
             n.a.createElement(
@@ -37728,8 +37849,8 @@
           )
         );
       }
-      var rw = t(613),
-        mw = Object(M.a)(function(e) {
+      var cw = t(613),
+        iw = Object(j.a)(function(e) {
           var a;
           return {
             container: {
@@ -37845,11 +37966,11 @@
             )
           };
         }),
-        cw = t(608),
-        iw = t.n(cw),
-        sw = t(357),
+        sw = t(607),
         ow = t.n(sw),
-        dw = function() {
+        dw = t(356),
+        Ew = t.n(dw),
+        uw = function() {
           var e = new Date();
           return e.getHours() >= 4 && e.getHours() <= 12
             ? "Good Morning"
@@ -37859,8 +37980,8 @@
             ? "Good Evening"
             : "Good Night";
         };
-      var Ew = Object(E.j)(function(e) {
-        var a = mw(),
+      var pw = Object(E.j)(function(e) {
+        var a = iw(),
           t = oa();
         Object(l.useEffect)(function() {
           var a = new URLSearchParams(e.location.search).get("token");
@@ -37884,12 +38005,12 @@
           A = b[1],
           w = Object(l.useState)("admin@flatlogic.com"),
           C = Object(p.a)(w, 2),
-          P = C[0],
-          O = C[1],
+          O = C[0],
+          P = C[1],
           k = Object(l.useState)("password"),
           S = Object(p.a)(k, 2),
           B = S[0],
-          M = S[1];
+          j = S[1];
         return n.a.createElement(
           y.a,
           { container: !0, className: a.container },
@@ -37897,7 +38018,7 @@
             "div",
             { className: a.logotypeContainer },
             n.a.createElement("img", {
-              src: iw.a,
+              src: ow.a,
               alt: "logo",
               className: a.logotypeImage
             }),
@@ -37966,7 +38087,7 @@
                   n.a.createElement(
                     he,
                     { variant: "h1", className: a.greeting },
-                    dw(),
+                    uw(),
                     ", User"
                   ),
                   n.a.createElement(
@@ -37975,11 +38096,11 @@
                       size: "large",
                       className: a.googleButton,
                       onClick: function() {
-                        return da(t, P, B, e.history, i, E, "google");
+                        return da(t, O, B, e.history, i, E, "google");
                       }
                     },
                     n.a.createElement("img", {
-                      src: ow.a,
+                      src: Ew.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -37997,7 +38118,7 @@
                     n.a.createElement("div", { className: a.formDivider })
                   ),
                   n.a.createElement(
-                    rw.a,
+                    cw.a,
                     {
                       in: d,
                       style: d
@@ -38015,9 +38136,9 @@
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
                     },
-                    value: P,
+                    value: O,
                     onChange: function(e) {
-                      return O(e.target.value);
+                      return P(e.target.value);
                     },
                     margin: "normal",
                     placeholder: "Email Adress",
@@ -38031,7 +38152,7 @@
                     },
                     value: B,
                     onChange: function(e) {
-                      return M(e.target.value);
+                      return j(e.target.value);
                     },
                     margin: "normal",
                     placeholder: "Password",
@@ -38049,9 +38170,9 @@
                       : n.a.createElement(
                           Ne,
                           {
-                            disabled: 0 === P.length || 0 === B.length,
+                            disabled: 0 === O.length || 0 === B.length,
                             onClick: function() {
-                              return da(t, P, B, e.history, i, E);
+                              return da(t, O, B, e.history, i, E);
                             },
                             variant: "contained",
                             color: "primary",
@@ -38085,7 +38206,7 @@
                     "Create your account"
                   ),
                   n.a.createElement(
-                    rw.a,
+                    cw.a,
                     { in: d },
                     n.a.createElement(
                       he,
@@ -38112,9 +38233,9 @@
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
                     },
-                    value: P,
+                    value: O,
                     onChange: function(e) {
-                      return O(e.target.value);
+                      return P(e.target.value);
                     },
                     margin: "normal",
                     placeholder: "Email Adress",
@@ -38128,7 +38249,7 @@
                     },
                     value: B,
                     onChange: function(e) {
-                      return M(e.target.value);
+                      return j(e.target.value);
                     },
                     margin: "normal",
                     placeholder: "Password",
@@ -38144,10 +38265,10 @@
                           Ne,
                           {
                             onClick: function() {
-                              return da(t, P, B, e.history, i, E);
+                              return da(t, O, B, e.history, i, E);
                             },
                             disabled:
-                              0 === P.length ||
+                              0 === O.length ||
                               0 === B.length ||
                               0 === v.length,
                             size: "large",
@@ -38176,11 +38297,11 @@
                       size: "large",
                       className: x()(a.googleButton, a.googleButtonCreating),
                       onClick: function() {
-                        return da(t, P, B, e.history, i, E, "google");
+                        return da(t, O, B, e.history, i, E, "google");
                       }
                     },
                     n.a.createElement("img", {
-                      src: ow.a,
+                      src: Ew.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -38196,7 +38317,7 @@
           )
         );
       });
-      function uw() {
+      function gw() {
         var e = (function() {
           var e = n.a.useContext(ca);
           if (void 0 === e)
@@ -38223,7 +38344,7 @@
                 return n.a.createElement(E.a, { to: "/app/dashboard" });
               }
             }),
-            n.a.createElement(E.b, { path: "/documentation", component: ew }),
+            n.a.createElement(E.b, { path: "/documentation", component: tw }),
             n.a.createElement(
               function(a) {
                 var t = a.component,
@@ -38244,7 +38365,7 @@
                   })
                 );
               },
-              { path: "/app", component: DA }
+              { path: "/app", component: RA }
             ),
             n.a.createElement(
               function(a) {
@@ -38261,9 +38382,9 @@
                   })
                 );
               },
-              { path: "/login", component: Ew }
+              { path: "/login", component: pw }
             ),
-            n.a.createElement(E.b, { component: nw })
+            n.a.createElement(E.b, { component: mw })
           )
         );
       }
@@ -38274,11 +38395,11 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var pw = t(1465);
+      var xw = t(1465);
       (i.a.defaults.baseURL = na.baseURLApi),
         (i.a.defaults.headers.common["Content-Type"] = "application/json");
-      var gw = localStorage.getItem("token");
-      gw && (i.a.defaults.headers.common.Authorization = "Bearer " + gw),
+      var hw = localStorage.getItem("token");
+      hw && (i.a.defaults.headers.common.Authorization = "Bearer " + hw),
         m.a.render(
           n.a.createElement(
             function(e) {
@@ -38332,8 +38453,8 @@
                   return n.a.createElement(
                     s.a,
                     { theme: e },
-                    n.a.createElement(pw.a, null),
-                    n.a.createElement(uw, null)
+                    n.a.createElement(xw.a, null),
+                    n.a.createElement(gw, null)
                   );
                 })
               )
@@ -38355,109 +38476,109 @@
     165: function(e, a, t) {
       e.exports = t.p + "static/media/img6.3795ab4e.jpg";
     },
-    193: function(e, a, t) {
+    192: function(e, a, t) {
       e.exports = t.p + "static/media/a2.65b83bd6.jpg";
     },
-    194: function(e, a, t) {
+    193: function(e, a, t) {
       e.exports = { widget: "Calendar_widget__1VaC5" };
     },
-    252: function(e, a, t) {
+    251: function(e, a, t) {
       e.exports = t.p + "static/media/mountains.4130575d.jpeg";
     },
-    255: function(e, a, t) {
+    254: function(e, a, t) {
       e.exports = t.p + "static/media/1.f5c976d0.jpg";
     },
-    256: function(e, a, t) {
+    255: function(e, a, t) {
       e.exports = t.p + "static/media/3.635e4791.jpg";
     },
-    353: function(e, a, t) {
+    352: function(e, a, t) {
       e.exports = t.p + "static/media/a4.3ceb7ef6.jpg";
     },
-    354: function(e, a, t) {
+    353: function(e, a, t) {
       e.exports = t.p + "static/media/profile.84f014f0.jpg";
     },
-    357: function(e, a, t) {
+    356: function(e, a, t) {
       e.exports = t.p + "static/media/google.695a3160.svg";
     },
-    547: function(e, a, t) {
+    546: function(e, a, t) {
       e.exports = t.p + "static/media/main-profile.d7f2a278.png";
     },
-    575: function(e, a, t) {
+    574: function(e, a, t) {
       e.exports = t.p + "static/media/lifestyle.52254d52.jpg";
     },
-    576: function(e, a, t) {
+    575: function(e, a, t) {
       e.exports = t.p + "static/media/isometric.3414e66f.jpg";
     },
-    577: function(e, a, t) {
+    576: function(e, a, t) {
       e.exports = t.p + "static/media/rns.95da0675.png";
     },
-    578: function(e, a, t) {
+    577: function(e, a, t) {
       e.exports = t.p + "static/media/mastercard.39748d61.svg";
     },
-    579: function(e, a, t) {
+    578: function(e, a, t) {
       e.exports = t.p + "static/media/paypal.7c552892.svg";
     },
-    580: function(e, a, t) {
+    579: function(e, a, t) {
       e.exports = t.p + "static/media/visa.868e1896.svg";
     },
-    581: function(e, a, t) {
+    580: function(e, a, t) {
       e.exports = t.p + "static/media/aexpress.2f7bff60.svg";
     },
-    584: function(e) {
+    583: function(e) {
       e.exports = JSON.parse(
         '{"arcs":[[[7080,7327],[-5,4],[-10,-10],[5,-6]],[[7070,7315],[-16,-12],[-9,5],[-28,-4],[-12,-6],[-1,-5],[-17,-18],[-11,-16],[6,-10],[6,-18],[-2,-15],[3,-8],[-18,-35],[4,-12],[-2,-18],[-7,-5],[-13,0],[-13,4],[3,-16],[6,-6],[-1,-9],[4,-9],[-12,-14],[-8,0],[-6,-18],[2,-7],[-6,-11],[2,-30],[-8,-17],[-6,-1],[-2,8],[-15,4],[-3,-8],[-14,-12],[6,-9],[-11,-7],[-13,6],[-7,-15],[-8,-7],[-3,-19],[2,-9],[-4,-35],[-32,-17],[-16,2],[-11,-11],[-14,6],[-30,-5],[-46,26]],[[6689,6902],[27,56],[1,10],[-4,21],[-24,7],[-1,9],[1,35],[-7,43],[0,9],[7,14],[1,9],[-10,5],[0,31],[11,8],[-5,13],[7,6],[5,26],[-1,11],[4,19]],[[6701,7234],[8,-10],[13,-1],[6,-7],[1,-9],[5,8],[5,-4],[13,13],[0,24],[9,0],[4,6],[20,11],[9,15],[0,16],[5,14],[-1,9],[9,8],[12,0],[4,16],[4,3],[15,-14],[5,2]],[[6847,7334],[14,2],[7,-12],[6,6],[8,-6]],[[6882,7324],[7,-15],[7,10],[15,9],[2,5],[10,-14],[5,7],[-2,13],[4,8],[21,2],[-3,18],[5,4],[12,26],[9,-2],[7,-9],[-1,-21],[6,3],[2,-8],[-3,-14],[-1,-35],[3,-12],[7,-4],[15,19],[9,1],[3,11],[14,14],[13,-2],[-1,-12],[14,8],[12,2],[7,-9]],[[5665,4557],[3,-32],[-3,-9],[0,-36],[2,-12],[-5,-22],[4,-12],[-56,0],[0,-182],[3,-21],[6,-7],[15,-33],[6,-7],[3,-10],[6,-7]],[[5649,4167],[-53,-21],[-11,4],[-8,-4],[-13,9],[-8,-3],[-17,2],[-5,4],[-10,0],[-7,9],[-5,14],[-52,0],[-66,0],[-7,-1],[-12,17],[-4,9],[-6,1],[-18,-16],[-15,4],[-6,-6]],[[5326,4189],[0,28],[2,-1],[-2,58],[7,9],[1,23],[6,24],[2,20],[0,23],[5,12],[0,26],[4,4],[8,20],[0,10],[6,12],[5,0],[8,20],[5,28],[-1,20],[2,29],[-2,15],[-7,15],[-8,46],[-7,29],[6,16],[6,7],[-1,21],[-3,9],[-10,48],[-2,4],[0,21],[-8,16],[-8,30],[16,4],[10,11]],[[5366,4846],[4,-2],[18,2],[12,-3],[21,2],[32,1],[7,-4],[4,-15],[0,-22],[3,-16],[3,-3],[0,-19],[10,-23],[0,-8],[9,-20],[7,4],[6,-4],[2,6],[33,0],[1,20],[4,12],[-2,8],[2,18],[21,0],[9,5],[-3,-22],[36,0],[1,-22],[-2,-20],[5,-23],[-4,-53],[1,-14],[6,-17],[3,-2],[4,-23],[0,-22],[-4,-9],[3,-18],[6,7],[13,-4],[14,9],[12,-3],[2,8]],[[5363,4916],[-7,-5],[-8,-18],[-1,-40],[-8,-2]],[[5339,4851],[-2,5],[2,14],[-6,24]],[[5333,4894],[10,23],[7,3],[4,10],[9,-14]],[[5582,7537],[-1,0]],[[5581,7537],[1,0]],[[5537,7617],[1,0]],[[5538,7617],[-1,0]],[[5557,7633],[4,-13],[7,-4],[3,-22]],[[5571,7594],[-4,-21],[6,-24]],[[5573,7549],[2,-10]],[[5575,7539],[6,-2]],[[5581,7537],[1,-1]],[[5582,7536],[0,0]],[[5582,7536],[0,-5]],[[5582,7531],[1,-5]],[[5583,7526],[0,0]],[[5583,7526],[-2,-13],[-5,-2],[-2,-17],[-11,-8],[3,-12],[-6,-8],[-5,3]],[[5555,7469],[-3,19],[-11,9],[-1,22],[-4,4],[4,16],[-1,29],[5,23],[-7,2]],[[5537,7593],[1,14]],[[5538,7607],[0,13]],[[5538,7620],[9,19],[3,-11],[7,5]],[[5553,8659],[10,-5],[-7,-11],[-10,6],[7,10]],[[5047,7630],[-7,-5],[-1,11]],[[5039,7636],[8,1],[0,-7]],[[6563,6637],[0,0]],[[6563,6659],[2,-2],[1,-36]],[[6566,6621],[-8,-14],[-3,13],[-6,-4],[-1,-38],[7,-9],[-11,-3],[-4,-6],[2,-9],[-10,-44],[0,-17]],[[6532,6490],[-2,-5],[-70,18],[-3,5],[-25,63],[0,9]],[[6432,6580],[6,-1],[0,-13],[12,-3],[10,11],[24,-2],[11,-4],[15,12],[6,14],[1,15],[11,12],[13,31],[11,13],[5,19]],[[6557,6684],[3,-2],[-1,-22],[4,-1]],[[6562,6642],[0,0]],[[3093,2021],[0,6]],[[3093,2027],[0,-6]],[[3093,2028],[0,123]],[[3093,2151],[10,-17],[-8,-15],[11,-6],[5,-17],[12,-13],[7,-13],[17,-13],[11,-14],[12,-7],[20,0],[-5,-16],[-18,1],[-11,-8],[-12,6],[-51,9]],[[3259,3902],[11,-14],[7,-29],[9,-17],[15,-17],[3,-11],[17,-13],[11,-1],[15,-18],[4,-9],[15,-17],[9,-5],[5,-8],[13,-5],[8,-20],[-6,-14],[-3,-19],[-8,-10],[-1,-25],[-3,-14],[-5,-4],[-5,-15],[4,-5],[13,1],[19,-8],[5,-5],[7,4],[5,-5],[6,3],[4,-8],[3,12],[5,5],[10,-9],[5,8],[-1,8],[6,12],[6,0],[11,18],[5,40],[0,22]],[[3483,3710],[5,-4],[6,7],[9,-9],[1,-17],[5,-14],[-2,-9],[0,-25],[-2,-17],[-13,-19],[-15,-5],[-6,-19],[-8,-4],[-6,-13],[-7,-5],[3,-10],[-6,-4],[-20,-39],[-2,-11],[-12,-25],[-5,-2],[-1,-10],[-8,-11]],[[3399,3445],[0,-7],[-7,-12],[2,-23],[-3,-20],[-5,-13],[3,-4],[-2,-14],[-4,-5],[3,-25],[-3,-8]],[[3383,3314],[2,-25],[-2,-12],[-6,0],[-4,-34],[5,-29],[-4,-14],[5,-12],[23,-21],[11,-25],[-7,-19],[0,-13],[7,-17],[12,-6],[1,-29],[-11,-30],[-13,-26],[-2,-16],[-27,-24],[-37,-16],[-27,-8],[-27,0],[-15,11],[3,-32],[5,-9],[-2,-21],[-4,3],[-1,-21],[-4,-5],[6,-17],[-2,-18],[-20,-16],[-21,0],[-26,20],[-8,2],[-4,-10],[5,-32],[-2,-24],[6,-16],[11,-4],[-4,-10],[13,0],[2,10],[-6,0],[14,11],[5,-13],[1,-17],[-3,-12],[-12,-5],[-3,16],[-13,5],[-9,-15],[19,-13],[-20,-17],[-8,-19],[3,-43],[-4,-11],[-9,-7],[0,-20],[-14,3],[-8,-5],[-1,-8],[-14,-5],[-9,-18],[0,-9],[-6,-9],[-2,-14],[7,-25],[7,-6],[8,-16],[6,-4],[17,0],[6,-6],[2,-20],[-5,-33],[-6,-2],[-12,-18],[-16,-14],[-3,-10],[-9,-10],[-6,-22],[2,-16],[-5,-18],[-5,-6],[-23,-14],[-5,-12],[-2,-21],[2,-24],[9,-34],[11,-24],[-3,-1]],[[3098,2168],[-15,10],[-26,10],[-55,1],[-4,12],[-11,13],[6,19],[-5,7],[5,13],[-2,14],[-13,1],[-11,-8],[-3,26],[-7,9],[2,22],[-3,11],[3,15],[9,1],[3,17],[12,10],[1,22],[7,7],[-1,15],[-5,7],[6,30],[8,13],[2,22],[8,9],[-3,32],[4,11],[-4,4],[0,15],[8,5],[5,13],[-8,17],[-14,5],[7,5],[17,3],[2,17],[-18,3],[-1,18],[5,7],[-4,14],[3,7],[-6,16],[5,9],[-11,7],[0,45],[3,8],[8,1],[-5,26],[2,43],[-3,11],[4,27],[5,21],[-2,18],[8,13],[0,25],[15,13],[-3,15],[-1,21],[-5,20],[3,35],[-2,24],[3,12],[10,4],[-1,8],[10,14],[-2,40],[-4,4],[6,6],[0,12],[9,39],[6,2],[-2,34],[3,18],[-9,9],[3,18],[-4,6],[0,16],[-5,12],[-2,14],[3,9],[-5,2],[-3,15],[1,24],[6,8],[0,13],[5,19],[7,8],[2,10],[-4,4],[2,16],[-4,31],[7,10],[1,26],[4,17],[13,33],[9,38],[6,-3],[8,7],[0,10],[-8,21],[0,10],[5,9],[-2,26],[-3,17],[2,15],[5,4],[-6,14],[2,14],[7,13],[25,20],[9,54],[-5,17]],[[3133,3869],[5,9],[0,8],[7,6],[2,12],[9,5],[4,19],[3,-2],[10,-17],[21,0],[12,-5],[6,-38],[3,20],[8,29],[32,1],[4,-14]],[[6265,7522],[0,0]],[[6249,7560],[2,-10],[15,-14],[-6,-16],[6,-11],[11,-10],[-3,-13],[-7,2],[15,-25],[9,-1],[-3,-13],[5,-7],[-5,-5],[3,-15]],[[6291,7422],[-10,-2]],[[6281,7420],[-4,23],[-7,7],[1,10],[-13,-1],[-8,14],[-7,-4]],[[6243,7469],[-8,16],[-12,1],[-11,7],[-3,20],[5,12],[-3,17],[-5,8]],[[6206,7550],[9,0],[11,7],[10,-3],[13,6]],[[6249,7546],[0,0]],[[6255,7542],[0,0]],[[488,408],[24,-7],[-48,-4],[-13,16],[37,-5]],[[542,484],[-90,7],[20,11],[65,-10],[5,-8]],[[3331,592],[8,-3],[-1,-57],[-23,-11],[-52,4],[-17,17],[-32,-10],[-67,20],[3,10],[19,-10],[115,3],[8,27],[39,10]],[[4135,588],[34,-2],[-10,-10],[-44,8],[-5,11],[25,-7]],[[3120,602],[25,-4],[35,-20],[-20,-7],[-40,31]],[[3137,618],[-11,-15],[-30,6],[41,9]],[[4054,618],[1,-6],[-76,3],[30,13],[45,-10]],[[547,618],[21,-9],[14,-23],[-47,-2],[-90,25],[-10,7],[5,17],[24,15],[25,0],[58,-30]],[[3143,666],[-58,-38],[-39,-36],[-31,3],[-10,10],[11,23],[23,11],[92,33],[12,-6]],[[9654,680],[-35,-8],[-8,14],[21,-7],[22,11],[0,-10]],[[3740,650],[1,-7],[44,2],[21,-39],[-7,-30],[-18,-1],[9,-11],[-158,-26],[-16,-9],[-121,-4],[1,17],[22,27],[26,-4],[60,37],[-13,14],[14,40],[31,33],[52,14],[37,-3],[38,-11],[19,-13],[-4,-20],[-38,-6]],[[9641,732],[63,-13],[-27,-10],[-42,-2],[-19,12],[25,13]],[[839,754],[14,-14],[-32,3],[-11,7],[29,4]],[[938,754],[-21,-7],[-2,12],[23,-5]],[[951,834],[16,-10],[-24,3],[8,7]],[[9561,885],[-8,-14],[-7,9],[15,5]],[[1342,903],[19,-12],[-6,-6],[-27,12],[14,6]],[[1458,897],[-1,-13],[-17,20],[18,-7]],[[1760,918],[-17,-8],[-3,7],[26,11],[-6,-10]],[[1680,914],[-12,3],[10,17],[17,-2],[-1,-10],[-14,-8]],[[1635,935],[17,0],[7,-14],[-23,-10],[0,-10],[-32,-4],[-22,7],[3,11],[15,12],[-27,3],[7,10],[55,-5]],[[4425,917],[9,-22],[-14,0],[-4,16],[-29,3],[20,7],[12,19],[11,1],[-5,-24]],[[9717,944],[-11,3],[8,14],[3,-17]],[[1498,961],[13,-7],[9,-16],[-11,-7],[29,6],[17,-9],[7,-11],[-6,-12],[-22,3],[-48,22],[0,8],[-19,7],[-3,16],[34,0]],[[2955,972],[-2,-10],[-13,0],[15,10]],[[2514,979],[-20,-5],[-4,5],[22,8],[2,-8]],[[2918,987],[18,-3],[-8,-40],[-36,14],[-7,10],[11,7],[18,0],[-19,10],[23,2]],[[2474,988],[-3,-19],[-14,-1],[6,17],[-10,16],[23,1],[-2,-14]],[[2365,999],[-10,3],[18,7],[-8,-10]],[[2270,1031],[14,-3],[-2,14],[10,0],[2,-17],[10,19],[19,1],[5,-10],[-23,-11],[8,-3],[27,11],[-6,-10],[13,-10],[-15,-1],[1,-9],[-72,2],[2,5],[-24,-1],[6,7],[-29,6],[-58,7],[6,10],[57,7],[8,-11],[7,7],[23,-12],[-13,13],[17,9],[15,-6],[-8,-14]],[[4919,1112],[8,-10],[14,1],[-17,-19],[-8,18],[-16,10],[19,0]],[[2947,1119],[8,-13],[-22,-10],[-48,-11],[-9,4],[2,12],[33,5],[9,12],[8,-13],[3,14],[16,0]],[[3313,1111],[-7,10],[11,1],[-4,-11]],[[4835,1126],[-5,-10],[-10,9],[15,1]],[[5082,1116],[-11,6],[19,4],[-8,-10]],[[4913,1121],[-10,0],[6,12],[12,3],[2,-14],[-10,-1]],[[7004,1113],[-10,3],[-5,16],[16,-11],[-1,-8]],[[5124,1122],[-12,11],[12,5],[0,-16]],[[5745,1129],[-22,0],[-2,11],[19,6],[5,-17]],[[5040,1146],[-7,-18],[-5,21],[12,-3]],[[2924,1165],[8,-12],[-12,-13],[-23,5],[-1,13],[8,7],[20,0]],[[5449,1148],[-17,8],[11,12],[19,-1],[-11,-8],[-2,-11]],[[3001,1170],[-23,2],[-6,7],[17,4],[12,-13]],[[3283,1179],[-6,-12],[-16,30],[11,2],[11,-20]],[[3055,1197],[19,-24],[1,-17],[16,-26],[11,-25],[3,-60],[-6,-23],[-20,-7],[-2,-10],[-40,-7],[-49,0],[-21,13],[10,8],[16,-3],[45,-2],[14,8],[-7,6],[-28,-9],[-18,10],[35,8],[1,5],[-31,0],[-14,17],[-11,-17],[-31,2],[10,-8],[-14,-9],[-38,14],[-1,15],[15,8],[16,-8],[-4,12],[9,4],[16,-13],[-4,14],[29,-2],[9,7],[-23,7],[10,6],[30,-6],[19,11],[20,0],[13,-11],[-2,16],[-35,7],[5,17],[24,8],[15,-4],[-18,14],[-20,-4],[-27,14],[7,34],[-10,5],[0,20],[45,10],[9,-7],[2,-18]],[[7385,1327],[-15,4],[8,9],[7,-13]],[[3111,1321],[9,-5],[-16,-13],[-8,-22],[-11,0],[-7,9],[22,44],[15,12],[5,-5],[-10,-11],[1,-9]],[[7686,1378],[4,-8],[-14,-2],[10,10]],[[3174,1408],[-3,-16],[-10,-2],[6,17],[7,1]],[[7805,1401],[-19,0],[-1,7],[12,10],[15,-7],[-7,-10]],[[7870,1413],[-16,19],[9,-2],[7,-17]],[[3410,1465],[-6,6],[14,7],[-8,-13]],[[3242,1481],[-2,-9],[14,-8],[-14,-12],[-26,3],[20,26],[8,0]],[[3270,1492],[2,-17],[-12,-8],[10,25]],[[3394,1508],[-2,-9],[20,-7],[-8,-17],[-7,6],[-7,-7],[-14,20],[5,8],[13,6]],[[3446,1521],[-9,7],[15,-2],[-6,-5]],[[0,324],[46,3],[68,-14],[19,8],[194,-14],[21,-11],[128,-2],[122,-11],[81,-3],[-58,13],[54,1],[-124,12],[-104,7],[24,11],[-55,17],[37,2],[-52,17],[-71,-3],[-37,23],[-127,27],[73,-2],[18,-14],[73,-4],[20,4],[70,-3],[6,-14],[50,10],[19,-11],[127,8],[18,9],[-44,5],[81,5],[16,14],[70,14],[-10,10],[-54,26],[31,11],[-19,10],[-74,13],[17,11],[109,6],[135,7],[0,5],[-77,24],[-11,11],[13,10],[43,-4],[46,10],[-17,11],[-75,12],[-55,17],[-3,5],[-68,8],[-43,21],[14,11],[48,6],[-2,14],[-71,-7],[-47,23],[14,18],[-3,26],[9,1],[24,-17],[21,17],[21,-5],[18,4],[38,-10],[-9,-10],[36,-3],[2,10],[72,-30],[30,16],[30,6],[-36,7],[7,14],[32,-17],[21,7],[13,-13],[27,0],[-16,13],[21,1],[-31,15],[29,-5],[-22,20],[-27,16],[-38,-3],[-33,3],[2,9],[28,4],[9,7],[69,-21],[6,8],[-27,13],[9,11],[56,6],[1,10],[41,4],[2,6],[19,-3],[9,-14],[18,0],[-10,14],[29,6],[16,14],[61,4],[30,-4],[-16,9],[4,14],[30,0],[11,11],[22,-4],[18,-16],[30,9],[58,-4],[20,-5],[64,13],[93,0],[8,-7],[45,3],[41,0],[59,10],[-3,10],[24,6],[6,-12],[33,-3],[51,6],[-7,21],[11,10],[21,0],[-9,-7],[19,2],[-8,-12],[4,-14],[15,3],[-18,-16],[-6,-21],[9,6],[46,8],[15,0],[-10,11],[0,20],[15,6],[35,-17],[-5,-19],[-34,-18],[4,-7],[45,4],[84,-10],[53,13],[28,-3],[14,4],[49,-4],[-3,-8],[20,-8],[70,13],[-27,6],[2,10],[-34,3],[17,7],[3,14],[-46,3],[5,11],[-7,15],[-33,5],[-4,20],[42,-4],[3,-6],[47,2],[-5,21],[-41,3],[-46,0],[-11,7],[-4,20],[11,7],[26,-4],[-17,-12],[21,-4],[33,4],[84,-1],[9,-7],[44,-11],[17,7],[24,-7],[21,8],[46,0],[33,-7],[16,10],[25,1],[6,10],[-10,17],[33,-4],[1,-10],[-15,-14],[9,-9],[30,6],[8,-11],[38,11],[5,-13],[28,-10],[20,2],[43,-19],[29,9],[-2,28],[24,-11],[-8,25],[28,-2],[24,-17],[-2,-16],[55,8],[5,-7],[-15,-14],[48,6],[7,5],[34,-5],[26,15],[57,12],[21,-2],[42,10],[35,16],[22,43],[-1,7],[-20,21],[-4,13],[6,23],[-15,38],[-15,16],[4,21],[-13,16],[15,0],[-1,7],[25,-14],[5,14],[11,6],[0,11],[-18,7],[14,5],[-5,17],[6,14],[-9,16],[12,3],[6,21],[-10,5],[-19,-1],[15,30],[6,0],[-2,-17],[15,-6],[1,26],[-4,14],[8,4],[14,-7],[5,34],[14,-2],[-5,11],[19,-4],[3,23],[16,1],[-5,27],[11,6],[16,-7],[-4,11],[20,14],[11,-3],[9,12],[10,1],[-1,10],[14,4],[-1,13],[30,14],[13,-2],[3,10],[12,2],[1,8],[21,4],[7,8],[13,6],[11,-3],[7,-20],[-10,-3],[-2,12],[-15,-12],[-10,0],[-15,-17],[-9,-22],[-9,-6],[-7,7],[-6,-6],[-19,-5],[-17,-29],[-20,3],[6,-10],[-18,-10],[9,-14],[-14,-14],[13,-19],[16,3],[0,10],[21,-2],[-16,-14],[-16,0],[-2,-16],[-5,16],[-19,-3],[1,-28],[-16,27],[-15,3],[-10,-29],[11,-10],[-9,-4],[-14,11],[-12,-15],[6,-16],[-15,-6],[-8,5],[-3,-33],[10,-6],[-12,-11],[21,6],[6,-6],[-20,-7],[14,-6],[-10,-7],[36,-17],[-2,17],[23,7],[-14,-17],[15,-6],[-5,-8],[14,-25],[14,-7],[-2,-21],[15,-13],[-1,-11],[-10,4],[5,-18],[22,1],[-16,-24],[20,4],[9,-21],[-5,-12],[-12,-1],[-14,-13],[14,-1],[11,10],[9,-8],[-7,-12],[-38,-3],[36,-14],[13,10],[0,-26],[-19,-2],[6,-18],[17,8],[-7,-24],[25,4],[-11,-19],[-9,8],[-3,-13],[-15,12],[-21,5],[13,-17],[21,-10],[-7,-23],[-21,5],[21,-13],[-23,-13],[31,7],[-9,-17],[-36,6],[17,-17],[-10,-13],[-13,-3],[-2,17],[-17,2],[6,-15],[-14,3],[-10,-10],[18,2],[7,-9],[-35,-4],[-2,-7],[33,-3],[-85,-34],[-52,-9],[4,-3],[-60,-13],[4,-11],[-17,-7],[-31,-1],[-20,4],[-46,0],[-31,8],[-64,0],[34,-42],[23,-15],[10,6],[66,-8],[-25,-26],[-38,-9],[-61,13],[-95,13],[-30,-6],[118,-34],[-9,-17],[-71,-7],[-61,21],[-37,30],[12,-23],[-13,-4],[17,-20],[42,-17],[17,-23],[18,-7],[2,20],[108,-4],[17,-13],[-20,-24],[-22,-3],[-62,0],[55,-10],[39,6],[24,-26],[-8,-7],[24,-16],[19,7],[38,-10],[7,13],[39,9],[21,-6],[9,-14],[46,-9],[89,-24],[77,-3],[-92,-8],[62,-5],[-2,-4],[-62,-1],[-6,-25],[26,-5],[52,8],[75,3],[-64,-17],[33,-33],[-6,-17],[66,-4],[49,30],[72,31],[52,14],[16,-1],[53,11],[65,5],[59,-2],[6,-17],[-17,-11],[31,-7],[67,24],[-2,10],[36,18],[9,16],[79,27],[42,-13],[34,10],[18,17],[53,0],[40,12],[42,-3],[-21,10],[37,0],[5,7],[153,6],[48,10],[-61,7],[-165,11],[31,17],[-27,0],[9,15],[-73,-12],[-96,23],[-5,14],[12,23],[11,3],[8,18],[24,0],[-7,12],[28,18],[34,10],[17,0],[5,10],[28,7],[15,13],[36,16],[52,10],[29,14],[48,10],[53,7],[31,-4],[22,14],[17,-6],[43,6],[-18,11],[29,26],[-3,10],[14,17],[24,3],[23,-7],[39,33],[-10,4],[-27,-10],[-22,3],[17,4],[-20,7],[1,13],[28,23],[18,3],[12,-9],[16,11],[-15,16],[29,-7],[14,11],[42,13],[3,19],[10,20],[-18,0],[-18,7],[-1,18],[16,2],[1,-9],[21,-10],[7,17],[16,9],[-12,10],[13,4],[3,-10],[22,-7],[10,-28],[15,7],[15,-5],[-4,9],[6,23],[-11,13],[13,5],[25,-7],[16,14],[13,-8],[-20,-29],[71,-3],[7,-9],[4,12],[18,3],[5,-6],[28,-5],[7,11],[12,-7],[-4,-14],[12,-9],[21,25],[13,8],[41,14],[105,20],[19,0],[28,7],[-5,17],[12,2],[-1,-17],[11,-3],[25,9],[-8,8],[9,9],[22,-23],[31,-14],[21,-5],[14,25],[18,7],[-16,10],[16,1],[8,-13],[22,-4],[22,3],[27,-4],[3,9],[17,3],[-3,-18],[45,-4],[11,1],[-6,11],[17,9],[11,-10],[-10,-23],[10,-10],[23,-1],[26,4],[3,13],[16,24],[24,-18],[-21,-6],[14,-7],[26,-5],[13,26],[15,-4],[0,-15],[27,-15],[31,-3],[35,17],[23,3],[38,21],[40,5],[38,11],[7,7],[2,33],[-12,13],[-1,13],[20,12],[28,0],[4,-8],[-21,-13],[24,-1],[20,-13],[-2,-23],[45,4],[8,-15],[7,9],[26,-1],[-5,-7],[19,-19],[2,12],[13,7],[-1,10],[15,4],[-2,32],[4,14],[26,6],[21,15],[28,4],[8,17],[32,8],[24,0],[-6,5],[34,13],[14,-6],[-2,23],[18,5],[14,-8],[-13,-7],[10,-3],[6,-12],[9,8],[16,-6],[-5,-17],[13,20],[-3,14],[16,5],[2,11],[-19,-3],[-6,13],[27,6],[-2,-9],[15,2],[0,-13],[11,8],[11,-7],[10,7],[-14,3],[10,16],[-16,1],[-1,12],[9,14],[23,4],[11,12],[30,4],[25,7],[40,-6],[19,-10],[15,-20],[11,3],[13,-8],[1,-9],[-36,3],[15,-8],[-11,-23],[1,-12],[7,13],[33,10],[23,-11],[12,1],[5,-20],[12,-4],[4,11],[24,0],[18,-7],[45,-7],[24,9],[30,-9],[45,-7],[48,-4],[9,-3],[35,8],[-1,-15],[14,-30],[-13,-3],[-7,-17],[13,0],[-16,-9],[12,-8],[0,-9],[-27,-3],[17,-14],[-13,-6],[9,-5],[-17,-12],[-13,18],[-18,-29],[13,-14],[34,8],[1,-21],[-15,-30],[-17,-8],[-5,-19],[-10,-7],[-6,-33],[-12,-36],[-15,-8],[25,-10],[22,10],[-3,26],[14,11],[34,3],[8,20],[20,6],[-6,7],[17,12],[14,3],[-11,7],[16,40],[17,7],[14,12],[-6,15],[22,23],[15,5],[8,-12],[28,6],[5,-7],[13,8],[-3,16],[35,18],[22,5],[7,21],[16,4],[-7,13],[9,12],[19,10],[73,24],[30,4],[13,-3],[-6,13],[29,18],[36,-4],[9,7],[18,0],[34,17],[8,-5],[14,4],[23,-4],[23,1],[19,14],[25,5],[12,-6],[34,1],[4,-10],[31,17],[11,-4],[8,-10],[13,6],[16,0],[16,6],[13,-10],[14,13],[9,0],[8,-26],[8,11],[13,3],[9,9],[27,7],[14,17],[0,7],[27,0],[8,6],[27,-9],[24,-3],[65,-22],[29,-6],[-3,-17],[12,13],[16,-19],[18,0],[29,17],[7,0],[-5,20],[13,14],[62,17],[35,-27],[-3,-15],[21,2],[16,-8],[3,-10],[-17,-16],[-31,-8],[-11,-15],[25,3],[22,10],[32,6],[13,10],[-3,-10],[19,3],[5,-6],[32,-1],[41,14],[0,-3],[-45,-17],[5,-7],[73,19],[18,14],[58,14],[13,-9],[11,6],[8,14],[14,6],[12,-14],[14,6],[-8,-12],[3,-11],[11,0],[0,-16],[28,6],[11,-7],[10,7],[6,-10],[11,13],[2,21],[16,19],[18,8],[28,-7],[30,4],[8,6],[19,-2],[13,-11],[-5,-11],[19,10],[11,0],[9,12],[4,-14],[13,7],[8,-8],[30,1],[20,-11],[35,-3],[12,-6],[28,-3],[10,-5],[20,3],[14,-13],[27,10],[12,-6],[-4,-11],[21,8],[5,-6],[-22,-38],[0,-10],[11,0],[26,23],[9,-10],[14,7],[14,-31],[13,5],[-8,-14],[8,-7],[23,3],[4,-6],[39,4],[35,-1],[10,4],[-1,-21],[16,-13],[0,14],[24,0],[17,-11],[23,7],[-5,24],[5,3],[24,-14],[2,-10],[16,-13],[14,-3],[17,-14],[19,3],[6,-10],[6,8],[17,-1],[45,-17],[14,-20],[-16,0],[28,-13],[19,-34],[-3,-13],[18,0],[2,34],[16,3],[22,-23],[21,2],[-3,7],[38,-3],[13,-6],[12,5],[13,-6],[-9,-6],[27,2],[18,-20],[10,-3],[48,-30],[2,21],[19,-31],[-5,-6],[-13,7],[-13,-34],[12,6],[-5,-17],[-39,15],[-11,-1],[16,-13],[29,-8],[-8,-19],[-20,-10],[-14,16],[-2,-13],[-32,1],[-12,5],[1,-16],[9,6],[23,-6],[-20,-4],[-5,-9],[-34,0],[9,-14],[-26,-1],[1,15],[-11,9],[-4,-20],[17,-14],[-15,0],[13,-30],[-24,1],[-20,-6],[-3,16],[-30,-30],[9,-7],[-5,-13],[-22,2],[-34,-12],[45,-1],[-4,-7],[21,-16],[-2,-16],[-18,-5],[18,-3],[4,-13],[-13,-11],[14,-5],[-14,-17],[18,0],[20,-30],[-7,-11],[27,-7],[-11,-20],[14,-7],[20,8],[12,-14],[36,-4],[-15,-13],[-12,9],[-47,-2],[-37,-7],[-14,-13],[-34,22],[20,-29],[-38,2],[-9,-8],[9,-14],[-23,-14],[27,3],[-37,-16],[52,-4],[-72,-17],[-6,-13],[61,6],[7,-8],[-35,-4],[40,-4],[-17,-13],[9,-23],[-22,5],[25,-20],[40,-9],[38,-31],[-89,-12],[59,-2],[53,8],[73,-27],[12,-14],[24,3],[-3,-20],[86,-9],[66,-23],[124,-12],[-9955,-15]],[[3456,1546],[12,-3],[-1,-9],[-17,4],[-19,-9],[3,13],[22,4]],[[3431,1556],[12,-2],[-6,-9],[-6,11]],[[3331,1581],[7,-5],[-12,-7],[-4,7],[-20,-3],[-1,6],[30,2]],[[3392,1616],[7,-6],[-33,-7],[10,13],[16,0]],[[3470,1665],[-6,-10],[-5,8],[11,2]],[[6916,2373],[5,-3],[-5,-12],[16,-14],[19,13],[7,-1],[-1,-15],[-9,1],[-11,-5],[2,-7],[13,1],[-1,-9],[-22,3],[-7,8],[-5,-13],[-8,4],[5,20],[-5,14],[1,12],[6,3]],[[9093,2685],[-7,-6],[5,12],[2,-6]],[[9020,2837],[14,-3],[13,-8],[2,-6],[17,-8],[24,13],[5,-4],[5,11],[5,-4],[4,9],[10,-13],[-1,-28],[1,-39],[-7,1],[-1,-22],[-4,-21],[3,-1],[0,-21],[-10,9],[6,10],[-14,1],[-4,-23],[-2,6],[-8,-26],[-9,6],[-14,-1],[-3,20],[-2,-6],[-4,15],[-7,9],[-6,24],[0,13],[9,-9],[-13,31],[-11,37],[-2,13],[4,15]],[[9121,2859],[-9,-6],[0,6],[9,0]],[[9109,2896],[9,-16],[1,-14],[-5,-2],[-11,22],[6,10]],[[9001,2876],[-5,-4],[-1,25],[7,3],[-1,-24]],[[8822,3134],[-1,-10],[12,1],[0,-11],[-11,1],[-5,-10],[-20,1],[-4,17],[21,11],[8,0]],[[9263,3604],[-1,-18],[-2,14],[3,4]],[[9261,3608],[-2,17],[3,2],[-1,-19]],[[8136,3714],[7,-36],[-7,19],[0,17]],[[9257,3758],[2,-20],[-10,-37],[1,32],[5,7],[-2,14],[4,4]],[[9195,3832],[5,-3],[0,-17],[-7,17],[2,3]],[[9061,4133],[3,-7],[-3,-7],[-4,13],[4,1]],[[8880,4236],[-7,-7],[0,-6],[-8,0],[1,8],[10,8],[4,-3]],[[8805,4285],[2,-15],[-4,8],[2,7]],[[8797,4395],[0,-9],[6,2],[-5,-8],[-1,-14],[6,-6],[-8,0],[-6,5],[-1,14],[9,16]],[[8621,4522],[5,-21],[-7,4],[-8,-2],[5,9],[-2,9],[6,10],[1,-9]],[[8624,4533],[6,-6],[14,10],[6,-2],[1,-21],[-14,-18],[-13,16],[-3,29],[3,-8]],[[8682,4547],[1,-13],[-4,6],[3,7]],[[8959,4566],[-1,-8],[6,-7],[3,-19],[0,-30],[10,-9],[-4,-20],[6,-4],[4,-11],[-2,-17],[5,2],[-1,-13],[3,-19],[-2,-19],[5,-20],[3,-22],[5,-2],[15,18],[4,-22],[18,-23],[-3,-12],[2,-6],[2,-37],[3,-8],[-2,-16],[6,-22],[9,-9],[-1,-11],[5,-19],[1,-16],[-3,-34],[9,-15],[-2,-17],[5,-14],[13,-15],[4,7],[2,-12],[8,0],[4,-6],[1,-14],[19,-12],[1,-10],[7,5],[3,-13],[4,1],[1,-10],[-4,-1],[-1,-10],[15,-24],[-1,-8],[8,-30],[0,-14],[3,-20],[8,-7],[5,-13],[-3,22],[4,5],[3,-9],[10,-13],[2,13],[6,-21],[-2,-15],[3,-36],[4,0],[4,-13],[5,-4],[6,-13],[6,3],[4,-6],[6,-27],[8,-7],[4,-25],[10,-6],[0,-27],[6,-16],[-2,-19],[4,-40],[-4,-3],[10,-41],[1,-17],[3,-4],[1,-40],[-7,-21],[-2,-39],[-7,-32],[0,-30],[-3,-28],[-5,-21],[-6,-11],[0,-23],[-13,-15],[-11,-20],[-6,-26],[-5,-3],[0,-26],[-9,-18],[-3,-27],[-4,-14],[2,-9],[-8,-7],[-9,-34],[0,-24],[-7,-34],[4,-21],[-2,-14],[-13,-16],[-33,-2],[-16,-10],[-10,-13],[-13,-24],[-19,-4],[3,-12],[4,7],[-2,-20],[-6,16],[-8,-3],[-4,16],[-3,-3],[-8,9],[5,8],[-2,9],[-6,0],[-1,-10],[-8,-5],[-6,8],[8,1],[3,17],[-6,10],[-15,-14],[10,-2],[-2,-8],[-6,0],[-10,-11],[-14,-22],[-32,28],[-5,-2],[-8,7],[-9,-1],[1,-6],[-8,1],[-4,13],[-14,5],[-10,11],[-3,13],[-13,23],[-3,18],[5,6],[0,13],[-9,34],[-14,26],[6,2],[3,10],[-4,3],[-21,-20],[-8,0],[-1,7],[9,12],[3,33],[-8,16],[-3,16],[-7,-13],[-1,-20],[-5,-23],[-7,4],[-15,-11],[3,23],[11,-3],[3,21],[-1,25],[4,17],[9,19],[-3,19],[6,4],[-8,34],[0,-26],[-3,2],[-6,-11],[-5,-27],[-25,-26],[-8,-24],[-4,-3],[-4,-16],[6,2],[0,-12],[-5,7],[-6,-5],[-6,18],[-1,21],[-3,17],[-11,20],[-4,27],[-12,0],[-2,13],[-4,1],[7,15],[-5,12],[-8,-5],[3,9],[-8,16],[-14,-5],[-10,14],[-7,1],[-9,-6],[-12,18],[-18,14],[-9,-7],[-18,2],[-33,-7],[-27,-23],[-20,-11],[-17,-2],[-14,5],[-18,-19],[-15,-10],[-2,-6],[-17,-8],[-4,-5],[-5,-28],[-7,-16],[-6,-7],[-4,3],[-6,-7],[-3,9],[-19,-3],[-8,-6],[0,8],[-14,3],[-20,-2],[-13,-6],[-16,-1],[-9,-16],[-2,-12],[-16,1],[-3,-11],[-7,-4],[-2,-11],[-20,-8],[-2,-5],[-12,7],[-18,-1],[-15,14],[-10,19],[-10,9],[-4,-3],[-4,15],[0,32],[6,-7],[7,3],[6,18],[-1,36],[3,8],[0,43],[-18,66],[-4,34],[1,32],[-5,22],[-7,17],[0,16],[-11,24],[-2,38],[-5,16],[-11,32],[-7,13],[5,14],[6,-26],[7,6],[0,9],[-9,14],[-4,27],[2,4],[7,-20],[-1,-17],[5,14],[2,-22],[7,-2],[0,30],[-5,13],[-6,26],[-4,4],[-3,21],[-5,16],[1,26],[4,22],[5,6],[0,24],[2,10],[-5,22],[3,7],[7,33],[4,4],[-2,-20],[1,-21],[7,4],[8,34],[23,20],[13,26],[21,22],[5,-3],[8,6],[7,-7],[12,7],[8,14],[17,3],[10,20],[12,-6],[7,6],[12,3],[16,11],[11,13],[9,25],[3,19],[4,4],[16,39],[-4,1],[-2,36],[3,14],[8,17],[6,3],[0,10],[7,12],[-1,-15],[5,-3],[0,-14],[12,-37],[-1,10],[3,13],[-2,11],[7,-10],[-3,24],[-6,5],[6,13],[-5,8],[5,2],[7,-7],[-1,9],[7,-9],[16,-1],[-10,3],[-1,9],[6,4],[1,18],[-4,-11],[-3,18],[1,9],[6,1],[3,9],[5,0],[4,-9],[1,10],[-6,3],[4,17],[11,-10],[0,9],[-8,16],[10,14],[3,-4],[7,6],[1,-11],[3,5],[4,26],[-5,5],[4,7],[3,-19],[9,16],[1,-16],[4,14],[4,0],[-3,11],[6,4],[4,-14],[9,1],[11,-28],[10,-16],[-3,-17],[0,-13],[4,-1],[-1,11],[5,14],[4,3],[12,-5],[9,-11],[-1,11],[7,-5],[3,-14],[4,1],[-3,18],[5,-1],[-6,15],[-7,11],[4,20],[7,4],[1,18],[4,9],[11,12],[-5,9],[0,14],[6,2],[0,12],[6,6],[2,11],[7,-14],[0,17],[4,-2],[-1,12],[9,5],[3,-13],[13,4],[4,-5],[9,5],[7,9],[2,24],[-7,12],[-9,-5],[-5,12],[-5,0],[7,11],[10,-1],[9,-21],[6,10],[7,-21],[14,-7],[4,6],[4,-11],[3,4],[4,-12],[6,-1],[8,7],[11,-18],[13,11],[6,2],[-4,-8],[2,-6],[5,7],[5,-5],[-2,-11],[7,-1],[3,14],[-5,3],[10,9],[4,-17],[3,7],[4,-11],[-12,-28],[4,-6],[-9,-21],[0,9],[-5,-6],[0,8],[-7,-9],[0,-26],[4,3],[-4,-29],[-3,-3],[-7,-24],[-4,-4],[2,-13],[22,-27],[0,-8],[10,-11],[4,-9],[7,1],[10,-14],[10,-7],[9,-21],[7,-8],[20,-9],[4,-7],[1,-15],[22,-24],[14,4],[10,13],[3,24],[7,18],[3,26],[3,9],[-2,9],[3,25],[5,20],[-4,40],[3,16],[-4,13],[1,21],[5,21],[-2,18],[6,14],[-2,11],[-5,-4],[6,28],[6,1],[-2,8],[6,41],[0,14],[5,2],[6,11]],[[5470,7982],[-2,-9],[5,-23],[3,-3]],[[5476,7947],[-3,-17],[-12,3],[-6,-6],[7,-3],[-5,-12],[-1,-22],[-9,-9]],[[5447,7881],[-19,-12],[-16,-2],[-9,-14],[-23,9]],[[5380,7862],[-32,7],[-12,17],[2,7],[-12,-5],[-17,-1],[-4,-11],[-15,6]],[[5290,7882],[-2,7],[-6,-8],[-16,12]],[[5266,7893],[-2,12]],[[5264,7905],[1,14]],[[5265,7919],[4,2]],[[5269,7921],[7,0],[8,-16],[6,15],[12,-1],[2,-7],[9,1],[9,10],[32,4],[6,-11],[3,9],[-5,5],[1,13],[-6,9],[4,7],[12,5],[4,16],[7,-3],[3,13]],[[5383,7990],[7,-9],[18,0],[7,11],[0,12],[11,-1],[20,-13],[10,3],[13,-6],[1,-5]],[[6281,7420],[-19,8],[-9,14],[-9,24]],[[6244,7466],[-1,3]],[[6289,7594],[9,-6],[11,-12],[5,-17],[16,-3],[5,15],[9,6],[5,16]],[[6349,7593],[15,-31],[1,-11],[10,-28],[15,-3],[8,-10],[-11,-3],[-13,-11],[0,-11],[-6,-28],[4,-11],[-5,0],[-1,-17],[-7,10],[-2,-43]],[[6357,7396],[-7,-2],[-6,12],[-11,12],[1,8],[7,2],[-5,18],[6,7],[-10,16],[-4,-1],[-26,-29],[-11,-17]],[[6249,7560],[8,10],[13,-8],[8,-9],[6,1],[6,-8],[4,3],[1,15],[-10,9],[-3,13],[7,8]],[[5848,5045],[-4,-15],[2,-14],[9,-5],[0,-17],[-9,-13],[-9,-34],[-11,-21],[-3,1]],[[5823,4927],[-9,39],[1,21],[-4,4]],[[5811,4991],[0,18],[-4,5],[-2,12]],[[5805,5026],[4,7],[5,-4],[0,-9],[11,1],[5,7],[1,21],[6,-6],[7,7],[4,-5]],[[5166,8104],[10,-14],[1,-10],[-8,-11]],[[5169,8069],[-7,-3],[-4,-16],[2,-14]],[[5160,8036],[-9,-3],[-4,10],[-13,7],[-1,21],[-9,-13],[-10,3],[2,15],[-5,5],[-10,0],[0,6],[-11,5],[-4,15],[-7,-6],[-7,8],[-2,15]],[[5070,8124],[16,14],[7,3]],[[5093,8141],[0,-6],[16,-3],[8,9]],[[5117,8141],[1,0]],[[5118,8141],[3,3],[16,-1],[7,-8],[9,0],[9,-11],[-6,-13],[10,-7]],[[5099,5856],[-3,-17],[7,-16],[0,-19],[3,-5],[-1,-16],[-5,0],[1,-14],[-3,-18],[-6,-3],[0,-9],[-5,-12],[-2,-20],[-8,-4],[-2,-15],[0,-41],[-1,-12],[2,-25],[1,-42],[-2,-18]],[[5075,5550],[-31,-9]],[[5044,5541],[5,3],[-5,18],[1,24],[0,73],[-1,5],[0,43],[-6,13],[-1,37],[-16,23],[0,19],[4,17]],[[5025,5816],[5,3],[1,13],[4,-1],[3,11],[6,-3],[11,2],[8,13],[3,14]],[[5066,5868],[-1,19],[14,10],[10,-21],[2,-8],[6,-4],[2,-8]],[[5006,6041],[-2,-21],[6,-16],[-1,-9],[7,-24],[5,0],[7,-13],[7,-7],[-9,-1],[0,-15],[6,-6],[11,-19],[8,-1],[3,7],[5,-3],[3,-15],[-6,-4],[10,-26]],[[5025,5816],[-12,0],[-18,8]],[[4995,5824],[-8,-3],[-5,-10],[-2,5],[-59,0],[-3,-22],[3,-11],[2,-25],[0,-24],[2,-5]],[[4925,5729],[-4,-4],[-10,24],[-6,5],[-10,1],[-11,-7],[-4,-11],[-11,3],[-4,12],[-3,-1],[-4,24],[-9,1],[-3,7]],[[4846,5783],[3,24],[-2,14],[6,9],[1,19],[-4,14],[8,10],[9,1],[10,18],[-1,24],[6,0],[0,14],[-3,11],[10,13],[15,-13],[5,7],[0,25],[6,-5],[5,21],[11,16],[12,-6],[1,16],[8,3],[11,13],[8,5],[8,15],[8,-4],[8,2],[11,-8]],[[7529,6456],[0,16],[3,-11],[-3,-5]],[[7521,6458],[-5,-7],[2,29],[-4,4],[3,11],[6,-20],[-2,-17]],[[7571,6448],[0,-29],[2,-10],[-12,7],[1,-20]],[[7562,6396],[1,-15],[-7,20],[-1,27],[-3,9],[-2,29],[-11,31],[-5,-14],[-9,0],[-8,26],[1,14],[-4,6],[-9,4],[11,-11],[-4,-10],[2,-12],[-3,-8],[5,-13],[-2,-18],[-6,-9],[-1,-11],[-7,1],[1,7],[-5,6],[-2,-15],[-12,-7],[0,14],[-4,-18],[-4,10],[-1,18]],[[7473,6457],[-6,48],[2,14],[-7,2],[3,13],[-6,8],[0,11],[5,8],[0,22],[-7,0],[-11,12],[-2,7],[4,12],[5,1],[3,18],[13,-1],[-3,18],[-8,1],[-3,11],[-9,14],[2,12],[5,4],[4,14],[5,-9],[11,-3],[7,-14],[7,-2],[2,15],[6,-18],[-2,-4],[1,-32],[15,-8],[23,2],[7,-3],[18,3],[11,-14],[-6,-2],[-5,-31],[-5,-2],[0,-9],[-8,2],[0,-6],[-7,0],[-7,-21],[2,-14],[9,-30],[7,5],[0,15],[5,8],[-1,11],[5,4],[8,-22],[0,-25],[3,-12],[3,-42]],[[5793,7702],[0,-17],[-11,-3],[-6,-14],[-2,-26],[-4,1],[-8,-16],[5,1],[11,-28]],[[5778,7600],[-13,-4],[-6,9],[-21,-5],[-7,-15]],[[5731,7585],[-8,0],[2,-21],[-25,-7],[-9,10],[-8,1],[-2,6],[-14,0],[-8,-7],[-13,0],[-10,-4]],[[5636,7563],[3,22],[-5,18],[-9,5],[-5,11]],[[5620,7619],[5,6],[-3,23],[9,5],[7,17],[-13,15],[-4,15],[1,17],[8,13]],[[5630,7730],[9,-8],[-4,-15],[17,3],[18,-8],[10,3],[21,-5],[4,-4],[11,5],[9,16],[25,10],[10,-10],[15,-2],[8,-13],[10,0]],[[6402,6694],[3,0],[0,-24],[-4,8],[1,16]],[[2971,6401],[-3,-10],[-15,-3],[-1,6],[9,10],[4,-4],[6,12],[0,-11]],[[2969,6475],[8,-3],[-7,-3],[-1,6]],[[2948,6491],[0,-14],[-5,9],[5,5]],[[2889,6546],[9,-13],[-10,9],[1,4]],[[2908,6546],[6,-21],[0,-8],[7,-10],[0,-8],[-7,15],[-1,14],[-5,18]],[[2840,6572],[6,0],[0,-20],[-8,5],[-3,13],[5,2]],[[2908,6577],[-3,0],[-4,16],[7,-16]],[[2830,6632],[3,0],[8,-40],[-8,-11],[-10,14],[7,37]],[[2869,6655],[0,-4],[16,-20],[-1,-29],[-2,7],[3,17],[-6,14],[-11,8],[1,7]],[[2819,6722],[15,-4],[-21,-5],[6,9]],[[2839,6733],[5,0],[16,-25],[0,-11],[-4,-3],[0,-19],[-6,5],[4,8],[0,18],[-8,23],[-7,4]],[[5528,7765],[9,0],[-7,-29],[14,-17],[-10,-5],[7,-13],[-1,-8],[-7,-3]],[[5533,7690],[-8,-3],[0,-8],[-7,-6],[-1,-13],[-4,0],[-1,-26]],[[5512,7634],[-22,19]],[[5490,7653],[-2,3]],[[5488,7656],[0,8],[-35,57],[-8,32],[-7,3],[0,29],[6,2],[10,-12],[3,10],[9,-1],[4,7],[4,-7],[22,-6],[4,4],[19,-3],[2,-11],[7,-3]],[[5781,8416],[4,-6],[9,3],[3,-8],[9,4],[11,-6],[1,-13],[12,9],[16,-3],[11,-11],[-2,-19],[6,-15],[-7,-13],[11,-10],[-3,-7],[7,-14],[15,-15],[-3,-11],[10,1],[11,-9],[6,-11],[-15,-22],[-22,5],[-4,-9],[8,-10],[2,-30],[5,-13]],[[5882,8183],[-23,-2],[-12,-29],[3,-14],[-7,-1],[-6,11],[-15,-1],[-9,-6],[-5,14],[-13,-11],[-11,13],[-16,-10],[1,7],[-13,0],[-1,7],[-21,5],[-10,6],[-28,2],[-19,-4],[-11,-18],[-11,3],[0,-5]],[[5655,8150],[0,34],[-12,10],[6,13],[15,11],[0,18],[-7,25],[-5,28]],[[5652,8289],[20,1],[5,-4],[12,5],[-1,7],[19,11],[1,-8],[8,6],[-7,3],[9,37],[8,1],[3,10],[9,-1],[6,10],[-8,1],[2,20]],[[5738,8388],[11,10],[17,-2],[8,17],[7,3]],[[2547,6247],[-3,-6],[9,0],[-1,-18],[-5,-28],[4,-4],[-4,-10],[2,-16],[-2,-24],[-7,-21],[-5,-2],[-5,-20]],[[2530,6098],[-9,0],[2,51],[0,60]],[[2523,6209],[4,10],[4,-6],[9,26],[0,6],[7,2]],[[3084,4249],[-4,-1]],[[3080,4248],[4,1]],[[3384,4022],[-1,21],[-24,29],[-24,0],[-51,-22],[-4,-23],[-10,-28],[0,-29],[-8,-54],[-3,-14]],[[3133,3869],[-10,-5],[-9,4],[1,16],[-3,11],[0,16],[-4,7],[-3,23],[0,15],[-6,20],[-4,2],[2,18],[-6,6],[1,10],[-3,14],[6,2],[1,8],[-5,11],[7,16],[-13,23],[-3,34],[-3,18],[2,6],[-7,5],[0,8],[-5,18]],[[3069,4175],[-4,17],[7,8],[10,30]],[[3082,4230],[5,-3],[-1,11],[8,5],[0,6],[-7,0],[-1,9],[4,4],[-7,3],[0,7],[-10,17]],[[3073,4289],[6,16],[-7,15],[6,28],[5,6],[3,20],[-6,22],[4,8],[-1,36],[7,11],[2,12],[-16,55],[-9,34]],[[3067,4552],[23,-3],[-1,-8],[10,6],[9,20],[11,3],[11,19],[7,3],[11,20],[19,8],[7,1],[4,-5],[5,9],[3,-32],[-4,-13],[3,-21],[-2,-18],[2,-19],[3,-2],[1,-14],[4,-2],[1,-12],[5,-1],[4,-10],[6,-4],[1,-11],[13,-4],[4,4],[10,-7],[4,-8],[5,4],[9,-20],[4,1],[8,-10],[7,0],[0,-6],[8,-17],[22,4],[18,-27],[-2,-20],[5,-18],[1,-28],[-9,-1],[9,-20],[3,-47],[47,-4],[3,3],[0,-13],[-4,-8],[2,-34],[11,-15],[6,-1],[0,-8],[6,-27],[0,-10],[-6,-46],[-9,-38],[7,-13],[-8,-10]],[[3651,3581],[1,22],[3,0],[-4,-22]],[[3650,3661],[-4,8],[6,7],[-2,-15]],[[3919,4412],[0,-16],[-4,16],[4,0]],[[3660,5124],[-3,3],[4,9],[-1,-12]],[[3588,5149],[0,-7],[-8,-7],[1,9],[7,5]],[[3577,5151],[2,-5],[-4,-19],[-3,-11],[-15,-19],[0,13],[7,10],[0,14],[2,11],[8,8],[3,-2]],[[3573,5156],[5,19],[0,-10],[-5,-9]],[[3608,5175],[11,-6],[9,5],[27,-7],[-2,-14],[-1,-20],[-4,-14],[-5,-5],[0,-14],[-7,-5],[-3,7],[0,-11],[-9,1],[-6,-12],[-14,3],[-4,-6],[-5,2],[-7,28],[1,13],[6,-5],[1,8],[-7,-1],[0,23],[2,17],[4,10],[5,5],[8,-2]],[[3586,5165],[-4,4],[1,13],[7,3],[2,-9],[-6,-11]],[[3625,5187],[3,-5],[-2,-7],[-11,2],[10,10]],[[3599,5183],[-5,0],[-2,9],[6,-1],[1,-8]],[[3624,5200],[-6,-5],[-3,-12],[-14,0],[-1,12],[8,1],[15,9],[1,-5]],[[3600,5213],[1,-14],[-2,-7],[0,23],[1,-2]],[[3609,5216],[-6,-13],[1,14],[5,-1]],[[3608,5236],[0,-10],[-5,0],[5,10]],[[3600,5305],[1,-11],[-5,4],[4,7]],[[3431,5295],[13,-7],[2,14],[-6,10],[5,17],[6,-8],[11,2],[0,4],[10,2],[8,-5],[3,-7]],[[3483,5317],[3,-7],[8,-3],[7,3],[6,9],[5,-7],[6,5],[9,-9],[9,11],[8,31],[1,14],[4,7],[15,44]],[[3564,5415],[5,24],[8,-16],[1,-21],[3,4],[-1,-29],[3,-31],[7,-22],[1,-18],[6,-18],[13,-4],[4,-8],[0,-19],[-7,-4],[7,-3],[-11,-17],[-5,-12],[-4,-17],[-5,-11],[-5,-1],[-9,-17],[-4,-19],[-8,-19],[0,-14],[-7,-8],[-1,-13],[-6,4],[-14,-13],[13,2],[0,-10],[9,7],[7,10],[11,11],[13,17],[-5,-12],[5,-5],[0,-14],[4,-9],[0,-11],[7,-14],[4,9],[6,4],[5,-7],[12,10],[1,-7],[-5,-41],[2,-2],[8,40],[7,18],[2,-8],[8,21],[3,-12],[1,19],[4,-2],[4,16],[1,15],[5,0],[5,12],[2,-11],[4,10],[11,-7],[19,-9],[0,-10],[7,-6],[8,5],[1,-7],[10,-9],[1,-8],[6,9],[-2,-11],[1,-13],[3,11],[5,4],[10,-14],[-3,-5],[6,-1],[3,-8],[-5,-16],[5,5],[3,-14],[-4,0],[-5,-36],[2,-9],[6,14],[1,23],[8,8],[1,-9],[-7,-12],[7,-2],[2,14],[9,4],[6,-4],[-1,12],[4,0],[18,-13],[6,-11],[15,-5],[3,6],[5,-9],[29,4],[3,2],[14,-3],[25,-31],[3,-1],[8,-15],[5,-2],[11,-27],[14,-26],[9,-6],[4,-12],[6,-1],[6,-8],[16,-1],[5,3],[13,-6],[4,-13],[9,-57],[1,-24],[5,-21],[-1,-53],[-7,-40],[-7,-25],[-10,-27],[-3,5],[-2,-16],[-12,-24],[-3,-13],[-10,-10],[-5,-9],[-11,-37],[-15,-52],[-13,-34],[-5,0],[0,14],[-4,9],[-4,-16],[0,-17],[-4,-7],[0,-27],[-2,-5],[2,-28],[-3,-20],[2,-9],[0,-24],[2,-28],[2,-6],[-4,-25],[-6,-53],[1,-31],[-2,-9],[-7,-8],[-7,-30],[2,-51],[-3,-13],[-6,-6],[-9,-44],[-13,-31],[-8,-25],[4,-27],[-5,-10],[-12,-7],[-13,-20],[0,-21],[-17,1],[-11,-3],[0,18],[-7,-5],[2,-13],[-22,-7],[10,7],[-9,3],[-8,-7],[-2,7],[-9,-7],[1,-17],[-10,-3],[-2,-6],[-10,-7],[-1,-11],[-12,4],[-8,-7],[-1,-7],[-11,-6],[-11,-13],[-5,-12],[-10,-9],[-10,-15],[-1,-15],[-8,-7],[-6,4],[1,-17],[-4,-17],[-1,-19],[-5,-6],[4,-6],[-3,-16],[3,-6],[2,-32],[-2,-52],[-4,-17],[-17,-23],[-5,-12],[-14,-39],[-8,-37],[-10,-34],[-12,-25],[-22,-27],[-3,-9],[0,17],[5,-4],[11,20],[5,3],[4,11],[-1,12],[5,1],[0,10],[9,9],[-1,22],[4,-6],[1,12],[-12,-4],[-9,8],[3,-7],[-6,-21],[-1,-24],[-6,-10],[-9,-4],[-3,-21],[-4,-3],[-1,-14],[5,-10],[-5,-7],[-6,-30],[-7,-26],[-18,-28]],[[3517,3240],[-4,10]],[[3513,3250],[2,1],[1,23],[5,4],[2,13],[5,6],[5,-10],[6,18],[-4,16],[-12,-19]],[[3523,3302],[-11,11],[-5,23],[-15,14],[-9,21],[-8,3],[-4,8],[-7,3],[-2,10],[-8,11],[-6,-13],[-4,0],[0,16],[-23,40],[-7,0],[-2,-8],[-11,-2],[-2,6]],[[3483,3710],[0,8]],[[3483,3718],[5,3],[0,26],[4,16],[0,34]],[[3492,3797],[-9,15],[-10,-10],[-13,1],[-3,21],[1,11],[-4,23],[1,21],[-7,19],[-9,1],[-6,12],[-12,-10],[-31,8],[0,36],[3,16],[-9,61]],[[3067,4552],[-11,2],[-7,-8],[-12,3],[0,41],[1,29],[2,20],[-10,-14],[-2,-7],[-9,-11],[-25,0],[-3,27],[-14,7],[-11,0],[7,16],[0,8],[-6,17],[-4,2],[-1,11],[-5,6],[-2,15],[-5,9],[2,9],[-8,14],[1,11],[7,2],[-3,13],[2,13],[11,17],[5,3],[1,12],[-3,14],[8,24],[1,30],[14,14],[14,21],[17,5],[10,6],[5,11],[9,1],[3,-6],[10,-5],[0,5]],[[3056,4939],[6,58],[0,9],[5,46],[0,10],[5,54],[-4,13],[-2,24],[-13,21],[1,42],[12,4],[3,5],[10,-6],[-2,21],[-4,4],[-14,0],[0,37],[8,4],[5,-3],[34,0],[-1,16],[7,-15],[5,4],[9,19],[4,-5],[7,-29],[-1,-21],[6,2]],[[3142,5253],[11,-21],[10,-7],[10,14],[6,-1],[-1,-17],[11,17],[1,10],[11,6],[10,16],[0,-8],[9,16],[0,14],[19,16],[1,14],[-20,4],[2,15],[-6,20],[0,30],[-13,22],[-4,12],[2,5],[4,-10],[12,0],[4,-14],[10,4],[4,-5],[4,7],[4,-5],[7,-18],[7,5],[-1,20],[6,1],[4,9],[7,-6],[18,12],[0,6],[16,10],[10,22],[-2,13],[-3,1]],[[3312,5482],[11,0],[3,4],[8,-12],[-3,-33],[6,0],[5,-8],[-2,-8],[4,-14],[0,-10],[-7,-12],[1,-13],[-4,-17],[-1,-22],[2,-17],[5,-5],[0,-26],[6,-8],[8,-19],[8,-4],[4,-7],[8,5],[0,10],[5,9],[9,-5],[6,11],[7,0],[3,11],[9,7],[9,-8],[9,4]],[[3347,5935],[-4,3],[0,13],[6,-10],[-2,-6]],[[8198,5465],[5,-34],[-7,5],[-2,24]],[[8194,5460],[4,5]],[[8166,5448],[6,-1],[7,5],[7,12],[9,10],[-2,-10]],[[8193,5464],[-7,-9],[2,-17],[0,-14],[-7,-10],[-7,23],[-8,11]],[[7545,6781],[-2,-8],[5,-11],[6,3],[3,-10],[-3,-11],[3,-13],[-5,-4],[-33,-3],[-10,8],[-6,-9],[-11,-3],[-12,9],[-6,-2],[-7,7],[-3,12],[4,10]],[[7468,6756],[3,13],[13,29],[11,14],[12,3],[0,-5],[9,-1],[-4,-10],[18,-5],[5,6],[10,-8],[0,-11]],[[5701,4158],[-1,-8],[8,-27],[7,-13],[6,-21],[4,-29],[8,-13],[14,-17],[7,-3],[3,-9],[0,-15],[12,-1],[-1,-34],[6,-12],[3,-15],[18,-5],[12,-10],[1,-14],[7,-7]],[[5815,3905],[-9,-3],[-3,-13],[-8,-7],[-12,-4],[-12,-27],[-5,-6],[-2,-10],[-11,-7],[-4,-13],[-5,-31],[-8,-10],[-3,-10],[-15,-6],[0,-10],[-8,-41],[-5,-7],[-10,1],[-4,-5],[-17,5],[-10,6],[-13,20],[-7,1],[-7,-5],[-6,-23],[0,-14],[-6,-13],[-8,-7],[-6,-18],[-7,-2],[-2,-10],[-15,0],[-15,4],[0,21],[5,11],[0,19],[-4,13],[-1,14],[-10,29],[-8,10]],[[5554,3757],[0,159],[28,0],[0,212],[23,4],[21,9],[21,5],[9,-27],[15,26],[7,4],[4,-6],[7,13],[12,2]],[[5634,5812],[4,-14],[8,-14],[10,-31],[1,-16],[-1,-21],[-5,-6],[3,-9],[-2,-17],[19,-1]],[[5671,5683],[2,-7],[-4,-11],[3,-6],[16,-5],[8,-17],[5,-3],[1,-11],[-4,-4],[6,-14],[18,-19],[2,-10],[8,-10],[-2,-16],[8,-21],[6,-2],[13,-23],[-1,-15],[6,-14]],[[5762,5475],[-12,7],[-4,-8],[-10,-1],[-12,12],[-6,-3],[-11,9],[-4,-5],[0,-13],[-18,-7],[-5,11],[-6,-10],[-27,-19],[-12,12],[-9,-34],[-3,-5],[-23,9],[-2,-3],[-20,12],[-7,-2],[-6,20],[-13,14],[-3,7],[-10,1],[-17,-34],[-1,-7],[-6,-3],[2,-12],[-1,-27],[1,-13]],[[5517,5383],[-4,9],[-11,-4],[-16,7],[-8,-6],[-15,-2],[-4,-7],[-3,-27],[1,-7],[-8,-34]],[[5449,5312],[-2,8],[0,26],[-4,13],[-5,3],[-15,32],[-6,21],[4,1],[-3,14],[-10,19],[-1,31],[-4,6],[2,8],[1,27],[-7,10],[10,13],[5,24],[3,4],[6,30],[6,14]],[[5429,5616],[9,-4],[7,8],[10,5],[4,11],[2,-12],[5,-7],[23,26],[7,-2],[5,4],[15,1],[15,36],[-6,7],[0,8],[5,5],[17,0],[10,7],[9,-1],[4,12],[8,5],[5,19],[13,24],[5,4],[3,10],[-1,14],[8,5],[0,5],[14,9],[9,-3]],[[2957,7804],[-12,-5],[13,16],[-1,-11]],[[2699,7829],[2,-7],[13,9],[3,-9],[5,9],[9,-4],[2,-11],[-7,-12],[-23,15],[-15,6],[11,4]],[[2665,7849],[6,-2],[-2,-11],[-4,13]],[[3319,7889],[6,-10],[-2,-13],[-7,-22],[5,3],[-19,-34],[10,5],[9,11],[-10,0],[12,21],[4,-8],[11,0],[-7,-23],[-16,-12],[-6,3],[-13,-5],[-5,21],[1,13],[6,7],[10,30],[7,14],[4,-1]],[[3221,7879],[6,-21],[3,6],[12,-8],[33,3],[3,-3],[-17,-10],[4,-13],[-11,-3],[-2,12],[-19,2],[-4,11],[-11,0],[2,14],[-9,-1],[4,16],[7,9],[-1,-14]],[[3503,7956],[10,3],[-1,-7],[-9,4]],[[2562,7993],[-9,-6],[0,8],[9,-2]],[[2924,7774],[20,14],[8,11],[6,0],[2,17],[7,17],[14,11],[5,9],[17,17],[5,-2],[32,22],[14,22],[0,4],[14,20],[0,5],[16,23],[21,20],[44,28],[28,8],[18,-3],[10,-5],[11,-14],[1,-8],[-11,8],[11,-15],[-4,-13],[-11,-4],[-1,-6],[-18,-13],[-16,11],[-3,-5],[-11,0],[18,-11],[9,-15],[8,9],[12,0],[3,-6],[-7,-14],[-1,-10],[-11,-13],[16,0],[-3,-15],[11,-32],[20,-8],[-8,-6],[7,-7],[10,0],[4,-9],[5,5],[24,-6],[10,10],[5,-15],[7,3],[7,-12],[-7,-5],[14,-3],[-1,-4],[-18,-7],[0,-3],[-32,-21],[-9,4],[-4,-9],[-8,1],[1,-9],[-11,0],[1,10],[-9,-5],[-4,-8],[2,-10],[-6,-5],[-8,-19],[-9,-10],[-6,1],[-9,-11],[-5,14],[-9,5],[-1,14],[7,29],[21,24],[22,18],[1,-13],[7,8],[20,9],[-34,2],[-5,-6],[-4,6],[13,15],[-3,9],[-5,-12],[-16,-9],[-17,-16],[-4,4],[-10,-10],[-12,-1],[-8,6]],[[3134,7784],[-9,6],[1,19]],[[3126,7809],[-10,9]],[[3116,7818],[1,1],[-1,74],[-14,17],[-16,-11],[-9,17],[-19,-37],[-4,-23],[-7,-12],[1,-17],[-12,-20],[1,-11],[-18,-5],[-6,-16],[-89,-1]],[[1546,8044],[6,-11],[-14,13],[8,-2]],[[1479,8054],[4,-13],[-7,0],[-4,9],[7,4]],[[3218,8058],[33,-11],[15,-14],[11,-6],[10,-14],[-16,-6],[-24,11],[-14,9],[-2,9],[-22,16],[9,6]],[[1494,8104],[-11,-4],[6,9],[5,-5]],[[1448,8112],[20,-17],[22,-5],[26,-13],[5,-19],[9,-12],[4,-16],[22,-13],[10,-22],[8,-25],[-6,-6],[-11,3],[-22,14],[-14,12],[9,11],[-18,-4],[-9,9],[4,11],[-8,0],[-1,10],[-14,-3],[0,11],[7,3],[-8,5],[-1,10],[-15,-2],[-33,43],[-2,7],[16,8]],[[3447,8155],[6,-8],[7,7],[-5,-17],[-12,4],[2,-12],[7,-5],[-28,-60],[-3,-27],[6,13],[13,21],[12,-13],[7,0],[-17,-14],[11,-17],[15,9],[-2,-16],[12,1],[8,14],[9,-8],[5,3],[15,-10],[-4,-13],[-17,-15],[10,3],[-3,-15],[12,-7],[3,10],[4,-6],[7,9],[-5,-19],[-11,-9],[-7,0],[6,-14],[-6,-9],[8,-15],[2,13],[6,14],[12,6],[-9,-18],[-1,-22],[8,8],[3,14],[5,-19],[-5,-10],[-2,-19],[-5,-17],[-6,3],[-10,-3],[4,26],[-2,5],[-14,-23],[-4,1],[8,31],[1,14],[-5,15],[-18,-29],[-10,-9],[0,-8],[-8,-11],[-9,-1],[-9,5],[3,7],[11,3],[15,28],[-11,3],[-6,-12],[-10,12],[-28,-4],[-25,3],[-6,4],[-18,-6],[-15,-2],[-4,17],[27,37],[-9,3],[-14,-6],[8,9],[6,-3],[9,33],[10,-9],[-2,9],[8,4],[-11,4],[25,78],[8,11],[8,28],[24,18]],[[1448,8147],[-7,0],[2,14],[5,-14]],[[1445,8181],[-2,-17],[-4,14],[6,3]],[[2798,8181],[-3,-7],[-8,3],[11,4]],[[1462,8192],[-15,-17],[2,14],[17,12],[-4,-9]],[[1430,8212],[1,-9],[-8,2],[7,7]],[[2738,8248],[8,-1],[10,-15],[3,-12],[-10,1],[-29,15],[6,10],[12,2]],[[1339,8249],[4,-12],[-6,-9],[6,-21],[17,-18],[-5,-5],[-20,26],[-16,32],[20,7]],[[1427,8244],[3,-10],[-2,-21],[-14,7],[-3,12],[2,20],[14,-8]],[[1419,8255],[-7,1],[4,10],[3,-11]],[[1382,8268],[9,-8],[5,-15],[-7,0],[-15,26],[8,-3]],[[1386,8270],[-9,4],[2,6],[7,-10]],[[1395,8273],[11,-17],[-5,-9],[-21,36],[3,5],[12,-15]],[[1380,8293],[-2,-10],[-7,7],[9,3]],[[1305,8302],[20,-3],[5,-14],[-15,-10],[13,-2],[2,21],[12,6],[-8,-28],[0,-22],[-13,-7],[-9,10],[7,6],[-11,3],[-7,25],[4,15]],[[2815,8428],[-1,-10],[-7,-3],[4,17],[4,-4]],[[2787,8429],[-11,-11],[1,8],[10,3]],[[2801,8446],[-3,-6],[9,-8],[-12,-27],[-8,-3],[2,12],[-9,-16],[-3,4],[14,23],[3,-5],[3,26],[4,0]],[[3293,8462],[1,-19],[-7,7],[6,12]],[[3204,8666],[5,-10],[-11,7],[6,3]],[[3109,8672],[7,-7],[-4,-10],[-10,-6],[-3,7],[5,16],[5,0]],[[3200,8731],[-2,-16],[-16,19],[18,-3]],[[2793,8775],[5,-7],[-8,-30],[-8,-9],[-10,11],[-2,14],[12,23],[11,-2]],[[3203,8784],[8,0],[-6,-10],[-9,3],[7,7]],[[3033,8802],[15,-11],[0,-7],[-13,1],[-7,15],[5,2]],[[2719,8809],[7,-3],[-2,-12],[-27,-27],[-23,-5],[-6,18],[18,27],[8,-5],[9,6],[16,1]],[[2822,8839],[21,-4],[4,-9],[-13,-10],[-16,17],[4,6]],[[3216,8833],[-8,14],[5,2],[3,-16]],[[2857,8849],[12,-6],[0,-11],[-20,14],[8,3]],[[3204,8862],[4,-12],[-12,8],[8,4]],[[3186,8910],[2,-6],[-13,-6],[11,12]],[[2625,8972],[12,-9],[-7,-5],[11,-20],[9,16],[14,-17],[20,-4],[4,-10],[19,-12],[5,2],[16,-14],[5,-23],[19,-8],[-1,8],[22,-21],[-8,-2],[-19,-16],[-26,14],[-12,-1],[-1,17],[-15,-1],[2,13],[-19,-10],[2,-14],[-19,-8],[-9,-19],[-25,-10],[-5,33],[-27,-2],[-14,-5],[8,20],[20,13],[-6,24],[6,15],[0,28],[5,23],[13,12],[1,-7]],[[2638,8984],[9,-10],[0,-16],[-12,13],[3,13]],[[2657,8990],[18,-11],[-3,-6],[15,-10],[-15,2],[-15,25]],[[2936,9103],[24,-5],[1,-12],[-28,0],[-10,16],[13,1]],[[2601,9095],[-7,-12],[-8,5],[-3,16],[9,13],[7,-6],[2,-16]],[[2900,9117],[16,-9],[-4,-11],[3,-24],[-9,-11],[-14,-6],[-31,-1],[-7,12],[0,22],[15,25],[31,3]],[[2096,9122],[-15,8],[14,1],[1,-9]],[[2919,9131],[3,-14],[-16,10],[2,12],[11,-8]],[[2173,9144],[-3,-12],[-12,5],[15,7]],[[2218,9152],[-13,-10],[2,17],[11,-7]],[[2820,9179],[-10,-28],[-16,-3],[26,31]],[[2860,9180],[10,-6],[-13,-11],[-6,16],[9,1]],[[2315,9189],[14,0],[-4,-11],[-10,11]],[[2342,9191],[8,-12],[-14,-3],[6,15]],[[3114,9197],[-2,-10],[-10,3],[12,7]],[[2834,9196],[-16,-12],[-9,1],[20,15],[5,-4]],[[2787,9204],[9,-8],[-21,-3],[4,-8],[-24,10],[16,8],[16,1]],[[2294,9191],[5,5],[10,-12],[22,-14],[6,-20],[18,-3],[-17,-6],[-13,-15],[-33,4],[-9,7],[-25,7],[-3,8],[-11,-6],[-11,11],[33,17],[-4,16],[12,-9],[-6,16],[10,11],[18,-11],[-2,-6]],[[3004,9275],[14,-3],[-20,-12],[-5,8],[11,7]],[[2924,7774],[-11,-4],[-19,-25]],[[2894,7745],[-6,-7],[-19,-10],[-11,-18],[-17,9],[-5,-3],[-30,-8],[-17,-15],[-5,-17],[13,-6],[7,4]],[[2804,7674],[-1,-9]],[[2803,7665],[5,-11],[-36,-7],[-9,-13],[-11,6],[-12,-1],[-32,-36],[-12,-2],[-5,4],[0,12],[5,4],[13,-1],[1,10],[-6,4]],[[2704,7634],[5,9],[1,17]],[[2710,7660],[8,4],[12,20],[-1,38],[4,14],[9,16],[0,12],[-12,25],[11,0],[1,-14],[14,-17],[18,-14],[0,17],[4,6],[6,-5],[-9,17],[2,14],[-10,3],[-10,32],[-12,0],[-10,8],[-39,6],[-3,0],[-30,10]],[[2663,7852],[0,10],[-10,-4]],[[2653,7858],[-3,4],[4,24],[-8,1],[3,23],[-11,14],[5,20],[-25,0],[-8,9],[-12,39],[-22,-2],[-24,14],[-2,-22],[-7,-2],[3,15],[-6,-2],[-5,-26],[-5,-3],[3,16],[-10,-5],[-5,-22],[-7,-6]],[[2511,7947],[-9,-1],[-4,7],[-20,0],[-2,7],[-16,-11],[-8,4],[-10,14],[-8,-7],[-3,12],[-14,11],[-22,-6],[-3,7],[-17,3],[-6,5],[-4,31],[-9,3],[0,-22],[-79,0],[-80,0],[-55,0],[-79,0],[-79,0],[-49,0],[-49,0],[-80,0],[-61,0],[-74,0],[-81,0]],[[1590,8004],[-8,0]],[[1582,8004],[-1,0]],[[1581,8004],[-7,20],[2,14],[-8,-11],[-12,8],[-1,15],[-14,0],[-6,8],[3,18],[-3,5],[-9,0],[-20,12],[-13,-2],[6,17],[-14,1],[-10,6],[-4,-6],[-14,11],[-8,12],[9,23],[13,3],[-9,3],[-10,-15],[-4,12],[0,14],[19,25],[0,13],[-12,-16],[-7,-5],[-8,17],[-4,-12],[4,26],[-10,9],[-10,34],[10,-5],[-8,12],[5,21],[-17,-20],[-3,-14],[-21,32],[-4,26],[-6,-3],[1,17],[7,4],[10,33],[-5,0],[-4,28],[2,8]],[[1387,8402],[0,0]],[[1387,8402],[-1,12],[-9,1],[-9,13],[-10,3],[-14,11],[-7,0],[0,11],[-7,4],[2,10],[-29,56],[-20,40],[-12,8],[-4,12],[-21,22],[3,8],[-13,13],[-25,-11],[-2,-20],[-27,-20],[-5,17],[-43,50],[3,16],[-17,-1],[-9,-8],[-12,6],[-16,1],[0,538]],[[1083,9194],[29,-2],[23,-6],[15,-16],[50,-21],[26,2],[-3,18],[20,5],[-1,8],[29,8],[12,-5],[-9,-9],[24,4],[10,14],[16,0],[45,28],[22,-4],[5,11],[9,-11],[-45,-25],[-27,-6],[-3,-10],[-18,-6],[-4,-15],[-9,3],[-4,-11],[24,-3],[-11,15],[29,13],[15,12],[12,-9],[14,21],[35,9],[0,-10],[23,16],[-2,9],[22,7],[-13,3],[0,17],[23,-16],[14,-32],[15,-16],[20,-9],[9,4],[-8,12],[10,9],[8,18],[10,-1],[-2,-19],[12,0],[-13,-19],[24,-2],[14,8],[6,20],[36,-3],[23,-10],[23,-16],[31,-5],[23,-13],[57,-13],[-9,8],[11,4],[38,-17],[18,-18],[-3,-9],[-26,2],[-8,-18],[-9,-3],[47,-13],[40,-1],[3,4],[36,1],[22,14],[13,-16],[18,0],[7,-21],[6,15],[20,-23],[-7,-21],[25,-29],[-12,23],[1,18],[16,-14],[-4,15],[-9,8],[0,15],[-12,12],[7,19],[35,18],[21,5],[1,13],[-24,-7],[2,-8],[-22,-7],[-16,5],[7,-11],[-22,-3],[-2,12],[-10,-3],[14,20],[27,5],[31,14],[12,-3],[9,-11],[4,-20],[19,-6],[4,-12],[20,-1],[9,8],[5,-11],[27,-14],[21,-3],[23,10],[26,-1],[15,-7],[25,5],[22,-12],[12,11],[-16,12],[-10,-9],[-10,10],[3,9],[-11,11],[27,1],[-8,9],[21,-3],[5,-12],[18,3],[-11,-15],[26,12],[-16,-41],[11,-19],[10,8],[11,-20],[4,16],[-15,26],[7,19],[17,-3],[18,14],[18,33],[-10,8],[-5,-13],[-15,0],[11,34],[18,-2],[2,13],[-22,-5],[-9,14],[-7,-7],[-25,10],[-21,22],[1,14],[9,15],[-12,9],[5,30],[14,6],[8,-7],[5,12],[-13,4],[18,9],[2,13],[18,3],[4,-19],[7,7],[32,-24],[4,-30],[37,-41],[-25,2],[-4,-6],[18,-3],[-25,-18],[20,-9],[18,7],[10,-9],[19,-1],[-23,-12],[14,-11],[6,-20],[-2,-17],[9,-12],[11,12],[4,31],[11,15],[9,1],[28,-27],[5,-32],[-16,2],[1,-19],[8,-19],[17,-15],[-1,-14],[15,7],[-3,7],[14,-1],[1,20],[17,23],[7,37],[25,0],[-10,13],[11,7],[-20,11],[-2,10],[6,23],[7,-4],[20,5],[16,-9],[30,-1],[15,-23],[22,-5],[-6,-12],[-12,-5],[20,-5],[1,-10],[-20,-13],[-17,6],[-2,-7],[18,-11],[-5,-13],[26,-30],[-7,-27],[-13,-1],[-17,-24],[-12,-1],[-10,-11],[-25,21],[16,-30],[-4,-2],[-19,14],[4,-14],[-25,7],[-5,17],[-19,-5],[-18,2],[7,-12],[19,-9],[-16,-15],[-3,-13],[-23,-20],[-16,0],[-17,15],[-31,20],[-10,-3],[-30,2],[32,-7],[14,-11],[11,-16],[56,-5],[2,-11],[-16,-20],[-14,-27],[-18,-15],[-24,1],[-12,10],[4,-14],[-10,-17],[-21,-3],[-19,10],[-14,0],[-37,16],[-8,-2],[11,-10],[4,5],[31,-11],[-10,-11],[18,11],[6,-8],[25,-12],[2,-18],[-22,-16],[-19,5],[-10,-3],[15,-16],[-19,5],[-2,-20],[-8,-12],[-18,-12],[11,-4],[-17,-12],[-19,-60],[-8,-31],[3,-40],[-3,-17],[13,-17],[3,4],[29,-1],[2,-15],[10,-37],[9,-24],[-3,-25],[12,2],[30,12],[15,-3],[15,-12],[30,-8],[12,-15],[13,-10],[7,-15],[10,-12],[11,-1],[32,-17],[21,-20],[12,-3],[19,5],[15,-6],[12,1],[18,-9],[3,-14],[-6,-25],[0,-12],[8,-17],[-2,-23],[3,-13],[-5,-19],[20,-28],[6,-21],[10,-5],[15,-30],[1,-10],[19,-11],[1,16],[10,15],[11,-20],[6,11],[-9,15],[13,19],[2,22],[-6,4],[1,19],[-5,0],[-5,42],[-2,32],[-7,2],[-6,25],[-5,1],[39,22],[16,14],[19,23],[12,21],[4,16],[0,44],[-8,34],[-9,20],[-24,23],[-13,16],[-2,16],[22,21],[-1,20],[14,6],[-1,13],[-7,2],[-7,35],[6,6],[-16,2],[10,15],[2,20],[6,5],[-13,13],[-4,34],[18,16],[21,-4],[32,-14],[34,-1],[14,12],[18,-9],[17,-14],[-1,-8],[30,-19],[-9,-10],[14,-16],[23,-5],[11,2],[2,-11],[12,-1],[2,12],[5,-18],[-12,-15],[6,-26],[2,-26],[-6,-6],[3,-9],[11,-2],[-8,-8],[2,-18],[-19,-7],[10,-3],[15,12],[13,1],[11,-6],[5,-24],[7,10],[9,-20],[28,15],[6,21],[10,-9],[5,18],[7,3],[-2,12],[8,8],[-3,22],[8,2],[7,25],[14,2],[0,-12],[9,-6],[-1,-17],[6,0],[5,-15],[12,-13],[-11,-9],[13,3],[1,-13],[7,1],[4,-11],[-9,-11],[16,0],[-2,-19],[15,-12],[7,-20],[-14,-11],[10,2],[6,-6],[-6,-7],[18,-7],[-8,-18],[-7,0],[5,-13],[-9,-4],[11,-10],[-12,-2],[5,-5],[14,1],[-3,-13],[10,-2],[1,-7],[22,-5],[-4,-5],[3,-16],[-4,-16],[20,12],[-2,-10],[10,-5],[10,9],[6,-22],[30,-6],[14,-10],[-9,-11],[-15,-1],[-1,-6],[-33,-12],[21,5],[3,-3],[-30,-15],[-13,-3],[2,-15],[-11,-14],[38,24],[6,15],[19,9],[-5,7],[24,-1],[11,-22],[-12,-11],[6,-9],[9,15],[30,-19],[4,-15],[-6,-7],[5,-9],[-7,-12],[8,-9],[4,-17],[-8,-15],[-20,-17],[-10,-13],[-8,5],[-25,-14],[-8,3],[-7,-12],[-8,-5],[1,-12],[-13,-8],[0,-8],[-11,-6],[-3,-10],[-38,-3],[-10,-5],[-6,7],[-51,4],[-26,-2],[-37,0],[-5,-5],[-8,5],[-19,-25],[-3,-23],[-4,-6],[-19,-3],[-4,-11],[-24,-18],[-10,-28],[-7,-9],[-19,14],[-5,-2],[22,-14],[-5,-20],[-10,-17],[-6,-3],[-6,-17],[-17,-23],[-15,-1],[-21,-24],[-10,-4],[-7,-18],[-12,-11],[-7,-11],[-6,-2],[5,-8],[-15,-12],[-6,-8]],[[1827,9404],[6,-29],[-17,-11],[32,3],[-4,6],[17,15],[49,-17],[-3,-15],[17,6],[18,-8],[8,4],[-26,29],[23,-2],[24,-23],[11,-1],[-1,-11],[13,-38],[6,-4],[21,15],[-15,14],[-9,45],[0,25],[29,-10],[8,7],[26,-17],[18,-30],[4,-24],[19,-29],[-7,-28],[16,-17],[25,-16],[8,1],[35,-23],[16,4],[4,-24],[-13,-6],[-4,13],[-5,-14],[-19,11],[-14,-26],[22,5],[-2,-17],[9,-10],[-19,-8],[-24,-5],[-49,6],[4,12],[-40,5],[-4,18],[-10,-16],[-17,-13],[-28,-6],[-12,-9],[-56,-11],[-59,-3],[-16,19],[2,22],[-18,5],[-26,-3],[-22,4],[-18,9],[0,6],[-18,12],[-4,14],[39,12],[41,5],[53,-7],[9,7],[22,-3],[-18,14],[-19,2],[-18,8],[-58,-6],[-19,4],[-40,-1],[-19,23],[17,8],[41,11],[13,11],[-48,-10],[-21,6],[13,5],[-36,7],[0,11],[16,17],[13,3],[-13,15],[34,25],[50,16],[27,11],[10,-5]],[[2094,9405],[-16,-22],[-8,1],[-18,19],[-26,12],[13,13],[42,1],[16,-10],[-3,-14]],[[2768,9430],[25,-7],[37,2],[19,-6],[32,-26],[-1,-17],[-52,5],[-28,-9],[-22,6],[-4,22],[-21,5],[1,25],[14,0]],[[2595,9436],[41,-3],[4,-8],[-30,-21],[-18,-26],[10,-20],[-3,-28],[9,-14],[19,-16],[14,-5],[-16,-13],[-13,0],[-8,-10],[21,10],[18,-2],[8,17],[-4,14],[-16,-1],[-8,13],[2,21],[16,1],[-18,12],[-3,25],[14,2],[-6,11],[26,-5],[-19,15],[63,24],[37,-1],[11,-27],[14,-5],[0,-14],[10,-10],[-26,-24],[18,11],[-11,-18],[5,-13],[12,5],[16,25],[23,-13],[11,14],[26,14],[67,-15],[7,-14],[-14,-14],[33,4],[0,-15],[-32,-17],[31,12],[19,-1],[-10,-9],[-4,-17],[12,19],[3,-12],[15,-7],[13,23],[32,-12],[8,-11],[-10,-12],[-11,3],[-13,-14],[4,-6],[25,7],[4,9],[15,2],[3,-9],[-13,-17],[30,15],[-3,-16],[15,10],[31,-11],[-10,-16],[-31,-9],[32,3],[-1,-16],[12,9],[6,14],[24,-23],[2,-12],[-26,3],[-15,-11],[19,-8],[19,1],[16,-11],[-2,-8],[-26,2],[-15,8],[-22,3],[22,-8],[13,-10],[-8,-4],[5,-11],[-43,2],[33,-6],[-9,-8],[29,-2],[23,-6],[-10,-6],[8,-11],[37,-12],[12,7],[-2,-12],[18,-4],[13,-28],[-21,-10],[47,10],[-7,-18],[22,-5],[5,9],[18,-10],[10,-16],[-20,-10],[14,-3],[-30,-8],[14,-7],[-7,-17],[-15,-3],[7,-7],[-17,-1],[-7,16],[3,-21],[-9,-4],[9,-9],[-5,-24],[-17,9],[-9,14],[-1,-9],[-18,16],[-1,14],[-9,5],[19,17],[-31,-5],[-2,9],[-22,20],[2,8],[-13,-6],[-6,-11],[-16,12],[7,-15],[16,-12],[-1,-7],[-20,-1],[-9,18],[-2,-18],[12,-16],[14,3],[-2,-10],[10,-2],[10,-39],[1,14],[31,-16],[-3,-16],[17,0],[-10,-10],[11,-14],[11,-5],[-9,-11],[12,-6],[0,-25],[-7,5],[-4,18],[-2,-14],[10,-29],[-17,5],[8,-19],[-7,-5],[-1,13],[-12,11],[-12,-3],[-13,13],[-5,-5],[-20,21],[-6,12],[-1,-16],[-27,24],[-8,-3],[23,-33],[17,-6],[17,-21],[5,0],[16,-26],[7,-2],[-9,-20],[-30,16],[-35,7],[-12,7],[-25,24],[-9,-2],[-38,22],[-5,14],[15,10],[-16,12],[-2,-7],[-15,9],[-13,14],[-15,33],[-20,-9],[4,15],[-14,-6],[-5,-14],[-30,14],[-5,-12],[-24,-12],[-14,2],[-18,11],[-4,27],[5,9],[18,8],[-3,15],[21,-2],[25,-11],[9,-9],[-6,-7],[10,-12],[-2,16],[-16,17],[23,-3],[1,7],[15,-3],[11,12],[19,-5],[-7,19],[-8,4],[-13,18],[41,32],[5,19],[15,6],[-4,22],[-12,18],[-4,23],[-23,5],[3,18],[-19,-6],[-13,16],[2,15],[-9,-11],[-10,2],[-32,-14],[0,20],[28,3],[1,9],[-30,19],[-15,5],[10,9],[-23,0],[0,21],[-20,2],[-10,12],[-21,2],[21,-15],[3,-13],[-29,-7],[-6,8],[-39,3],[15,-14],[-9,-2],[-14,13],[-15,-11],[-25,12],[-15,-3],[-31,3],[-5,4],[-39,2],[-21,21],[1,-11],[-47,11],[-21,25],[9,7],[22,-4],[27,0],[-15,18],[-6,-3],[-47,6],[-5,7],[5,17],[-9,11],[5,24],[25,52],[36,27],[33,8]],[[2227,9438],[17,-9],[57,6],[4,-12],[-12,-6],[8,-7],[-19,-7],[-19,-16],[35,-3],[9,-16],[12,3],[5,-18],[-9,-6],[3,-27],[-25,-13],[-26,2],[9,-8],[-13,-13],[-19,3],[-13,25],[-27,24],[-21,3],[-34,24],[-4,9],[14,16],[11,-4],[16,-18],[24,2],[10,8],[-4,14],[-11,1],[-28,20],[11,7],[16,-9],[3,8],[-13,12],[33,5]],[[2287,9448],[-13,-11],[-23,-4],[-12,7],[34,10],[14,-2]],[[2423,9449],[18,-8],[8,5],[45,-7],[-28,-33],[-12,-21],[-14,-14],[-33,4],[-13,-4],[10,-16],[-18,-22],[-29,-6],[-2,33],[-11,9],[-2,60],[11,2],[1,14],[44,9],[25,-5]],[[1623,9476],[28,-12],[41,-10],[46,4],[58,-41],[-3,-6],[-28,-9],[-76,-37],[-3,-15],[-14,-8],[-13,1],[-3,-32],[-7,-11],[-22,-7],[-9,5],[-11,-12],[-27,-10],[-26,36],[-34,14],[-14,0],[0,10],[14,22],[9,4],[-4,18],[17,2],[-12,9],[14,21],[16,15],[-10,9],[-14,28],[87,12]],[[2118,9518],[-3,-12],[-30,4],[15,17],[18,-9]],[[2378,9537],[25,-20],[2,-24],[-5,-11],[-41,1],[-43,18],[23,30],[25,8],[14,-2]],[[2325,9539],[-16,-17],[-5,9],[21,8]],[[2164,9558],[-14,-12],[-20,-1],[7,9],[27,4]],[[2380,9546],[-17,10],[11,3],[6,-13]],[[2157,9563],[-38,-10],[11,8],[27,2]],[[1732,9567],[5,-3],[-22,-28],[-10,-5],[-22,5],[20,18],[29,13]],[[2805,9567],[0,-15],[-16,-3],[16,18]],[[2149,9575],[-6,-11],[-43,0],[2,8],[47,3]],[[2113,9595],[25,-12],[-38,-5],[-7,16],[20,1]],[[2266,9598],[21,-11],[7,-58],[-18,1],[14,-20],[-11,-7],[-47,-3],[-20,3],[-11,19],[33,20],[-52,-5],[-33,-7],[2,14],[20,10],[-6,28],[18,3],[35,-31],[7,21],[-30,12],[15,9],[23,0],[13,-10],[20,12]],[[2213,9601],[-38,-8],[20,9],[18,-1]],[[2508,9589],[-10,-2],[-15,15],[17,6],[8,-19]],[[1981,9607],[-3,-11],[20,-20],[-11,-11],[22,-7],[-10,-10],[27,5],[12,10],[31,-10],[1,-18],[-15,-30],[-28,-8],[-21,7],[-19,-7],[-5,8],[-25,-11],[-22,-4],[-24,-12],[-34,-10],[-29,0],[-27,17],[52,17],[27,0],[19,13],[-36,-6],[-3,5],[-44,-9],[-5,24],[-10,-23],[-35,-6],[-55,16],[12,13],[30,0],[31,14],[-30,-8],[-32,0],[10,12],[57,5],[-39,0],[-12,12],[23,10],[10,12],[36,1],[7,-17],[28,5],[33,-21],[14,-22],[62,-1],[6,7],[-32,17],[18,11],[-30,11],[18,11],[15,19],[15,0]],[[1840,9610],[3,-10],[-34,3],[31,7]],[[2354,9618],[44,-6],[16,-16],[46,3],[26,-13],[-26,0],[59,-9],[-2,-7],[-52,-1],[30,-6],[28,-18],[2,-16],[14,11],[11,-8],[26,6],[13,-9],[59,10],[21,10],[23,-5],[16,6],[39,-3],[40,-18],[6,-11],[-25,-15],[16,1],[10,-9],[-23,-7],[-1,-11],[-29,0],[-12,-6],[-33,5],[-7,16],[-11,-16],[-84,-5],[-53,2],[2,20],[-21,-15],[-21,-3],[-30,10],[-10,-4],[-19,9],[1,10],[-13,14],[11,38],[-14,8],[-14,21],[-17,-6],[-37,-3],[6,7],[-27,3],[-11,14],[-18,4],[15,6],[-15,7],[13,6],[32,-1]],[[1774,9644],[20,-9],[-25,-7],[-2,-15],[13,-14],[-30,-8],[-9,-17],[-20,9],[5,24],[-19,-6],[-1,-22],[-34,-26],[-19,-3],[-7,19],[-15,-12],[-46,8],[9,15],[31,5],[9,14],[22,7],[15,17],[27,15],[26,1],[18,-6],[32,11]],[[2491,9653],[17,-10],[-11,-14],[-30,11],[0,13],[24,0]],[[2083,9641],[18,-11],[-11,-7],[-23,12],[-14,25],[13,0],[17,-19]],[[2350,9662],[51,0],[13,-7],[-11,-10],[-70,0],[-6,13],[23,4]],[[2196,9660],[-42,-1],[0,9],[21,1],[21,-9]],[[1824,9675],[20,-11],[-15,-6],[-27,14],[22,3]],[[1955,9679],[-35,-12],[21,-5],[-3,-16],[-52,-10],[-31,11],[3,23],[51,10],[46,-1]],[[1933,9718],[31,-15],[-4,-11],[-50,5],[-52,-7],[-5,8],[40,8],[40,12]],[[2308,9715],[18,-10],[40,-9],[-15,-7],[9,-16],[-51,-11],[-22,18],[22,2],[-33,10],[-10,12],[7,18],[35,-7]],[[2120,9752],[22,-6],[10,-21],[25,12],[58,-29],[-8,-16],[22,-13],[0,-11],[-25,-6],[-19,5],[-12,19],[-45,10],[-50,-6],[-10,18],[38,-3],[1,15],[-18,11],[-27,-9],[10,11],[-26,2],[4,16],[50,1]],[[2237,9796],[21,-8],[-5,-17],[-36,22],[20,3]],[[2423,9866],[56,-44],[40,-1],[1,-15],[22,9],[22,-2],[19,-26],[-9,-26],[20,9],[23,-2],[24,-19],[-46,-14],[-69,-50],[-26,25],[15,-26],[-24,10],[0,-11],[-49,4],[-22,17],[34,3],[-45,2],[-28,21],[25,12],[79,3],[-58,1],[0,12],[-36,-11],[-3,7],[-33,-6],[-14,15],[27,4],[-31,3],[-21,14],[-4,14],[53,-6],[21,9],[-36,-4],[-32,9],[14,17],[41,2],[7,8],[-33,3],[17,15],[39,0],[7,9],[-28,8],[41,-2]],[[3064,9969],[92,-13],[-63,-13],[33,0],[64,14],[63,-22],[36,-2],[8,-17],[-85,-27],[-75,-6],[11,-7],[-78,-18],[137,21],[-4,-9],[-119,-45],[-9,-11],[-28,-4],[-23,-32],[-31,-8],[-32,7],[7,-13],[-52,-10],[-85,-2],[20,-4],[80,-3],[-1,-11],[-35,3],[-9,7],[-57,-2],[56,-5],[-45,-3],[55,-3],[-14,-6],[38,-1],[8,-15],[-22,-5],[-30,2],[38,-10],[-14,-14],[-35,-13],[-43,0],[19,-17],[-14,-13],[-47,-6],[-38,9],[-17,14],[5,-14],[18,-8],[57,-7],[-10,-14],[19,-6],[18,11],[7,-22],[-21,-10],[-5,7],[-22,-15],[-42,-11],[8,17],[-36,5],[-6,-7],[-40,2],[-13,10],[-6,-17],[-23,-1],[-61,10],[-4,-7],[-37,4],[-15,10],[-1,17],[33,15],[23,-1],[15,8],[-21,5],[-15,25],[29,7],[27,-6],[22,-23],[54,-3],[27,35],[-39,-27],[-38,10],[15,39],[-21,-13],[-21,5],[-35,-4],[1,19],[24,20],[44,7],[35,-5],[56,1],[-53,4],[-30,6],[11,9],[-23,27],[-37,6],[0,32],[75,-4],[67,-35],[-7,16],[-44,23],[80,9],[54,8],[-44,0],[94,17],[-62,-3],[-2,9],[57,26],[-37,-9],[-40,-28],[-44,-11],[-53,-5],[27,11],[-48,2],[1,-13],[-55,-1],[-26,5],[26,19],[85,11],[-93,-8],[-33,-21],[-58,14],[99,12],[30,12],[-43,-8],[-98,-8],[-15,8],[12,11],[45,14],[-57,-12],[12,13],[-22,4],[-21,-8],[-14,7],[27,11],[83,15],[87,-6],[-56,12],[43,5],[-12,10],[30,1],[59,-23],[-11,12],[82,-19],[-75,24],[18,17],[41,-8],[-28,15],[47,-2],[16,12],[41,-3],[44,-11],[-31,15],[35,4],[54,-3],[10,-8],[24,12],[91,2]],[[5255,7927],[0,0]],[[5255,7927],[0,0]],[[5255,7927],[10,-8]],[[5264,7905],[2,-12]],[[5290,7882],[-2,-13],[-10,-7],[4,-15],[-6,6],[-12,-4],[-2,10],[-5,0],[-1,-14],[-5,-6],[-1,-18],[-7,10],[2,5],[-11,9],[0,13],[-10,-11],[1,-8],[-9,-12],[-8,4],[-13,-4]],[[5195,7827],[-7,15],[0,14]],[[5188,7856],[-5,6],[-8,-4],[-3,-9]],[[5172,7849],[-4,7],[2,10],[8,9],[0,11],[7,4],[12,28],[8,-5],[5,10]],[[5210,7923],[14,-1],[9,5],[4,9],[9,-9],[9,0]],[[3101,2016],[-9,-10],[13,-7],[6,-18],[-2,-7],[-8,14],[-15,-2],[2,19],[-18,-5],[-1,-4],[-14,10],[3,5],[39,9],[4,-4]],[[3116,2021],[14,-1],[7,-9],[-5,-12],[-7,7],[-9,-6],[-8,1],[-2,15],[10,5]],[[3041,2018],[7,-9],[-19,2],[-1,8],[13,-1]],[[3069,2021],[8,-5],[-19,-3],[-1,8],[12,0]],[[3013,2074],[7,-1],[8,-15],[-5,-7],[-8,10],[-4,-3],[-2,16],[4,0]],[[3003,2080],[6,-2],[-5,-24],[-11,16],[0,7],[10,3]],[[3044,2081],[2,-8],[-9,4],[3,-17],[-9,10],[-1,10],[8,1],[-2,10],[6,7],[2,-17]],[[2972,2103],[2,3],[22,-21],[-6,-2],[-14,-18],[4,15],[-9,1],[-7,-7],[1,12],[-8,1],[3,17],[12,-1]],[[2925,2147],[15,-16],[8,0],[21,-22],[-10,3],[-11,14],[-13,-1],[-10,22]],[[3093,2028],[0,-1]],[[3093,2021],[-12,-3],[-17,9],[-13,-4],[-23,10],[-10,10],[-17,-8],[-1,12],[8,-7],[10,12],[7,-9],[6,12],[-2,12],[20,-15],[7,5],[13,-4],[10,-11],[3,8],[-28,18],[-4,19],[24,15],[-1,8],[-25,-6],[-6,8],[1,17],[9,1],[0,8],[12,7],[2,13],[6,4],[5,-11],[16,0]],[[2952,2165],[-2,-17],[-9,0],[-2,7],[13,10]],[[2921,2176],[8,-2],[-6,-7],[-2,9]],[[2938,2182],[8,-11],[-5,-6],[-3,17]],[[2920,2209],[3,-4],[-3,-19],[-5,7],[5,16]],[[2943,2211],[3,-10],[-9,5],[6,5]],[[2925,2234],[1,-8],[-9,1],[8,7]],[[2931,2257],[2,-13],[-14,-1],[-1,9],[9,-2],[4,7]],[[2924,2263],[1,-11],[-8,7],[7,4]],[[2906,2275],[8,0],[-10,-15],[2,15]],[[2931,2276],[3,1],[5,-22],[-5,0],[-6,13],[3,8]],[[2908,2302],[14,-5],[0,-6],[-18,-9],[1,12],[7,-5],[-4,13]],[[2903,2329],[8,-14],[-12,3],[4,11]],[[2914,2359],[5,-2],[0,-12],[-9,10],[4,4]],[[2906,2359],[2,-6],[-9,-5],[7,11]],[[2925,2377],[5,0],[2,-27],[-3,-27],[3,-13],[-9,-10],[-4,6],[1,25],[-4,-21],[-7,11],[-2,25],[13,-3],[2,12],[-7,18],[10,4]],[[2906,2392],[1,-9],[-7,-5],[-2,13],[8,1]],[[2924,2406],[4,-8],[2,-18],[-14,4],[-1,6],[9,16]],[[2913,2413],[9,-4],[-1,-11],[-7,-2],[-5,19],[4,-2]],[[2907,2415],[7,-32],[-6,0],[0,16],[-5,-5],[-3,20],[7,1]],[[2921,2430],[3,-17],[-11,6],[-1,6],[9,5]],[[2945,2427],[4,-6],[-19,2],[7,7],[8,-3]],[[2914,2436],[-3,-8],[-5,6],[8,2]],[[2924,2545],[-1,-11],[-10,7],[11,4]],[[2936,2556],[-5,-9],[0,15],[5,-6]],[[2955,2556],[-6,-2],[3,11],[3,-9]],[[2948,2591],[3,-16],[-7,2],[-6,12],[10,2]],[[2946,2594],[-9,-4],[3,9],[6,-5]],[[2946,2613],[2,-4],[-11,-6],[-4,10],[13,0]],[[2974,2623],[6,-4],[-12,-23],[-4,-1],[-5,16],[7,2],[-1,11],[9,-1]],[[2948,2662],[3,-7],[-11,0],[8,7]],[[2945,2775],[11,1],[5,-30],[-8,-2],[-4,-15],[9,-10],[-6,-5],[6,-13],[-7,-2],[2,-14],[-17,3],[-3,4],[7,21],[-1,36],[4,8],[2,18]],[[3098,2168],[-21,9],[-7,-4],[-3,-12],[-8,-1],[-27,-20],[-3,-19],[-1,-36],[-7,-5],[-24,11],[-10,15],[5,11],[15,1],[10,5],[6,18],[-5,1],[-22,-19],[-5,6],[-7,-20],[1,-10],[-20,22],[9,0],[-1,20],[14,1],[13,9],[14,0],[-2,5],[-21,3],[-19,-19],[1,-11],[-6,-4],[-8,6],[6,5],[-9,6],[9,1],[2,11],[-11,-5],[0,29],[6,-2],[15,16],[9,-1],[0,13],[-7,-6],[-15,13],[10,-15],[-6,-4],[-4,-13],[-8,7],[0,17],[-9,7],[-1,13],[6,2],[1,13],[-6,-6],[-7,4],[-1,17],[11,-2],[-1,9],[-6,-4],[-5,21],[-13,14],[9,8],[1,26],[3,6],[-5,9],[0,44],[10,11],[-11,13],[-3,13],[21,-4],[6,-13],[5,5],[-10,27],[-1,-6],[-21,1],[-2,12],[9,-2],[-7,11],[6,12],[5,0],[6,11],[-6,2],[-3,12],[-11,0],[-1,-5],[-11,14],[4,11],[-13,-16],[2,-11],[-6,-3],[-4,19],[13,13],[3,10],[12,11],[0,11],[14,3],[6,-14],[-1,-8],[7,-4],[-7,-18],[4,-3],[5,16],[4,49],[8,10],[-3,20],[4,-1],[14,13],[1,15],[-14,13],[4,39],[-1,17],[9,12],[-3,14],[0,18],[5,2],[-3,15],[5,3],[4,-15],[0,27],[-8,-3],[-4,6],[8,12],[-10,13],[-3,-13],[-12,-6],[-7,4],[2,7],[-5,11],[-2,27],[5,20],[1,37],[9,7],[4,19],[1,19],[-9,38],[2,30],[-6,26],[1,22],[9,-3],[5,16],[0,18],[4,-4],[5,42],[6,9],[-1,15],[6,18],[5,6],[1,15],[4,12],[1,31],[6,21],[4,4],[1,12],[-4,23],[6,5],[4,37],[-4,9],[1,25],[-5,52],[0,24],[2,12],[7,5],[2,44],[-5,10],[-1,19],[6,11],[4,20],[0,18],[3,22],[4,2],[-1,30],[4,5],[2,15],[2,41],[-2,11],[2,19],[6,8],[-1,24],[-2,5],[1,62],[3,17],[-6,0],[1,25],[6,1],[4,33],[0,23],[2,25],[2,3],[0,24],[-3,10],[0,37],[2,6],[-1,31],[-5,51],[0,21],[-2,8]],[[3044,4127],[12,4],[4,9],[0,26],[9,9]],[[8073,6343],[8,-9],[1,-20],[-9,-13],[-7,-43],[-4,0],[-5,-15],[-9,-1],[-2,-11],[-14,6],[-14,12],[-1,42],[10,19],[8,9],[-1,10],[7,-3],[5,9],[8,-6],[10,10],[8,-9],[1,13]],[[8066,6398],[4,-5],[-8,-2],[4,7]],[[8393,6916],[2,-7],[-8,4],[6,3]],[[8386,6994],[-10,4],[-11,15],[6,2],[9,-11],[8,-5],[-2,-5]],[[8689,7778],[-2,10],[-10,6],[-11,-7]],[[8666,7787],[-4,7],[-12,-22],[-11,-4],[0,-9],[6,-40],[-2,-28],[3,-6],[-5,-31],[-19,-10],[3,-13]],[[8625,7631],[-8,13],[0,9],[-9,7],[-4,-13],[-1,-19],[-14,-5],[-1,-10],[-7,-10],[-26,-3],[8,-20],[-3,-13],[-30,7],[-2,12],[-9,1],[-12,-34],[-9,-16],[-6,0],[-8,-10],[-16,-14],[-14,-21]],[[8454,7492],[-5,-13],[-6,-5],[-9,3],[-11,-3],[-28,-28],[-3,-9],[-8,-11],[-3,5],[-7,-13],[-10,-4],[0,12],[15,8],[-10,29],[6,0],[-2,11],[12,12],[11,27],[-3,13],[-22,14],[-12,-7],[0,-7],[-10,-13],[-4,-16],[-14,-7],[-17,-19],[-1,-19],[-10,-15],[-10,0],[-7,-8],[-11,11],[-6,-6],[-5,-28],[5,-14],[10,-13],[14,-4],[7,5],[12,-25],[-7,-1],[-2,-21],[10,-12],[13,1],[2,11],[10,10],[3,9],[12,10],[11,-8],[0,-6],[9,-7],[34,-4],[-7,-15],[3,-13],[-9,-5],[-5,9],[-28,-23],[-6,3],[4,-11],[-7,-1],[0,-17],[-11,-5],[2,8],[-8,2],[2,-13],[-7,-22],[-8,-4],[-7,-26],[-5,-3],[1,-16],[12,-14],[17,-12],[6,-38],[11,-36],[-1,-21],[15,-16],[0,-13],[11,-10],[4,-16],[-8,1],[-9,9],[-10,-3],[-4,11],[-11,2],[-5,-7],[-7,4],[-3,16],[-6,2],[3,-11],[11,-13],[16,4],[2,-9],[7,-5],[8,-15],[9,-9],[6,-12],[2,-13],[-9,-2],[-12,-10],[-8,-11],[-5,-15],[6,-2],[6,9],[6,-1],[8,-19],[13,-6],[-13,-19],[7,5],[0,-22],[-4,-6],[-5,3],[1,-27],[-5,-3],[5,-23],[-5,2],[-4,-10],[-3,12],[-9,-28],[-8,-17],[-3,-23],[-6,-4],[-1,-11],[-9,-7],[-1,-8],[-5,9],[-4,-6],[5,-6],[2,-11],[-5,4],[2,-10],[-5,-15],[5,-3],[-3,-18],[-4,0],[6,-17],[-11,10],[-4,-8],[5,-14],[-9,1],[-3,-9],[3,-10],[-10,0],[4,-9],[-3,-8],[-6,3],[-5,-5],[-2,8],[-5,-13],[3,-11],[-5,-4],[-1,-10],[-6,-1],[-7,-13],[-4,1],[-5,-14],[-6,5],[0,-9],[-10,-21],[-1,-10],[-6,1],[-13,-12],[-7,6],[0,-11],[-14,8],[-5,-13],[-6,11],[-5,-7],[4,-8],[-4,-3],[-2,9],[-5,-3]],[[8172,6482],[-4,-2]],[[8168,6480],[-7,-3],[-2,17],[-3,-1],[-2,15],[-6,-8],[6,-17],[0,-15],[-2,-9],[-10,20],[7,-19],[-10,-14],[-5,1],[-13,-12],[-10,3],[-11,-15],[-25,-8],[-3,-10],[-6,-1],[-7,-13],[5,-7],[-1,-13],[7,-9],[-4,-10],[-13,-2],[-1,10],[-7,25],[3,28],[5,0],[0,8],[-8,1],[-2,14],[-1,-16],[-12,1],[0,6],[-9,2],[-9,13],[2,-16],[-6,7],[0,-8],[-9,-5]],[[7999,6420],[-7,10],[-9,-4],[-12,14],[1,6],[-10,2],[0,14],[-4,7],[0,14],[5,0],[0,16],[-14,0],[-18,12],[-7,14],[-14,-13],[1,-9],[-14,-14],[-3,8],[-6,-8],[0,-9],[-11,16],[-4,-12],[-5,11],[-7,-21],[-5,10],[-13,9],[-4,-20],[-3,0]],[[7836,6473],[-13,3],[-4,-12],[1,-10],[5,-15],[0,-39],[-5,6],[-9,-2],[-2,20]],[[7809,6424],[-2,12],[-7,-6],[-3,-8],[-8,-4],[-2,5],[-5,-6],[-2,13],[-4,3],[-1,19],[-14,5],[-6,-1],[0,16],[4,5],[-1,14],[6,11],[-5,13],[-8,-2],[-7,5],[2,6],[-6,40],[6,9],[-9,-3],[-13,1],[-14,-14],[-2,5],[5,10],[-1,18],[-4,0],[0,17],[7,8],[-2,12],[4,11],[2,-3],[6,10],[0,13],[6,-3],[3,13],[7,6],[-4,6],[5,33],[0,29],[-2,31],[-7,4],[-1,-9],[-7,20],[0,16],[-8,13],[-9,9],[-5,-18]],[[7703,6808],[-7,9],[-4,-3],[-7,15],[-7,1],[5,6],[-4,17],[-9,21],[-12,-9],[-6,0],[-6,-9],[-9,4],[-9,11],[-8,-6],[-3,-16],[-9,-6],[-6,-8],[-7,-1],[-9,-16],[-12,-14],[0,-11],[-9,-9],[-12,-5],[-8,2]],[[7468,6756],[-4,12],[3,18],[-1,10],[-6,5],[-13,-14]],[[7447,6787],[-8,2],[-4,-5],[-15,1],[-3,7],[-14,9],[-4,-11],[-9,10],[-3,-11],[-2,13],[-6,7],[-16,3],[2,17],[-4,3],[-7,-6],[-9,11],[-7,12],[-2,16],[-5,5],[-13,-7],[-9,26],[-9,2],[-9,15],[-10,8],[-1,15],[-14,5],[-11,-23],[-7,11]],[[7248,6922],[-11,15],[-10,6],[1,9],[-14,15],[-4,-3],[-9,13],[-5,16],[-9,-8],[-2,12],[4,5],[-4,7],[2,15],[-9,14],[-2,20],[9,4],[6,-16],[10,8],[7,13],[-5,14],[0,12],[-7,3],[-8,16],[-3,33],[8,8],[0,7],[-10,12],[-9,5],[-8,41],[1,9],[-7,0]],[[7160,7227],[-18,1],[-11,8]],[[7131,7236],[-5,6],[0,8],[-13,-4],[-4,10],[1,27],[-7,15],[-9,1],[0,7],[-8,7],[-7,-2],[-9,4]],[[7080,7327],[7,10],[-8,13],[3,7],[-5,17],[-1,26],[-12,9],[-6,0],[-2,-9],[-6,3],[-4,16],[4,9],[-6,12],[1,14]],[[7045,7454],[8,8],[-3,9],[4,18],[11,3],[10,14],[3,10],[11,-4],[8,11],[4,-20],[18,4],[9,13],[0,10],[5,15],[18,-2],[11,5],[5,-2],[8,19],[26,23],[27,15],[-1,8]],[[7227,7611],[1,3],[-3,23],[3,11],[9,6],[-7,5],[13,6],[-4,13],[2,7],[-11,37],[0,32],[5,5],[-18,8],[7,9],[21,5],[23,13],[3,-9],[13,3],[7,-7],[4,17],[-11,7],[7,21],[9,47],[5,14],[0,14],[24,-13],[21,1],[4,-10],[13,13],[7,0],[5,9],[-4,41],[4,25],[25,10],[4,10],[0,17],[4,6],[12,-1]],[[7424,8009],[15,5]],[[7439,8014],[-4,-17],[9,-8],[-2,-9],[16,-10],[2,-12],[14,-12],[11,1],[7,-11],[9,3],[11,-21],[0,-11],[15,-34],[1,-11],[-5,-14],[3,-17],[-7,-13],[-2,-16],[6,-17],[6,2],[16,-9],[23,-4],[11,2],[23,-8],[6,-13],[7,0],[14,-19],[9,-5],[11,2],[-2,-16],[6,-3],[9,-41],[12,-19],[2,-11],[23,4],[63,-13],[14,6],[49,-12],[7,-15],[29,-11],[18,-15],[23,7],[0,-12],[13,-5],[6,10],[44,30],[36,10],[20,-3],[20,4],[25,19],[15,29],[18,12],[10,13],[-9,18],[-7,23],[11,33],[5,4],[13,-1],[5,-10],[14,-6],[13,-3],[16,16],[14,24],[6,-3],[23,5],[15,18],[-1,7],[11,24],[6,3],[15,-1],[1,13],[9,-4],[16,12],[12,-3],[3,5],[14,-8],[11,-1],[5,6],[-4,23],[-18,25],[0,6],[-10,7],[-6,11],[-10,5],[-12,-3]],[[8270,7946],[-7,-13]],[[8263,7933],[-5,-6],[-13,13],[-17,-1],[-11,-9],[-7,10],[-2,13],[8,8],[-1,12],[25,79]],[[8240,8052],[16,-12],[14,-6],[12,9],[13,17],[12,1],[7,6],[1,14],[-4,6],[8,27],[7,10],[1,11],[8,23],[16,14],[3,17],[-4,7],[3,13],[-8,5],[-12,-1],[22,37],[12,1],[26,11],[19,0],[11,6],[28,-11],[4,-9],[20,-1],[17,-13],[23,-49],[-3,-10],[6,-23],[6,-9],[1,-20],[10,-19],[1,-23],[7,-6],[-2,-23],[5,-9],[11,-7],[20,2],[7,-14],[13,-3],[9,-7],[11,-17],[12,0],[-4,-13],[6,-8],[2,-13],[-4,-13],[7,-20],[15,2],[13,-5],[17,3],[3,9],[12,14],[12,-1],[6,9],[18,8],[9,-7],[-4,-13],[6,-17],[-8,-19],[-9,-6],[-4,-38],[-5,-13],[2,-9],[-11,-22],[-1,-15],[-8,-8],[-2,-21],[-8,-3]],[[4913,5477],[0,-1]],[[4913,5476],[0,1]],[[4925,5729],[-2,-26],[3,-1],[4,-47],[-8,-15],[-6,-39],[-7,-28],[2,-31],[2,-4],[4,-31],[5,-1],[2,-13],[-3,-14]],[[4921,5479],[-10,3],[-3,-4],[-15,4],[-5,4],[-18,3],[-3,-9],[16,7],[6,-3],[-22,-5],[-22,-3],[-38,-25],[-5,-8],[-12,-10]],[[4790,5433],[-1,2],[0,41],[5,10],[-1,33],[-10,7],[-1,13],[-6,7],[-10,3],[-6,8],[8,15],[1,23],[-5,23]],[[4764,5618],[7,-1],[3,10],[3,27],[-7,4],[2,14],[7,0],[5,-7],[2,15],[-8,9],[1,12],[5,5],[-5,6],[2,13],[-5,-2],[-3,7],[1,32],[4,6]],[[4778,5768],[4,2],[5,14],[5,1],[3,-12],[9,-6],[2,12],[7,-1],[1,18],[8,-5],[-1,8],[5,2],[2,-15],[-2,-13],[6,-3],[3,9],[11,4]],[[5402,5930],[2,-13],[7,-8],[3,-17],[-1,-10],[5,-3],[2,-34],[-2,-3],[-1,-26],[3,-28],[9,-22],[6,-8],[-7,-3],[-9,3],[-10,-4],[-15,3],[-7,-19],[11,-27],[17,-29],[3,-1],[8,-30],[2,-17],[4,-2],[-3,-16]],[[5449,5312],[-3,-5],[2,-25],[-18,15],[-7,3],[-10,-2],[-8,12],[-9,-3],[-27,0]],[[5369,5307],[-6,5],[-48,3],[-1,-7]],[[5314,5308],[-38,0],[-4,10]],[[5272,5318],[0,12],[4,27],[-1,12],[-8,18],[-2,13],[6,11],[-2,8],[-10,-11],[-10,10],[-2,29],[-11,-4],[2,17]],[[5238,5460],[6,19],[1,41],[4,2],[10,24],[10,13],[2,14],[10,13],[3,-8],[7,1],[1,9],[8,-5],[7,-14],[1,-16],[7,1],[6,15],[-1,8],[10,15],[-2,17],[5,9],[0,9],[5,14],[1,25],[16,23],[2,34],[9,9],[2,17],[-1,14],[6,5],[3,30],[12,34],[6,-1],[11,14],[1,37],[-3,10],[-10,4],[-3,40]],[[5390,5936],[7,0]],[[5397,5936],[-1,-11],[6,5]],[[5398,5936],[1,0]],[[5399,5936],[-1,0]],[[5944,7202],[0,0]],[[5944,7202],[-3,0]],[[5941,7202],[0,0]],[[5941,7202],[3,0]],[[5905,7208],[0,1]],[[5905,7209],[1,0]],[[5906,7209],[1,0]],[[5907,7209],[-2,-1]],[[5935,7200],[1,-2]],[[5936,7198],[-7,-1],[-1,11],[-17,-6],[-3,7]],[[5908,7209],[0,0]],[[5908,7209],[3,-5],[17,6],[1,-10],[6,0]],[[5807,5072],[0,-19],[-2,6],[2,13]],[[5762,5475],[2,-10],[7,-8],[0,-10],[16,-18],[12,12],[6,1],[5,-9],[7,12],[0,6],[10,-5],[0,-12],[4,-3],[7,-21],[10,-6],[0,-14],[6,4],[2,-10]],[[5856,5384],[2,-7],[-5,-19],[3,-15],[-4,-19],[8,-3],[8,-13]],[[5868,5308],[-10,-15],[-12,-24],[0,-15]],[[5846,5254],[-7,-6],[-2,-13],[-6,-5],[0,-21],[-3,-7],[-4,-25]],[[5824,5177],[-7,-9],[-3,-12],[1,-13],[8,12]],[[5823,5155],[-1,-6],[-1,-46]],[[5821,5103],[-7,-8],[-3,-9]],[[5811,5086],[-3,1],[-7,-28],[3,-9],[-3,-10]],[[5801,5040],[4,-14]],[[5811,4991],[-2,-3],[-1,-49],[4,11],[-1,-27],[-3,-5],[0,-30],[7,-28],[-1,-13],[-4,-5],[10,-49],[6,-14],[6,-6],[6,-13],[2,-29],[7,-10],[2,-12]],[[5849,4709],[-28,-8],[-19,-7]],[[5802,4694],[-16,-35],[0,-23],[4,-2],[2,9]],[[5792,4643],[4,-21],[-1,-21],[1,-34],[-5,-16],[0,-10],[-4,-17],[4,-25],[9,-11],[6,-17],[14,-4],[-2,11],[9,5],[0,-75],[-5,1],[-1,12],[-10,-10],[-7,1],[-2,14],[-6,17],[-4,-2],[-1,13],[-5,13],[-16,7],[-6,6],[-3,16],[-5,7],[-1,12],[-5,0],[-1,-16],[-7,-8],[-10,6],[-11,0],[-4,7],[-14,8],[0,26],[-17,-7],[-8,-8],[-4,5],[3,14],[-8,6],[-4,9]],[[5366,4846],[-9,2],[-4,-10],[-7,-3],[-7,16]],[[5363,4916],[8,-9],[0,-6],[8,11],[1,14],[7,-2],[12,12],[2,-8],[-3,-7],[1,-20],[9,0],[4,6],[10,27],[8,8],[1,8],[9,4],[10,35],[-1,29],[1,13],[-1,26],[12,25],[0,7],[11,30],[8,5],[12,27],[0,21],[3,25],[3,7],[-2,14],[1,28],[5,27],[-1,34],[16,57],[0,19]],[[5333,4894],[-5,13],[0,10],[-15,33],[-5,6]],[[5308,4956],[2,12],[8,13],[5,-10],[5,-2],[4,22],[-8,9],[3,10],[-7,12],[2,7],[-1,20],[4,-5],[6,5],[4,-5],[11,5],[-1,24],[5,5],[5,-5],[5,-26],[11,-4],[9,13],[1,6],[9,-22],[5,9],[0,20],[5,5],[1,41],[-2,10],[3,23],[-9,9],[-3,11],[-5,0],[0,27],[5,19],[5,0],[6,16],[-5,18],[0,11],[-14,6],[-7,-9],[-7,-3],[-4,22],[2,23],[3,9]],[[3018,5865],[-19,-13],[-7,-27],[-6,-1],[-7,-26],[-5,-13],[-2,-37],[-11,-37],[11,7],[1,-11],[4,2],[4,-28],[8,-16],[1,-19],[-4,-7],[1,-28],[7,-3],[3,-18],[7,-5],[5,4],[18,-4],[9,7],[10,-10],[7,-1],[18,-46],[5,-2],[7,8],[11,-5],[29,8],[4,-18],[-6,-10],[0,-17],[-5,-6],[0,-66],[5,-28],[4,-2],[5,-17],[-15,-35],[7,-6],[11,-18],[0,-12],[4,-17],[5,-39]],[[3056,4939],[-8,22],[-6,-2],[-7,6],[18,59],[0,7],[-26,25],[-10,-10],[-2,7],[-8,7],[-6,-11],[-10,-7],[-8,6],[-9,-5],[-7,8],[2,12],[-2,17],[-10,6],[1,12],[-4,13],[-7,3],[-5,10],[-5,2],[-4,26],[-6,11],[-5,2],[-8,14],[-5,-2]],[[2909,5177],[-11,11],[-3,-1],[-7,15],[-8,7],[-3,-12],[-9,-1],[-19,10],[-1,14],[-7,11],[-11,5],[-13,16],[-7,13]],[[2810,5265],[-5,10],[5,13],[7,-2],[-3,14],[0,13],[7,19],[10,-5],[0,9],[9,-4],[1,22],[12,29],[0,6],[7,20],[-6,-5],[-4,5],[-1,15],[3,16],[-2,57],[-5,2],[9,12],[0,7],[-7,20],[3,5],[1,19],[-5,6],[-3,17],[-7,14]],[[2836,5599],[2,14],[13,12],[1,13],[4,2],[-6,28],[-3,3],[3,11]],[[2850,5682],[12,-31],[1,-12],[5,0],[-1,29],[-4,10],[7,5],[10,15],[6,23],[12,4],[2,15],[-3,1],[3,13],[-1,20],[3,2],[0,16],[8,14],[11,14],[9,-5],[-3,-8],[7,-4],[4,18],[1,14],[10,-3],[15,1],[6,12],[10,13],[13,10],[3,11],[-1,9],[6,1],[12,10],[8,-6],[3,-18],[-6,-10]],[[6235,4487],[1,-17],[-4,8],[3,9]],[[6207,4496],[-7,9],[1,21],[4,1],[-1,-12],[3,-19]],[[4324,6037],[-5,9],[5,2],[0,-11]],[[4340,6065],[8,-16],[-5,-7],[-4,7],[1,16]],[[4365,6116],[5,-8],[-8,-3],[3,11]],[[4303,6173],[3,-6],[-7,-10],[-3,11],[7,5]],[[2676,5812],[7,-32],[16,-36],[7,-10]],[[2706,5734],[-3,-5],[-5,7],[-2,-8],[0,-23],[6,-10],[-5,-4],[2,-19],[-6,-11],[4,-16]],[[2697,5645],[-2,11],[-5,9],[0,15],[-9,5],[5,-10],[0,-10],[-12,12],[3,27],[-8,14],[-10,11],[-11,8],[1,10],[-12,21],[-4,-7],[9,-12],[-6,-16],[-6,15],[-10,5],[-5,19],[1,16],[3,2],[1,15],[-8,5],[7,2],[0,9]],[[2619,5821],[2,7],[21,-15],[5,7],[13,-10],[0,-5],[8,-5],[8,5],[0,7]],[[2698,6446],[5,-3],[4,-17],[-10,-9],[-8,8],[7,1],[-4,15],[6,5]],[[2836,6454],[6,-1],[-1,-7],[-5,8]],[[2823,6481],[-2,-7],[-7,5],[9,2]],[[2914,6329],[-1,4]],[[2913,6333],[-1,0]],[[2912,6333],[-2,-4]],[[2910,6329],[-10,-1],[-15,6],[-21,-3],[-2,-3],[-21,-3],[6,17],[9,10],[3,9],[-8,15],[-19,-1],[-13,20],[-1,18],[-6,16],[-14,-5],[-10,8],[-8,0],[-10,11],[-5,10],[-13,-1],[-13,8],[-13,4],[-7,11],[12,1],[1,7],[-7,6],[-25,1],[-10,-21],[-7,-9],[-15,0],[-2,-15],[-3,2],[-11,-11],[1,10],[-11,-3],[10,9],[5,0],[-2,15],[3,11],[12,15],[14,8],[3,6],[19,3],[9,8],[27,-2],[3,-6],[15,2],[6,-8],[10,1],[11,-12],[9,-20],[15,-1],[13,-13],[5,-1],[7,-16],[12,-5],[-3,9],[12,-16],[5,-11],[23,-17],[0,-5],[12,2],[3,-6],[-5,-10],[2,-9],[20,1],[7,-5],[9,-19],[5,2],[2,-9],[-3,-6],[-13,0],[-10,-9]],[[3089,5876],[-11,16],[3,2],[8,-18]],[[5905,7209],[1,0]],[[5941,7202],[-6,-2]],[[5908,7209],[6,1],[0,11],[14,-4],[17,8],[15,13],[0,-3],[-19,-22],[3,-11]],[[5938,7197],[0,0]],[[5938,7197],[0,0]],[[5937,7198],[0,0]],[[5944,7202],[-3,-6]],[[5941,7196],[0,6]],[[5936,7198],[0,-1]],[[5936,7197],[-3,-9],[-16,-11]],[[5917,7177],[-8,1]],[[5909,7178],[-7,3],[-5,11],[1,9],[7,7]],[[5907,7209],[1,0]],[[5411,8112],[4,8],[9,-9],[14,-7],[6,-6],[12,-3],[-7,-8],[13,-20],[10,7],[-4,12],[9,-2],[19,-24],[4,4],[7,-7],[8,0],[8,-23]],[[5523,8034],[-8,-1],[-12,-15],[-1,-11],[-15,-14],[-9,4],[-8,-15]],[[5383,7990],[-10,11],[-13,20],[-10,9],[-7,17],[3,13],[-5,11],[6,13],[26,11],[3,8],[9,1],[13,9],[-2,8],[15,-9]],[[5255,7927],[0,0]],[[5394,8289],[0,-4]],[[5394,8285],[0,4]],[[5371,8330],[6,-3],[4,-14],[-11,-5],[-6,4],[1,12],[6,6]],[[5262,8339],[4,3],[12,-11],[5,-15],[13,-5],[11,2],[1,-9],[-10,-8],[12,-2],[8,-7],[5,14],[11,2],[14,11],[13,4],[3,-10],[10,-8],[6,2],[3,-17],[13,-10]],[[5396,8275],[3,-23],[-5,-27],[12,-14],[-3,-9],[7,-21],[-4,-20],[2,-11],[7,-4],[2,-14],[-6,-20]],[[5269,7921],[-15,12],[1,-6]],[[5210,7923],[-2,4],[8,55],[9,11],[2,10],[-16,4],[-4,7],[-18,-1],[-13,17]],[[5176,8030],[4,20],[-6,3],[-5,16]],[[5166,8104],[-3,14],[9,22],[0,9],[-8,12],[5,10],[8,-4],[10,5],[8,28],[-10,5],[2,9],[8,1],[4,18],[0,16]],[[5199,8249],[-3,19],[6,6],[21,2],[6,-18],[0,12],[8,-4],[2,20],[9,1],[-8,29],[10,6],[-9,13],[-1,9]],[[5240,8344],[22,-5]],[[6201,5844],[-9,-28]],[[6192,5816],[-6,4],[-22,-7],[-4,8]],[[6160,5821],[0,12]],[[6160,5833],[0,24],[10,22],[7,22]],[[6177,5901],[8,-6],[3,9],[9,11]],[[6197,5915],[6,-14],[2,-25],[-10,-14],[-7,-3],[-3,-11],[13,3],[3,-7]],[[3294,6081],[4,-5],[0,-15],[-3,-3],[-3,16],[2,7]],[[5312,8347],[17,-10],[-1,-7],[-10,-1],[-8,6],[2,12]],[[5348,8350],[-12,-5],[4,7],[8,-2]],[[5272,8355],[7,-12],[-8,2],[1,10]],[[5413,8363],[6,-13],[-9,3],[3,10]],[[5287,8385],[7,0],[6,-15],[-2,-16],[-19,1],[-11,24],[19,6]],[[5342,8415],[7,-3],[0,-22],[-11,-12],[8,-11],[-13,-8],[5,-3],[-8,-10],[8,-5],[-9,-11],[-4,32],[-13,0],[-2,28],[13,12],[5,-13],[14,26]],[[5247,8463],[-2,-13],[-9,0],[11,13]],[[5240,8344],[-2,32],[-14,7],[3,14],[6,5],[-4,11],[-4,-6],[0,34],[16,1],[7,12],[9,-10],[-3,15],[18,12],[-32,-9],[-5,-13],[-7,3],[11,20],[17,1],[9,6],[10,19],[20,10],[-6,-10],[3,-20],[-7,-15],[2,-23],[12,-1],[5,-6],[-6,-16],[-11,2],[-4,-20],[-20,-21],[6,-16],[-7,-5],[8,-8],[-8,-10]],[[3006,6222],[2,16],[-6,10]],[[3002,6248],[0,0]],[[3002,6248],[-1,2]],[[3001,6250],[-1,4]],[[3000,6254],[8,11],[-2,9],[4,12],[-4,32]],[[3006,6318],[3,11],[14,-4],[4,6],[11,-10],[5,1],[4,-8],[11,0],[4,-20],[6,2],[11,-3],[-2,-5],[-11,2],[0,-8],[24,-7],[12,-20],[-9,-23],[-8,11],[-17,0],[-9,4],[-8,-14],[-9,-2],[-3,12],[-9,-8],[-5,2],[1,-9],[-10,-31],[-6,8],[-4,17]],[[5238,7310],[2,-6],[-7,-4],[1,-6],[-8,-8],[6,-5],[-4,-35],[3,-10],[-1,-19],[4,-5],[-4,-8],[-3,-30],[-11,-11],[-1,-9],[-7,-8],[-1,-14],[7,-25],[0,-11],[10,-7],[6,-15],[2,-20],[19,-24],[7,-62],[6,-44]],[[5264,6924],[-7,-7],[11,-29],[5,-37],[-2,-44],[4,-19],[-5,-34],[2,-21],[3,-4],[-2,-20],[-10,-9],[-3,-10],[18,-52],[0,-25],[5,-5],[1,-10],[6,-6],[7,5],[21,-13],[3,-4],[11,-43]],[[5332,6537],[-28,-35],[-99,-122],[-24,-40],[-17,-32],[-8,-8],[-39,-15]],[[5117,6285],[-26,-9],[-5,7],[4,15],[-2,11],[1,14],[-8,8],[-12,4],[-9,16],[-2,-4],[-9,5],[-4,14],[-14,12],[1,19],[-14,18],[-28,40],[-8,9],[-36,49],[-21,30],[-8,9],[-51,70]],[[4866,6622],[-64,78],[-16,21],[-28,33]],[[4758,6754],[0,22]],[[4758,6776],[0,59],[12,18],[18,22],[7,0],[8,8],[10,0],[27,5],[6,-5],[7,21],[11,17],[11,11],[6,11],[17,8],[3,14],[-8,21],[4,4],[1,15],[23,9],[-3,14],[12,5],[35,-3],[0,17],[6,7],[-11,14],[-4,11],[2,8],[-5,10],[2,18],[-4,8],[2,24],[-4,15],[3,6],[-4,7],[2,9],[-12,19]],[[4938,7203],[8,0],[18,16],[2,12],[11,12],[8,0],[1,7],[6,-5],[8,2],[5,15],[24,22],[25,4],[10,4],[8,-2],[11,13],[3,-4],[12,2],[9,8],[21,-1],[13,-7],[8,-8],[10,11],[14,5],[6,10],[12,-12],[8,2],[0,9],[9,-1],[7,-10],[13,4],[10,-1]],[[2774,5010],[-4,-1],[0,11],[5,9],[5,-3],[-6,-16]],[[2519,5143],[-4,-14],[-5,0],[9,14]],[[2493,5154],[0,-14],[-8,2],[1,11],[7,1]],[[2459,5168],[2,-12],[-7,2],[-1,8],[6,2]],[[2478,5174],[6,-6],[-5,-6],[-4,5],[3,7]],[[2463,5192],[4,-22],[6,-11],[-1,-9],[6,-10],[-4,-13],[-13,-3],[-3,10],[12,14],[-9,21],[-3,18],[5,5]],[[2909,5177],[-10,0],[6,-20],[4,-4],[-1,-13],[2,-13],[-5,0],[-4,-27],[-15,-40],[-16,-25],[-33,-24],[-9,-21],[1,-7],[-6,5],[-1,-22],[-8,-31],[-1,-17],[-4,-3],[-1,-12],[-4,-7],[-8,2],[-5,16],[0,9],[-8,2],[-9,11],[-8,-11],[-2,5],[4,10],[-5,9],[10,10],[-2,22],[-3,6]],[[2768,4987],[11,12],[6,40],[-3,5],[-4,-11],[-1,15],[-7,-22],[-11,18],[-7,5],[5,13],[-1,22],[-2,5],[2,15],[-4,19],[10,7],[3,21],[-1,11],[12,24],[1,31],[-2,13],[12,11],[19,9],[4,15]],[[5949,6986],[2,-6]],[[5951,6980],[17,-99]],[[5968,6881],[-4,-12],[-3,-33],[-5,-16],[0,-26],[-5,-14],[-13,15],[-6,17],[-10,16],[-1,26],[-8,12],[-5,14],[-2,23],[-4,-1],[-4,-16],[6,-10],[3,-16],[0,-14],[4,-6],[14,-42],[5,-5],[5,-36],[4,-4],[5,-25],[0,-11],[11,-43],[15,-51],[8,-35],[15,-29],[-8,3],[2,-41],[3,-16],[6,-13],[10,-6],[2,-8],[16,-29]],[[6024,6449],[-78,0],[-73,0],[0,14],[-6,-14],[-57,0],[-71,0],[-46,0]],[[5693,6449],[0,421],[-3,10],[-1,24],[-4,13],[6,20],[3,17],[-4,22],[0,14],[8,16]],[[5698,7006],[1,-7],[7,-2],[12,7],[14,-6],[27,-8],[1,-7],[8,-5],[5,4],[4,-9],[21,-6],[8,-9],[13,7],[16,22],[4,-4],[4,14],[3,-3],[11,6],[-9,-10],[9,2],[7,11],[13,-9],[8,5],[-3,-15],[7,-4],[1,-7],[6,2],[0,9],[6,-10],[7,-4],[31,7],[9,9]],[[6111,6097],[3,-11],[8,-6],[-12,2],[-2,8],[3,7]],[[6177,5901],[-6,15],[-8,12],[-5,18],[-14,19],[-7,23],[-5,10],[-10,7],[-5,9],[-9,-1],[-10,9],[-10,-6],[-5,10],[-3,-8],[-13,-5],[-6,16],[-3,-1],[-6,12],[-9,-45],[-6,19],[-5,1],[-2,-8],[-10,1],[-6,-4]],[[6014,6004],[-3,51],[6,17],[1,18],[3,5],[5,24],[-2,23],[3,6],[-1,17],[12,-2],[3,17],[21,13],[5,18],[5,9]],[[6072,6220],[9,-35],[0,-9],[6,-31],[1,-24],[3,-23],[4,-4],[0,-17],[5,-2],[2,-22],[4,-1],[-2,18],[3,4],[6,-7],[0,-17],[6,-8],[3,5],[6,-3],[3,-12],[12,-6],[12,-31],[2,-9],[9,-6],[3,-12],[3,1],[4,-13],[1,-13],[4,2],[6,-13],[0,-8],[10,-9]],[[5941,7196],[-3,1]],[[5938,7197],[-2,0]],[[4503,6784],[-3,-9],[-5,3],[8,6]],[[4571,6803],[1,-17],[-5,-6],[-6,6],[2,19],[8,-2]],[[4552,6828],[-7,-11],[-2,-14],[-7,-8],[-6,21],[12,4],[4,8],[6,0]],[[4604,6803],[7,35],[5,-4],[-4,-26],[-8,-5]],[[4503,6844],[4,-7],[-3,-16],[-4,14],[3,9]],[[4626,6861],[0,-6],[-9,-10],[-1,11],[10,5]],[[4919,7214],[-1,3]],[[4918,7217],[1,-3]],[[4851,7247],[-1,5]],[[4850,7252],[1,-5]],[[5043,7435],[2,-6],[-6,-9],[-6,2],[10,13]],[[5088,7483],[0,-11],[8,0],[-7,-23],[-4,-6],[-8,7],[-3,10],[-9,0],[9,14],[14,9]],[[5114,7490],[6,-11],[-3,-3],[-12,12],[9,2]],[[5055,7627],[0,0]],[[4950,7681],[11,-8],[1,-9],[16,-8],[6,-11],[6,3],[8,-7],[20,0],[0,9],[18,-7],[3,-7]],[[5047,7630],[8,-9],[8,4],[6,-5],[12,8],[7,-3]],[[5088,7625],[4,-5],[-6,-6],[3,-18],[-4,-6],[-23,-20],[-3,-10],[-17,-6],[-15,-8],[-8,-13],[5,-6],[-8,-7],[-7,-18],[-8,-14],[-11,-32],[3,-21],[6,-15],[7,-7],[-21,-22],[-9,-36],[4,-6],[-19,-4],[-12,-20],[-2,-15],[-7,-12],[-5,6],[-7,-1],[-3,-8],[-6,4],[-42,-1],[-7,-13],[-15,-5],[-4,-16]],[[4851,7264],[0,0]],[[4851,7264],[-6,-7],[-14,11],[-9,24],[-2,18],[-12,13],[-14,2]],[[4794,7325],[-3,18],[7,27],[6,2],[3,10],[-5,0],[-6,14],[1,17],[6,6],[3,12],[-5,3],[-5,22],[-6,12],[14,0],[4,14],[-4,17],[7,8],[-1,30],[-3,6],[8,16],[6,4],[6,14],[-10,6],[0,16],[-16,2],[-2,-7],[-11,-3],[-3,3],[-13,-3],[3,13],[-4,6],[-15,-10]],[[4756,7600],[-4,7],[8,12],[-7,6],[1,13],[-6,-4],[1,10],[-7,18],[12,17],[5,-3],[11,5],[-2,4],[13,17],[6,2],[13,-13],[36,2],[14,-2],[17,-9],[16,0],[17,6],[3,-6],[11,-2],[10,4],[16,-8],[10,5]],[[5628,8557],[8,2],[12,-10],[-17,-13],[-15,-4],[-10,7],[0,13],[22,5]],[[5631,8581],[8,-10],[-15,-8],[-3,11],[-9,4],[19,3]],[[5778,8608],[4,-7]],[[5782,8601],[-5,-1]],[[5777,8600],[3,-1]],[[5780,8599],[-7,-9]],[[5773,8590],[-4,-10]],[[5769,8580],[-12,1],[-9,-8],[13,-28],[6,-22]],[[5767,8523],[5,-8],[-7,-3],[-6,-16]],[[5759,8496],[-14,5],[-8,-6],[-15,19],[-26,13],[-21,-12]],[[5675,8515],[7,26],[-10,-3],[-13,5],[-6,13],[-3,20],[6,3],[-5,14],[18,5],[6,10],[30,1],[8,10],[35,-13],[27,-2],[3,4]],[[6160,5833],[0,-12]],[[6192,5816],[-8,-22],[5,-23],[5,-13],[6,-8],[1,-13],[4,-12],[5,-4],[12,-21],[51,-34],[31,-23],[28,0]],[[6332,5643],[-21,-43],[-31,-61],[-14,-31],[-14,-34],[-5,-9],[-27,3],[-20,-14],[-8,-12],[-1,-8],[-9,-7],[-12,-2],[-7,-13]],[[6163,5412],[-19,-3],[-3,2],[-9,19],[-26,-24],[-8,-27],[-25,12],[-15,0],[-7,11],[-28,36],[-23,1],[-3,10]],[[5997,5449],[-4,8],[0,27],[-2,9],[-11,-2],[-1,9],[-5,7],[-3,12],[0,13],[-4,11],[-3,24],[-6,5],[0,8],[-6,4],[-7,24],[-9,16],[-19,8],[-1,9],[5,9],[0,17],[12,3],[2,-5],[7,3],[5,9],[-1,50]],[[5946,5727],[4,33],[3,9],[-1,22],[7,18],[6,-7],[5,5],[0,25],[4,16],[-1,14],[6,8],[2,12],[11,31],[11,1],[0,19],[3,19],[6,24],[2,28]],[[5634,8649],[-3,-11],[-9,9],[12,2]],[[5804,9158],[-14,-7],[8,-9],[-8,-12],[7,-21],[18,-7],[18,-21],[-2,-10],[-23,-30],[-1,-9],[13,-20],[11,-25],[5,-23],[-10,-1],[2,-32],[-7,-6],[6,-11],[9,-1],[-2,-23],[14,-8],[1,-11],[-17,-18],[14,-16],[21,-15],[9,-17],[-9,-24],[-25,-28],[-15,-23],[-18,-22],[-10,-7],[-27,-31]],[[5772,8670],[-31,-8],[-19,-2],[-8,-8],[-15,0],[-6,-6],[-38,-11],[-10,-6],[-10,17],[3,10],[-12,-6],[2,10],[-10,0],[-12,14],[-5,-7],[-8,8],[-2,23],[5,3],[3,23],[-5,25],[-5,3],[3,22],[-6,2],[3,27],[13,9],[-5,12],[11,-3],[13,8],[-5,9],[17,9],[3,10],[13,6],[10,18],[17,18],[5,16],[25,8],[-4,14],[2,17],[-33,19]],[[5671,8973],[-15,37],[10,20],[-12,20],[5,16],[-7,26],[5,3],[-23,26],[-21,5],[-41,32]],[[5572,9158],[12,1],[7,14],[10,-2],[21,-31],[22,-6],[20,12],[27,-15],[7,13],[18,12],[-1,17],[6,22],[15,15],[16,-2],[22,10],[17,-16],[18,-7],[6,-12],[-14,-14],[3,-11]],[[9954,4093],[-5,-13],[-7,0],[12,13]],[[9951,4184],[0,-5],[9,-12],[2,-26],[-10,-2],[-3,-6],[-10,-2],[-15,11],[-1,12],[5,7],[-2,6],[7,12],[18,5]],[[0,4252],[9987,-23],[-2,-11],[4,2],[7,14],[0,-17],[-16,-2],[-1,7],[-11,-10],[-4,-9],[-7,15],[12,16],[13,4],[2,8],[-9984,6]],[[3351,2225],[4,-3],[-17,-28],[-11,-4],[-4,-11],[-8,-4],[-11,12],[16,3],[-4,17],[12,1],[-13,15],[11,-5],[9,6],[15,-3],[1,4]],[[3368,2227],[7,2],[4,-8],[12,3],[4,-18],[-17,-11],[-16,0],[8,-4],[-12,-6],[1,-10],[-11,5],[3,-11],[-9,12],[6,17],[13,11],[-3,14],[10,4]],[[6541,3981],[5,-2],[5,-13],[-1,-13],[-7,-1],[-6,6],[-4,14],[8,9]],[[6252,4454],[4,-5],[-1,-13],[-3,-1],[0,19]],[[3483,5317],[7,10],[4,16],[2,29],[4,19],[-10,24],[-3,26],[-1,25],[4,16],[5,9]],[[3495,5491],[3,5],[3,18],[12,-10],[11,-4],[6,-6],[10,-19],[22,-31],[3,-18],[-1,-11]],[[3306,6034],[4,-11],[-1,-7],[-9,13],[1,11],[5,-6]],[[3288,6120],[2,-14],[-4,-5],[-3,22],[5,-3]],[[3295,6124],[5,-5],[-9,-3],[1,18],[3,-10]],[[5262,7641],[2,-7],[1,-27],[-4,-7],[-2,-24],[-7,-9],[-8,9],[3,8],[-7,3],[2,19],[-5,15],[3,10],[13,13],[6,-1],[3,16],[0,-18]],[[5160,8036],[5,-6],[11,0]],[[5172,7849],[16,7]],[[5195,7827],[-7,-5],[5,-18],[5,-6],[-2,-11],[-13,-6],[3,-11],[8,-5],[1,-9],[-6,-11],[4,-14],[10,-7],[9,3],[-4,-22]],[[5208,7705],[-2,-3]],[[5206,7702],[-2,-1]],[[5204,7701],[-11,-10],[-9,-23],[-14,-6],[-22,9],[0,7],[-15,1],[-7,6],[-11,0],[-5,6],[-13,-17],[-10,-6],[-3,-9],[0,-26],[4,-8]],[[4950,7681],[9,13],[6,48],[-1,11],[4,49],[11,-11],[0,8],[-14,16],[3,6],[1,26],[-20,14],[-9,18],[4,14],[-5,12],[-8,1],[-3,15],[-6,-3],[-11,11],[-18,6],[-4,6],[-11,-5],[0,7],[-9,7],[12,5],[-14,12],[1,13],[10,6],[22,0],[2,9],[12,2],[10,-20],[12,9],[16,-4],[4,8],[-1,28],[-6,8],[0,18],[16,0],[-1,-11],[5,-6],[30,-4],[8,7],[-5,3],[2,11],[10,9],[18,7],[11,15],[0,37],[10,8],[17,4]],[[4800,8771],[13,-21],[-14,13],[1,8]],[[4808,8772],[9,-11],[-11,3],[2,8]],[[9394,5584],[3,-9],[-4,-1],[1,10]],[[5308,4956],[-3,13],[-10,15],[0,9],[-17,28],[-8,19],[7,-8],[5,3],[-8,8],[-7,1],[-2,13],[-9,21],[1,10],[8,2],[-2,7],[-4,-5],[-9,16],[-1,11],[-6,18],[5,6],[2,-7],[2,12],[6,13],[1,14],[-1,27],[2,-7],[11,-2],[-8,7],[-5,19],[9,-6],[-2,24],[3,7],[4,-4]],[[5272,5240],[6,1],[36,-1],[0,68]],[[4964,8107],[6,-6],[-7,-6],[-6,6],[7,6]],[[4883,8252],[-4,-10],[-6,16],[10,-6]],[[4825,8298],[-11,-2],[-8,20],[-10,-17],[-14,5],[-9,13],[11,10],[-5,6],[11,2],[8,19]],[[4798,8354],[20,10],[13,-2],[0,-8],[18,-35],[-7,-6],[-11,-19],[-6,4]],[[4857,8375],[-7,14],[7,-1],[0,-13]],[[4830,8398],[2,-9],[-7,-6],[-6,6],[1,10],[10,-1]],[[4839,8409],[-5,-13],[-4,6],[9,7]],[[4832,8443],[11,-10],[-2,-5],[-18,-4],[7,10],[-7,5],[9,4]],[[4795,8489],[3,-18],[-4,1],[1,17]],[[4800,8503],[1,-8],[-10,7],[9,1]],[[4824,8506],[5,-20],[14,-6],[-9,-6],[-10,1],[-13,15],[11,5],[2,11]],[[4827,8543],[-5,-20],[-16,-15],[3,11],[-7,3],[2,15],[23,15],[0,-9]],[[4907,8560],[9,0],[-6,-20],[-22,-20],[6,-7],[-8,-14],[22,8],[20,-3],[16,2],[7,-13],[-6,-9],[-6,-24],[-9,-18],[-10,-8],[8,-10],[-21,-15],[9,-4],[11,6],[13,-8],[14,-19],[4,-29],[8,-27],[19,-9],[4,-13],[8,-7],[-4,-5],[11,-24],[-7,1],[12,-23],[-7,-19],[8,-7],[5,11],[20,-2],[11,-10],[3,-16],[-5,-24],[-4,0],[-14,-26],[-11,-12],[12,-3],[13,1],[-3,-14],[-11,-13],[-5,1],[-14,-11],[-12,6],[-18,-6],[-3,7],[-18,-7],[-14,-1],[2,-8],[-27,9],[-13,-6],[-2,-17],[-8,-7],[-11,10],[-16,-3],[-12,-21],[-8,10],[19,25],[7,14],[1,12],[6,-1],[2,11],[12,3],[11,-4],[11,2],[8,20],[-23,-9],[-8,12],[-13,-3],[0,6],[-10,3],[-8,-7],[-10,18],[13,6],[20,18],[2,9],[-2,24],[-17,-4],[11,12],[5,11],[27,10],[8,19],[-4,11],[5,2],[-1,14],[-9,-6],[-11,23],[9,26],[-19,-10],[-11,5],[1,-10],[-13,10],[-5,-5],[-1,21],[11,19],[-15,29],[-8,-15],[-4,-23],[-5,-1],[3,22],[-1,18],[5,24],[8,18],[-12,-13],[-5,11],[0,17],[5,10],[-6,19],[7,25],[12,0],[-5,20],[11,21],[20,-6],[26,7]],[[4912,8589],[-2,-13],[-4,10],[6,3]],[[4964,8673],[4,-27],[-15,5],[9,7],[2,15]],[[6206,7550],[-23,27],[-5,-9],[-8,5],[-9,-5],[-8,5]],[[6153,7573],[7,17],[-8,51],[-10,6],[-3,11],[-21,13],[-8,10]],[[6110,7681],[2,9],[16,0],[27,-19],[21,2],[7,-6],[6,1],[10,-14],[17,-9],[-2,-8],[6,-4],[16,12],[7,-8],[4,8],[11,-14],[11,0],[-2,-18],[8,-10],[14,-9]],[[4995,5824],[5,-3],[-3,-26],[10,-13],[3,-27],[-4,-30],[8,0],[-2,-24],[2,-8],[-4,-8],[9,-19],[-3,-11],[0,-28],[-3,-15],[4,-3],[-1,-23],[-3,-2],[6,-28],[8,-9],[5,-13]],[[5032,5534],[-7,-19],[-15,1],[-21,-17],[-12,-16],[-6,0],[-6,-7],[-11,-5],[-10,-15],[-7,8],[-24,12]],[[4913,5477],[8,2]],[[4851,7264],[0,0]],[[4683,5897],[-3,-14],[6,-9],[6,11],[4,0],[8,-17],[4,13],[5,5],[16,-11],[2,7],[14,19],[5,-5],[2,-20],[3,-1],[-1,-21],[13,-17],[-9,-23],[5,5],[6,-3],[0,-28],[9,-12],[0,-8]],[[4764,5618],[-6,8],[-1,-12],[-11,-17],[-5,13],[-4,0],[3,19],[-5,25],[0,11],[-8,10],[-7,-7],[-6,3]],[[4714,5671],[-3,1],[-5,-11],[-3,4],[5,15],[-3,10],[0,15],[-4,1],[2,13],[-15,39],[-19,0],[-17,-7],[-5,-26],[-12,-21],[-5,-1]],[[4630,5703],[4,8],[-12,23],[0,12],[-4,-2],[-6,13],[-20,29],[4,20],[-5,-10],[-3,21],[-4,-14],[-2,11]],[[4582,5814],[8,30],[12,8],[16,4],[0,19],[-6,11],[7,3],[-1,24]],[[4618,5913],[19,-3],[-1,-8],[17,-6],[3,-5],[7,6],[20,0]],[[4534,5935],[-2,17],[4,7],[8,-14],[5,5],[-8,2],[-1,13]],[[4540,5965],[29,0],[4,12],[7,2],[8,-5],[2,-7],[6,1],[4,-10],[12,7],[3,-14],[-15,-6],[-5,7],[-11,6],[-6,7],[-1,-9],[-5,-4],[-12,-1],[0,-11],[-24,1],[-2,-6]],[[4553,5826],[1,-7],[-6,3],[5,4]],[[4582,5814],[-1,9],[-5,-7],[-7,20],[5,15],[8,-2],[-9,7],[-2,-8],[-3,8],[2,11],[8,-1],[-5,6],[-6,-7],[-11,-6],[3,14],[-7,-6],[-6,6],[1,13],[-5,-2],[-7,9]],[[4535,5893],[14,7],[15,-1],[13,14],[41,0]],[[5272,5240],[-3,6],[-10,3],[3,15],[10,28],[0,26]],[[5243,5399],[5,-8],[-8,-24],[-6,4],[0,10],[4,1],[1,11],[4,6]],[[5663,7229],[13,-11],[9,5],[22,-8],[8,3],[-1,-12],[9,6],[7,-7],[-2,-5],[-25,-2],[-16,-4],[0,9],[-10,6],[-24,5],[1,17],[4,5],[5,-7]],[[5756,7245],[-1,-17],[-3,-5],[4,22]],[[5640,7268],[-4,-2],[0,12],[4,-10]],[[5784,7281],[-5,-19],[-8,-12],[-2,13],[5,13],[10,5]],[[5710,7319],[-4,-10],[-2,10],[6,0]],[[5731,7350],[-10,-7],[2,7],[8,0]],[[5748,7357],[-5,-6],[-5,6],[10,0]],[[5576,7363],[5,-7],[-4,-5],[-5,10],[4,2]],[[5690,7366],[3,-13],[-8,16],[5,-3]],[[5571,7398],[6,-23],[-8,2],[-3,14],[5,7]],[[5723,7405],[3,-16],[-4,-9],[-5,25],[6,0]],[[5651,7423],[11,-14],[8,0],[5,-29],[7,0],[0,-10],[-7,1],[-8,23],[-11,0],[-1,9],[-12,17],[-9,-1],[13,12],[4,-8]],[[5733,7446],[6,-17],[-13,0],[4,10],[-10,-4],[-2,8],[13,8],[2,-5]],[[5553,7474],[-2,-18],[-5,18],[7,0]],[[5706,7488],[-2,-14],[-9,3],[0,9],[11,2]],[[5688,7522],[-8,1],[4,10],[4,-11]],[[5586,7536],[18,3],[4,11],[23,3],[5,10]],[[5731,7585],[7,-8],[1,-14],[-8,-6],[0,-15],[-8,-13]],[[5723,7529],[-3,5],[-11,2],[-11,8],[-12,-10],[-8,6],[-9,-12],[-11,1],[4,-19],[-4,-10],[8,-6],[-1,-11],[-9,17],[-8,0],[0,-6],[10,-14],[-9,6],[-2,14],[-12,9],[0,14],[-6,-6],[-3,-28],[8,-15],[2,-11],[5,-6],[7,-17],[-11,9],[-4,-7],[6,-16],[-9,-6],[17,-11],[0,-9],[8,-2],[13,-15],[-2,-5],[2,-25],[-3,-1],[-12,22],[-15,-11],[5,-3],[0,-11],[10,-10],[-11,-8],[-11,16],[0,-8],[7,-21],[3,-20],[0,-17],[-11,22],[-5,-6],[-4,-14],[0,13],[-6,19],[-6,-1],[0,-14],[-7,3],[-3,13],[3,14],[-3,15],[-13,17],[7,16],[7,2],[6,9],[19,-10],[10,-12],[9,10],[-5,6],[-17,14],[-1,-6],[-12,4],[-12,-7],[-4,8],[-8,-4],[-5,24],[-4,-1],[-1,16],[-13,20],[-2,14],[-5,4]],[[5583,7526],[0,0]],[[5582,7531],[4,5]],[[3288,5876],[-5,-2],[5,13],[0,-11]],[[3786,8632],[-12,-4],[4,9],[8,-5]],[[3787,8645],[3,-11],[-11,4],[-4,10],[12,-3]],[[3846,8835],[12,-11],[-9,0],[-12,15],[9,-4]],[[3579,8886],[3,14],[6,-4],[-9,-10]],[[3876,8910],[-1,-14],[-10,26],[11,-12]],[[3961,8973],[2,-9],[-18,-2],[0,10],[16,1]],[[3583,9209],[9,-5],[-9,-16],[-11,9],[11,12]],[[3535,9210],[20,-7],[5,-10],[-9,-9],[-40,-14],[-19,9],[8,9],[-21,2],[3,11],[-6,23],[14,9],[30,-7],[15,-16]],[[4292,9258],[5,-6],[-22,-8],[-56,-5],[5,12],[24,14],[11,0],[27,11],[6,-18]],[[3513,9274],[-13,6],[9,10],[4,-16]],[[3537,9281],[-14,10],[21,1],[-7,-11]],[[3472,9375],[-13,-11],[-4,9],[17,2]],[[4335,9380],[22,-3],[33,-25],[-20,4],[17,-11],[-5,-9],[-50,20],[-10,8],[0,15],[13,1]],[[4354,9391],[36,-8],[-3,-13],[-17,-1],[-14,11],[-38,1],[0,5],[36,5]],[[4333,9407],[21,-8],[-47,6],[55,-12],[-48,-4],[-29,9],[13,12],[35,-3]],[[4418,9469],[11,-1],[11,-14],[-32,-5],[-18,7],[3,8],[25,5]],[[4439,9496],[13,-2],[-12,-10],[-14,7],[13,5]],[[4505,9520],[-7,-8],[21,-2],[-15,-6],[-30,-2],[2,17],[29,1]],[[4481,9596],[3,-41],[-16,34],[13,7]],[[2994,9643],[23,-5],[-21,-3],[-2,8]],[[4445,9674],[18,-11],[-32,9],[14,2]],[[4519,9788],[-33,-16],[-26,9],[49,14],[10,-7]],[[3575,9904],[-53,7],[4,13],[49,-20]],[[3722,9942],[44,-15],[-28,-11],[-44,11],[-20,15],[48,0]],[[3880,9983],[38,-14],[-47,9],[9,5]],[[4105,9998],[43,-1],[139,-17],[-12,-6],[-116,-3],[-142,-14],[100,5],[47,8],[96,-4],[39,6],[2,-18],[34,4],[72,-17],[-31,-17],[-54,-4],[-152,-7],[-81,-17],[1,-9],[30,8],[107,13],[89,-4],[-3,-12],[-44,-9],[-2,-11],[85,20],[2,14],[51,4],[11,-19],[-7,-14],[-56,-36],[-16,-18],[53,26],[58,30],[75,-8],[37,24],[53,-1],[57,-12],[13,-8],[-64,-27],[-24,0],[7,-12],[-31,-8],[-46,1],[36,-15],[-18,-11],[-40,-3],[-44,6],[-25,-22],[11,-12],[20,3],[-9,-21],[17,-12],[-27,-8],[0,-11],[-28,-2],[-11,-42],[-18,-22],[18,0],[10,17],[51,-16],[-6,-10],[-19,10],[-22,-2],[38,-26],[10,6],[21,-5],[2,-18],[-10,-12],[-35,13],[-27,-3],[-24,-13],[-13,12],[-14,-8],[10,-12],[18,1],[0,-16],[19,4],[30,-4],[6,-11],[-15,-4],[21,-14],[3,-29],[-17,-4],[-4,9],[-16,-2],[-26,17],[8,-12],[24,-14],[-8,-27],[30,-5],[7,6],[13,-11],[-18,-15],[-16,2],[-7,11],[-36,-2],[-11,-18],[9,-27],[-2,21],[9,3],[36,-10],[-7,-26],[-28,3],[-18,-14],[-36,11],[-14,9],[-1,13],[-10,-16],[-25,-4],[-17,-16],[24,-7],[-16,-14],[22,-6],[6,-12],[-19,-7],[21,1],[23,-15],[33,-16],[-17,-14],[20,9],[14,-3],[-17,-11],[2,-17],[9,14],[10,-1],[0,-35],[8,-18],[-13,-10],[-11,3],[-7,22],[-2,-22],[-19,0],[-16,10],[-9,27],[-24,13],[-15,14],[-20,5],[-16,-3],[-26,23],[-16,-2],[31,-13],[-8,-6],[26,-8],[25,1],[11,-12],[-16,-13],[-24,-7],[-44,2],[14,-7],[-11,-17],[2,-11],[40,7],[13,-6],[-17,-3],[-27,-14],[-16,-3],[34,-3],[11,16],[15,-4],[29,13],[23,-11],[25,-7],[33,0],[0,-8],[-14,0],[-4,-12],[-19,-2],[1,-10],[-13,-8],[-17,-1],[2,-9],[-26,-21],[-31,-10],[-13,-9],[-23,1],[1,-6],[-24,-7],[-9,4],[-5,-11],[-18,10],[-1,-16],[-30,-3],[-30,17],[6,-17],[-4,-12],[-11,1],[-16,-12],[-12,-33],[-13,-5],[-1,-15],[-27,-26],[-15,-2],[-14,-18],[-13,3],[-20,-12],[-17,14],[15,16],[-12,0],[-7,-21],[-14,-1],[8,-16],[-17,1],[-7,-6],[-8,9],[-14,-12],[2,-15],[-14,-14],[-10,8],[-13,-3],[1,-12],[14,-11],[-1,-13],[-13,-9],[-12,1],[3,-8],[18,-1],[7,-27],[-13,0],[6,-7],[-18,-12],[-13,6],[12,-15],[-4,-15],[-21,-8],[-6,-11],[9,-15],[-21,9],[12,-11],[9,-1],[-8,-21],[11,5],[-6,-22],[-8,-6],[7,-7],[-17,-13],[9,-6],[-3,-17],[-20,3],[20,-7],[-12,-15],[-11,5],[14,-18],[0,-9],[-29,6],[-13,-12],[-12,10],[3,19],[-9,0],[6,10],[-15,-11],[-11,20],[6,8],[-3,10],[-10,-9],[-22,-8],[3,7],[-19,-8],[-17,0],[14,12],[-20,6],[-4,9],[7,5],[-20,5],[-1,9],[-10,13],[8,10],[-10,16],[-15,2],[-8,9],[5,28],[-12,7],[15,8],[-28,-3],[-2,19],[-11,10],[3,23],[-6,8],[14,-1],[13,13],[6,16],[9,-13],[-4,16],[-11,4],[-15,-12],[2,10],[-19,-33],[-9,0],[1,29],[22,16],[-10,2],[-8,-13],[-23,50],[-12,0],[-4,23],[19,15],[18,9],[21,21],[-21,-13],[-3,-7],[-33,-23],[-9,1],[1,22],[11,11],[16,-1],[5,10],[-34,3],[-6,14],[49,13],[17,-3],[12,6],[-28,-2],[-28,-7],[-21,-2],[2,10],[25,18],[15,2],[12,-7],[24,4],[-49,5],[-24,-17],[0,18],[22,10],[-5,12],[15,-1],[16,-8],[21,2],[-6,8],[7,12],[-13,0],[9,-8],[-31,-6],[-3,7],[-15,-1],[13,14],[18,4],[23,-2],[-5,11],[7,22],[16,-8],[0,19],[-17,-7],[10,18],[-2,11],[15,4],[-8,11],[-24,0],[-25,5],[-25,17],[-22,4],[-15,18],[11,6],[48,-8],[25,-15],[24,-6],[5,11],[-14,-6],[1,16],[-24,21],[17,-6],[-5,9],[-22,-1],[16,9],[-4,6],[-19,-12],[5,13],[24,4],[-8,4],[-21,-8],[-7,9],[25,4],[-41,6],[-4,7],[-14,-11],[0,-11],[-14,-5],[-24,1],[-17,17],[17,13],[-8,8],[19,13],[-21,11],[17,5],[10,12],[-3,15],[-18,4],[4,18],[-30,38],[7,13],[-16,5],[7,11],[-21,13],[4,8],[-31,10],[-14,17],[13,3],[-7,17],[-16,-2],[-4,10],[-26,9],[-17,-2],[-4,9],[-42,5],[-31,8],[-6,-11],[-27,5],[1,-9],[-35,-1],[7,10],[-15,1],[-6,-12],[-18,11],[-7,-6],[23,-12],[-58,9],[-30,15],[36,17],[-57,7],[-26,11],[12,12],[50,5],[21,6],[50,-3],[14,9],[-19,13],[-24,-11],[-45,-4],[-29,6],[21,8],[-33,-1],[13,9],[-30,-4],[-44,23],[8,21],[91,16],[8,10],[43,9],[42,-2],[31,23],[-5,30],[-56,2],[-12,15],[39,20],[28,7],[8,12],[46,13],[44,-9],[16,6],[6,19],[-19,15],[104,24],[90,11],[24,-14],[-6,-33],[24,17],[-1,11],[85,-18],[-31,13],[44,0],[-31,12],[-15,20],[65,-8],[77,-19],[22,-14],[25,1],[-8,28],[38,-1],[-68,26],[132,2],[-157,7],[28,14],[74,4],[6,5],[54,-17],[95,1],[-42,3],[53,5],[-49,3],[0,13],[180,11]],[[2530,6098],[8,-8],[4,5],[7,-7]],[[2549,6088],[-17,-28],[-9,-9],[-2,-15],[2,-14],[-6,-9]],[[2517,6013],[-6,-1],[2,-10],[-5,-3],[-10,-17],[-1,-9]],[[2497,5973],[-15,12],[-19,1],[-9,9],[-17,25]],[[2437,6020],[3,7],[-1,33],[1,10],[11,38],[36,0],[2,20],[-7,4],[-4,17],[-8,7],[-1,7],[-9,13],[12,0],[1,33],[50,0]],[[9022,5957],[-2,-11],[-3,10],[5,12],[4,-3],[-4,-8]],[[3409,5499],[-2,-9],[4,-10],[-2,-8],[-13,-2],[-5,-8],[2,-9],[-6,-39],[4,-7],[2,-13],[5,-8],[0,-8],[10,0],[2,-28],[6,-15],[0,-8],[9,-27],[6,-5]],[[3312,5482],[-18,43],[8,14],[-2,28],[9,7],[5,-2],[11,21],[-7,0],[-5,21],[5,19],[5,3],[15,22],[-6,18]],[[3332,5676],[4,-9],[7,-3],[15,-20],[17,-36],[1,-15],[-4,-18],[1,-10],[3,13],[4,2],[10,-8],[9,-18],[2,-9],[6,-1],[5,-11],[0,-27],[-3,-7]],[[8172,6482],[5,-7],[-5,-9],[-9,5],[5,9]],[[7037,2130],[10,-6],[-7,-4],[-3,10]],[[2691,6046],[-12,-1],[-4,-8],[-12,-4],[-8,-7],[-8,2],[-3,9],[-6,-6],[-4,-11],[0,-12],[-5,-3],[-5,-13],[-6,-5],[0,-7],[-8,9],[-8,-14],[-13,-2],[2,-26],[-6,-2],[0,-10],[-11,-5]],[[2574,5930],[-4,22],[-10,3]],[[2560,5955],[3,17],[-2,12],[-6,-1],[-3,6],[-10,-8],[0,7],[-7,3],[-8,17],[-10,5]],[[2549,6088],[8,9],[7,2],[7,-7],[2,4],[12,-6],[4,3],[12,-1],[13,11],[15,-6],[11,6],[18,-9],[13,-22],[-8,6],[10,-19],[8,0],[-7,9],[9,-6],[4,-13],[4,-3]],[[5512,7634],[1,-9]],[[5513,7625],[-8,12],[-27,21],[12,-5]],[[5466,7679],[-8,-5],[-2,8],[10,-3]],[[5412,7751],[11,-14],[-10,8],[-1,6]],[[5401,7772],[0,-20],[-5,27],[5,-7]],[[5404,7789],[3,-10],[-5,-3],[2,13]],[[5458,7861],[5,-3],[18,-29],[6,0],[9,-10],[17,0],[11,9]],[[5524,7828],[3,-33],[12,-10],[-10,-3],[-1,-17]],[[5488,7656],[-12,12],[-6,13],[-14,10],[-11,-4],[-2,10],[-14,14],[-9,17],[8,5],[-15,23],[-1,23],[-9,12],[-7,2],[-3,-20],[-8,-11],[-8,20],[0,20]],[[5377,7802],[9,-3],[13,3],[6,6],[20,-9],[-2,17],[12,6],[-2,20],[9,5],[8,12],[8,2]],[[3002,6248],[-1,2]],[[2977,6260],[-12,8],[1,7],[11,-10],[0,-5]],[[3000,6254],[2,-6]],[[3006,6222],[-8,11],[-24,-5],[-11,6],[-8,0],[-6,-5],[1,-8],[-12,16],[-7,4],[2,15],[6,2],[16,-10],[24,-4],[4,8],[7,-2],[0,7],[-13,23],[1,19],[3,2],[-9,11],[-11,1],[-2,6],[8,10],[11,2],[13,-11],[15,-2]],[[5614,7970],[21,-26]],[[5635,7944],[-8,-11],[-4,2],[-13,-17],[-4,-19],[-5,-6],[-4,-21],[-6,-5],[-1,-12],[-6,-10],[-7,2],[-5,-8],[-10,-1]],[[5562,7838],[-16,4],[-11,-11],[-11,-3]],[[5458,7861],[-7,21],[-4,-1]],[[5476,7947],[6,-1],[10,-13],[15,0],[14,3],[-1,10],[7,4],[14,3],[4,7],[8,-7],[12,11],[3,13],[9,3],[9,-5],[11,3],[5,-11],[12,3]],[[8426,4574],[2,-3],[-6,-11],[-11,-6],[0,8],[6,3],[10,17],[-1,-8]],[[8386,4582],[-1,-10],[-6,2],[7,8]],[[8333,4644],[9,-18],[4,2],[10,-24],[-10,-15],[-9,5],[-5,14],[-10,12],[-15,3],[-4,11],[10,10],[20,0]],[[8473,4637],[-2,-11],[-16,-29],[-8,0],[-2,-6],[-12,-5],[-3,9],[7,6],[-5,10],[2,16],[10,18]],[[8444,4645],[2,-5],[7,4],[3,10]],[[8456,4654],[13,13]],[[8469,4667],[7,-5],[0,-8],[-6,-2],[3,-15]],[[8318,4695],[-3,-16],[1,18],[2,-2]],[[8424,4708],[1,-8],[-8,-2],[4,11],[3,-1]],[[8242,4700],[-7,-24],[3,-4],[-11,-3],[-10,6],[6,6],[-1,15],[7,13],[8,-1],[5,-8]],[[8442,4708],[-5,-4],[-10,-16],[-5,4],[7,9],[-2,6],[12,4],[3,-3]],[[8450,4700],[-5,-10],[-4,6],[11,16],[-2,-12]],[[8858,4702],[-10,-1],[7,12],[3,-11]],[[8265,4700],[-2,12],[5,2],[-3,-14]],[[8459,4715],[2,-3],[13,1],[1,-11],[-22,-6],[3,18],[3,1]],[[8550,4716],[8,-3],[-2,-6],[-6,9]],[[8276,4716],[4,0],[5,-15],[6,7],[6,-6],[8,2],[1,-19],[-18,-12],[0,10],[-7,-11],[-12,-2],[-9,-9],[-7,-2],[-11,5],[2,11],[-1,13],[12,14],[6,-8],[4,5],[6,-18],[14,4],[-6,11],[-4,1],[-6,16],[7,3]],[[8415,4713],[2,-8],[-7,-8],[2,-8],[-13,-10],[-8,1],[-9,-9],[-11,5],[-1,-7],[-12,0],[-2,6],[-7,2],[-9,-3],[-13,4],[0,11],[13,18],[19,-4],[15,-16],[15,11],[6,-12],[6,1],[0,7],[12,12],[-4,4],[3,8],[3,-5]],[[8208,4712],[5,-15],[-14,-15],[-7,13],[-11,8],[-3,14],[12,-6],[8,8],[10,-7]],[[8604,4733],[0,-14],[-5,14],[5,0]],[[8519,4741],[-6,-15],[-15,2],[-5,-7],[5,21],[11,-2],[8,7],[2,-6]],[[8857,4720],[-12,-20],[-23,0],[5,24],[6,21],[6,8],[11,6],[5,-1],[7,-11],[-5,-27]],[[8656,4770],[0,-26],[-8,-16],[-7,-6],[3,28],[10,23],[2,-3]],[[8664,4774],[1,-9],[-7,7],[6,2]],[[8166,4787],[3,-6],[-12,-8],[-3,-6],[-12,-1],[-12,5],[4,15],[32,1]],[[8204,4789],[6,-5],[-10,-1],[4,6]],[[8738,4813],[-1,-5],[-6,7],[3,6],[4,-8]],[[8733,4812],[3,-8],[-6,-16],[-7,2],[2,30],[-1,7],[9,-15]],[[7948,4837],[3,4],[13,-9],[8,1],[0,9],[9,-3],[2,-10],[7,-5],[6,2],[5,-8],[8,5],[5,-14],[2,-16],[11,-1],[10,-5],[4,4],[11,-7],[7,4],[5,-7],[7,8],[2,19],[4,5],[7,-1],[3,-15],[12,3],[12,-14],[16,1],[0,-13],[6,-8],[-2,-17],[16,-15],[12,4],[7,6],[13,-11],[-3,-41],[7,-10],[-18,4],[-20,20],[-6,-1],[-10,-8],[-9,6],[-16,4],[-2,-6],[-9,6],[-11,0],[-13,8],[-14,14],[-18,10],[-23,1],[-2,-7],[-18,4],[-11,14],[-25,5],[-4,10],[4,15],[-7,-1],[-7,10],[-20,-2],[3,10],[2,-8],[4,17],[5,1],[1,18],[5,17],[4,-6]],[[8346,4810],[-1,39],[3,-8],[-2,-31]],[[8685,4859],[3,-16],[-4,0],[1,16]],[[8737,4870],[5,-12],[1,-27],[-5,-14],[-8,8],[-1,9],[2,19],[6,17]],[[7843,4868],[-9,8],[9,-3],[0,-5]],[[8386,4889],[2,1],[2,-20],[-3,-2],[-4,10],[3,11]],[[8410,4898],[-4,-6],[0,-18],[-10,-1],[3,23],[-2,8],[11,13],[2,-19]],[[8422,4913],[0,-9],[-5,6],[-2,-24],[7,-6],[-2,-7],[-8,-5],[0,-10],[-6,-1],[-2,9],[5,17],[3,22],[0,15],[4,10],[6,-17]],[[8418,4952],[5,-5],[-3,-8],[-5,6],[3,7]],[[8564,4977],[-2,-8],[-9,-3],[3,10],[8,1]],[[8225,4951],[-3,23],[3,18],[4,5],[1,-36],[-5,-10]],[[8523,5004],[7,-6],[-2,-7],[6,-2],[0,-14],[-15,-15],[-15,15],[-5,14],[1,12],[11,5],[12,-2]],[[8598,5023],[14,-13],[8,1],[7,-8],[1,-15],[7,-11],[-1,-17],[-24,23],[-3,8],[-9,2],[-2,-10],[-15,7],[-2,8],[-6,-10],[-7,-2],[-6,20],[-4,-17],[-6,11],[8,6],[1,12],[21,0],[5,-5],[13,10]],[[7789,5006],[0,-13],[-7,21],[0,8],[6,-7],[1,-9]],[[7994,5036],[13,-12],[-2,-21],[-6,-7],[-3,11],[-8,-10],[0,26],[2,12],[4,1]],[[7782,5024],[-5,-4],[0,20],[5,-16]],[[7769,5060],[4,-12],[-4,1],[-5,11],[5,0]],[[8501,5041],[-3,3],[-3,21],[4,3],[2,-27]],[[8483,5079],[15,1],[11,-2],[-2,-3],[-24,-4],[0,8]],[[8620,5085],[2,-15],[-6,-6],[-14,10],[10,9],[8,2]],[[8458,5089],[22,-6],[0,-9],[-8,-3],[-7,2],[-10,-6],[-1,20],[4,2]],[[8762,5091],[20,-3],[6,-5],[14,-4],[-11,-5],[-15,5],[-14,12]],[[7940,5097],[5,-5],[4,-17],[0,-18],[4,-16],[14,-6],[-5,-8],[-2,-12],[4,-10],[-22,15],[0,21],[-3,4],[-1,14],[-18,4],[0,8],[7,9],[-3,5],[9,9],[2,-13],[3,1],[-2,12],[4,3]],[[8550,5100],[9,-9],[-6,-5],[-11,-3],[-5,6],[1,9],[6,8],[6,-6]],[[8421,5116],[1,-14],[3,9],[6,-1],[0,-10],[-4,-5],[-3,6],[-1,-12],[-3,18],[-6,-15],[-4,10],[3,13],[8,1]],[[8044,5127],[4,-10],[-9,-8],[0,18],[5,0]],[[7746,5129],[7,-31],[4,-7],[-2,-11],[-9,6],[-9,29],[3,13],[6,1]],[[8636,5129],[4,-8],[-2,-16],[-7,6],[-3,15],[8,3]],[[8634,5139],[-7,-9],[-4,6],[11,3]],[[8761,5145],[12,-2],[9,-20],[6,-4],[-7,-7],[-7,2],[-4,22],[-3,-4],[-6,13]],[[8536,5138],[-5,0],[3,9],[2,-9]],[[8915,5033],[0,-218],[-3,-12],[3,-17],[0,-128]],[[8915,4658],[-10,18],[-4,12],[-15,28],[-17,-5],[-3,6],[-7,-8],[-1,19],[5,19],[-4,4],[-7,18],[13,-3],[-12,8],[-4,13],[10,2],[-8,7],[1,5],[-7,13],[-3,32],[-8,7],[0,12],[-4,8],[-15,20],[-21,12],[-18,18],[-14,4],[-7,-1],[-16,20],[1,11],[-4,-6],[-5,9],[-1,-9],[-5,7],[1,8],[-6,-4],[-4,14],[-3,-5],[0,28],[6,6],[-1,9],[-6,-11],[0,-14],[-7,-21],[1,-8],[-5,-11],[-7,-3],[-6,11],[-2,14],[6,8],[-9,15],[-3,12],[-6,8],[-6,-2],[-2,12],[5,5],[10,-2],[4,-6],[9,18],[7,5],[7,-10],[8,7],[4,12],[-1,9],[-7,-8],[-11,2],[-16,-6],[-4,7],[-6,-5],[-8,11],[-4,22],[-5,11],[-9,2],[-5,-3],[-7,4],[3,13],[5,6],[0,18],[7,5],[8,0],[10,17],[8,5],[8,-1],[12,-10],[6,-11],[17,0],[5,-8],[-4,-5],[7,-22],[-1,-12],[-4,-7],[2,-39],[5,-10],[3,-17],[1,17],[5,-3],[1,-23],[5,-17],[6,-6],[11,0],[2,7],[10,16],[1,11],[9,14],[3,18],[9,-2],[14,10],[-3,16],[19,18],[4,0],[11,-13],[9,-4],[5,-10],[7,-3],[20,-21],[10,3],[16,-10],[-2,-6],[8,0]],[[7903,5160],[0,-12],[-8,7],[6,9],[2,-4]],[[8544,5159],[1,-17],[6,0],[-1,-9],[-5,6],[-5,-3],[0,10],[-5,11],[6,9],[3,-7]],[[8533,5168],[1,-14],[-4,-1],[0,14],[3,1]],[[7735,5153],[-4,0],[3,16],[1,-16]],[[7881,5163],[-8,-1],[3,8],[5,-7]],[[8633,5183],[14,-10],[-2,-13],[-6,2],[-11,13],[8,-16],[-6,-1],[-1,8],[-9,2],[-2,9],[15,6]],[[7737,5167],[-5,8],[0,8],[5,-16]],[[7904,5183],[11,-16],[-7,4],[-8,-1],[4,13]],[[7850,5240],[4,0],[7,-11],[-14,-1],[-1,20],[4,-8]],[[7861,5243],[2,-12],[-8,11],[-5,-1],[5,9],[6,-7]],[[7892,5248],[-1,-8],[-5,3],[6,5]],[[7904,5252],[2,-10],[-2,-11],[-3,13],[-6,-3],[2,9],[7,2]],[[7845,5238],[-6,7],[-1,17],[3,2],[5,-9],[-1,-17]],[[7704,5270],[3,-2],[6,-18],[6,-7],[-2,-28],[-4,1],[-3,14],[-5,7],[-8,26],[7,7]],[[7839,5273],[7,-4],[0,-13],[-10,11],[-2,10],[5,-4]],[[8473,5279],[5,-11],[-3,-3],[-6,-26],[-5,-5],[-7,-25],[-24,-11],[-11,3],[-4,10],[-24,0],[-12,-4],[-6,6],[-13,-7],[-11,7],[-10,-4],[-7,-19],[-3,-19],[3,-26],[4,-13],[5,-1],[5,-12],[2,-17],[13,1],[2,12],[8,18],[5,-3],[13,0],[1,9],[15,-2],[7,4],[-7,4],[10,6],[9,-5],[0,-20],[-3,-4],[-4,11],[-9,-3],[-8,-23],[-9,-17],[-12,-6],[-3,-12],[-10,8],[0,-8],[8,-15],[5,-3],[11,-32],[7,-26],[-5,-8],[-1,-14],[13,-17],[-1,-9],[7,-3],[0,-15],[-4,-6],[-4,6],[-14,-7],[-2,-7],[2,-12],[-12,1],[-5,9],[1,25],[3,8],[-8,7],[-13,25],[0,9],[5,10],[1,26],[-8,8],[-17,-20],[6,-16],[0,-25],[-2,-12],[1,-36],[2,-7],[-4,-14],[-1,-14],[5,-24],[-15,-2],[-4,-8],[-11,16],[0,14],[3,7],[0,18],[4,19],[0,23],[-5,19],[2,12],[-6,3],[-10,-8],[-3,14],[2,27],[-4,0],[1,13],[3,-1],[7,11],[-1,15],[3,13],[4,2],[-2,14],[0,26],[5,11],[1,11],[7,11],[1,50],[3,16],[4,4],[-1,10],[9,8],[7,-3],[6,14],[0,15],[3,3],[10,-7],[5,3],[0,-9],[5,-4],[8,2],[8,-5],[7,1],[10,-12],[4,8],[19,-6],[8,1],[10,8],[9,23],[10,19],[2,-4]],[[7825,5301],[0,-16],[-7,-2],[-2,18],[9,0]],[[8556,5309],[-6,-20],[5,-6],[0,-25],[-11,-20],[3,-8],[6,3],[0,8],[7,8],[-3,5],[3,9],[11,11],[4,-1],[-1,-29],[-11,-9],[0,-14],[11,-6],[0,-13],[-20,8],[-3,-10],[1,-20],[5,-25],[10,-24],[-11,11],[-5,20],[-5,6],[1,34],[-4,4],[-2,38],[-3,10],[4,12],[0,12],[4,16],[10,15]],[[8571,5333],[3,-7],[-3,-21],[-8,-7],[-3,16],[5,13],[6,6]],[[7663,5350],[2,-7],[14,-20],[-5,0],[-14,13],[-4,9],[7,5]],[[8268,5370],[-4,6],[4,4],[0,-10]],[[8489,5385],[-4,-3],[0,16],[4,-13]],[[8269,5423],[5,-1]],[[8274,5422],[-2,-7],[-3,8]],[[8008,5418],[2,-16],[-2,-7],[-8,11],[-1,9],[7,11],[2,-8]],[[8265,5422],[-5,1],[11,-21],[-1,-10],[-15,-1],[7,-13],[-5,-10],[11,-13],[-4,-4],[16,-37],[-8,-15],[1,-8],[7,-13],[9,-10],[10,-16],[6,-14],[-7,-9],[-16,4],[-8,12],[4,-17],[-6,2],[-6,-18],[-4,-26],[2,-2],[-3,-17],[1,-14],[4,4],[-3,-14],[4,-4],[-9,-8],[-1,5],[-7,-22],[-14,-16],[1,-8],[-9,-10],[6,1],[-2,-24],[6,0],[-2,-19],[-4,-2],[0,-18],[-5,-7],[-6,-36],[-38,-32],[0,28],[-14,23],[-6,-9],[-9,3],[0,12],[-6,-6],[-9,20],[-3,-10],[3,-3],[-14,-16],[-9,6],[-7,-11],[-4,-1],[1,27],[-4,17],[0,-10],[-4,-4],[-7,5],[-9,-9],[-7,6],[-2,-5],[-3,12],[-7,-8],[-6,62],[-5,8],[3,3],[2,20],[-4,16],[-7,11],[-7,4],[-2,-4],[-7,21],[0,34],[5,-2],[-5,14],[-5,4],[0,20],[3,50],[7,9],[1,14],[9,9]],[[8045,5303],[-3,-16],[3,-12],[17,-35],[7,-8],[8,3],[2,6],[10,4],[7,-6],[9,2],[8,7],[2,18],[8,7],[15,0],[-2,-8],[9,-3],[11,-8],[7,12],[16,-1],[5,12],[1,13],[3,2],[-1,20],[12,14],[-4,12],[1,10],[5,10],[6,-1],[4,65],[5,11],[6,-4],[3,5],[7,-4],[10,4],[13,0],[10,-12]],[[8523,5442],[2,-13],[-3,-14],[-4,-2],[2,32],[3,-3]],[[7652,5506],[11,-6],[4,-11],[10,-6],[12,4],[10,-8],[9,6],[11,-21],[3,-16],[6,-9],[0,-16],[13,-17],[3,-9],[6,-5],[20,-26],[7,-15],[-1,-13],[3,-5],[3,6],[6,-23],[14,-21],[-2,19],[6,1],[8,-16],[1,-14],[10,-6],[12,-18],[1,-19],[7,-15],[13,-3],[5,-14],[-13,-13],[8,1],[12,15],[11,-13],[2,-18],[-7,0],[-6,-21],[7,-4],[-5,-5],[1,-12],[4,-12],[9,-1],[7,-6],[6,2],[2,-16],[1,-28],[4,-14],[7,-5],[-1,-9],[8,-5],[13,-1],[0,-13],[5,-6],[0,-10],[6,-4],[2,-14],[-6,-14],[-1,-15],[3,-5],[-4,-25],[2,-13],[0,-26],[-2,-53],[-7,2],[-7,19],[-3,-6],[0,-12],[-8,6],[-9,11],[-1,-4],[5,-19],[-4,-3],[-3,11],[-10,17],[-5,19],[-7,10],[-11,12],[-28,46],[-1,17],[-17,23],[-8,29],[-9,16],[-5,17],[2,7],[-9,34],[0,8],[-5,3],[1,11],[-9,30],[-9,14],[0,13],[-4,9],[-9,10],[-5,1],[-1,21],[-9,45],[0,20],[-3,0],[-7,14],[-5,2],[-9,14],[-7,6],[-2,27],[-5,5],[-4,14],[-3,5],[-8,23],[-11,6],[-8,21],[-6,5],[-13,28],[-5,27],[-3,6],[0,17],[8,2]],[[4872,8298],[-4,5],[8,13],[4,-7],[-8,-11]],[[7606,5598],[2,-16],[-2,-11],[-5,16],[0,9],[5,2]],[[7571,5804],[0,-12],[-5,0],[-1,12],[6,0]],[[7583,5964],[1,-29],[-3,1],[1,-36],[-3,-2],[1,-13],[-5,-6],[2,-9],[-2,-25],[-5,13],[5,34],[0,29],[2,1],[0,26],[6,16]],[[7448,6428],[-4,1],[4,13],[0,-14]],[[7248,6922],[-16,-24],[0,-12],[-5,-9],[1,-17],[-7,-14],[9,-14],[9,-1],[7,-10],[9,-6],[2,-11],[15,-17],[6,3],[11,-14],[7,2],[1,-11],[12,-4],[18,0],[8,4],[6,-8],[8,-2],[1,-18],[8,-3],[10,-14],[9,7],[7,-16],[4,5],[9,-3],[11,-11],[7,7],[9,-11],[13,6],[7,-5],[4,17],[0,13],[-6,11],[2,24],[3,21]],[[7703,6808],[0,-19],[-13,-15],[0,-11],[7,-21],[-7,6],[-4,10],[-21,-9],[-2,-10],[-14,-19],[-9,-5],[-2,-21],[4,-12],[-4,-6],[0,-10],[-10,-18],[-2,-16],[3,-3],[-2,-22],[-3,-2],[-6,-22],[-5,-27],[-11,9],[-11,-2],[4,-18],[-2,-30],[-9,-21],[2,-34],[-3,1],[-1,-12],[-8,9],[-3,-10]],[[7473,6457],[-4,-11],[5,-18],[-6,2],[-4,-6],[-2,22],[-5,-3],[-1,-16],[-7,0],[-1,26],[-8,-18],[-21,-14],[-8,-19],[6,-28],[-7,-10],[-4,-16],[-4,-3],[-6,-16],[-19,-10],[-5,9],[-5,-13],[5,1],[-15,-26],[-9,-26],[-13,-29],[-9,-8],[-6,-10],[-9,-22],[-21,-21],[-6,-16],[3,-5],[-1,-14],[-6,-9],[-11,-8],[-10,4],[-4,-3],[-1,-20],[-10,-15],[-1,10],[-6,-1],[-9,-10],[-3,-17],[-2,-18],[3,-24],[-1,-30],[3,-29],[-5,-4],[7,-9],[0,-14],[-3,-37],[-8,-24],[-4,-26],[2,-16],[0,-46],[1,-17],[-15,0],[-2,-15],[-8,-21],[-2,-13],[5,-9],[-20,-12],[-5,-12],[-2,-22],[-2,-8],[-16,-16],[-7,6],[-11,22],[-7,19],[-6,25],[-3,32],[4,-10],[0,11],[-6,7],[-2,18],[-6,30],[-1,14],[-9,36],[-9,17],[-6,25],[-6,34],[-2,33],[-8,39],[-1,14],[-7,14],[-2,12],[-4,5],[0,15],[-3,4],[-4,24],[-4,8],[-5,29],[-1,37],[-5,30],[-6,45],[1,7],[-3,22],[-1,23],[-3,24],[2,33],[4,12],[-2,36],[-3,-4],[-3,11],[2,16],[12,11],[-16,-3],[2,14],[-2,14],[9,5],[-13,4],[-2,-15],[-8,-7],[8,-18],[-6,-25],[-17,-17],[-14,-11],[-5,0],[-10,9],[-11,17],[-15,33],[-15,29],[0,10],[7,1],[0,-9],[14,12],[3,-3],[9,7],[7,23],[-10,-1],[-9,-10],[-13,5],[-11,10],[-9,15],[-4,19],[-6,14]],[[6893,6556],[5,7],[10,0],[0,19],[13,-3],[11,2],[5,-7],[6,0],[3,8],[13,7],[0,-8],[6,-3],[9,10],[-4,12],[3,3],[-5,27],[-6,14],[0,17],[-10,1],[-6,14],[2,35],[-9,2],[-10,11],[1,17],[10,20],[6,22],[7,12],[6,1],[4,-16],[4,-2],[9,7],[20,8],[0,9],[8,16],[5,21],[16,16],[9,29],[3,22],[12,8],[4,7],[-2,10],[6,11],[6,19],[10,12],[-4,2],[3,17],[-2,24],[7,10],[14,8],[1,10],[-8,8],[-11,2],[0,14],[-9,2],[0,13],[-9,10],[4,22],[-5,5],[1,10],[7,10],[-9,1],[1,16],[-5,3],[4,19],[13,6],[7,-5],[16,-2],[11,-9],[11,11],[17,3],[3,10],[5,1],[4,11]],[[7140,7205],[20,22]],[[4825,8298],[2,-37],[6,-29],[-6,-16],[-4,-28],[-10,1],[-8,-4],[-12,0],[-5,-10],[-7,0],[-4,-8],[-7,-1],[-12,-14],[-20,0],[-11,-8],[10,14],[-20,-4],[12,13],[-11,-6],[-7,10],[13,14],[-15,-2],[5,10],[13,-2],[-1,11],[8,12],[-10,-5],[12,12],[5,21],[10,8],[-16,-2],[-14,9],[-3,9],[6,13],[0,24],[-5,4],[22,4],[23,-3],[-5,4],[12,9],[3,8],[-15,-1],[-2,7],[10,6],[2,18],[15,2],[6,-6],[4,17],[13,-9],[-9,-9]],[[6560,6732],[-4,-9],[-5,0],[-16,-12],[0,7],[13,7],[13,13],[-1,-6]],[[6357,7396],[3,-38],[4,-9],[9,-7],[13,-2],[9,-5],[2,-13],[21,-24],[23,-9],[43,18],[16,-4],[-3,30]],[[6497,7333],[8,-1],[16,11],[1,13],[9,13],[9,7],[24,0],[3,10],[17,-4],[5,4],[3,-17],[23,-10],[8,-9],[10,3],[11,-10],[10,-21],[13,-7],[8,-22],[23,0],[2,-31],[-3,-8],[4,-5],[0,-15]],[[6689,6902],[14,-27],[0,-8],[6,-21],[10,-20],[14,-8],[5,-10],[5,-1],[-1,-12],[2,-18],[-1,-26],[11,2],[4,-8],[-4,-17],[0,-11],[-12,0],[-12,-7],[-2,-10],[-11,-7],[-7,-59]],[[6710,6634],[-5,-8],[-10,9],[-12,4],[-1,9],[-5,-6],[-24,3],[-2,4],[-12,-4],[-6,10],[-7,2],[-14,-2],[-4,8],[-17,5],[-4,19],[-4,42],[-6,17],[-11,3],[-8,-2],[-5,-8],[-9,-4],[-3,-11],[-6,2],[-13,-17],[-11,5],[-3,7],[-17,0],[-8,16],[-10,6],[-13,16],[-4,16],[-12,11],[-9,-1],[-8,6],[-9,35],[0,12],[-8,13],[2,10],[-6,0],[1,16],[-15,30],[0,10],[-5,6],[-11,-12],[-2,9],[-7,-1],[-9,13],[8,-1],[0,9],[-9,-8],[1,-20],[-11,-4]],[[6347,6908],[-3,15],[-11,14],[0,31],[-9,0],[0,23],[4,21],[-9,22],[-5,19],[-6,-1],[-14,21],[-16,15],[4,5],[-4,15],[-11,15],[-5,22],[3,14],[-4,8],[2,8],[6,-3],[-2,9],[7,21],[7,2],[1,7],[-6,16],[1,10],[6,2],[-4,9],[-6,-3],[-14,14],[-3,21],[-5,0],[-1,18],[-6,5],[2,12],[-3,7]],[[6243,7322],[0,10],[-6,6],[1,17],[-10,17],[6,20],[-4,0],[-3,45],[-5,13],[11,4],[4,19],[7,-7]],[[6347,6908],[-13,5],[-3,-3]],[[6331,6910],[-7,6],[-9,0],[-6,-5],[-8,-33],[-9,-20]],[[6292,6858],[-5,-2],[-46,8],[-62,91],[-11,18],[-47,49],[-34,10]],[[6087,7032],[4,8],[-7,3],[0,11],[-8,51]],[[6076,7105],[4,3],[43,44],[14,11],[7,22],[1,40],[3,8],[-2,23]],[[6146,7256],[0,0]],[[6146,7256],[0,20],[3,10],[13,5],[15,26],[-1,3]],[[6176,7320],[6,2],[6,13],[9,0],[10,-7],[12,-2],[8,4],[1,-18],[11,12],[4,-2]],[[4554,9014],[7,-14],[12,-7],[12,13],[-4,-20],[10,2],[-2,-20],[12,4],[0,-8],[21,-10],[-4,-10],[6,-8],[-13,-25],[-13,-4],[-2,-15],[-24,-8],[-39,-26],[-31,-6],[-1,-11],[-23,-7],[-27,8],[-12,0],[-28,20],[-42,-4],[4,9],[14,4],[10,10],[2,11],[-13,-6],[-9,29],[-32,1],[-11,-4],[-3,8],[23,2],[15,8],[25,-2],[-21,7],[22,16],[-39,7],[-20,-9],[-18,6],[7,8],[12,-7],[-8,15],[17,-5],[-9,12],[10,17],[20,-8],[-5,7],[9,16],[11,-11],[25,-14],[-2,-19],[9,-29],[0,13],[9,15],[9,-10],[5,13],[-5,20],[9,3],[13,-22],[6,-1],[-1,19],[22,6],[16,-26],[-6,27],[10,-1],[10,-11],[12,14],[6,-6],[13,3],[-3,19],[15,2]],[[5993,7068],[-6,-5],[0,-15]],[[5987,7048],[-10,8],[-6,-14],[0,-19],[6,-9],[-7,-11],[-2,-14],[10,1],[5,6]],[[5983,6996],[0,-9]],[[5983,6987],[0,-6]],[[5983,6981],[1,-8]],[[5984,6973],[-8,-34],[0,-21],[-6,-33]],[[5970,6885],[-2,-4]],[[5951,6980],[8,18],[-2,4]],[[5957,7002],[7,21],[6,44],[5,21]],[[5975,7088],[10,0],[1,9],[8,10]],[[5994,7107],[-1,-9],[3,-19],[-3,-11]],[[5434,7386],[-12,-29],[-3,-25],[6,-18],[-6,-11],[1,-8],[-10,1],[-8,6],[-3,10],[-7,8],[-7,-1],[-25,27],[-10,1],[-4,6],[0,19],[7,6],[6,-6],[4,10],[7,1],[10,-13],[9,4],[9,-2],[17,10],[4,-4],[12,11],[3,-3]],[[5256,7557],[8,-6],[8,-34],[-5,-14],[3,-13],[-2,-30],[-6,-24],[-10,6],[-5,-19],[-8,0],[-7,17],[5,39],[-4,1],[2,23],[-5,17],[-4,0],[2,16],[8,-2],[9,6],[11,17]],[[5380,7862],[-9,-16],[7,-7],[-4,-8],[3,-12],[8,-10],[-5,-1]],[[5380,7808],[1,7],[-18,1],[-3,-5],[-16,-12],[-4,2],[-1,-16],[9,-13],[-6,-7],[-2,-13],[2,-18],[8,-16],[9,-7],[19,-21],[12,-54],[18,-28],[12,-11],[25,0],[4,-9],[-8,-15],[19,-17],[13,-7],[14,-18],[13,-8],[0,-6],[12,-15],[2,-10],[-4,-18],[-9,6],[-5,23],[-11,0],[-14,11],[-11,-25],[-2,-21],[9,-5],[9,-11],[-1,-29],[-11,-1],[-5,-8],[1,-18],[-8,-10],[-8,-20],[-10,4],[0,15],[5,3],[3,12],[-3,8],[9,5],[2,12],[-4,8],[-2,21],[-4,6],[-2,20],[-7,11],[-5,-5],[-12,13],[2,8],[-6,18],[-8,1],[-5,8],[-7,3],[-10,22],[-10,1],[-8,-3],[-5,11],[-7,2],[-12,24],[-10,10],[-8,18],[-10,5],[-3,12],[-9,9],[1,6],[-8,2],[1,18],[-7,17],[0,14],[-5,13],[-7,1],[-16,17],[-15,5],[-14,-19],[-3,-11],[-17,-6]],[[5344,7711],[0,0]],[[5345,7596],[0,0]],[[2849,6246],[15,-3],[3,-8],[12,-7],[4,-14],[-9,-3],[-10,6],[-1,-7],[-6,3],[-1,-11],[-7,10],[-8,-1],[-7,10],[-3,10],[-8,2],[5,12],[10,5],[11,-4]],[[6087,7032],[-4,-6],[-57,-30],[15,-28],[13,-29],[-9,-10],[-4,-18],[-21,-8],[-7,-22],[-12,-17],[-31,9]],[[5970,6873],[0,12]],[[5984,6973],[-1,8]],[[5983,6987],[4,0],[0,25]],[[5987,7012],[0,36]],[[5993,7068],[7,-5],[10,-16],[12,-3],[54,61]],[[8563,6721],[-5,-10],[-7,-5],[-4,-21],[0,20],[7,8],[-3,7],[7,-1],[4,12],[1,-10]],[[8603,6820],[-13,-15],[0,9],[11,11],[2,-5]],[[8624,6937],[5,-5],[-7,-8],[2,13]],[[8639,6942],[-5,-5],[6,22],[-1,-17]],[[8616,7056],[0,-12],[-6,-7],[1,18],[5,1]],[[8578,7069],[-1,-10],[-6,2],[7,8]],[[8638,7135],[3,-16],[7,-3],[9,6],[1,-15],[-5,-9],[10,1],[0,-17],[5,-2],[-11,-22],[-6,-38],[0,-16],[-3,-14],[-7,5],[1,-11],[-12,-13],[2,20],[-5,12],[-2,-4],[0,-22],[-9,5],[4,18],[-5,12],[1,21],[2,-2],[8,19],[-2,11],[3,12],[-5,15],[-8,2],[7,-19],[-6,-11],[1,11],[-10,-10],[-6,18],[1,10],[4,-14],[5,-1],[-1,10],[-11,11],[1,10],[6,-2],[18,22],[2,9],[6,4],[7,-3]],[[8726,7162],[8,-9],[5,1],[-1,-13],[4,-10],[-10,-11],[-5,-23],[-8,15],[-5,2],[-13,-11],[0,-7],[-7,-11],[-1,-16],[-10,0],[3,9],[-6,1],[-6,31],[11,14],[2,17],[6,6],[5,-10],[10,2],[3,14],[8,9],[7,0]],[[8747,7160],[-3,-8],[-3,8],[8,15],[-2,-15]],[[8595,7181],[-2,-23],[-3,4],[1,16],[4,3]],[[8845,7375],[1,-10],[-6,-6],[-1,17],[8,13],[-2,-14]],[[8923,7564],[5,3],[-1,-34],[2,-14],[8,-11],[5,-22],[4,-26],[-5,-14],[0,-12],[-7,-6],[-5,-25],[1,-17],[-6,9],[-7,-6],[-3,-24],[3,-14],[-2,-39],[-5,-8],[-5,-19],[-1,-20],[8,-27],[-11,-7],[-2,-21],[-16,-17],[2,30],[5,11],[-8,0],[-4,-12],[1,-16],[-7,11],[-8,-5],[0,-21],[-9,-16],[-1,25],[-6,4],[-6,-11],[-4,-18],[-17,5],[-15,-6],[7,9],[-13,1],[0,16],[-5,-3],[-3,-22],[9,-9],[1,-10],[-7,3],[-10,-9],[0,-10],[-6,-8],[-3,-15],[-5,-7],[-10,5],[-1,8],[-9,11],[3,8],[-3,14],[10,17],[-2,9],[-11,-4],[-6,7],[-7,0],[-20,-18],[-10,1],[-3,-9],[-6,2],[-15,-9],[-1,9],[-8,-6],[-2,-24],[-11,13],[-16,-7],[-4,7],[-3,-8],[-1,25],[3,5],[12,-1],[3,10],[7,5],[17,28],[7,7],[-1,9],[17,8],[5,-8],[24,6],[7,7],[11,-2],[8,7],[-1,-12],[13,-4],[12,10],[-3,18],[5,16],[7,8],[10,28],[-1,26],[11,10],[6,1],[-3,-13],[-9,-5],[4,-6],[-2,-13],[10,-6],[3,10],[21,13],[10,12],[10,29],[14,15],[1,16],[9,23],[3,24],[4,10],[1,17],[-4,11],[-5,-3],[7,19],[1,11],[-5,13],[5,10],[7,3],[1,26],[9,-5],[3,-20],[3,9],[8,-6],[3,19],[-13,-5],[3,23],[10,-10]],[[8944,7799],[15,-24],[4,-13],[19,-27],[11,-7],[0,-6],[12,0],[3,-7],[13,-4],[15,25],[1,-8],[-7,-17],[-1,-9],[8,-28],[8,6],[-4,-12],[-6,0],[-8,-10],[-27,-4],[-11,-14],[-8,-20],[-3,-23],[-8,11],[-14,9],[-8,11],[-12,9],[-8,-3],[-12,-15],[-9,15],[-5,0],[-6,-18],[12,-8],[13,-20],[-13,-1],[-8,-7],[-6,-13],[-7,10],[5,14],[-3,17],[-7,6],[3,26],[12,7],[5,11],[-5,13],[6,8],[8,-9],[10,-3],[7,10],[-3,22],[9,14],[0,22],[3,6],[1,20],[-6,23],[3,12],[9,3]],[[6762,7807],[-15,8],[-3,11],[1,13],[12,14],[11,-3],[7,-11],[1,-13],[-4,-11],[-10,-8]],[[7140,7205],[-9,31]],[[6651,7782],[-20,19]],[[6631,7801],[12,18],[8,-37]],[[7227,7611],[-6,13],[-15,4],[-12,17],[-14,6],[-14,0],[-19,2],[-14,5],[-13,-5],[-16,1],[-3,-6],[-13,2],[-12,8],[-12,13],[-21,-10],[-5,-27],[3,-9],[-22,14],[-27,9],[-10,-1],[-10,-13],[-5,-15],[3,-3]],[[6970,7616],[-6,-3],[-4,-11],[-4,5],[-9,-16],[-20,-15],[0,-5],[-10,-5],[0,-10],[-13,-17],[1,-19],[-4,0],[-13,13],[4,14],[-5,7],[-33,-3],[-5,20],[-2,30],[-14,0],[2,57],[-8,-7],[-8,26],[-7,5],[-10,19],[-12,-10],[-37,4],[-32,-8],[-23,38],[-2,12],[-28,28]],[[6668,7765],[0,34],[-2,9],[-7,-1],[3,20],[17,-5],[8,16],[12,7],[2,14],[-11,2],[-3,9],[-13,3],[-8,-7],[4,-13],[17,0],[2,-11],[-4,-6],[-24,2],[-2,12],[-7,0],[7,-14],[-3,-17],[-8,-6],[-4,5],[4,13],[-15,-3],[-6,-23]],[[6627,7805],[-73,-31],[0,-212]],[[6554,7562],[-14,-3],[-15,32],[0,6],[-20,23],[-20,-3],[-14,-9],[-15,-21]],[[6456,7587],[-1,20],[6,15],[3,22],[-15,9],[-8,-3],[-6,18],[-12,0],[1,23],[-4,4],[-8,33],[-17,9],[1,17],[16,-1],[4,-6],[16,-2],[-17,20],[12,28],[9,5],[22,0],[11,-6],[10,2],[-15,10],[0,6],[9,18],[4,40],[-8,19],[-13,2],[-10,-10],[-16,14],[-9,3],[-12,-11],[-9,-2],[-18,-21],[-13,2],[-2,-14]],[[6367,7850],[-9,9],[-10,5],[0,12],[6,-6],[7,6],[-9,19],[-4,15],[-14,23],[-11,0],[-7,5],[-1,-9],[-7,7],[0,26],[-18,8],[8,30],[8,10],[-7,14],[3,28],[12,12],[-1,14],[9,9],[22,-37],[13,11],[-5,20],[0,13],[20,17],[0,15],[11,0],[15,12],[6,17],[5,6],[14,-3],[1,-11],[11,-1],[6,12],[11,6],[5,-16],[23,0],[9,-7],[1,-9],[7,-1],[6,-13],[10,-7],[-3,-16],[8,2],[1,24],[10,-13],[16,-15],[13,11],[11,20],[18,0],[5,-11],[11,1],[1,13],[22,-4],[0,-11],[10,-11],[16,-3],[1,-9],[7,4],[5,18],[9,-10],[15,-1],[17,10],[2,19],[4,6],[-7,11],[-10,1],[-3,8],[-16,3],[3,8],[-12,4],[11,15],[7,1],[10,11],[-10,23],[22,16],[17,-3],[1,7],[-13,9],[-14,3],[2,12],[-6,8],[5,11],[-6,3],[12,10],[4,-6],[43,7],[25,14],[25,5],[9,-4],[-1,10],[7,7],[15,-1],[15,6],[33,8],[13,6],[2,13],[10,0],[2,9],[8,-4],[-1,9],[8,-6],[13,0],[14,-11],[8,9],[14,-12],[1,-18],[6,-3],[-1,-23],[-6,0],[6,-13],[3,6],[11,-4],[10,5],[3,9],[9,-14],[-3,-13],[9,3],[-4,10],[11,-1],[3,-8],[11,-2],[8,7],[-3,-12],[-6,1],[-6,-17],[6,-8],[13,12],[14,-10],[1,12],[9,9],[7,-2],[12,11],[-2,4],[31,15],[12,8],[-7,-19],[-8,1],[3,-9],[34,-36],[7,-11],[42,-97],[12,-38],[15,7],[-1,14],[6,6],[15,-7],[-3,-15],[9,2],[2,-13],[11,3],[6,-4],[17,5],[18,12],[13,-7],[11,-20],[0,-15],[23,-14],[-2,-7],[9,-19],[19,-1],[6,-7],[12,20],[0,-10],[12,-22],[7,-9]],[[6163,5412],[-17,-50],[-9,-17],[0,-175],[1,-39],[15,-39],[0,-7]],[[6153,5085],[-6,-15],[-9,-4],[-4,-20],[-5,-9],[-5,0],[-9,-13],[2,-12],[-3,-18],[-6,-12],[-3,-25],[-4,-11],[-7,-30],[-6,-3]],[[6088,4913],[-21,33],[-19,27],[-5,13],[4,6],[-1,14],[-100,116]],[[5946,5122],[3,12],[-4,7],[0,10],[4,7],[9,-1],[-2,6],[11,4],[-4,11],[-10,-6],[2,-6],[-9,7],[-3,12],[1,12]],[[5944,5197],[4,21],[7,12],[2,15],[9,9],[2,18],[3,6],[0,26],[-3,18],[2,3],[-14,40],[-2,17],[2,13],[-8,5],[-3,24],[-2,2]],[[5943,5426],[11,23],[15,14],[14,9],[4,-7],[2,-16],[8,0]],[[7045,7454],[-13,-5],[-15,2],[-9,-5],[-2,-6],[-5,10],[-7,-7],[-2,12],[-8,8],[-12,-11],[-8,-1],[-4,11],[-36,-5],[-2,14],[7,20],[14,6],[18,-12],[1,7],[8,8]],[[6970,7500],[12,3],[11,-7],[9,15],[8,-3],[0,14],[7,-6],[4,9],[10,8],[-13,3],[-5,9],[-9,-1],[0,10],[-8,0],[-6,22],[-1,-10],[-6,-2],[0,-13],[-6,-1],[-12,7],[-4,14],[-4,-4],[-9,10],[8,7],[22,29],[-8,3]],[[6976,7489],[-6,4],[2,-14],[4,10]],[[6993,7480],[0,0]],[[6961,7477],[0,0]],[[7901,5783],[-6,7],[-11,2],[-7,-4],[-3,5],[5,13],[0,15],[-4,5],[-3,-16],[-9,2],[-2,38],[-3,3]],[[7858,5853],[0,7],[-6,22],[0,22],[-6,7],[0,21],[-3,7],[-2,25],[6,0],[10,26],[1,11],[9,8],[12,5],[9,-5],[5,3],[11,-2],[5,4],[6,-3],[2,-10],[4,8]],[[7921,6009],[3,-14],[13,-1],[3,-9],[6,-1],[2,7],[-6,19],[7,7],[6,-2],[3,6],[8,-14],[4,0],[8,11],[5,2],[2,10]],[[7985,6030],[0,-14],[-3,-2],[-2,-19],[3,-10],[0,-10],[5,-22],[-5,-20],[4,-24],[-2,-15],[-2,-6],[-4,5],[-8,-14],[-8,-7],[-8,-1],[0,-17],[-11,7],[-4,-13],[-1,-15],[9,-13],[1,-17],[-9,3],[-3,10],[-10,-2],[-3,-7],[-7,6],[1,-11],[-6,-13],[-9,0],[-2,-6]],[[627,5299],[5,-18],[-8,8],[3,10]],[[8522,7115],[1,-14],[-17,-6],[-2,8],[5,8],[13,4]],[[8508,7172],[1,-8],[-7,2],[6,6]],[[8575,7196],[-1,-14],[-5,11],[6,3]],[[8518,7361],[8,22],[5,6],[27,0],[7,17]],[[8565,7406],[7,-27],[14,-31],[6,-25],[4,-25],[-2,-7],[-1,-33],[4,-6],[-2,-25],[-9,-23],[-18,0],[-1,-15],[-3,6],[-17,1],[-2,-20],[-4,14],[0,-13],[-5,-9],[-3,13],[-6,-5],[-3,-11],[-4,3],[-4,-10],[-2,15],[-7,2],[0,9],[6,-7],[2,11],[-4,1],[-2,18],[2,17],[6,9],[-4,4],[8,7],[-7,10],[5,1],[-5,11],[-1,31],[-3,8],[3,12],[7,-1],[-6,42],[4,3]],[[5598,7616],[-9,-9],[-3,6],[-10,-8],[0,-11],[-5,0]],[[5557,7633],[8,15]],[[5565,7648],[9,17],[-2,6],[14,-7],[8,-19],[10,-5],[-6,-24]],[[6338,6909],[5,-15],[-4,-7],[-5,12],[4,10]],[[6345,6826],[-22,0],[-6,27],[-25,5]],[[6331,6910],[7,-26],[-6,2],[-7,-12],[10,-1],[2,-19],[8,-28]],[[7836,6473],[2,-9],[8,-12],[6,-22],[2,9],[5,-5],[0,-9],[-2,-23],[7,-19],[15,-11],[2,8],[9,10],[5,-4],[9,-13],[-1,-9],[-6,-3],[9,-6],[0,-8],[7,-2],[0,-11],[-2,-10],[-9,-12],[-8,6],[-4,-15],[-6,-7],[18,-21],[4,-8],[9,-5],[5,-6],[-2,-12],[6,-14],[5,0],[7,-30],[13,-24],[9,-17],[0,-18],[4,-11],[5,5],[4,-14],[8,-12],[4,-1],[-1,-8],[-6,-5],[2,-12],[7,-8],[5,-12],[-5,-33]],[[7921,6009],[9,11],[0,20],[1,5],[-3,11],[3,6],[2,24],[-5,5],[0,13],[-11,7],[0,8],[-8,15],[0,29],[2,20],[-3,9],[-7,7],[-6,14],[-7,24],[-18,8],[-2,-10],[-9,-15],[-9,-6],[-16,16],[-4,-9],[-19,-26],[-4,-7],[-5,6],[3,19],[4,9],[0,17],[-3,3],[5,14],[0,15],[3,7],[-3,6],[-1,19],[2,7],[-12,2],[-2,-7],[-7,0],[-3,9],[3,29],[-5,15],[-6,-5]],[[7780,6353],[0,15],[7,14],[4,-1],[0,13],[6,16],[3,0],[9,14]],[[5975,7088],[14,52],[1,19],[9,12],[0,7]],[[5999,7178],[13,-3],[4,-23],[-9,-14],[2,-8],[-6,2],[-6,-12],[3,-5],[-6,-8]],[[4790,5433],[-19,13],[-21,22],[-9,12],[-21,40],[-9,19],[-12,7],[-1,10],[-14,13],[-3,12]],[[4681,5581],[3,14],[6,12],[15,23],[0,16],[8,8],[1,17]],[[5693,6449],[0,-115],[-27,0],[0,-28]],[[5666,6306],[-66,66],[-3,4],[-45,45],[-34,36],[-45,45],[-30,31],[-27,-26]],[[5416,6507],[-22,-22],[-20,33],[-42,19]],[[5264,6924],[10,7],[11,30],[-5,31],[6,17],[5,1],[10,22],[19,18],[-2,10],[1,34]],[[5319,7094],[10,-6],[12,-14],[15,-2],[14,6],[6,-6],[17,-5],[8,-12],[20,-6],[5,-13],[0,-14],[7,-25],[4,-7],[17,-9],[10,0],[18,-8],[23,-18],[3,-7],[18,-22],[8,0],[14,14],[10,24],[1,18],[-6,24],[0,16],[3,12],[15,24],[14,13],[10,1],[5,7],[21,-3],[21,-14],[-1,-18],[6,-6],[19,-7],[2,-5],[25,-2],[5,-18]],[[3307,5973],[-4,11],[5,10],[-1,-21]],[[7235,5735],[7,-13],[17,-49],[5,-36],[5,-8],[4,-24],[0,-20],[-2,-22],[-12,-22],[-22,-17],[-9,5],[-4,7],[-7,43],[-1,50],[1,40],[2,10],[0,17],[6,17],[-2,7],[4,10],[6,1],[-14,10],[2,7],[7,-3],[7,-10]],[[5798,3530],[6,-12],[10,-10],[3,-14],[-4,-17],[-5,-7],[1,-10],[-8,-9],[-13,-4],[-5,-7],[-4,-22],[-8,2],[-16,35],[-5,22],[8,6],[12,35],[8,2],[4,10],[13,8],[3,-8]],[[5582,8366],[-1,0]],[[5581,8366],[1,0]],[[5652,8289],[0,9],[-14,16],[-6,-1]],[[5632,8313],[-3,6],[5,24],[-8,11],[-15,1],[-21,9]],[[5590,8364],[-6,32],[0,16]],[[5584,8412],[8,9],[22,11],[15,-4],[8,3],[29,-5],[4,-4],[22,8],[5,-12],[15,-2],[26,-28]],[[5759,8496],[14,-14],[-6,-26],[14,-17],[0,-23]],[[5584,8412],[-2,19],[2,24],[10,12],[0,15],[8,15],[22,11],[18,-21],[4,-17],[12,-7],[19,15],[-2,37]],[[3249,6221],[-2,2]],[[3247,6223],[2,-2]],[[4851,7247],[2,-14],[14,-21],[11,-5],[19,8],[6,-5],[15,7]],[[4919,7214],[2,-9],[17,-2]],[[4758,6776],[-3,0],[1,-30],[-18,-3],[-7,-11],[-16,-2],[-9,7],[-10,1],[-13,-7],[2,-15],[-4,-6],[-8,-25],[-8,-3],[-4,-23],[-3,-30],[-3,-13],[-6,-12],[-12,-16],[-6,-22],[-16,-16],[-4,-13],[-6,-53],[0,-16],[-12,-26],[1,-7],[-4,-14],[-11,-4],[-22,4],[-18,-1],[-12,-4]],[[4527,6416],[1,21],[4,20],[10,13],[4,26],[5,11],[-2,5],[13,42],[-4,0],[8,12],[11,26],[5,4],[5,17],[0,22],[10,45],[0,9],[9,16],[7,4],[10,14],[10,53],[7,16],[24,8],[16,14],[11,23],[15,15],[21,49],[5,19],[1,14],[-7,13],[0,26],[2,26],[3,11],[9,18],[3,24],[-1,7],[11,17],[10,23],[26,19],[21,25],[15,48],[2,15],[9,39],[14,7]],[[5206,7702],[-2,-1]],[[5783,7801],[-3,21],[1,26],[3,22],[-4,18],[-6,5],[-17,36],[-10,30],[-8,3]],[[5739,7962],[20,10],[14,-2],[6,-9],[21,-8],[10,-13],[-1,-25],[7,-10],[5,2],[0,-20],[10,-9],[-1,-16],[6,-9],[-15,0],[-3,6],[-7,-6],[-1,9],[-7,-4],[1,-26],[-13,-19],[0,-11],[-8,-1]],[[6384,4200],[0,8],[5,14],[-5,-22]],[[6370,4487],[-2,-11],[7,-4],[1,-18],[7,-8],[4,-13],[-1,-9],[5,-25],[3,-37],[0,-29],[8,-27],[-4,-34],[-3,-9],[-6,7],[-3,25],[-8,-7],[3,-23],[-2,-5],[5,-11],[-1,-25],[-5,-13],[-6,-24],[2,-29],[-4,-39],[-3,-11],[-10,-59],[-2,-19],[-7,-32],[-3,-29],[-10,-57],[-4,-16],[-2,-24],[-7,-48],[-1,-16],[-4,-13],[-8,-47],[-14,-15],[-11,-2],[-13,-11],[-6,-9],[-12,-2],[-11,17],[-10,2],[-10,15],[-2,20],[-7,14],[-1,45],[3,10],[-4,6],[-1,16],[-6,12],[-4,36],[3,27],[4,6],[0,17],[7,4],[11,46],[4,7],[6,29],[-3,4],[2,24],[-6,18],[1,16],[-6,22],[-1,35],[-3,15],[15,49],[0,30],[12,-1],[11,16],[10,-2],[0,7],[8,4],[4,-6],[1,9],[6,5],[18,25],[3,-7],[-3,-10],[7,2],[-4,18],[4,5],[2,12],[6,8],[-3,-22],[11,28],[-3,11],[3,11],[4,-2],[3,11],[-4,9],[0,19],[7,-1],[1,-10],[4,-1],[0,14],[5,1],[-1,9],[6,-4],[3,5],[1,16],[3,8],[-2,22],[3,13],[5,4],[3,18],[2,-8]],[[2590,6367],[-7,-17],[2,17],[5,0]],[[1889,6595],[7,-4],[1,-9],[-8,13]],[[1800,6801],[-5,-1],[5,12],[0,-11]],[[1880,6866],[3,-12],[-3,-16],[-7,7],[2,17],[5,4]],[[1847,6884],[4,-14],[5,-1],[2,-17],[-11,17],[-3,9],[3,6]],[[2186,6889],[0,-8],[7,-2]],[[2193,6879],[11,-20],[1,-12],[9,-31],[6,-12],[9,-27],[7,-6],[-1,-15],[2,-15]],[[2237,6741],[3,-16],[3,2],[2,-14]],[[2245,6713],[2,-9],[20,-12],[4,-8],[16,-2],[9,-10],[5,6]],[[2301,6678],[0,-14],[-8,-31],[-6,-38],[-2,-30],[-1,-43],[1,-16],[-4,-22],[3,-29],[5,-34],[15,-57],[9,-17],[9,-27],[3,-25],[5,-5],[1,-9],[7,-19],[7,-4],[11,2],[5,-9],[6,-2],[8,-21],[10,3],[16,11],[17,3],[15,13],[10,2],[6,-12],[10,-3],[6,17],[-5,8],[14,16],[5,11],[1,21],[7,14],[-1,6],[1,39],[3,15],[16,17],[19,4],[17,12],[14,2],[20,-9],[6,9],[6,-10],[2,-17],[-3,-16],[-9,-18],[-7,-19],[-1,-19],[-8,-16],[9,-8],[-6,-40],[-3,-10],[-2,-23],[-3,14],[-4,3],[2,18],[-5,-4],[-3,-15]],[[2437,6020],[-20,42],[-19,33],[-11,16],[-10,10],[-1,-6],[-8,1],[-4,13],[-5,-9],[9,-4],[-11,-1],[-8,-12],[-15,-9],[-7,-8],[-8,-2],[-15,10],[-4,6],[-17,3],[-8,13],[-13,6],[-6,14],[-5,0],[-15,8],[-5,0],[-5,9],[-31,22],[-6,11],[-13,14],[-4,13],[-7,6],[-5,-4],[-32,20],[-8,21],[-9,14],[-12,13],[-15,12],[-3,14],[-5,6],[-8,22],[0,10],[-4,8],[3,8],[10,6],[-7,15],[7,12],[1,22],[-6,8],[-7,23],[-2,32],[-9,17],[-15,34],[-12,32],[-21,28],[7,-7],[0,9],[-5,-1],[-9,13],[-6,18],[7,0],[-22,24],[0,5],[-9,-3],[6,9],[-7,-1],[-8,9],[0,14],[4,9],[0,19],[-4,9],[-10,3],[-5,23],[-9,2],[-7,13],[-2,26],[2,3],[-14,4],[-8,12],[-5,13],[-5,5],[-13,29],[-2,20],[-5,2],[1,9],[-11,23],[0,16],[-10,36],[3,20],[-16,10],[-1,10],[-7,6],[-9,-6],[-10,15],[-8,2],[0,-41],[4,-8],[3,-27],[-1,-19],[7,-21],[4,-1],[17,-27],[3,-23],[7,-3],[11,-32],[3,-25],[4,-12],[8,-6],[4,-20],[6,-7],[-1,-6],[8,-25],[-3,20],[8,-10],[0,-9],[5,-13],[1,-29],[9,-25],[10,-36],[-2,-15],[3,-15],[8,-8],[0,13],[14,-16],[4,-23],[7,-10],[0,-14],[-11,-19],[-7,0],[-6,36],[-8,9],[-12,22],[-14,16],[-5,14],[-4,-3],[-4,14],[-3,-1],[-2,25],[3,3],[0,27],[-9,30],[-3,0],[-17,21],[-1,21],[-4,-13],[-10,-1],[-5,13],[-8,9],[-10,6],[0,9],[-16,20],[-1,8],[15,-5],[7,6],[5,-13],[-1,17],[2,28],[-9,26],[-4,3],[-12,26],[-6,2],[-14,19],[-4,12],[0,19],[-5,4],[-1,26],[-7,9],[0,11],[-10,22],[1,15],[-8,14],[-6,28]],[[1746,7056],[66,10],[-1,-12],[46,-30],[58,-37],[79,0],[0,26],[46,0],[11,-20],[8,-8],[14,-26],[6,-4],[7,-12],[6,-21],[-1,-10],[5,-21],[14,-20],[25,-19],[8,14],[4,30],[8,2],[3,6],[5,-5],[20,-2],[3,-8]],[[2290,6649],[-4,-5],[0,-32],[-2,-53],[6,67],[4,13],[-4,10]],[[5582,7536],[0,0]],[[5586,7536],[-4,1]],[[5581,7537],[0,0]],[[5575,7539],[-2,10]],[[5598,7616],[20,7],[2,-4]],[[5117,6285],[0,-124],[-1,-33],[-4,-7],[-4,-29],[-11,-17],[0,-8],[-14,4],[0,-5],[-47,-3],[-9,-17],[-9,-3],[-13,3],[1,-5]],[[4683,5897],[-1,36],[-6,21],[-5,-5],[-8,23],[4,5],[-2,28],[-5,6],[1,18],[-2,5]],[[4659,6034],[5,-2],[7,8],[0,24],[3,11],[6,7],[14,-22],[3,-2],[4,13],[12,1],[14,-4],[13,7],[65,0],[41,0],[5,45],[-8,15],[-1,33],[-2,21],[-1,36],[-2,22],[-6,109],[0,17],[-3,39],[-6,104],[0,14],[-3,39],[0,16],[-3,37],[50,0]],[[7737,5862],[0,-11],[-4,-2],[-1,13],[5,0]],[[7733,5907],[-2,-14],[-1,20],[3,-6]],[[7622,6095],[-2,9],[7,13],[2,-6],[-7,-16]],[[7710,6117],[-4,12],[2,5],[2,-17]],[[7602,6269],[-2,-10],[-5,9],[7,1]],[[7604,6305],[6,-6],[-6,-6],[-3,10],[3,2]],[[7780,6353],[-9,6],[0,-6],[-10,2],[3,-11],[-6,-6],[-8,1],[-1,-17],[-21,-7],[-6,8],[0,-9],[-5,-4],[-2,-10],[1,-18],[-4,-10],[3,-19],[-10,-8],[5,-6],[5,-22],[-2,-10],[11,-23],[4,-17],[7,-8],[-1,-11],[6,-28],[6,5],[-2,-15],[-7,-3],[0,-40],[-9,-4],[-2,-12],[2,-16],[6,-13],[3,-15],[11,-14],[4,-11],[3,-67],[6,-9],[1,-25],[2,1],[3,-19],[-6,-12],[-1,-12],[-5,-17],[-6,-8],[0,-8],[-5,-4],[-2,-23]],[[7742,5779],[-7,-20],[0,24],[-1,18],[7,10],[1,45],[-5,2],[4,20],[-6,11],[5,21],[-3,32],[-9,31],[-4,-1],[0,27],[-3,9],[-5,30],[0,32],[-2,26],[-4,14],[2,25],[-8,-2],[-5,13],[0,18],[-3,12],[-6,8],[0,-23],[-2,-16],[-5,-11],[-11,3],[2,-12],[-16,-8],[-2,-16],[-7,-13],[-9,8],[-6,-4],[0,12],[-5,-9],[-3,5],[3,21],[-12,-19],[-1,11],[4,22],[2,38],[4,9],[0,22],[-2,3],[-2,30],[-6,24],[-5,8],[0,20],[-2,-4],[-1,-16],[-7,9],[-6,22],[9,-10],[6,14],[-11,14],[3,13],[-4,-3],[-6,11],[-10,-1],[2,16],[-4,-12],[-5,6],[5,4],[-5,9],[0,-11],[-7,22],[-3,3],[-3,21]],[[5533,7690],[8,-17],[11,-8],[13,-12],[0,-5]],[[5538,7620],[0,-3]],[[5537,7617],[-6,0],[7,-10]],[[5537,7593],[-14,24],[-10,8]],[[8263,7933],[2,-6],[9,9],[-4,10]],[[7439,8014],[9,6],[1,10],[19,0],[8,3],[15,13],[-2,11],[25,18],[5,0],[8,12],[11,0],[12,16],[9,-2],[7,10],[7,-10],[9,6],[2,-10],[33,-2],[3,-22],[8,-10],[8,1],[15,-8],[9,7],[21,-9],[11,2],[9,-10],[7,11],[15,6],[5,15],[2,14],[-8,6],[-6,22],[7,27],[5,0],[3,14],[8,4],[7,20],[11,-11],[11,-3],[9,-10],[14,0],[23,-15],[7,1],[17,-9],[2,-43],[17,-15],[11,-7],[20,-3],[13,10],[19,4],[4,6],[21,-6],[4,-6],[13,3],[14,-20],[22,-3],[-1,-15],[17,-20],[16,1],[31,-10],[3,4],[9,-6],[20,14],[18,1],[11,8],[10,-2],[8,5],[3,12],[27,27],[17,-1],[17,-20],[9,-1],[12,8],[12,-5],[3,-6]],[[5913,3637],[-22,0]],[[5891,3637],[1,15],[-3,17],[1,16],[-3,3]],[[5887,3688],[1,16],[0,71],[-4,30],[-3,5],[-6,24],[1,14],[-7,44]],[[5869,3892],[31,64],[-2,10],[4,10],[-1,17],[6,7],[9,29],[1,14],[-6,6],[1,36],[-5,2],[0,11],[6,3],[-1,14],[4,4],[-2,36],[3,14],[-1,17],[-5,22],[4,14],[-7,-1],[-1,6],[-13,9],[-9,1],[-5,12],[-5,1],[-7,10],[-9,-2],[-2,4],[-13,-1],[0,21]],[[5844,4282],[-1,18],[-4,20],[19,14],[14,6],[19,16],[4,1],[27,19]],[[5922,4376],[6,-21],[7,-13],[1,6],[17,6],[5,-11],[2,-41],[-5,-11],[0,-9],[-5,-10],[5,-13],[1,-14],[9,-15],[5,-13],[5,-4],[0,-17],[5,0],[-2,38],[4,19],[9,2],[3,5],[1,35],[-1,16],[3,15],[-2,14],[-21,54],[-6,11]],[[5968,4405],[-2,10],[-1,28],[2,8],[-4,14],[0,16],[6,10],[2,25]],[[5971,4516],[19,0],[5,10],[9,-10],[1,-7],[15,1],[7,6],[12,-8],[11,10],[1,13],[7,4],[11,-8],[11,13],[11,0],[5,9],[9,4],[18,27]],[[6123,4580],[6,-13],[-7,-32],[0,-23],[3,-18],[0,-28],[3,-20],[-6,-8],[5,-1],[-2,-39],[4,-23],[-4,-8],[6,-2],[-3,-8],[6,-5],[0,-22],[-5,-7],[1,-8],[-3,-24],[-13,-26],[-3,-14],[-7,-7],[3,-7],[-21,-26],[-1,-7],[-11,-2],[-16,-16],[-6,-3],[-20,-22],[-11,-32],[-8,-15],[-2,-13],[-5,5],[1,-12],[-4,6],[-13,-18],[-6,-17],[-16,-26],[-3,4],[0,-25],[-3,-12],[6,-15],[3,0],[4,-39],[4,-16],[2,-20],[-1,-24],[5,16],[2,-16],[-2,-10],[3,-20],[-7,-50],[6,-4],[-3,-17],[-9,-26],[-13,-11],[-26,-17],[-11,-10],[-12,-16],[-5,-18],[-4,-6],[3,-12],[7,-5],[-1,-33]],[[4659,6034],[-6,12],[-12,16],[-1,13],[-8,8],[-2,17],[-5,13],[-10,-2],[-6,16],[-8,14],[-16,0],[-20,-9],[-19,1],[-1,-15],[-3,-3],[-2,-22]],[[4540,6093],[0,30],[2,18],[8,33],[4,26],[0,28],[-3,40],[-5,20],[-6,11],[9,24],[0,28],[-9,26],[0,-9],[-5,11],[-4,19],[-4,-3],[-1,-16]],[[4526,6379],[-1,6],[3,26],[55,0],[55,0],[0,15],[-4,71],[3,10],[12,16],[17,11],[0,146],[56,0],[36,0],[0,74]],[[6603,4026],[2,-11],[-3,-12],[-9,-1],[0,15],[4,13],[6,-4]],[[5969,4525],[0,2]],[[5969,4527],[0,-2]],[[5964,4534],[0,2]],[[5964,4536],[0,-2]],[[5952,4624],[-3,6]],[[5949,4630],[3,-6]],[[5946,4634],[0,1]],[[5946,4635],[0,-1]],[[5941,4623],[2,-16],[8,-22],[-1,-51],[3,-25],[-8,-21],[0,-15],[4,-4],[0,-16],[4,-12],[-1,-26],[2,-9],[7,-10],[-2,-24],[7,-10],[2,11],[8,-16],[4,0],[-6,34],[-6,2],[0,12]],[[5922,4376],[-7,-1],[-2,12],[-6,14],[6,8],[4,49],[9,3],[5,11],[-4,0],[-4,11],[2,15],[-3,27],[5,15],[-4,17],[7,6],[5,11],[-4,20],[-6,8],[1,15],[-4,12],[-7,1],[-1,11]],[[5914,4641],[10,-5],[4,-7],[9,1],[4,-7]],[[8093,5320],[-2,3],[0,20],[2,-2],[0,-21]],[[8269,5423],[5,-1]],[[7786,5497],[-1,-11],[-3,11],[4,0]],[[7773,5553],[-3,-8],[-3,8],[6,0]],[[7834,5543],[9,-7],[3,-14],[18,-29],[9,-33],[1,-32],[-4,-8],[0,-23],[4,-12],[-2,-6],[1,-32],[10,-15],[3,-23],[8,-23],[1,-24],[-16,4],[-4,-10],[-5,15],[-15,19],[-7,11],[-10,9],[-11,21],[-14,15],[2,9],[-2,17],[-6,17],[-11,19],[2,9],[-4,6],[1,21],[-2,19],[-6,11],[2,6],[-2,23],[0,26],[-7,25]],[[7780,5554],[2,15],[4,-9],[12,-7],[2,-11],[7,1],[0,-19],[-3,-9],[3,-8],[5,9],[9,7],[6,-10],[7,30]],[[8045,5303],[0,-10],[8,-13],[9,1],[16,-8],[6,-6],[0,16],[5,22],[0,18],[4,0],[2,16],[5,8],[11,2],[20,10],[9,9],[12,33],[7,12],[6,19],[1,16]],[[8193,5464],[1,-4]],[[8198,5465],[6,1],[6,15],[-6,9],[6,11],[6,0],[3,14],[4,4],[1,17],[6,6],[1,8],[8,18],[3,19],[3,-3],[-2,-22],[6,8],[3,15],[4,-2],[1,-18],[7,-3],[6,-10],[-4,-13],[5,-16],[6,9],[3,-14],[8,-1],[9,-15],[15,-10],[0,-11],[-15,-13],[-7,-1],[-2,6],[-7,-8],[5,-14],[9,-13],[-18,-12],[-11,10],[-1,-14]],[[8256,5598],[-5,-6],[0,10],[6,4],[-1,-8]],[[5649,4167],[22,9],[17,-1],[7,-5],[6,-12]],[[5554,3757],[1,-13],[0,-196],[-12,-8],[-2,-9],[-7,-5],[-3,-11],[-11,7],[-16,-4],[-16,13],[-5,-1],[-2,28],[-4,0],[-3,11],[-5,-2],[-4,-12],[0,-11],[-8,-7]],[[5457,3537],[-5,4],[-15,27],[-12,41],[-2,21],[-5,18],[2,11],[-5,7],[0,21],[-3,11],[-1,23],[1,20],[-11,53],[1,33],[-2,25],[3,10],[-1,27],[-14,39],[-4,18],[-13,37],[-5,37],[-3,3],[-4,20],[-7,22],[-3,18],[-8,23],[-8,14],[-5,21],[-3,36],[1,12]],[[9665,3952],[5,-3],[-1,-13],[-7,3],[-2,12],[5,1]],[[9646,3990],[4,-27],[-9,7],[-1,8],[6,12]],[[9555,4026],[7,-13],[6,0],[16,-24],[5,-3],[11,-30],[7,-3],[15,-20],[4,-10],[11,-14],[2,-10],[-3,-5],[-12,8],[-2,-4],[-6,8],[-2,13],[-4,-1],[-7,14],[-13,7],[-4,13],[-12,16],[-1,8],[-6,6],[-12,44]],[[5416,6507],[4,-53],[1,-34],[12,-31],[-1,-12],[11,-21],[-7,-29],[0,-21],[-6,-142],[-1,-9],[-22,-46],[-12,-29],[-13,-39],[0,-11],[-9,-19],[4,-39]],[[5377,5972],[-6,1],[-4,-10],[-5,0],[-14,-18],[-2,-10],[-10,2],[-7,9],[-12,6],[-22,1],[-13,-6],[-7,-7],[-8,-20],[-18,2],[-10,7],[-15,20],[-9,1],[-10,-12],[-6,0],[-3,-7],[-7,4],[-4,15],[-12,21],[-3,-3],[-16,14],[-8,-8],[-12,2],[-11,-6],[-9,-11],[-1,-28],[-4,-14],[-8,-13],[-1,-25],[1,-21],[-2,-2]],[[5377,5972],[13,-36]],[[5238,5460],[-5,-4],[-6,14],[5,-21],[-2,-4],[-17,-3],[-14,10],[0,-10],[-4,-4],[0,13],[-4,2],[3,-18],[-25,-6],[-7,6],[-8,17],[-3,12],[-3,27],[-4,8],[-3,17],[-6,13],[-13,20],[-15,4],[-12,-1],[4,6],[-5,2],[0,-9],[-19,-1]],[[2691,6046],[-6,-4],[4,-35],[-7,-20],[-4,-40],[2,-21],[-1,-19],[2,-10],[-4,-2],[1,15],[-5,-4],[4,-12],[-5,-31],[3,2],[1,-14],[-6,-11],[1,-16],[5,-12]],[[2619,5821],[-6,13],[-12,18],[-7,15],[-4,17],[-26,41],[4,10],[6,-5]],[[5093,8141],[24,0]],[[5162,8210],[-10,-17],[-10,7],[15,13],[5,-3]],[[5118,8141],[-21,6],[1,7],[9,1],[7,-11],[-3,33],[8,7],[6,13],[6,36],[10,-1],[14,21],[11,5],[24,3],[9,-12]],[[5140,8230],[7,-10],[-8,-8],[0,-15],[12,-5],[12,14],[-12,20],[-2,13],[-9,-9]],[[5157,8665],[-10,4],[10,9],[0,-13]],[[5249,8849],[3,-8],[-16,-5],[-3,7],[16,6]],[[5244,8857],[-2,-7],[-13,0],[15,7]],[[5344,8955],[3,-6],[-12,-11],[9,17]],[[5387,9114],[3,-5],[-17,-6],[5,13],[9,-2]],[[5420,9124],[-11,-11],[-15,-6],[9,15],[17,2]],[[5441,9154],[2,-15],[8,12],[8,-5],[-1,-15],[-21,-8],[-4,-7],[-17,-3],[6,18],[6,0],[6,23],[7,0]],[[5421,9152],[6,-15],[-9,-5],[-18,7],[21,13]],[[5439,9158],[-11,-3],[20,19],[-9,-16]],[[5492,9188],[10,-7],[-3,-14],[-32,-8],[9,12],[-6,8],[22,9]],[[5523,9207],[6,-7],[-8,-11],[-17,-2],[5,15],[14,5]],[[5533,9218],[12,-6],[-15,-10],[-9,7],[12,9]],[[5652,9249],[5,-8],[-16,-11],[-6,7],[17,12]],[[5649,9262],[-11,-16],[-24,-4],[7,13],[17,-3],[11,10]],[[5856,9203],[2,-15],[-17,4],[-10,-15],[-16,-3],[-11,-16]],[[5572,9158],[-14,0],[7,-8],[-11,-20],[0,-11],[-42,13],[-8,-3],[1,-19],[-8,-13],[-16,8],[-15,-11],[-5,-16],[-14,-13],[9,-12],[-1,-10],[-27,-31],[2,-13],[-12,-7],[-15,-1],[3,-17],[-3,-30],[-5,-12],[-20,-30],[14,-8],[1,-15],[-5,-10],[-21,5],[-15,-8],[-14,-21],[-5,-18],[6,-16],[-4,-24],[7,-20],[-5,-30],[20,-20],[-4,-18],[-13,-4],[10,-29],[-3,-21],[-10,-13],[-7,0],[-6,-16],[4,-21],[-6,-21],[-5,6]],[[5317,8580],[-2,7],[-16,4],[-5,22],[-5,-3],[1,-15],[-5,-12],[-15,-2],[-28,-36],[-16,-16],[-15,-5],[-30,5],[4,7],[-19,9],[-10,9],[-4,11],[2,18],[14,-10],[-5,13],[9,14],[-12,11],[2,-11],[-10,-4],[-8,9],[8,18],[11,0],[-5,7],[7,5],[5,15],[10,13],[-13,-9],[-6,-16],[-6,16],[-6,-8],[-6,8],[3,14],[12,-3],[-1,14],[-10,-9],[-10,14],[3,16],[10,0],[-13,10],[0,10],[11,7],[-11,5],[11,16],[33,-6],[-31,8],[-7,-3],[7,17],[13,1],[25,16],[-12,-3],[12,13],[22,-8],[-1,10],[-16,2],[-2,12],[10,5],[7,-6],[16,2],[4,11],[12,-2],[-5,11],[34,19],[7,-14],[24,5],[-2,8],[19,14],[2,9],[-18,-7],[2,-9],[-26,-14],[-12,16],[15,11],[-3,9],[14,10],[12,17],[13,-11],[0,17],[11,5],[4,17],[19,3],[-10,6],[10,12],[-8,12],[27,33],[-8,8],[9,16],[12,10],[-7,6],[20,4],[10,13],[22,-3],[0,5],[-28,1],[28,31],[-15,-9],[4,15],[30,7],[-22,1],[23,8],[5,-17],[6,8],[-11,14],[17,8],[32,-1],[-9,8],[-29,-5],[2,11],[24,6],[6,22],[10,6],[4,14],[19,5],[11,13],[26,10],[8,-11],[15,2],[11,14],[19,-17],[-5,14],[-18,15],[28,3],[20,-6],[5,-14],[11,25],[29,23],[0,11],[37,-7],[-19,-17],[-9,-26],[8,-1],[6,15],[33,35],[-3,-34],[17,22],[11,6],[-8,10],[28,3],[8,-5],[-19,-29],[14,2],[11,20],[9,1],[21,-14],[8,4],[27,-25],[-16,-2],[-10,-10],[-39,6],[-3,-4],[29,-8],[-2,-12],[34,3]],[[5713,9281],[11,-11],[-15,-3],[-6,9],[10,5]],[[4778,9282],[-1,-9],[-15,-2],[16,11]],[[5647,9686],[-7,-11],[38,-10],[-33,-33],[-23,0],[10,17],[-53,-6],[22,27],[-22,9],[23,8],[45,-1]],[[5596,9708],[21,-5],[1,-13],[-43,-4],[-15,17],[36,5]],[[5313,9706],[24,-18],[-29,12],[-16,19],[13,4],[8,-17]],[[5467,9783],[4,5],[53,-31],[2,-16],[23,1],[8,-9],[40,-9],[-5,-12],[-44,-1],[-22,-10],[3,-21],[-18,-4],[-5,-31],[-14,1],[-11,-30],[-12,-11],[3,-11],[-20,6],[-35,25],[-18,3],[-9,22],[50,-2],[-31,7],[59,9],[-36,4],[-50,-9],[-5,19],[40,3],[17,12],[27,1],[-3,22],[-14,-14],[-16,-1],[-1,23],[-28,-21],[10,-6],[-25,-10],[-23,-1],[-17,20],[-20,10],[21,16],[-19,4],[10,14],[-23,-12],[-16,26],[31,17],[9,-10],[47,12],[-3,-10],[-33,-9],[37,-1],[19,16],[20,-12],[5,-15],[28,-25],[-14,23],[-7,33],[24,9],[7,-9]],[[5642,9812],[113,-16],[-1,-15],[-37,-13],[-5,-13],[-38,-5],[-6,-7],[-32,2],[-1,11],[-57,-2],[-32,10],[22,8],[39,1],[0,7],[-66,-7],[-28,4],[-12,23],[33,-5],[33,19],[53,-25],[3,26],[19,-3]],[[9617,2273],[0,-19],[-6,6],[6,13]],[[9665,2494],[6,-10],[0,-14],[-12,-2],[-5,-8],[1,13],[5,6],[-1,14],[6,1]],[[96,2665],[10,-1],[-9,-6],[6,-11],[-9,-5],[3,13],[-9,8],[8,2]],[[9802,2850],[-4,0],[-2,-14],[9,-2],[1,-21],[4,-9],[10,14],[6,3],[3,-10],[3,13],[9,-2],[-4,-7],[3,-10],[-6,-8],[6,-18],[-8,-17],[-3,-13],[-9,-13],[-6,-23],[-15,-16],[-1,-24],[9,-5],[1,-9],[-7,-4],[-10,10],[-7,-9],[-25,-22],[-4,-20],[0,-17],[-7,-15],[-5,-25],[0,-16],[-8,-3],[-17,-24],[-4,-11],[-13,-7],[-11,0],[-1,6],[-13,-4],[-5,16],[-11,-2],[-2,10],[-8,3],[-3,-7],[-16,3],[1,13],[-9,0],[0,10],[9,6],[-2,8],[4,17],[8,-7],[-4,16],[36,56],[2,7],[10,1],[19,21],[8,4],[16,27],[14,12],[13,29],[6,37],[9,4],[8,16],[1,31],[15,21],[7,0]],[[9872,3102],[4,-10],[-7,5],[3,5]],[[9807,3201],[-1,-14],[3,-11],[8,-8],[8,2],[10,-9],[2,-9],[5,4],[1,-13],[5,-10],[-2,-23],[9,-16],[-3,-21],[7,-17],[8,0],[4,-17],[5,3],[-4,18],[3,20],[3,-14],[7,-9],[1,-35],[2,-7],[14,-7],[19,-13],[10,4],[5,14],[8,7],[8,0],[7,-10],[-6,-15],[-1,-32],[-10,-9],[-2,-34],[-1,12],[-12,1],[-10,-8],[-4,-10],[1,-13],[4,-3],[-5,-25],[-8,-21],[-6,-9],[-9,-30],[-8,-14],[-13,-14],[-3,11],[-9,-1],[-8,12],[4,4],[10,24],[4,27],[-5,17],[-15,10],[-6,12],[-9,4],[-6,8],[1,14],[22,19],[3,41],[4,20],[-3,30],[4,10],[-3,8],[-8,-6],[-2,16],[-6,19],[7,-12],[-2,22],[-11,8],[1,-9],[-26,61],[2,16],[-12,29],[10,1]],[[6629,6344],[-1,12],[8,19],[-7,-31]],[[6474,6141],[-8,37],[-2,0],[-11,55],[-10,44]],[[6443,6277],[13,8],[52,37],[19,12],[9,56],[9,61],[-13,39]],[[6566,6621],[6,-28],[6,-15],[10,-17],[31,-18],[8,2],[6,-11],[13,-39],[7,-13],[8,-2],[0,-17],[-9,-27],[-4,-19],[-12,-17],[-11,-42],[-8,1],[1,11],[-5,-3],[-3,-13],[-4,-4],[-1,-20],[-3,-10],[2,-31],[2,-11],[-3,-4],[-15,-2],[-8,-6],[-7,-12],[-3,-28],[-5,-10],[-5,1],[-21,-7],[-6,-19],[2,-9],[-7,-20],[-8,-3],[-4,5],[-16,-3],[-12,-14],[-7,0],[-7,-6]],[[6557,6684],[2,8],[9,-6],[-5,-27]],[[6893,6556],[-1,-9],[-8,10],[-6,-3],[-8,15],[-5,42],[-13,5],[1,20],[-5,7],[-3,13],[-7,1],[2,-7],[-16,-8],[-13,2],[-1,-4],[-23,-1],[-19,6],[-4,-11],[-28,4],[-5,-6],[-17,-8],[1,8],[-5,2]],[[2729,5623],[3,-19],[-7,12],[4,7]],[[2836,5599],[-8,16],[-7,31],[5,4],[0,10],[5,8],[-5,3],[-4,-7],[-3,16],[-10,15],[-6,5],[-10,2],[-9,-12],[0,-13],[-8,-11],[-12,-10],[0,-8],[10,-19],[4,-14],[-10,-6],[-2,-9],[-13,-2],[0,7],[-8,30],[-1,-14],[-10,8],[-3,19],[-9,8],[-6,-1],[0,8],[-8,-4],[-9,2],[-2,-16]],[[2706,5734],[6,-10],[3,-23],[13,-4],[-4,11],[5,-3],[6,-15],[10,-1],[9,5],[7,12],[14,8],[14,22],[10,-4],[7,2],[-2,-7],[16,-2],[17,-19],[3,-9],[10,-15]],[[3073,4289],[-8,13],[-7,0],[2,-20],[-3,4],[-3,-15],[17,-10],[-2,-8],[7,-8],[4,3]],[[3084,4249],[-2,-19]],[[3044,4127],[-14,19],[0,3],[-13,15],[0,13],[-3,10],[-18,16],[-6,15],[-10,5],[-17,20],[-17,13],[-3,8],[-32,34],[-1,9],[-9,19],[-10,12],[-6,25],[-4,2],[0,15],[3,23],[-10,34],[0,7],[-8,20],[1,6],[-7,9],[-3,11],[-2,23],[-4,10],[-8,9],[1,11],[-4,20],[-12,36],[-1,20],[-4,9],[-2,18],[-5,8],[-4,33],[-6,23],[-14,29],[-6,35],[-7,12],[-6,16],[-16,16],[-11,17],[0,11],[8,6],[-2,16],[-7,11],[3,15],[-8,19],[2,25],[12,23],[0,5],[14,21]],[[8339,5486],[-9,-12],[-3,4],[12,8]],[[8361,5534],[5,-6],[-8,-6],[3,12]],[[8390,5552],[-3,0],[-4,14],[7,5],[7,-7],[-7,-12]],[[8493,5581],[-3,9],[3,5],[0,-14]],[[8251,5645],[-2,-13],[-1,14],[3,-1]],[[8489,5736],[9,-8],[3,-13],[4,4],[-1,-13],[4,-7],[0,-10],[-6,-9],[8,-6],[-1,-20],[3,3],[-2,-23],[5,-6],[1,-27],[-4,-16],[-6,-12],[-1,-28],[-4,20],[1,8],[-6,19],[-1,14],[-5,-4],[0,-9],[-5,-8],[-3,-22],[6,-6],[3,-20],[-1,-12],[-7,-21],[-7,13],[3,8],[-3,9],[-3,-14],[-10,5],[-13,14],[-5,15],[0,20],[-2,0],[1,19],[6,8],[0,9],[-5,11],[-15,13],[-3,-12],[1,-15],[-4,9],[-4,-1],[0,12],[-4,-14],[-6,0],[1,16],[-9,-3],[-7,-26],[-2,-17],[-3,-3],[-5,9],[7,30],[-1,11],[7,16],[16,6],[3,21],[8,1],[2,11],[3,-6],[6,1],[4,-13],[0,-15],[11,6],[2,17],[3,4],[6,-8],[3,5],[0,23],[4,1],[5,-9],[5,10],[7,1],[0,17],[-4,21],[2,8],[5,-12]],[[8503,5750],[-4,-2],[2,14],[2,-12]],[[8453,5767],[7,-6],[-1,-12],[-7,-13],[-12,2],[-2,9],[7,10],[3,10],[5,0]],[[8479,5754],[-4,9],[3,3],[1,-12]],[[8490,5782],[1,-31],[-5,11],[0,15],[4,5]],[[8332,5791],[-6,-5],[2,10],[4,-5]],[[8408,5792],[-5,-9],[0,11],[4,7],[1,-9]],[[8423,5815],[8,-4],[1,-7],[-7,-25],[-1,-15],[-4,-13],[0,-19],[5,-11],[-2,-12],[-7,-5],[-3,15],[-9,8],[-5,15],[2,15],[11,6],[-1,23],[4,23],[8,6]],[[8444,5821],[1,-35],[-2,-9],[-9,-14],[0,-7],[-6,-27],[-3,-4],[2,34],[9,27],[5,33],[3,2]],[[8319,5836],[0,-30],[6,-17],[-10,-11],[-4,-14],[-13,-9],[1,-12],[-9,-26],[-10,-10],[-1,-9],[-8,-14],[-6,-2],[-1,-9],[-9,0],[19,43],[4,0],[9,23],[7,11],[6,20],[12,17],[4,32],[0,14],[3,3]],[[8456,5842],[7,-8],[4,7],[6,-10],[-1,-30],[5,-8],[2,-19],[-8,-4],[2,-10],[-8,7],[-1,14],[2,19],[-2,11],[-5,5],[-4,-4],[1,30]],[[8456,5856],[5,-12],[-5,0],[0,12]],[[8396,5860],[10,-14],[4,6],[3,-11],[7,8],[-1,-24],[-9,-10],[-1,-11],[-6,-6],[-9,-2],[-6,-13],[-2,20],[4,17],[0,39],[-6,1],[3,10],[9,-10]],[[8332,5870],[2,-13],[-3,-2],[-2,15],[3,0]],[[8331,5890],[11,-11],[0,-5],[-10,1],[-1,15]],[[8405,5890],[-5,12],[6,0],[-1,-12]],[[8469,5906],[10,-3],[2,-13],[5,-4],[-2,-6],[1,-33],[6,-24],[-14,0],[-2,10],[-4,0],[-4,10],[6,17],[-5,0],[-6,16],[-8,11],[-3,20],[7,-3],[11,2]],[[8426,5905],[6,-6],[5,-13],[4,-1],[4,-15],[0,-12],[-17,28],[-8,-17],[3,13],[-1,26],[4,-3]],[[8392,5910],[-3,-30],[-3,11],[2,17],[4,2]],[[8434,5912],[3,-18],[-5,16],[2,2]],[[8421,5926],[-7,8],[2,6],[5,-14]],[[8360,5962],[15,-22],[-1,-23],[-3,-26],[-4,-5],[-9,17],[-4,15],[0,14],[-7,12],[-4,18],[10,-4],[7,4]],[[8385,5963],[7,-9],[-4,-11],[-5,8],[2,12]],[[8450,5993],[5,-11],[0,-12],[-7,-8],[-4,7],[3,5],[0,20],[3,-1]],[[8387,6049],[2,-18],[-3,-5],[-3,23],[4,0]],[[8358,6252],[7,4],[10,-14],[13,-6],[4,13],[3,0],[2,-15],[-4,-8],[-1,-29],[3,-15],[4,0],[2,-28],[-8,-32],[1,-4],[-18,-18],[2,-10],[-7,-28],[9,-32],[-3,-1],[4,-30],[5,-10],[10,-2],[-3,13],[8,9],[8,-1],[9,-20],[-1,-12],[5,-3],[3,17],[17,-13],[1,-4],[-12,-1],[0,-8],[5,-8],[4,-16],[6,-8],[2,-12],[-2,-14],[-6,5],[-1,13],[-7,1],[-8,7],[0,14],[-3,11],[-7,6],[-5,16],[-9,7],[2,-18],[5,-15],[-3,-12],[-7,25],[-17,19],[-8,-8],[1,-6],[-11,-4],[-4,16],[-6,2],[-2,-7],[-1,24],[11,17],[-4,14],[-9,-4],[2,-13],[-4,-3],[-4,23],[-7,4],[-1,23],[-4,8],[1,26],[-4,3],[0,23],[9,-15],[9,5],[-3,17],[0,21],[4,10],[-1,11],[0,43],[5,23],[-1,10],[10,4]],[[8740,5620],[-2,-13],[-3,3],[5,10]],[[9256,4529],[13,-10],[0,-5],[-10,3],[-3,12]],[[9195,4611],[7,-2],[-2,-10],[-8,2],[-5,23],[8,-13]],[[9184,4640],[3,2],[5,-15],[-14,1],[0,16],[6,-4]],[[9176,4644],[-1,-9],[-5,5],[-1,9],[6,1],[1,-6]],[[9234,4667],[10,-3],[5,-11],[-10,2],[-5,12]],[[8989,4680],[-11,16],[11,-11],[0,-5]],[[8981,4701],[6,0],[1,-7],[-7,7]],[[9105,4867],[7,-7],[-1,-11],[-7,10],[1,8]],[[9299,4867],[8,-4],[3,-17],[6,-8],[1,-9],[5,-4],[8,-16],[2,-14],[-7,-8],[-5,1],[-10,17],[1,14],[-14,25],[0,19],[2,4]],[[9089,4870],[-4,0],[-2,11],[3,3],[3,-14]],[[9296,4889],[-2,-21],[-1,25],[3,-4]],[[9228,4941],[-2,-6],[7,-2],[0,-17],[-5,-20],[-8,-1],[5,-25],[-8,-9],[-11,3],[2,-8],[-14,-21],[-15,-13],[-24,-2],[-3,10],[-6,4],[-6,-5],[-2,7],[-10,12],[-9,7],[4,14],[11,-5],[3,4],[7,-8],[20,6],[2,24],[4,-27],[8,6],[8,-5],[8,6],[0,10],[10,20],[7,-3],[2,5],[-2,23],[-3,16],[7,0],[5,-8],[2,8],[6,0]],[[8915,5033],[7,-1],[25,-25],[25,-17],[13,-4],[9,-11],[5,-11],[15,-2],[0,-8],[9,-6],[5,-15],[8,-3],[13,-25],[-1,-38],[14,-4],[18,-16],[5,-7],[12,-3],[9,-22],[0,-18],[-25,-3],[0,-12],[5,-13],[1,-15],[7,-6],[8,-21],[12,-8],[3,-30],[7,-9],[2,-19],[21,3],[-4,-19],[1,-9],[7,-6],[15,-2],[1,-5],[-9,-5],[8,-16],[10,-7],[12,-3],[-4,-5],[-9,-1],[10,-10],[-7,-9],[-13,6],[2,7],[-9,8],[-7,-1],[-8,6],[-12,0],[1,5],[-11,-3],[-2,5],[-17,1],[-11,33],[-5,2],[-7,22],[-8,6],[-4,23],[-10,30],[-13,9],[-5,-1],[-7,8],[-9,2],[-6,12],[-6,-1],[2,-13],[-7,10],[1,-8],[-13,8],[4,-19],[-11,-4],[1,-12],[-18,-5],[-6,1],[11,-10],[7,-15],[1,-11],[-22,-23],[-11,10],[-20,-3],[-6,4],[-3,-5],[-6,7]],[[9195,5027],[10,-11],[11,-17],[7,-3],[14,-33],[11,-10],[5,-22],[-2,-14],[-5,-10],[-6,14],[1,21],[-5,19],[-10,21],[-6,2],[-9,16],[-5,4],[-9,15],[-10,7],[8,1]],[[9172,5046],[6,-5],[0,-12],[-8,0],[-3,9],[5,8]],[[9079,5070],[12,-5],[-3,-8],[-17,0],[0,11],[8,2]],[[9154,5105],[6,-13],[-6,5],[0,8]],[[5544,8319],[0,-1]],[[5544,8318],[4,-1]],[[5548,8317],[63,-4],[21,0]],[[5655,8150],[1,-13],[14,-27],[-5,0],[4,-18],[-10,-8],[-18,-24],[-13,-25],[4,-28],[-6,2]],[[5626,8009],[-15,8],[-11,12],[-16,-2],[-4,-6],[-6,6],[-10,0],[-14,-12],[-1,12],[-10,11],[-7,-11],[-9,7]],[[5396,8275],[8,-3],[0,13],[-10,0]],[[5394,8289],[54,20],[12,16],[10,2],[11,9],[27,5],[7,-23],[12,-6],[17,7]],[[3138,6248],[29,-2],[9,-6],[2,-7],[-7,-13],[-9,-5],[-17,3],[-12,-1],[1,15],[-3,7],[3,10],[4,-1]],[[8625,7631],[5,-14]],[[8630,7617],[-7,4],[-11,-15],[-11,-27],[4,-15],[-3,-11],[1,-19],[-11,-5],[-7,-16],[-13,-11],[-8,-14],[-9,1],[-4,-9],[-10,-8],[2,-9],[-6,-13],[2,-13],[9,-2],[17,-29]],[[8518,7361],[-8,4],[-8,-9],[-8,15],[-7,1],[2,-14],[-10,9],[-7,-2],[3,9],[-13,4],[9,5],[-3,9],[10,20],[-3,4],[4,21],[5,14],[-4,8],[-16,7],[-11,14],[1,12]],[[4525,7072],[11,-2],[-3,-7],[-10,3],[2,6]],[[4286,7362],[15,1],[0,-6],[-10,-3],[-5,8]],[[4220,7396],[-11,-2],[-2,9],[13,-7]],[[4248,7409],[-8,0],[0,8],[6,0],[2,-8]],[[4794,7325],[-12,-12],[-21,8],[-10,-7],[4,24],[1,44],[-4,18],[-8,-2],[-1,11],[8,6],[-2,7],[-4,-11],[-9,1],[4,38],[6,7],[7,36],[-1,3],[7,47],[-6,50],[3,7]],[[3492,3797],[-1,-17],[-4,-23],[-1,-22],[-3,-17]],[[5949,6986],[8,16]],[[5987,7012],[-4,-16]],[[853,4163],[-9,-2],[-1,11],[5,3],[5,-12]],[[6422,6601],[-8,-2],[-3,9]],[[6411,6608],[1,10],[-3,15],[1,20],[3,6],[4,24],[6,6],[4,-12],[5,-2],[1,-9],[-4,-14],[4,-14],[0,-15],[-4,-17],[-7,-5]],[[5783,7801],[3,-8],[11,-6],[14,12],[10,-3],[2,-9]],[[5823,7787],[-1,-22],[-14,-4],[-3,13],[-4,-3],[-6,-35],[1,-21],[-3,-13]],[[5630,7730],[-6,15],[8,5],[-10,9],[-6,-14],[-5,9],[-10,2],[-9,9],[5,16],[-15,12],[-6,9],[1,16],[-13,13],[-2,7]],[[5635,7944],[10,8],[7,-5],[20,-6],[10,3],[9,-14],[10,11],[26,6],[3,12],[9,3]],[[9064,7741],[7,1],[-12,-10],[-16,-24],[15,37],[6,-4]],[[9133,7793],[-15,-6],[-10,-15],[-5,0],[-7,-11],[-18,-19],[10,17],[-3,3],[25,28],[9,0],[12,15],[2,-12]],[[9182,7845],[-21,-27],[-10,-9],[15,27],[16,9]],[[9227,7898],[-1,-8],[-10,-14],[11,22]],[[9301,8041],[-1,-17],[-6,3],[7,14]],[[9336,8091],[-7,-15],[-9,-4],[-5,-11],[-5,16],[15,9],[4,15],[7,3],[0,-13]],[[9344,8100],[-7,6],[7,7],[0,-13]],[[8967,8309],[5,-11],[-3,-7],[8,-35],[4,-38],[-6,-46],[5,-11],[-2,-12],[6,0],[9,-69],[10,-33],[0,-7],[8,-36],[-9,14],[-23,9],[3,-6],[-10,-7],[-2,-16],[-12,-57],[6,-26],[8,-11],[0,-11],[5,-21],[9,4],[1,-28],[-3,-6],[-2,22],[-17,3],[-2,6],[-7,-5],[-6,-32],[-5,-9],[-3,6],[-4,29],[7,30],[-3,31],[7,21],[-3,26],[-5,12],[7,55],[0,46],[-3,10],[1,17],[5,19],[-5,18],[-11,14],[-1,38],[4,5],[3,26],[-4,26],[13,9],[1,-9],[10,9],[-4,8],[9,2],[-2,12],[-10,21],[5,-2],[5,11],[3,-8]],[[9669,8321],[-19,19],[4,0],[15,-19]],[[8810,8355],[-14,-11],[8,11],[6,0]],[[8827,8358],[9,-8],[-12,-22],[-6,15],[-6,1],[8,17],[7,-3]],[[5548,8317],[18,15],[-10,2],[-12,-16]],[[5544,8319],[10,17],[0,12],[12,-1],[15,19]],[[5582,8366],[-12,-19],[12,-3],[7,5],[1,15]],[[9609,8371],[18,-27],[1,-11],[-13,14],[-4,13],[-7,6],[5,5]],[[9571,8591],[3,-16],[-8,-2],[-23,-18],[9,26],[19,10]],[[5777,8600],[3,-1]],[[6924,9029],[21,-5],[-5,-13],[-16,18]],[[6396,9167],[-24,-22],[-23,-4],[-10,9],[1,19],[15,16],[13,1],[28,-19]],[[9482,9188],[-3,-8],[6,-25],[-10,6],[-2,19],[9,8]],[[9705,9201],[-6,-12],[-29,7],[-11,8],[14,11],[32,-8],[0,-6]],[[6648,9234],[5,-8],[26,-17],[0,-11],[-25,-1],[-5,11],[-10,-2],[-13,12],[-1,15],[13,8],[10,-7]],[[6464,9295],[14,-14],[-6,-11],[-7,12],[-15,9],[14,4]],[[0,9271],[9990,-7],[-25,-4],[-4,14],[8,11],[30,17],[-9999,-31]],[[8829,9305],[-3,-9],[-20,5],[23,4]],[[0,9302],[26,4],[18,-3],[27,-17],[-12,-12],[-42,-8],[-17,5],[0,31]],[[7160,9347],[-27,1],[22,18],[21,-9],[-16,-10]],[[8580,9366],[-7,-7],[-15,7],[22,0]],[[8592,9374],[-28,2],[18,7],[10,-9]],[[7209,9382],[0,-11],[-19,1],[-8,7],[16,13],[11,-10]],[[7078,9392],[-5,-14],[-16,10],[21,4]],[[6536,9406],[31,-6],[-8,-26],[-15,-9],[-7,-32],[5,-18],[16,-29],[23,-20],[19,-10],[-49,-5],[-16,3],[-2,-8],[-14,12],[-18,-1],[-11,7],[-11,34],[-11,-4],[-10,10],[-19,-6],[-8,6],[-3,22],[11,12],[15,-5],[9,22],[11,9],[-20,7],[7,8],[21,1],[-7,12],[17,12],[13,-2],[20,9],[11,-5]],[[6970,9416],[1,-13],[11,-6],[-42,-7],[3,20],[27,6]],[[8951,9436],[32,-18],[0,-21],[-33,3],[-40,10],[-27,-4],[2,8],[17,1],[17,22],[32,-1]],[[8903,9439],[-10,16],[20,5],[2,-17],[-12,-4]],[[8148,9464],[-16,-15],[-37,13],[18,14],[34,-4],[1,-8]],[[7281,9528],[-4,-16],[-14,11],[18,5]],[[9075,9530],[47,-4],[5,-12],[15,3],[49,-6],[-8,-15],[-25,-8],[-43,2],[-58,24],[7,20],[11,-4]],[[8773,9524],[-11,-1],[6,29],[14,-16],[-9,-12]],[[8863,9565],[40,-20],[10,14],[19,1],[-8,10],[35,-19],[29,1],[50,-20],[-19,-5],[5,-8],[-16,-15],[-40,6],[-11,13],[15,13],[-3,8],[-25,-4],[5,-18],[12,-15],[30,-9],[-38,-6],[-14,10],[-49,-10],[-6,8],[-17,-18],[-33,8],[-25,20],[-2,34],[18,1],[-9,9],[42,18],[5,-7]],[[7674,9577],[3,-9],[-30,3],[27,6]],[[8125,9595],[2,-10],[-18,11],[16,-1]],[[9145,9596],[-23,0],[29,8],[-6,-8]],[[6893,9615],[24,-15],[-21,-24],[-51,-17],[-116,-32],[-47,-18],[0,-15],[-22,-8],[-2,-8],[-17,8],[1,-16],[-26,8],[15,-17],[-16,-8],[-16,-31],[-24,-20],[-36,4],[-11,6],[-20,-6],[-4,9],[24,12],[-30,-4],[-2,8],[26,12],[-3,6],[26,13],[-3,20],[24,4],[-14,7],[18,4],[-18,4],[-3,9],[21,-4],[14,19],[19,-4],[-5,11],[38,20],[23,3],[14,11],[23,-2],[0,12],[52,-5],[61,15],[49,28],[35,1]],[[7679,9622],[-33,-4],[35,11],[-2,-7]],[[8666,7787],[3,-13],[-2,-13],[9,-14],[7,9],[6,22]],[[6367,7850],[-12,-15],[-2,-14],[-4,9],[-10,-14],[-17,0],[-7,-31],[-8,-23],[-10,-8],[0,-13],[14,-11],[8,-28],[-2,-14],[6,19],[-5,-26],[0,-21],[7,-10],[4,-16],[12,-26],[2,-11],[6,-4]],[[6110,7681],[-15,21],[-1,6],[-18,24],[-15,7],[-11,15],[-9,1],[-8,19],[-17,11],[8,3],[-1,11],[8,-6],[11,2],[5,-4],[0,16],[-4,2],[8,10],[2,14],[4,-6],[2,11],[11,0],[-13,17],[-5,0],[-4,15],[6,-3],[13,14],[24,9],[0,13],[-30,-8]],[[6061,7895],[-1,12],[5,17],[11,5],[3,10],[25,-3],[0,13],[6,12],[-8,29],[10,5],[-8,3],[11,26],[-1,14],[-10,-2],[-5,10],[-7,0],[-5,9],[-6,-5],[-8,10],[-18,-4],[-8,11],[-8,20],[-16,-6],[-6,-7],[-10,4],[-5,8],[-13,-5],[-6,10],[2,10],[-4,19],[-7,12],[-11,-3],[-13,12],[-3,17],[8,9],[-8,8],[-1,10],[-11,13],[-13,1],[-9,-8],[-15,5],[-1,-11],[-12,-7],[-3,5]],[[5767,8523],[9,-9],[6,9],[-6,10],[-10,-2],[7,19],[-4,30]],[[5773,8590],[9,11]],[[5778,8608],[-1,16],[11,-5],[3,11],[10,-4],[7,12],[29,-8],[2,8],[-9,9],[-25,2],[-10,28],[-16,-9],[-7,2]],[[5856,9203],[15,-9],[19,18],[16,-11],[14,-3],[-7,-8],[-20,4],[6,-7],[19,-3],[-6,-7],[19,4],[5,-5],[35,-7],[23,-1],[52,-28],[21,-21],[14,-2],[16,-14],[13,-3],[30,-21],[1,-23],[7,-2],[-5,-24],[-21,-24],[-30,-15],[-22,-4],[-28,5],[-22,9],[-27,3],[-27,15],[-36,7],[-24,23],[-11,0],[8,-15],[18,-11],[3,-9],[13,-6],[-4,-7],[14,-3],[21,-20],[-4,-21],[-6,-7],[13,-46],[-6,-4],[16,-15],[15,2],[12,-18],[31,-13],[16,9],[1,21],[-25,5],[-16,19],[-3,12],[10,2],[7,12],[18,-9],[10,-13],[0,-9],[10,10],[31,-15],[9,7],[18,-7],[-4,22],[-19,30],[4,9],[18,12],[6,9],[18,5],[22,27],[11,-8],[20,3],[22,-21],[1,11],[11,23],[0,16],[-20,19],[10,28],[3,31],[-25,18],[18,-4],[37,0],[18,-6],[16,-18],[5,-18],[-38,-5],[-12,-22],[17,-9],[8,-17],[20,-5],[34,13],[5,22],[-3,11],[26,7],[1,6],[24,9],[31,22],[8,-1],[31,13],[-1,-12],[16,4],[-12,10],[32,18],[15,-3],[-7,-14],[6,-13],[-21,-8],[29,-3],[7,6],[11,-7],[1,12],[29,14],[38,-5],[18,17],[25,8],[15,-13],[-10,-8],[1,-13],[16,-4],[8,10],[-6,7],[20,5],[13,11],[0,10],[-22,28],[15,6],[2,10],[74,-10],[20,-7],[19,-15],[62,-29],[33,-25],[2,-9],[17,25],[7,19],[-21,2],[-10,16],[-1,12],[-35,14],[3,16],[12,3],[-6,9],[6,15],[-1,20],[-16,-3],[-2,17],[8,14],[28,12],[15,17],[14,51],[12,16],[5,-5],[52,1],[39,-11],[1,-25],[-16,-26],[1,-7],[-15,-11],[8,-13],[16,-10],[5,-15],[-2,-25],[-10,-9],[8,-25],[-5,-11],[3,-21],[-3,-16],[5,-8],[26,-20],[-15,-16],[3,-22],[-18,-13],[-9,-27],[-20,-14],[2,-15],[-15,-1],[-10,-7],[-22,21],[-22,-6],[8,-15],[27,-10],[22,2],[24,-8],[10,6],[2,16],[13,2],[26,20],[1,17],[24,24],[-1,25],[-11,15],[3,17],[29,12],[31,4],[1,-11],[19,-15],[-5,-15],[5,-20],[-7,-7],[18,-13],[18,-1],[-25,13],[0,18],[20,10],[-11,14],[-5,24],[-19,5],[-24,13],[-17,1],[-20,-10],[-27,5],[3,18],[-10,15],[6,25],[17,20],[-21,41],[-15,12],[14,22],[39,16],[5,17],[-4,28],[15,-7],[6,-30],[-13,-17],[7,-17],[-5,-18],[11,-4],[57,-7],[6,-11],[12,0],[-4,17],[-17,2],[-39,16],[-8,20],[27,8],[17,-13],[15,3],[-5,14],[-15,-2],[15,14],[16,5],[28,-3],[51,-35],[23,-3],[18,5],[14,-7],[-14,-16],[-16,-6],[-2,-17],[7,-12],[-10,-12],[11,2],[0,11],[10,11],[9,-6],[-4,-27],[-10,-9],[14,-10],[-7,14],[18,0],[6,8],[-17,44],[13,23],[-6,11],[-32,15],[-3,11],[-26,4],[-14,11],[4,23],[-11,9],[2,28],[39,5],[43,-1],[59,10],[40,3],[-23,-18],[25,2],[10,13],[-19,21],[-22,4],[14,18],[-21,4],[13,10],[16,-7],[68,47],[67,8],[66,16],[-28,9],[19,3],[22,-5],[25,7],[21,-3],[-16,-13],[58,10],[32,12],[29,-10],[-29,24],[18,-3],[40,4],[1,26],[63,39],[43,3],[33,-17],[-21,-13],[-24,-3],[82,-7],[6,-6],[-27,-21],[36,-1],[4,12],[38,1],[19,-4],[27,5],[47,-24],[3,-16],[19,4],[3,-28],[-21,5],[1,-12],[22,-1],[-2,-14],[-20,-17],[-20,-6],[-12,-13],[-47,-16],[-2,-9],[-32,-15],[-20,-19],[-27,-1],[-12,-18],[-17,-2],[-6,-15],[-15,-12],[23,6],[7,17],[37,-2],[15,8],[51,12],[23,10],[-7,6],[-25,-5],[-6,8],[13,10],[25,-6],[7,7],[8,-13],[19,-6],[22,5],[-2,12],[16,-20],[-8,-12],[44,9],[19,7],[100,-13],[-18,-4],[1,-11],[38,-12],[36,-5],[25,2],[21,-8],[-7,11],[19,-6],[11,17],[-8,10],[3,16],[17,-2],[10,10],[23,-14],[29,0],[12,-16],[7,15],[30,-4],[7,-12],[34,-14],[-34,-12],[30,-6],[-39,-3],[20,-10],[18,-1],[6,-12],[-15,-11],[-19,8],[27,-37],[13,-27],[40,-21],[13,12],[18,43],[10,14],[13,-19],[23,-12],[22,0],[4,6],[31,8],[22,-6],[19,-11],[11,-13],[7,27],[16,4],[12,-13],[17,2],[-3,27],[15,17],[-29,0],[12,16],[37,2],[4,10],[-12,9],[23,-1],[23,-9],[38,0],[50,-8],[39,-12],[-37,1],[-16,4],[-13,-15],[27,6],[42,2],[-26,-26],[10,16],[-12,4],[-3,-17],[-23,-12],[29,4],[30,31],[36,0],[34,-9],[13,-13],[-12,-9],[-7,7],[-9,-11],[25,-2],[-2,-11],[20,2],[0,-13],[24,3],[18,-20],[-13,0],[26,-9],[28,3],[65,12],[45,-1],[26,-6],[33,-17],[11,-25],[-11,-19],[3,-8],[31,-8],[3,-28],[11,-11],[-10,-25],[14,22],[-2,26],[19,17],[51,7],[23,-12],[23,2],[11,-5],[24,-1],[21,16],[16,-13],[2,-19],[29,-8],[7,-18],[22,4],[17,12],[-13,32],[-11,-1],[11,11],[-1,19],[41,-7],[22,-1],[17,-10],[1,9],[37,-6],[20,2],[28,-7],[71,-27],[17,-16],[-9958,-15],[3,-12],[28,-11],[2,-9],[12,1],[20,-19],[16,-2],[-10,-7],[12,-5],[0,10],[12,-7],[8,-20],[10,-2],[-3,-18],[5,-13],[-7,-6],[14,-8],[-1,-14],[17,13],[-11,3],[9,6],[-2,17],[-9,6],[27,1],[20,-12],[-5,9],[32,-6],[10,-17],[13,-7],[10,-17],[5,4],[17,-14],[-9,0],[-14,-11],[-5,-15],[-21,13],[11,-20],[-32,3],[4,-27],[-19,-12],[-8,-11],[16,-5],[6,-9],[-13,-1],[-12,-9],[-23,10],[-2,8],[-16,10],[-33,12],[-4,29],[-29,10],[-12,-10],[-30,4],[-11,27],[9,7],[2,15],[-7,-11],[-28,-4],[0,-16],[13,-11],[-7,-23],[9982,-11],[-10,-13],[-34,-9],[-21,8],[-1,8],[-16,9],[12,-16],[-24,2],[-11,7],[20,-23],[20,12],[-3,-16],[17,-17],[8,8],[12,-25],[2,-16],[-5,-13],[18,-9],[2,-20],[7,-16],[-12,-7],[0,-10],[-28,12],[-22,3],[-10,16],[2,-16],[-21,-16],[-25,-11],[-25,-18],[-12,2],[-7,-10],[-8,4],[-1,-10],[-10,-10],[-11,2],[5,-8],[-22,-13],[-3,-12],[-17,-4],[-1,-9],[-15,-7],[-10,-16],[-6,-18],[-8,8],[-7,21],[-13,9],[-32,0],[-35,-20],[-16,-23],[-4,0],[8,39],[-33,-24],[-5,-14],[-7,-2],[-2,11],[-30,3],[2,-9],[-9,-4],[-5,-19],[4,-12],[-12,-10],[4,-10],[-18,-16],[-10,-26],[1,-19],[13,-7],[1,11],[18,-8],[3,-6],[-15,-21],[1,-36],[11,1],[4,-32],[-9,-10],[-12,13],[8,11],[-6,4],[-8,-7],[6,-6],[-16,-12],[-7,-25],[-1,-16],[11,-34],[-11,-14],[-13,-1],[-6,6],[-15,-9],[-13,-15],[-6,-22],[4,-13],[-3,-6],[5,-22],[-13,10],[-9,-5],[-21,-25],[1,-26],[-7,-19],[-10,-20],[-11,-7],[-2,-8],[-17,-22],[-9,17],[-1,40],[-4,33],[-7,23],[-4,46],[-9,60],[-2,29],[4,46],[6,29],[6,15],[17,15],[7,17],[-5,22],[16,0],[7,14],[15,0],[20,19],[24,33],[3,13],[13,12],[5,12],[8,2],[18,25],[14,14],[-1,8],[30,21],[21,9],[-8,4],[15,18],[-7,9],[8,12],[2,33],[14,12],[17,-5],[-18,17],[-15,-1],[-22,-8],[3,-11],[-8,-6],[3,-9],[-6,-15],[10,-9],[-10,-7],[-5,11],[-10,-2],[-12,-18],[-32,-32],[-19,-14],[8,27],[-17,-7],[5,11],[-3,9],[14,29],[-3,10],[-12,-14],[-10,-2],[-3,12],[-13,2],[-26,-10],[-15,3],[-22,-15],[-1,-18],[-20,-20],[0,-9],[-27,-20],[-13,-28],[-7,-1],[-2,-23],[14,5],[16,-14],[-1,-7],[-11,-3],[-8,5],[-13,-10],[-19,11],[0,-8],[-10,-2],[-2,-8],[-16,8],[-9,-11],[-17,-2],[-9,15],[10,4],[18,-1],[6,4],[-15,8],[-10,14],[-13,-8],[-12,2],[-2,7],[-23,8],[-16,-8],[5,-5],[-14,-5],[6,-12],[-14,2],[-2,7],[-12,0],[-10,-9],[-31,13],[-3,-16],[-8,-3],[-6,9],[4,6],[-27,-1],[-32,2],[-19,-3],[-25,-13],[-19,-30],[-17,-11],[-8,-13],[-5,-20],[-15,-9],[-4,-11],[-11,-12],[-14,-9],[-22,-32],[-12,-26],[-26,-27],[-8,-4],[-15,-23],[-19,-15],[0,-12],[14,-9],[30,5],[0,-28],[-4,-21],[12,0],[5,14],[-6,6],[10,10],[8,-2],[-8,-11],[9,-11],[-12,-22],[16,4],[11,9],[7,14],[1,-9],[-10,-15],[7,-3],[8,26],[-1,20],[16,-8],[9,5],[17,-12],[0,-11],[27,-32],[6,-10],[-13,-12],[8,-5],[1,-15],[-4,-13],[11,-12],[-6,-3],[3,-9],[-9,-16],[-6,-3],[0,-12],[-6,-8],[0,-18],[-4,-4],[-3,-20],[1,-32],[3,-23],[-6,-17],[1,-17],[-6,-17],[0,-14],[-26,-38],[-7,-28],[-13,-18],[-5,-27],[-18,-41],[-15,-25],[-10,-11],[-8,-20],[-6,-6],[-5,-15],[-7,-5],[-11,-25],[-3,-14],[-5,0],[-1,-12],[-18,-20],[-9,-6],[-7,-11],[-8,0],[-12,-10],[-6,7],[-4,-4],[-12,10],[-3,-4],[-1,23],[-9,-11],[1,15],[-16,-21],[-1,-11],[-14,-11],[-4,-17]],[[7858,9748],[0,-12],[30,4],[14,-16],[16,-1],[8,-19],[-16,-10],[-31,-5],[-68,-3],[-33,-14],[-21,5],[21,17],[6,19],[36,39],[19,-6],[2,11],[17,-9]],[[7118,9769],[37,-6],[-27,-3],[-10,9]],[[7523,9794],[79,-8],[-18,-13],[-55,8],[-6,13]],[[6659,9787],[-27,3],[21,7],[6,-10]],[[7715,9797],[-5,-21],[25,17],[20,0],[24,-16],[-9,-24],[-19,-5],[25,-18],[-39,-10],[-38,4],[-11,8],[-50,2],[-18,12],[-1,14],[-33,3],[29,14],[23,19],[77,1]],[[6585,9810],[-4,-16],[-28,0],[1,14],[31,2]],[[6481,9813],[15,-7],[-35,-6],[20,13]],[[6646,9809],[-52,-12],[-13,20],[42,0],[23,-8]],[[6329,9836],[-38,-20],[-39,11],[77,9]],[[6729,9835],[-5,-10],[-29,-12],[-38,1],[-13,13],[14,11],[65,2],[6,-5]],[[6537,9839],[-13,-8],[-22,8],[35,0]],[[6388,9840],[7,-8],[30,3],[-9,-14],[-60,-9],[4,-14],[-38,-4],[16,15],[-22,8],[63,10],[-18,7],[27,6]],[[7225,9845],[-28,-9],[2,9],[26,0]],[[6560,9854],[57,-11],[-29,-1],[-28,12]],[[6542,9848],[13,2],[47,-13],[-19,-7],[-41,18]],[[6797,9859],[20,-16],[-28,-11],[-36,-3],[-17,9],[46,10],[15,11]],[[7536,9852],[-37,1],[2,7],[38,-2],[-3,-6]],[[7665,9859],[54,-29],[-20,-3],[0,-24],[-75,-6],[-22,-7],[-63,20],[36,9],[15,17],[-22,-3],[16,14],[81,12]],[[6577,9869],[28,-6],[-38,-6],[10,12]],[[6605,9878],[14,-9],[-44,4],[30,5]],[[5846,5121],[2,-14],[5,-5],[3,-11],[1,-26],[-1,-18],[-8,-2]],[[5801,5040],[6,7],[8,22],[-4,17]],[[5821,5103],[7,4],[4,-9],[5,7],[5,16],[4,0]],[[4526,6379],[-1,15],[2,22]],[[6163,6147],[4,4],[4,-6],[-8,2]],[[6345,6826],[6,-29],[6,-11],[0,-14],[11,-4],[-4,-5],[5,-5],[11,-23],[8,-6],[0,-16],[6,-10],[-2,-18],[-4,4],[7,-31],[8,-17],[0,-12],[8,-21]],[[6422,6601],[7,-4],[-5,-9],[8,-8]],[[6443,6277],[-4,-2],[-58,-16],[-17,-4],[-27,-27],[-16,-40],[-3,-19],[-9,-11],[-5,1],[-7,19],[-11,-3],[-25,5],[-5,6],[-16,1],[-15,-5],[-11,0],[-7,10],[-9,-11],[-1,-24],[2,-15],[-11,-16]],[[6188,6126],[-2,21],[-5,8],[0,8],[-6,9],[0,15],[-15,23],[-9,25],[0,8],[-7,16],[-2,14],[-11,49],[-18,29],[-9,3],[-6,13],[-13,43],[3,7],[-7,28],[4,20],[0,19],[-8,23],[0,8],[-14,46],[-18,21],[-2,-3],[-12,35],[3,0],[0,20],[-4,7],[-4,18],[-8,11],[1,11],[-5,5],[-8,30],[-4,7],[-8,26],[-7,15],[-6,24],[-8,14],[-6,-3],[-6,7],[5,20],[4,47]],[[6024,6449],[0,-20],[6,-21],[2,-34],[2,-65],[5,-40],[4,-8],[10,-8],[5,-9],[1,-10],[10,-6],[3,-8]],[[5946,5727],[-6,5],[3,17],[-2,21],[-20,35],[-3,45],[2,5],[2,31],[-13,0],[0,-12],[-18,0],[7,-17],[0,-27],[2,-11],[-14,-24],[-1,-9],[-18,-39],[-13,-4],[-14,23],[-7,8],[-11,-12],[-4,-17],[-13,-9],[-5,-10],[1,-6],[-23,0],[-4,15],[-22,1],[-14,-7],[-11,27],[-8,12],[-2,15],[-21,-7],[-3,-21],[-5,-6],[0,-19],[-3,-6],[-3,-29],[-11,-12]],[[5634,5812],[3,13],[-1,15],[-4,-1],[-7,16],[3,23],[-5,-2],[0,34],[-7,7],[-6,-7],[-5,9],[6,21],[7,14],[-5,25],[4,9],[9,9],[-4,7],[-1,18],[8,6],[0,10],[7,15],[2,15],[-2,11],[7,9],[12,2],[11,-2],[0,218]],[[5943,5426],[-14,-28],[-9,2],[-3,6],[-5,-5],[-13,-3],[-6,-13],[-7,5],[-4,12],[-7,-8],[-11,7],[-8,-17]],[[4535,5893],[-1,42]],[[4540,5965],[-5,11],[-1,13],[-14,41],[-8,3],[11,9],[8,18],[9,33]],[[7884,5266],[4,-3],[-4,-7],[-7,2],[7,8]],[[3953,2073],[22,-4],[11,-7],[17,-21],[3,-11],[-10,-7],[-10,20],[-12,11],[-22,11],[1,8]],[[9445,4521],[15,-17],[-6,0],[-3,9],[-8,4],[2,4]],[[9612,4569],[-6,-12],[-3,7],[9,5]],[[9481,4595],[13,-14],[8,0],[5,-13],[0,-8],[-12,4],[-9,10],[-1,11],[-6,3],[2,7]],[[9483,4641],[4,-12],[0,-10],[-5,7],[1,15]],[[9442,4640],[13,0],[11,-20],[-4,-9],[-10,7],[-13,1],[-6,13],[0,16],[3,2],[6,-10]],[[9388,4691],[3,-9],[-6,0],[3,9]],[[9371,4689],[-5,3],[5,6],[0,-9]],[[9466,4701],[6,-16],[-2,-11],[5,-5],[7,-34],[-14,21],[-3,10],[-5,37],[6,-2]],[[9378,4711],[4,-3],[3,-19],[-7,4],[-2,13],[-9,-2],[-1,6],[6,13],[5,-1],[1,-11]],[[9365,4716],[-5,1],[-1,9],[4,5],[2,-15]],[[9349,4747],[6,-9],[-4,-9],[-5,14],[3,4]],[[9405,4746],[4,0],[9,-16],[12,-12],[9,-15],[1,-13],[-7,12],[-11,9],[-18,25],[-3,13],[4,-3]],[[9349,4800],[13,-15],[3,-16],[10,-7],[-2,-7],[-15,13],[-7,18],[-6,9],[4,5]],[[4650,5621],[2,-12],[-12,10],[10,2]],[[4681,5581],[-6,9],[-23,18],[1,15],[-7,4],[-6,10],[2,3],[-3,18],[-5,-4],[-3,18],[7,1],[-6,7],[0,11],[4,7],[-6,5]],[[2560,5955],[-2,-14],[-12,0],[-13,5],[-14,14],[-14,2],[-8,11]],[[6359,5831],[0,-104],[-27,-84]],[[6201,5844],[18,-44],[13,-18],[15,0],[11,15],[4,0],[10,12],[11,-4],[6,-7],[6,4],[21,25],[8,-5],[14,3],[9,10],[12,-4]],[[6359,5831],[14,5],[4,7],[7,0],[12,7],[13,23],[15,-9],[-5,-19],[-1,-18],[2,-35],[8,-8],[-14,-6],[-3,-53],[-4,-8],[-1,-12],[-6,-10],[-3,-22],[-6,-20],[-8,-13],[0,-11],[-6,-25],[-10,-29],[-4,-29],[-12,-48],[-13,-33],[-7,-26],[-12,-30],[-14,-28],[-10,-24],[-9,-15],[-8,-19],[-21,-26],[-8,-7],[-18,-27],[-8,-17],[-10,-15],[-22,-48],[-11,-21],[-18,-49],[-9,-28]],[[5183,5187],[-3,-2],[-1,13],[5,8],[3,-11],[-4,-8]],[[3409,5499],[3,3],[1,20],[5,7],[8,-2],[20,-10],[2,10],[33,0],[18,-8],[-1,-20],[-3,-8]],[[5626,8009],[-12,-39]],[[5377,7802],[3,6]],[[5474,8485],[-7,-30],[-12,-34],[0,19],[19,45]],[[5521,8514],[8,1],[-8,-14],[-2,-22],[-10,-8],[-5,7],[-1,19],[10,16],[8,1]],[[5327,8537],[-2,-9],[-9,3],[11,6]],[[5671,8973],[-41,-2],[-9,5],[1,-19],[-16,0],[3,-8],[-13,0],[4,-13],[-10,-13],[-4,-15],[12,-15],[-17,-17],[-4,-15],[-13,-13],[-8,1],[-11,-13],[-32,-24],[0,-9],[-17,-3],[5,-11],[-5,-7],[-15,-2],[5,-14],[-5,-29],[-7,-9],[5,-32],[0,-18],[10,-10],[10,4],[14,-25],[9,-2],[6,-19],[-20,-23],[-6,3],[8,-16],[-17,-16],[-18,-13],[-13,-2],[8,-8],[-6,-3],[3,-15],[-10,-16],[6,-8],[0,-17],[-6,-10],[-3,-37],[-3,0],[-6,-23],[-5,-8],[-6,5],[-27,-3],[-11,-14],[-2,-11],[5,-10],[-6,-9],[-11,3],[-10,-5],[-14,2],[4,15],[-14,31],[8,6],[-6,8],[8,2],[-15,26],[-18,47],[4,27],[-4,8],[-9,-4],[-4,9],[-1,39],[6,-6]],[[5891,3637],[-3,2],[-1,-29],[-12,0],[-11,7],[-9,22],[0,24],[7,17],[1,10],[8,11],[14,-15],[2,2]],[[3249,6221],[-2,2]],[[5999,7178],[-3,27],[1,18],[-4,4],[1,20],[3,4]],[[5997,7251],[7,-5],[5,9],[0,11],[9,3],[-4,14],[4,21],[8,-5],[2,-7],[12,0],[5,6],[18,10],[10,-11],[16,-3],[21,8],[20,17],[22,-1],[16,7],[4,7],[4,-12]],[[5402,5930],[5,0],[0,13],[-4,3],[-6,-5],[2,-5]],[[5398,5936],[-1,0]],[[5044,5541],[-12,-7]],[[7728,5654],[6,-7],[0,-10],[-6,-6],[0,23]],[[7840,5883],[5,-11],[-4,1],[-1,10]],[[7858,5853],[-4,22],[-5,11],[-1,-7],[-12,18],[0,8],[-5,0],[-8,10],[-7,-5],[-16,5],[3,15],[-3,7],[4,21],[-11,5],[-15,-8],[-2,-9],[4,-13],[-4,-16],[0,-27],[2,-5],[-7,-15],[0,-11],[-4,-13],[-5,-20],[0,-15],[-9,-32],[2,-7],[-2,-27],[5,-21],[-3,-10],[16,5],[4,-12],[1,-29],[9,-16],[0,-12],[4,-37],[4,-16],[-4,4],[-3,29],[-6,-2],[2,-13],[6,-18],[6,0],[9,-18],[12,1],[6,-4],[6,-21],[7,-12]],[[7780,5554],[-4,13],[-8,12],[2,14],[-6,2],[-5,10],[-2,18],[-7,5],[1,7],[-5,11],[-4,1],[-3,18],[-5,-2],[-2,-12],[-4,5],[-2,18],[2,14],[4,19],[0,16],[3,16],[7,40]],[[6962,7540],[0,0]],[[6882,7324],[1,20],[12,24],[3,15],[-7,12],[-2,14],[4,10],[-2,9],[-12,1],[0,7],[-9,4],[2,16],[8,9],[18,-6],[7,6],[0,11],[8,4],[1,14],[-10,2],[13,4],[7,-3],[1,9],[-4,11],[5,14],[8,-8],[18,14],[5,7],[8,-18],[-11,-19],[7,-10],[9,3]],[[6497,7333],[-3,23],[2,30],[-1,22],[4,15],[-12,17],[0,9],[-11,0],[1,8],[14,2],[-9,14],[6,10],[-5,3],[-14,-3],[-5,6],[0,25],[4,9],[2,19],[4,-11],[13,-1],[5,-8],[16,6],[1,12],[8,-6],[3,14],[-19,23],[-4,34],[-6,5],[-16,-3],[-5,-6],[-5,-17],[4,0],[-3,-19],[-7,9],[-3,13]],[[6554,7562],[29,-5],[4,7],[-4,7],[-2,23],[4,3]],[[6585,7597],[4,-18],[11,-2],[7,14],[-6,6],[0,13]],[[6601,7610],[5,1],[4,19],[7,-2],[-3,10],[11,1],[2,6],[8,-12],[7,-2],[7,-14],[13,2],[5,-8],[-1,-12],[6,-8],[-5,-4],[4,-10],[-3,-10],[11,-11],[18,1],[6,-3],[7,6],[9,-10],[8,-36],[4,-2],[5,-29],[27,-31],[4,-10],[13,-16],[5,2],[10,-14],[27,-29],[7,1],[19,-14],[3,-4],[-4,-9],[0,-25]],[[8444,4645],[12,9]],[[8469,4667],[5,9],[1,10],[20,8],[10,-1],[6,5],[3,-4],[11,10],[11,-6],[-13,-19],[-8,-3],[-4,-9],[-7,-2],[-6,-8],[-10,-3],[-15,-17]],[[130,3966],[6,0],[-1,-7],[-5,7]],[[3308,5807],[-4,-9],[1,-31],[-4,-4],[-14,-1],[-5,4],[10,7],[0,20],[-5,5],[8,7],[13,2]],[[5303,7135],[4,-6],[-9,-6],[0,11],[5,1]],[[5238,7310],[7,2],[10,15],[13,6],[17,-9],[-4,-1],[6,-17],[-5,-4],[10,-3],[14,20],[3,-14],[-10,-23],[-6,-4],[-3,-16],[6,-18],[11,-10],[-1,-16],[3,-7],[-3,-11],[-12,-28],[-14,-14],[-2,-16],[4,-12],[9,-10],[6,4],[0,-13],[11,4],[2,-20],[9,-1]],[[5778,7600],[-2,-9],[6,-15],[20,-17],[6,-2],[-3,-13],[-14,-1],[-9,6],[-6,-7],[-12,1],[-9,-20],[-14,-10],[-15,-24],[2,17],[13,10],[3,7],[-20,-3],[-1,9]],[[5997,7251],[2,5],[-6,17],[12,18],[0,11],[-6,7],[-10,-18],[-8,-3],[-18,15],[-11,-13],[-17,-26],[-7,1],[-17,-8],[-13,9],[-7,18],[-21,18],[-18,5],[-3,-3],[0,-18],[-5,-18],[-4,6],[-13,-10],[-12,5],[-7,9],[0,16],[-7,-1],[-7,9],[-10,3],[-3,-6],[-11,1],[-2,-6],[-9,3],[8,5],[12,0],[-1,7],[8,7],[-15,-3],[-12,2],[-1,8],[7,-2],[-10,13],[0,14],[-5,5],[7,4],[-1,13],[-17,7],[-11,9],[7,6],[-4,14],[4,3],[5,-20],[14,8],[-7,0],[-5,16],[6,2],[3,10],[-6,-2],[0,14],[-6,9],[9,16],[-24,-6],[2,29],[16,25],[16,3],[2,-7],[11,-1],[-1,11],[8,-2],[-2,-7],[11,3],[19,-3],[1,7],[-8,3],[5,6],[27,5],[-15,3],[-11,13],[6,13],[19,-6],[11,5],[15,-8],[9,1],[7,11],[29,28],[14,6],[10,9],[28,-6],[10,0],[10,9],[1,-10],[6,-11],[9,-5],[10,6],[4,-16],[8,-13],[5,8],[12,-5],[0,-6],[13,-8],[8,0],[15,-7],[32,11],[4,-6],[14,-5],[12,7],[24,20],[3,7]],[[8378,6635],[10,-12],[-5,-8],[1,-22],[-6,-18],[-4,-43],[-3,-19],[-6,-20],[-4,-5],[-4,-17],[-1,-27],[-5,7],[-1,16],[-11,20],[-2,22],[-3,0],[2,15],[0,20],[17,58],[3,3],[4,18],[12,7],[2,9],[4,-4]],[[6108,4736],[-7,-14],[1,11],[6,3]],[[6093,4842],[6,-26],[-4,-4],[-7,16],[0,15],[5,-1]],[[6102,4899],[5,-11],[-3,-19],[-2,30]],[[5914,5071],[5,-1],[2,-12],[-9,7],[2,6]],[[5882,5125],[1,0]],[[5883,5125],[1,0]],[[5884,5125],[-1,-28],[-2,0],[-1,-30],[-2,-20],[4,2],[0,-28],[2,8],[4,-3],[0,13],[5,-3],[-3,10],[7,6],[2,-10],[12,-2],[8,5],[3,-7],[17,17],[-2,8],[-4,-6],[-10,4],[5,8],[-3,9],[5,-1],[5,9],[-1,12],[6,0],[-2,7],[8,17]],[[6088,4913],[1,-10],[-4,-16],[-3,-25],[-5,-21],[2,-26],[5,-5],[12,-22],[2,-15],[-4,-5],[-4,-23],[1,-10],[4,-2],[0,-13],[-4,-14],[2,-25],[4,-7],[0,-16],[4,-4],[0,-15],[4,-21],[-2,-8],[15,-16],[5,-14]],[[5971,4516],[-2,9]],[[5969,4527],[-5,7]],[[5964,4536],[-4,14],[2,20],[-2,4],[-1,30],[-7,20]],[[5949,4630],[-3,4]],[[5946,4635],[-4,-2],[-1,-10]],[[5914,4641],[-12,10],[-3,6],[-13,6],[-6,6],[-4,13],[-11,6]],[[5865,4688],[0,10],[-4,5],[-1,11],[-11,36],[1,11],[-3,8],[2,12],[-5,9],[-7,21],[-6,-1],[-6,12],[0,13],[6,7],[-5,32],[1,21],[-6,5],[2,27]],[[5846,5121],[10,4],[26,0]],[[5883,5125],[1,0]],[[5944,5197],[-8,-3],[1,8],[-8,-8],[-3,15],[-5,-3],[-2,-12],[-6,-7],[0,7],[-6,-6],[0,10],[-8,-17],[-9,0],[-4,-9],[3,-7],[-9,-26],[2,-14]],[[5823,5155],[5,6],[2,14],[-6,2]],[[5846,5254],[4,-12],[9,28],[10,11],[3,11],[-1,25],[-3,-9]],[[6061,7895],[-18,0],[-6,-11],[-4,2],[-12,-13],[-4,3],[-22,-8],[-14,-18],[-4,3],[-11,-12],[4,-22],[15,-28],[18,10],[13,-3],[-5,-9],[1,-11],[-17,-4],[-9,7],[-4,-10],[-23,-12],[-12,-18],[-10,-2],[-11,11],[5,5],[1,24],[-8,3],[-11,13],[-9,-2],[-1,8],[24,21],[8,2],[-1,14],[-6,-3],[-5,10],[-3,-6],[-18,-3],[-17,14],[4,8],[-7,6],[17,-5],[4,9],[-11,-4],[-6,5],[-25,-2],[-24,-46],[-5,1],[-10,-23],[4,2],[-3,-14]],[[5836,7853],[9,-17],[2,3],[-11,14]],[[5948,7848],[0,-9],[-11,7],[3,-13],[4,5],[21,-17],[6,-8],[4,-20],[9,-4],[-12,23],[-7,26],[-10,-6],[-7,16]],[[3523,3302],[-5,-5],[0,-12],[-8,-5],[3,-30]],[[3517,3240],[-4,-18],[-7,-13],[0,-7],[-13,-16],[-20,-17],[-12,10],[-14,0],[-7,-8],[-20,15],[-8,13],[-18,-1],[-16,29],[-2,10],[3,27],[-1,10],[9,9],[-4,31]],[[677,6342],[13,-11],[2,-12],[8,-13],[-6,-10],[-16,-13],[-3,-11],[-7,9],[1,15],[-4,25],[5,12],[-1,17],[8,-8]],[[649,6394],[3,-7],[7,2],[8,-8],[0,-7],[-9,-6],[-4,2],[0,10],[-7,7],[2,7]],[[631,6405],[16,-4],[-2,-5],[-15,2],[1,7]],[[613,6427],[6,-8],[1,-12],[-13,2],[-3,14],[7,10],[2,-6]],[[571,6463],[4,-3],[-1,-14],[-8,-3],[-6,11],[11,9]],[[2301,6687],[-6,35],[0,12],[6,-47]],[[2761,6828],[-2,-18],[-2,17],[4,1]],[[2366,6873],[3,-1],[-11,-13],[8,14]],[[1707,7111],[7,-9],[-6,0],[-1,9]],[[1671,7144],[8,-4],[-8,-2],[0,6]],[[2993,7551],[-6,-11],[8,7],[8,-1],[-20,-15],[-36,-12],[-4,1],[4,11],[7,6],[29,6],[10,8]],[[2582,7791],[0,-10],[-7,-17],[-3,8],[10,19]],[[2679,7836],[1,-8],[-10,3],[9,5]],[[2563,7913],[-19,-17],[-6,0],[5,14],[8,6],[12,-3]],[[2541,7956],[-2,-6],[-15,-14],[0,8],[17,12]],[[1595,7969],[-3,-9],[8,-13],[-1,-5],[-9,17],[5,10]],[[1582,8004],[-1,0]],[[2511,7947],[-14,-11],[-19,-11],[-20,-29],[-17,-21],[9,-3],[22,14],[6,0],[-5,-19],[14,-2],[11,5],[7,9],[14,4],[10,7],[7,13],[7,-14],[-1,-10],[10,6],[9,-1],[12,-22],[11,0],[9,-4],[14,14],[18,-2],[13,6],[0,-17],[15,-1]],[[2663,7852],[-3,-10],[9,-12],[-16,1],[-5,4],[-2,-11],[-7,9],[-15,5],[-3,-7],[-25,-7],[-13,0],[-15,-39],[-3,-12],[-10,-17],[2,-8],[10,17],[7,-3],[-11,-49],[1,-13],[-6,-26],[0,-14],[4,-15],[-2,-28],[9,-33],[8,-4],[16,14],[7,22],[5,26],[0,15],[-9,37],[3,10],[-3,17],[8,20],[0,14],[5,15],[7,2],[7,15],[-3,-22],[4,-4],[4,14],[0,16],[11,5],[-3,15],[9,10],[13,-8],[6,-11],[16,-7],[6,-13],[-4,-11],[4,-6],[-1,-28],[-6,-5],[-1,-13],[-7,-2],[-3,-18],[6,-5],[7,6],[6,16],[9,5],[7,-10],[4,-37],[3,-14]],[[2704,7634],[-5,5],[-3,-17],[-6,-8],[-3,-17],[-6,-12],[15,-11],[7,0],[5,-7],[9,4],[14,3],[9,12],[24,15],[26,21],[14,21],[5,2],[-1,17],[-5,3]],[[2804,7674],[10,6],[16,2],[13,-8],[18,0],[8,5],[15,19],[-3,9],[4,4],[-7,11],[15,16],[1,7]],[[3116,7818],[10,-9]],[[3134,7784],[3,-9],[-3,-20],[-20,-16],[-6,5],[-13,-5],[1,-9],[-12,11],[-3,-22],[-14,-14],[-10,3],[-8,-8],[1,-9],[-11,-15],[-6,-22],[1,-15],[5,1],[-13,-19],[9,-7],[5,-23],[17,-8],[-14,-3],[-6,-6],[0,11],[-15,-14],[0,12],[-5,5],[-1,-17],[-12,-9],[-29,-2],[-6,-9],[-8,-1],[-23,-27],[-1,-10],[8,-1],[-2,-29],[-3,-14],[-7,-9],[-1,-11],[-12,-24],[-1,15],[-7,2],[-10,13],[3,-23],[9,-21],[1,-16],[-10,-31],[-7,-13],[-8,-30],[-2,11],[4,20],[6,17],[-6,-2],[1,9],[-13,21],[-1,17],[4,11],[-2,15],[11,15],[-5,0],[-11,-10],[2,-16],[-4,-6],[0,-23],[4,-6],[1,-20],[-9,11],[-8,-2],[9,-4],[11,-13],[-2,-17],[-6,3],[8,-12],[-7,-12],[6,-8],[-4,-8],[12,-4],[5,-35],[7,-23],[-5,9],[-6,38],[-2,-15],[6,-17],[-9,5],[0,-7],[-15,-4],[-2,-6],[15,3],[13,-8],[-1,-17],[-3,2],[-5,-13],[-13,1],[-2,9],[-4,-8],[7,-6],[-2,-11],[-11,-8],[17,-2],[-7,-11],[-15,-4],[-15,-18],[-9,-27],[-11,1],[-13,-12],[-5,-10],[-4,-21],[-22,-32],[-14,-8],[1,-8],[-12,-15],[1,-5],[-11,-14],[-3,-12],[2,-18],[-4,-5],[-3,-19],[8,-63],[9,-38],[9,-26],[-5,0],[0,-10],[18,-75],[3,-31],[-2,-12],[-1,-28],[-4,-11],[-4,-29],[-12,-1],[-7,-4],[0,14],[-6,25],[-6,7],[-6,0],[-3,31],[-6,5],[0,20],[-7,-2],[-6,21],[-3,18],[7,15],[-1,8],[-7,6],[0,-19],[-5,8],[2,21],[4,14],[0,26],[-4,16],[-7,0],[-10,20],[-6,20],[-11,14],[-10,-4],[-10,-15],[-16,-5],[0,7],[-11,20],[-22,14],[-15,-1],[-2,9],[-4,-11],[-14,-5],[-4,7],[-1,16],[-3,2],[-2,-22],[-5,5],[-5,-5],[-10,6],[-14,-7],[-7,-9],[-11,7],[-4,7],[-8,-12],[2,-7],[10,-1],[3,4],[6,-14],[5,12],[3,-3],[-8,-29],[4,-8],[11,-5],[3,-9],[-4,-9],[-3,10],[-15,9],[2,4],[-12,11],[4,-9],[-2,-16],[-10,12],[-8,-14],[-15,9],[0,13],[-7,3],[-3,12],[-6,5],[-9,-8],[4,-6],[-13,-2],[-21,13],[-16,-5],[2,17],[-8,-18],[-17,-13],[-1,19],[-8,-5],[-1,-9],[4,-12],[-8,-12],[1,-4],[-14,-18],[-16,-9],[-12,8],[1,-9],[6,-8],[-7,-6],[-5,6],[1,-12],[-12,-8],[1,-14],[-7,-33],[-3,-26],[7,-32],[1,-16],[3,-1]],[[2245,6713],[1,7],[-9,21]],[[2193,6879],[-7,10]],[[1746,7056],[-4,10],[-2,27],[-8,16],[-15,18],[-6,2],[-3,12],[-9,0],[-10,6],[-10,18],[-21,3],[-9,5],[0,33],[-7,5],[0,12],[-12,15],[-5,18],[-9,13],[-4,23],[5,9],[-3,11],[-6,-1],[-8,13],[-3,21],[3,5],[9,-11],[-10,29],[8,6],[-7,6],[-2,-19],[-16,13],[5,3],[-7,20],[-7,6],[-10,20],[1,10],[-4,16],[2,10],[-2,15],[-7,17],[-8,9],[0,19],[8,15],[-2,17],[3,16],[-2,16],[-5,5],[3,12],[-5,8],[-1,32],[-5,10],[9,41],[4,25],[2,52],[2,11],[1,62],[13,7],[-14,-2],[1,29],[-4,-2],[6,13],[-7,6],[-10,44],[-7,20],[6,11],[15,-11],[24,0],[7,-6],[4,-14],[-9,-15],[12,8],[2,-20],[-7,-10],[2,-4],[10,14],[-1,29],[5,8],[-5,18],[-9,6],[8,12],[-10,16],[1,6]],[[60,8169],[1,-9],[-11,9],[10,0]],[[80,8161],[-11,0],[12,11],[-1,-11]],[[96,8175],[2,-14],[-10,0],[1,14],[7,0]],[[177,8186],[18,-5],[-12,-3],[-15,5],[9,3]],[[162,8200],[5,-4],[-4,-12],[-7,-4],[-27,-2],[22,6],[9,7],[-7,4],[9,5]],[[9827,8206],[-2,-8],[-9,2],[11,6]],[[9802,8235],[12,-10],[-11,-5],[-1,15]],[[332,8268],[5,-12],[-32,-29],[11,24],[7,1],[-1,9],[10,7]],[[367,8291],[6,-8],[9,8],[-9,-15],[8,1],[-14,-16],[-4,1],[-20,-13],[-6,4],[19,9],[1,25],[10,4]],[[391,8303],[7,-5],[-10,-3],[3,8]],[[451,8354],[5,-1],[6,-16],[-8,-9],[-16,0],[-4,-9],[-14,-3],[-3,11],[7,3],[10,16],[3,-2],[14,10]],[[1304,8361],[8,-30],[-14,25],[6,5]],[[558,8363],[-9,-20],[4,19],[5,1]],[[1355,8404],[7,-16],[-1,-16],[-6,-11],[-13,9],[-5,8],[5,20],[13,6]],[[1295,8417],[2,-9],[-14,-4],[5,11],[7,2]],[[1319,8419],[9,-1],[0,-12],[-13,5],[4,8]],[[1289,8428],[10,-1],[4,-16],[13,-7],[9,-30],[9,-9],[-1,-33],[-16,17],[2,8],[-21,10],[8,20],[-11,-1],[6,13],[-3,17],[-9,2],[0,10]],[[1315,8433],[-5,-12],[-6,8],[11,4]],[[1328,8428],[4,-13],[-9,9],[0,12],[5,-8]],[[1308,8454],[9,-14],[-10,-3],[1,17]],[[1278,8457],[7,-4],[1,-11],[-6,-6],[-6,-28],[-3,4],[0,20],[-4,26],[11,-1]],[[1283,8470],[24,-10],[-2,-17],[-9,13],[7,-18],[-16,-4],[0,23],[-10,9],[6,4]],[[745,8475],[8,0],[-14,-10],[6,10]],[[1234,8479],[-1,-12],[-6,-2],[-1,19],[8,-5]],[[1237,8491],[8,2],[9,-14],[7,-29],[-1,-30],[-5,0],[-13,33],[-1,15],[-10,18],[6,5]],[[749,8519],[11,0],[7,-8],[-2,-10],[8,0],[-4,-10],[-18,4],[10,-7],[-18,-9],[-14,-22],[-10,-6],[6,10],[-12,-1],[-12,22],[3,14],[7,7],[10,0],[7,-19],[-4,28],[5,5],[16,-5],[-3,10],[7,-3]],[[1229,8536],[23,-12],[-1,-13],[-7,-1],[-18,12],[14,-15],[13,1],[1,-16],[-7,0],[-19,17],[7,-17],[-4,-6],[-8,6],[-1,10],[-12,12],[1,20],[18,2]],[[1252,8544],[6,-11],[14,-6],[8,-16],[-2,-5],[2,-21],[-19,-19],[-1,12],[4,10],[-5,13],[-7,43]],[[761,8550],[18,-11],[-6,-8],[-18,-4],[-10,2],[1,9],[10,1],[5,11]],[[913,8659],[5,-3],[-25,-29],[20,32]],[[385,8661],[13,-6],[2,-22],[-19,-5],[-10,2],[-19,13],[-4,7],[16,0],[9,9],[12,2]],[[929,8665],[13,-4],[-15,-9],[2,13]],[[897,8667],[-2,-19],[-4,10],[6,9]],[[231,8857],[0,-6],[17,-7],[20,7],[23,-20],[21,-2],[-2,-9],[-15,1],[-9,-13],[-3,10],[-28,19],[-17,-8],[-13,10],[6,18]],[[1387,8402],[-3,-8],[4,-28],[-10,-21],[-9,-8],[-7,2],[-3,23],[6,6],[-1,24],[-15,16],[-8,-7],[-7,-22],[-9,13],[7,4],[5,24],[-18,22],[-11,25],[-19,8],[12,9],[-11,10],[-3,12],[14,-6],[-15,12],[-15,23],[-16,11],[-4,24],[-6,1],[-1,17],[-6,-11],[7,-17],[1,-24],[-13,11],[-8,-2],[2,13],[-8,12],[-3,-4],[-17,8],[19,-18],[2,-12],[-9,-4],[-20,5],[-23,23],[-9,16],[-34,19],[-11,9],[12,10],[-5,11],[-18,-12],[-9,0],[-21,9],[3,11],[-13,-5],[-31,8],[-30,-6],[-12,12],[-16,5],[3,18],[-11,-14],[-21,5],[9,13],[-18,-1],[-16,19],[-12,1],[-2,-7],[-15,-3],[-3,6],[9,19],[-17,-18],[2,-20],[8,-8],[-6,-3],[-8,-27],[-18,1],[-5,-5],[-2,13],[-12,-25],[-13,3],[-7,-13],[-19,-17],[-16,-2],[-6,6],[3,9],[19,10],[2,8],[-11,-6],[-10,7],[4,16],[8,10],[5,19],[-5,8],[27,21],[6,-6],[18,3],[-14,10],[4,5],[-19,4],[-15,-15],[-9,-2],[-20,-27],[-7,-16],[-11,-2],[9,-10],[-18,-24],[-11,0],[-4,-11],[-9,-5],[-3,-20],[10,3],[13,-8],[2,-6],[-11,-12],[-5,0],[-14,-31],[-4,7],[-2,-11],[-12,1],[-9,-17],[-9,2],[-2,-13],[-10,-1],[-14,-15],[7,-5],[-7,-12],[-5,4],[-12,-16],[-17,-5],[-2,-11],[-13,-1],[-4,-8],[7,-10],[-10,-4],[-1,-7],[-22,-6],[-5,-17],[-6,16],[-20,-21],[-10,2],[-12,-10],[-5,2],[6,12],[-10,1],[-6,-22],[-9,-11],[-12,8],[-4,-14],[-7,2],[-9,-9],[0,18],[10,3],[22,30],[12,12],[9,3],[34,-7],[-10,9],[5,17],[16,15],[24,17],[9,-4],[-1,15],[10,16],[18,15],[2,46],[12,18],[5,16],[-8,-7],[-25,-13],[-11,12],[1,10],[-9,-10],[4,-20],[-11,-2],[-14,29],[-8,-10],[-12,17],[-19,-11],[-20,-18],[-11,4],[11,7],[-1,13],[6,7],[-12,2],[0,15],[7,6],[-20,46],[-1,-17],[-16,-8],[-23,-4],[-9,6],[-13,23],[-19,12],[20,19],[18,-3],[7,-12],[9,7],[-4,7],[-29,2],[-20,20],[-7,-6],[-9,14],[0,21],[-6,7],[15,2],[-4,13],[18,26],[8,-3],[-3,14],[5,17],[11,0],[-8,7],[7,5],[17,0],[2,-11],[17,1],[20,24],[25,-1],[18,17],[-6,30],[-13,9],[10,4],[9,13],[-10,12],[-41,-24],[-17,-5],[-12,9],[-18,0],[-19,-8],[-33,8],[-8,6],[3,12],[-11,10],[7,9],[13,2],[-38,8],[-18,10],[37,28],[24,9],[16,13],[16,7],[29,2],[-7,-11],[7,-19],[26,2],[24,-8],[11,18],[13,-3],[-13,10],[-11,-2],[-2,11],[-15,10],[-5,9],[9,3],[7,-17],[12,-11],[10,4],[14,-9],[16,2],[-3,14],[-23,0],[-9,-7],[-10,10],[2,20],[-23,-2],[-30,5],[-10,27],[-34,25],[-20,9],[-16,11],[9,17],[0,14],[16,-2],[37,4],[19,11],[15,16],[2,19],[29,33],[26,0],[45,27],[39,4],[21,14],[12,13],[33,-7],[-12,-12],[11,-6],[16,16],[13,-7],[2,-12],[19,5],[38,-1],[9,-4],[-12,-15],[24,0],[-6,-6],[32,3],[11,-5],[30,5],[31,-8],[27,-11],[40,0],[30,-12],[40,9],[52,-27],[12,0]],[[2912,6333],[-2,-4]],[[2914,6329],[-1,4]],[[6651,7782],[-7,-26],[12,-19],[-3,-12],[11,5],[3,8],[-2,16],[3,11]],[[6601,7610],[-7,11],[-5,-2],[-4,-22]],[[6627,7805],[-10,-35],[2,-18],[4,-10],[9,17],[-3,20],[3,6],[-1,16]],[[3301,5940],[-4,4],[5,8],[-1,-12]],[[3313,5694],[1,-6],[-5,-8],[-9,-2],[1,7],[12,9]],[[3303,5691],[4,12],[2,-5],[-6,-7]],[[3228,5816],[-8,-8],[-9,6],[4,7],[6,-5],[4,10],[3,-10]],[[3018,5865],[-3,-7],[-14,-7],[0,-13],[10,-38],[-1,-16],[-4,-6],[-10,-30],[5,-18],[6,-7],[-1,-15],[6,-5],[9,7],[5,10],[-1,32],[-11,30],[-2,23],[3,10],[4,0],[12,13],[18,8],[5,9],[8,-2],[-2,13],[-11,-5],[-2,13],[2,16],[5,5],[6,-10],[2,-22],[4,-10],[12,3],[15,-10],[7,-12],[4,-15],[-2,-7],[5,-15],[8,-1],[17,4],[6,4],[21,2],[11,-20],[11,-9],[11,-5],[8,2],[4,9],[5,0],[2,8],[20,5],[-5,5],[-9,1],[10,6],[7,-3],[11,6],[12,1],[16,-4],[8,4],[-2,-6],[-10,-6],[-16,0],[1,-9],[5,-5],[1,-12],[-9,-1],[5,-4],[8,8],[5,-25],[2,17],[11,-10],[7,-3],[-2,7],[13,-19],[4,1],[7,-12],[-9,-24],[-3,-22],[-12,0],[10,-11],[3,6],[14,6],[6,-4],[3,6],[9,-4]],[[7888,5785],[0,-17],[-4,12],[4,5]],[[7999,6420],[-7,1],[-4,-12],[-7,-3],[1,-12],[-6,-6],[-5,4],[-9,-2],[4,-16],[-8,-8],[2,-17],[-7,-4],[-4,-11],[-7,-4],[-3,-15],[-1,-23],[-5,-13],[7,-30],[7,-15],[11,-17],[-1,-15],[8,-21],[9,-14],[4,-12],[16,-29],[6,-2],[16,-47],[8,-11],[1,-21],[5,-18],[-2,-5],[6,-25],[0,-35],[2,-3],[0,-23],[3,-13],[-6,-10],[0,-42],[-3,-5],[4,-7],[-4,-10],[-2,4],[0,-16],[-7,-2],[-2,-8],[-4,0],[-8,-14],[-6,-1],[-2,-13],[-5,0],[-11,-13],[-13,0],[-5,12],[1,-23],[-11,2],[11,-9],[-4,-11],[-6,4],[7,-11],[-3,-2],[-12,24],[0,-5],[10,-18],[2,-11],[-5,-6],[-10,15],[4,-19],[-1,-6],[-17,-13],[-12,-29],[-11,-2],[5,9],[-2,10],[0,36],[2,17],[6,7],[-10,15],[-5,-5],[-3,16]],[[9706,4050],[-7,13],[4,7],[3,-20]],[[9699,4104],[2,-14],[-8,6],[0,12],[6,-4]],[[9675,4172],[7,-8],[-6,-8],[-6,7],[5,9]],[[9671,4228],[8,-15],[-7,1],[-1,14]],[[9675,4243],[-6,-2],[-6,7],[7,9],[5,-14]],[[9650,4255],[10,-14],[1,-7],[-10,-6],[-4,27],[-5,1],[1,12],[4,-1],[3,-12]],[[9672,4262],[-3,21],[1,9],[3,-20],[-1,-10]],[[9662,4292],[-5,2],[9,9],[-4,-11]],[[9671,4298],[-2,1],[-1,24],[2,-2],[1,-23]],[[9633,4310],[4,2],[0,11],[5,-11],[3,-23],[-11,-7],[-7,15],[1,11],[-3,15],[1,17],[5,-11],[2,-19]],[[9653,4368],[1,-9],[-5,0],[4,9]],[[9654,4385],[-4,-3],[-1,10],[5,-7]],[[5917,7177],[-8,1]],[[233,4380],[5,-6],[-14,2],[-4,7],[7,5],[6,-8]],[[213,4406],[3,-6],[-1,-12],[-9,0],[-5,15],[12,3]],[[6488,5914],[7,-6],[7,6],[10,-9],[-9,-11],[-10,-3],[-6,2],[-5,12],[6,9]],[[6474,6141],[-14,-9],[-10,-18],[-2,-12],[2,-20],[-10,-7],[-13,-15],[-23,-11],[-11,-11],[-4,0],[-25,-18],[-3,-12],[-8,-16],[-6,-3],[-14,3],[-10,-9],[-6,-13],[-15,-8],[-5,-6],[-14,0],[-16,-6],[-7,-15],[-15,-17],[-7,3],[-4,-8],[-14,-5],[-10,9],[-3,-4],[-7,35],[2,25],[-6,21],[-2,16],[-3,43],[-6,7],[4,2],[-3,17],[3,18],[-1,29]],[[5913,3637],[-1,-16],[-5,-23],[-3,-38],[-5,-21],[-10,-19],[-7,-3],[-13,-27],[-21,-68],[-4,-16],[-15,-32],[-4,-4],[-16,-28],[-9,-21],[-13,-22],[-25,-35],[-27,-26],[-15,4],[-9,-9],[0,-11],[-17,5],[-4,-12],[-11,1],[-8,6],[-16,4],[-6,-7],[-23,6],[-10,-4],[-12,-19],[-7,3],[-6,-5],[-11,4],[-1,-6],[-11,0],[-14,-20],[-9,3],[-9,9],[0,11],[-6,4],[-8,-2],[0,17],[-10,-2],[0,-13],[-4,19],[5,10],[-2,12],[-7,16],[-4,20],[-4,-1],[1,18],[7,-2],[4,8],[1,20],[-2,22],[-4,17],[-9,20],[-7,28],[-8,24],[-6,42],[-6,29],[-7,15],[-3,15]],[[5815,3905],[12,3],[14,-12],[15,3],[13,-7]],[[5844,4282],[-15,1],[-13,-5],[-15,-18],[0,-21],[-3,-8]],[[5798,4231],[-3,3],[-13,-9],[-5,-13],[-12,-14],[-13,-38],[-2,-11]],[[5750,4149],[-9,-7],[-14,11],[-7,-7],[-7,11],[-12,1]],[[5792,4643],[5,5],[9,23],[3,15],[-7,8]],[[5849,4709],[-4,-14],[7,-1],[9,-18],[5,4],[-1,8]],[[5750,4149],[10,22],[5,5],[4,17],[11,9],[0,11],[8,0],[8,9],[1,-7],[8,12],[-7,4]]],"type":"Topology","objects":{"units":{"geometries":[{"arcs":[[0,1,2,3,4,5]],"type":"Polygon","id":"AFG","properties":{"name":"Afghanistan"}},{"arcs":[[[6,7,8,9]],[[10,11,12]]],"type":"MultiPolygon","id":"AGO","properties":{"name":"Angola"}},{"arcs":[[[13,14]],[[15,16]],[[17,18,19,20,21,22,23,24,25,26,27,28,29,30]]],"type":"MultiPolygon","id":"ALB","properties":{"name":"Albania"}},{"arcs":[[[31]]],"type":"MultiPolygon","id":"ALD","properties":{"name":"Aland"}},{"arcs":[[32,33]],"type":"Polygon","id":"AND","properties":{"name":"Andorra"}},{"arcs":[[[34]],[[35,36,37,38,39],[40]]],"type":"MultiPolygon","id":"ARE","properties":{"name":"United Arab Emirates"}},{"arcs":[[[41,42]],[[43,44]],[[45,46,47,48,49,50]]],"type":"MultiPolygon","id":"ARG","properties":{"name":"Argentina"}},{"arcs":[[[51]],[[52,53,54,55,56],[57],[58]]],"type":"MultiPolygon","id":"ARM","properties":{"name":"Armenia"}},{"arcs":[[[59]],[[60]],[[61]],[[62]],[[63]],[[64]],[[65]],[[66]],[[67]],[[68]],[[69]],[[70]],[[71]],[[72]],[[73]],[[74]],[[75]],[[76]],[[77]],[[78]],[[79]],[[80]],[[81]],[[82]],[[83]],[[84]],[[85]],[[86]],[[87]],[[88]],[[89]],[[90]],[[91]],[[92]],[[93]],[[94]],[[95]],[[96]],[[97]],[[98]],[[99]],[[100]],[[101]],[[102]],[[103]],[[104]],[[105]],[[106]],[[107]],[[108]],[[109]],[[110]],[[111]],[[112]],[[113]],[[114]],[[115]],[[116]],[[117]],[[118]],[[119]],[[120]]],"type":"MultiPolygon","id":"ATA","properties":{"name":"Antarctica"}},{"arcs":[[[121]]],"type":"MultiPolygon","id":"ATF","properties":{"name":"Fr. S. Antarctic Lands"}},{"arcs":[[[122]],[[123]],[[124]],[[125]],[[126]],[[127]],[[128]],[[129]],[[130]],[[131]],[[132]],[[133]],[[134]],[[135]],[[136]],[[137]],[[138]],[[139]],[[140]]],"type":"MultiPolygon","id":"AUS","properties":{"name":"Australia"}},{"arcs":[[141,142,143,144,145,146,147,148,149,150]],"type":"Polygon","id":"AUT","properties":{"name":"Austria"}},{"arcs":[[[151,152,-55]],[[-59]],[[-58]],[[153,154,155,-53,156],[-52]]],"type":"MultiPolygon","id":"AZE","properties":{"name":"Azerbaijan"}},{"arcs":[[157,158,159,160]],"type":"Polygon","id":"BDI","properties":{"name":"Burundi"}},{"arcs":[[161,162,163,164,165,166,167]],"type":"Polygon","id":"BEL","properties":{"name":"Belgium"}},{"arcs":[[168,169,170,171,172]],"type":"Polygon","id":"BEN","properties":{"name":"Benin"}},{"arcs":[[173,-172,174,175,176,177]],"type":"Polygon","id":"BFA","properties":{"name":"Burkina Faso"}},{"arcs":[[[178]],[[179]],[[180,181,182]]],"type":"MultiPolygon","id":"BGD","properties":{"name":"Bangladesh"}},{"arcs":[[183,184,185,186,187,188]],"type":"Polygon","id":"BGR","properties":{"name":"Bulgaria"}},{"arcs":[[189]],"type":"Polygon","id":"BHR","properties":{"name":"Bahrain"}},{"arcs":[[[190]],[[191]],[[192]],[[193]],[[194]],[[195]],[[196]],[[197]],[[198]],[[199]],[[200]]],"type":"MultiPolygon","id":"BHS","properties":{"name":"Bahamas"}},{"arcs":[[201,202,203,204,205]],"type":"Polygon","id":"BIH","properties":{"name":"Bosnia and Herz."}},{"arcs":[[206,207,208,209,210]],"type":"Polygon","id":"BLR","properties":{"name":"Belarus"}},{"arcs":[[[211,212,213]]],"type":"MultiPolygon","id":"BLZ","properties":{"name":"Belize"}},{"arcs":[[[214,215]],[[216,-51,217,218,219,220,221]]],"type":"MultiPolygon","id":"BOL","properties":{"name":"Bolivia"}},{"arcs":[[[222]],[[223]],[[224]],[[225]],[[226]],[[227]],[[228]],[[229]],[[230]],[[231]],[[232]],[[233]],[[234]],[[235]],[[236]],[[237]],[[238,239,240,241,242,243,-47,244,245,246,-222,247,248,249,250]]],"type":"MultiPolygon","id":"BRA","properties":{"name":"Brazil"}},{"arcs":[[251]],"type":"Polygon","id":"BRB","properties":{"name":"Barbados"}},{"arcs":[[[252,253]],[[254,255]]],"type":"MultiPolygon","id":"BRN","properties":{"name":"Brunei"}},{"arcs":[[256,257]],"type":"Polygon","id":"BTN","properties":{"name":"Bhutan"}},{"arcs":[[258,259,260]],"type":"Polygon","id":"BWA","properties":{"name":"Botswana"}},{"arcs":[[261,262,263,264,265,266]],"type":"Polygon","id":"CAF","properties":{"name":"Central African Rep."}},{"arcs":[[[267]],[[268]],[[269]],[[270]],[[271]],[[272]],[[273]],[[274,275,276,277]],[[278]],[[279]],[[280]],[[281]],[[282]],[[283]],[[284]],[[285]],[[286]],[[287]],[[288]],[[289]],[[290]],[[291]],[[292]],[[293]],[[294]],[[295]],[[296]],[[297]],[[298]],[[299]],[[300]],[[301]],[[302]],[[303]],[[304]],[[305]],[[306]],[[307]],[[308]],[[309]],[[310]],[[311]],[[312]],[[313]],[[314]],[[315]],[[316]],[[317]],[[318]],[[319]],[[320]],[[321]],[[322]],[[323]],[[324]],[[325]],[[326]],[[327]],[[328]],[[329]],[[330]],[[331]],[[332]],[[333,334,335,336,337,338,339,340,341,342,343,344,345,-346,346,347]],[[348]],[[349]],[[350]],[[351]],[[352]],[[353]],[[354]],[[355]],[[356]],[[357]],[[358]],[[359]],[[360]],[[361]],[[362]],[[363]],[[364]],[[365]],[[366]],[[367]],[[368]],[[369]],[[370]],[[371]],[[372]],[[373]],[[374]],[[375]],[[376]],[[377]],[[378]],[[379]],[[380]],[[381]],[[382]],[[383]],[[384]]],"type":"MultiPolygon","id":"CAN","properties":{"name":"Canada"}},{"arcs":[[385,386,387,-148,388,-146,389,390,391,392,393]],"type":"Polygon","id":"CHE","properties":{"name":"Switzerland"}},{"arcs":[[[394]],[[395]],[[396]],[[397]],[[398]],[[399]],[[400]],[[401]],[[402]],[[-44,403,-42,404]],[[405]],[[406]],[[407]],[[408]],[[409]],[[410]],[[411]],[[412]],[[413]],[[414]],[[415]],[[416]],[[417]],[[418]],[[419]],[[420]],[[421]],[[422]],[[423]],[[424]],[[425]],[[426]],[[427]],[[428]],[[429]],[[430]],[[431]],[[432]],[[433]],[[434]],[[435]],[[-50,436,437,-218]]],"type":"MultiPolygon","id":"CHL","properties":{"name":"Chile"}},{"arcs":[[[438]],[[439]],[[440]],[[441]],[[442,443,444,445,446,447,448,449,450,451,-258,452,453,454,455,456,-1,457,458,459,460,461,462,463,464]]],"type":"MultiPolygon","id":"CHN","properties":{"name":"China"}},{"arcs":[[[465,466]],[[-177,467,468,469,470,471]]],"type":"MultiPolygon","id":"CIV","properties":{"name":"C\xf4te d\'Ivoire"}},{"arcs":[[[472,-266,473,474,475,476,477,478,479]],[[480,481]]],"type":"MultiPolygon","id":"CMR","properties":{"name":"Cameroon"}},{"arcs":[[[482,483,484,485]],[[486,487,488,489]],[[490,491,492,493]]],"type":"MultiPolygon","id":"CNM","properties":{"name":"Cyprus U.N. Buffer Zone"}},{"arcs":[[[494]],[[495,496,497,498,499,500,501,502,503,-160,504,505,506,507,-10,508,-11,509,-264]]],"type":"MultiPolygon","id":"COD","properties":{"name":"Dem. Rep. Congo"}},{"arcs":[[-510,-13,510,511,-474,-265]],"type":"Polygon","id":"COG","properties":{"name":"Congo"}},{"arcs":[[[512,-249,513,514,515,516,517]]],"type":"MultiPolygon","id":"COL","properties":{"name":"Colombia"}},{"arcs":[[[518]],[[519]]],"type":"MultiPolygon","id":"COM","properties":{"name":"Comoros"}},{"arcs":[[[520]],[[521]],[[522]],[[523]]],"type":"MultiPolygon","id":"CPV","properties":{"name":"Cape Verde"}},{"arcs":[[[524,525,526,527]]],"type":"MultiPolygon","id":"CRI","properties":{"name":"Costa Rica"}},{"arcs":[[[528]],[[529]],[[530]],[[531,532,533,534]]],"type":"MultiPolygon","id":"CUB","properties":{"name":"Cuba"}},{"arcs":[[535]],"type":"Polygon","id":"CUW","properties":{"name":"Cura\xe7ao"}},{"arcs":[[[536,-488]],[[-486,537,-494,538]]],"type":"MultiPolygon","id":"CYN","properties":{"name":"N. Cyprus"}},{"arcs":[[[539,540]],[[541]],[[542,543,-484]],[[544,545,546,547,-490,548,-492]]],"type":"MultiPolygon","id":"CYP","properties":{"name":"Cyprus"}},{"arcs":[[549,550,-151,551]],"type":"Polygon","id":"CZE","properties":{"name":"Czech Rep."}},{"arcs":[[[-387,552]],[[553,554]],[[555]],[[556,557,-552,-150,558,-394,559,560,-162,561,562,563]]],"type":"MultiPolygon","id":"DEU","properties":{"name":"Germany"}},{"arcs":[[564,565,566,567,568,569]],"type":"Polygon","id":"DJI","properties":{"name":"Djibouti"}},{"arcs":[[570]],"type":"Polygon","id":"DMA","properties":{"name":"Dominica"}},{"arcs":[[[571]],[[572]],[[573]],[[574]],[[575]],[[576]],[[577]],[[-564,578]]],"type":"MultiPolygon","id":"DNK","properties":{"name":"Denmark"}},{"arcs":[[[579,580,581,582,583,584]]],"type":"MultiPolygon","id":"DOM","properties":{"name":"Dominican Rep."}},{"arcs":[[585,586,587,588,589,590,591,592]],"type":"Polygon","id":"DZA","properties":{"name":"Algeria"}},{"arcs":[[[593]],[[594]],[[595]],[[596]],[[597]],[[598]],[[599,600,-515]]],"type":"MultiPolygon","id":"ECU","properties":{"name":"Ecuador"}},{"arcs":[[[601,602,603,604,605,606]]],"type":"MultiPolygon","id":"EGY","properties":{"name":"Egypt"}},{"arcs":[[[607]],[[-569,608,609,610]]],"type":"MultiPolygon","id":"ERI","properties":{"name":"Eritrea"}},{"arcs":[[-485,-544,611,-541,612,-545,-491,-538],[-542]],"type":"Polygon","id":"ESB","properties":{"name":"Dhekelia"}},{"arcs":[[[613]],[[614]],[[615]],[[616]],[[617]],[[618]],[[619,620]],[[621,622]],[[623]],[[624]],[[625]],[[626]],[[627,-33,628,629,630,631,632,633]]],"type":"MultiPolygon","id":"ESP","properties":{"name":"Spain"}},{"arcs":[[[634]],[[635]],[[636,637,638,639,640,641,642,643,644]]],"type":"MultiPolygon","id":"EST","properties":{"name":"Estonia"}},{"arcs":[[-568,645,-566,646,647,648,649,650,-609]],"type":"Polygon","id":"ETH","properties":{"name":"Ethiopia"}},{"arcs":[[[651]],[[652,653,654,655]]],"type":"MultiPolygon","id":"FIN","properties":{"name":"Finland"}},{"arcs":[[[656]],[[657]],[[658]]],"type":"MultiPolygon","id":"FJI","properties":{"name":"Fiji"}},{"arcs":[[[659]],[[660]]],"type":"MultiPolygon","id":"FLK","properties":{"name":"Falkland Is."}},{"arcs":[[[661]],[[662]],[[-240,663,664]],[[665]],[[666]],[[667]],[[668]],[[669,-560,-393,670,-391,671,672,673,674,-629,-34,-628,675,-164],[-627]]],"type":"MultiPolygon","id":"FRA","properties":{"name":"France"}},{"arcs":[[[676]],[[677]]],"type":"MultiPolygon","id":"FRO","properties":{"name":"Faeroe Is."}},{"arcs":[[[678]]],"type":"MultiPolygon","id":"FSM","properties":{"name":"Micronesia"}},{"arcs":[[[-512,679,680,-475]]],"type":"MultiPolygon","id":"GAB","properties":{"name":"Gabon"}},{"arcs":[[[681]],[[682]],[[683,684]],[[685]],[[686]],[[687]],[[688]],[[689]],[[690]],[[691]],[[692]],[[693]],[[694]],[[695]]],"type":"MultiPolygon","id":"GBR","properties":{"name":"United Kingdom"}},{"arcs":[[-157,-57,696,697,698]],"type":"Polygon","id":"GEO","properties":{"name":"Georgia"}},{"arcs":[[699,700,-466,701,-468,-176]],"type":"Polygon","id":"GHA","properties":{"name":"Ghana"}},{"arcs":[[-631,702]],"type":"Polygon","id":"GIB","properties":{"name":"Gibraltar"}},{"arcs":[[703,-471,704,705,706,707,708]],"type":"Polygon","id":"GIN","properties":{"name":"Guinea"}},{"arcs":[[709,710]],"type":"Polygon","id":"GMB","properties":{"name":"Gambia"}},{"arcs":[[[711]],[[712,713,-708]]],"type":"MultiPolygon","id":"GNB","properties":{"name":"Guinea-Bissau"}},{"arcs":[[[-681,714,-476]],[[715]]],"type":"MultiPolygon","id":"GNQ","properties":{"name":"Eq. Guinea"}},{"arcs":[[[716]],[[717]],[[718]],[[719]],[[720]],[[721]],[[722]],[[723]],[[724]],[[725]],[[726]],[[727]],[[728]],[[729]],[[730]],[[731]],[[732,-186,733,734,-27,735,-25,736]]],"type":"MultiPolygon","id":"GRC","properties":{"name":"Greece"}},{"arcs":[[[737]]],"type":"MultiPolygon","id":"GRD","properties":{"name":"Grenada"}},{"arcs":[[[738]],[[739]],[[740]],[[741]],[[742]],[[743]],[[744]],[[745]],[[746]],[[747]],[[748]],[[749]],[[750]],[[751]],[[752]],[[753]],[[754]],[[755]],[[756]],[[757]],[[758]],[[759]],[[760]],[[761]],[[762]],[[763]]],"type":"MultiPolygon","id":"GRL","properties":{"name":"Greenland"}},{"arcs":[[-213,764,765,766,767,768]],"type":"Polygon","id":"GTM","properties":{"name":"Guatemala"}},{"arcs":[[769]],"type":"Polygon","id":"GUM","properties":{"name":"Guam"}},{"arcs":[[[770,-251,771,772]]],"type":"MultiPolygon","id":"GUY","properties":{"name":"Guyana"}},{"arcs":[[[773,-447]]],"type":"MultiPolygon","id":"HKG","properties":{"name":"Hong Kong"}},{"arcs":[[774]],"type":"Polygon","id":"HMD","properties":{"name":"Heard I. and McDonald Is."}},{"arcs":[[[775,776,777,-766,778]]],"type":"MultiPolygon","id":"HND","properties":{"name":"Honduras"}},{"arcs":[[[-204,779,780]],[[781]],[[782]],[[783]],[[784]],[[785,786,-206,787,788]]],"type":"MultiPolygon","id":"HRV","properties":{"name":"Croatia"}},{"arcs":[[[-582,789]],[[790]],[[-584,791,-580,792]]],"type":"MultiPolygon","id":"HTI","properties":{"name":"Haiti"}},{"arcs":[[793,794,795,-786,796,-143,797]],"type":"Polygon","id":"HUN","properties":{"name":"Hungary"}},{"arcs":[[[798]],[[799]],[[800]],[[801,802,803,804]],[[805]],[[806]],[[807]],[[808]],[[809]],[[810]],[[811]],[[812]],[[813]],[[814]],[[815]],[[816]],[[817]],[[818]],[[819]],[[820]],[[821]],[[822]],[[823]],[[824]],[[825]],[[826]],[[827]],[[828]],[[829]],[[830]],[[831]],[[832]],[[833]],[[834]],[[835]],[[836]],[[837]],[[838]],[[839]],[[840]],[[841]],[[842]],[[843]],[[844]],[[845]],[[846]],[[847]],[[848]],[[849]],[[850]],[[851]],[[852]],[[853]],[[854]],[[855]],[[856]],[[857,858]],[[859]],[[860]],[[861]],[[862]],[[863]],[[864]],[[865]],[[866]],[[867]],[[868]],[[869]],[[870]],[[871]],[[872]],[[873]],[[874]],[[875]],[[876]],[[877]],[[878]],[[879]],[[880]],[[881,882]],[[883]],[[884,885]],[[886]],[[887]]],"type":"MultiPolygon","id":"IDN","properties":{"name":"Indonesia"}},{"arcs":[[888]],"type":"Polygon","id":"IMN","properties":{"name":"Isle of Man"}},{"arcs":[[[889]],[[890]],[[891]],[[892]],[[893,-453,-257,-452,894,-183,895,896,897,-455]]],"type":"MultiPolygon","id":"IND","properties":{"name":"India"}},{"arcs":[[[-684,898]]],"type":"MultiPolygon","id":"IRL","properties":{"name":"Ireland"}},{"arcs":[[[899]],[[-54,-156,900,901,-3,902,903,904,905,-152]]],"type":"MultiPolygon","id":"IRN","properties":{"name":"Iran"}},{"arcs":[[-905,906,907,908,909,910,911,912,913]],"type":"Polygon","id":"IRQ","properties":{"name":"Iraq"}},{"arcs":[[[914]]],"type":"MultiPolygon","id":"ISL","properties":{"name":"Iceland"}},{"arcs":[[915,916,917,918,919,920,921,-603,922,923,924,925]],"type":"Polygon","id":"ISR","properties":{"name":"Israel"}},{"arcs":[[[926]],[[927]],[[928,929,-672,-390,-145],[930],[931]]],"type":"MultiPolygon","id":"ITA","properties":{"name":"Italy"}},{"arcs":[[932]],"type":"Polygon","id":"JAM","properties":{"name":"Jamaica"}},{"arcs":[[933,934,-921,935,-919,936,937,-916,938,-910]],"type":"Polygon","id":"JOR","properties":{"name":"Jordan"}},{"arcs":[[[939]],[[940]],[[941]],[[942]],[[943]],[[944]],[[945]],[[946]],[[947]],[[948]],[[949]],[[950]],[[951]]],"type":"MultiPolygon","id":"JPN","properties":{"name":"Japan"}},{"arcs":[[952]],"type":"Polygon","id":"KAB","properties":{"name":"Baikonur"}},{"arcs":[[-898,953,-456]],"type":"Polygon","id":"KAS","properties":{"name":"Siachen Glacier"}},{"arcs":[[[954,955]],[[-460,956,957,958,959,960,961,962],[-953]]],"type":"MultiPolygon","id":"KAZ","properties":{"name":"Kazakhstan"}},{"arcs":[[[-649,963,964,965,966,967,968]]],"type":"MultiPolygon","id":"KEN","properties":{"name":"Kenya"}},{"arcs":[[-459,969,970,-957],[971],[972],[973]],"type":"Polygon","id":"KGZ","properties":{"name":"Kyrgyzstan"}},{"arcs":[[[974,975,976,977]]],"type":"MultiPolygon","id":"KHM","properties":{"name":"Cambodia"}},{"arcs":[[[978]]],"type":"MultiPolygon","id":"KIR","properties":{"name":"Kiribati"}},{"arcs":[[[979]],[[980]],[[981]],[[982,983]]],"type":"MultiPolygon","id":"KOR","properties":{"name":"Korea"}},{"arcs":[[984,-18,985,986]],"type":"Polygon","id":"XKX","properties":{"name":"Kosovo"}},{"arcs":[[[987]],[[988,-908,989]]],"type":"MultiPolygon","id":"KWT","properties":{"name":"Kuwait"}},{"arcs":[[990,-977,991,992,-450]],"type":"Polygon","id":"LAO","properties":{"name":"Lao PDR"}},{"arcs":[[-925,993,994]],"type":"Polygon","id":"LBN","properties":{"name":"Lebanon"}},{"arcs":[[-470,995,996,-705]],"type":"Polygon","id":"LBR","properties":{"name":"Liberia"}},{"arcs":[[-606,997,998,999,-587,1000,1001]],"type":"Polygon","id":"LBY","properties":{"name":"Libya"}},{"arcs":[[1002]],"type":"Polygon","id":"LCA","properties":{"name":"Saint Lucia"}},{"arcs":[[-389,-147]],"type":"Polygon","id":"LIE","properties":{"name":"Liechtenstein"}},{"arcs":[[[1003]]],"type":"MultiPolygon","id":"LKA","properties":{"name":"Sri Lanka"}},{"arcs":[[1004]],"type":"Polygon","id":"LSO","properties":{"name":"Lesotho"}},{"arcs":[[[1005,1006]],[[-210,1007,1008,1009,1010]]],"type":"MultiPolygon","id":"LTU","properties":{"name":"Lithuania"}},{"arcs":[[-561,-670,-163]],"type":"Polygon","id":"LUX","properties":{"name":"Luxembourg"}},{"arcs":[[1011,-211,-1011,1012,-644]],"type":"Polygon","id":"LVA","properties":{"name":"Latvia"}},{"arcs":[[1013,1014]],"type":"Polygon","id":"MAF","properties":{"name":"St-Martin"}},{"arcs":[[-622,1015,-620,1016,-592,1017,1018]],"type":"Polygon","id":"MAR","properties":{"name":"Morocco"}},{"arcs":[[1019,-674]],"type":"Polygon","id":"MCO","properties":{"name":"Monaco"}},{"arcs":[[1020,1021]],"type":"Polygon","id":"MDA","properties":{"name":"Moldova"}},{"arcs":[[[1022]],[[1023]]],"type":"MultiPolygon","id":"MDG","properties":{"name":"Madagascar"}},{"arcs":[[[1024]],[[1025]],[[1026]],[[1027]],[[1028]],[[1029,1030,1031,1032,1033,-214,-769,1034,1035],[1036]]],"type":"MultiPolygon","id":"MEX","properties":{"name":"Mexico"}},{"arcs":[[[-23,1037]],[[-187,-733,1038,-15,1039,-21,1040,-19,-985,1041]]],"type":"MultiPolygon","id":"MKD","properties":{"name":"Macedonia"}},{"arcs":[[1042,-178,-472,-704,1043,1044,-589]],"type":"Polygon","id":"MLI","properties":{"name":"Mali"}},{"arcs":[[[1045]],[[1046]],[[1047]],[[1048]],[[1049]],[[1050]],[[-993,1051,1052,-181,-895,-451]]],"type":"MultiPolygon","id":"MMR","properties":{"name":"Myanmar"}},{"arcs":[[1053,-986,-31,1054,-16,1055,-29,1056,-780,-203]],"type":"Polygon","id":"MNE","properties":{"name":"Montenegro"}},{"arcs":[[-464,1057,-462,1058]],"type":"Polygon","id":"MNG","properties":{"name":"Mongolia"}},{"arcs":[[[1059,1060,1061,1062,1063,1064,1065,1066,1067]]],"type":"MultiPolygon","id":"MOZ","properties":{"name":"Mozambique"}},{"arcs":[[[1068,1069,1070,-590,-1045]]],"type":"MultiPolygon","id":"MRT","properties":{"name":"Mauritania"}},{"arcs":[[[1071]]],"type":"MultiPolygon","id":"MUS","properties":{"name":"Mauritius"}},{"arcs":[[[1072,1073]],[[1074,1075]],[[1076,1077]],[[1078,1079]],[[1080,-1065,1081,1082]]],"type":"MultiPolygon","id":"MWI","properties":{"name":"Malawi"}},{"arcs":[[[1083]],[[-882,1084]],[[1085]],[[1086]],[[1087,1088]],[[-886,1089,-256,1090,-253,1091]],[[1092]]],"type":"MultiPolygon","id":"MYS","properties":{"name":"Malaysia"}},{"arcs":[[1093,-261,1094,1095,-8]],"type":"Polygon","id":"NAM","properties":{"name":"Namibia"}},{"arcs":[[[1096]],[[1097]],[[1098]]],"type":"MultiPolygon","id":"NCL","properties":{"name":"New Caledonia"}},{"arcs":[[1099,1100,-173,-174,-1043,-588,-1000]],"type":"Polygon","id":"NER","properties":{"name":"Niger"}},{"arcs":[[[1101,-478,1102,-169,-1101]]],"type":"MultiPolygon","id":"NGA","properties":{"name":"Nigeria"}},{"arcs":[[[1103,-528,1104,-776]]],"type":"MultiPolygon","id":"NIC","properties":{"name":"Nicaragua"}},{"arcs":[[[-166,1105]],[[1106]],[[-562,-168,1107],[1108]]],"type":"MultiPolygon","id":"NLD","properties":{"name":"Netherlands"}},{"arcs":[[[1109]],[[1110]],[[1111]],[[1112]],[[1113]],[[1114]],[[1115]],[[1116]],[[1117]],[[1118]],[[1119]],[[1120]],[[1121]],[[1122]],[[1123,-656,1124,1125]],[[1126]],[[1127]],[[1128]],[[1129]],[[1130]],[[1131]],[[1132]]],"type":"MultiPolygon","id":"NOR","properties":{"name":"Norway"}},{"arcs":[[-894,-454]],"type":"Polygon","id":"NPL","properties":{"name":"Nepal"}},{"arcs":[[[1133]],[[1134]],[[1135]],[[1136]],[[1137]],[[1138]]],"type":"MultiPolygon","id":"NZL","properties":{"name":"New Zealand"}},{"arcs":[[[1139]],[[1140,1141,-37,1142]],[[-41],[-35]],[[-40,1143]]],"type":"MultiPolygon","id":"OMN","properties":{"name":"Oman"}},{"arcs":[[[-954,-897,1144,-903,-2,-457]]],"type":"MultiPolygon","id":"PAK","properties":{"name":"Pakistan"}},{"arcs":[[[1145]],[[-517,1146,-526,1147]]],"type":"MultiPolygon","id":"PAN","properties":{"name":"Panama"}},{"arcs":[[[-248,-221,1148,-215,1149,-219,-438,1150,-600,-514]]],"type":"MultiPolygon","id":"PER","properties":{"name":"Peru"}},{"arcs":[[[1151]],[[1152]],[[1153]],[[1154]],[[1155]],[[1156]],[[1157]],[[1158]],[[1159]],[[1160]],[[1161]],[[1162]],[[1163]],[[1164]],[[1165]],[[1166]],[[1167]],[[1168]],[[1169]],[[1170]],[[1171]],[[1172]],[[1173]],[[1174]],[[1175]],[[1176]],[[1177]],[[1178]],[[1179]],[[1180]],[[1181]]],"type":"MultiPolygon","id":"PHL","properties":{"name":"Philippines"}},{"arcs":[[[1182]]],"type":"MultiPolygon","id":"PLW","properties":{"name":"Palau"}},{"arcs":[[[1183]],[[1184]],[[1185]],[[1186]],[[1187]],[[1188]],[[1189]],[[1190]],[[1191]],[[1192]],[[1193]],[[1194]],[[-858,1195]],[[1196]],[[1197]],[[1198]],[[1199]]],"type":"MultiPolygon","id":"PNG","properties":{"name":"Papua New Guinea"}},{"arcs":[[1200,1201,1202,-1008,-209,1203,1204,-550,-558,1205,-554,1206]],"type":"Polygon","id":"POL","properties":{"name":"Poland"}},{"arcs":[[[1207]]],"type":"MultiPolygon","id":"PRI","properties":{"name":"Puerto Rico"}},{"arcs":[[[1208,1209,-983,1210,-445]]],"type":"MultiPolygon","id":"PRK","properties":{"name":"Dem. Rep. Korea"}},{"arcs":[[[1211]],[[1212]],[[1213]],[[1214]],[[1215,-633]]],"type":"MultiPolygon","id":"PRT","properties":{"name":"Portugal"}},{"arcs":[[-247,1216,-245,-46,-217]],"type":"Polygon","id":"PRY","properties":{"name":"Paraguay"}},{"arcs":[[[-602,1217,-923]],[[-938,1218,-917]]],"type":"MultiPolygon","id":"PSX","properties":{"name":"Palestine"}},{"arcs":[[[1219]]],"type":"MultiPolygon","id":"PYF","properties":{"name":"Fr. Polynesia"}},{"arcs":[[1220,1221]],"type":"Polygon","id":"QAT","properties":{"name":"Qatar"}},{"arcs":[[1222,1223,-189,1224,-795,1225,-1021]],"type":"Polygon","id":"ROU","properties":{"name":"Romania"}},{"arcs":[[[1226]],[[1227]],[[1228]],[[1229]],[[1230]],[[1231]],[[1232]],[[1233]],[[1234]],[[1235]],[[1236]],[[-1203,1237,-1201,1238,-1006,1239,-1009]],[[1240]],[[1241]],[[1242,-639]],[[1243]],[[1244]],[[1245]],[[1246]],[[1247]],[[1248]],[[1249]],[[1250]],[[1251]],[[1252]],[[1253]],[[1254]],[[1255]],[[1256]],[[1257]],[[1258]],[[1259]],[[1260]],[[1261]],[[1262]],[[1263]],[[1264]],[[1265]],[[1266]],[[1267]],[[1268]],[[1269]],[[1270]],[[-1209,-444,1271,-465,-1059,-461,-963,1272,-154,-699,1273,1274,-207,-1012,-643,1275,-641,1276,-637,1277,-653,-1124,1278]],[[1279]],[[1280]],[[1281]],[[1282]],[[1283]],[[1284]],[[1285]],[[1286]],[[1287]],[[1288]],[[1289]],[[1290]],[[1291]],[[1292]],[[1293]],[[1294]],[[1295]],[[1296]],[[1297]],[[1298]]],"type":"MultiPolygon","id":"RUS","properties":{"name":"Russia"}},{"arcs":[[1299,-161,-504,1300,-502,1301]],"type":"Polygon","id":"RWA","properties":{"name":"Rwanda"}},{"arcs":[[-591,-1071,1302,-1018]],"type":"Polygon","id":"ESH","properties":{"name":"W. Sahara"}},{"arcs":[[[1303]],[[-989,1304,-1221,1305,-38,-1142,1306,1307,-934,-909]]],"type":"MultiPolygon","id":"SAU","properties":{"name":"Saudi Arabia"}},{"arcs":[[[1308,-610,-651,1309,-262,1310,-998,-605]]],"type":"MultiPolygon","id":"SDN","properties":{"name":"Sudan"}},{"arcs":[[-650,-969,1311,-496,-263,-1310]],"type":"Polygon","id":"SSD","properties":{"name":"S. Sudan"}},{"arcs":[[-1044,-709,-714,1312,-711,1313,-1069]],"type":"Polygon","id":"SEN","properties":{"name":"Senegal"}},{"arcs":[[1314]],"type":"Polygon","id":"SGP","properties":{"name":"Singapore"}},{"arcs":[[[1315]]],"type":"MultiPolygon","id":"SGS","properties":{"name":"S. Geo. and S. Sandw. Is."}},{"arcs":[[[1316]],[[1317]],[[1318]],[[1319]],[[1320]],[[1321]],[[1322]],[[1323]],[[1324]],[[1325]],[[1326]],[[1327]],[[1328]]],"type":"MultiPolygon","id":"SLB","properties":{"name":"Solomon Is."}},{"arcs":[[[1329]],[[-997,1330,-706]]],"type":"MultiPolygon","id":"SLE","properties":{"name":"Sierra Leone"}},{"arcs":[[[-778,1331,-767]]],"type":"MultiPolygon","id":"SLV","properties":{"name":"El Salvador"}},{"arcs":[[-931]],"type":"Polygon","id":"SMR","properties":{"name":"San Marino"}},{"arcs":[[1332,-647,-565,1333]],"type":"Polygon","id":"SOL","properties":{"name":"Somaliland"}},{"arcs":[[-964,-648,-1333,1334]],"type":"Polygon","id":"SOM","properties":{"name":"Somalia"}},{"arcs":[[-1225,-188,-1042,-987,-1054,-202,-787,-796]],"type":"Polygon","id":"SRB","properties":{"name":"Serbia"}},{"arcs":[[[1335]]],"type":"MultiPolygon","id":"STP","properties":{"name":"S\xe3o Tom\xe9 and Principe"}},{"arcs":[[-664,-239,-771,1336]],"type":"Polygon","id":"SUR","properties":{"name":"Suriname"}},{"arcs":[[1337,-798,-142,-551,-1205]],"type":"Polygon","id":"SVK","properties":{"name":"Slovakia"}},{"arcs":[[-789,1338,-929,-144,-797]],"type":"Polygon","id":"SVN","properties":{"name":"Slovenia"}},{"arcs":[[[1339]],[[1340]],[[1341]],[[1342,-1125,-655]]],"type":"MultiPolygon","id":"SWE","properties":{"name":"Sweden"}},{"arcs":[[-1061,1343]],"type":"Polygon","id":"SWZ","properties":{"name":"Swaziland"}},{"arcs":[[1344,-1014]],"type":"Polygon","id":"SXM","properties":{"name":"Sint Maarten"}},{"arcs":[[-913,911,-911,-939,-926,-995,1345,1346]],"type":"Polygon","id":"SYR","properties":{"name":"Syria"}},{"arcs":[[-1311,-267,-473,1347,-481,1348,-479,-1102,-1100,-999]],"type":"Polygon","id":"TCD","properties":{"name":"Chad"}},{"arcs":[[-171,1349,-700,-175]],"type":"Polygon","id":"TGO","properties":{"name":"Togo"}},{"arcs":[[[1350]],[[1351]],[[-992,-976,1352,-1089,1353,-1052]]],"type":"MultiPolygon","id":"THA","properties":{"name":"Thailand"}},{"arcs":[[[-974]],[[1354]],[[-970,-458,-6,1355]]],"type":"MultiPolygon","id":"TJK","properties":{"name":"Tajikistan"}},{"arcs":[[[-4,-902,1356,-961,1357,1358,1359]]],"type":"MultiPolygon","id":"TKM","properties":{"name":"Turkmenistan"}},{"arcs":[[[1360,-803]],[[-805,1361]]],"type":"MultiPolygon","id":"TLS","properties":{"name":"Timor-Leste"}},{"arcs":[[[1362]]],"type":"MultiPolygon","id":"TON","properties":{"name":"Tonga"}},{"arcs":[[[1363]]],"type":"MultiPolygon","id":"TTO","properties":{"name":"Trinidad and Tobago"}},{"arcs":[[[1364]],[[-1001,-586,1365]]],"type":"MultiPolygon","id":"TUN","properties":{"name":"Tunisia"}},{"arcs":[[[1366,-734,-185]],[[-697,-56,-153,-906,-914,-1347,1367]]],"type":"MultiPolygon","id":"TUR","properties":{"name":"Turkey"}},{"arcs":[[[1368]]],"type":"MultiPolygon","id":"TWN","properties":{"name":"Taiwan"}},{"arcs":[[[1369]],[[1370]],[[1371]],[[1372]],[[1373,1374,1375,-966,1376,-1067,1377,-1074,1378,-1076,1379,-1078,1380,-1080,1381,-1083,1382,1383,-158,-1300,1384]]],"type":"MultiPolygon","id":"TZA","properties":{"name":"Tanzania"}},{"arcs":[[[-1375,1385]],[[1386,-1385,-1302,-501,1387,-499,1388,-497,-1312,-968]]],"type":"MultiPolygon","id":"UGA","properties":{"name":"Uganda"}},{"arcs":[[[1389,-1223,-1022,-1226,-794,-1338,-1204,-208,-1275],[1390],[1391]]],"type":"MultiPolygon","id":"UKR","properties":{"name":"Ukraine"}},{"arcs":[[1392,-242,1393,-48,-244]],"type":"Polygon","id":"URY","properties":{"name":"Uruguay"}},{"arcs":[[[1394]],[[1395]],[[1396]],[[1397]],[[1398]],[[1399]],[[1400]],[[1401]],[[1402]],[[1403]],[[1404]],[[1405]],[[1406]],[[1407]],[[1408]],[[1409]],[[1410,-344]],[[1411,-340,1412,-338,1413,-336,1414,-334,-278,1415,-276,1416,-1033,1417,-1031,1418,-1036,1419,-342]],[[1420]],[[1421]],[[1422]],[[1423]],[[1424]],[[1425]],[[1426]],[[1427]],[[1428]],[[1429]],[[1430]],[[1431]],[[1432]],[[1433]],[[1434]],[[1435]],[[1436]],[[1437]],[[1438]],[[1439]],[[1440]],[[1441]],[[1442]],[[1443]],[[1444]],[[1445]],[[1446]],[[1447]],[[1448]],[[1449]],[[1450]],[[1451]],[[1452]],[[1453]],[[-347,345,1454]]],"type":"MultiPolygon","id":"USA","properties":{"name":"United States"}},{"arcs":[[[-534,1455]],[[1456,-532]]],"type":"MultiPolygon","id":"USG","properties":{"name":"USNB Guantanamo Bay"}},{"arcs":[[[-973]],[[-972]],[[-955,1457,-958,-971,-1356,-5,-1360,1458,-1358,-960,1459],[-1355]]],"type":"MultiPolygon","id":"UZB","properties":{"name":"Uzbekistan"}},{"arcs":[[-932]],"type":"Polygon","id":"VAT","properties":{"name":"Vatican"}},{"arcs":[[[1460]]],"type":"MultiPolygon","id":"VCT","properties":{"name":"St. Vin. and Gren."}},{"arcs":[[[1461]],[[1462]],[[1463]],[[-772,-250,-513,1464]]],"type":"MultiPolygon","id":"VEN","properties":{"name":"Venezuela"}},{"arcs":[[[1465]],[[1466,-978,-991,-449]]],"type":"MultiPolygon","id":"VNM","properties":{"name":"Vietnam"}},{"arcs":[[[1467]],[[1468]],[[1469]],[[1470]],[[1471]],[[1472]],[[1473]],[[1474]],[[1475]],[[1476]],[[1477]],[[1478]]],"type":"MultiPolygon","id":"VUT","properties":{"name":"Vanuatu"}},{"arcs":[[1479,-547]],"type":"Polygon","id":"WSB","properties":{"name":"Akrotiri"}},{"arcs":[[[1480]],[[1481]]],"type":"MultiPolygon","id":"WSM","properties":{"name":"Samoa"}},{"arcs":[[[1482]],[[1483,-1307,-1141]]],"type":"MultiPolygon","id":"YEM","properties":{"name":"Yemen"}},{"arcs":[[[-1062,-1344,-1060,1484,-1095,-260,1485],[-1005]]],"type":"MultiPolygon","id":"ZAF","properties":{"name":"South Africa"}},{"arcs":[[-1383,-1082,-1064,1486,1487,1488,-1094,-7,-508,1489,-506,1490]],"type":"Polygon","id":"ZMB","properties":{"name":"Zambia"}},{"arcs":[[-1063,-1486,-259,-1489,1491,-1487]],"type":"Polygon","id":"ZWE","properties":{"name":"Zimbabwe"}}],"type":"GeometryCollection"}},"transform":{"translate":[-180,-90],"scale":[0.036003600360036005,0.01736514657995801]}}'
       );
     },
-    585: function(e, a, t) {
+    584: function(e, a, t) {
       e.exports = t.p + "static/media/a6.2966ab8e.jpg";
     },
-    586: function(e, a, t) {
+    585: function(e, a, t) {
       e.exports = t.p + "static/media/a1.617f6789.jpg";
     },
-    589: function(e, a, t) {
+    588: function(e, a, t) {
       e.exports = t.p + "static/media/gallery1.d9686514.jpg";
     },
-    590: function(e, a, t) {
+    589: function(e, a, t) {
       e.exports = t.p + "static/media/gallery2.5376cbbd.jpg";
     },
-    591: function(e, a, t) {
+    590: function(e, a, t) {
       e.exports = t.p + "static/media/gallery3.94f2ed11.jpg";
     },
-    592: function(e, a, t) {
+    591: function(e, a, t) {
       e.exports = t.p + "static/media/gallery4.7579f3bc.jpg";
     },
-    593: function(e, a, t) {
+    592: function(e, a, t) {
       e.exports = t.p + "static/media/gallery5.58b8cde0.jpg";
     },
-    594: function(e, a, t) {
+    593: function(e, a, t) {
       e.exports = t.p + "static/media/gallery6.00c03d37.jpg";
     },
-    595: function(e, a, t) {
+    594: function(e, a, t) {
       e.exports = t.p + "static/media/gallery7.067c3fdf.jpg";
     },
-    596: function(e, a, t) {
+    595: function(e, a, t) {
       e.exports = t.p + "static/media/gallery8.3d5afddd.jpg";
     },
-    597: function(e, a, t) {
+    596: function(e, a, t) {
       e.exports = t.p + "static/media/gallery9.7bf418ba.jpg";
     },
-    598: function(e, a, t) {
+    597: function(e, a, t) {
       e.exports = t.p + "static/media/gallery10.197bc1fa.jpg";
     },
-    599: function(e, a, t) {
+    598: function(e, a, t) {
       e.exports = t.p + "static/media/gallery11.335d0c40.jpg";
     },
-    600: function(e, a, t) {
+    599: function(e, a, t) {
       e.exports = t.p + "static/media/gallery12.9a31993c.jpg";
     },
-    601: function(e, a) {
+    600: function(e, a) {
       e.exports =
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAH4QAHAB8ADgAyABFhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB+AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMABQMEBAQDBQQEBAUFBQYHDAgHBwcHDwsLCQwRDxISEQ8RERMWHBcTFBoVEREYIRgaHR0fHx8TFyIkIh4kHB4fHv/bAEMBBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/CABEIAZABkAMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABAUGAQIDBwj/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAwQFAgEG/9oADAMBAAIQAxAAAAH7KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi+3HXoO+QAAAADw9+fQ68AAAAAHjz77DrwAAAAACFB8aXC0dArXPVtb5fUaNTEX9Bf5V24H0eUAA69oEfXab8/39KxyNGrldVldVm2w0qgAAAADLamBTnni3AHoAAAADPQZ0H5zV14+jygMRf0F/wDOatxWWGE0atj1lTqFmn9u9XDJsspr6LSqUFjXajJu8XMOZ9HlZXVZXVVZuM7K9Cu4073ynuMvouvPamss94550zz3L2veJF3d0V7lp49SRrleuh86XMuZmzs1qELkAAAGepLuq+Y2JC1WIubiFN16OIv6C/xNCww25w0nO5keHvt51RnNHnMDT3UCfA3M7Hb/AAG/yrvI3M7K6rK6rNt0FnWWfiYNOpQWlXaZtvitsq3xfDTqV8SXEzLd3ltTlvWpgT4FuCFeUd5F2FyAAAADPQZ0H5zV14+jygMRf0F/85q2GG3+El42sjMTb1fvnJEfGv7qBPj/AEmTh9/gL3A09Gr7D6DLyuqyuqo2aCzh9ufbYalOgtKHSZlzwrL3J+NcrebkCLX2Gdau8tqctPHqYE+Pcr1d5mdNXmC9WAAAAqIuhU5wuQAZi2sVOdXWKxFlONYoWaCNqHfIaFaqqNYo2KG+J46K9PXGf0LlmGnVpqm2LkDy9fHrmAmqs8Hzh3FaWdR3jQrBNHTwNOo2MxaWb3wLsAAAAAAAAAAAAAAAAACnuEXdDzeq8tfYFmEJOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPQmmfPp9GxslVaWYuRLwAAAAAAAAAAAAAAAAAAKws+uPoTaZ+mHPB4mSevb4/eSI6LvSXOC9NSnvGdu9nP8AcWYgAAAAAAAPP0/POtPrLMaU7AAAHmejP0BtaDJiZDAAB7+E+hZ9h8vsgAOeBb3uLaFX6Ax99sULIX6wAAAAB0zZ8YAmQxu9l8SH6N5+Bao+pVXz/kv6TzAAAAAHayiy/m9YMy4AAAABKvcwtQ77thLvZz9A8vXTpkTKett4/I8wfWsnjBJjAAAAAkxhe2ePG5ZG0Lp4e4AAPWPqb3Pjd8PPQAAAAAAO1PbVd2vh+p9VigAAAAAAAAAJ0EaGzxfJuGWtC1mwLbIvcj5/UAAAAAAAAccj51G0ua+uwgsxAAAAAAAAAAAAX+vrbL5PbCpOAAAAAAAABC+ffTsDtZ1eN3OAAAAAAAAAAATIepqzaTk+S3AAAAAAAAAAGd0XhPH84duv1+CHoAAAAAAAAADn6LkNvgaYY98AAAAAAAAAADEVGzxn1OKF6uB//8QALBAAAQQBAQYGAwEBAQAAAAAAAwABAgQFNBATIDAzQBESFBUxNQYhUCKAkP/aAAgBAQABBQL/AM+JWAxlCcZtzImFKfOkUcZc61YiBe4jXuI17iNDvjlNWtTidPxzk0I+qr8FT7HnZPWNzswhQkSfobC9DYQaR2KrWpxOn48hpE3xsqfY849UZSc7MLHavgtanE6dW7cQu96wvW2F62wg3DuWzJ4AJaMSC9bYWOOQzqp9ipO0WLfnKW+vp7F6KqXWJLZbu7uTHvSW+vqVi7FseaZhq7ZKKzstXvJJj3nW+vqjOxLk5hY7V8FrU4nTzfywlJ5SqUmIP28CvVRhEDrki04WqYhATY8PhXrjBsqfYrLSdg40TRBsyY2GUMvOE8vIHGCYhdmR0mI6KyesZWpeSvihNKXLzCFOQ5+usL11hY+wQzq1qcTp7OnVboLK6YHXWQ0ib42VPsVl/ilpNmX+Kelu6TD/ABsyOkxHRWT1jLIaTEdPl5hVRsU/twl7cJVq0AbLWpxOns6dV+gsrpgddZDSJvjZU+xWX+KWk2Zf4p6W7pMP8bMjpMR0Vk9YyyGkxHT5eYWO1fBa1OJ09nTqt0FldODrrIaRR+NlT7FZf4paTZl/inpbulw/xsyWkxHRWT1jLIaTEdPl5hY7V8FrU4nTzbzRnF4SqXd0P3Eat2JHkDrqzDeAVe/5R17cDTVT7FZWDuHGmaQdmSKxTBj5BSZpRg86VmN6u7Pdrq3YlYbEdFZPWMrMPODFmaE+XkQEMqVUo7HAemeRqAphCrdWJ1Kgdk1A6lRdq4aR2LstU4ld6B1QrFEZV6xYXE7M7GoSaXprq9LckqlOIn2EHAjegAvQAV2EB0sR0VdrFLY2WqTEl6W4y9PdVEZx/wAZyjZ98Fb8KyFmJWojcVf+aajEhfbYr22KBUEJ/wDk8xhCY+WgynbsHkG0YSDeFNN+/wCVKUYsfJgGj5KwRO7u6A362BOUSBkIuoSjNv4p71YKPlSyRCEI/AzeDcEJzg4cg6EUZW7IZIEjzT2AhR8syPaObjC3+uNndnBfJBBsiL2IDmBKp+RWxqpnaB1GUZNxknAbHygYI+Qsl5Qm8I8oNww0G6EnNnOEI2s7jwcFa1YrSqfkliCp5mhZTOzsnfwR8hWEj5Q01OcyS5UW8Zc0NgokC/CSjJpNxFKIUbf5BRCrX5FcIjnMeXHVu2qri/JLPkfIeqfmgbsBkmNw5BDJAjKxZr12tfkdSCt5++ZEJMkuaM5Rod9DOInLg3hHsYyeL5m/fipSlJ+zHYNBDvshlGTjE3jPs8mLeVO3HaNBCvQdQJCfAFv89paHubHcN+kO2aCHeG6HKM036btM2L993hR+Y3a3R72t3eOFuqvbZAW6tdzSFvrPb5oXiPucIL/PbnhvQu3g/bs3i9ce6D3GWFu7Xb4kW8tdzmB+etw//8QALxEAAgEDAQYFAwQDAAAAAAAAAQIDAAQREhAgITAxMhMUMzRRQEFxIkJSkWBwof/aAAgBAwEBPwH/AFoVI443yCOu+BnkQ28bR6mrwrb5q4WNSNFXPobiDUwFXMAixjZedw/G/byCN8nkR+2/vbc+hVrAJDk00lupxilWKRNSirV4xwbrU7xrjWKmKs+V6Vedw/FRqiR+IwzXmF/gKnRcB1+9QIuku/2rzC/wFMVeEtjFWihn40Bk4qRo4ToC5p5gwxpG7bkCDjXi23x/ypipfK9KufQqw7TT9xq19Gou8Vf/ALdl53D8U/t12P7daT27bF9sfzVn6lReoKufVO9H7b+9tz6FWB4EU9tJqPCoYzHFg1GcODV3E0gGmmQocGrzuH4pv1W4x9tko0wqDUA1xMg614MnxRjKW5Bqz9Sozhwau1IlO8Lhgmja9wzrpNI5Q5FedkoXcmMbEupEGKkkMhyakkMhyajlaPtrzb/Ap3ZzlqXOeFeJN8mmykGG6mo5DGcjYt06jFPcM4xj6NJGTiteal+aZyxyf8FitmkXIp42TuH1ESaEC0QDwNSWSnt4VJA8fUfS2ia5N2S0R+nCpLWRPo7KPSmfnfkt0k61JZOvbxojHXnoupsUBgYHJuYw6Hn2KZbVy5k0ORzraPRGOXfJ0bmwJrcDmTJrQrzbFOBbm3SaJDt//8QANhEAAQMBBAgDBgYDAAAAAAAAAwABAgQFERIxEBMhMDRRcYEUIDMVMkBBUqEiQlNhwdFgcJH/2gAIAQIBAT8B/wBaMSLvcz+dpNLLzvJmz3FXWngdxwXiK/l9lRTPNn1zKg4t+/kLPBB5clQVkqjFibLRZnpy6+euDIw8Mdwfj+7fxpoOLfurRq5AizQzdQDXEbFi+6nOpCVoTl91aIjy2wfZcqQRyX6p7lSwJAbMTNWZ6cuqPMhTakb3c14Kf6rqkLPFIRM2VWWeOIR5uvBT/VdDaYqphvJ3a5WjOUBXxdSlhjidBgaqbWSnd0QqWUJYnm7+WtaT1jtHPYvDV31fdUsSREzEzVBxb91bHvxQ/cZWjxTdlU+jLorG/P20WZ6cuqFxs+n9aA8bPoi8dDp/eifHR6K1PR7qo9GXRUHDx8x+P7t/Gmg4t+6tiL3xkg14MDXyVUaJqjFHJHi8hyZuSsyogGUmn80MkSNfF1Znpy6qD4K6V/zbRTvjqySbJVb6qogZ8l4oP1MomiWtZ45XK1PR7ozYhSZuSs6bSp2ZvNKiHIutfPSKiGImsbNEFEscMmXsoH7p7NC7s/LQWzwlfE6ACII4YoIIha6KPTDO3417NHzf/qEGAo4YMp4bvxLUUvJkN4krLx5RZHBE0cMtBLPFOWLLohUUBSxM7/BlDAzXTZez6f6UMcBtdFv8FqK6AJtCSGaBWvg/xFSXWleajJ4vfFAtWcdhNqDViN7r/C2ibVhf9/KC0jC2PtZAtAJdmT/B2qbGXDy84K0ocn2IFqDnsnsTOzte2/JNhweT/JSk8nxPuaA7iK3Lf2sbDBh893Sl1omlvq42tM77uyC5j3tYbUheW8pi6orT3trmvkw23tnm1oG/bT//xAA4EAABAgMECQIEBgEFAAAAAAABAAIDEBESIVFyMDEyQEFhcYGRICITM0KSI1BSYoKhBICQorHh/9oACAEBAAY/Av8Ab4smI0FVY4EaWwHguw09lzwDp22gTXBfLevlvXy3oNsOFZRMyObQWnGgC+aPR3OnHQaeF3QY3WtTfK1N8ppNmgOMomZHNoHyE+509txNdPC7pvf0xMyOaVkC09awOy2x4W2PCaC4UJwT3t1gIsc648pbf9J4iGtJdzKp1BUgtWy77FUtP2qxEFl07EMVcqhp+xbLvsVXAgZU4vNaGQYw3UwnYhCpxVQ0/Ytl32J3xwRhdoYXdN7+mJmRzIuwCLjrKD4hIrqAWt/lWml1a8UzMix2opz2l1RLW/yjYrfjLuZBv6ig/wCp0w9l1pNdiE92ATnuvszen5pDoJPcME6I6+zq0kLurbda2h4W0PCcH0ulEzI5k/LKHlEv5JmaT5CfcyhqH0nDUPKonRRO03p+aQ6CT0/rpIXdBhNxW25bbkbJJrjKJmRzJ+WTMol/JMzSfIT7mUNQ+k4fdQ8qidFE7Ten5pDoJPT+ukhd03v6YmZHMn5ZQ8okMyZmk+Qn3Moah9Jw+6h5VE6KJ2m5PzSHQSen9dJC7pvf0xMyOZFuKLTrCsPbUDUthy1UaNQTM0nsxEg2I0mnEKwAQaS7mQcPpKEP6mzDGX0TW4BFp4q8f+raI7Lb/pewUY29PzSHQSe0YIw3XWtWkZYpcg94FBz9L3AChOKLX66ytbL8VdZPdfSO6o2jolU0kCgOM7TTZcvpPdW3gUpL4hAs1MqHUqwXdito/cqF12ZW3m07/qdHtBX1eV9XlODGgJ+aQe0ClJ24ZsniqB3/ACW0fuTvjGuF/wCTUL2g9V8xvlfMb5Xw4d44lAHWbz+XOfbIqvmHwvmHwrW07E/6UKxHhqpBZa5lUdENMAtqowKo72FXflVXEAc1RlYh5alRp+GOSqTUyrP2O7KkUWeYVWkEfk1C+0cGqkJoZzN6rEeXdfTT01Y4hUitrzCqxwO52ob2ubiDpvxIgHJUgw+7l74hph664aCoNFSJ7x/a9rr8DuNqDFdDP7SqR2tjDwVQvMJ2D1aaQRiNBV7g0c1SGDEP9LasDBu667QwKofYeeltPcGjElUEQxXYMHorAjPh9Cqf5EJsUYi4qgjfDd+l9yqDK9bVs4NVIYEMK09xceejppva67BUiCwf6VWmo9dqLEawcyqQrUd37dSpBDII8lWo0V8Q/uOgrAjvby4KzEhMJ/UF7o5PI3aau4VY4hUit7hVY4GVY0ZjOpVIDHxjjqCIY5sFv7datRHuecSdN7XlfiM8L2vHTR03KrSQUwNjubDI4KriScTulz/K/EbTova8He3YtvG8bVRzXvaWr2uB9Fd1fDwN283K82hzXvBava4HdmRh0O+OicG7s9nGl2+NHE3nd3DgbxvTGcOO8Nij6bjvTox43DeHQzxCoeG8UCbDwG8l3B9+8Bx1Mv3q3xZ6v//EACwQAAECBAUEAgICAwAAAAAAAAEAERAhMaFBUWFx8CAwQLGBkVDB0fGAkOH/2gAIAQEAAT8h/wBfBsHKgla3iB7pAHMBn3xIrYE9/FzWTmBcwLmBTfozloXJXLsEgVUSg90Nbv8AwWao71XDBBZBOjmNahfAAmC5K5dizHuFtGt38LEgAJHv1cMFb+nTclcobaxgEcXGmC/1lf1lF3gQZVi8AIUM1gyACGZ9UGgwGk0K0MpOwHJVC/AkOT8QYAkuqgQhKEUMQmEFUmgQR1GkDDcTYlRViZEmwgKCGiyCkBHAFIlRB5DpAyg0advZq4YK39Om5K5J0sQoyLkcoIUmyEIB8sBMrUnfGWLLXKQwJA4CHDdNToVoYXnM2Cb7ivpEJ2NLMLTNKONqUhCD3MzH1va4GghwWaoRayEiBxgOz7lXDBBZWGkQhMaTAQwaFyVyVyWC4jKFLYrVCzHuFtGtDvD0HeFWKE3f7R9b2uBoIcFmqFY/tW/13KuGCOuDlFwQuCEZMlXBclclelgucyhS2K1Qsx7hbRrQ7w9B3iWKE3f7R9b2uBoIcFmqFY/tW/13KuGCt/TpuSuSuUOIygYazBWqFmPcLKNaHeHoO8SxKZUpOv7RIDXb2uBoIcFmqFY/tW/13KuGCt/TpuSuSCWoBCBWxGKZDqwFxQhpIWqBRFZG6IIJBDEVQDKAwQbzcThWhieepsUbpAkNmIkFbK4xJWi+FTYBijwPCh0ZpwEnIkgw7jsaMgWbPiuBoIcFmqEaujIia5g59x1CU7uWyQdAB6R2UkhGwAT5GEmH2N0QodEJMxuIdnIAkmUsggLoBMR++65FCmQ2EKwDorA4GOK5wMxOUiEyKBgRiPmBSI73KFgBplE386olNB2UBNC3ULxlTdcDQQISNCZQpA+ALQaFM3LaQ9nFc0zvwx+OKgwWIA6wQ+6+Yhjt+OgqXl2aLHD4Agpgf4ofKjGaeSy2QmOmOWE2AfLU1/L0+0QByBGY/FayqJk/fS32TmDk1/aMiiYkvBk88SM8DNMJjctwLVPQP4UyT4DuifAzcJ9j1dADlgmnJ0vuOhQzcRwWyGYjwxcxUdDvB53qn9IZ3XKiqXyJDre7EeSIYhMQNSiS9jaHwfiSgm3M/wDemstYLXohMt0I4PY1T4TJ+zYojgPql0SSXJJJxPZ30z7bSOdxTQXRo+0CCHHcMg/VkE4ADNXp0PTGIkH4omTiDYJiALgu/hAABBoRAAOQAzKfAPml07ZgVK1g4T9tq7yt+pMJm1RVGISYg9euhGk6E0hvsU96Ei4V8+YewOgOpy+DJBfE0sjvGM7071X4+A/26KnxOSb7dIMHemE+6APdNOLLL7FGxBzR72EDIzCwvkXGJmke2zeE1LUCpaopQC+6Mz3iOfErsRlMjZFLOYL6SMetmyE/EkQP45CRcKW7KdSQxmJhCX209Dep4hAIYzBWSH0MPJIk5EHMKWcbipWRzqEwznIoAADDxWBFf+XmFK0W+T40nMTcPMeYNfvHa8TviPlagn2DyGvTL4D5TAyr+fyA0I0jHrEx8gwJhJYIAbKO/ksIJTd8fIZBKfvh5UlCY/xj1f/aAAwDAQACAAMAAAAQ8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888+888888+88888887+fC888px888888889e888888r88Co+tOF88Y+V/8AtbVxffPPPOslAtdv6gfPP/FA/F/lPfPPPPK/PAsvl7CtvMvEMsHvk9PPPPPPfPPbzz/HfvD7/K+q7HDz/PPPPPPPPPPPPPPPPPPLnvPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP8A7zzzzzzzzzzzzzzzzzzzSRCcpPLXzzzzzzzzxjDzzzjhiAAAIEEFCHrTzzzzzABADCCAAAAADMEEEEEGLnXiCAAAAAABQggAAIIEEEEEEEESAAAAAAAAAACCAgIEEEEEEEEEGIAAAAAAAAAAAAAoEEEEEEEEEHMAAAAAAAAAAABaEEEEEEEEEEFQIAAAAAAAAAADoEEEEEEEEEEEGoAD/8QAKhEAAQIDBgcBAAMAAAAAAAAAAQARITFBEDBRYXGhIECBkbHB8NFgcPH/2gAIAQMBAT8Q/rQM4m44IDcZCYB7gdznjmsl3QgNxWLqR04BkakBR9Jd59LNk46U2uJ+ntbI6IykhExjDJEgLRoEZYcjCCmaeUHRYFk2RR0hLALG7CDHsKMCmbOKMSsLsIRRIFoDRMUXDFHGFUwgQmSi0BZgcICZWL9ysoh8FkkdFuVuFP6rfjyper1Zsi3x92bw+1vh6s+LReIrcjyvrpxT9Pa2R0QcVBDsODo1nxKEakCPKOQO3tNRYrZEBLqR3sNN0StSQfdFGZ/ZTmXfSS8RQCFCPKIBE+Jv2aI72jrTficmxUNodkARMXsbAuM1X+gyiGR9ymv8hPqcqae+Sp+RDWo8Z/QVe9gobEDEI5MA+A5My4xXzb8T2XP8FIjogzHLgPALLhDWHCj5u2WBWNOVZCZCP5wEOo9Ey/FGWcZcnEc/DjjQRxCjEDdEJgY35RDVDFIFyVmiIi/dDp5N3h7TS+YhmYnrdww6H1ev7Kul5mx5Urxs2sBewVIx+62//8QAKxEAAQMBBQgDAAMAAAAAAAAAAQARITFBUXGh8BAgMGGRscHRQIHhYHDx/9oACAECAQE/EP60a0JucPvinMHDfEuTDgFZiGDPUD2uZ0wRyYLxDLSc9wwaoE9AibAQpzf1sz3xvhtVwUN+npja0nNYgRcAhkSAMyQRQLxaNUBLYScO2MWwjFMZ5a9kQp5uXe29Z74UPsByt+skbPqo829reCn4tVNw06Fv1UWyiMnH0hkgFxSEM1AB+idsE0EIQODCwmDu1ERZiwZc0hUXm8vbetJzWSPdZUdlpOazLsqtFuzPfCy7YyLsFnWxrcVRweVnXZZc9zvU9MbWk5q4ZiERGFg4LoJuA6KoUSGSLi0Jwf2pfgs98IAEWm509HYKRsAfnHopqsXBNzv7yQOHzgqTwgDfX/FRweUeoiXZGkkOD1O8/wCMgaxDNZy2nhS57Yn6Ro6BRefu/EKoIhAN2w9AQTVoU92rKN3mJeeaAAFKG0J+utgokAiiaxvpmrXsq6RIpbTrkpGM7xsJAcjVzIZNEXmLrvhjjwCVpk+0y8By/goeDIdxYmoCNWfHJADlFvoxhZkh4xBvCZwMvofR1KvuuMHWHxWMKwH3XLcBILhMBcavX26ZSPIPunw2Ead5r432MPXDI/PpM4H9R199UNEccemEDo7qEvwQmTIsRZNv1x2krI4D97cO/wDacRB4zHUEDAfs8NsnxHY+OKwVaDE6fiFsoGcLckC8jiXBJOJpl34rgNYH6pk23//EACwQAQABAgMHBAMBAAMAAAAAAAERACExUfAQQWFxgZGhMECx0SDB8VCAkOH/2gAIAQEAAT8Q/wCvhBZxcRyq/wCNLok3eqzaEZNmPrlhoQ4s4euLJbSFoiZl4laH71ofvWh+9AhRmQC8nZqedatkegN1JwRSwEixv+qLkm3VeNHraLmrB5et41c+YYQFiW9fzf1X839UydKJsDOEbNbzrVsj0NYyVv614z4267xo9aBdAIEGT5oIIPW8avXM3463nWrZGyCKKWUc1/VJx+4D8zWsP1WsP1QcECCReVOoD1SQaj5BAUwziGw+IQgn6KOjIgYS8Nmu8aKC6wjACnxiUJ8cblDEkPJ9VBuOMceCreg3X8uDtsW1dfy4tSznCKPJX8V9VixiMB1ipgRYNkHdz2IBykGVUbvKlIeGxBv4sHIDGpE7wgjyV/FfVWmGCp4zz3ej41euZvx1vOtWyKMhIyciaS4kzvWjb3YByKudfw/1SliaCkM8K0HMq+0syGHKmlDEDS6GXGt9NadC2fVKgSClsZW2a7xopRQYPeEx3ik2UFouSsHz12NH4gUWA2J4pm8WeaV5w8It5ooxIhdM13s96Nml4dt2m5qweVPJD5ZLYfND1kAEkrrz+/U8asZc2SSXIbV/PV/PVNvYyiVnZredatkVquVfpVmqs2abxrQczZrGSt/WvGfG3XeNFarkV4nbquRWv5V5r5K0bLa0vDtu03NWDyrwnw9Uzxqy3Ylx2Fr+r9K/q/SgjACRYMo2a3nWrZFaLlTi5Vr2TZpvGtBzNmsZK39a8Z8bdd40VquRXiduqZFa/lXmvkrRstrS8O27Tc1YPKvCfD1TPGr1zN+Ot51q2RV+ltW7pSFhn6mwjG8Ds1oOZs1jJW/rV0WT4267xorXcivE7dUyK1/KijC82guiZI6bQAsSJzhtu03NWDyrwnw9Uzxq9czfjredatkVYYW9SKd8uTmVgGyskMkaYWFcv6pXbjcm7irnWg5mzEL55jyUzZCBxHKjXKSJQwkd9DyiMSEEnDns13jRULRPwhE94ooJsjeWyfGxQJWCg2ScYKwM91TXijzCjHl/KSKUbHBgT2DnQzexLHYaWBeUjyVEJtcSWBcsbG2bTc1YPKg+l8M0ufFBOKGwA2hyn9epMUwneLPipYnEBWSPxYu5wLLQgsoyQQbFrEIASDIfulpCYME96LBmcvxTJhmhCdG+k6pUGwztENcOJfibniUiCM4fmoaSMFVU+tkFqJCqSi3XYIsqgsjSmeJQ5EUjYWOOrgRiMnatyASRxjN47YgVhC5ycSnicIkUcXh0innNtGLDF30Gbc7Md4KRERVt1oQDhscb8iv52waAIThJFan90ZELeziZ5Yn+M2GIAEr+XpYjDhpxgEBj3BUrAJZLu7R/nMBpALFfw1En6lYsGDPMGB/xQg7okLzkYtdIT/yMXxQPGPAeTF3rVua4SODiVOFTc5fL7UNaiRJH/KUjGIB5q1Aai/U1PBNz8l+0UtTJXJ6uyQMXByNsxk97j0aUXw/mTE80ESMJR/ioCqAYrUQR43qljq1IF8PgcDzTpt3qxyMD8GHEWCiKwEfiSD98U8zfUWYwih64O1HcwhjmGJ7PAbITdT1pBALXH0XoBB4Cwc4X80qzLfx9D87sLCevoD8JSQlQAnvWOuD1qKK3/kZ9PY5tlVnzCz1ps8wO4chD1KwCWtM8DK70LHZB5BLegtINxoIBcB8zd6FRyW3ODypm4JUlevowam9fr0iyJZMKm2BvJtwxFTorv7nhg+KAII3E3+pgpKAurasItLDPNHl+EiIZS6yu7VEfMX8OLxQkQBiLgt3Ro0TSiR5OxKVYpAVMoe5xccBU0csD52x2pwh4vXnD01C3t+VAABgeqqGp2N3Sl1U3bn7KL4TJR+bsbJjnzURgwO+xeBqXFWG1djsVkeVQnIwOh6BY0y9/TLtQrB+N6psT1qYI4RhywdqMLYerec4P37ApviFZ5mDXaOL5+lAOMy5zMTYpK84eRi0ifLCuedztQ1gCJ4dZOkUmOJVt1fWSIg33gaC0LNv01FiHvPA+ljYxrM4L8/ZFgDCE02utTM4ySbib6Rrkq06vs981CgfhvNFm/p/A3ooWuKOxv+dwG8e0+rzsfE+3SCIlxG5UEGWo41B6yzeUFFZXO2P4TSLvx7RmYCEd5TwDKk73fw9yNKsEhKOCBuEv7VEseT4b0jGnAk1ghCD2uEAZzMuu0nvBISKyfqJ8e2EuS8qNcaRLJD7u3kevg8R7ez95SR0ZPdK4M+XvP11oAAAAwDd7e8hJux5+fdYtEg5F13g6e4OSV8rue8UfsMDJGH3AfQwZrYovQj4mJe8+5s5ckYB3v19xcw4IcA736e6xfS7x2/R/L//Z";
     },
-    607: function(e, a, t) {
+    606: function(e, a, t) {
       e.exports = t.p + "static/media/logo.a0185b04.svg";
     },
-    608: function(e, a, t) {
+    607: function(e, a, t) {
       e.exports = t.p + "static/media/logo.a0185b04.svg";
     },
     651: function(e, a, t) {
@@ -38470,4 +38591,4 @@
   },
   [[651, 1, 2]]
 ]);
-//# sourceMappingURL=main.61860673.chunk.js.map
+//# sourceMappingURL=main.45cd0d47.chunk.js.map
