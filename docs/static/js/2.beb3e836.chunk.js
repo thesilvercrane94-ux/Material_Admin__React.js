@@ -40966,7 +40966,8 @@
               ("ReactNative" !== navigator.product &&
                 "NativeScript" !== navigator.product &&
                 "NS" !== navigator.product)) &&
-            "undefined" !== typeof window && "undefined" !== typeof document
+            "undefined" !== typeof window &&
+            "undefined" !== typeof document
           );
         },
         forEach: c,
@@ -41636,7 +41637,8 @@
                 -1 === e.indexOf("Mobile Safari") ||
                 -1 !== e.indexOf("Chrome") ||
                 -1 !== e.indexOf("Windows Phone")) &&
-              window.history && "pushState" in window.history
+              window.history &&
+              "pushState" in window.history
             );
           })(),
           i = !(-1 === window.navigator.userAgent.indexOf("Trident")),
@@ -42107,7 +42109,7 @@
         return (
           55296 === (64512 & e.charCodeAt(t)) &&
           !(t < 0 || t + 1 >= e.length) &&
-            56320 === (64512 & e.charCodeAt(t + 1))
+          56320 === (64512 & e.charCodeAt(t + 1))
         );
       }
       function o(e) {
@@ -46117,7 +46119,8 @@
               n = e.tagName;
             return (
               !("INPUT" !== n || !u[t] || e.readOnly) ||
-              ("TEXTAREA" === n && !e.readOnly) || !!e.isContentEditable
+              ("TEXTAREA" === n && !e.readOnly) ||
+              !!e.isContentEditable
             );
           })(t)
         );
@@ -46807,7 +46810,8 @@
             return (
               void 0 !== this._readableState &&
               void 0 !== this._writableState &&
-              this._readableState.destroyed && this._writableState.destroyed
+              this._readableState.destroyed &&
+              this._writableState.destroyed
             );
           },
           set: function(e) {
@@ -59159,7 +59163,9 @@
             null != e &&
             !i(e)
           ) ||
-          o.test(e) || !a.test(e) || (null != t && e in Object(t))
+          o.test(e) ||
+          !a.test(e) ||
+          (null != t && e in Object(t))
         );
       };
     },
@@ -64666,7 +64672,7 @@
               n.decoder && (i = n.decoder.write(i)),
               !n.objectMode || (null !== i && void 0 !== i)) &&
                 (n.objectMode || (i && i.length)) &&
-                  (t.push(i) || ((r = !0), e.pause()));
+                (t.push(i) || ((r = !0), e.pause()));
             }),
             e))
               void 0 === this[i] &&
@@ -89160,16 +89166,12 @@
                         class: "apexcharts-yaxis"
                       })),
                       e.forEach(function(e, o) {
-                        var s = t.graphics
-                          .group()
-                          .attr({
-                            class: "apexcharts-series",
-                            seriesName: m.escapeString(
-                              n.globals.seriesNames[o]
-                            ),
-                            rel: o + 1,
-                            "data:realIndex": o
-                          });
+                        var s = t.graphics.group().attr({
+                          class: "apexcharts-series",
+                          seriesName: m.escapeString(n.globals.seriesNames[o]),
+                          rel: o + 1,
+                          "data:realIndex": o
+                        });
                         (t.dataRadiusOfPercent[o] = []),
                           (t.dataRadius[o] = []),
                           (t.angleArr[o] = []),
@@ -108566,8 +108568,8 @@
           ? 0 === i.type
           : !r &&
             2 < t.length &&
-              ("o" === t[0] || "O" === t[0]) &&
-              ("n" === t[1] || "N" === t[1])) ||
+            ("o" === t[0] || "O" === t[0]) &&
+            ("n" === t[1] || "N" === t[1])) ||
           ((function(e, t, n, r) {
             if (
               null === t ||
@@ -111172,7 +111174,8 @@
           ? e.shouldComponentUpdate(r, a, o)
           : !t.prototype ||
               !t.prototype.isPureReactComponent ||
-              !Zr(n, r) || !Zr(i, a);
+              !Zr(n, r) ||
+              !Zr(i, a);
       }
       function Oa(e, t, n) {
         var r = !1,
@@ -142941,7 +142944,9 @@
               null != e &&
               !Ge(e)
             ) ||
-            l.test(e) || !s.test(e) || (null != t && e in Object(t))
+            l.test(e) ||
+            !s.test(e) ||
+            (null != t && e in Object(t))
           );
         }
         function Re(e) {
@@ -153853,14 +153858,12 @@
                       class: "apexcharts-yaxis"
                     })),
                     e.forEach(function(e, o) {
-                      var s = t.graphics
-                        .group()
-                        .attr({
-                          class: "apexcharts-series",
-                          seriesName: m.escapeString(n.globals.seriesNames[o]),
-                          rel: o + 1,
-                          "data:realIndex": o
-                        });
+                      var s = t.graphics.group().attr({
+                        class: "apexcharts-series",
+                        seriesName: m.escapeString(n.globals.seriesNames[o]),
+                        rel: o + 1,
+                        "data:realIndex": o
+                      });
                       (t.dataRadiusOfPercent[o] = []),
                         (t.dataRadius[o] = []),
                         (t.angleArr[o] = []),
