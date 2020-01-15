@@ -21,21 +21,21 @@
         n = t.n(l),
         r = t(24),
         m = t.n(r),
-        c = t(70),
+        c = t(71),
         i = t.n(c),
         s = t(1455),
         o = t(32),
-        d = t(56),
+        d = t(57),
         E = t(121),
         u = t(267),
         p = t.n(u),
         g = t(9),
-        x = t(11),
+        x = t(10),
         h = t(8),
         N = t.n(h),
-        I = t(62),
+        I = t(63),
         f = t.n(I),
-        y = t(63),
+        y = t(64),
         b = t(1470),
         v = t(1449),
         T = t(376),
@@ -289,10 +289,10 @@
             sendButtonIcon: { marginLeft: e.spacing(2) }
           };
         }),
-        te = t(50),
+        te = t(39),
         le = t(1412),
         ne = t(616),
-        re = t(64),
+        re = t(65),
         me = t(378),
         ce = t(2415),
         ie = t(512),
@@ -4652,7 +4652,7 @@
         );
       }
       var Dt = t(1454),
-        Ft = t(71),
+        Ft = t(51),
         Rt =
           (t(995),
           Object(L.a)(function(e) {
@@ -30980,7 +30980,8 @@
               boxShadow: "none",
               overflow: "visible"
             },
-            notificationComponent: { paddingRight: e.spacing(4) }
+            notificationComponent: { paddingRight: e.spacing(4) },
+            searchIcon: { color: "rgba(0, 0, 0, 0.23)" }
           };
         }),
         rv = t(104),
@@ -31001,9 +31002,8 @@
             img: mv.a,
             title: "Trainers",
             subtitle: "Trainers In White",
-            price: 76,
-            rating: 4.6,
-            description_1: "test"
+            price: 80,
+            rating: 4.6
           },
           {
             id: 2,
@@ -31011,8 +31011,7 @@
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 37,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 3,
@@ -31020,8 +31019,7 @@
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 70,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 4,
@@ -31029,8 +31027,7 @@
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 85,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 5,
@@ -31038,8 +31035,7 @@
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 12,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 6,
@@ -31047,8 +31043,7 @@
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 7,
@@ -31056,8 +31051,7 @@
             title: "Boots",
             subtitle: "Trainers In White",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 8,
@@ -31065,8 +31059,7 @@
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 9,
@@ -31074,8 +31067,7 @@
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 10,
@@ -31083,8 +31075,7 @@
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 11,
@@ -31092,8 +31083,7 @@
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 71,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           },
           {
             id: 12,
@@ -31101,84 +31091,53 @@
             title: "Flat sandals",
             subtitle: "Trainers In Blue",
             price: 76,
-            rating: 4.6,
-            description_1: "test"
+            rating: 4.6
           }
-        ];
-      function Nv(e, a) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          a &&
-            (l = l.filter(function(a) {
-              return Object.getOwnPropertyDescriptor(e, a).enumerable;
-            })),
-            t.push.apply(t, l);
-        }
-        return t;
-      }
-      var Iv = n.a.createContext(),
-        fv = function(e, a) {
+        ],
+        Nv = n.a.createContext(),
+        Iv = function(e, a) {
           switch (a.type) {
             case "UPDATE_PRODUCTS":
-            case "EDIT_PRODUCT":
               return { isLoaded: !0, products: a.payload };
+            case "EDIT_PRODUCT":
+              var t = a.payload.id;
+              return {
+                isLoaded: !0,
+                products: hv.map(function(e) {
+                  return e.id === t ? Object(te.a)({}, e, {}, a.payload) : e;
+                })
+              };
+            case "CREATE_PRODUCT":
+              return { isLoaded: !0, products: hv.push(a.payload) };
             default:
-              return (function(e) {
-                for (var a = 1; a < arguments.length; a++) {
-                  var t = null != arguments[a] ? arguments[a] : {};
-                  a % 2
-                    ? Nv(Object(t), !0).forEach(function(a) {
-                        Object(g.a)(e, a, t[a]);
-                      })
-                    : Object.getOwnPropertyDescriptors
-                    ? Object.defineProperties(
-                        e,
-                        Object.getOwnPropertyDescriptors(t)
-                      )
-                    : Nv(Object(t)).forEach(function(a) {
-                        Object.defineProperty(
-                          e,
-                          a,
-                          Object.getOwnPropertyDescriptor(t, a)
-                        );
-                      });
-                }
-                return e;
-              })({}, e);
+              return Object(te.a)({}, e);
           }
         },
-        yv = function(e) {
+        fv = function(e) {
           var a = e.children,
-            t = n.a.useReducer(fv, { isLoaded: !1, products: hv }),
+            t = n.a.useReducer(Iv, { isLoaded: !1, products: hv }),
             l = Object(x.a)(t, 2),
             r = l[0],
             m = l[1];
           return n.a.createElement(
-            Iv.Provider,
+            Nv.Provider,
             { value: { products: r, setProducts: m } },
             a
           );
         },
-        bv = function() {
-          return n.a.useContext(Iv);
+        yv = function() {
+          return n.a.useContext(Nv);
         };
-      function vv(e) {
+      function bv(e) {
         if (la.isBackend)
           return i.a.get("/products").then(function(a) {
             e({ type: "UPDATE_PRODUCTS", payload: a.data });
           });
       }
-      function Tv(e, a) {
-        la.isBackend &&
-          i.a.put("/products/" + e.id, e).then(function(e) {
-            a({ type: "EDIT_PRODUCT", payload: e.data });
-          });
-      }
-      function Av(e, a, t) {
+      function vv(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var wv = [
+      var Tv = [
         { id: "id", numeric: !0, disablePadding: !0, label: "ID" },
         { id: "image", numeric: !0, disablePadding: !1, label: "Image" },
         { id: "title", numeric: !0, disablePadding: !1, label: "Title" },
@@ -31187,7 +31146,7 @@
         { id: "rating", numeric: !0, disablePadding: !1, label: "Rating" },
         { id: "actions", numeric: !0, disablePadding: !1, label: "Actions" }
       ];
-      function Cv(e) {
+      function Av(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -31211,7 +31170,7 @@
                 inputProps: { "aria-label": "select all rows" }
               })
             ),
-            wv.map(function(e) {
+            Tv.map(function(e) {
               return n.a.createElement(
                 mt.a,
                 {
@@ -31246,7 +31205,7 @@
           )
         );
       }
-      var kv = Object(dy.a)(function(e) {
+      var wv = Object(dy.a)(function(e) {
           return {
             root: { paddingLeft: e.spacing(2), paddingRight: e.spacing(1) },
             highlight:
@@ -31265,8 +31224,8 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        Pv = function(e) {
-          var a = kv(),
+        Cv = function(e) {
+          var a = wv(),
             t = e.numSelected;
           return n.a.createElement(
             H.a,
@@ -31311,15 +31270,15 @@
                 )
           );
         };
-      function Sv(e) {
+      function kv(e) {
         var a = e.closeToast,
           t = e.className;
         return n.a.createElement(Dt.a, { className: t, onClick: a });
       }
-      var Ov = Object(E.k)(function(e) {
+      var Pv = Object(E.k)(function(e) {
           var a = e.history,
             t = nv(),
-            r = bv(),
+            r = yv(),
             m = n.a.useState("asc"),
             c = Object(x.a)(m, 2),
             s = c[0],
@@ -31340,7 +31299,10 @@
             k = Object(x.a)(C, 2),
             P = k[0],
             S = k[1],
-            O = r.products.products;
+            O = n.a.useState(r.products.products),
+            B = Object(x.a)(O, 2),
+            M = B[0],
+            j = B[1];
           Object(l.useEffect)(function() {
             !(function() {
               var e = {
@@ -31368,9 +31330,15 @@
                 e
               );
             })(),
-              vv(r.setProducts);
-          }, []);
-          var B = function(e, a, t) {
+              bv(r.setProducts);
+          }, []),
+            Object(l.useEffect)(
+              function() {
+                j(r.products.products);
+              },
+              [r]
+            );
+          var L = function(e, a, t) {
               !(function(e) {
                 var a = e.id,
                   t = e.history,
@@ -31380,11 +31348,11 @@
                     "/app/ecommerce/management" !== t.location.pathname &&
                       t.push("/app/ecommerce/management");
                   }),
-                  vv(l));
+                  bv(l));
               })({ id: e, history: a, dispatch: r.setProducts }),
                 t.stopPropagation();
             },
-            M = P - Math.min(P, O.length - A * P);
+            D = P - Math.min(P, M.length - A * P);
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -31393,7 +31361,7 @@
               { container: !0, spacing: 3 },
               n.a.createElement(Ft.a, {
                 className: t.toastsContainer,
-                closeButton: n.a.createElement(Sv, {
+                closeButton: n.a.createElement(kv, {
                   className: t.notificationCloseButton
                 }),
                 closeOnClick: !1,
@@ -31405,10 +31373,72 @@
                 n.a.createElement(
                   Ga,
                   {
-                    title: "List of Products",
-                    subtitle: "321 total",
                     disableWidgetMenu: !0,
-                    searchField: !0
+                    header: n.a.createElement(
+                      T.a,
+                      {
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        width: "100%"
+                      },
+                      n.a.createElement(
+                        T.a,
+                        {
+                          display: "flex",
+                          style: { width: "calc(100% - 20px)" }
+                        },
+                        n.a.createElement(
+                          Ne,
+                          {
+                            variant: "h6",
+                            color: "text",
+                            colorBrightness: "secondary",
+                            noWrap: !0
+                          },
+                          "Products"
+                        ),
+                        n.a.createElement(
+                          T.a,
+                          { alignSelf: "flex-end", ml: 1 },
+                          n.a.createElement(
+                            Ne,
+                            {
+                              color: "text",
+                              colorBrightness: "hint",
+                              variant: "caption"
+                            },
+                            M.length,
+                            " total"
+                          )
+                        )
+                      ),
+                      n.a.createElement(Aa.a, {
+                        id: "search-field",
+                        className: t.textField,
+                        label: "Search",
+                        margin: "dense",
+                        variant: "outlined",
+                        InputProps: {
+                          startAdornment: n.a.createElement(
+                            Wa.a,
+                            { position: "start" },
+                            n.a.createElement(Q.a, { className: t.searchIcon })
+                          )
+                        },
+                        onChange: function(e) {
+                          return (function(e) {
+                            var a = M.filter(function(a) {
+                              return (
+                                !e.currentTarget.value ||
+                                a.title.includes(e.currentTarget.value)
+                              );
+                            });
+                            j(a);
+                          })(e);
+                        }
+                      })
+                    )
                   },
                   n.a.createElement(
                     Ie,
@@ -31420,7 +31450,7 @@
                     },
                     "Create Product"
                   ),
-                  n.a.createElement(Pv, { numSelected: I.length }),
+                  n.a.createElement(Cv, { numSelected: I.length }),
                   la.isBackend && !r.products.isLoaded
                     ? n.a.createElement(
                         T.a,
@@ -31441,14 +31471,14 @@
                             "aria-labelledby": "tableTitle",
                             "aria-label": "enhanced table"
                           },
-                          n.a.createElement(Cv, {
+                          n.a.createElement(Av, {
                             classes: t,
                             numSelected: I.length,
                             order: s,
                             orderBy: p,
                             onSelectAllClick: function(e) {
                               if (e.target.checked) {
-                                var a = O.map(function(e) {
+                                var a = M.map(function(e) {
                                   return e.id;
                                 });
                                 f(a);
@@ -31457,10 +31487,10 @@
                             onRequestSort: function(e, a) {
                               o(p === a && "desc" === s ? "asc" : "desc"), g(a);
                             },
-                            rowCount: O.length
+                            rowCount: M.length
                           }),
                           n.a.createElement(
-                            yv,
+                            fv,
                             null,
                             n.a.createElement(
                               Et.a,
@@ -31479,14 +31509,14 @@
                                   })
                                 );
                               })(
-                                O,
+                                M,
                                 (function(e, a) {
                                   return "desc" === e
                                     ? function(e, t) {
-                                        return Av(e, t, a);
+                                        return vv(e, t, a);
                                       }
                                     : function(e, t) {
-                                        return -Av(e, t, a);
+                                        return -vv(e, t, a);
                                       };
                                 })(s, p)
                               )
@@ -31570,9 +31600,15 @@
                                           },
                                           color: "primary"
                                         },
-                                        e.title.split("").map(function(e, a) {
-                                          return 0 === a ? e.toUpperCase() : e;
-                                        })
+                                        e.title
+                                          ? e.title
+                                              .split("")
+                                              .map(function(e, a) {
+                                                return 0 === a
+                                                  ? e.toUpperCase()
+                                                  : e;
+                                              })
+                                          : null
                                       )
                                     ),
                                     n.a.createElement(mt.a, null, e.subtitle),
@@ -31641,7 +31677,7 @@
                                             size: "small",
                                             variant: "contained",
                                             onClick: function(t) {
-                                              return B(e.id, a, t);
+                                              return L(e.id, a, t);
                                             }
                                           },
                                           "Delete"
@@ -31650,10 +31686,10 @@
                                     )
                                   );
                                 }),
-                              M > 0 &&
+                              D > 0 &&
                                 n.a.createElement(
                                   rt.a,
-                                  { style: { height: 53 * M } },
+                                  { style: { height: 53 * D } },
                                   n.a.createElement(mt.a, { colSpan: 6 })
                                 )
                             )
@@ -31663,7 +31699,7 @@
                   n.a.createElement(ut.a, {
                     rowsPerPageOptions: [5, 10, 25],
                     component: "div",
-                    count: O.length,
+                    count: M.length,
                     rowsPerPage: P,
                     page: A,
                     backIconButtonProps: { "aria-label": "previous page" },
@@ -31680,10 +31716,10 @@
             )
           );
         }),
-        Bv = t(380),
-        Mv = t(381),
-        jv = t(44),
-        Lv = Object(L.a)(function(e) {
+        Sv = t(380),
+        Ov = t(381),
+        Bv = t(45),
+        Mv = Object(L.a)(function(e) {
           return {
             pageTitleContainer: {
               display: "flex",
@@ -31699,8 +31735,8 @@
             }
           };
         });
-      function Dv(e) {
-        var a = Lv();
+      function jv(e) {
+        var a = Mv();
         return n.a.createElement(
           "div",
           { className: a.pageTitleContainer },
@@ -31722,15 +31758,15 @@
             )
         );
       }
-      var Fv = t(649),
+      var Lv = t(649),
+        Dv = t.n(Lv),
+        Fv = t(650),
         Rv = t.n(Fv),
-        Wv = t(650),
+        Wv = t(651),
         Hv = t.n(Wv),
-        zv = t(651),
+        zv = t(652),
         Gv = t.n(zv),
-        Uv = t(652),
-        Vv = t.n(Uv),
-        Yv = [
+        Uv = [
           {
             id: 1,
             img: mv.a,
@@ -31864,7 +31900,7 @@
             process: "0%"
           }
         ],
-        Kv = function(e) {
+        Vv = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useState(0),
             l = Object(x.a)(t, 2),
@@ -31902,13 +31938,13 @@
                       { item: !0, md: 6, xs: 12 },
                       e.match.params.id
                         ? n.a.createElement("img", {
-                            src: Yv[e.match.params.id - 1].img,
-                            alt: Yv[e.match.params.id - 1].title,
+                            src: Uv[e.match.params.id - 1].img,
+                            alt: Uv[e.match.params.id - 1].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                         : n.a.createElement("img", {
-                            src: Yv[0].img,
-                            alt: Yv[0].title,
+                            src: Uv[0].img,
+                            alt: Uv[0].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                     ),
@@ -31934,14 +31970,14 @@
                                 n.a.createElement(
                                   Ne,
                                   {
-                                    style: { color: jv.yellow[700] },
+                                    style: { color: Bv.yellow[700] },
                                     display: "inline"
                                   },
-                                  Yv[e.match.params.id - 1].rating
+                                  Uv[e.match.params.id - 1].rating
                                 ),
                                 n.a.createElement(yh.a, {
                                   style: {
-                                    color: jv.yellow[700],
+                                    color: Bv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -31951,13 +31987,13 @@
                                 {
                                   style: {
                                     fontSize: "1.5rem",
-                                    color: jv.yellow[700]
+                                    color: Bv.yellow[700]
                                   }
                                 },
-                                Yv[0].rating,
+                                Uv[0].rating,
                                 n.a.createElement(yh.a, {
                                   style: {
-                                    color: jv.yellow[700],
+                                    color: Bv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -31974,12 +32010,12 @@
                                 n.a.createElement(
                                   Ne,
                                   { variant: "h3", uppercase: !0 },
-                                  Yv[e.match.params.id - 1].title
+                                  Uv[e.match.params.id - 1].title
                                 ),
                                 n.a.createElement(
                                   Ne,
                                   null,
-                                  Yv[e.match.params.id].subtitle
+                                  Uv[e.match.params.id].subtitle
                                 )
                               )
                             : n.a.createElement(
@@ -31988,9 +32024,9 @@
                                 n.a.createElement(
                                   Ne,
                                   { variant: "h3", uppercase: !0 },
-                                  Yv[0].title
+                                  Uv[0].title
                                 ),
-                                n.a.createElement(Ne, null, Yv[0].subtitle)
+                                n.a.createElement(Ne, null, Uv[0].subtitle)
                               ),
                           " "
                         ),
@@ -32005,7 +32041,7 @@
                                   Ne,
                                   { weight: "medium" },
                                   "$",
-                                  Yv[e.match.params.id].price
+                                  Uv[e.match.params.id].price
                                 )
                               )
                             : n.a.createElement(
@@ -32015,7 +32051,7 @@
                                   Ne,
                                   { weight: "medium", variant: "h5" },
                                   "$",
-                                  Yv[0].price
+                                  Uv[0].price
                                 )
                               ),
                           " "
@@ -32029,14 +32065,14 @@
                           T.a,
                           { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            Bv.a,
+                            Sv.a,
                             {
                               variant: "outlined",
                               className: c.form,
                               style: { marginRight: 15 }
                             },
                             n.a.createElement(
-                              Mv.a,
+                              Ov.a,
                               { htmlFor: "size-simple", ref: a },
                               "Select size"
                             ),
@@ -32059,7 +32095,7 @@
                             )
                           ),
                           n.a.createElement(
-                            Bv.a,
+                            Sv.a,
                             { className: c.form },
                             n.a.createElement(
                               st.a,
@@ -32105,22 +32141,22 @@
                           T.a,
                           null,
                           n.a.createElement("img", {
-                            src: Rv.a,
+                            src: Dv.a,
                             alt: "mastercard",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Hv.a,
+                            src: Rv.a,
                             alt: "paypal",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Gv.a,
+                            src: Hv.a,
                             alt: "visa",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Vv.a,
+                            src: Gv.a,
                             alt: "americanexpress",
                             style: { width: 40 }
                           })
@@ -32295,14 +32331,14 @@
                                   n.a.createElement(
                                     Ne,
                                     {
-                                      style: { color: jv.yellow[700] },
+                                      style: { color: Bv.yellow[700] },
                                       display: "inline"
                                     },
-                                    Yv[e.match.params.id - 1].rating
+                                    Uv[e.match.params.id - 1].rating
                                   ),
                                   n.a.createElement(yh.a, {
                                     style: {
-                                      color: jv.yellow[700],
+                                      color: Bv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32312,13 +32348,13 @@
                                   {
                                     style: {
                                       fontSize: "1.5rem",
-                                      color: jv.yellow[700]
+                                      color: Bv.yellow[700]
                                     }
                                   },
-                                  Yv[0].rating,
+                                  Uv[0].rating,
                                   n.a.createElement(yh.a, {
                                     style: {
-                                      color: jv.yellow[700],
+                                      color: Bv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32337,7 +32373,7 @@
                 )
               )
             ),
-            n.a.createElement(Dv, { title: "You may also like" }),
+            n.a.createElement(jv, { title: "You may also like" }),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12 },
@@ -32356,7 +32392,7 @@
                       n.a.createElement(kb.a, {
                         className: c.media,
                         image: mv.a,
-                        title: Yv[0].title
+                        title: Uv[0].title
                       }),
                       n.a.createElement(
                         Ab.a,
@@ -32364,12 +32400,12 @@
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Yv[0].title
+                          Uv[0].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Yv[0].subtitle
+                          Uv[0].subtitle
                         )
                       )
                     ),
@@ -32385,14 +32421,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Yv[0].price
+                        Uv[0].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: jv.yellow[700] } },
-                        Yv[0].rating,
+                        { style: { color: Bv.yellow[700] } },
+                        Uv[0].rating,
                         n.a.createElement(yh.a, {
-                          style: { color: jv.yellow[700], marginTop: -5 }
+                          style: { color: Bv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32410,7 +32446,7 @@
                       n.a.createElement(kb.a, {
                         className: c.media,
                         image: iv.a,
-                        title: Yv[1].img
+                        title: Uv[1].img
                       }),
                       n.a.createElement(
                         Ab.a,
@@ -32418,12 +32454,12 @@
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Yv[1].title
+                          Uv[1].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Yv[1].subtitle
+                          Uv[1].subtitle
                         )
                       )
                     ),
@@ -32439,14 +32475,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Yv[1].price
+                        Uv[1].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: jv.yellow[700] } },
-                        Yv[1].rating,
+                        { style: { color: Bv.yellow[700] } },
+                        Uv[1].rating,
                         n.a.createElement(yh.a, {
-                          style: { color: jv.yellow[700], marginTop: -5 }
+                          style: { color: Bv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32464,7 +32500,7 @@
                       n.a.createElement(kb.a, {
                         className: c.media,
                         image: ov.a,
-                        title: Yv[2].img
+                        title: Uv[2].img
                       }),
                       n.a.createElement(
                         Ab.a,
@@ -32472,12 +32508,12 @@
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Yv[2].title
+                          Uv[2].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Yv[2].subtitle
+                          Uv[2].subtitle
                         )
                       )
                     ),
@@ -32493,14 +32529,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Yv[2].price
+                        Uv[2].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: jv.yellow[700] } },
-                        Yv[2].rating,
+                        { style: { color: Bv.yellow[700] } },
+                        Uv[2].rating,
                         n.a.createElement(yh.a, {
-                          style: { color: jv.yellow[700], marginTop: -5 }
+                          style: { color: Bv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32518,7 +32554,7 @@
                       n.a.createElement(kb.a, {
                         className: c.media,
                         image: Ev.a,
-                        title: Yv[3].img
+                        title: Uv[3].img
                       }),
                       n.a.createElement(
                         Ab.a,
@@ -32526,12 +32562,12 @@
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Yv[3].title
+                          Uv[3].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Yv[3].subtitle
+                          Uv[3].subtitle
                         )
                       )
                     ),
@@ -32547,14 +32583,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Yv[3].price
+                        Uv[3].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: jv.yellow[700] } },
-                        Yv[3].rating,
+                        { style: { color: Bv.yellow[700] } },
+                        Uv[3].rating,
                         n.a.createElement(yh.a, {
-                          style: { color: jv.yellow[700], marginTop: -5 }
+                          style: { color: Bv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32564,7 +32600,7 @@
             )
           );
         };
-      function Qv(e, a) {
+      function Yv(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -32576,16 +32612,16 @@
         }
         return t;
       }
-      function Jv(e) {
+      function Kv(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? Qv(Object(t), !0).forEach(function(a) {
+            ? Yv(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : Qv(Object(t)).forEach(function(a) {
+            : Yv(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -32595,7 +32631,7 @@
         }
         return e;
       }
-      var qv = function(e) {
+      var Qv = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useRef(null),
             l = n.a.useRef(null),
@@ -32606,19 +32642,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "TYPE":
-                    return Jv({}, e, { type: a.typeWidth });
+                    return Kv({}, e, { type: a.typeWidth });
                   case "BRANDS":
-                    return Jv({}, e, { brands: a.brandsWidth });
+                    return Kv({}, e, { brands: a.brandsWidth });
                   case "SIZE":
-                    return Jv({}, e, { size: a.sizeWidth });
+                    return Kv({}, e, { size: a.sizeWidth });
                   case "COLOUR":
-                    return Jv({}, e, { colour: a.colourWidth });
+                    return Kv({}, e, { colour: a.colourWidth });
                   case "RANGE":
-                    return Jv({}, e, { range: a.rangeWidth });
+                    return Kv({}, e, { range: a.rangeWidth });
                   case "SORT":
-                    return Jv({}, e, { sort: a.sortWidth });
+                    return Kv({}, e, { sort: a.sortWidth });
                   default:
-                    return Jv({}, e);
+                    return Kv({}, e);
                 }
               },
               { type: 0, brands: 0, size: 0, colour: 0, range: 0, sort: 0 }
@@ -32639,19 +32675,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "SELECT_TYPE":
-                    return Jv({}, e, { valueType: a.valueType });
+                    return Kv({}, e, { valueType: a.valueType });
                   case "SELECT_BRANDS":
-                    return Jv({}, e, { valueBrands: a.valueBrands });
+                    return Kv({}, e, { valueBrands: a.valueBrands });
                   case "SELECT_SIZE":
-                    return Jv({}, e, { valueSize: a.valueSize });
+                    return Kv({}, e, { valueSize: a.valueSize });
                   case "SELECT_COLOUR":
-                    return Jv({}, e, { valueColor: a.valueColor });
+                    return Kv({}, e, { valueColor: a.valueColor });
                   case "SELECT_RANGE":
-                    return Jv({}, e, { valueRange: a.valueRange });
+                    return Kv({}, e, { valueRange: a.valueRange });
                   case "SELECT_SORT":
-                    return Jv({}, e, { valueSort: a.valueSort });
+                    return Kv({}, e, { valueSort: a.valueSort });
                   default:
-                    return Jv({}, e);
+                    return Kv({}, e);
                 }
               },
               {
@@ -32679,14 +32715,14 @@
                   T.a,
                   { display: "flex" },
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "type_select", ref: a },
                       "Type"
                     ),
@@ -32709,14 +32745,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "brands_select", ref: t },
                       "Brands"
                     ),
@@ -32739,14 +32775,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "size_select", ref: l },
                       "Size"
                     ),
@@ -32774,14 +32810,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "colour_select", ref: r },
                       "Colour"
                     ),
@@ -32804,14 +32840,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "range_select", ref: m },
                       "Range"
                     ),
@@ -32834,14 +32870,14 @@
                     )
                   ),
                   n.a.createElement(
-                    Bv.a,
+                    Sv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Mv.a,
+                      Ov.a,
                       { htmlFor: "sort_select", ref: c },
                       "Sort"
                     ),
@@ -32947,11 +32983,11 @@
                                 { block: !0 },
                                 n.a.createElement(
                                   "div",
-                                  { style: { color: jv.yellow[700] } },
+                                  { style: { color: Bv.yellow[700] } },
                                   hv[0].rating,
                                   n.a.createElement(yh.a, {
                                     style: {
-                                      color: jv.yellow[700],
+                                      color: Bv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32968,17 +33004,17 @@
             )
           );
         },
-        Zv = t(98),
-        _v = Object(L.a)(function(e) {
+        Jv = t(98),
+        qv = Object(L.a)(function(e) {
           return {
             mapContainer: { height: "100%" },
             vectorContainer: { margin: -e.spacing(3) }
           };
         }),
-        Xv = Object(Zv.withScriptjs)(
-          Object(Zv.withGoogleMap)(function() {
+        Zv = Object(Jv.withScriptjs)(
+          Object(Jv.withGoogleMap)(function() {
             return n.a.createElement(
-              Zv.GoogleMap,
+              Jv.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -32986,18 +33022,18 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(Zv.Marker, {
+              n.a.createElement(Jv.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function $v() {
-        var e = _v();
+      function _v() {
+        var e = qv();
         return n.a.createElement(
           "div",
           { className: e.mapContainer },
-          n.a.createElement(Xv, {
+          n.a.createElement(Zv, {
             googleMapURL:
               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
             loadingElement: n.a.createElement("div", {
@@ -33010,22 +33046,22 @@
           })
         );
       }
-      var eT = t(141),
-        aT = t(655),
-        tT = [
+      var Xv = t(141),
+        $v = t(655),
+        eT = [
           {
             markerOffset: -25,
             name: "Buenos Aires",
             coordinates: [-58.3816, -34.6037]
           }
         ];
-      var lT = function() {
-          var e = _v();
+      var aT = function() {
+          var e = qv();
           return n.a.createElement(
             "div",
             { className: e.vectorContainer },
             n.a.createElement(
-              eT.ComposableMap,
+              Xv.ComposableMap,
               {
                 projectionConfig: { scale: 205, rotation: [-11, 0, 0] },
                 width: 980,
@@ -33033,16 +33069,16 @@
                 style: { width: "100%", height: "auto", overflow: "auto" }
               },
               n.a.createElement(
-                eT.ZoomableGroup,
+                Xv.ZoomableGroup,
                 { center: [0, 20], disablePanning: !0 },
-                n.a.createElement(eT.Geographies, { geography: aT }, function(
+                n.a.createElement(Xv.Geographies, { geography: $v }, function(
                   e,
                   a
                 ) {
                   return e.map(function(e, t) {
                     return (
                       "ATA" !== e.id &&
-                      n.a.createElement(eT.Geography, {
+                      n.a.createElement(Xv.Geography, {
                         key: t,
                         geography: e,
                         projection: a,
@@ -33071,11 +33107,11 @@
                   });
                 }),
                 n.a.createElement(
-                  eT.Markers,
+                  Xv.Markers,
                   null,
-                  tT.map(function(e, a) {
+                  eT.map(function(e, a) {
                     return n.a.createElement(
-                      eT.Marker,
+                      Xv.Marker,
                       {
                         key: a,
                         marker: e,
@@ -33114,7 +33150,7 @@
             )
           );
         },
-        nT = Object(L.a)(function(e) {
+        tT = Object(L.a)(function(e) {
           return {
             icon: { fontSize: e.spacing(2) },
             divider: { margin: "0px -".concat(e.spacing(3), "px") },
@@ -33124,17 +33160,17 @@
             }
           };
         }),
-        rT = t(212),
+        lT = t(212),
+        nT = t.n(lT),
+        rT = t(391),
         mT = t.n(rT),
-        cT = t(391),
+        cT = t(392),
         iT = t.n(cT),
-        sT = t(392),
+        sT = t(656),
         oT = t.n(sT),
-        dT = t(656),
+        dT = t(657),
         ET = t.n(dT),
-        uT = t(657),
-        pT = t.n(uT),
-        gT = Object(L.a)(function(e) {
+        uT = Object(L.a)(function(e) {
           return {
             border: {
               position: "relative",
@@ -33150,7 +33186,7 @@
             circle: { border: "rgba(255,255,255,.2) 5px solid" }
           };
         }),
-        xT = function(e) {
+        pT = function(e) {
           return n.a.createElement(
             T.a,
             { width: "45%", align: e.right && "right" },
@@ -33162,10 +33198,10 @@
             )
           );
         },
-        hT = function(e) {
+        gT = function(e) {
           var a = e.children,
             t = Object(o.a)(e, ["children"]),
-            l = gT();
+            l = uT();
           return n.a.createElement(
             T.a,
             { className: l.border, display: "flex" },
@@ -33176,7 +33212,7 @@
             )
           );
         },
-        NT = function(e) {
+        xT = function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -33191,10 +33227,10 @@
             )
           );
         },
-        IT = Object(Zv.withScriptjs)(
-          Object(Zv.withGoogleMap)(function() {
+        hT = Object(Jv.withScriptjs)(
+          Object(Jv.withGoogleMap)(function() {
             return n.a.createElement(
-              Zv.GoogleMap,
+              Jv.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -33202,14 +33238,14 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(Zv.Marker, {
+              n.a.createElement(Jv.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function fT() {
-        var e = nT(),
+      function NT() {
+        var e = tT(),
           a = n.a.useState(!1),
           t = Object(x.a)(a, 2),
           l = t[0],
@@ -33232,7 +33268,7 @@
                   className: e.wrapper
                 },
                 n.a.createElement(
-                  NT,
+                  xT,
                   null,
                   n.a.createElement(
                     T.a,
@@ -33247,7 +33283,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: mT.a,
+                            src: nT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33273,7 +33309,7 @@
                         n.a.createElement(
                           T.a,
                           { height: 200, width: "100%", mx: "-24px", mt: 2 },
-                          n.a.createElement(IT, {
+                          n.a.createElement(hT, {
                             googleMapURL:
                               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
                             loadingElement: n.a.createElement("div", {
@@ -33309,7 +33345,7 @@
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: mT.a,
+                            src: nT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33351,7 +33387,7 @@
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: iT.a,
+                            src: mT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33406,25 +33442,25 @@
                     )
                   ),
                   n.a.createElement(
-                    hT,
+                    gT,
                     { color: "primary" },
                     n.a.createElement(nu.a, { className: e.icon })
                   ),
-                  n.a.createElement(xT, {
+                  n.a.createElement(pT, {
                     day: "yesterday",
                     timestep: "8:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  NT,
+                  xT,
                   null,
-                  n.a.createElement(xT, {
+                  n.a.createElement(pT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
                   n.a.createElement(
-                    hT,
+                    gT,
                     { color: "secondary" },
                     n.a.createElement($r.a, { className: e.icon })
                   ),
@@ -33441,7 +33477,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: oT.a,
+                            src: iT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33489,7 +33525,7 @@
                   )
                 ),
                 n.a.createElement(
-                  NT,
+                  xT,
                   null,
                   n.a.createElement(
                     T.a,
@@ -33504,7 +33540,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: mT.a,
+                            src: nT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33564,13 +33600,13 @@
                           n.a.createElement(
                             T.a,
                             { ml: "auto", display: "flex" },
-                            n.a.createElement(fe, { src: mT.a }),
+                            n.a.createElement(fe, { src: nT.a }),
                             n.a.createElement(fe, {
-                              src: iT.a,
+                              src: mT.a,
                               style: { marginLeft: 8 }
                             }),
                             n.a.createElement(fe, {
-                              src: oT.a,
+                              src: iT.a,
                               style: { marginLeft: 8 }
                             })
                           )
@@ -33580,7 +33616,7 @@
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: pT.a,
+                            src: ET.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33635,24 +33671,24 @@
                     )
                   ),
                   n.a.createElement(
-                    hT,
+                    gT,
                     { color: "warning" },
                     n.a.createElement(Vs.a, { className: e.icon })
                   ),
-                  n.a.createElement(xT, {
+                  n.a.createElement(pT, {
                     day: "yesterday",
                     timestep: "9:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  NT,
+                  xT,
                   null,
-                  n.a.createElement(xT, {
+                  n.a.createElement(pT, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
-                  n.a.createElement(hT, { color: "success" }, "J"),
+                  n.a.createElement(gT, { color: "success" }, "J"),
                   n.a.createElement(
                     T.a,
                     { width: "45%" },
@@ -33666,7 +33702,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: ET.a,
+                            src: oT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33765,8 +33801,8 @@
           )
         );
       }
-      var yT = t(1456),
-        bT = Object(L.a)(function(e) {
+      var IT = t(1456),
+        fT = Object(L.a)(function(e) {
           return {
             filter: { width: 130 },
             adjustRightBorderRadius: {
@@ -33779,10 +33815,10 @@
             }
           };
         }),
-        vT = t(658),
-        TT = t(659),
-        AT = t.n(TT),
-        wT = Object(L.a)(function(e) {
+        yT = t(658),
+        bT = t(659),
+        vT = t.n(bT),
+        TT = Object(L.a)(function(e) {
           return {
             wrapper: { textAlign: "center", margin: e.spacing(3) },
             container: {
@@ -33803,14 +33839,14 @@
             next: { "& a": { color: e.palette.primary.main } }
           };
         }),
-        CT = function(e) {
-          var a = Object(vT.a)({}, e),
-            t = wT();
+        AT = function(e) {
+          var a = Object(yT.a)({}, e),
+            t = TT();
           return n.a.createElement(
             "div",
             { className: t.wrapper },
             n.a.createElement(
-              AT.a,
+              vT.a,
               Object.assign(
                 {
                   pageClassName: t.element,
@@ -33826,7 +33862,7 @@
             )
           );
         };
-      function kT() {
+      function wT() {
         var e = n.a.useState({ row: !0, grid: !1 }),
           a = Object(x.a)(e, 2),
           t = a[0],
@@ -33844,7 +33880,7 @@
               return { row: !e.row, grid: !e.grid };
             });
           },
-          p = bT();
+          p = fT();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -33858,7 +33894,7 @@
                 T.a,
                 { display: "flex", alignItems: "center" },
                 n.a.createElement(
-                  Bv.a,
+                  Sv.a,
                   {
                     variant: "outlined",
                     className: p.filter,
@@ -33883,7 +33919,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Bv.a,
+                  Sv.a,
                   { variant: "outlined", className: p.filter },
                   n.a.createElement(
                     st.a,
@@ -33908,7 +33944,7 @@
                   T.a,
                   { style: { display: "inline-flex", marginLeft: "auto" } },
                   n.a.createElement(
-                    yT.a,
+                    IT.a,
                     {
                       color: "primary",
                       size: "large",
@@ -34390,7 +34426,7 @@
                       )
                     )
                   ),
-                  n.a.createElement(CT, {
+                  n.a.createElement(AT, {
                     pageCount: 10,
                     previousLabel: "<",
                     nextLabel: ">",
@@ -34402,52 +34438,52 @@
           )
         );
       }
-      var PT = t(660),
+      var CT = t(660),
+        kT = t.n(CT),
+        PT = t(661),
         ST = t.n(PT),
-        OT = t(661),
+        OT = t(662),
         BT = t.n(OT),
-        MT = t(662),
+        MT = t(663),
         jT = t.n(MT),
-        LT = t(663),
+        LT = t(664),
         DT = t.n(LT),
-        FT = t(664),
+        FT = t(665),
         RT = t.n(FT),
-        WT = t(665),
+        WT = t(666),
         HT = t.n(WT),
-        zT = t(666),
+        zT = t(667),
         GT = t.n(zT),
-        UT = t(667),
+        UT = t(668),
         VT = t.n(UT),
-        YT = t(668),
+        YT = t(669),
         KT = t.n(YT),
-        QT = t(669),
+        QT = t(670),
         JT = t.n(QT),
-        qT = t(670),
+        qT = t(671),
         ZT = t.n(qT),
-        _T = t(671),
-        XT = t.n(_T),
-        $T = [
-          { img: ST.a, id: 1 },
-          { img: BT.a, id: 2 },
-          { img: jT.a, id: 3 },
-          { img: DT.a, id: 4 },
-          { img: RT.a, id: 5 },
-          { img: HT.a, id: 6 },
-          { img: GT.a, id: 7 },
-          { img: VT.a, id: 8 },
-          { img: KT.a, id: 9 },
-          { img: JT.a, id: 10 },
-          { img: ZT.a, id: 11 },
-          { img: XT.a, id: 12 }
+        _T = [
+          { img: kT.a, id: 1 },
+          { img: ST.a, id: 2 },
+          { img: BT.a, id: 3 },
+          { img: jT.a, id: 4 },
+          { img: DT.a, id: 5 },
+          { img: RT.a, id: 6 },
+          { img: HT.a, id: 7 },
+          { img: GT.a, id: 8 },
+          { img: VT.a, id: 9 },
+          { img: KT.a, id: 10 },
+          { img: JT.a, id: 11 },
+          { img: ZT.a, id: 12 }
         ],
-        eA = function() {
+        XT = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
             n.a.createElement(
               v.a,
               { container: !0, spacing: 6 },
-              $T.map(function(e, a) {
+              _T.map(function(e, a) {
                 return n.a.createElement(
                   v.a,
                   { item: !0, md: 3, xs: 12, key: e.id },
@@ -34483,7 +34519,7 @@
             )
           );
         },
-        aA = Object(L.a)(function(e) {
+        $T = Object(L.a)(function(e) {
           return {
             table: {
               "& .MuiTableRow-root:nth-child(odd)": {
@@ -34502,9 +34538,9 @@
             iconButton: { marginRight: e.spacing(1) }
           };
         }),
-        tA = t(672),
-        lA = t.n(tA),
-        nA = [
+        eA = t(672),
+        aA = t.n(eA),
+        tA = [
           {
             id: 1,
             item: "Brand-new 27 monitor",
@@ -34539,11 +34575,11 @@
             total: 2
           }
         ],
-        rA = function() {
+        lA = function() {
           window.print();
         },
-        mA = function() {
-          var e = aA();
+        nA = function() {
+          var e = $T();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34560,7 +34596,7 @@
                     T.a,
                     { display: "flex", justifyContent: "space-between", mb: 3 },
                     n.a.createElement("img", {
-                      src: lA.a,
+                      src: aA.a,
                       alt: "Flatlogic",
                       style: {
                         maxHeight: 100,
@@ -34745,7 +34781,7 @@
                         n.a.createElement(
                           Et.a,
                           null,
-                          nA.map(function(e) {
+                          tA.map(function(e) {
                             return n.a.createElement(
                               rt.a,
                               { key: e.id },
@@ -34834,7 +34870,7 @@
                           variant: "contained",
                           style: { marginRight: 8 },
                           "aria-label": "Print",
-                          onClick: rA
+                          onClick: lA
                         },
                         n.a.createElement(Yp.a, { className: e.iconButton }),
                         "Print"
@@ -34855,52 +34891,140 @@
               )
             )
           );
-        },
-        cA = function() {
-          var e = Object(E.i)().id,
-            a = bv(),
-            t = n.a.useState(a.products.products[e - 1]),
-            r = Object(x.a)(t, 2),
-            m = r[0],
-            c = r[1];
+        };
+      function rA(e) {
+        var a = e.closeToast,
+          t = e.className;
+        return n.a.createElement(Dt.a, { className: t, onClick: a });
+      }
+      var mA = function() {
+          var e = nv(),
+            a = Object(E.i)().id,
+            t = yv(),
+            r = n.a.useState(t.products.products[a - 1]),
+            m = Object(x.a)(r, 2),
+            c = m[0],
+            s = m[1],
+            o = n.a.useState({
+              img:
+                "https://flatlogic-node-backend.herokuapp.com/assets/products/img1.jpg",
+              title: null,
+              subtitle: null,
+              price: 0.1,
+              rating: 5,
+              description_1: null,
+              description_2: null,
+              code: null,
+              hashtag: null,
+              technology: [],
+              discount: 0
+            }),
+            d = Object(x.a)(o, 2),
+            u = d[0],
+            p = d[1];
           Object(l.useEffect)(function() {
-            vv(a.setProducts);
+            bv(t.setProducts);
           }, []),
             Object(l.useEffect)(
               function() {
-                c(a.products.products[e - 1]);
+                s(
+                  t.products.products[
+                    t.products.products.findIndex(function(e) {
+                      return e.id == a;
+                    })
+                  ]
+                );
               },
-              [a]
+              [t]
             );
-          var i = Object(E.g)();
-          console.log(m), console.log(a.products, "--");
-          var s = function(e) {
-              c(
+          var h = Object(E.g)(),
+            N = function(e) {
+              s(
                 Object(te.a)(
                   {},
-                  m,
+                  c,
                   Object(g.a)({}, e.target.id, e.currentTarget.value)
                 )
               );
             },
-            o = m.technology ? m.technology.join(", ") : null,
-            d = "#/app/ecommerce/management/create" === window.location.hash;
+            I = function(e) {
+              p(
+                Object(te.a)(
+                  {},
+                  u,
+                  Object(g.a)({}, e.target.id, e.currentTarget.value)
+                )
+              );
+            };
+          console.log(c), console.log(t.products.products), console.log(u);
+          var f = function() {
+              var a, l;
+              (a = c),
+                (l = t.setProducts),
+                la.isBackend &&
+                  i.a.put("/products/" + a.id, a).then(function(e) {
+                    l({ type: "EDIT_PRODUCT", payload: e.data });
+                  }),
+                (function() {
+                  var a = {
+                    type: "info",
+                    position: Ft.b.POSITION.TOP_RIGHT,
+                    progressClassName: e.progress,
+                    className: e.notification,
+                    timeOut: 1e3
+                  };
+                  Object(Ft.b)(
+                    n.a.createElement(
+                      Ke,
+                      Object.assign(
+                        {},
+                        {
+                          type: "feedback",
+                          message: "Product has been Updated!",
+                          variant: "contained",
+                          color: "success"
+                        },
+                        { className: e.notificationComponent }
+                      )
+                    ),
+                    a
+                  );
+                })();
+            },
+            y = function() {
+              var e, a;
+              (e = u),
+                (a = t.setProducts),
+                la.isBackend &&
+                  i.a.post("/products", e).then(function(e) {
+                    a({ type: "EDIT_PRODUCT", payload: e.data });
+                  });
+            },
+            b = "#/app/ecommerce/management/create" === window.location.hash;
           return n.a.createElement(
             n.a.Fragment,
             null,
             n.a.createElement(
               v.a,
               { container: !0, spacing: 3 },
+              n.a.createElement(Ft.a, {
+                className: e.toastsContainer,
+                closeButton: n.a.createElement(rA, {
+                  className: e.notificationCloseButton
+                }),
+                closeOnClick: !1,
+                progressClassName: e.notificationProgress
+              }),
               n.a.createElement(
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
                   Ga,
                   {
-                    title: d ? "New product" : "Edit product",
+                    title: b ? "New product" : "Edit product",
                     disableWidgetMenu: !0
                   },
-                  la.isBackend && !a.products.isLoaded
+                  la.isBackend && !t.products.isLoaded
                     ? n.a.createElement(
                         T.a,
                         {
@@ -34926,8 +35050,14 @@
                             { width: 200 },
                             n.a.createElement(
                               st.a,
-                              { value: e, fullWidth: !0 },
-                              a.products.products.map(function(e) {
+                              {
+                                value: b ? 1 : a,
+                                fullWidth: !0,
+                                onChange: function(e) {
+                                  return console.log(e.currentTarget);
+                                }
+                              },
+                              t.products.products.map(function(e) {
                                 return n.a.createElement(
                                   U.a,
                                   { value: e.id, key: e.id },
@@ -34956,10 +35086,10 @@
                               id: "title",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? "" : m.title,
+                              value: b ? u.title : c.title,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -34979,10 +35109,10 @@
                               id: "subtitle",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? "" : m.subtitle,
+                              value: b ? u.subtitle : c.subtitle,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35002,11 +35132,11 @@
                               id: "price",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? 0.01 : m.price,
+                              value: b ? u.price : c.price,
                               type: "number",
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35026,11 +35156,11 @@
                               id: "discount",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? 0.01 : m.discount,
+                              value: b ? u.discount : c.discount,
                               type: "number",
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35055,10 +35185,10 @@
                               margin: "normal",
                               variant: "outlined",
                               multiline: !0,
-                              value: d ? 0.01 : m.description_1,
+                              value: b ? u.description_1 : c.description_1,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35083,10 +35213,10 @@
                               margin: "normal",
                               variant: "outlined",
                               multiline: !0,
-                              value: d ? 0.01 : m.description_2,
+                              value: b ? u.description_2 : c.description_2,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35106,10 +35236,10 @@
                               id: "code",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? "" : m.code,
+                              value: b ? "" : c.code,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35129,10 +35259,10 @@
                               id: "hashtag",
                               margin: "normal",
                               variant: "outlined",
-                              value: d ? 0.01 : m.hashtag,
+                              value: b ? u.hashtag : c.hashtag,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35158,9 +35288,8 @@
                               variant: "outlined",
                               placeholder: "Add Tag",
                               fullWidth: !0,
-                              value: d ? "" : o,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35181,10 +35310,10 @@
                               margin: "normal",
                               variant: "outlined",
                               type: "number",
-                              value: d ? 5 : m.rating,
+                              value: b ? u.rating : c.rating,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return s(e);
+                                return b ? I(e) : N(e);
                               }
                             })
                           )
@@ -35199,17 +35328,17 @@
                               color: "success",
                               style: { marginRight: 8 },
                               onClick: function() {
-                                Tv(m, a.setProducts);
+                                return b ? y() : f();
                               }
                             },
-                            d ? "Save" : "Edit"
+                            b ? "Save" : "Edit"
                           ),
                           n.a.createElement(
                             Ie,
                             {
                               variant: "contained",
                               onClick: function() {
-                                return i.push("/app/ecommerce/management");
+                                return h.push("/app/ecommerce/management");
                               }
                             },
                             "Back"
@@ -35221,41 +35350,41 @@
             )
           );
         },
-        iA = t(673),
-        sA = t(674),
-        oA = t(681),
-        dA = t(675),
-        EA = t(65),
-        uA = t(682),
-        pA = t(676),
-        gA = t(180),
-        xA = t(677),
-        hA = t(394),
-        NA = t(213),
-        IA = t.n(NA),
-        fA = (t(1378), t(1379), t(1380), t(292)),
-        yA = t.n(fA),
-        bA = (function(e) {
+        cA = t(673),
+        iA = t(674),
+        sA = t(681),
+        oA = t(675),
+        dA = t(66),
+        EA = t(682),
+        uA = t(676),
+        pA = t(180),
+        gA = t(677),
+        xA = t(394),
+        hA = t(213),
+        NA = t.n(hA),
+        IA = (t(1378), t(1379), t(1380), t(292)),
+        fA = t.n(IA),
+        yA = (function(e) {
           function a(e) {
             var t;
-            Object(iA.a)(this, a),
-              (t = Object(oA.a)(this, Object(dA.a)(a).call(this, e))),
-              Object(g.a)(Object(EA.a)(t), "drop", function(e) {
+            Object(cA.a)(this, a),
+              (t = Object(sA.a)(this, Object(oA.a)(a).call(this, e))),
+              Object(g.a)(Object(dA.a)(t), "drop", function(e) {
                 e.draggedEl.parentNode.removeChild(e.draggedEl);
               }),
-              Object(g.a)(Object(EA.a)(t), "handleChange", function(e) {
+              Object(g.a)(Object(dA.a)(t), "handleChange", function(e) {
                 t.setState({
                   event: Object(te.a)({}, t.state.event, {
                     title: e.target.value
                   })
                 });
               }),
-              Object(g.a)(Object(EA.a)(t), "createEvent", function() {
+              Object(g.a)(Object(dA.a)(t), "createEvent", function() {
                 t.fullCalendar.getApi().addEvent(t.state.event),
                   t.fullCalendar.getApi().unselect(),
                   t.toggleModal();
               }),
-              Object(g.a)(Object(EA.a)(t), "select", function(e) {
+              Object(g.a)(Object(dA.a)(t), "select", function(e) {
                 var a = e.start,
                   l = e.end,
                   n = e.allDay;
@@ -35271,29 +35400,29 @@
                 }),
                   t.toggleModal();
               }),
-              Object(g.a)(Object(EA.a)(t), "eventClick", function(e) {
+              Object(g.a)(Object(dA.a)(t), "eventClick", function(e) {
                 t.setState({ event: e.event }), t.toggleModalEvent();
               }),
-              Object(g.a)(Object(EA.a)(t), "prev", function() {
+              Object(g.a)(Object(dA.a)(t), "prev", function() {
                 t.fullCalendar.getApi().prev();
               }),
-              Object(g.a)(Object(EA.a)(t), "next", function() {
+              Object(g.a)(Object(dA.a)(t), "next", function() {
                 t.fullCalendar.getApi().next();
               }),
-              Object(g.a)(Object(EA.a)(t), "today", function() {
+              Object(g.a)(Object(dA.a)(t), "today", function() {
                 t.fullCalendar.getApi().today();
               }),
-              Object(g.a)(Object(EA.a)(t), "changeView", function(e) {
+              Object(g.a)(Object(dA.a)(t), "changeView", function(e) {
                 t.fullCalendar.getApi().changeView(e),
                   t.setState({ calendarView: e });
               }),
-              Object(g.a)(Object(EA.a)(t), "getFormattedDate", function(e) {
-                return yA()(e).format("YYYY-MM-DD");
+              Object(g.a)(Object(dA.a)(t), "getFormattedDate", function(e) {
+                return fA()(e).format("YYYY-MM-DD");
               }),
-              Object(g.a)(Object(EA.a)(t), "toggleModal", function() {
+              Object(g.a)(Object(dA.a)(t), "toggleModal", function() {
                 t.setState({ modal: !t.state.modal });
               }),
-              Object(g.a)(Object(EA.a)(t), "toggleModalEvent", function() {
+              Object(g.a)(Object(dA.a)(t), "toggleModalEvent", function() {
                 t.setState({ modalEvent: !t.state.modalEvent });
               });
             var l = new Date(),
@@ -35306,8 +35435,8 @@
                 modal: !1,
                 modalEvent: !1,
                 calendarView: "dayGridMonth",
-                currentMonth: yA()().format("MMM YYYY"),
-                currentDay: yA()().format("dddd"),
+                currentMonth: fA()().format("MMM YYYY"),
+                currentDay: fA()().format("dddd"),
                 calendarOptions: {
                   header: { left: "", center: "", right: "" },
                   events: [
@@ -35374,19 +35503,19 @@
                   editable: !0,
                   droppable: !0
                 },
-                calendarPlugins: [gA.d, xA.a, hA.b],
+                calendarPlugins: [pA.d, gA.a, xA.b],
                 dragOptions: { zIndex: 999, revert: !0, revertDuration: 0 }
               }),
               t
             );
           }
           return (
-            Object(uA.a)(a, e),
-            Object(sA.a)(a, [
+            Object(EA.a)(a, e),
+            Object(iA.a)(a, [
               {
                 key: "componentDidMount",
                 value: function() {
-                  new hA.a(this.externalEvents, {
+                  new xA.a(this.externalEvents, {
                     itemSelector: ".external-event"
                   });
                 }
@@ -35436,7 +35565,7 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                IA.a.widget
+                                NA.a.widget
                               )
                             },
                             n.a.createElement(
@@ -35466,7 +35595,7 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                IA.a.widget
+                                NA.a.widget
                               )
                             },
                             n.a.createElement(
@@ -35496,7 +35625,7 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                IA.a.widget
+                                NA.a.widget
                               )
                             },
                             n.a.createElement(
@@ -35617,7 +35746,7 @@
                             )
                           ),
                           n.a.createElement(
-                            pA.a,
+                            uA.a,
                             Object.assign(
                               {
                                 ref: function(a) {
@@ -35657,7 +35786,7 @@
                         ),
                         n.a.createElement(Aa.a, {
                           onChange: this.handleChange,
-                          className: IA.a.calendarModalInput,
+                          className: NA.a.calendarModalInput,
                           value: t.title,
                           name: "title",
                           placeholder: "Title"
@@ -35733,8 +35862,8 @@
             a
           );
         })(n.a.Component),
-        vA = t(2408);
-      var TA = [
+        bA = t(2408);
+      var vA = [
           {
             id: 0,
             label: "Dashboard",
@@ -35943,7 +36072,7 @@
               return n.a.createElement(
                 "section",
                 { className: e.root },
-                n.a.createElement(vA.a, null)
+                n.a.createElement(bA.a, null)
               );
             }, null),
             click: function(e) {
@@ -36008,14 +36137,14 @@
             }
           }
         ],
-        AA = Object(j.a)(function(e) {
+        TA = Object(j.a)(function(e) {
           return {
             root: { minWidth: 72, textTransform: "none", fontWeight: 400 }
           };
         })(function(e) {
           return n.a.createElement(b.a, e);
         });
-      var wA = Object(E.k)(function(e) {
+      var AA = Object(E.k)(function(e) {
         var a = R(),
           t = n.a.useState(2),
           l = Object(x.a)(t, 2),
@@ -36041,7 +36170,7 @@
           "div",
           { className: a.root },
           n.a.createElement(pa, { history: e.history }),
-          n.a.createElement(Fa, { structure: TA }),
+          n.a.createElement(Fa, { structure: vA }),
           n.a.createElement(
             "div",
             {
@@ -36069,7 +36198,7 @@
                   wrap: "nowrap",
                   style: { overflowX: "auto" }
                 },
-                TA.map(function(e) {
+                vA.map(function(e) {
                   return !e.children &&
                     window.location.hash.includes(e.link) &&
                     e.link
@@ -36093,19 +36222,19 @@
                               style: { marginLeft: 38 }
                             },
                             n.a.createElement(
-                              AA,
+                              TA,
                               Object.assign({ label: "Today" }, I(0))
                             ),
                             n.a.createElement(
-                              AA,
+                              TA,
                               Object.assign({ label: "This week" }, I(1))
                             ),
                             n.a.createElement(
-                              AA,
+                              TA,
                               Object.assign({ label: "This month" }, I(2))
                             ),
                             n.a.createElement(
-                              AA,
+                              TA,
                               Object.assign({ label: "This year" }, I(3))
                             )
                           )
@@ -36253,29 +36382,29 @@
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management", exact: !0 },
-                n.a.createElement(yv, null, n.a.createElement(Ov, null))
+                n.a.createElement(fv, null, n.a.createElement(Pv, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/edit/:id", exact: !0 },
-                n.a.createElement(yv, null, n.a.createElement(cA, null))
+                n.a.createElement(fv, null, n.a.createElement(mA, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/create" },
-                n.a.createElement(yv, null, n.a.createElement(cA, null))
+                n.a.createElement(fv, null, n.a.createElement(mA, null))
               ),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product/:id",
-                component: Kv
+                component: Vv
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product",
-                component: Kv
+                component: Vv
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/gridproducts",
-                component: qv
+                component: Qv
               }),
               n.a.createElement(E.b, {
                 exact: !0,
@@ -36337,23 +36466,23 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/timeline",
-                component: fT
+                component: NT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/search",
-                component: kT
+                component: wT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/gallery",
-                component: eA
+                component: XT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/invoice",
-                component: mA
+                component: nA
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/calendar",
-                component: bA
+                component: yA
               }),
               n.a.createElement(E.b, {
                 path: "/app/core/colors",
@@ -36361,11 +36490,11 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/google",
-                component: $v
+                component: _v
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/vector",
-                component: lT
+                component: aT
               }),
               n.a.createElement(E.b, { path: "/app/ui/icons", component: Nf })
             ),
@@ -36474,7 +36603,7 @@
           )
         );
       });
-      function CA(e, a) {
+      function wA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -36486,16 +36615,16 @@
         }
         return t;
       }
-      function kA(e) {
+      function CA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? CA(Object(t), !0).forEach(function(a) {
+            ? wA(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : CA(Object(t)).forEach(function(a) {
+            : wA(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -36505,7 +36634,7 @@
         }
         return e;
       }
-      var PA = Object(L.a)(function(e) {
+      var kA = Object(L.a)(function(e) {
           return {
             root: { display: "flex", maxWidth: "100vw", overflowX: "hidden" },
             content: {
@@ -36521,11 +36650,11 @@
                 duration: e.transitions.duration.enteringScreen
               })
             },
-            fakeToolbar: kA({}, e.mixins.toolbar),
+            fakeToolbar: CA({}, e.mixins.toolbar),
             margin: { marginBottom: 24 }
           };
         }),
-        SA = function() {
+        PA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36705,13 +36834,13 @@
             )
           );
         },
-        OA = Object(L.a)(function(e) {
+        SA = Object(L.a)(function(e) {
           return {
             successIcon: { color: e.palette.success.main },
             failIcon: { color: "red" }
           };
         }),
-        BA = [
+        OA = [
           {
             advantage: "Hundreds unique components",
             single: "plus",
@@ -36725,8 +36854,8 @@
           },
           { advantage: "Paying users allowed", single: "no", extended: "plus" }
         ],
-        MA = function() {
-          var e = OA();
+        BA = function() {
+          var e = SA();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36764,7 +36893,7 @@
                     n.a.createElement(
                       Et.a,
                       null,
-                      BA.map(function(a) {
+                      OA.map(function(a) {
                         return n.a.createElement(
                           rt.a,
                           { key: a.advantage },
@@ -36777,7 +36906,7 @@
                             mt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(vA.a, {
+                              ? n.a.createElement(bA.a, {
                                   className: e.successIcon
                                 })
                               : n.a.createElement(og.a, {
@@ -36788,7 +36917,7 @@
                             mt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(vA.a, {
+                              ? n.a.createElement(bA.a, {
                                   className: e.successIcon
                                 })
                               : n.a.createElement(og.a, {
@@ -36832,7 +36961,7 @@
             )
           );
         },
-        jA = function() {
+        MA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36932,7 +37061,7 @@
             )
           );
         },
-        LA = Object(E.k)(function(e) {
+        jA = Object(E.k)(function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -37015,7 +37144,7 @@
             )
           );
         }),
-        DA = function() {
+        LA = function() {
           return n.a.createElement(
             Ga,
             { title: "Typography", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37070,7 +37199,7 @@
             )
           );
         },
-        FA = function() {
+        DA = function() {
           return n.a.createElement(
             Ga,
             { title: "Widget", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37222,7 +37351,7 @@
             )
           );
         },
-        RA = function() {
+        FA = function() {
           return n.a.createElement(
             Ga,
             { title: "Libs", inheritHeight: !0, disableWidgetMenu: !0 },
@@ -37237,7 +37366,7 @@
             n.a.createElement(Ne, { variant: "h6" }, "Examples:")
           );
         },
-        WA = Object(L.a)(function(e) {
+        RA = Object(L.a)(function(e) {
           var a;
           return {
             menuIcon: { marginRight: e.spacing(2) },
@@ -37269,10 +37398,10 @@
             })
           };
         }),
-        HA = t(2410),
-        zA = Object(E.k)(function(e) {
+        WA = t(2410),
+        HA = Object(E.k)(function(e) {
           var a = Object(V.a)(),
-            t = WA(),
+            t = RA(),
             r = $e(),
             m = ea(),
             c = Object(l.useState)(!1),
@@ -37347,7 +37476,7 @@
                       n.a.createElement(
                         C.a,
                         null,
-                        n.a.createElement(HA.a, { style: { color: "#fff" } })
+                        n.a.createElement(WA.a, { style: { color: "#fff" } })
                       )
                     ),
                     n.a.createElement(
@@ -37446,7 +37575,7 @@
             )
           );
         }),
-        GA = [
+        zA = [
           {
             id: 0,
             label: "Getting Started",
@@ -37495,15 +37624,15 @@
             icon: n.a.createElement(qd.a, null)
           }
         ],
-        UA = Object(E.k)(function(e) {
+        GA = Object(E.k)(function(e) {
           var a = $e(),
-            t = PA(),
+            t = kA(),
             l = Object(E.j)().path;
           return n.a.createElement(
             "div",
             { className: t.root },
-            n.a.createElement(zA, null),
-            n.a.createElement(Fa, { structure: GA }),
+            n.a.createElement(HA, null),
+            n.a.createElement(Fa, { structure: zA }),
             n.a.createElement(
               "div",
               {
@@ -37528,7 +37657,7 @@
                     justify: "space-between",
                     alignItems: "center"
                   },
-                  GA.map(function(e) {
+                  zA.map(function(e) {
                     return !e.children &&
                       window.location.hash.includes(e.link) &&
                       e.link
@@ -37578,43 +37707,43 @@
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/overview") },
-                  n.a.createElement(SA, null)
+                  n.a.createElement(PA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/licences") },
-                  n.a.createElement(MA, null)
+                  n.a.createElement(BA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/quick-start") },
-                  n.a.createElement(jA, null)
+                  n.a.createElement(MA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/pages") },
-                  n.a.createElement(LA, null)
+                  n.a.createElement(jA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/typography") },
-                  n.a.createElement(DA, null)
+                  n.a.createElement(LA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/widget") },
-                  n.a.createElement(FA, null)
+                  n.a.createElement(DA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/libs") },
-                  n.a.createElement(RA, null)
+                  n.a.createElement(FA, null)
                 )
               )
             )
           );
         }),
-        VA = Object(L.a)(function(e) {
+        UA = Object(L.a)(function(e) {
           return {
             container: {
               height: "100vh",
@@ -37660,10 +37789,10 @@
             backButton: { textTransform: "none", fontSize: 22 }
           };
         }),
-        YA = t(678),
-        KA = t.n(YA);
-      function QA() {
-        var e = VA();
+        VA = t(678),
+        YA = t.n(VA);
+      function KA() {
+        var e = UA();
         return n.a.createElement(
           v.a,
           { container: !0, className: e.container },
@@ -37672,7 +37801,7 @@
             { className: e.logotype },
             n.a.createElement("img", {
               className: e.logotypeIcon,
-              src: KA.a,
+              src: YA.a,
               alt: "logo"
             }),
             n.a.createElement(
@@ -37723,8 +37852,8 @@
           )
         );
       }
-      var JA = t(685),
-        qA = Object(L.a)(function(e) {
+      var QA = t(685),
+        JA = Object(L.a)(function(e) {
           var a;
           return {
             container: {
@@ -37840,12 +37969,12 @@
             )
           };
         }),
-        ZA = t(679),
-        _A = t.n(ZA),
-        XA = t(395),
-        $A = t.n(XA);
-      var ew = Object(E.k)(function(e) {
-        var a = qA(),
+        qA = t(679),
+        ZA = t.n(qA),
+        _A = t(395),
+        XA = t.n(_A);
+      var $A = Object(E.k)(function(e) {
+        var a = JA(),
           t = sa();
         Object(l.useEffect)(function() {
           var a = new URLSearchParams(e.location.search).get("token");
@@ -37882,7 +38011,7 @@
             "div",
             { className: a.logotypeContainer },
             n.a.createElement("img", {
-              src: _A.a,
+              src: ZA.a,
               alt: "logo",
               className: a.logotypeImage
             }),
@@ -37973,7 +38102,7 @@
                       }
                     },
                     n.a.createElement("img", {
-                      src: $A.a,
+                      src: XA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -37991,7 +38120,7 @@
                     n.a.createElement("div", { className: a.formDivider })
                   ),
                   n.a.createElement(
-                    JA.a,
+                    QA.a,
                     {
                       in: d,
                       style: d
@@ -38079,7 +38208,7 @@
                     "Create your account"
                   ),
                   n.a.createElement(
-                    JA.a,
+                    QA.a,
                     { in: d },
                     n.a.createElement(
                       Ne,
@@ -38174,7 +38303,7 @@
                       }
                     },
                     n.a.createElement("img", {
-                      src: $A.a,
+                      src: XA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -38190,7 +38319,7 @@
           )
         );
       });
-      function aw() {
+      function ew() {
         var e = (function() {
           var e = n.a.useContext(ma);
           if (void 0 === e)
@@ -38217,7 +38346,7 @@
                 return n.a.createElement(E.a, { to: "/app/dashboard" });
               }
             }),
-            n.a.createElement(E.b, { path: "/documentation", component: UA }),
+            n.a.createElement(E.b, { path: "/documentation", component: GA }),
             n.a.createElement(
               function(a) {
                 var t = a.component,
@@ -38235,7 +38364,7 @@
                   })
                 );
               },
-              { path: "/app", component: wA }
+              { path: "/app", component: AA }
             ),
             n.a.createElement(
               function(a) {
@@ -38252,9 +38381,9 @@
                   })
                 );
               },
-              { path: "/login", component: ew }
+              { path: "/login", component: $A }
             ),
-            n.a.createElement(E.b, { component: QA })
+            n.a.createElement(E.b, { component: KA })
           )
         );
       }
@@ -38265,11 +38394,11 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var tw = t(1464);
+      var aw = t(1464);
       (i.a.defaults.baseURL = la.baseURLApi),
         (i.a.defaults.headers.common["Content-Type"] = "application/json");
-      var lw = localStorage.getItem("token");
-      lw && (i.a.defaults.headers.common.Authorization = "Bearer " + lw),
+      var tw = localStorage.getItem("token");
+      tw && (i.a.defaults.headers.common.Authorization = "Bearer " + tw),
         m.a.render(
           n.a.createElement(
             function(e) {
@@ -38323,8 +38452,8 @@
                   return n.a.createElement(
                     s.a,
                     { theme: e },
-                    n.a.createElement(tw.a, null),
-                    n.a.createElement(aw, null)
+                    n.a.createElement(aw.a, null),
+                    n.a.createElement(ew, null)
                   );
                 })
               )
@@ -38461,4 +38590,4 @@
   },
   [[708, 1, 2]]
 ]);
-//# sourceMappingURL=main.9c28d97f.chunk.js.map
+//# sourceMappingURL=main.297deec2.chunk.js.map
