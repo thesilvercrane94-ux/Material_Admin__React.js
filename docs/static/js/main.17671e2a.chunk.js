@@ -21,7 +21,7 @@
         n = t.n(l),
         r = t(24),
         m = t.n(r),
-        c = t(71),
+        c = t(61),
         i = t.n(c),
         s = t(1455),
         o = t(32),
@@ -33,9 +33,9 @@
         x = t(10),
         h = t(8),
         N = t.n(h),
-        I = t(63),
+        I = t(64),
         f = t.n(I),
-        y = t(64),
+        y = t(65),
         b = t(1470),
         v = t(1449),
         T = t(376),
@@ -289,10 +289,10 @@
             sendButtonIcon: { marginLeft: e.spacing(2) }
           };
         }),
-        te = t(39),
+        te = t(36),
         le = t(1412),
         ne = t(616),
-        re = t(65),
+        re = t(66),
         me = t(378),
         ce = t(2415),
         ie = t(512),
@@ -24257,7 +24257,7 @@
           )
         );
       }
-      var If = t(38),
+      var If = t(39),
         ff = t.n(If),
         yf = [
           { name: "series1", data: [31, 40, 28, 51, 42, 109, 100] },
@@ -31098,17 +31098,26 @@
         Iv = function(e, a) {
           switch (a.type) {
             case "UPDATE_PRODUCTS":
-              return { isLoaded: !0, products: a.payload };
+              return {
+                isLoaded: !0,
+                products: a.payload,
+                images: e.images ? e.images : []
+              };
             case "EDIT_PRODUCT":
               var t = a.payload.id;
-              return {
+              return Object(te.a)({}, e, {
                 isLoaded: !0,
                 products: hv.map(function(e) {
                   return e.id === t ? Object(te.a)({}, e, {}, a.payload) : e;
                 })
-              };
+              });
+            case "GET_IMAGES":
+              return Object(te.a)({}, e, { images: a.payload });
             case "CREATE_PRODUCT":
-              return { isLoaded: !0, products: hv.push(a.payload) };
+              return Object(te.a)({}, e, {
+                isLoaded: !0,
+                products: hv.push(a.payload)
+              });
             default:
               return Object(te.a)({}, e);
           }
@@ -31225,38 +31234,45 @@
           };
         }),
         Cv = function(e) {
-          var a = wv(),
-            t = e.numSelected;
+          var a = e.numSelected,
+            t = e.selected,
+            l = e.deleteProducts,
+            r = Object(E.g)(),
+            m = wv();
           return n.a.createElement(
             H.a,
             {
-              className: N()(a.root, Object(g.a)({}, a.highlight, t > 0)),
+              className: N()(m.root, Object(g.a)({}, m.highlight, a > 0)),
               style: { marginTop: 8 }
             },
-            t > 0
+            a > 0
               ? n.a.createElement(
                   Ne,
                   {
-                    className: a.title,
+                    className: m.title,
                     color: "inherit",
                     variant: "subtitle1"
                   },
-                  t,
+                  a,
                   " selected"
                 )
               : n.a.createElement(
                   Ne,
-                  { className: a.title, variant: "h6", id: "tableTitle" },
+                  { className: m.title, variant: "h6", id: "tableTitle" },
                   "Products"
                 ),
-            t > 0
+            a > 0
               ? n.a.createElement(
                   ie.a,
                   { title: "Delete" },
                   n.a.createElement(
                     C.a,
                     { "aria-label": "delete" },
-                    n.a.createElement(yt.a, null)
+                    n.a.createElement(yt.a, {
+                      onClick: function(e) {
+                        return l(t, r, e);
+                      }
+                    })
                   )
                 )
               : n.a.createElement(
@@ -31338,21 +31354,27 @@
               },
               [r]
             );
-          var L = function(e, a, t) {
+          var L = P - Math.min(P, M.length - A * P),
+            D = function(e, a, t) {
               !(function(e) {
                 var a = e.id,
                   t = e.history,
                   l = e.dispatch;
-                la.isBackend &&
-                  (i.a.delete("/products/" + a).then(function(e) {
-                    "/app/ecommerce/management" !== t.location.pathname &&
-                      t.push("/app/ecommerce/management");
-                  }),
-                  bv(l));
+                if (la.isBackend) {
+                  if (Array.isArray(a))
+                    for (var n in a)
+                      i.a.delete("/products/" + a[n]).then(function(e) {});
+                  else
+                    i.a.delete("/products/" + a).then(function(e) {
+                      bv(l),
+                        "/app/ecommerce/management" !== t.location.pathname &&
+                          t.push("/app/ecommerce/management");
+                    });
+                  bv(l);
+                }
               })({ id: e, history: a, dispatch: r.setProducts }),
                 t.stopPropagation();
-            },
-            D = P - Math.min(P, M.length - A * P);
+            };
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -31428,13 +31450,12 @@
                         },
                         onChange: function(e) {
                           return (function(e) {
-                            var a = M.filter(function(a) {
-                              return (
-                                !e.currentTarget.value ||
-                                a.title.includes(e.currentTarget.value)
-                              );
-                            });
-                            j(a);
+                            var a = [];
+                            r.products.products.forEach(function(t, l) {
+                              t.title.includes(e.currentTarget.value) &&
+                                a.push(t);
+                            }),
+                              j(a);
                           })(e);
                         }
                       })
@@ -31450,7 +31471,11 @@
                     },
                     "Create Product"
                   ),
-                  n.a.createElement(Cv, { numSelected: I.length }),
+                  n.a.createElement(Cv, {
+                    numSelected: I.length,
+                    selected: I,
+                    deleteProducts: D
+                  }),
                   la.isBackend && !r.products.isLoaded
                     ? n.a.createElement(
                         T.a,
@@ -31677,7 +31702,7 @@
                                             size: "small",
                                             variant: "contained",
                                             onClick: function(t) {
-                                              return L(e.id, a, t);
+                                              return D(e.id, a, t);
                                             }
                                           },
                                           "Delete"
@@ -31686,10 +31711,10 @@
                                     )
                                   );
                                 }),
-                              D > 0 &&
+                              L > 0 &&
                                 n.a.createElement(
                                   rt.a,
-                                  { style: { height: 53 * D } },
+                                  { style: { height: 53 * L } },
                                   n.a.createElement(mt.a, { colSpan: 6 })
                                 )
                             )
@@ -34901,13 +34926,17 @@
           var e = nv(),
             a = Object(E.i)().id,
             t = yv(),
-            r = n.a.useState(t.products.products[a - 1]),
-            m = Object(x.a)(r, 2),
-            c = m[0],
-            s = m[1],
-            o = n.a.useState({
-              img:
-                "https://flatlogic-node-backend.herokuapp.com/assets/products/img1.jpg",
+            r = function() {
+              return t.products.products.findIndex(function(e) {
+                return e.id == a;
+              });
+            },
+            m = n.a.useState(t.products.products[r()]),
+            c = Object(x.a)(m, 2),
+            s = c[0],
+            o = c[1],
+            d = n.a.useState({
+              img: "http://localhost:8080/assets/products/img1.jpg",
               title: null,
               subtitle: null,
               price: 0.1,
@@ -34919,47 +34948,46 @@
               technology: [],
               discount: 0
             }),
-            d = Object(x.a)(o, 2),
-            u = d[0],
-            p = d[1];
+            u = Object(x.a)(d, 2),
+            p = u[0],
+            h = u[1];
           Object(l.useEffect)(function() {
-            bv(t.setProducts);
+            var e;
+            bv(t.setProducts),
+              (e = t.setProducts),
+              la.isBackend &&
+                i.a.get("/products/images-list").then(function(a) {
+                  e({ type: "GET_IMAGES", payload: a.data });
+                });
           }, []),
             Object(l.useEffect)(
               function() {
-                s(
-                  t.products.products[
-                    t.products.products.findIndex(function(e) {
-                      return e.id == a;
-                    })
-                  ]
-                );
+                o(t.products.products[r()]);
               },
               [t]
             );
-          var h = Object(E.g)(),
-            N = function(e) {
-              s(
+          var N = Object(E.g)(),
+            I = function(e) {
+              o(
                 Object(te.a)(
                   {},
-                  c,
+                  s,
                   Object(g.a)({}, e.target.id, e.currentTarget.value)
                 )
               );
             },
-            I = function(e) {
-              p(
+            f = function(e) {
+              h(
                 Object(te.a)(
                   {},
-                  u,
+                  p,
                   Object(g.a)({}, e.target.id, e.currentTarget.value)
                 )
               );
-            };
-          console.log(c), console.log(t.products.products), console.log(u);
-          var f = function() {
+            },
+            y = function() {
               var a, l;
-              (a = c),
+              (a = s),
                 (l = t.setProducts),
                 la.isBackend &&
                   i.a.put("/products/" + a.id, a).then(function(e) {
@@ -34991,16 +35019,17 @@
                   );
                 })();
             },
-            y = function() {
+            b = function() {
               var e, a;
-              (e = u),
+              (e = p),
                 (a = t.setProducts),
                 la.isBackend &&
                   i.a.post("/products", e).then(function(e) {
                     a({ type: "EDIT_PRODUCT", payload: e.data });
-                  });
+                  }),
+                N.push("/app/ecommerce/management");
             },
-            b = "#/app/ecommerce/management/create" === window.location.hash;
+            A = "#/app/ecommerce/management/create" === window.location.hash;
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -35021,7 +35050,7 @@
                 n.a.createElement(
                   Ga,
                   {
-                    title: b ? "New product" : "Edit product",
+                    title: A ? "New product" : "Edit product",
                     disableWidgetMenu: !0
                   },
                   la.isBackend && !t.products.isLoaded
@@ -35051,19 +35080,35 @@
                             n.a.createElement(
                               st.a,
                               {
-                                value: b ? 1 : a,
+                                value: A
+                                  ? p.img
+                                  : s.img.replace(
+                                      /.+com\//,
+                                      "http://localhost:8080/"
+                                    ),
                                 fullWidth: !0,
                                 onChange: function(e) {
-                                  return console.log(e.currentTarget);
+                                  return (function(e) {
+                                    A
+                                      ? h(
+                                          Object(te.a)({}, s, {
+                                            img: e.target.value
+                                          })
+                                        )
+                                      : o(
+                                          Object(te.a)({}, s, {
+                                            img: e.target.value
+                                          })
+                                        );
+                                  })(e);
                                 }
                               },
-                              t.products.products.map(function(e) {
+                              t.products.images.map(function(e, a) {
                                 return n.a.createElement(
                                   U.a,
-                                  { value: e.id, key: e.id },
+                                  { value: e, key: e },
                                   n.a.createElement("img", {
-                                    src: e.img,
-                                    alt: e.title,
+                                    src: e,
                                     style: { height: 100, width: 200 }
                                   })
                                 );
@@ -35086,10 +35131,10 @@
                               id: "title",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? u.title : c.title,
+                              value: A ? p.title : s.title,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35109,10 +35154,10 @@
                               id: "subtitle",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? u.subtitle : c.subtitle,
+                              value: A ? p.subtitle : s.subtitle,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35132,11 +35177,11 @@
                               id: "price",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? u.price : c.price,
+                              value: A ? p.price : s.price,
                               type: "number",
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35156,11 +35201,11 @@
                               id: "discount",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? u.discount : c.discount,
+                              value: A ? p.discount : s.discount,
                               type: "number",
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35185,10 +35230,10 @@
                               margin: "normal",
                               variant: "outlined",
                               multiline: !0,
-                              value: b ? u.description_1 : c.description_1,
+                              value: A ? p.description_1 : s.description_1,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35209,14 +35254,14 @@
                             T.a,
                             { width: 500 },
                             n.a.createElement(Aa.a, {
-                              id: "description_1",
+                              id: "description_2",
                               margin: "normal",
                               variant: "outlined",
                               multiline: !0,
-                              value: b ? u.description_2 : c.description_2,
+                              value: A ? p.description_2 : s.description_2,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35236,10 +35281,10 @@
                               id: "code",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? "" : c.code,
+                              value: A ? "" : s.code,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35259,10 +35304,10 @@
                               id: "hashtag",
                               margin: "normal",
                               variant: "outlined",
-                              value: b ? u.hashtag : c.hashtag,
+                              value: A ? p.hashtag : s.hashtag,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35289,7 +35334,7 @@
                               placeholder: "Add Tag",
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35310,10 +35355,10 @@
                               margin: "normal",
                               variant: "outlined",
                               type: "number",
-                              value: b ? u.rating : c.rating,
+                              value: A ? p.rating : s.rating,
                               fullWidth: !0,
                               onChange: function(e) {
-                                return b ? I(e) : N(e);
+                                return A ? f(e) : I(e);
                               }
                             })
                           )
@@ -35328,17 +35373,17 @@
                               color: "success",
                               style: { marginRight: 8 },
                               onClick: function() {
-                                return b ? y() : f();
+                                return A ? b() : y();
                               }
                             },
-                            b ? "Save" : "Edit"
+                            A ? "Save" : "Edit"
                           ),
                           n.a.createElement(
                             Ie,
                             {
                               variant: "contained",
                               onClick: function() {
-                                return h.push("/app/ecommerce/management");
+                                return N.push("/app/ecommerce/management");
                               }
                             },
                             "Back"
@@ -35354,7 +35399,7 @@
         iA = t(674),
         sA = t(681),
         oA = t(675),
-        dA = t(66),
+        dA = t(67),
         EA = t(682),
         uA = t(676),
         pA = t(180),
@@ -38590,4 +38635,4 @@
   },
   [[708, 1, 2]]
 ]);
-//# sourceMappingURL=main.297deec2.chunk.js.map
+//# sourceMappingURL=main.17671e2a.chunk.js.map
