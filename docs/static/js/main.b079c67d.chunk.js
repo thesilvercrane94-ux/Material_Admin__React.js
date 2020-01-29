@@ -24,7 +24,7 @@
         c = t(61),
         i = t.n(c),
         s = t(1455),
-        o = t(32),
+        o = t(33),
         d = t(57),
         E = t(121),
         u = t(267),
@@ -289,7 +289,7 @@
             sendButtonIcon: { marginLeft: e.spacing(2) }
           };
         }),
-        te = t(36),
+        te = t(31),
         le = t(1412),
         ne = t(616),
         re = t(66),
@@ -849,57 +849,26 @@
           remote: "https://flatlogic-node-backend.herokuapp.com",
           isBackend: "true",
           auth: { email: "admin@flatlogic.com", password: "password" }
-        };
-      function na(e, a) {
-        var t = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          a &&
-            (l = l.filter(function(a) {
-              return Object.getOwnPropertyDescriptor(e, a).enumerable;
-            })),
-            t.push.apply(t, l);
-        }
-        return t;
-      }
-      function ra(e) {
-        for (var a = 1; a < arguments.length; a++) {
-          var t = null != arguments[a] ? arguments[a] : {};
-          a % 2
-            ? na(Object(t), !0).forEach(function(a) {
-                Object(g.a)(e, a, t[a]);
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : na(Object(t)).forEach(function(a) {
-                Object.defineProperty(
-                  e,
-                  a,
-                  Object.getOwnPropertyDescriptor(t, a)
-                );
-              });
-        }
-        return e;
-      }
-      var ma = n.a.createContext(),
-        ca = n.a.createContext();
-      function ia(e, a) {
+        },
+        na = n.a.createContext(),
+        ra = n.a.createContext();
+      function ma(e, a) {
         switch (a.type) {
           case "LOGIN_SUCCESS":
-            return ra({}, e, { isAuthenticated: !0 });
+            return Object(te.a)({}, e, { isAuthenticated: !0 });
           case "SIGN_OUT_SUCCESS":
-            return ra({}, e, { isAuthenticated: !1 });
+            return Object(te.a)({}, e, { isAuthenticated: !1 });
           default:
             throw new Error("Unhandled action type: ".concat(a.type));
         }
       }
-      function sa() {
-        var e = n.a.useContext(ca);
+      function ca() {
+        var e = n.a.useContext(ra);
         if (void 0 === e)
           throw new Error("useUserDispatch must be used within a UserProvider");
         return e;
       }
-      function oa(e, a, t, l, n, r) {
+      function ia(e, a, t, l, n, r) {
         var m =
           arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : "";
         r(!1),
@@ -917,7 +886,7 @@
                   .then(function(a) {
                     var t = a.data.token;
                     setTimeout(function() {
-                      r(null), n(!1), da(t, e);
+                      r(null), n(!1), sa(t, e);
                     }, 2e3);
                   })
                   .catch(function() {
@@ -925,10 +894,10 @@
                   })
               : e({ type: "LOGIN_FAILURE" })
             : setTimeout(function() {
-                r(null), n(!1), da("token", e);
+                r(null), n(!1), sa("token", e);
               }, 2e3);
       }
-      function da(e, a) {
+      function sa(e, a) {
         var t;
         la.isBackend
           ? delete (t = p.a.decode(e).user).id
@@ -936,10 +905,11 @@
           delete t.id,
           localStorage.setItem("token", e),
           localStorage.setItem("user", JSON.stringify(t)),
+          localStorage.setItem("theme", "default"),
           (i.a.defaults.headers.common.Authorization = "Bearer " + e),
           a({ type: "LOGIN_SUCCESS" });
       }
-      var Ea = [
+      var oa = [
           {
             id: 0,
             variant: "warning",
@@ -969,7 +939,7 @@
             time: "9:09"
           }
         ],
-        ua = [
+        da = [
           { id: 0, color: "warning", message: "Check out this awesome ticket" },
           {
             id: 1,
@@ -990,12 +960,12 @@
             message: "12 new orders has arrived today"
           }
         ];
-      function pa(e) {
+      function Ea(e) {
         var a = ae(),
           t = Object(V.a)(),
           r = $e(),
           m = ea(),
-          c = sa(),
+          c = ca(),
           s = Object(l.useState)(null),
           o = Object(x.a)(s, 2),
           d = o[0],
@@ -1104,7 +1074,7 @@
                 },
                 n.a.createElement(
                   xe,
-                  { badgeContent: w ? ua.length : null, color: "warning" },
+                  { badgeContent: w ? da.length : null, color: "warning" },
                   n.a.createElement(J.a, { classes: { root: a.headerIcon } })
                 )
               ),
@@ -1121,7 +1091,7 @@
                 },
                 n.a.createElement(
                   xe,
-                  { badgeContent: h ? Ea.length : null, color: "secondary" },
+                  { badgeContent: h ? oa.length : null, color: "secondary" },
                   n.a.createElement(q.a, { classes: { root: a.headerIcon } })
                 )
               ),
@@ -1189,11 +1159,11 @@
                       component: "a",
                       color: "secondary"
                     },
-                    Ea.length,
+                    oa.length,
                     " New Messages"
                   )
                 ),
-                Ea.map(function(e) {
+                oa.map(function(e) {
                   return n.a.createElement(
                     U.a,
                     { key: e.id, className: a.messageNotification },
@@ -1256,7 +1226,7 @@
                   className: a.headerMenu,
                   disableAutoFocusItem: !0
                 },
-                ua.map(function(e) {
+                da.map(function(e) {
                   return n.a.createElement(
                     U.a,
                     {
@@ -1354,9 +1324,9 @@
           )
         );
       }
-      var ga = t(85),
-        xa = t(1391);
-      function ha(e, a) {
+      var ua = t(85),
+        pa = t(1391);
+      function ga(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -1368,16 +1338,16 @@
         }
         return t;
       }
-      function Na(e) {
+      function xa(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? ha(Object(t), !0).forEach(function(a) {
+            ? ga(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : ha(Object(t)).forEach(function(a) {
+            : ga(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -1387,7 +1357,7 @@
         }
         return e;
       }
-      var Ia = Object(L.a)(function(e) {
+      var ha = Object(L.a)(function(e) {
           var a;
           return {
             menuButton: { marginLeft: 12, marginRight: 36 },
@@ -1412,7 +1382,7 @@
               e.breakpoints.down("sm"),
               { width: 240 }
             ),
-            toolbar: Na(
+            toolbar: xa(
               {},
               e.mixins.toolbar,
               Object(g.a)({}, e.breakpoints.down("sm"), { display: "none" })
@@ -1443,16 +1413,16 @@
             padding: { paddingBottom: e.spacing(2) }
           };
         }),
-        fa = t(1440),
-        ya = t(1392),
-        ba = t(1441),
-        va = t(516),
-        Ta = t(379),
-        Aa = t(515),
-        wa = t(1444),
-        Ca = t(1442),
-        ka = t(1443),
-        Pa = Object(L.a)(function(e) {
+        Na = t(1440),
+        Ia = t(1392),
+        fa = t(1441),
+        ya = t(516),
+        ba = t(379),
+        va = t(515),
+        Ta = t(1444),
+        Aa = t(1442),
+        wa = t(1443),
+        Ca = Object(L.a)(function(e) {
           return {
             link: {
               textDecoration: "none",
@@ -1524,7 +1494,7 @@
             nestedMenuItem: { paddingLeft: 0 }
           };
         }),
-        Sa = Object(L.a)(function(e) {
+        ka = Object(L.a)(function(e) {
           return {
             dotBase: {
               width: 5,
@@ -1537,13 +1507,13 @@
             dotLarge: { width: 18, height: 18 }
           };
         });
-      function Oa(e) {
+      function Pa(e) {
         var a,
           t = e.size,
           l = void 0 === t ? "small" : t,
           r = e.color,
           m = e.style,
-          c = Sa(),
+          c = ka(),
           i = Object(V.a)();
         return n.a.createElement("div", {
           className: N()(
@@ -1560,14 +1530,14 @@
           )
         });
       }
-      var Ba = t(1437),
-        Ma = t(1438),
-        ja = t(1439);
-      function La(e) {
+      var Sa = t(1437),
+        Oa = t(1438),
+        Ba = t(1439);
+      function Ma(e) {
         var a = e.open,
           t = e.onClose;
         return n.a.createElement(
-          Ba.a,
+          Sa.a,
           {
             open: a,
             onClose: t,
@@ -1575,7 +1545,7 @@
             fullWidth: !0
           },
           n.a.createElement(
-            Ma.a,
+            Oa.a,
             { id: "alert-dialog-title" },
             n.a.createElement(
               T.a,
@@ -1588,13 +1558,13 @@
               n.a.createElement(
                 T.a,
                 { display: "flex", alignItems: "center" },
-                n.a.createElement(Oa, { color: "success", size: "medium" }),
+                n.a.createElement(Pa, { color: "success", size: "medium" }),
                 "\xa013"
               )
             )
           ),
           n.a.createElement(
-            ja.a,
+            Ba.a,
             null,
             n.a.createElement(
               T.a,
@@ -1618,7 +1588,7 @@
           n.a.createElement(
             T.a,
             { display: "flex", alignItems: "center", px: 3, py: 1 },
-            n.a.createElement(Aa.a, {
+            n.a.createElement(va.a, {
               id: "message-input",
               margin: "normal",
               placeholder: "Type a message",
@@ -1636,7 +1606,7 @@
           )
         );
       }
-      function Da(e) {
+      function ja(e) {
         var a,
           t,
           r,
@@ -1683,8 +1653,8 @@
           localStorage.removeItem("token"), window.location.reload();
         }
         H.clickName = "onLogin";
-        var z = Pa(S),
-          G = Ia(),
+        var z = Ca(S),
+          G = ha(),
           U = u && (f.pathname === u || f.pathname.includes(u));
         if ("title" === v)
           return n.a.createElement(
@@ -1699,7 +1669,7 @@
             h
           );
         if ("divider" === v)
-          return n.a.createElement(fa.a, { className: z.divider });
+          return n.a.createElement(Na.a, { className: z.divider });
         if ("margin" === v)
           return n.a.createElement("section", { style: { marginTop: 240 } });
         var V = Boolean(j),
@@ -1721,7 +1691,7 @@
               null,
               C.badge
                 ? n.a.createElement(
-                    ya.a,
+                    Ia.a,
                     {
                       button: !0,
                       component: u && d.b,
@@ -1737,19 +1707,19 @@
                       disableRipple: !0
                     },
                     n.a.createElement(
-                      ba.a,
+                      fa.a,
                       {
                         className: N()(
                           z.linkIcon,
                           Object(g.a)({}, z.linkIconActive, U)
                         )
                       },
-                      p || n.a.createElement(Ca.a, null)
+                      p || n.a.createElement(Aa.a, null)
                     ),
                     n.a.createElement(
                       xe,
                       { badgeContent: C.badge, color: "success" },
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         classes: {
                           primary: N()(
                             z.linkText,
@@ -1762,7 +1732,7 @@
                         primary: h
                       })
                     ),
-                    n.a.createElement(ka.a, {
+                    n.a.createElement(wa.a, {
                       className: N()(
                         ((c = {}),
                         Object(g.a)(c, z.expand, S),
@@ -1773,7 +1743,7 @@
                     })
                   )
                 : n.a.createElement(
-                    ya.a,
+                    Ia.a,
                     {
                       button: !0,
                       component: u && d.b,
@@ -1789,16 +1759,16 @@
                       disableRipple: !0
                     },
                     n.a.createElement(
-                      ba.a,
+                      fa.a,
                       {
                         className: N()(
                           z.linkIcon,
                           Object(g.a)({}, z.linkIconActive, U)
                         )
                       },
-                      p || n.a.createElement(Ca.a, null)
+                      p || n.a.createElement(Aa.a, null)
                     ),
-                    n.a.createElement(va.a, {
+                    n.a.createElement(ya.a, {
                       classes: {
                         primary: N()(
                           z.linkText,
@@ -1810,7 +1780,7 @@
                       },
                       primary: h
                     }),
-                    n.a.createElement(ka.a, {
+                    n.a.createElement(wa.a, {
                       className: N()(
                         ((E = {}),
                         Object(g.a)(E, z.expand, S),
@@ -1822,7 +1792,7 @@
                   ),
               I &&
                 n.a.createElement(
-                  wa.a,
+                  Ta.a,
                   {
                     in: S && y,
                     timeout: "auto",
@@ -1833,11 +1803,11 @@
                     )
                   },
                   n.a.createElement(
-                    xa.a,
+                    pa.a,
                     { component: "div", disablePadding: !0 },
                     I.map(function(e) {
                       return n.a.createElement(
-                        Da,
+                        ja,
                         Object.assign(
                           {
                             key: (e && e.link) || e.label,
@@ -1858,7 +1828,7 @@
               n.a.Fragment,
               null,
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 {
                   onClick: function(e) {
                     return w ? w(e, K, J, H) : A(e);
@@ -1880,7 +1850,7 @@
                   disableRipple: !0
                 },
                 n.a.createElement(
-                  ba.a,
+                  fa.a,
                   {
                     className: N()(
                       z.linkIcon,
@@ -1888,9 +1858,9 @@
                     ),
                     style: { margin: b && -11 }
                   },
-                  b ? n.a.createElement(Oa, { color: U && "primary" }) : p
+                  b ? n.a.createElement(Pa, { color: U && "primary" }) : p
                 ),
-                n.a.createElement(va.a, {
+                n.a.createElement(ya.a, {
                   classes: {
                     primary: N()(
                       z.linkText,
@@ -1903,14 +1873,14 @@
                   primary: h
                 })
               ),
-              n.a.createElement(La, {
+              n.a.createElement(Ma, {
                 open: R,
                 onClose: function() {
                   W(!1);
                 }
               }),
               n.a.createElement(
-                Ta.a,
+                ba.a,
                 {
                   id: Y,
                   open: V,
@@ -1924,7 +1894,7 @@
                   T.a,
                   { m: 3, display: "flex", flexDirection: "column" },
                   n.a.createElement(re.a, null, "Add section"),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     placeholder: "Section Name",
                     classes: { root: G.input }
                   }),
@@ -1953,12 +1923,12 @@
           y && (e.preventDefault(), O(!S));
         }
       }
-      var Fa = Object(E.k)(function(e) {
+      var La = Object(E.k)(function(e) {
           var a,
             t,
             r = e.location,
             m = e.structure,
-            c = Ia(),
+            c = ha(),
             i = Object(V.a)(),
             s = function(e) {
               return function(a) {
@@ -1986,7 +1956,7 @@
               );
             }),
             n.a.createElement(
-              ga.a,
+              ua.a,
               {
                 variant: p ? "permanent" : "temporary",
                 className: N()(
@@ -2024,11 +1994,11 @@
                 )
               ),
               n.a.createElement(
-                xa.a,
+                pa.a,
                 { className: c.sidebarList, classes: { padding: c.padding } },
                 m.map(function(e) {
                   return n.a.createElement(
-                    Da,
+                    ja,
                     Object.assign(
                       { key: e.id, location: r, isSidebarOpened: p ? o : !o },
                       e,
@@ -2044,7 +2014,7 @@
             e && p ? h(!1) : e || p || h(!0);
           }
         }),
-        Ra = function(e) {
+        Da = function(e) {
           var a = e.children;
           return n.a.createElement(
             T.a,
@@ -2058,9 +2028,9 @@
             a
           );
         },
-        Wa = t(1445),
-        Ha = t(1446),
-        za = Object(L.a)(function(e) {
+        Fa = t(1445),
+        Ra = t(1446),
+        Wa = Object(L.a)(function(e) {
           return {
             widgetWrapper: { display: "flex", minHeight: "100%" },
             inheritHeight: { minHeight: "auto" },
@@ -2102,7 +2072,7 @@
             searchIcon: { color: "rgba(0, 0, 0, 0.23)" }
           };
         });
-      function Ga(e) {
+      function Ha(e) {
         var a,
           t,
           r = e.children,
@@ -2129,7 +2099,7 @@
             "className",
             "style"
           ]),
-          y = za(f),
+          y = Wa(f),
           b = Object(l.useState)(null),
           v = Object(x.a)(b, 2),
           A = v[0],
@@ -2202,7 +2172,7 @@
                       )
                     ),
                     p &&
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "search-field",
                         className: y.textField,
                         label: "Search",
@@ -2210,7 +2180,7 @@
                         variant: "outlined",
                         InputProps: {
                           startAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
                             n.a.createElement(Q.a, { className: y.searchIcon })
                           )
@@ -2229,7 +2199,7 @@
                           },
                           buttonRef: w
                         },
-                        n.a.createElement(Ha.a, null)
+                        n.a.createElement(Ra.a, null)
                       )
                   )
                 )
@@ -2273,10 +2243,10 @@
           )
         );
       }
-      var Ua = t(1386),
-        Va = t(517),
-        Ya = t(1448),
-        Ka = {
+      var za = t(1386),
+        Ga = t(517),
+        Ua = t(1448),
+        Va = {
           palette: {
             primary: {
               main: "#536DFE",
@@ -2345,17 +2315,17 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        Qa = Ue()("3CD4A0")
+        Ya = Ue()("3CD4A0")
           .darken(15)
           .toHexString(),
-        Ja = {
+        Ka = {
           palette: {
             primary: {
-              main: Qa,
-              light: Ue()(Qa)
+              main: Ya,
+              light: Ue()(Ya)
                 .lighten(7.5)
                 .toHexString(),
-              dark: Ue()(Qa)
+              dark: Ue()(Ya)
                 .darken(15)
                 .toHexString()
             },
@@ -2417,7 +2387,7 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        qa = {
+        Qa = {
           palette: {
             primary: {
               main: "#FF5C93",
@@ -2486,7 +2456,7 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        Za = {
+        Ja = {
           palette: {
             contrastText: "#fff",
             type: "dark",
@@ -2557,8 +2527,8 @@
               "0px 12px 33px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A"
           }
         },
-        _a = t(265),
-        Xa = {
+        qa = t(265),
+        Za = {
           typography: {
             h1: { fontSize: "3rem" },
             h2: { fontSize: "2rem" },
@@ -2610,16 +2580,16 @@
             }
           }
         },
-        $a = {
-          default: Object(_a.a)(Object(te.a)({}, Ka, {}, Xa)),
-          secondary: Object(_a.a)(Object(te.a)({}, qa, {}, Xa)),
-          success: Object(_a.a)(Object(te.a)({}, Ja, {}, Xa)),
-          dark: Object(_a.a)(
+        _a = {
+          default: Object(qa.a)(Object(te.a)({}, Va, {}, Za)),
+          secondary: Object(qa.a)(Object(te.a)({}, Qa, {}, Za)),
+          success: Object(qa.a)(Object(te.a)({}, Ka, {}, Za)),
+          dark: Object(qa.a)(
             Object(te.a)(
               {},
-              Za,
+              Ja,
               {},
-              Xa,
+              Za,
               {},
               {
                 overrides: {
@@ -2640,17 +2610,17 @@
             )
           )
         },
-        et = t(1447),
-        at = n.a.createContext(),
-        tt = n.a.createContext();
-      var lt = n.a.memo(
+        Xa = t(1447),
+        $a = n.a.createContext(),
+        et = n.a.createContext();
+      var at = n.a.memo(
           function(e) {
             var a = e.open,
               t = e.id,
               l = e.anchorEl,
               r = R(),
               m = (function() {
-                var e = n.a.useContext(tt);
+                var e = n.a.useContext(et);
                 if (void 0 === e)
                   throw new Error(
                     "useThemeDispatch must be used within a ThemeProvider"
@@ -2658,7 +2628,7 @@
                 return e;
               })();
             return n.a.createElement(
-              Ua.a,
+              za.a,
               {
                 id: t,
                 open: a,
@@ -2668,7 +2638,7 @@
                 elevation: 4
               },
               n.a.createElement(
-                Ga,
+                Ha,
                 { disableWidgetMenu: !0 },
                 n.a.createElement(
                   T.a,
@@ -2687,14 +2657,14 @@
                       "color theme"
                     ),
                     n.a.createElement(
-                      Va.a,
+                      Ga.a,
                       {
                         "aria-label": "theme",
                         value: localStorage.getItem("theme"),
                         onChange: function(e) {
                           return (function(e) {
                             localStorage.setItem("theme", e.target.value),
-                              m($a[e.target.value]);
+                              m(_a[e.target.value]);
                           })(e);
                         }
                       },
@@ -2716,7 +2686,7 @@
                       )
                     )
                   ),
-                  n.a.createElement(fa.a, {
+                  n.a.createElement(Na.a, {
                     style: { width: "100%", margin: "8px 0 16px 0" }
                   }),
                   n.a.createElement(
@@ -2727,13 +2697,13 @@
                       { variant: "body2", weight: "bold", uppercase: !0 },
                       "dark mode"
                     ),
-                    n.a.createElement(Ya.a, {
+                    n.a.createElement(Ua.a, {
                       checked: "dark" === localStorage.getItem("theme"),
                       onChange: function() {
                         "dark" === localStorage.getItem("theme")
                           ? (localStorage.setItem("theme", "default"),
-                            m($a.default))
-                          : (localStorage.setItem("theme", "dark"), m($a.dark));
+                            m(_a.default))
+                          : (localStorage.setItem("theme", "dark"), m(_a.dark));
                       }
                     })
                   ),
@@ -2763,18 +2733,18 @@
             return e.anchorEl === a.anchorEl;
           }
         ),
-        nt = t(570),
-        rt = t(571),
-        mt = t(572),
-        ct = t(615),
-        it = t(617),
-        st = t(385),
-        ot = t(1397),
-        dt = t(573),
-        Et = t(574),
-        ut = t(618),
-        pt = t(22),
-        gt = Object(L.a)(function(e) {
+        tt = t(570),
+        lt = t(571),
+        nt = t(572),
+        rt = t(615),
+        mt = t(617),
+        ct = t(385),
+        it = t(1397),
+        st = t(573),
+        ot = t(574),
+        dt = t(618),
+        Et = t(22),
+        ut = Object(L.a)(function(e) {
           return {
             card: {
               minHeight: "100%",
@@ -2890,7 +2860,7 @@
             checkboxColor: { color: "rgb(185, 185, 185)" }
           };
         }),
-        xt = {
+        pt = {
           tasks: [
             {
               id: 0,
@@ -3079,9 +3049,9 @@
             }
           ]
         },
-        ht = t(278),
-        Nt = t(1450),
-        It = Object(L.a)(function(e) {
+        gt = t(278),
+        xt = t(1450),
+        ht = Object(L.a)(function(e) {
           return {
             title: {
               display: "flex",
@@ -3119,13 +3089,13 @@
             }
           };
         });
-      function ft(e) {
+      function Nt(e) {
         var a = e.product,
           t = e.total,
           r = e.color,
           m = e.registrations,
           c = e.bounce,
-          i = It(),
+          i = ht(),
           s = Object(V.a)(),
           o = Object(l.useState)("daily"),
           d = Object(x.a)(o, 2),
@@ -3142,7 +3112,7 @@
             [E]
           );
         return n.a.createElement(
-          Ga,
+          Ha,
           {
             header: n.a.createElement(
               "div",
@@ -3153,13 +3123,13 @@
                 a
               ),
               n.a.createElement(
-                st.a,
+                ct.a,
                 {
                   value: E,
                   onChange: function(e) {
                     return u(e.target.value);
                   },
-                  input: n.a.createElement(ht.a, {
+                  input: n.a.createElement(gt.a, {
                     disableUnderline: !0,
                     classes: { input: i.selectInput }
                   }),
@@ -3192,9 +3162,9 @@
               )
             ),
             n.a.createElement(
-              pt.d,
+              Et.d,
               { width: 100, height: 70, data: p },
-              n.a.createElement(pt.c, {
+              n.a.createElement(Et.c, {
                 dataKey: "value",
                 fill: s.palette[r].main,
                 radius: 10,
@@ -3221,7 +3191,7 @@
                   },
                   m[E].value
                 ),
-                n.a.createElement(Nt.a, {
+                n.a.createElement(xt.a, {
                   className: N()(
                     i.profitArrow,
                     Object(g.a)({}, !m[E].profit, i.profitArrowDanger)
@@ -3251,7 +3221,7 @@
                   c[E].value,
                   "%"
                 ),
-                n.a.createElement(Nt.a, {
+                n.a.createElement(xt.a, {
                   className: N()(
                     i.profitArrow,
                     Object(g.a)({}, !m[E].profit, i.profitArrowDanger)
@@ -3280,7 +3250,7 @@
                   },
                   10 * m[E].value
                 ),
-                n.a.createElement(Nt.a, {
+                n.a.createElement(xt.a, {
                   className: N()(
                     i.profitArrow,
                     Object(g.a)({}, i.profitArrowDanger, !m[E].profit)
@@ -3296,16 +3266,16 @@
           )
         );
       }
-      var yt = t(1451),
-        bt = t(1452),
-        vt = t(15),
-        Tt = [
+      var It = t(1451),
+        ft = t(1452),
+        yt = t(15),
+        bt = [
           { name: "Group A", value: 400, color: "primary" },
           { name: "Group B", value: 300, color: "secondary" },
           { name: "Group C", value: 300, color: "warning" },
           { name: "Group D", value: 200, color: "success" }
         ],
-        At = [
+        vt = [
           { name: "Client 1", value: 2, color: "primary" },
           { name: "Client 2", value: 2, color: "primary" },
           { name: "Client 3", value: 2, color: "primary" },
@@ -3327,7 +3297,7 @@
           { name: "Client 19", value: 2, color: "primary" },
           { name: "Client 20", value: 2, color: "primary" }
         ],
-        wt = [
+        Tt = [
           {
             id: 1,
             orderId: Math.floor(3e6 * Math.random(0)),
@@ -3389,10 +3359,10 @@
             color: "warning"
           }
         ];
-      function Ct(e, a, t) {
+      function At(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var kt = [
+      var wt = [
         { id: "id", numeric: !0, disablePadding: !0, label: "Order ID" },
         { id: "customer", numeric: !0, disablePadding: !1, label: "Customer" },
         { id: "office", numeric: !0, disablePadding: !1, label: "Office" },
@@ -3417,7 +3387,7 @@
         },
         { id: "status", numeric: !0, disablePadding: !1, label: "Status" }
       ];
-      function Pt(e) {
+      function Ct(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -3426,15 +3396,15 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          nt.a,
+          tt.a,
           null,
           n.a.createElement(
-            rt.a,
+            lt.a,
             null,
             n.a.createElement(
-              mt.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(ct.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
@@ -3442,9 +3412,9 @@
                 classes: { root: a.checkboxColor }
               })
             ),
-            kt.map(function(e) {
+            wt.map(function(e) {
               return n.a.createElement(
-                mt.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "left" : "right",
@@ -3452,7 +3422,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  it.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -3482,13 +3452,13 @@
           )
         );
       }
-      var St = Object(L.a)(function(e) {
+      var kt = Object(L.a)(function(e) {
           return {
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(vt.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -3500,8 +3470,8 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        Ot = function(e) {
-          var a = St(),
+        Pt = function(e) {
+          var a = kt(),
             t = e.numSelected;
           return n.a.createElement(
             H.a,
@@ -3548,26 +3518,26 @@
                 ),
             t > 0
               ? n.a.createElement(
-                  pt.o,
+                  Et.o,
                   { title: "Delete" },
                   n.a.createElement(
                     C.a,
                     { "aria-label": "delete" },
-                    n.a.createElement(yt.a, null)
+                    n.a.createElement(It.a, null)
                   )
                 )
               : n.a.createElement(
-                  pt.o,
+                  Et.o,
                   { title: "Filter list" },
                   n.a.createElement(
                     C.a,
                     { "aria-label": "filter list" },
-                    n.a.createElement(bt.a, null)
+                    n.a.createElement(ft.a, null)
                   )
                 )
           );
         };
-      function Bt(e, a, t) {
+      function St(e, a, t) {
         var l,
           n =
             arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10,
@@ -3584,8 +3554,8 @@
           return (l = c), { value: c };
         });
       }
-      var Mt = function() {
-          var e = gt(),
+      var Ot = function() {
+          var e = ut(),
             a = Object(V.a)(),
             t = Object(l.useState)("monthly"),
             r = Object(x.a)(t, 2),
@@ -3611,17 +3581,17 @@
             k = Object(x.a)(C, 2),
             P = k[0],
             S = k[1],
-            O = P - Math.min(P, wt.length - A * P),
+            O = P - Math.min(P, Tt.length - A * P),
             B = n.a.useMemo(function() {
-              return Bt(10);
+              return St(10);
             }, []),
             M = n.a.useMemo(
               function() {
                 for (
                   var e = [],
-                    a = Bt(31, 3500, 6500, 7500, 1e3),
-                    t = Bt(31, 1500, 7500, 7500, 1500),
-                    l = Bt(31, 1500, 7500, 7500, 1500),
+                    a = St(31, 3500, 6500, 7500, 1e3),
+                    t = St(31, 1500, 7500, 7500, 1500),
+                    l = St(31, 1500, 7500, 7500, 1500),
                     n = 0;
                   n < a.length;
                   n++
@@ -3642,7 +3612,7 @@
               v.a,
               { item: !0, lg: 3, sm: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Support Tracker",
                   bodyClass: e.fullHeightBody,
@@ -3695,15 +3665,15 @@
                       "64%"
                     ),
                     n.a.createElement(
-                      pt.m,
+                      Et.m,
                       { width: "100%", height: 80 },
                       n.a.createElement(
-                        pt.l,
+                        Et.l,
                         null,
                         n.a.createElement(
-                          pt.k,
+                          Et.k,
                           {
-                            data: At,
+                            data: vt,
                             startAngle: 270,
                             endAngle: 0,
                             paddingAngle: 5,
@@ -3712,8 +3682,8 @@
                             dataKey: "value",
                             style: { border: 0 }
                           },
-                          At.map(function(e, t) {
-                            return n.a.createElement(pt.f, {
+                          vt.map(function(e, t) {
+                            return n.a.createElement(Et.f, {
                               key: "cell-".concat(t),
                               fill: a.palette[e.color].main,
                               stroke: ""
@@ -3763,7 +3733,7 @@
                         },
                         "45"
                       ),
-                      n.a.createElement(Oa, { color: "success" })
+                      n.a.createElement(Pa, { color: "success" })
                     )
                   ),
                   n.a.createElement(
@@ -3795,7 +3765,7 @@
                         },
                         "147"
                       ),
-                      n.a.createElement(Oa, { color: "warning" })
+                      n.a.createElement(Pa, { color: "warning" })
                     )
                   ),
                   n.a.createElement(
@@ -3826,7 +3796,7 @@
                         },
                         "351"
                       ),
-                      n.a.createElement(Oa, { color: "primary" })
+                      n.a.createElement(Pa, { color: "primary" })
                     )
                   )
                 )
@@ -3836,7 +3806,7 @@
               v.a,
               { item: !0, lg: 3, sm: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Revenue Breakdown",
                   className: e.card,
@@ -3867,21 +3837,21 @@
                       "1700"
                     ),
                     n.a.createElement(
-                      pt.m,
+                      Et.m,
                       { width: "100%", height: 144 },
                       n.a.createElement(
-                        pt.l,
+                        Et.l,
                         null,
                         n.a.createElement(
-                          pt.k,
+                          Et.k,
                           {
-                            data: Tt,
+                            data: bt,
                             innerRadius: 30,
                             outerRadius: 40,
                             dataKey: "value"
                           },
-                          Tt.map(function(e, t) {
-                            return n.a.createElement(pt.f, {
+                          bt.map(function(e, t) {
+                            return n.a.createElement(Et.f, {
                               key: "cell-".concat(t),
                               fill: a.palette[e.color].main,
                               stroke: ""
@@ -3897,14 +3867,14 @@
                     n.a.createElement(
                       "div",
                       { className: e.pieChartLegendWrapper },
-                      Tt.map(function(a, t) {
+                      bt.map(function(a, t) {
                         var l = a.name,
                           r = a.value,
                           m = a.color;
                         return n.a.createElement(
                           "div",
                           { key: m, className: e.legendItemContainer },
-                          n.a.createElement(Oa, {
+                          n.a.createElement(Pa, {
                             color: m,
                             style: { marginRight: 5 }
                           }),
@@ -3937,7 +3907,7 @@
               v.a,
               { item: !0, lg: 3, sm: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "App Performance",
                   className: e.card,
@@ -3949,7 +3919,7 @@
                   n.a.createElement(
                     "div",
                     { className: e.legendElement },
-                    n.a.createElement(Oa, { color: "warning" }),
+                    n.a.createElement(Pa, { color: "warning" }),
                     n.a.createElement(
                       Ne,
                       {
@@ -3964,7 +3934,7 @@
                   n.a.createElement(
                     "div",
                     { className: e.legendElement },
-                    n.a.createElement(Oa, { color: "primary" }),
+                    n.a.createElement(Pa, { color: "primary" }),
                     n.a.createElement(
                       Ne,
                       {
@@ -4021,7 +3991,7 @@
               v.a,
               { item: !0, lg: 3, sm: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Server Overview",
                   className: e.card,
@@ -4045,12 +4015,12 @@
                     "div",
                     { className: e.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      pt.m,
+                      Et.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        pt.b,
+                        Et.b,
                         { data: B },
-                        n.a.createElement(pt.a, {
+                        n.a.createElement(Et.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: a.palette.secondary.main,
@@ -4080,12 +4050,12 @@
                     "div",
                     { className: e.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      pt.m,
+                      Et.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        pt.b,
+                        Et.b,
                         { data: B },
-                        n.a.createElement(pt.a, {
+                        n.a.createElement(Et.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: a.palette.primary.main,
@@ -4115,12 +4085,12 @@
                     "div",
                     { className: e.serverOverviewElementChartWrapper },
                     n.a.createElement(
-                      pt.m,
+                      Et.m,
                       { height: 50, width: "99%" },
                       n.a.createElement(
-                        pt.b,
+                        Et.b,
                         { data: B },
-                        n.a.createElement(pt.a, {
+                        n.a.createElement(Et.a, {
                           type: "natural",
                           dataKey: "value",
                           stroke: a.palette.warning.main,
@@ -4138,7 +4108,7 @@
               v.a,
               { item: !0, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   bodyClass: e.mainChartBody,
                   header: n.a.createElement(
@@ -4160,7 +4130,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(Oa, { color: "warning" }),
+                        n.a.createElement(Pa, { color: "warning" }),
                         n.a.createElement(
                           Ne,
                           { className: e.mainChartLegentElement },
@@ -4170,7 +4140,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(Oa, { color: "primary" }),
+                        n.a.createElement(Pa, { color: "primary" }),
                         n.a.createElement(
                           Ne,
                           { className: e.mainChartLegentElement },
@@ -4180,7 +4150,7 @@
                       n.a.createElement(
                         "div",
                         { className: e.mainChartHeaderLabel },
-                        n.a.createElement(Oa, { color: "secondary" }),
+                        n.a.createElement(Pa, { color: "secondary" }),
                         n.a.createElement(
                           Ne,
                           { className: e.mainChartLegentElement },
@@ -4189,13 +4159,13 @@
                       )
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: m,
                         onChange: function(e) {
                           return c(e.target.value);
                         },
-                        input: n.a.createElement(ot.a, {
+                        input: n.a.createElement(it.a, {
                           labelWidth: 0,
                           classes: {
                             notchedOutline: e.mainChartSelectRoot,
@@ -4212,21 +4182,21 @@
                   )
                 },
                 n.a.createElement(
-                  pt.m,
+                  Et.m,
                   { width: "100%", minWidth: 500, height: 350 },
                   n.a.createElement(
-                    pt.g,
+                    Et.g,
                     {
                       margin: { top: 0, right: -15, left: -15, bottom: 0 },
                       data: M
                     },
-                    n.a.createElement(pt.q, {
+                    n.a.createElement(Et.q, {
                       ticks: [0, 2500, 5e3, 7500],
                       tick: { fill: a.palette.text.hint + "80", fontSize: 14 },
                       stroke: a.palette.text.hint + "80",
                       tickLine: !1
                     }),
-                    n.a.createElement(pt.p, {
+                    n.a.createElement(Et.p, {
                       tickFormatter: function(e) {
                         return e + 1;
                       },
@@ -4234,15 +4204,15 @@
                       stroke: a.palette.text.hint + "80",
                       tickLine: !1
                     }),
-                    n.a.createElement(pt.o, null),
-                    n.a.createElement(pt.a, {
+                    n.a.createElement(Et.o, null),
+                    n.a.createElement(Et.a, {
                       type: "natural",
                       dataKey: "desktop",
                       fill: a.palette.background.light,
                       strokeWidth: 0,
                       activeDot: !1
                     }),
-                    n.a.createElement(pt.i, {
+                    n.a.createElement(Et.i, {
                       type: "natural",
                       dataKey: "mobile",
                       stroke: a.palette.primary.main,
@@ -4250,7 +4220,7 @@
                       dot: !1,
                       activeDot: !1
                     }),
-                    n.a.createElement(pt.i, {
+                    n.a.createElement(Et.i, {
                       type: "linear",
                       dataKey: "tablet",
                       stroke: a.palette.warning.main,
@@ -4266,38 +4236,38 @@
                 )
               )
             ),
-            xt.bigStat.map(function(e) {
+            pt.bigStat.map(function(e) {
               return n.a.createElement(
                 v.a,
                 { item: !0, md: 4, sm: 6, xs: 12, key: e.product },
-                n.a.createElement(ft, e)
+                n.a.createElement(Nt, e)
               );
             }),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { noBodyPadding: !0, bodyClass: e.tableWidget },
-                n.a.createElement(Ot, { numSelected: I.length }),
+                n.a.createElement(Pt, { numSelected: I.length }),
                 n.a.createElement(
                   "div",
                   { className: e.tableWrapper },
                   n.a.createElement(
-                    dt.a,
+                    st.a,
                     {
                       className: e.table,
                       "aria-labelledby": "tableTitle",
                       "aria-label": "recent orders"
                     },
-                    n.a.createElement(Pt, {
+                    n.a.createElement(Ct, {
                       classes: e,
                       numSelected: I.length,
                       order: o,
                       orderBy: p,
                       onSelectAllClick: function(e) {
                         if (e.target.checked) {
-                          var a = wt.map(function(e) {
+                          var a = Tt.map(function(e) {
                             return e.id;
                           });
                           f(a);
@@ -4306,10 +4276,10 @@
                       onRequestSort: function(e, a) {
                         d(p === a && "desc" === o ? "asc" : "desc"), g(a);
                       },
-                      rowCount: wt.length
+                      rowCount: Tt.length
                     }),
                     n.a.createElement(
-                      Et.a,
+                      ot.a,
                       null,
                       (function(e, a) {
                         var t = e.map(function(e, a) {
@@ -4325,14 +4295,14 @@
                           })
                         );
                       })(
-                        wt,
+                        Tt,
                         (function(e, a) {
                           return "desc" === e
                             ? function(e, t) {
-                                return Ct(e, t, a);
+                                return At(e, t, a);
                               }
                             : function(e, t) {
-                                return -Ct(e, t, a);
+                                return -At(e, t, a);
                               };
                         })(o, p)
                       )
@@ -4342,7 +4312,7 @@
                             r = ((l = a.id), -1 !== I.indexOf(l)),
                             m = "orders-table-checkbox-".concat(t);
                           return n.a.createElement(
-                            rt.a,
+                            lt.a,
                             {
                               hover: !0,
                               onClick: function(e) {
@@ -4370,16 +4340,16 @@
                               selected: r
                             },
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               { padding: "checkbox" },
-                              n.a.createElement(ct.a, {
+                              n.a.createElement(rt.a, {
                                 checked: r,
                                 inputProps: { "aria-labelledby": m },
                                 classes: { root: e.checkboxColor }
                               })
                             ),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               {
                                 component: "th",
                                 id: m,
@@ -4389,7 +4359,7 @@
                               a.orderId
                             ),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               null,
                               n.a.createElement(
                                 T.a,
@@ -4414,13 +4384,13 @@
                                 )
                               )
                             ),
-                            n.a.createElement(mt.a, null, a.office),
-                            n.a.createElement(mt.a, null, a.weight),
-                            n.a.createElement(mt.a, null, "$", a.price),
-                            n.a.createElement(mt.a, null, a.purDate),
-                            n.a.createElement(mt.a, null, a.delDate),
+                            n.a.createElement(nt.a, null, a.office),
+                            n.a.createElement(nt.a, null, a.weight),
+                            n.a.createElement(nt.a, null, "$", a.price),
+                            n.a.createElement(nt.a, null, a.purDate),
+                            n.a.createElement(nt.a, null, a.delDate),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               null,
                               n.a.createElement(he, {
                                 label: a.status,
@@ -4431,17 +4401,17 @@
                         }),
                       O > 0 &&
                         n.a.createElement(
-                          rt.a,
+                          lt.a,
                           { style: { height: 53 * O } },
-                          n.a.createElement(mt.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     )
                   )
                 ),
-                n.a.createElement(ut.a, {
+                n.a.createElement(dt.a, {
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
-                  count: wt.length,
+                  count: Tt.length,
                   rowsPerPage: P,
                   page: A,
                   backIconButtonProps: { "aria-label": "previous page" },
@@ -4457,7 +4427,7 @@
             )
           );
         },
-        jt = Object(L.a)(function(e) {
+        Bt = Object(L.a)(function(e) {
           return {
             dashedBorder: {
               border: "1px dashed",
@@ -4470,8 +4440,8 @@
             text: { marginBottom: e.spacing(2) }
           };
         });
-      function Lt() {
-        var e = jt();
+      function Mt() {
+        var e = Bt();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -4482,7 +4452,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Headings", disableWidgetMenu: !0 },
                 n.a.createElement(
                   "div",
@@ -4520,7 +4490,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Typography Colors", disableWidgetMenu: !0 },
                 n.a.createElement(
                   "div",
@@ -4567,7 +4537,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Basic Text Settings", disableWidgetMenu: !0 },
                 n.a.createElement(
                   "div",
@@ -4615,7 +4585,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Text Size", disableWidgetMenu: !0 },
                 n.a.createElement(
                   "div",
@@ -4651,9 +4621,9 @@
           )
         );
       }
-      var Dt = t(1454),
-        Ft = t(51),
-        Rt =
+      var jt = t(1454),
+        Lt = t(51),
+        Dt =
           (t(995),
           Object(L.a)(function(e) {
             return {
@@ -4728,7 +4698,7 @@
               notificationComponent: { paddingRight: e.spacing(4) }
             };
           })),
-        Wt = Object(L.a)(function(e) {
+        Ft = Object(L.a)(function(e) {
           return {
             codeContainer: {
               display: function(e) {
@@ -4745,38 +4715,38 @@
             }
           };
         }),
-        Ht = t(2412),
-        zt = t(1453),
-        Gt = function(e) {
+        Rt = t(2412),
+        Wt = t(1453),
+        Ht = function(e) {
           var a = e.children,
             t = e.row,
             l = e.inline,
-            r = Wt({ row: t, inline: l });
+            r = Ft({ row: t, inline: l });
           return n.a.createElement(
             "div",
             { className: r.codeContainer },
             n.a.createElement(
-              Ht.a,
+              Rt.a,
               {
                 className: r.codeComponent,
                 language: "javascript",
-                style: zt.a,
+                style: Wt.a,
                 customStyle: l ? { padding: "2px 6px", margin: "-0.5em 0" } : {}
               },
               a
             )
           );
         },
-        Ut = [
-          Ft.b.POSITION.TOP_LEFT,
-          Ft.b.POSITION.TOP_CENTER,
-          Ft.b.POSITION.TOP_RIGHT,
-          Ft.b.POSITION.BOTTOM_LEFT,
-          Ft.b.POSITION.BOTTOM_CENTER,
-          Ft.b.POSITION.BOTTOM_RIGHT
+        zt = [
+          Lt.b.POSITION.TOP_LEFT,
+          Lt.b.POSITION.TOP_CENTER,
+          Lt.b.POSITION.TOP_RIGHT,
+          Lt.b.POSITION.BOTTOM_LEFT,
+          Lt.b.POSITION.BOTTOM_CENTER,
+          Lt.b.POSITION.BOTTOM_RIGHT
         ];
-      function Vt(e) {
-        var a = Rt(),
+      function Gt(e) {
+        var a = Dt(),
           t = Object(l.useState)(2),
           r = Object(x.a)(t, 2),
           m = r[0],
@@ -4791,9 +4761,9 @@
           n.a.createElement(
             v.a,
             { container: !0, spacing: 3 },
-            n.a.createElement(Ft.a, {
+            n.a.createElement(Lt.a, {
               className: a.toastsContainer,
-              closeButton: n.a.createElement(Yt, {
+              closeButton: n.a.createElement(Ut, {
                 className: a.notificationCloseButton
               }),
               closeOnClick: !1,
@@ -4803,7 +4773,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Layout Options", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -4887,7 +4857,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Notifications Types", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -4940,7 +4910,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Usage", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -4954,7 +4924,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Gt,
+                  Ht,
                   null,
                   "\n  // import needed components, functions and styles\n  import { ToastContainer, toast } from 'react-toastify';\n  import 'react-toastify/dist/ReactToastify.css';\n\n  const Page = () => {\n    <div>\n      <ToastContainer />\n      <button onClick={() => toast('Toast Message')}>\n        show notification\n      </button>\n    </div>\n  };\n            "
                 ),
@@ -4973,7 +4943,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Notification Types Examples", disableWidgetMenu: !0 },
                 n.a.createElement(Ke, {
                   className: a.notificationItem,
@@ -5029,7 +4999,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Notification Types Examples", disableWidgetMenu: !0 },
                 n.a.createElement(Ke, {
                   className: a.notificationItem,
@@ -5073,7 +5043,7 @@
               v.a,
               { item: !0, xs: 12, md: 6, lg: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Notification Types Examples", disableWidgetMenu: !0 },
                 n.a.createElement(Ke, {
                   className: a.notificationItem,
@@ -5122,7 +5092,7 @@
           )
         );
         function E() {
-          Ft.b.update(o, {
+          Lt.b.update(o, {
             render: n.a.createElement(Ke, {
               type: "message",
               message: "Message was sent successfully!",
@@ -5164,7 +5134,7 @@
                 };
             }
             var l = (function(e, t) {
-              return Object(Ft.b)(
+              return Object(Lt.b)(
                 n.a.createElement(
                   Ke,
                   Object.assign({}, e, { className: a.notificationComponent })
@@ -5173,7 +5143,7 @@
               );
             })(t, {
               type: e,
-              position: Ut[m],
+              position: zt[m],
               progressClassName: a.progress,
               onClose:
                 "error" === e &&
@@ -5189,18 +5159,18 @@
           c(e);
         }
       }
-      function Yt(e) {
+      function Ut(e) {
         var a = e.closeToast,
           t = e.className;
-        return n.a.createElement(Dt.a, { className: t, onClick: a });
+        return n.a.createElement(jt.a, { className: t, onClick: a });
       }
-      var Kt = t(636),
-        Qt = t.n(Kt),
-        Jt = Object(L.a)(function(e) {
+      var Vt = t(636),
+        Yt = t.n(Vt),
+        Kt = Object(L.a)(function(e) {
           return { tableWrapper: { overflowX: "auto" } };
         }),
-        qt = { sent: "success", pending: "warning", declined: "secondary" };
-      function Zt(e) {
+        Qt = { sent: "success", pending: "warning", declined: "secondary" };
+      function Jt(e) {
         var a = e.data,
           t = Object.keys(a[0]).map(function(e) {
             return e.toUpperCase();
@@ -5209,21 +5179,21 @@
           t.shift(),
           t.pop(),
           n.a.createElement(
-            dt.a,
+            st.a,
             { className: "mb-0" },
             n.a.createElement(
-              nt.a,
+              tt.a,
               null,
               n.a.createElement(
-                rt.a,
+                lt.a,
                 null,
                 t.map(function(e) {
-                  return n.a.createElement(mt.a, { key: e }, e);
+                  return n.a.createElement(nt.a, { key: e }, e);
                 })
               )
             ),
             n.a.createElement(
-              Et.a,
+              ot.a,
               null,
               a.map(function(e) {
                 var a = e.id,
@@ -5236,10 +5206,10 @@
                   s = e.status,
                   o = e.color;
                 return n.a.createElement(
-                  rt.a,
+                  lt.a,
                   { key: a },
                   n.a.createElement(
-                    mt.a,
+                    nt.a,
                     { className: "fw-normal" },
                     n.a.createElement(
                       T.a,
@@ -5253,18 +5223,18 @@
                       t
                     )
                   ),
-                  n.a.createElement(mt.a, null, l),
-                  n.a.createElement(mt.a, null, r),
-                  n.a.createElement(mt.a, null, m),
-                  n.a.createElement(mt.a, null, c),
-                  n.a.createElement(mt.a, null, i),
+                  n.a.createElement(nt.a, null, l),
+                  n.a.createElement(nt.a, null, r),
+                  n.a.createElement(nt.a, null, m),
+                  n.a.createElement(nt.a, null, c),
+                  n.a.createElement(nt.a, null, i),
                   n.a.createElement(
-                    mt.a,
+                    nt.a,
                     null,
                     n.a.createElement(
                       Ie,
                       {
-                        color: qt[s.toLowerCase()],
+                        color: Qt[s.toLowerCase()],
                         size: "small",
                         className: "px-2",
                         variant: "contained"
@@ -5278,7 +5248,7 @@
           )
         );
       }
-      var _t = [
+      var qt = [
         ["Joe James", "Example Inc.", "Yonkers", "NY"],
         ["John Walsh", "Example Inc.", "Hartford", "CT"],
         ["Bob Herm", "Example Inc.", "Tampa", "FL"],
@@ -5297,8 +5267,8 @@
         ["Serafima Babatunde", "Example Inc.", "Tampa", "FL"],
         ["Gaston Festus", "Example Inc.", "Tampa", "FL"]
       ];
-      function Xt() {
-        var e = Jt();
+      function Zt() {
+        var e = Kt();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -5308,9 +5278,9 @@
             n.a.createElement(
               v.a,
               { item: !0, xs: 12 },
-              n.a.createElement(Qt.a, {
+              n.a.createElement(Yt.a, {
                 title: "Employee List",
-                data: _t,
+                data: qt,
                 columns: ["Name", "Company", "City", "State"],
                 options: { filterType: "checkbox" }
               })
@@ -5319,952 +5289,952 @@
               v.a,
               { item: !0, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Material-UI Table",
                   noBodyPadding: !0,
                   bodyClass: e.tableWrapper
                 },
-                n.a.createElement(Zt, { data: xt.table })
+                n.a.createElement(Jt, { data: pt.table })
               )
             )
           )
         );
       }
-      var $t = t(1471),
-        el = t(1472),
-        al = t(1473),
-        tl = t(1474),
-        ll = t(1475),
-        nl = t(1476),
-        rl = t(1477),
-        ml = t(1478),
-        cl = t(1479),
-        il = t(1480),
-        sl = t(1481),
-        ol = t(1482),
-        dl = t(1483),
-        El = t(1484),
-        ul = t(1485),
-        pl = t(1486),
-        gl = t(1487),
-        xl = t(1488),
-        hl = t(1489),
-        Nl = t(1490),
-        Il = t(1491),
-        fl = t(1492),
-        yl = t(1493),
-        bl = t(1494),
-        vl = t(1495),
-        Tl = t(1496),
-        Al = t(1497),
-        wl = t(1498),
-        Cl = t(1499),
-        kl = t(1500),
-        Pl = t(1501),
-        Sl = t(1502),
-        Ol = t(1503),
-        Bl = t(1504),
-        Ml = t(1505),
-        jl = t(1506),
-        Ll = t(1507),
-        Dl = t(1508),
-        Fl = t(1509),
-        Rl = t(1510),
-        Wl = t(1511),
-        Hl = t(1512),
-        zl = t(1513),
-        Gl = t(1514),
-        Ul = t(1515),
-        Vl = t(1516),
-        Yl = t(1517),
-        Kl = t(1518),
-        Ql = t(1519),
-        Jl = t(1520),
-        ql = t(1521),
-        Zl = t(1522),
-        _l = t(1523),
-        Xl = t(1524),
-        $l = t(1525),
-        en = t(1526),
-        an = t(1527),
-        tn = t(1528),
-        ln = t(1529),
-        nn = t(1530),
-        rn = t(1531),
-        mn = t(1532),
-        cn = t(1533),
-        sn = t(1534),
-        on = t(1535),
-        dn = t(1536),
-        En = t(1537),
-        un = t(1538),
-        pn = t(1539),
-        gn = t(1540),
-        xn = t(1541),
-        hn = t(1542),
-        Nn = t(1543),
-        In = t(1544),
-        fn = t(1545),
-        yn = t(1546),
-        bn = t(1547),
-        vn = t(1548),
-        Tn = t(1549),
-        An = t(1550),
-        wn = t(1551),
-        Cn = t(1552),
-        kn = t(1553),
-        Pn = t(1554),
-        Sn = t(1555),
-        On = t(1556),
-        Bn = t(1557),
-        Mn = t(1558),
-        jn = t(1559),
-        Ln = t(1560),
-        Dn = t(1561),
-        Fn = t(1562),
-        Rn = t(1563),
-        Wn = t(1564),
-        Hn = t(1565),
-        zn = t(1566),
-        Gn = t(1567),
-        Un = t(1568),
-        Vn = t(1569),
-        Yn = t(1570),
-        Kn = t(1571),
-        Qn = t(1572),
-        Jn = t(1573),
-        qn = t(1574),
-        Zn = t(1575),
-        _n = t(1576),
-        Xn = t(1577),
-        $n = t(1578),
-        er = t(1579),
-        ar = t(1580),
-        tr = t(1581),
-        lr = t(1582),
-        nr = t(1583),
-        rr = t(1584),
-        mr = t(1585),
-        cr = t(1586),
-        ir = t(1587),
-        sr = t(1588),
-        or = t(1589),
-        dr = t(1590),
-        Er = t(1591),
-        ur = t(1592),
-        pr = t(1593),
-        gr = t(1594),
-        xr = t(1595),
-        hr = t(1596),
-        Nr = t(1597),
-        Ir = t(1598),
-        fr = t(1599),
-        yr = t(1600),
-        br = t(1602),
-        vr = t(1603),
-        Tr = t(1604),
-        Ar = t(1605),
-        wr = t(1606),
-        Cr = t(1607),
-        kr = t(1608),
-        Pr = t(1609),
-        Sr = t(1610),
-        Or = t(1611),
-        Br = t(1612),
-        Mr = t(1613),
-        jr = t(1614),
-        Lr = t(1615),
-        Dr = t(1616),
-        Fr = t(1617),
-        Rr = t(1618),
-        Wr = t(1619),
-        Hr = t(1620),
-        zr = t(1621),
-        Gr = t(1622),
-        Ur = t(1623),
-        Vr = t(1624),
-        Yr = t(1625),
-        Kr = t(1626),
-        Qr = t(1627),
-        Jr = t(1628),
-        qr = t(1629),
-        Zr = t(1630),
-        _r = t(1631),
-        Xr = t(1632),
-        $r = t(1633),
-        em = t(1635),
-        am = t(1636),
-        tm = t(1637),
-        lm = t(1638),
-        nm = t(1639),
-        rm = t(1640),
-        mm = t(1641),
-        cm = t(1642),
-        im = t(1643),
-        sm = t(1644),
-        om = t(1645),
-        dm = t(1646),
-        Em = t(1647),
-        um = t(1648),
-        pm = t(1649),
-        gm = t(1650),
-        xm = t(1651),
-        hm = t(1652),
-        Nm = t(1653),
-        Im = t(1654),
-        fm = t(1655),
-        ym = t(1656),
-        bm = t(1657),
-        vm = t(1658),
-        Tm = t(1659),
-        Am = t(1660),
-        wm = t(1661),
-        Cm = t(1662),
-        km = t(1663),
-        Pm = t(1664),
-        Sm = t(1665),
-        Om = t(1666),
-        Bm = t(1667),
-        Mm = t(1668),
-        jm = t(1669),
-        Lm = t(1670),
-        Dm = t(1671),
-        Fm = t(1672),
-        Rm = t(1673),
-        Wm = t(1674),
-        Hm = t(1675),
-        zm = t(1676),
-        Gm = t(1677),
-        Um = t(1678),
-        Vm = t(1679),
-        Ym = t(1680),
-        Km = t(1681),
-        Qm = t(1682),
-        Jm = t(1683),
-        qm = t(1684),
-        Zm = t(1685),
-        _m = t(1686),
-        Xm = t(1687),
-        $m = t(1688),
-        ec = t(1689),
-        ac = t(1690),
-        tc = t(1691),
-        lc = t(1692),
-        nc = t(1693),
-        rc = t(1694),
-        mc = t(1695),
-        cc = t(1696),
-        ic = t(1697),
-        sc = t(1698),
-        oc = t(1699),
-        dc = t(1700),
-        Ec = t(1701),
-        uc = t(1702),
-        pc = t(1703),
-        gc = t(1704),
-        xc = t(1705),
-        hc = t(1706),
-        Nc = t(1707),
-        Ic = t(1708),
-        fc = t(1709),
-        yc = t(1710),
-        bc = t(1711),
-        vc = t(1712),
-        Tc = t(1713),
-        Ac = t(1714),
-        wc = t(1715),
-        Cc = t(1716),
-        kc = t(1717),
-        Pc = t(1718),
-        Sc = t(1719),
-        Oc = t(1720),
-        Bc = t(1721),
-        Mc = t(1722),
-        jc = t(1723),
-        Lc = t(1724),
-        Dc = t(1725),
-        Fc = t(1726),
-        Rc = t(1727),
-        Wc = t(1728),
-        Hc = t(1729),
-        zc = t(1730),
-        Gc = t(1731),
-        Uc = t(1732),
-        Vc = t(1733),
-        Yc = t(1734),
-        Kc = t(1735),
-        Qc = t(1736),
-        Jc = t(1737),
-        qc = t(1738),
-        Zc = t(1739),
-        _c = t(1740),
-        Xc = t(1741),
-        $c = t(1742),
-        ei = t(1743),
-        ai = t(1744),
-        ti = t(1745),
-        li = t(1746),
-        ni = t(1747),
-        ri = t(1748),
-        mi = t(1749),
-        ci = t(1750),
-        ii = t(1751),
-        si = t(1752),
-        oi = t(1753),
-        di = t(1754),
-        Ei = t(1755),
-        ui = t(1756),
-        pi = t(1757),
-        gi = t(1758),
-        xi = t(1759),
-        hi = t(1760),
-        Ni = t(1761),
-        Ii = t(1762),
-        fi = t(1763),
-        yi = t(1764),
-        bi = t(1765),
-        vi = t(1766),
-        Ti = t(1767),
-        Ai = t(1768),
-        wi = t(1769),
-        Ci = t(1770),
-        ki = t(1771),
-        Pi = t(1772),
-        Si = t(1773),
-        Oi = t(1774),
-        Bi = t(1775),
-        Mi = t(1776),
-        ji = t(1777),
-        Li = t(1778),
-        Di = t(1779),
-        Fi = t(1780),
-        Ri = t(1781),
-        Wi = t(1782),
-        Hi = t(1783),
-        zi = t(1784),
-        Gi = t(1785),
-        Ui = t(1786),
-        Vi = t(1787),
-        Yi = t(1788),
-        Ki = t(1789),
-        Qi = t(1790),
-        Ji = t(1791),
-        qi = t(1792),
-        Zi = t(1793),
-        _i = t(1794),
-        Xi = t(1795),
-        $i = t(1796),
-        es = t(1797),
-        as = t(1798),
-        ts = t(1799),
-        ls = t(1800),
-        ns = t(1801),
-        rs = t(1802),
-        ms = t(1803),
-        cs = t(1804),
-        is = t(1805),
-        ss = t(1806),
-        os = t(1807),
-        ds = t(1808),
-        Es = t(1809),
-        us = t(1810),
-        ps = t(1811),
-        gs = t(1812),
-        xs = t(1813),
-        hs = t(1814),
-        Ns = t(1815),
-        Is = t(1816),
-        fs = t(1817),
-        ys = t(1818),
-        bs = t(1819),
-        vs = t(1820),
-        Ts = t(1821),
-        As = t(1822),
-        ws = t(1823),
-        Cs = t(1824),
-        ks = t(1825),
-        Ps = t(1826),
-        Ss = t(1827),
-        Os = t(1828),
-        Bs = t(1829),
-        Ms = t(1830),
-        js = t(1831),
-        Ls = t(1832),
-        Ds = t(1833),
-        Fs = t(1834),
-        Rs = t(1835),
-        Ws = t(1836),
-        Hs = t(1837),
-        zs = t(1838),
-        Gs = t(1839),
-        Us = t(1840),
-        Vs = t(1841),
-        Ys = t(1842),
-        Ks = t(1843),
-        Qs = t(1844),
-        Js = t(1845),
-        qs = t(1846),
-        Zs = t(1847),
-        _s = t(1848),
-        Xs = t(1849),
-        $s = t(1850),
-        eo = t(1851),
-        ao = t(1852),
-        to = t(1853),
-        lo = t(1854),
-        no = t(1855),
-        ro = t(1856),
-        mo = t(1857),
-        co = t(1858),
-        io = t(1859),
-        so = t(1860),
-        oo = t(1861),
-        Eo = t(1862),
-        uo = t(1863),
-        po = t(1864),
-        go = t(1865),
-        xo = t(1866),
-        ho = t(1867),
-        No = t(1868),
-        Io = t(1869),
-        fo = t(1870),
-        yo = t(1871),
-        bo = t(1872),
-        vo = t(1873),
-        To = t(1874),
-        Ao = t(1875),
-        wo = t(1876),
-        Co = t(1877),
-        ko = t(1878),
-        Po = t(1879),
-        So = t(1880),
-        Oo = t(1881),
-        Bo = t(1882),
-        Mo = t(1883),
-        jo = t(1884),
-        Lo = t(1885),
-        Do = t(1886),
-        Fo = t(1887),
-        Ro = t(1888),
-        Wo = t(1889),
-        Ho = t(1890),
-        zo = t(1891),
-        Go = t(1892),
-        Uo = t(1893),
-        Vo = t(1894),
-        Yo = t(1895),
-        Ko = t(1896),
-        Qo = t(1897),
-        Jo = t(1898),
-        qo = t(1899),
-        Zo = t(1900),
-        _o = t(1901),
-        Xo = t(1902),
-        $o = t(1903),
-        ed = t(1904),
-        ad = t(1905),
-        td = t(1906),
-        ld = t(1907),
-        nd = t(1908),
-        rd = t(1909),
-        md = t(1910),
-        cd = t(1911),
-        id = t(1912),
-        sd = t(1913),
-        od = t(1914),
-        dd = t(1915),
-        Ed = t(1916),
-        ud = t(1917),
-        pd = t(1918),
-        gd = t(1919),
-        xd = t(1920),
-        hd = t(1921),
-        Nd = t(1922),
-        Id = t(1923),
-        fd = t(1924),
-        yd = t(1925),
-        bd = t(1926),
-        vd = t(1927),
-        Td = t(1928),
-        Ad = t(1929),
-        wd = t(1930),
-        Cd = t(1931),
-        kd = t(1932),
-        Pd = t(1933),
-        Sd = t(1934),
-        Od = t(1935),
-        Bd = t(1936),
-        Md = t(1937),
-        jd = t(1938),
-        Ld = t(1939),
-        Dd = t(1940),
-        Fd = t(1941),
-        Rd = t(1942),
-        Wd = t(1943),
-        Hd = t(1944),
-        zd = t(1945),
-        Gd = t(1946),
-        Ud = t(1947),
-        Vd = t(1948),
-        Yd = t(1949),
-        Kd = t(1950),
-        Qd = t(1951),
-        Jd = t(1952),
-        qd = t(1953),
-        Zd = t(1954),
-        _d = t(1955),
-        Xd = t(1956),
-        $d = t(1957),
-        eE = t(1958),
-        aE = t(1959),
-        tE = t(1960),
-        lE = t(1961),
-        nE = t(1962),
-        rE = t(1963),
-        mE = t(1964),
-        cE = t(1965),
-        iE = t(1966),
-        sE = t(1967),
-        oE = t(1968),
-        dE = t(1969),
-        EE = t(1970),
-        uE = t(1971),
-        pE = t(1972),
-        gE = t(1973),
-        xE = t(1974),
-        hE = t(1975),
-        NE = t(1976),
-        IE = t(1977),
-        fE = t(1978),
-        yE = t(1979),
-        bE = t(1980),
-        vE = t(1981),
-        TE = t(1982),
-        AE = t(1983),
-        wE = t(1984),
-        CE = t(1985),
-        kE = t(1986),
-        PE = t(1987),
-        SE = t(1988),
-        OE = t(1989),
-        BE = t(1990),
-        ME = t(1991),
-        jE = t(1992),
-        LE = t(1993),
-        DE = t(1994),
-        FE = t(1995),
-        RE = t(1996),
-        WE = t(1997),
-        HE = t(1998),
-        zE = t(1999),
-        GE = t(2e3),
-        UE = t(2001),
-        VE = t(2002),
-        YE = t(2003),
-        KE = t(2004),
-        QE = t(2005),
-        JE = t(2006),
-        qE = t(2007),
-        ZE = t(2008),
-        _E = t(2009),
-        XE = t(2010),
-        $E = t(2011),
-        eu = t(2012),
-        au = t(2013),
-        tu = t(2014),
-        lu = t(2015),
-        nu = t(2017),
-        ru = t(2018),
-        mu = t(2019),
-        cu = t(2020),
-        iu = t(2021),
-        su = t(2022),
-        ou = t(2023),
-        du = t(2024),
-        Eu = t(2025),
-        uu = t(2026),
-        pu = t(2027),
-        gu = t(2028),
-        xu = t(2029),
-        hu = t(2030),
-        Nu = t(2031),
-        Iu = t(2032),
-        fu = t(2033),
-        yu = t(2034),
-        bu = t(2035),
-        vu = t(2036),
-        Tu = t(2037),
-        Au = t(2038),
-        wu = t(2039),
-        Cu = t(2040),
-        ku = t(2041),
-        Pu = t(2042),
-        Su = t(2043),
-        Ou = t(2044),
-        Bu = t(2045),
-        Mu = t(2046),
-        ju = t(2047),
-        Lu = t(2048),
-        Du = t(2049),
-        Fu = t(2050),
-        Ru = t(2051),
-        Wu = t(2052),
-        Hu = t(2053),
-        zu = t(2054),
-        Gu = t(2055),
-        Uu = t(2056),
-        Vu = t(2057),
-        Yu = t(2058),
-        Ku = t(2059),
-        Qu = t(2060),
-        Ju = t(2061),
-        qu = t(2062),
-        Zu = t(2063),
-        _u = t(2064),
-        Xu = t(2065),
-        $u = t(2066),
-        ep = t(2067),
-        ap = t(2068),
-        tp = t(2069),
-        lp = t(2070),
-        np = t(2071),
-        rp = t(2072),
-        mp = t(2073),
-        cp = t(2074),
-        ip = t(2075),
-        sp = t(2076),
-        op = t(2077),
-        dp = t(2078),
-        Ep = t(2079),
-        up = t(2080),
-        pp = t(2081),
-        gp = t(2082),
-        xp = t(2083),
-        hp = t(2084),
-        Np = t(2085),
-        Ip = t(2086),
-        fp = t(2087),
-        yp = t(2088),
-        bp = t(2089),
-        vp = t(2090),
-        Tp = t(2091),
-        Ap = t(2092),
-        wp = t(2093),
-        Cp = t(2094),
-        kp = t(2095),
-        Pp = t(2096),
-        Sp = t(2097),
-        Op = t(2098),
-        Bp = t(2099),
-        Mp = t(2100),
-        jp = t(2101),
-        Lp = t(2102),
-        Dp = t(2103),
-        Fp = t(2104),
-        Rp = t(2105),
-        Wp = t(2106),
-        Hp = t(2107),
-        zp = t(2108),
-        Gp = t(2109),
-        Up = t(2110),
-        Vp = t(2111),
-        Yp = t(2112),
-        Kp = t(2113),
-        Qp = t(2114),
-        Jp = t(2115),
-        qp = t(2116),
-        Zp = t(2117),
-        _p = t(2118),
-        Xp = t(2119),
-        $p = t(2120),
-        eg = t(2121),
-        ag = t(2122),
-        tg = t(2123),
-        lg = t(2124),
-        ng = t(2125),
-        rg = t(2126),
-        mg = t(2127),
-        cg = t(2128),
-        ig = t(2129),
-        sg = t(2130),
-        og = t(2131),
-        dg = t(2132),
-        Eg = t(2133),
-        ug = t(2134),
-        pg = t(2135),
-        gg = t(2136),
-        xg = t(2137),
-        hg = t(2138),
-        Ng = t(2139),
-        Ig = t(2140),
-        fg = t(2141),
-        yg = t(2142),
-        bg = t(2143),
-        vg = t(2144),
-        Tg = t(2145),
-        Ag = t(2146),
-        wg = t(2147),
-        Cg = t(2148),
-        kg = t(2149),
-        Pg = t(2150),
-        Sg = t(2151),
-        Og = t(2152),
-        Bg = t(2153),
-        Mg = t(2154),
-        jg = t(2155),
-        Lg = t(2156),
-        Dg = t(2157),
-        Fg = t(2158),
-        Rg = t(2159),
-        Wg = t(2160),
-        Hg = t(2161),
-        zg = t(2162),
-        Gg = t(2163),
-        Ug = t(2164),
-        Vg = t(2165),
-        Yg = t(2166),
-        Kg = t(2167),
-        Qg = t(2168),
-        Jg = t(2169),
-        qg = t(2170),
-        Zg = t(2171),
-        _g = t(2172),
-        Xg = t(2173),
-        $g = t(2174),
-        ex = t(2175),
-        ax = t(2176),
-        tx = t(2177),
-        lx = t(2178),
-        nx = t(2179),
-        rx = t(2180),
-        mx = t(2181),
-        cx = t(2182),
-        ix = t(2183),
-        sx = t(2184),
-        ox = t(2185),
-        dx = t(2186),
-        Ex = t(2187),
-        ux = t(2188),
-        px = t(2189),
-        gx = t(2190),
-        xx = t(2191),
-        hx = t(2192),
-        Nx = t(2193),
-        Ix = t(2194),
-        fx = t(2195),
-        yx = t(2196),
-        bx = t(2197),
-        vx = t(2198),
-        Tx = t(2199),
-        Ax = t(2200),
-        wx = t(2201),
-        Cx = t(2202),
-        kx = t(2203),
-        Px = t(2204),
-        Sx = t(2205),
-        Ox = t(2206),
-        Bx = t(2207),
-        Mx = t(2208),
-        jx = t(2209),
-        Lx = t(2210),
-        Dx = t(2211),
-        Fx = t(2212),
-        Rx = t(2213),
-        Wx = t(2214),
-        Hx = t(2215),
-        zx = t(2216),
-        Gx = t(2217),
-        Ux = t(2218),
-        Vx = t(2219),
-        Yx = t(2220),
-        Kx = t(2221),
-        Qx = t(2222),
-        Jx = t(2223),
-        qx = t(2224),
-        Zx = t(2225),
-        _x = t(2226),
-        Xx = t(2227),
-        $x = t(2228),
-        eh = t(2229),
-        ah = t(2230),
-        th = t(2231),
-        lh = t(2232),
-        nh = t(2233),
-        rh = t(2234),
-        mh = t(2235),
-        ch = t(2236),
-        ih = t(2237),
-        sh = t(2238),
-        oh = t(2239),
-        dh = t(2240),
-        Eh = t(2241),
-        uh = t(2242),
-        ph = t(2243),
-        gh = t(2244),
-        xh = t(2245),
-        hh = t(2246),
-        Nh = t(2247),
-        Ih = t(2248),
-        fh = t(2249),
-        yh = t(2250),
-        bh = t(2252),
-        vh = t(2253),
-        Th = t(2254),
-        Ah = t(2255),
-        wh = t(2256),
-        Ch = t(2257),
-        kh = t(2258),
-        Ph = t(2259),
-        Sh = t(2260),
-        Oh = t(2261),
-        Bh = t(2262),
-        Mh = t(2263),
-        jh = t(2264),
-        Lh = t(2265),
-        Dh = t(2266),
-        Fh = t(2267),
-        Rh = t(2268),
-        Wh = t(2269),
-        Hh = t(2270),
-        zh = t(2271),
-        Gh = t(2272),
-        Uh = t(2273),
-        Vh = t(2274),
-        Yh = t(2275),
-        Kh = t(2276),
-        Qh = t(2277),
-        Jh = t(2278),
-        qh = t(2279),
-        Zh = t(2280),
-        _h = t(2281),
-        Xh = t(2282),
-        $h = t(2283),
-        eN = t(2284),
-        aN = t(2285),
-        tN = t(2286),
-        lN = t(2287),
-        nN = t(2288),
-        rN = t(2289),
-        mN = t(2290),
-        cN = t(2291),
-        iN = t(2292),
-        sN = t(2293),
-        oN = t(2294),
-        dN = t(2295),
-        EN = t(2296),
-        uN = t(2297),
-        pN = t(2298),
-        gN = t(2299),
-        xN = t(2300),
-        hN = t(2301),
-        NN = t(2302),
-        IN = t(2303),
-        fN = t(2304),
-        yN = t(2305),
-        bN = t(2306),
-        vN = t(2307),
-        TN = t(2308),
-        AN = t(2309),
-        wN = t(2310),
-        CN = t(2311),
-        kN = t(2312),
-        PN = t(2313),
-        SN = t(2314),
-        ON = t(2315),
-        BN = t(2316),
-        MN = t(2317),
-        jN = t(2318),
-        LN = t(2319),
-        DN = t(2320),
-        FN = t(2321),
-        RN = t(2322),
-        WN = t(2323),
-        HN = t(2324),
-        zN = t(2325),
-        GN = t(2326),
-        UN = t(2327),
-        VN = t(2328),
-        YN = t(2329),
-        KN = t(2330),
-        QN = t(2331),
-        JN = t(2332),
-        qN = t(2333),
-        ZN = t(2334),
-        _N = t(2335),
-        XN = t(2336),
-        $N = t(2337),
-        eI = t(2338),
-        aI = t(2339),
-        tI = t(2340),
-        lI = t(2341),
-        nI = t(2342),
-        rI = t(2343),
-        mI = t(2344),
-        cI = t(2345),
-        iI = t(2346),
-        sI = t(2347),
-        oI = t(2348),
-        dI = t(2349),
-        EI = t(2350),
-        uI = t(2351),
-        pI = t(2352),
-        gI = t(2353),
-        xI = t(2354),
-        hI = t(2355),
-        NI = t(2356),
-        II = t(2357),
-        fI = t(2358),
-        yI = t(2359),
-        bI = t(2360),
-        vI = t(2361),
-        TI = t(2362),
-        AI = t(2363),
-        wI = t(2364),
-        CI = t(2365),
-        kI = t(2366),
-        PI = t(2367),
-        SI = t(2368),
-        OI = t(2369),
-        BI = t(2370),
-        MI = t(2371),
-        jI = t(2372),
-        LI = t(2373),
-        DI = t(2374),
-        FI = t(2375),
-        RI = t(2376),
-        WI = t(2377),
-        HI = t(2378),
-        zI = t(2379),
-        GI = t(2380),
-        UI = t(2381),
-        VI = t(2382),
-        YI = t(2383),
-        KI = t(2384),
-        QI = t(2385),
-        JI = t(2386),
-        qI = t(2387),
-        ZI = t(2388),
-        _I = t(2389),
-        XI = t(2390),
-        $I = t(2391),
-        ef = t(2392),
-        af = t(2393),
-        tf = t(2394),
-        lf = t(2395),
-        nf = t(2396),
-        rf = t(2397),
-        mf = t(2398),
-        cf = t(2399),
-        sf = t(2400),
-        of = t(2401),
-        df = t(2402),
-        Ef = t(2403),
-        uf = t(2404),
-        pf = t(2405),
-        gf = t(2406),
-        xf = t(2407),
-        hf = Object(L.a)(function(e) {
+      var _t = t(1471),
+        Xt = t(1472),
+        $t = t(1473),
+        el = t(1474),
+        al = t(1475),
+        tl = t(1476),
+        ll = t(1477),
+        nl = t(1478),
+        rl = t(1479),
+        ml = t(1480),
+        cl = t(1481),
+        il = t(1482),
+        sl = t(1483),
+        ol = t(1484),
+        dl = t(1485),
+        El = t(1486),
+        ul = t(1487),
+        pl = t(1488),
+        gl = t(1489),
+        xl = t(1490),
+        hl = t(1491),
+        Nl = t(1492),
+        Il = t(1493),
+        fl = t(1494),
+        yl = t(1495),
+        bl = t(1496),
+        vl = t(1497),
+        Tl = t(1498),
+        Al = t(1499),
+        wl = t(1500),
+        Cl = t(1501),
+        kl = t(1502),
+        Pl = t(1503),
+        Sl = t(1504),
+        Ol = t(1505),
+        Bl = t(1506),
+        Ml = t(1507),
+        jl = t(1508),
+        Ll = t(1509),
+        Dl = t(1510),
+        Fl = t(1511),
+        Rl = t(1512),
+        Wl = t(1513),
+        Hl = t(1514),
+        zl = t(1515),
+        Gl = t(1516),
+        Ul = t(1517),
+        Vl = t(1518),
+        Yl = t(1519),
+        Kl = t(1520),
+        Ql = t(1521),
+        Jl = t(1522),
+        ql = t(1523),
+        Zl = t(1524),
+        _l = t(1525),
+        Xl = t(1526),
+        $l = t(1527),
+        en = t(1528),
+        an = t(1529),
+        tn = t(1530),
+        ln = t(1531),
+        nn = t(1532),
+        rn = t(1533),
+        mn = t(1534),
+        cn = t(1535),
+        sn = t(1536),
+        on = t(1537),
+        dn = t(1538),
+        En = t(1539),
+        un = t(1540),
+        pn = t(1541),
+        gn = t(1542),
+        xn = t(1543),
+        hn = t(1544),
+        Nn = t(1545),
+        In = t(1546),
+        fn = t(1547),
+        yn = t(1548),
+        bn = t(1549),
+        vn = t(1550),
+        Tn = t(1551),
+        An = t(1552),
+        wn = t(1553),
+        Cn = t(1554),
+        kn = t(1555),
+        Pn = t(1556),
+        Sn = t(1557),
+        On = t(1558),
+        Bn = t(1559),
+        Mn = t(1560),
+        jn = t(1561),
+        Ln = t(1562),
+        Dn = t(1563),
+        Fn = t(1564),
+        Rn = t(1565),
+        Wn = t(1566),
+        Hn = t(1567),
+        zn = t(1568),
+        Gn = t(1569),
+        Un = t(1570),
+        Vn = t(1571),
+        Yn = t(1572),
+        Kn = t(1573),
+        Qn = t(1574),
+        Jn = t(1575),
+        qn = t(1576),
+        Zn = t(1577),
+        _n = t(1578),
+        Xn = t(1579),
+        $n = t(1580),
+        er = t(1581),
+        ar = t(1582),
+        tr = t(1583),
+        lr = t(1584),
+        nr = t(1585),
+        rr = t(1586),
+        mr = t(1587),
+        cr = t(1588),
+        ir = t(1589),
+        sr = t(1590),
+        or = t(1591),
+        dr = t(1592),
+        Er = t(1593),
+        ur = t(1594),
+        pr = t(1595),
+        gr = t(1596),
+        xr = t(1597),
+        hr = t(1598),
+        Nr = t(1599),
+        Ir = t(1600),
+        fr = t(1602),
+        yr = t(1603),
+        br = t(1604),
+        vr = t(1605),
+        Tr = t(1606),
+        Ar = t(1607),
+        wr = t(1608),
+        Cr = t(1609),
+        kr = t(1610),
+        Pr = t(1611),
+        Sr = t(1612),
+        Or = t(1613),
+        Br = t(1614),
+        Mr = t(1615),
+        jr = t(1616),
+        Lr = t(1617),
+        Dr = t(1618),
+        Fr = t(1619),
+        Rr = t(1620),
+        Wr = t(1621),
+        Hr = t(1622),
+        zr = t(1623),
+        Gr = t(1624),
+        Ur = t(1625),
+        Vr = t(1626),
+        Yr = t(1627),
+        Kr = t(1628),
+        Qr = t(1629),
+        Jr = t(1630),
+        qr = t(1631),
+        Zr = t(1632),
+        _r = t(1633),
+        Xr = t(1635),
+        $r = t(1636),
+        em = t(1637),
+        am = t(1638),
+        tm = t(1639),
+        lm = t(1640),
+        nm = t(1641),
+        rm = t(1642),
+        mm = t(1643),
+        cm = t(1644),
+        im = t(1645),
+        sm = t(1646),
+        om = t(1647),
+        dm = t(1648),
+        Em = t(1649),
+        um = t(1650),
+        pm = t(1651),
+        gm = t(1652),
+        xm = t(1653),
+        hm = t(1654),
+        Nm = t(1655),
+        Im = t(1656),
+        fm = t(1657),
+        ym = t(1658),
+        bm = t(1659),
+        vm = t(1660),
+        Tm = t(1661),
+        Am = t(1662),
+        wm = t(1663),
+        Cm = t(1664),
+        km = t(1665),
+        Pm = t(1666),
+        Sm = t(1667),
+        Om = t(1668),
+        Bm = t(1669),
+        Mm = t(1670),
+        jm = t(1671),
+        Lm = t(1672),
+        Dm = t(1673),
+        Fm = t(1674),
+        Rm = t(1675),
+        Wm = t(1676),
+        Hm = t(1677),
+        zm = t(1678),
+        Gm = t(1679),
+        Um = t(1680),
+        Vm = t(1681),
+        Ym = t(1682),
+        Km = t(1683),
+        Qm = t(1684),
+        Jm = t(1685),
+        qm = t(1686),
+        Zm = t(1687),
+        _m = t(1688),
+        Xm = t(1689),
+        $m = t(1690),
+        ec = t(1691),
+        ac = t(1692),
+        tc = t(1693),
+        lc = t(1694),
+        nc = t(1695),
+        rc = t(1696),
+        mc = t(1697),
+        cc = t(1698),
+        ic = t(1699),
+        sc = t(1700),
+        oc = t(1701),
+        dc = t(1702),
+        Ec = t(1703),
+        uc = t(1704),
+        pc = t(1705),
+        gc = t(1706),
+        xc = t(1707),
+        hc = t(1708),
+        Nc = t(1709),
+        Ic = t(1710),
+        fc = t(1711),
+        yc = t(1712),
+        bc = t(1713),
+        vc = t(1714),
+        Tc = t(1715),
+        Ac = t(1716),
+        wc = t(1717),
+        Cc = t(1718),
+        kc = t(1719),
+        Pc = t(1720),
+        Sc = t(1721),
+        Oc = t(1722),
+        Bc = t(1723),
+        Mc = t(1724),
+        jc = t(1725),
+        Lc = t(1726),
+        Dc = t(1727),
+        Fc = t(1728),
+        Rc = t(1729),
+        Wc = t(1730),
+        Hc = t(1731),
+        zc = t(1732),
+        Gc = t(1733),
+        Uc = t(1734),
+        Vc = t(1735),
+        Yc = t(1736),
+        Kc = t(1737),
+        Qc = t(1738),
+        Jc = t(1739),
+        qc = t(1740),
+        Zc = t(1741),
+        _c = t(1742),
+        Xc = t(1743),
+        $c = t(1744),
+        ei = t(1745),
+        ai = t(1746),
+        ti = t(1747),
+        li = t(1748),
+        ni = t(1749),
+        ri = t(1750),
+        mi = t(1751),
+        ci = t(1752),
+        ii = t(1753),
+        si = t(1754),
+        oi = t(1755),
+        di = t(1756),
+        Ei = t(1757),
+        ui = t(1758),
+        pi = t(1759),
+        gi = t(1760),
+        xi = t(1761),
+        hi = t(1762),
+        Ni = t(1763),
+        Ii = t(1764),
+        fi = t(1765),
+        yi = t(1766),
+        bi = t(1767),
+        vi = t(1768),
+        Ti = t(1769),
+        Ai = t(1770),
+        wi = t(1771),
+        Ci = t(1772),
+        ki = t(1773),
+        Pi = t(1774),
+        Si = t(1775),
+        Oi = t(1776),
+        Bi = t(1777),
+        Mi = t(1778),
+        ji = t(1779),
+        Li = t(1780),
+        Di = t(1781),
+        Fi = t(1782),
+        Ri = t(1783),
+        Wi = t(1784),
+        Hi = t(1785),
+        zi = t(1786),
+        Gi = t(1787),
+        Ui = t(1788),
+        Vi = t(1789),
+        Yi = t(1790),
+        Ki = t(1791),
+        Qi = t(1792),
+        Ji = t(1793),
+        qi = t(1794),
+        Zi = t(1795),
+        _i = t(1796),
+        Xi = t(1797),
+        $i = t(1798),
+        es = t(1799),
+        as = t(1800),
+        ts = t(1801),
+        ls = t(1802),
+        ns = t(1803),
+        rs = t(1804),
+        ms = t(1805),
+        cs = t(1806),
+        is = t(1807),
+        ss = t(1808),
+        os = t(1809),
+        ds = t(1810),
+        Es = t(1811),
+        us = t(1812),
+        ps = t(1813),
+        gs = t(1814),
+        xs = t(1815),
+        hs = t(1816),
+        Ns = t(1817),
+        Is = t(1818),
+        fs = t(1819),
+        ys = t(1820),
+        bs = t(1821),
+        vs = t(1822),
+        Ts = t(1823),
+        As = t(1824),
+        ws = t(1825),
+        Cs = t(1826),
+        ks = t(1827),
+        Ps = t(1828),
+        Ss = t(1829),
+        Os = t(1830),
+        Bs = t(1831),
+        Ms = t(1832),
+        js = t(1833),
+        Ls = t(1834),
+        Ds = t(1835),
+        Fs = t(1836),
+        Rs = t(1837),
+        Ws = t(1838),
+        Hs = t(1839),
+        zs = t(1840),
+        Gs = t(1841),
+        Us = t(1842),
+        Vs = t(1843),
+        Ys = t(1844),
+        Ks = t(1845),
+        Qs = t(1846),
+        Js = t(1847),
+        qs = t(1848),
+        Zs = t(1849),
+        _s = t(1850),
+        Xs = t(1851),
+        $s = t(1852),
+        eo = t(1853),
+        ao = t(1854),
+        to = t(1855),
+        lo = t(1856),
+        no = t(1857),
+        ro = t(1858),
+        mo = t(1859),
+        co = t(1860),
+        io = t(1861),
+        so = t(1862),
+        oo = t(1863),
+        Eo = t(1864),
+        uo = t(1865),
+        po = t(1866),
+        go = t(1867),
+        xo = t(1868),
+        ho = t(1869),
+        No = t(1870),
+        Io = t(1871),
+        fo = t(1872),
+        yo = t(1873),
+        bo = t(1874),
+        vo = t(1875),
+        To = t(1876),
+        Ao = t(1877),
+        wo = t(1878),
+        Co = t(1879),
+        ko = t(1880),
+        Po = t(1881),
+        So = t(1882),
+        Oo = t(1883),
+        Bo = t(1884),
+        Mo = t(1885),
+        jo = t(1886),
+        Lo = t(1887),
+        Do = t(1888),
+        Fo = t(1889),
+        Ro = t(1890),
+        Wo = t(1891),
+        Ho = t(1892),
+        zo = t(1893),
+        Go = t(1894),
+        Uo = t(1895),
+        Vo = t(1896),
+        Yo = t(1897),
+        Ko = t(1898),
+        Qo = t(1899),
+        Jo = t(1900),
+        qo = t(1901),
+        Zo = t(1902),
+        _o = t(1903),
+        Xo = t(1904),
+        $o = t(1905),
+        ed = t(1906),
+        ad = t(1907),
+        td = t(1908),
+        ld = t(1909),
+        nd = t(1910),
+        rd = t(1911),
+        md = t(1912),
+        cd = t(1913),
+        id = t(1914),
+        sd = t(1915),
+        od = t(1916),
+        dd = t(1917),
+        Ed = t(1918),
+        ud = t(1919),
+        pd = t(1920),
+        gd = t(1921),
+        xd = t(1922),
+        hd = t(1923),
+        Nd = t(1924),
+        Id = t(1925),
+        fd = t(1926),
+        yd = t(1927),
+        bd = t(1928),
+        vd = t(1929),
+        Td = t(1930),
+        Ad = t(1931),
+        wd = t(1932),
+        Cd = t(1933),
+        kd = t(1934),
+        Pd = t(1935),
+        Sd = t(1936),
+        Od = t(1937),
+        Bd = t(1938),
+        Md = t(1939),
+        jd = t(1940),
+        Ld = t(1941),
+        Dd = t(1942),
+        Fd = t(1943),
+        Rd = t(1944),
+        Wd = t(1945),
+        Hd = t(1946),
+        zd = t(1947),
+        Gd = t(1948),
+        Ud = t(1949),
+        Vd = t(1950),
+        Yd = t(1951),
+        Kd = t(1952),
+        Qd = t(1953),
+        Jd = t(1954),
+        qd = t(1955),
+        Zd = t(1956),
+        _d = t(1957),
+        Xd = t(1958),
+        $d = t(1959),
+        eE = t(1960),
+        aE = t(1961),
+        tE = t(1962),
+        lE = t(1963),
+        nE = t(1964),
+        rE = t(1965),
+        mE = t(1966),
+        cE = t(1967),
+        iE = t(1968),
+        sE = t(1969),
+        oE = t(1970),
+        dE = t(1971),
+        EE = t(1972),
+        uE = t(1973),
+        pE = t(1974),
+        gE = t(1975),
+        xE = t(1976),
+        hE = t(1977),
+        NE = t(1978),
+        IE = t(1979),
+        fE = t(1980),
+        yE = t(1981),
+        bE = t(1982),
+        vE = t(1983),
+        TE = t(1984),
+        AE = t(1985),
+        wE = t(1986),
+        CE = t(1987),
+        kE = t(1988),
+        PE = t(1989),
+        SE = t(1990),
+        OE = t(1991),
+        BE = t(1992),
+        ME = t(1993),
+        jE = t(1994),
+        LE = t(1995),
+        DE = t(1996),
+        FE = t(1997),
+        RE = t(1998),
+        WE = t(1999),
+        HE = t(2e3),
+        zE = t(2001),
+        GE = t(2002),
+        UE = t(2003),
+        VE = t(2004),
+        YE = t(2005),
+        KE = t(2006),
+        QE = t(2007),
+        JE = t(2008),
+        qE = t(2009),
+        ZE = t(2010),
+        _E = t(2011),
+        XE = t(2012),
+        $E = t(2013),
+        eu = t(2014),
+        au = t(2015),
+        tu = t(2017),
+        lu = t(2018),
+        nu = t(2019),
+        ru = t(2020),
+        mu = t(2021),
+        cu = t(2022),
+        iu = t(2023),
+        su = t(2024),
+        ou = t(2025),
+        du = t(2026),
+        Eu = t(2027),
+        uu = t(2028),
+        pu = t(2029),
+        gu = t(2030),
+        xu = t(2031),
+        hu = t(2032),
+        Nu = t(2033),
+        Iu = t(2034),
+        fu = t(2035),
+        yu = t(2036),
+        bu = t(2037),
+        vu = t(2038),
+        Tu = t(2039),
+        Au = t(2040),
+        wu = t(2041),
+        Cu = t(2042),
+        ku = t(2043),
+        Pu = t(2044),
+        Su = t(2045),
+        Ou = t(2046),
+        Bu = t(2047),
+        Mu = t(2048),
+        ju = t(2049),
+        Lu = t(2050),
+        Du = t(2051),
+        Fu = t(2052),
+        Ru = t(2053),
+        Wu = t(2054),
+        Hu = t(2055),
+        zu = t(2056),
+        Gu = t(2057),
+        Uu = t(2058),
+        Vu = t(2059),
+        Yu = t(2060),
+        Ku = t(2061),
+        Qu = t(2062),
+        Ju = t(2063),
+        qu = t(2064),
+        Zu = t(2065),
+        _u = t(2066),
+        Xu = t(2067),
+        $u = t(2068),
+        ep = t(2069),
+        ap = t(2070),
+        tp = t(2071),
+        lp = t(2072),
+        np = t(2073),
+        rp = t(2074),
+        mp = t(2075),
+        cp = t(2076),
+        ip = t(2077),
+        sp = t(2078),
+        op = t(2079),
+        dp = t(2080),
+        Ep = t(2081),
+        up = t(2082),
+        pp = t(2083),
+        gp = t(2084),
+        xp = t(2085),
+        hp = t(2086),
+        Np = t(2087),
+        Ip = t(2088),
+        fp = t(2089),
+        yp = t(2090),
+        bp = t(2091),
+        vp = t(2092),
+        Tp = t(2093),
+        Ap = t(2094),
+        wp = t(2095),
+        Cp = t(2096),
+        kp = t(2097),
+        Pp = t(2098),
+        Sp = t(2099),
+        Op = t(2100),
+        Bp = t(2101),
+        Mp = t(2102),
+        jp = t(2103),
+        Lp = t(2104),
+        Dp = t(2105),
+        Fp = t(2106),
+        Rp = t(2107),
+        Wp = t(2108),
+        Hp = t(2109),
+        zp = t(2110),
+        Gp = t(2111),
+        Up = t(2112),
+        Vp = t(2113),
+        Yp = t(2114),
+        Kp = t(2115),
+        Qp = t(2116),
+        Jp = t(2117),
+        qp = t(2118),
+        Zp = t(2119),
+        _p = t(2120),
+        Xp = t(2121),
+        $p = t(2122),
+        eg = t(2123),
+        ag = t(2124),
+        tg = t(2125),
+        lg = t(2126),
+        ng = t(2127),
+        rg = t(2128),
+        mg = t(2129),
+        cg = t(2130),
+        ig = t(2131),
+        sg = t(2132),
+        og = t(2133),
+        dg = t(2134),
+        Eg = t(2135),
+        ug = t(2136),
+        pg = t(2137),
+        gg = t(2138),
+        xg = t(2139),
+        hg = t(2140),
+        Ng = t(2141),
+        Ig = t(2142),
+        fg = t(2143),
+        yg = t(2144),
+        bg = t(2145),
+        vg = t(2146),
+        Tg = t(2147),
+        Ag = t(2148),
+        wg = t(2149),
+        Cg = t(2150),
+        kg = t(2151),
+        Pg = t(2152),
+        Sg = t(2153),
+        Og = t(2154),
+        Bg = t(2155),
+        Mg = t(2156),
+        jg = t(2157),
+        Lg = t(2158),
+        Dg = t(2159),
+        Fg = t(2160),
+        Rg = t(2161),
+        Wg = t(2162),
+        Hg = t(2163),
+        zg = t(2164),
+        Gg = t(2165),
+        Ug = t(2166),
+        Vg = t(2167),
+        Yg = t(2168),
+        Kg = t(2169),
+        Qg = t(2170),
+        Jg = t(2171),
+        qg = t(2172),
+        Zg = t(2173),
+        _g = t(2174),
+        Xg = t(2175),
+        $g = t(2176),
+        ex = t(2177),
+        ax = t(2178),
+        tx = t(2179),
+        lx = t(2180),
+        nx = t(2181),
+        rx = t(2182),
+        mx = t(2183),
+        cx = t(2184),
+        ix = t(2185),
+        sx = t(2186),
+        ox = t(2187),
+        dx = t(2188),
+        Ex = t(2189),
+        ux = t(2190),
+        px = t(2191),
+        gx = t(2192),
+        xx = t(2193),
+        hx = t(2194),
+        Nx = t(2195),
+        Ix = t(2196),
+        fx = t(2197),
+        yx = t(2198),
+        bx = t(2199),
+        vx = t(2200),
+        Tx = t(2201),
+        Ax = t(2202),
+        wx = t(2203),
+        Cx = t(2204),
+        kx = t(2205),
+        Px = t(2206),
+        Sx = t(2207),
+        Ox = t(2208),
+        Bx = t(2209),
+        Mx = t(2210),
+        jx = t(2211),
+        Lx = t(2212),
+        Dx = t(2213),
+        Fx = t(2214),
+        Rx = t(2215),
+        Wx = t(2216),
+        Hx = t(2217),
+        zx = t(2218),
+        Gx = t(2219),
+        Ux = t(2220),
+        Vx = t(2221),
+        Yx = t(2222),
+        Kx = t(2223),
+        Qx = t(2224),
+        Jx = t(2225),
+        qx = t(2226),
+        Zx = t(2227),
+        _x = t(2228),
+        Xx = t(2229),
+        $x = t(2230),
+        eh = t(2231),
+        ah = t(2232),
+        th = t(2233),
+        lh = t(2234),
+        nh = t(2235),
+        rh = t(2236),
+        mh = t(2237),
+        ch = t(2238),
+        ih = t(2239),
+        sh = t(2240),
+        oh = t(2241),
+        dh = t(2242),
+        Eh = t(2243),
+        uh = t(2244),
+        ph = t(2245),
+        gh = t(2246),
+        xh = t(2247),
+        hh = t(2248),
+        Nh = t(2249),
+        Ih = t(2250),
+        fh = t(2252),
+        yh = t(2253),
+        bh = t(2254),
+        vh = t(2255),
+        Th = t(2256),
+        Ah = t(2257),
+        wh = t(2258),
+        Ch = t(2259),
+        kh = t(2260),
+        Ph = t(2261),
+        Sh = t(2262),
+        Oh = t(2263),
+        Bh = t(2264),
+        Mh = t(2265),
+        jh = t(2266),
+        Lh = t(2267),
+        Dh = t(2268),
+        Fh = t(2269),
+        Rh = t(2270),
+        Wh = t(2271),
+        Hh = t(2272),
+        zh = t(2273),
+        Gh = t(2274),
+        Uh = t(2275),
+        Vh = t(2276),
+        Yh = t(2277),
+        Kh = t(2278),
+        Qh = t(2279),
+        Jh = t(2280),
+        qh = t(2281),
+        Zh = t(2282),
+        _h = t(2283),
+        Xh = t(2284),
+        $h = t(2285),
+        eN = t(2286),
+        aN = t(2287),
+        tN = t(2288),
+        lN = t(2289),
+        nN = t(2290),
+        rN = t(2291),
+        mN = t(2292),
+        cN = t(2293),
+        iN = t(2294),
+        sN = t(2295),
+        oN = t(2296),
+        dN = t(2297),
+        EN = t(2298),
+        uN = t(2299),
+        pN = t(2300),
+        gN = t(2301),
+        xN = t(2302),
+        hN = t(2303),
+        NN = t(2304),
+        IN = t(2305),
+        fN = t(2306),
+        yN = t(2307),
+        bN = t(2308),
+        vN = t(2309),
+        TN = t(2310),
+        AN = t(2311),
+        wN = t(2312),
+        CN = t(2313),
+        kN = t(2314),
+        PN = t(2315),
+        SN = t(2316),
+        ON = t(2317),
+        BN = t(2318),
+        MN = t(2319),
+        jN = t(2320),
+        LN = t(2321),
+        DN = t(2322),
+        FN = t(2323),
+        RN = t(2324),
+        WN = t(2325),
+        HN = t(2326),
+        zN = t(2327),
+        GN = t(2328),
+        UN = t(2329),
+        VN = t(2330),
+        YN = t(2331),
+        KN = t(2332),
+        QN = t(2333),
+        JN = t(2334),
+        qN = t(2335),
+        ZN = t(2336),
+        _N = t(2337),
+        XN = t(2338),
+        $N = t(2339),
+        eI = t(2340),
+        aI = t(2341),
+        tI = t(2342),
+        lI = t(2343),
+        nI = t(2344),
+        rI = t(2345),
+        mI = t(2346),
+        cI = t(2347),
+        iI = t(2348),
+        sI = t(2349),
+        oI = t(2350),
+        dI = t(2351),
+        EI = t(2352),
+        uI = t(2353),
+        pI = t(2354),
+        gI = t(2355),
+        xI = t(2356),
+        hI = t(2357),
+        NI = t(2358),
+        II = t(2359),
+        fI = t(2360),
+        yI = t(2361),
+        bI = t(2362),
+        vI = t(2363),
+        TI = t(2364),
+        AI = t(2365),
+        wI = t(2366),
+        CI = t(2367),
+        kI = t(2368),
+        PI = t(2369),
+        SI = t(2370),
+        OI = t(2371),
+        BI = t(2372),
+        MI = t(2373),
+        jI = t(2374),
+        LI = t(2375),
+        DI = t(2376),
+        FI = t(2377),
+        RI = t(2378),
+        WI = t(2379),
+        HI = t(2380),
+        zI = t(2381),
+        GI = t(2382),
+        UI = t(2383),
+        VI = t(2384),
+        YI = t(2385),
+        KI = t(2386),
+        QI = t(2387),
+        JI = t(2388),
+        qI = t(2389),
+        ZI = t(2390),
+        _I = t(2391),
+        XI = t(2392),
+        $I = t(2393),
+        ef = t(2394),
+        af = t(2395),
+        tf = t(2396),
+        lf = t(2397),
+        nf = t(2398),
+        rf = t(2399),
+        mf = t(2400),
+        cf = t(2401),
+        sf = t(2402),
+        of = t(2403),
+        df = t(2404),
+        Ef = t(2405),
+        uf = t(2406),
+        pf = t(2407),
+        gf = Object(L.a)(function(e) {
           return {
             titleBold: { fontWeight: 600 },
             iconsBar: {
@@ -6290,8 +6260,8 @@
           };
         });
       t(1201);
-      function Nf() {
-        var e = hf(),
+      function xf() {
+        var e = gf(),
           a = Object(l.useState)(0),
           t = Object(x.a)(a, 2),
           r = t[0],
@@ -6339,7 +6309,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($t.a, null),
+                    n.a.createElement(_t.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6356,7 +6326,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(el.a, null),
+                    n.a.createElement(Xt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6373,7 +6343,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(al.a, null),
+                    n.a.createElement($t.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6390,7 +6360,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tl.a, null),
+                    n.a.createElement(el.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6407,7 +6377,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ll.a, null),
+                    n.a.createElement(al.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6424,7 +6394,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nl.a, null),
+                    n.a.createElement(tl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6441,7 +6411,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rl.a, null),
+                    n.a.createElement(ll.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6458,7 +6428,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ml.a, null),
+                    n.a.createElement(nl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6492,7 +6462,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cl.a, null),
+                    n.a.createElement(rl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6509,7 +6479,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(il.a, null),
+                    n.a.createElement(ml.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6526,7 +6496,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sl.a, null),
+                    n.a.createElement(cl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6543,7 +6513,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ol.a, null),
+                    n.a.createElement(il.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6560,7 +6530,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dl.a, null),
+                    n.a.createElement(sl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6577,7 +6547,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(El.a, null),
+                    n.a.createElement(ol.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6594,7 +6564,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ul.a, null),
+                    n.a.createElement(dl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6611,7 +6581,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pl.a, null),
+                    n.a.createElement(El.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6628,7 +6598,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gl.a, null),
+                    n.a.createElement(ul.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6645,7 +6615,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xl.a, null),
+                    n.a.createElement(pl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6662,7 +6632,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hl.a, null),
+                    n.a.createElement(gl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6679,7 +6649,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nl.a, null),
+                    n.a.createElement(xl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6696,7 +6666,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Il.a, null),
+                    n.a.createElement(hl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6713,7 +6683,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fl.a, null),
+                    n.a.createElement(Nl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6730,7 +6700,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yl.a, null),
+                    n.a.createElement(Il.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6747,7 +6717,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bl.a, null),
+                    n.a.createElement(fl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6764,7 +6734,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vl.a, null),
+                    n.a.createElement(yl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6781,7 +6751,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tl.a, null),
+                    n.a.createElement(bl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6798,7 +6768,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Al.a, null),
+                    n.a.createElement(vl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6815,7 +6785,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wl.a, null),
+                    n.a.createElement(Tl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6832,7 +6802,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cl.a, null),
+                    n.a.createElement(Al.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6849,7 +6819,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kl.a, null),
+                    n.a.createElement(wl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6866,7 +6836,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pl.a, null),
+                    n.a.createElement(Cl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6883,7 +6853,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sl.a, null),
+                    n.a.createElement(kl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6900,7 +6870,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ol.a, null),
+                    n.a.createElement(Pl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6917,7 +6887,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bl.a, null),
+                    n.a.createElement(Sl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6951,7 +6921,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ml.a, null),
+                    n.a.createElement(Ol.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6968,7 +6938,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jl.a, null),
+                    n.a.createElement(Bl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -6985,7 +6955,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ll.a, null),
+                    n.a.createElement(Ml.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7002,7 +6972,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dl.a, null),
+                    n.a.createElement(jl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7019,7 +6989,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fl.a, null),
+                    n.a.createElement(Ll.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7036,7 +7006,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nt.a, null),
+                    n.a.createElement(xt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7053,7 +7023,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rl.a, null),
+                    n.a.createElement(Dl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7070,7 +7040,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wl.a, null),
+                    n.a.createElement(Fl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7087,7 +7057,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hl.a, null),
+                    n.a.createElement(Rl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7104,7 +7074,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zl.a, null),
+                    n.a.createElement(Wl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7121,7 +7091,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gl.a, null),
+                    n.a.createElement(Hl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7138,7 +7108,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ul.a, null),
+                    n.a.createElement(zl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7155,7 +7125,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vl.a, null),
+                    n.a.createElement(Gl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7172,7 +7142,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yl.a, null),
+                    n.a.createElement(Ul.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7189,7 +7159,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kl.a, null),
+                    n.a.createElement(Vl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7206,7 +7176,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ql.a, null),
+                    n.a.createElement(Yl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7223,7 +7193,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jl.a, null),
+                    n.a.createElement(Kl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7240,7 +7210,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ql.a, null),
+                    n.a.createElement(Ql.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7257,7 +7227,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zl.a, null),
+                    n.a.createElement(Jl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7274,7 +7244,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_l.a, null),
+                    n.a.createElement(ql.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7291,7 +7261,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xl.a, null),
+                    n.a.createElement(Zl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7308,7 +7278,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($l.a, null),
+                    n.a.createElement(_l.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7325,7 +7295,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(en.a, null),
+                    n.a.createElement(Xl.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7342,7 +7312,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(an.a, null),
+                    n.a.createElement($l.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7359,7 +7329,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tn.a, null),
+                    n.a.createElement(en.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7376,7 +7346,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ln.a, null),
+                    n.a.createElement(an.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7393,7 +7363,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nn.a, null),
+                    n.a.createElement(tn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7410,7 +7380,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rn.a, null),
+                    n.a.createElement(ln.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7427,7 +7397,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mn.a, null),
+                    n.a.createElement(nn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7444,7 +7414,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cn.a, null),
+                    n.a.createElement(rn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7461,7 +7431,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sn.a, null),
+                    n.a.createElement(mn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7478,7 +7448,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(on.a, null),
+                    n.a.createElement(cn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7495,7 +7465,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dn.a, null),
+                    n.a.createElement(sn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7512,7 +7482,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(En.a, null),
+                    n.a.createElement(on.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7529,7 +7499,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(un.a, null),
+                    n.a.createElement(dn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7546,7 +7516,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pn.a, null),
+                    n.a.createElement(En.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7563,7 +7533,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gn.a, null),
+                    n.a.createElement(un.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7580,7 +7550,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xn.a, null),
+                    n.a.createElement(pn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7597,7 +7567,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hn.a, null),
+                    n.a.createElement(gn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7614,7 +7584,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nn.a, null),
+                    n.a.createElement(xn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7631,7 +7601,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(In.a, null),
+                    n.a.createElement(hn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7648,7 +7618,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fn.a, null),
+                    n.a.createElement(Nn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7665,7 +7635,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yn.a, null),
+                    n.a.createElement(In.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7682,7 +7652,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bn.a, null),
+                    n.a.createElement(fn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7699,7 +7669,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vn.a, null),
+                    n.a.createElement(yn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7716,7 +7686,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tn.a, null),
+                    n.a.createElement(bn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7733,7 +7703,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(An.a, null),
+                    n.a.createElement(vn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7750,7 +7720,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wn.a, null),
+                    n.a.createElement(Tn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7767,7 +7737,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cn.a, null),
+                    n.a.createElement(An.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7784,7 +7754,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kn.a, null),
+                    n.a.createElement(wn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7801,7 +7771,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pn.a, null),
+                    n.a.createElement(Cn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7818,7 +7788,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sn.a, null),
+                    n.a.createElement(kn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7835,7 +7805,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(On.a, null),
+                    n.a.createElement(Pn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7852,7 +7822,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bn.a, null),
+                    n.a.createElement(Sn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7869,7 +7839,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mn.a, null),
+                    n.a.createElement(On.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7886,7 +7856,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jn.a, null),
+                    n.a.createElement(Bn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7903,7 +7873,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ln.a, null),
+                    n.a.createElement(Mn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7920,7 +7890,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dn.a, null),
+                    n.a.createElement(jn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7937,7 +7907,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fn.a, null),
+                    n.a.createElement(Ln.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7954,7 +7924,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rn.a, null),
+                    n.a.createElement(Dn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7971,7 +7941,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wn.a, null),
+                    n.a.createElement(Fn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -7988,7 +7958,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hn.a, null),
+                    n.a.createElement(Rn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8005,7 +7975,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zn.a, null),
+                    n.a.createElement(Wn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8022,7 +7992,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gn.a, null),
+                    n.a.createElement(Hn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8039,7 +8009,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Un.a, null),
+                    n.a.createElement(zn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8056,7 +8026,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vn.a, null),
+                    n.a.createElement(Gn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8073,7 +8043,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yn.a, null),
+                    n.a.createElement(Un.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8090,7 +8060,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kn.a, null),
+                    n.a.createElement(Vn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8107,7 +8077,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qn.a, null),
+                    n.a.createElement(Yn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8124,7 +8094,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jn.a, null),
+                    n.a.createElement(Kn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8141,7 +8111,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qn.a, null),
+                    n.a.createElement(Qn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8158,7 +8128,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zn.a, null),
+                    n.a.createElement(Jn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8175,7 +8145,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_n.a, null),
+                    n.a.createElement(qn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8192,7 +8162,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xn.a, null),
+                    n.a.createElement(Zn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8209,7 +8179,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($n.a, null),
+                    n.a.createElement(_n.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8226,7 +8196,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(er.a, null),
+                    n.a.createElement(Xn.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8243,7 +8213,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ar.a, null),
+                    n.a.createElement($n.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8260,7 +8230,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tr.a, null),
+                    n.a.createElement(er.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8277,7 +8247,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lr.a, null),
+                    n.a.createElement(ar.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8294,7 +8264,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nr.a, null),
+                    n.a.createElement(tr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8311,7 +8281,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rr.a, null),
+                    n.a.createElement(lr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8328,7 +8298,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mr.a, null),
+                    n.a.createElement(nr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8345,7 +8315,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cr.a, null),
+                    n.a.createElement(rr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8362,7 +8332,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ir.a, null),
+                    n.a.createElement(mr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8379,7 +8349,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sr.a, null),
+                    n.a.createElement(cr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8396,7 +8366,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(or.a, null),
+                    n.a.createElement(ir.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8413,7 +8383,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dr.a, null),
+                    n.a.createElement(sr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8430,7 +8400,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Er.a, null),
+                    n.a.createElement(or.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8447,7 +8417,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ur.a, null),
+                    n.a.createElement(dr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8464,7 +8434,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pr.a, null),
+                    n.a.createElement(Er.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8481,7 +8451,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gr.a, null),
+                    n.a.createElement(ur.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8498,7 +8468,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xr.a, null),
+                    n.a.createElement(pr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8515,7 +8485,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hr.a, null),
+                    n.a.createElement(gr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8532,7 +8502,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nr.a, null),
+                    n.a.createElement(xr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8549,7 +8519,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ir.a, null),
+                    n.a.createElement(hr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8583,7 +8553,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fr.a, null),
+                    n.a.createElement(Nr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8600,7 +8570,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yr.a, null),
+                    n.a.createElement(Ir.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8634,7 +8604,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(br.a, null),
+                    n.a.createElement(fr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8651,7 +8621,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vr.a, null),
+                    n.a.createElement(yr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8668,7 +8638,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tr.a, null),
+                    n.a.createElement(br.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8685,7 +8655,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ar.a, null),
+                    n.a.createElement(vr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8702,7 +8672,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wr.a, null),
+                    n.a.createElement(Tr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8719,7 +8689,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cr.a, null),
+                    n.a.createElement(Ar.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8736,7 +8706,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kr.a, null),
+                    n.a.createElement(wr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8753,7 +8723,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pr.a, null),
+                    n.a.createElement(Cr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8770,7 +8740,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sr.a, null),
+                    n.a.createElement(kr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8787,7 +8757,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Or.a, null),
+                    n.a.createElement(Pr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8804,7 +8774,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Br.a, null),
+                    n.a.createElement(Sr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8821,7 +8791,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mr.a, null),
+                    n.a.createElement(Or.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8838,7 +8808,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jr.a, null),
+                    n.a.createElement(Br.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8855,7 +8825,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lr.a, null),
+                    n.a.createElement(Mr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8872,7 +8842,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dr.a, null),
+                    n.a.createElement(jr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8889,7 +8859,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fr.a, null),
+                    n.a.createElement(Lr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8906,7 +8876,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rr.a, null),
+                    n.a.createElement(Dr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8923,7 +8893,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wr.a, null),
+                    n.a.createElement(Fr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8940,7 +8910,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hr.a, null),
+                    n.a.createElement(Rr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8957,7 +8927,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zr.a, null),
+                    n.a.createElement(Wr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8974,7 +8944,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gr.a, null),
+                    n.a.createElement(Hr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -8991,7 +8961,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ur.a, null),
+                    n.a.createElement(zr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9008,7 +8978,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vr.a, null),
+                    n.a.createElement(Gr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9025,7 +8995,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yr.a, null),
+                    n.a.createElement(Ur.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9042,7 +9012,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kr.a, null),
+                    n.a.createElement(Vr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9059,7 +9029,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qr.a, null),
+                    n.a.createElement(Yr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9076,7 +9046,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jr.a, null),
+                    n.a.createElement(Kr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9093,7 +9063,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qr.a, null),
+                    n.a.createElement(Qr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9110,7 +9080,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zr.a, null),
+                    n.a.createElement(Jr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9127,7 +9097,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_r.a, null),
+                    n.a.createElement(qr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9144,7 +9114,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xr.a, null),
+                    n.a.createElement(Zr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9161,7 +9131,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($r.a, null),
+                    n.a.createElement(_r.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9195,7 +9165,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(em.a, null),
+                    n.a.createElement(Xr.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9212,7 +9182,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(am.a, null),
+                    n.a.createElement($r.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9229,7 +9199,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tm.a, null),
+                    n.a.createElement(em.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9246,7 +9216,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lm.a, null),
+                    n.a.createElement(am.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9263,7 +9233,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nm.a, null),
+                    n.a.createElement(tm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9280,7 +9250,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rm.a, null),
+                    n.a.createElement(lm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9297,7 +9267,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mm.a, null),
+                    n.a.createElement(nm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9314,7 +9284,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cm.a, null),
+                    n.a.createElement(rm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9331,7 +9301,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(im.a, null),
+                    n.a.createElement(mm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9348,7 +9318,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sm.a, null),
+                    n.a.createElement(cm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9365,7 +9335,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(om.a, null),
+                    n.a.createElement(im.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9382,7 +9352,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dm.a, null),
+                    n.a.createElement(sm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9399,7 +9369,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Em.a, null),
+                    n.a.createElement(om.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9416,7 +9386,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dt.a, null),
+                    n.a.createElement(jt.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9433,7 +9403,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(um.a, null),
+                    n.a.createElement(dm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9450,7 +9420,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pm.a, null),
+                    n.a.createElement(Em.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9467,7 +9437,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gm.a, null),
+                    n.a.createElement(um.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9484,7 +9454,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xm.a, null),
+                    n.a.createElement(pm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9501,7 +9471,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hm.a, null),
+                    n.a.createElement(gm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9518,7 +9488,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nm.a, null),
+                    n.a.createElement(xm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9535,7 +9505,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Im.a, null),
+                    n.a.createElement(hm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9552,7 +9522,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fm.a, null),
+                    n.a.createElement(Nm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9569,7 +9539,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ym.a, null),
+                    n.a.createElement(Im.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9586,7 +9556,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bm.a, null),
+                    n.a.createElement(fm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9603,7 +9573,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vm.a, null),
+                    n.a.createElement(ym.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9620,7 +9590,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tm.a, null),
+                    n.a.createElement(bm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9637,7 +9607,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Am.a, null),
+                    n.a.createElement(vm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9654,7 +9624,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wm.a, null),
+                    n.a.createElement(Tm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9671,7 +9641,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cm.a, null),
+                    n.a.createElement(Am.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9688,7 +9658,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(km.a, null),
+                    n.a.createElement(wm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9705,7 +9675,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pm.a, null),
+                    n.a.createElement(Cm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9722,7 +9692,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sm.a, null),
+                    n.a.createElement(km.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9739,7 +9709,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Om.a, null),
+                    n.a.createElement(Pm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9756,7 +9726,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bm.a, null),
+                    n.a.createElement(Sm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9773,7 +9743,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mm.a, null),
+                    n.a.createElement(Om.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9790,7 +9760,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jm.a, null),
+                    n.a.createElement(Bm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9807,7 +9777,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lm.a, null),
+                    n.a.createElement(Mm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9824,7 +9794,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dm.a, null),
+                    n.a.createElement(jm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9841,7 +9811,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fm.a, null),
+                    n.a.createElement(Lm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9858,7 +9828,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rm.a, null),
+                    n.a.createElement(Dm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9875,7 +9845,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wm.a, null),
+                    n.a.createElement(Fm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9892,7 +9862,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hm.a, null),
+                    n.a.createElement(Rm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9909,7 +9879,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zm.a, null),
+                    n.a.createElement(Wm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9926,7 +9896,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gm.a, null),
+                    n.a.createElement(Hm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9943,7 +9913,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Um.a, null),
+                    n.a.createElement(zm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9960,7 +9930,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vm.a, null),
+                    n.a.createElement(Gm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9977,7 +9947,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ym.a, null),
+                    n.a.createElement(Um.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -9994,7 +9964,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Km.a, null),
+                    n.a.createElement(Vm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10011,7 +9981,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qm.a, null),
+                    n.a.createElement(Ym.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10028,7 +9998,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jm.a, null),
+                    n.a.createElement(Km.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10045,7 +10015,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qm.a, null),
+                    n.a.createElement(Qm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10062,7 +10032,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zm.a, null),
+                    n.a.createElement(Jm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10079,7 +10049,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_m.a, null),
+                    n.a.createElement(qm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10096,7 +10066,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xm.a, null),
+                    n.a.createElement(Zm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10113,7 +10083,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($m.a, null),
+                    n.a.createElement(_m.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10130,7 +10100,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ec.a, null),
+                    n.a.createElement(Xm.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10147,7 +10117,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ac.a, null),
+                    n.a.createElement($m.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10164,7 +10134,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tc.a, null),
+                    n.a.createElement(ec.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10181,7 +10151,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lc.a, null),
+                    n.a.createElement(ac.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10198,7 +10168,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yt.a, null),
+                    n.a.createElement(It.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10215,7 +10185,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nc.a, null),
+                    n.a.createElement(tc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10232,7 +10202,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rc.a, null),
+                    n.a.createElement(lc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10249,7 +10219,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mc.a, null),
+                    n.a.createElement(nc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10266,7 +10236,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cc.a, null),
+                    n.a.createElement(rc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10283,7 +10253,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ic.a, null),
+                    n.a.createElement(mc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10300,7 +10270,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sc.a, null),
+                    n.a.createElement(cc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10317,7 +10287,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oc.a, null),
+                    n.a.createElement(ic.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10334,7 +10304,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dc.a, null),
+                    n.a.createElement(sc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10351,7 +10321,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ec.a, null),
+                    n.a.createElement(oc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10368,7 +10338,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uc.a, null),
+                    n.a.createElement(dc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10385,7 +10355,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pc.a, null),
+                    n.a.createElement(Ec.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10402,7 +10372,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gc.a, null),
+                    n.a.createElement(uc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10419,7 +10389,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xc.a, null),
+                    n.a.createElement(pc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10436,7 +10406,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hc.a, null),
+                    n.a.createElement(gc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10453,7 +10423,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nc.a, null),
+                    n.a.createElement(xc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10470,7 +10440,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ic.a, null),
+                    n.a.createElement(hc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10487,7 +10457,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fc.a, null),
+                    n.a.createElement(Nc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10504,7 +10474,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yc.a, null),
+                    n.a.createElement(Ic.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10521,7 +10491,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bc.a, null),
+                    n.a.createElement(fc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10538,7 +10508,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vc.a, null),
+                    n.a.createElement(yc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10555,7 +10525,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tc.a, null),
+                    n.a.createElement(bc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10572,7 +10542,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ac.a, null),
+                    n.a.createElement(vc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10589,7 +10559,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wc.a, null),
+                    n.a.createElement(Tc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10606,7 +10576,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cc.a, null),
+                    n.a.createElement(Ac.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10623,7 +10593,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kc.a, null),
+                    n.a.createElement(wc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10640,7 +10610,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pc.a, null),
+                    n.a.createElement(Cc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10657,7 +10627,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sc.a, null),
+                    n.a.createElement(kc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10691,7 +10661,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oc.a, null),
+                    n.a.createElement(Pc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10708,7 +10678,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bc.a, null),
+                    n.a.createElement(Sc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10725,7 +10695,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mc.a, null),
+                    n.a.createElement(Oc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10742,7 +10712,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jc.a, null),
+                    n.a.createElement(Bc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10776,7 +10746,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lc.a, null),
+                    n.a.createElement(Mc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10793,7 +10763,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dc.a, null),
+                    n.a.createElement(jc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10810,7 +10780,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fc.a, null),
+                    n.a.createElement(Lc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10827,7 +10797,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rc.a, null),
+                    n.a.createElement(Dc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10844,7 +10814,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wc.a, null),
+                    n.a.createElement(Fc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10861,7 +10831,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hc.a, null),
+                    n.a.createElement(Rc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10878,7 +10848,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zc.a, null),
+                    n.a.createElement(Wc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10895,7 +10865,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gc.a, null),
+                    n.a.createElement(Hc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10912,7 +10882,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uc.a, null),
+                    n.a.createElement(zc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10929,7 +10899,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vc.a, null),
+                    n.a.createElement(Gc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10946,7 +10916,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yc.a, null),
+                    n.a.createElement(Uc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10963,7 +10933,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kc.a, null),
+                    n.a.createElement(Vc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10980,7 +10950,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qc.a, null),
+                    n.a.createElement(Yc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -10997,7 +10967,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jc.a, null),
+                    n.a.createElement(Kc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11031,7 +11001,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qc.a, null),
+                    n.a.createElement(Qc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11048,7 +11018,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zc.a, null),
+                    n.a.createElement(Jc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11082,7 +11052,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_c.a, null),
+                    n.a.createElement(qc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11099,7 +11069,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xc.a, null),
+                    n.a.createElement(Zc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11116,7 +11086,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($c.a, null),
+                    n.a.createElement(_c.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11133,7 +11103,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ei.a, null),
+                    n.a.createElement(Xc.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11150,7 +11120,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ai.a, null),
+                    n.a.createElement($c.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11167,7 +11137,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ti.a, null),
+                    n.a.createElement(ei.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11184,7 +11154,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(li.a, null),
+                    n.a.createElement(ai.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11201,7 +11171,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ni.a, null),
+                    n.a.createElement(ti.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11218,7 +11188,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ri.a, null),
+                    n.a.createElement(li.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11235,7 +11205,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mi.a, null),
+                    n.a.createElement(ni.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11252,7 +11222,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ka.a, null),
+                    n.a.createElement(wa.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11269,7 +11239,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ci.a, null),
+                    n.a.createElement(ri.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11286,7 +11256,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ii.a, null),
+                    n.a.createElement(mi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11303,7 +11273,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(si.a, null),
+                    n.a.createElement(ci.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11320,7 +11290,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oi.a, null),
+                    n.a.createElement(ii.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11337,7 +11307,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(di.a, null),
+                    n.a.createElement(si.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11354,7 +11324,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ei.a, null),
+                    n.a.createElement(oi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11371,7 +11341,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ui.a, null),
+                    n.a.createElement(di.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11388,7 +11358,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pi.a, null),
+                    n.a.createElement(Ei.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11405,7 +11375,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gi.a, null),
+                    n.a.createElement(ui.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11422,7 +11392,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xi.a, null),
+                    n.a.createElement(pi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11439,7 +11409,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hi.a, null),
+                    n.a.createElement(gi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11456,7 +11426,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ni.a, null),
+                    n.a.createElement(xi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11473,7 +11443,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ii.a, null),
+                    n.a.createElement(hi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11490,7 +11460,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fi.a, null),
+                    n.a.createElement(Ni.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11507,7 +11477,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yi.a, null),
+                    n.a.createElement(Ii.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11524,7 +11494,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bi.a, null),
+                    n.a.createElement(fi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11541,7 +11511,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vi.a, null),
+                    n.a.createElement(yi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11558,7 +11528,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ti.a, null),
+                    n.a.createElement(bi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11575,7 +11545,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ai.a, null),
+                    n.a.createElement(vi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11592,7 +11562,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wi.a, null),
+                    n.a.createElement(Ti.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11609,7 +11579,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ci.a, null),
+                    n.a.createElement(Ai.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11626,7 +11596,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ki.a, null),
+                    n.a.createElement(wi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11643,7 +11613,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pi.a, null),
+                    n.a.createElement(Ci.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11660,7 +11630,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Si.a, null),
+                    n.a.createElement(ki.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11677,7 +11647,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oi.a, null),
+                    n.a.createElement(Pi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11694,7 +11664,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bi.a, null),
+                    n.a.createElement(Si.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11711,7 +11681,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mi.a, null),
+                    n.a.createElement(Oi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11728,7 +11698,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ji.a, null),
+                    n.a.createElement(Bi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11745,7 +11715,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Li.a, null),
+                    n.a.createElement(Mi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11762,7 +11732,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Di.a, null),
+                    n.a.createElement(ji.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11779,7 +11749,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fi.a, null),
+                    n.a.createElement(Li.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11796,7 +11766,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ri.a, null),
+                    n.a.createElement(Di.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11813,7 +11783,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wi.a, null),
+                    n.a.createElement(Fi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11830,7 +11800,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hi.a, null),
+                    n.a.createElement(Ri.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11847,7 +11817,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zi.a, null),
+                    n.a.createElement(Wi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11864,7 +11834,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gi.a, null),
+                    n.a.createElement(Hi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11881,7 +11851,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ui.a, null),
+                    n.a.createElement(zi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11898,7 +11868,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vi.a, null),
+                    n.a.createElement(Gi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11915,7 +11885,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yi.a, null),
+                    n.a.createElement(Ui.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11932,7 +11902,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bt.a, null),
+                    n.a.createElement(ft.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11949,7 +11919,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ki.a, null),
+                    n.a.createElement(Vi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11966,7 +11936,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qi.a, null),
+                    n.a.createElement(Yi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -11983,7 +11953,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ji.a, null),
+                    n.a.createElement(Ki.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12000,7 +11970,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qi.a, null),
+                    n.a.createElement(Qi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12017,7 +11987,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zi.a, null),
+                    n.a.createElement(Ji.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12034,7 +12004,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_i.a, null),
+                    n.a.createElement(qi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12051,7 +12021,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xi.a, null),
+                    n.a.createElement(Zi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12068,7 +12038,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($i.a, null),
+                    n.a.createElement(_i.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12085,7 +12055,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(es.a, null),
+                    n.a.createElement(Xi.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12102,7 +12072,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(as.a, null),
+                    n.a.createElement($i.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12119,7 +12089,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ts.a, null),
+                    n.a.createElement(es.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12136,7 +12106,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ls.a, null),
+                    n.a.createElement(as.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12153,7 +12123,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ns.a, null),
+                    n.a.createElement(ts.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12170,7 +12140,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rs.a, null),
+                    n.a.createElement(ls.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12187,7 +12157,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ms.a, null),
+                    n.a.createElement(ns.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12204,7 +12174,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cs.a, null),
+                    n.a.createElement(rs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12221,7 +12191,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(is.a, null),
+                    n.a.createElement(ms.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12238,7 +12208,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ss.a, null),
+                    n.a.createElement(cs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12255,7 +12225,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(os.a, null),
+                    n.a.createElement(is.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12272,7 +12242,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ds.a, null),
+                    n.a.createElement(ss.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12289,7 +12259,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Es.a, null),
+                    n.a.createElement(os.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12306,7 +12276,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(us.a, null),
+                    n.a.createElement(ds.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12323,7 +12293,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ps.a, null),
+                    n.a.createElement(Es.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12340,7 +12310,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gs.a, null),
+                    n.a.createElement(us.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12357,7 +12327,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xs.a, null),
+                    n.a.createElement(ps.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12374,7 +12344,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hs.a, null),
+                    n.a.createElement(gs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12391,7 +12361,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ns.a, null),
+                    n.a.createElement(xs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12408,7 +12378,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Is.a, null),
+                    n.a.createElement(hs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12425,7 +12395,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fs.a, null),
+                    n.a.createElement(Ns.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12442,7 +12412,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ys.a, null),
+                    n.a.createElement(Is.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12459,7 +12429,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bs.a, null),
+                    n.a.createElement(fs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12476,7 +12446,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vs.a, null),
+                    n.a.createElement(ys.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12493,7 +12463,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ts.a, null),
+                    n.a.createElement(bs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12510,7 +12480,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(As.a, null),
+                    n.a.createElement(vs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12527,7 +12497,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ws.a, null),
+                    n.a.createElement(Ts.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12544,7 +12514,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cs.a, null),
+                    n.a.createElement(As.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12561,7 +12531,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ks.a, null),
+                    n.a.createElement(ws.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12578,7 +12548,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ps.a, null),
+                    n.a.createElement(Cs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12595,7 +12565,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ss.a, null),
+                    n.a.createElement(ks.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12612,7 +12582,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Os.a, null),
+                    n.a.createElement(Ps.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12629,7 +12599,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bs.a, null),
+                    n.a.createElement(Ss.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12646,7 +12616,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ms.a, null),
+                    n.a.createElement(Os.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12663,7 +12633,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(js.a, null),
+                    n.a.createElement(Bs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12680,7 +12650,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ls.a, null),
+                    n.a.createElement(Ms.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12697,7 +12667,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ds.a, null),
+                    n.a.createElement(js.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12714,7 +12684,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fs.a, null),
+                    n.a.createElement(Ls.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12731,7 +12701,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rs.a, null),
+                    n.a.createElement(Ds.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12748,7 +12718,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ws.a, null),
+                    n.a.createElement(Fs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12765,7 +12735,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hs.a, null),
+                    n.a.createElement(Rs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12782,7 +12752,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zs.a, null),
+                    n.a.createElement(Ws.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12799,7 +12769,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gs.a, null),
+                    n.a.createElement(Hs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12816,7 +12786,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Us.a, null),
+                    n.a.createElement(zs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12833,7 +12803,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vs.a, null),
+                    n.a.createElement(Gs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12850,7 +12820,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ys.a, null),
+                    n.a.createElement(Us.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12867,7 +12837,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ks.a, null),
+                    n.a.createElement(Vs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12884,7 +12854,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qs.a, null),
+                    n.a.createElement(Ys.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12901,7 +12871,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Js.a, null),
+                    n.a.createElement(Ks.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12918,7 +12888,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qs.a, null),
+                    n.a.createElement(Qs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12935,7 +12905,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zs.a, null),
+                    n.a.createElement(Js.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12952,7 +12922,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_s.a, null),
+                    n.a.createElement(qs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12969,7 +12939,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xs.a, null),
+                    n.a.createElement(Zs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -12986,7 +12956,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($s.a, null),
+                    n.a.createElement(_s.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13003,7 +12973,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eo.a, null),
+                    n.a.createElement(Xs.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13020,7 +12990,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ao.a, null),
+                    n.a.createElement($s.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13037,7 +13007,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(to.a, null),
+                    n.a.createElement(eo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13054,7 +13024,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lo.a, null),
+                    n.a.createElement(ao.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13071,7 +13041,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(no.a, null),
+                    n.a.createElement(to.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13088,7 +13058,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ro.a, null),
+                    n.a.createElement(lo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13105,7 +13075,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mo.a, null),
+                    n.a.createElement(no.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13122,7 +13092,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(co.a, null),
+                    n.a.createElement(ro.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13139,7 +13109,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(io.a, null),
+                    n.a.createElement(mo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13156,7 +13126,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(so.a, null),
+                    n.a.createElement(co.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13173,7 +13143,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oo.a, null),
+                    n.a.createElement(io.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13190,7 +13160,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eo.a, null),
+                    n.a.createElement(so.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13207,7 +13177,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uo.a, null),
+                    n.a.createElement(oo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13224,7 +13194,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(po.a, null),
+                    n.a.createElement(Eo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13241,7 +13211,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(go.a, null),
+                    n.a.createElement(uo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13258,7 +13228,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xo.a, null),
+                    n.a.createElement(po.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13275,7 +13245,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ho.a, null),
+                    n.a.createElement(go.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13292,7 +13262,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(No.a, null),
+                    n.a.createElement(xo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13309,7 +13279,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Io.a, null),
+                    n.a.createElement(ho.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13326,7 +13296,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fo.a, null),
+                    n.a.createElement(No.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13343,7 +13313,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yo.a, null),
+                    n.a.createElement(Io.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13360,7 +13330,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bo.a, null),
+                    n.a.createElement(fo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13377,7 +13347,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vo.a, null),
+                    n.a.createElement(yo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13394,7 +13364,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(To.a, null),
+                    n.a.createElement(bo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13411,7 +13381,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ao.a, null),
+                    n.a.createElement(vo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13428,7 +13398,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wo.a, null),
+                    n.a.createElement(To.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13445,7 +13415,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Co.a, null),
+                    n.a.createElement(Ao.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13462,7 +13432,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ko.a, null),
+                    n.a.createElement(wo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13479,7 +13449,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Po.a, null),
+                    n.a.createElement(Co.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13496,7 +13466,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(So.a, null),
+                    n.a.createElement(ko.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13513,7 +13483,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oo.a, null),
+                    n.a.createElement(Po.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13530,7 +13500,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bo.a, null),
+                    n.a.createElement(So.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13547,7 +13517,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mo.a, null),
+                    n.a.createElement(Oo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13564,7 +13534,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jo.a, null),
+                    n.a.createElement(Bo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13581,7 +13551,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lo.a, null),
+                    n.a.createElement(Mo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13598,7 +13568,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Do.a, null),
+                    n.a.createElement(jo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13615,7 +13585,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fo.a, null),
+                    n.a.createElement(Lo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13632,7 +13602,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ro.a, null),
+                    n.a.createElement(Do.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13649,7 +13619,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ca.a, null),
+                    n.a.createElement(Aa.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13666,7 +13636,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wo.a, null),
+                    n.a.createElement(Fo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13683,7 +13653,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ho.a, null),
+                    n.a.createElement(Ro.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13700,7 +13670,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zo.a, null),
+                    n.a.createElement(Wo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13717,7 +13687,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Go.a, null),
+                    n.a.createElement(Ho.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13734,7 +13704,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uo.a, null),
+                    n.a.createElement(zo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13751,7 +13721,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vo.a, null),
+                    n.a.createElement(Go.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13768,7 +13738,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yo.a, null),
+                    n.a.createElement(Uo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13785,7 +13755,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ko.a, null),
+                    n.a.createElement(Vo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13802,7 +13772,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qo.a, null),
+                    n.a.createElement(Yo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13819,7 +13789,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jo.a, null),
+                    n.a.createElement(Ko.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13836,7 +13806,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qo.a, null),
+                    n.a.createElement(Qo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13853,7 +13823,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zo.a, null),
+                    n.a.createElement(Jo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13870,7 +13840,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_o.a, null),
+                    n.a.createElement(qo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13887,7 +13857,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xo.a, null),
+                    n.a.createElement(Zo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13904,7 +13874,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($o.a, null),
+                    n.a.createElement(_o.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13921,7 +13891,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ed.a, null),
+                    n.a.createElement(Xo.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13938,7 +13908,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ad.a, null),
+                    n.a.createElement($o.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13955,7 +13925,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(td.a, null),
+                    n.a.createElement(ed.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13972,7 +13942,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ld.a, null),
+                    n.a.createElement(ad.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -13989,7 +13959,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nd.a, null),
+                    n.a.createElement(td.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14006,7 +13976,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rd.a, null),
+                    n.a.createElement(ld.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14023,7 +13993,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(md.a, null),
+                    n.a.createElement(nd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14040,7 +14010,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cd.a, null),
+                    n.a.createElement(rd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14057,7 +14027,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(id.a, null),
+                    n.a.createElement(md.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14074,7 +14044,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sd.a, null),
+                    n.a.createElement(cd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14091,7 +14061,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(od.a, null),
+                    n.a.createElement(id.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14108,7 +14078,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dd.a, null),
+                    n.a.createElement(sd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14125,7 +14095,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ed.a, null),
+                    n.a.createElement(od.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14142,7 +14112,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ud.a, null),
+                    n.a.createElement(dd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14159,7 +14129,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pd.a, null),
+                    n.a.createElement(Ed.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14176,7 +14146,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gd.a, null),
+                    n.a.createElement(ud.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14193,7 +14163,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xd.a, null),
+                    n.a.createElement(pd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14210,7 +14180,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hd.a, null),
+                    n.a.createElement(gd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14227,7 +14197,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nd.a, null),
+                    n.a.createElement(xd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14244,7 +14214,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Id.a, null),
+                    n.a.createElement(hd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14261,7 +14231,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fd.a, null),
+                    n.a.createElement(Nd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14278,7 +14248,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yd.a, null),
+                    n.a.createElement(Id.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14295,7 +14265,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bd.a, null),
+                    n.a.createElement(fd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14312,7 +14282,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vd.a, null),
+                    n.a.createElement(yd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14329,7 +14299,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Td.a, null),
+                    n.a.createElement(bd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14346,7 +14316,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ad.a, null),
+                    n.a.createElement(vd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14363,7 +14333,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wd.a, null),
+                    n.a.createElement(Td.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14380,7 +14350,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cd.a, null),
+                    n.a.createElement(Ad.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14397,7 +14367,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kd.a, null),
+                    n.a.createElement(wd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14414,7 +14384,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pd.a, null),
+                    n.a.createElement(Cd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14431,7 +14401,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sd.a, null),
+                    n.a.createElement(kd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14448,7 +14418,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Od.a, null),
+                    n.a.createElement(Pd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14465,7 +14435,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bd.a, null),
+                    n.a.createElement(Sd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14482,7 +14452,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Md.a, null),
+                    n.a.createElement(Od.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14499,7 +14469,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jd.a, null),
+                    n.a.createElement(Bd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14516,7 +14486,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ld.a, null),
+                    n.a.createElement(Md.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14533,7 +14503,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dd.a, null),
+                    n.a.createElement(jd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14550,7 +14520,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fd.a, null),
+                    n.a.createElement(Ld.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14567,7 +14537,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rd.a, null),
+                    n.a.createElement(Dd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14584,7 +14554,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wd.a, null),
+                    n.a.createElement(Fd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14601,7 +14571,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hd.a, null),
+                    n.a.createElement(Rd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14618,7 +14588,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zd.a, null),
+                    n.a.createElement(Wd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14635,7 +14605,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gd.a, null),
+                    n.a.createElement(Hd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14652,7 +14622,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ud.a, null),
+                    n.a.createElement(zd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14669,7 +14639,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vd.a, null),
+                    n.a.createElement(Gd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14686,7 +14656,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yd.a, null),
+                    n.a.createElement(Ud.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14703,7 +14673,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kd.a, null),
+                    n.a.createElement(Vd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14720,7 +14690,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qd.a, null),
+                    n.a.createElement(Yd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14737,7 +14707,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jd.a, null),
+                    n.a.createElement(Kd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14754,7 +14724,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qd.a, null),
+                    n.a.createElement(Qd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14771,7 +14741,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zd.a, null),
+                    n.a.createElement(Jd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14788,7 +14758,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_d.a, null),
+                    n.a.createElement(qd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14805,7 +14775,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xd.a, null),
+                    n.a.createElement(Zd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14822,7 +14792,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($d.a, null),
+                    n.a.createElement(_d.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14839,7 +14809,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eE.a, null),
+                    n.a.createElement(Xd.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14856,7 +14826,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aE.a, null),
+                    n.a.createElement($d.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14873,7 +14843,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tE.a, null),
+                    n.a.createElement(eE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14890,7 +14860,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lE.a, null),
+                    n.a.createElement(aE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14907,7 +14877,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nE.a, null),
+                    n.a.createElement(tE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14924,7 +14894,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rE.a, null),
+                    n.a.createElement(lE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14941,7 +14911,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mE.a, null),
+                    n.a.createElement(nE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14958,7 +14928,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cE.a, null),
+                    n.a.createElement(rE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14975,7 +14945,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iE.a, null),
+                    n.a.createElement(mE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -14992,7 +14962,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sE.a, null),
+                    n.a.createElement(cE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15009,7 +14979,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oE.a, null),
+                    n.a.createElement(iE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15026,7 +14996,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dE.a, null),
+                    n.a.createElement(sE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15043,7 +15013,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EE.a, null),
+                    n.a.createElement(oE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15060,7 +15030,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uE.a, null),
+                    n.a.createElement(dE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15077,7 +15047,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pE.a, null),
+                    n.a.createElement(EE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15094,7 +15064,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gE.a, null),
+                    n.a.createElement(uE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15111,7 +15081,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xE.a, null),
+                    n.a.createElement(pE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15128,7 +15098,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hE.a, null),
+                    n.a.createElement(gE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15145,7 +15115,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NE.a, null),
+                    n.a.createElement(xE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15162,7 +15132,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(IE.a, null),
+                    n.a.createElement(hE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15179,7 +15149,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fE.a, null),
+                    n.a.createElement(NE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15196,7 +15166,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yE.a, null),
+                    n.a.createElement(IE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15213,7 +15183,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bE.a, null),
+                    n.a.createElement(fE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15247,7 +15217,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vE.a, null),
+                    n.a.createElement(yE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15264,7 +15234,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TE.a, null),
+                    n.a.createElement(bE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15281,7 +15251,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AE.a, null),
+                    n.a.createElement(vE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15298,7 +15268,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wE.a, null),
+                    n.a.createElement(TE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15315,7 +15285,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CE.a, null),
+                    n.a.createElement(AE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15332,7 +15302,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kE.a, null),
+                    n.a.createElement(wE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15366,7 +15336,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PE.a, null),
+                    n.a.createElement(CE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15383,7 +15353,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SE.a, null),
+                    n.a.createElement(kE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15400,7 +15370,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OE.a, null),
+                    n.a.createElement(PE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15417,7 +15387,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BE.a, null),
+                    n.a.createElement(SE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15434,7 +15404,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ME.a, null),
+                    n.a.createElement(OE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15451,7 +15421,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jE.a, null),
+                    n.a.createElement(BE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15468,7 +15438,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LE.a, null),
+                    n.a.createElement(ME.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15485,7 +15455,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DE.a, null),
+                    n.a.createElement(jE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15502,7 +15472,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FE.a, null),
+                    n.a.createElement(LE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15519,7 +15489,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RE.a, null),
+                    n.a.createElement(DE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15536,7 +15506,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WE.a, null),
+                    n.a.createElement(FE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15553,7 +15523,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HE.a, null),
+                    n.a.createElement(RE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15570,7 +15540,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zE.a, null),
+                    n.a.createElement(WE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15587,7 +15557,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GE.a, null),
+                    n.a.createElement(HE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15604,7 +15574,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UE.a, null),
+                    n.a.createElement(zE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15621,7 +15591,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VE.a, null),
+                    n.a.createElement(GE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15638,7 +15608,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ha.a, null),
+                    n.a.createElement(Ra.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15655,7 +15625,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YE.a, null),
+                    n.a.createElement(UE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15672,7 +15642,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KE.a, null),
+                    n.a.createElement(VE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15689,7 +15659,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QE.a, null),
+                    n.a.createElement(YE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15706,7 +15676,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JE.a, null),
+                    n.a.createElement(KE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15723,7 +15693,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qE.a, null),
+                    n.a.createElement(QE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15740,7 +15710,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZE.a, null),
+                    n.a.createElement(JE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15757,7 +15727,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_E.a, null),
+                    n.a.createElement(qE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15774,7 +15744,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XE.a, null),
+                    n.a.createElement(ZE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15791,7 +15761,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($E.a, null),
+                    n.a.createElement(_E.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15808,7 +15778,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eu.a, null),
+                    n.a.createElement(XE.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15825,7 +15795,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(au.a, null),
+                    n.a.createElement($E.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15842,7 +15812,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tu.a, null),
+                    n.a.createElement(eu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15859,7 +15829,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lu.a, null),
+                    n.a.createElement(au.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15893,7 +15863,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nu.a, null),
+                    n.a.createElement(tu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15910,7 +15880,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ru.a, null),
+                    n.a.createElement(lu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15927,7 +15897,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mu.a, null),
+                    n.a.createElement(nu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15944,7 +15914,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cu.a, null),
+                    n.a.createElement(ru.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15961,7 +15931,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iu.a, null),
+                    n.a.createElement(mu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15978,7 +15948,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(su.a, null),
+                    n.a.createElement(cu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -15995,7 +15965,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ou.a, null),
+                    n.a.createElement(iu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16012,7 +15982,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(du.a, null),
+                    n.a.createElement(su.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16029,7 +15999,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eu.a, null),
+                    n.a.createElement(ou.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16046,7 +16016,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uu.a, null),
+                    n.a.createElement(du.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16063,7 +16033,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pu.a, null),
+                    n.a.createElement(Eu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16080,7 +16050,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gu.a, null),
+                    n.a.createElement(uu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16097,7 +16067,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xu.a, null),
+                    n.a.createElement(pu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16114,7 +16084,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hu.a, null),
+                    n.a.createElement(gu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16131,7 +16101,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nu.a, null),
+                    n.a.createElement(xu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16148,7 +16118,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Iu.a, null),
+                    n.a.createElement(hu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16182,7 +16152,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fu.a, null),
+                    n.a.createElement(Nu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16199,7 +16169,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yu.a, null),
+                    n.a.createElement(Iu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16216,7 +16186,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bu.a, null),
+                    n.a.createElement(fu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16233,7 +16203,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vu.a, null),
+                    n.a.createElement(yu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16250,7 +16220,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tu.a, null),
+                    n.a.createElement(bu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16267,7 +16237,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Au.a, null),
+                    n.a.createElement(vu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16284,7 +16254,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wu.a, null),
+                    n.a.createElement(Tu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16301,7 +16271,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cu.a, null),
+                    n.a.createElement(Au.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16318,7 +16288,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ku.a, null),
+                    n.a.createElement(wu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16335,7 +16305,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pu.a, null),
+                    n.a.createElement(Cu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16352,7 +16322,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Su.a, null),
+                    n.a.createElement(ku.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16369,7 +16339,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ou.a, null),
+                    n.a.createElement(Pu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16386,7 +16356,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bu.a, null),
+                    n.a.createElement(Su.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16403,7 +16373,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mu.a, null),
+                    n.a.createElement(Ou.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16420,7 +16390,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ju.a, null),
+                    n.a.createElement(Bu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16437,7 +16407,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lu.a, null),
+                    n.a.createElement(Mu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16454,7 +16424,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Du.a, null),
+                    n.a.createElement(ju.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16471,7 +16441,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fu.a, null),
+                    n.a.createElement(Lu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16488,7 +16458,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ru.a, null),
+                    n.a.createElement(Du.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16505,7 +16475,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wu.a, null),
+                    n.a.createElement(Fu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16522,7 +16492,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hu.a, null),
+                    n.a.createElement(Ru.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16539,7 +16509,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zu.a, null),
+                    n.a.createElement(Wu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16556,7 +16526,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gu.a, null),
+                    n.a.createElement(Hu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16573,7 +16543,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uu.a, null),
+                    n.a.createElement(zu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16590,7 +16560,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vu.a, null),
+                    n.a.createElement(Gu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16607,7 +16577,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yu.a, null),
+                    n.a.createElement(Uu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16624,7 +16594,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ku.a, null),
+                    n.a.createElement(Vu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16641,7 +16611,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qu.a, null),
+                    n.a.createElement(Yu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16658,7 +16628,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ju.a, null),
+                    n.a.createElement(Ku.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16675,7 +16645,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qu.a, null),
+                    n.a.createElement(Qu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16692,7 +16662,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zu.a, null),
+                    n.a.createElement(Ju.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16726,7 +16696,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_u.a, null),
+                    n.a.createElement(qu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16743,7 +16713,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xu.a, null),
+                    n.a.createElement(Zu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16760,7 +16730,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($u.a, null),
+                    n.a.createElement(_u.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16777,7 +16747,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ep.a, null),
+                    n.a.createElement(Xu.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16794,7 +16764,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ap.a, null),
+                    n.a.createElement($u.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16811,7 +16781,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tp.a, null),
+                    n.a.createElement(ep.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16828,7 +16798,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lp.a, null),
+                    n.a.createElement(ap.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16845,7 +16815,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(np.a, null),
+                    n.a.createElement(tp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16862,7 +16832,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rp.a, null),
+                    n.a.createElement(lp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16879,7 +16849,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mp.a, null),
+                    n.a.createElement(np.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16896,7 +16866,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cp.a, null),
+                    n.a.createElement(rp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16913,7 +16883,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ip.a, null),
+                    n.a.createElement(mp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16930,7 +16900,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sp.a, null),
+                    n.a.createElement(cp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16947,7 +16917,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(op.a, null),
+                    n.a.createElement(ip.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16964,7 +16934,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dp.a, null),
+                    n.a.createElement(sp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16981,7 +16951,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ep.a, null),
+                    n.a.createElement(op.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -16998,7 +16968,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(up.a, null),
+                    n.a.createElement(dp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17015,7 +16985,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pp.a, null),
+                    n.a.createElement(Ep.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17032,7 +17002,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gp.a, null),
+                    n.a.createElement(up.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17049,7 +17019,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xp.a, null),
+                    n.a.createElement(pp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17066,7 +17036,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hp.a, null),
+                    n.a.createElement(gp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17083,7 +17053,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Np.a, null),
+                    n.a.createElement(xp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17100,7 +17070,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ip.a, null),
+                    n.a.createElement(hp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17117,7 +17087,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fp.a, null),
+                    n.a.createElement(Np.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17134,7 +17104,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yp.a, null),
+                    n.a.createElement(Ip.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17151,7 +17121,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bp.a, null),
+                    n.a.createElement(fp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17168,7 +17138,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vp.a, null),
+                    n.a.createElement(yp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17185,7 +17155,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tp.a, null),
+                    n.a.createElement(bp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17202,7 +17172,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ap.a, null),
+                    n.a.createElement(vp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17219,7 +17189,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wp.a, null),
+                    n.a.createElement(Tp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17236,7 +17206,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cp.a, null),
+                    n.a.createElement(Ap.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17253,7 +17223,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kp.a, null),
+                    n.a.createElement(wp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17270,7 +17240,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pp.a, null),
+                    n.a.createElement(Cp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17287,7 +17257,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sp.a, null),
+                    n.a.createElement(kp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17304,7 +17274,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Op.a, null),
+                    n.a.createElement(Pp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17321,7 +17291,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bp.a, null),
+                    n.a.createElement(Sp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17338,7 +17308,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mp.a, null),
+                    n.a.createElement(Op.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17355,7 +17325,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jp.a, null),
+                    n.a.createElement(Bp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17372,7 +17342,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lp.a, null),
+                    n.a.createElement(Mp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17389,7 +17359,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dp.a, null),
+                    n.a.createElement(jp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17406,7 +17376,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fp.a, null),
+                    n.a.createElement(Lp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17423,7 +17393,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rp.a, null),
+                    n.a.createElement(Dp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17440,7 +17410,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wp.a, null),
+                    n.a.createElement(Fp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17457,7 +17427,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hp.a, null),
+                    n.a.createElement(Rp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17474,7 +17444,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zp.a, null),
+                    n.a.createElement(Wp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17491,7 +17461,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gp.a, null),
+                    n.a.createElement(Hp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17508,7 +17478,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Up.a, null),
+                    n.a.createElement(zp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17525,7 +17495,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vp.a, null),
+                    n.a.createElement(Gp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17542,7 +17512,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yp.a, null),
+                    n.a.createElement(Up.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17559,7 +17529,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kp.a, null),
+                    n.a.createElement(Vp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17576,7 +17546,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qp.a, null),
+                    n.a.createElement(Yp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17593,7 +17563,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jp.a, null),
+                    n.a.createElement(Kp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17627,7 +17597,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qp.a, null),
+                    n.a.createElement(Qp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17644,7 +17614,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zp.a, null),
+                    n.a.createElement(Jp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17661,7 +17631,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_p.a, null),
+                    n.a.createElement(qp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17678,7 +17648,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xp.a, null),
+                    n.a.createElement(Zp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17695,7 +17665,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($p.a, null),
+                    n.a.createElement(_p.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17712,7 +17682,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eg.a, null),
+                    n.a.createElement(Xp.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17729,7 +17699,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ag.a, null),
+                    n.a.createElement($p.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17746,7 +17716,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tg.a, null),
+                    n.a.createElement(eg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17763,7 +17733,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lg.a, null),
+                    n.a.createElement(ag.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17780,7 +17750,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ng.a, null),
+                    n.a.createElement(tg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17797,7 +17767,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rg.a, null),
+                    n.a.createElement(lg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17814,7 +17784,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mg.a, null),
+                    n.a.createElement(ng.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17831,7 +17801,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cg.a, null),
+                    n.a.createElement(rg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17848,7 +17818,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ig.a, null),
+                    n.a.createElement(mg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17865,7 +17835,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sg.a, null),
+                    n.a.createElement(cg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17882,7 +17852,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(og.a, null),
+                    n.a.createElement(ig.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17899,7 +17869,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dg.a, null),
+                    n.a.createElement(sg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17916,7 +17886,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eg.a, null),
+                    n.a.createElement(og.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17933,7 +17903,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ug.a, null),
+                    n.a.createElement(dg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17950,7 +17920,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pg.a, null),
+                    n.a.createElement(Eg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17967,7 +17937,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gg.a, null),
+                    n.a.createElement(ug.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -17984,7 +17954,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xg.a, null),
+                    n.a.createElement(pg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18001,7 +17971,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hg.a, null),
+                    n.a.createElement(gg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18018,7 +17988,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ng.a, null),
+                    n.a.createElement(xg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18035,7 +18005,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ig.a, null),
+                    n.a.createElement(hg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18052,7 +18022,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fg.a, null),
+                    n.a.createElement(Ng.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18069,7 +18039,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yg.a, null),
+                    n.a.createElement(Ig.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18086,7 +18056,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bg.a, null),
+                    n.a.createElement(fg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18103,7 +18073,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vg.a, null),
+                    n.a.createElement(yg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18137,7 +18107,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tg.a, null),
+                    n.a.createElement(bg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18154,7 +18124,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ag.a, null),
+                    n.a.createElement(vg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18171,7 +18141,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wg.a, null),
+                    n.a.createElement(Tg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18188,7 +18158,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cg.a, null),
+                    n.a.createElement(Ag.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18205,7 +18175,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kg.a, null),
+                    n.a.createElement(wg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18222,7 +18192,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Pg.a, null),
+                    n.a.createElement(Cg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18239,7 +18209,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sg.a, null),
+                    n.a.createElement(kg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18256,7 +18226,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Og.a, null),
+                    n.a.createElement(Pg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18273,7 +18243,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bg.a, null),
+                    n.a.createElement(Sg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18290,7 +18260,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mg.a, null),
+                    n.a.createElement(Og.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18307,7 +18277,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jg.a, null),
+                    n.a.createElement(Bg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18324,7 +18294,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lg.a, null),
+                    n.a.createElement(Mg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18341,7 +18311,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dg.a, null),
+                    n.a.createElement(jg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18358,7 +18328,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fg.a, null),
+                    n.a.createElement(Lg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18375,7 +18345,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rg.a, null),
+                    n.a.createElement(Dg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18392,7 +18362,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wg.a, null),
+                    n.a.createElement(Fg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18409,7 +18379,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hg.a, null),
+                    n.a.createElement(Rg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18426,7 +18396,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zg.a, null),
+                    n.a.createElement(Wg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18443,7 +18413,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gg.a, null),
+                    n.a.createElement(Hg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18460,7 +18430,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ug.a, null),
+                    n.a.createElement(zg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18477,7 +18447,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vg.a, null),
+                    n.a.createElement(Gg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18494,7 +18464,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yg.a, null),
+                    n.a.createElement(Ug.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18511,7 +18481,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kg.a, null),
+                    n.a.createElement(Vg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18528,7 +18498,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qg.a, null),
+                    n.a.createElement(Yg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18545,7 +18515,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jg.a, null),
+                    n.a.createElement(Kg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18562,7 +18532,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qg.a, null),
+                    n.a.createElement(Qg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18579,7 +18549,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zg.a, null),
+                    n.a.createElement(Jg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18596,7 +18566,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_g.a, null),
+                    n.a.createElement(qg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18613,7 +18583,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xg.a, null),
+                    n.a.createElement(Zg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18630,7 +18600,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($g.a, null),
+                    n.a.createElement(_g.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18647,7 +18617,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ex.a, null),
+                    n.a.createElement(Xg.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18681,7 +18651,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ax.a, null),
+                    n.a.createElement($g.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18698,7 +18668,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tx.a, null),
+                    n.a.createElement(ex.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18732,7 +18702,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lx.a, null),
+                    n.a.createElement(ax.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18749,7 +18719,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nx.a, null),
+                    n.a.createElement(tx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18766,7 +18736,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rx.a, null),
+                    n.a.createElement(lx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18783,7 +18753,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mx.a, null),
+                    n.a.createElement(nx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18800,7 +18770,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cx.a, null),
+                    n.a.createElement(rx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18817,7 +18787,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ix.a, null),
+                    n.a.createElement(mx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18834,7 +18804,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sx.a, null),
+                    n.a.createElement(cx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18851,7 +18821,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ox.a, null),
+                    n.a.createElement(ix.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18868,7 +18838,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dx.a, null),
+                    n.a.createElement(sx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18885,7 +18855,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ex.a, null),
+                    n.a.createElement(ox.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18902,7 +18872,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ux.a, null),
+                    n.a.createElement(dx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18919,7 +18889,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(px.a, null),
+                    n.a.createElement(Ex.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18936,7 +18906,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gx.a, null),
+                    n.a.createElement(ux.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18953,7 +18923,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xx.a, null),
+                    n.a.createElement(px.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18970,7 +18940,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hx.a, null),
+                    n.a.createElement(gx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -18987,7 +18957,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nx.a, null),
+                    n.a.createElement(xx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19004,7 +18974,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ix.a, null),
+                    n.a.createElement(hx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19021,7 +18991,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fx.a, null),
+                    n.a.createElement(Nx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19038,7 +19008,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yx.a, null),
+                    n.a.createElement(Ix.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19055,7 +19025,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bx.a, null),
+                    n.a.createElement(fx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19072,7 +19042,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vx.a, null),
+                    n.a.createElement(yx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19089,7 +19059,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Tx.a, null),
+                    n.a.createElement(bx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19106,7 +19076,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ax.a, null),
+                    n.a.createElement(vx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19123,7 +19093,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wx.a, null),
+                    n.a.createElement(Tx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19140,7 +19110,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Cx.a, null),
+                    n.a.createElement(Ax.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19157,7 +19127,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kx.a, null),
+                    n.a.createElement(wx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19191,7 +19161,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Px.a, null),
+                    n.a.createElement(Cx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19208,7 +19178,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sx.a, null),
+                    n.a.createElement(kx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19225,7 +19195,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ox.a, null),
+                    n.a.createElement(Px.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19242,7 +19212,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bx.a, null),
+                    n.a.createElement(Sx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19259,7 +19229,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mx.a, null),
+                    n.a.createElement(Ox.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19276,7 +19246,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jx.a, null),
+                    n.a.createElement(Bx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19293,7 +19263,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lx.a, null),
+                    n.a.createElement(Mx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19310,7 +19280,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dx.a, null),
+                    n.a.createElement(jx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19327,7 +19297,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fx.a, null),
+                    n.a.createElement(Lx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19344,7 +19314,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rx.a, null),
+                    n.a.createElement(Dx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19361,7 +19331,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wx.a, null),
+                    n.a.createElement(Fx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19378,7 +19348,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hx.a, null),
+                    n.a.createElement(Rx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19395,7 +19365,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zx.a, null),
+                    n.a.createElement(Wx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19412,7 +19382,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gx.a, null),
+                    n.a.createElement(Hx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19429,7 +19399,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ux.a, null),
+                    n.a.createElement(zx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19446,7 +19416,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vx.a, null),
+                    n.a.createElement(Gx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19463,7 +19433,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yx.a, null),
+                    n.a.createElement(Ux.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19480,7 +19450,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kx.a, null),
+                    n.a.createElement(Vx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19497,7 +19467,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qx.a, null),
+                    n.a.createElement(Yx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19514,7 +19484,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jx.a, null),
+                    n.a.createElement(Kx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19531,7 +19501,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qx.a, null),
+                    n.a.createElement(Qx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19548,7 +19518,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zx.a, null),
+                    n.a.createElement(Jx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19565,7 +19535,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_x.a, null),
+                    n.a.createElement(qx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19582,7 +19552,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xx.a, null),
+                    n.a.createElement(Zx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19599,7 +19569,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($x.a, null),
+                    n.a.createElement(_x.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19616,7 +19586,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eh.a, null),
+                    n.a.createElement(Xx.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19633,7 +19603,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ah.a, null),
+                    n.a.createElement($x.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19650,7 +19620,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(th.a, null),
+                    n.a.createElement(eh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19667,7 +19637,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lh.a, null),
+                    n.a.createElement(ah.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19684,7 +19654,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nh.a, null),
+                    n.a.createElement(th.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19701,7 +19671,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rh.a, null),
+                    n.a.createElement(lh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19718,7 +19688,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mh.a, null),
+                    n.a.createElement(nh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19735,7 +19705,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ch.a, null),
+                    n.a.createElement(rh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19752,7 +19722,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ih.a, null),
+                    n.a.createElement(mh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19769,7 +19739,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sh.a, null),
+                    n.a.createElement(ch.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19786,7 +19756,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oh.a, null),
+                    n.a.createElement(ih.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19820,7 +19790,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dh.a, null),
+                    n.a.createElement(sh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19837,7 +19807,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Eh.a, null),
+                    n.a.createElement(oh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19854,7 +19824,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uh.a, null),
+                    n.a.createElement(dh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19871,7 +19841,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ph.a, null),
+                    n.a.createElement(Eh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19888,7 +19858,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gh.a, null),
+                    n.a.createElement(uh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19905,7 +19875,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xh.a, null),
+                    n.a.createElement(ph.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19922,7 +19892,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hh.a, null),
+                    n.a.createElement(gh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19939,7 +19909,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Nh.a, null),
+                    n.a.createElement(xh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19956,7 +19926,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ih.a, null),
+                    n.a.createElement(hh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19973,7 +19943,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fh.a, null),
+                    n.a.createElement(Nh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -19990,7 +19960,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yh.a, null),
+                    n.a.createElement(Ih.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20024,7 +19994,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bh.a, null),
+                    n.a.createElement(fh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20041,7 +20011,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vh.a, null),
+                    n.a.createElement(yh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20058,7 +20028,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Th.a, null),
+                    n.a.createElement(bh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20075,7 +20045,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ah.a, null),
+                    n.a.createElement(vh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20092,7 +20062,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wh.a, null),
+                    n.a.createElement(Th.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20109,7 +20079,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ch.a, null),
+                    n.a.createElement(Ah.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20126,7 +20096,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kh.a, null),
+                    n.a.createElement(wh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20143,7 +20113,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ph.a, null),
+                    n.a.createElement(Ch.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20160,7 +20130,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Sh.a, null),
+                    n.a.createElement(kh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20177,7 +20147,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Oh.a, null),
+                    n.a.createElement(Ph.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20194,7 +20164,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Bh.a, null),
+                    n.a.createElement(Sh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20211,7 +20181,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Mh.a, null),
+                    n.a.createElement(Oh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20228,7 +20198,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jh.a, null),
+                    n.a.createElement(Bh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20245,7 +20215,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Lh.a, null),
+                    n.a.createElement(Mh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20262,7 +20232,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Dh.a, null),
+                    n.a.createElement(jh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20279,7 +20249,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Fh.a, null),
+                    n.a.createElement(Lh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20296,7 +20266,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Rh.a, null),
+                    n.a.createElement(Dh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20313,7 +20283,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Wh.a, null),
+                    n.a.createElement(Fh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20330,7 +20300,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Hh.a, null),
+                    n.a.createElement(Rh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20347,7 +20317,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zh.a, null),
+                    n.a.createElement(Wh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20364,7 +20334,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Gh.a, null),
+                    n.a.createElement(Hh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20381,7 +20351,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Uh.a, null),
+                    n.a.createElement(zh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20398,7 +20368,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Vh.a, null),
+                    n.a.createElement(Gh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20415,7 +20385,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Yh.a, null),
+                    n.a.createElement(Uh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20432,7 +20402,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Kh.a, null),
+                    n.a.createElement(Vh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20449,7 +20419,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Qh.a, null),
+                    n.a.createElement(Yh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20466,7 +20436,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Jh.a, null),
+                    n.a.createElement(Kh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20483,7 +20453,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qh.a, null),
+                    n.a.createElement(Qh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20500,7 +20470,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Zh.a, null),
+                    n.a.createElement(Jh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20517,7 +20487,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_h.a, null),
+                    n.a.createElement(qh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20534,7 +20504,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Xh.a, null),
+                    n.a.createElement(Zh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20551,7 +20521,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($h.a, null),
+                    n.a.createElement(_h.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20568,7 +20538,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eN.a, null),
+                    n.a.createElement(Xh.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20585,7 +20555,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aN.a, null),
+                    n.a.createElement($h.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20602,7 +20572,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tN.a, null),
+                    n.a.createElement(eN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20619,7 +20589,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lN.a, null),
+                    n.a.createElement(aN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20636,7 +20606,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nN.a, null),
+                    n.a.createElement(tN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20653,7 +20623,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rN.a, null),
+                    n.a.createElement(lN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20670,7 +20640,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mN.a, null),
+                    n.a.createElement(nN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20687,7 +20657,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cN.a, null),
+                    n.a.createElement(rN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20704,7 +20674,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iN.a, null),
+                    n.a.createElement(mN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20721,7 +20691,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sN.a, null),
+                    n.a.createElement(cN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20738,7 +20708,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oN.a, null),
+                    n.a.createElement(iN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20755,7 +20725,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dN.a, null),
+                    n.a.createElement(sN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20772,7 +20742,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EN.a, null),
+                    n.a.createElement(oN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20789,7 +20759,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uN.a, null),
+                    n.a.createElement(dN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20806,7 +20776,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pN.a, null),
+                    n.a.createElement(EN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20823,7 +20793,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gN.a, null),
+                    n.a.createElement(uN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20840,7 +20810,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xN.a, null),
+                    n.a.createElement(pN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20857,7 +20827,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hN.a, null),
+                    n.a.createElement(gN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20874,7 +20844,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NN.a, null),
+                    n.a.createElement(xN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20891,7 +20861,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(IN.a, null),
+                    n.a.createElement(hN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20908,7 +20878,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fN.a, null),
+                    n.a.createElement(NN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20925,7 +20895,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yN.a, null),
+                    n.a.createElement(IN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20942,7 +20912,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bN.a, null),
+                    n.a.createElement(fN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20959,7 +20929,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vN.a, null),
+                    n.a.createElement(yN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20976,7 +20946,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TN.a, null),
+                    n.a.createElement(bN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -20993,7 +20963,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AN.a, null),
+                    n.a.createElement(vN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21010,7 +20980,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wN.a, null),
+                    n.a.createElement(TN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21044,7 +21014,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CN.a, null),
+                    n.a.createElement(AN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21061,7 +21031,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kN.a, null),
+                    n.a.createElement(wN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21078,7 +21048,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PN.a, null),
+                    n.a.createElement(CN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21095,7 +21065,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SN.a, null),
+                    n.a.createElement(kN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21112,7 +21082,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ON.a, null),
+                    n.a.createElement(PN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21129,7 +21099,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BN.a, null),
+                    n.a.createElement(SN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21146,7 +21116,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MN.a, null),
+                    n.a.createElement(ON.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21163,7 +21133,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jN.a, null),
+                    n.a.createElement(BN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21180,7 +21150,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LN.a, null),
+                    n.a.createElement(MN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21197,7 +21167,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DN.a, null),
+                    n.a.createElement(jN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21214,7 +21184,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FN.a, null),
+                    n.a.createElement(LN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21231,7 +21201,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RN.a, null),
+                    n.a.createElement(DN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21248,7 +21218,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WN.a, null),
+                    n.a.createElement(FN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21265,7 +21235,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HN.a, null),
+                    n.a.createElement(RN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21282,7 +21252,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zN.a, null),
+                    n.a.createElement(WN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21299,7 +21269,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GN.a, null),
+                    n.a.createElement(HN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21316,7 +21286,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UN.a, null),
+                    n.a.createElement(zN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21333,7 +21303,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VN.a, null),
+                    n.a.createElement(GN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21350,7 +21320,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YN.a, null),
+                    n.a.createElement(UN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21367,7 +21337,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KN.a, null),
+                    n.a.createElement(VN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21384,7 +21354,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QN.a, null),
+                    n.a.createElement(YN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21401,7 +21371,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JN.a, null),
+                    n.a.createElement(KN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21418,7 +21388,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qN.a, null),
+                    n.a.createElement(QN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21435,7 +21405,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZN.a, null),
+                    n.a.createElement(JN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21452,7 +21422,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_N.a, null),
+                    n.a.createElement(qN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21469,7 +21439,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XN.a, null),
+                    n.a.createElement(ZN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21486,7 +21456,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($N.a, null),
+                    n.a.createElement(_N.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21503,7 +21473,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(eI.a, null),
+                    n.a.createElement(XN.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21520,7 +21490,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(aI.a, null),
+                    n.a.createElement($N.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21537,7 +21507,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tI.a, null),
+                    n.a.createElement(eI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21554,7 +21524,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lI.a, null),
+                    n.a.createElement(aI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21571,7 +21541,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nI.a, null),
+                    n.a.createElement(tI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21588,7 +21558,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rI.a, null),
+                    n.a.createElement(lI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21605,7 +21575,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mI.a, null),
+                    n.a.createElement(nI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21622,7 +21592,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cI.a, null),
+                    n.a.createElement(rI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21639,7 +21609,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(iI.a, null),
+                    n.a.createElement(mI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21656,7 +21626,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sI.a, null),
+                    n.a.createElement(cI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21673,7 +21643,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(oI.a, null),
+                    n.a.createElement(iI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21690,7 +21660,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(dI.a, null),
+                    n.a.createElement(sI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21707,7 +21677,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(EI.a, null),
+                    n.a.createElement(oI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21724,7 +21694,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uI.a, null),
+                    n.a.createElement(dI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21741,7 +21711,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pI.a, null),
+                    n.a.createElement(EI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21758,7 +21728,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gI.a, null),
+                    n.a.createElement(uI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21775,7 +21745,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xI.a, null),
+                    n.a.createElement(pI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21792,7 +21762,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(hI.a, null),
+                    n.a.createElement(gI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21809,7 +21779,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(NI.a, null),
+                    n.a.createElement(xI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21826,7 +21796,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(II.a, null),
+                    n.a.createElement(hI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21843,7 +21813,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(fI.a, null),
+                    n.a.createElement(NI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21860,7 +21830,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(yI.a, null),
+                    n.a.createElement(II.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21877,7 +21847,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(bI.a, null),
+                    n.a.createElement(fI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21894,7 +21864,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(vI.a, null),
+                    n.a.createElement(yI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21911,7 +21881,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(TI.a, null),
+                    n.a.createElement(bI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21928,7 +21898,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(AI.a, null),
+                    n.a.createElement(vI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21945,7 +21915,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(wI.a, null),
+                    n.a.createElement(TI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21962,7 +21932,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(CI.a, null),
+                    n.a.createElement(AI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21979,7 +21949,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(kI.a, null),
+                    n.a.createElement(wI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -21996,7 +21966,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(PI.a, null),
+                    n.a.createElement(CI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22013,7 +21983,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(SI.a, null),
+                    n.a.createElement(kI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22030,7 +22000,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(OI.a, null),
+                    n.a.createElement(PI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22047,7 +22017,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(BI.a, null),
+                    n.a.createElement(SI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22064,7 +22034,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(MI.a, null),
+                    n.a.createElement(OI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22081,7 +22051,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(jI.a, null),
+                    n.a.createElement(BI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22098,7 +22068,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(LI.a, null),
+                    n.a.createElement(MI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22115,7 +22085,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(DI.a, null),
+                    n.a.createElement(jI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22132,7 +22102,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(FI.a, null),
+                    n.a.createElement(LI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22149,7 +22119,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(RI.a, null),
+                    n.a.createElement(DI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22166,7 +22136,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(WI.a, null),
+                    n.a.createElement(FI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22183,7 +22153,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(HI.a, null),
+                    n.a.createElement(RI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22200,7 +22170,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(zI.a, null),
+                    n.a.createElement(WI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22217,7 +22187,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(GI.a, null),
+                    n.a.createElement(HI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22234,7 +22204,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(UI.a, null),
+                    n.a.createElement(zI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22251,7 +22221,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(VI.a, null),
+                    n.a.createElement(GI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22268,7 +22238,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(YI.a, null),
+                    n.a.createElement(UI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22285,7 +22255,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(KI.a, null),
+                    n.a.createElement(VI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22302,7 +22272,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(QI.a, null),
+                    n.a.createElement(YI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22319,7 +22289,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(JI.a, null),
+                    n.a.createElement(KI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22336,7 +22306,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(qI.a, null),
+                    n.a.createElement(QI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22353,7 +22323,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ZI.a, null),
+                    n.a.createElement(JI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22370,7 +22340,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(_I.a, null),
+                    n.a.createElement(qI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22387,7 +22357,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(XI.a, null),
+                    n.a.createElement(ZI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22404,7 +22374,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement($I.a, null),
+                    n.a.createElement(_I.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22421,7 +22391,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(ef.a, null),
+                    n.a.createElement(XI.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22438,7 +22408,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(af.a, null),
+                    n.a.createElement($I.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22455,7 +22425,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(tf.a, null),
+                    n.a.createElement(ef.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22472,7 +22442,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(lf.a, null),
+                    n.a.createElement(af.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22489,7 +22459,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(nf.a, null),
+                    n.a.createElement(tf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22506,7 +22476,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(rf.a, null),
+                    n.a.createElement(lf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22523,7 +22493,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(mf.a, null),
+                    n.a.createElement(nf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22540,7 +22510,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(cf.a, null),
+                    n.a.createElement(rf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22557,7 +22527,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(sf.a, null),
+                    n.a.createElement(mf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22574,7 +22544,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(of.a, null),
+                    n.a.createElement(cf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22591,7 +22561,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(df.a, null),
+                    n.a.createElement(sf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22608,7 +22578,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(Ef.a, null),
+                    n.a.createElement(of.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22625,7 +22595,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(uf.a, null),
+                    n.a.createElement(df.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22642,7 +22612,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(pf.a, null),
+                    n.a.createElement(Ef.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22659,7 +22629,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(gf.a, null),
+                    n.a.createElement(uf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -22676,7 +22646,7 @@
                       sm: 4,
                       xs: 12
                     },
-                    n.a.createElement(xf.a, null),
+                    n.a.createElement(pf.a, null),
                     n.a.createElement(
                       re.a,
                       { className: e.materialIconText },
@@ -24257,22 +24227,22 @@
           )
         );
       }
-      var If = t(39),
-        ff = t.n(If),
-        yf = [
+      var hf = t(39),
+        Nf = t.n(hf),
+        If = [
           { name: "series1", data: [31, 40, 28, 51, 42, 109, 100] },
           { name: "series2", data: [11, 32, 45, 32, 34, 52, 41] }
         ];
-      function bf() {
+      function ff() {
         var e = Object(V.a)();
-        return n.a.createElement(ff.a, {
-          options: vf(e),
-          series: yf,
+        return n.a.createElement(Nf.a, {
+          options: yf(e),
+          series: If,
           type: "area",
           height: 350
         });
       }
-      function vf(e) {
+      function yf(e) {
         return {
           dataLabels: { enabled: !1 },
           stroke: { curve: "smooth" },
@@ -24295,27 +24265,27 @@
           legend: { show: !1 }
         };
       }
-      var Tf = [
-        { name: "Metric1", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric2", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric3", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric4", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric5", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric6", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric7", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric8", data: wf(18, { min: 0, max: 90 }) },
-        { name: "Metric9", data: wf(18, { min: 0, max: 90 }) }
+      var bf = [
+        { name: "Metric1", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric2", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric3", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric4", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric5", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric6", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric7", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric8", data: Tf(18, { min: 0, max: 90 }) },
+        { name: "Metric9", data: Tf(18, { min: 0, max: 90 }) }
       ];
-      function Af() {
+      function vf() {
         var e = Object(V.a)();
-        return n.a.createElement(ff.a, {
-          options: Cf(e),
-          series: Tf,
+        return n.a.createElement(Nf.a, {
+          options: Af(e),
+          series: bf,
           type: "heatmap",
           height: 350
         });
       }
-      function wf(e, a) {
+      function Tf(e, a) {
         for (var t = 0, l = []; t < e; ) {
           var n = "w" + (t + 1).toString(),
             r = Math.floor(Math.random() * (a.max - a.min + 1)) + a.min;
@@ -24323,14 +24293,14 @@
         }
         return l;
       }
-      function Cf(e) {
+      function Af(e) {
         return {
           chart: { toolbar: { show: !1 } },
           dataLabels: { enabled: !1 },
           colors: [e.palette.primary.main]
         };
       }
-      var kf = function(e) {
+      var wf = function(e) {
           return {
             options: {
               labels: ["January", "February", "March", "April", "May", "June"]
@@ -24347,21 +24317,21 @@
             colors: [e.palette.primary.main, e.palette.success.main]
           };
         },
-        Pf = {
+        Cf = {
           series: [{ name: "Series 1", data: [80, 50, 30, 40, 100, 20] }]
         },
-        Sf = function() {
+        kf = function() {
           var e = Object(V.a)(),
-            a = Object(l.useState)(Pf),
+            a = Object(l.useState)(Cf),
             t = Object(x.a)(a, 1)[0];
-          return n.a.createElement(ff.a, {
-            options: kf(e),
+          return n.a.createElement(Nf.a, {
+            options: wf(e),
             series: t.series,
             type: "radar",
             height: "350"
           });
         },
-        Of = function(e) {
+        Pf = function(e) {
           return {
             plotOptions: { bar: { horizontal: !0 } },
             dataLabels: { enabled: !1 },
@@ -24386,23 +24356,23 @@
             fill: { colors: [e.palette.primary.main] }
           };
         },
-        Bf = {
+        Sf = {
           series: [
             { data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380] }
           ]
         },
-        Mf = function() {
+        Of = function() {
           var e = Object(V.a)(),
-            a = Object(l.useState)(Bf),
+            a = Object(l.useState)(Sf),
             t = Object(x.a)(a, 1)[0];
-          return n.a.createElement(ff.a, {
-            options: Of(e),
+          return n.a.createElement(Nf.a, {
+            options: Pf(e),
             series: t.series,
             type: "bar",
             height: "350"
           });
         },
-        jf = [
+        Bf = [
           { name: "Page A", uv: 4e3, pv: 2400, amt: 2400 },
           { name: "Page B", uv: 3e3, pv: 1398, amt: 2210 },
           { name: "Page C", uv: 2e3, pv: 9800, amt: 2290 },
@@ -24411,13 +24381,13 @@
           { name: "Page F", uv: 2390, pv: 3800, amt: 2500 },
           { name: "Page G", uv: 3490, pv: 4300, amt: 2100 }
         ],
-        Lf = [
+        Mf = [
           { name: "Group A", value: 400 },
           { name: "Group B", value: 300 },
           { name: "Group C", value: 300 },
           { name: "Group D", value: 200 }
         ];
-      function Df(e) {
+      function jf(e) {
         var a = Object(V.a)(),
           t = Object(l.useState)(0),
           r = Object(x.a)(t, 2),
@@ -24433,67 +24403,67 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Apex Line Chart", noBodyPadding: !0 },
-                n.a.createElement(bf, null)
+                n.a.createElement(ff, null)
               )
             ),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Apex Heatmap", noBodyPadding: !0 },
-                n.a.createElement(Af, null)
+                n.a.createElement(vf, null)
               )
             ),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Apex Radar Chart", noBodyPadding: !0 },
-                n.a.createElement(Sf, null)
+                n.a.createElement(kf, null)
               )
             ),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Apex Bar Chart", noBodyPadding: !0 },
-                n.a.createElement(Mf, null)
+                n.a.createElement(Of, null)
               )
             ),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12, md: 8 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Simple Line Chart", noBodyPadding: !0 },
                 n.a.createElement(
-                  pt.m,
+                  Et.m,
                   { width: "100%", height: 350 },
                   n.a.createElement(
-                    pt.j,
+                    Et.j,
                     {
                       width: 500,
                       height: 300,
-                      data: jf,
+                      data: Bf,
                       margin: { top: 5, right: 30, left: 20, bottom: 5 }
                     },
-                    n.a.createElement(pt.e, { strokeDasharray: "3 3" }),
-                    n.a.createElement(pt.p, { dataKey: "name" }),
-                    n.a.createElement(pt.q, null),
-                    n.a.createElement(pt.o, null),
-                    n.a.createElement(pt.h, null),
-                    n.a.createElement(pt.i, {
+                    n.a.createElement(Et.e, { strokeDasharray: "3 3" }),
+                    n.a.createElement(Et.p, { dataKey: "name" }),
+                    n.a.createElement(Et.q, null),
+                    n.a.createElement(Et.o, null),
+                    n.a.createElement(Et.h, null),
+                    n.a.createElement(Et.i, {
                       type: "monotone",
                       dataKey: "pv",
                       stroke: a.palette.primary.main,
                       activeDot: { r: 8 }
                     }),
-                    n.a.createElement(pt.i, {
+                    n.a.createElement(Et.i, {
                       type: "monotone",
                       dataKey: "uv",
                       stroke: a.palette.secondary.main
@@ -24506,18 +24476,18 @@
               v.a,
               { item: !0, xs: 12, md: 4 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Pie Chart with Tooltips", noBodyPadding: !0 },
                 n.a.createElement(
-                  pt.m,
+                  Et.m,
                   { width: "100%", height: 300 },
                   n.a.createElement(
-                    pt.l,
+                    Et.l,
                     { width: 200, height: 300 },
-                    n.a.createElement(pt.k, {
+                    n.a.createElement(Et.k, {
                       activeIndex: m,
-                      activeShape: Ff,
-                      data: Lf,
+                      activeShape: Lf,
+                      data: Mf,
                       cx: 200,
                       cy: 150,
                       innerRadius: 60,
@@ -24535,7 +24505,7 @@
           )
         );
       }
-      function Ff(e) {
+      function Lf(e) {
         var a = Math.PI / 180,
           t = e.cx,
           l = e.cy,
@@ -24565,7 +24535,7 @@
             { x: t, y: l, dy: 8, textAnchor: "middle", fill: o },
             d.name
           ),
-          n.a.createElement(pt.n, {
+          n.a.createElement(Et.n, {
             cx: t,
             cy: l,
             innerRadius: m,
@@ -24574,7 +24544,7 @@
             endAngle: s,
             fill: o
           }),
-          n.a.createElement(pt.n, {
+          n.a.createElement(Et.n, {
             cx: t,
             cy: l,
             startAngle: i,
@@ -24624,38 +24594,38 @@
           )
         );
       }
-      var Rf,
-        Wf = t(637),
-        Hf = 0,
-        zf = [];
-      function Gf() {
-        Rf &&
+      var Df,
+        Ff = t(637),
+        Rf = 0,
+        Wf = [];
+      function Hf() {
+        Df &&
           window.setInterval(function() {
             !(function(e, a) {
               var t = e + 864e5;
-              Hf = t;
-              for (var l = 0; l < zf.length - 10; l++)
-                (zf[l].x = t - 7776e5 - 864e5), (zf[l].y = 0);
-              zf.push({
+              Rf = t;
+              for (var l = 0; l < Wf.length - 10; l++)
+                (Wf[l].x = t - 7776e5 - 864e5), (Wf[l].y = 0);
+              Wf.push({
                 x: t,
                 y: Math.floor(Math.random() * (a.max - a.min + 1)) + a.min
               });
-            })(Hf, { min: 10, max: 90 }),
-              Wf.a.exec("realtime", "updateSeries", [{ data: zf }]);
+            })(Rf, { min: 10, max: 90 }),
+              Ff.a.exec("realtime", "updateSeries", [{ data: Wf }]);
           }, 1e3);
       }
       !(function(e, a, t) {
         for (var l = 0; l < a; ) {
           var n = e,
             r = Math.floor(Math.random() * (t.max - t.min + 1)) + t.min;
-          zf.push({ x: n, y: r }), (Hf = e), (e += 864e5), l++;
+          Wf.push({ x: n, y: r }), (Rf = e), (e += 864e5), l++;
         }
       })(new Date("11 Feb 2019 GMT").getTime(), 10, { min: 10, max: 90 });
-      for (var Uf = 14844186e5, Vf = [], Yf = 0; Yf < 120; Yf++) {
-        var Kf = [(Uf += 864e5), Math.round(100 * Math.random(0))];
-        Vf.push(Kf);
+      for (var zf = 14844186e5, Gf = [], Uf = 0; Uf < 120; Uf++) {
+        var Vf = [(zf += 864e5), Math.round(100 * Math.random(0))];
+        Gf.push(Vf);
       }
-      var Qf = function(e) {
+      var Yf = function(e) {
           return {
             grid: {
               row: {
@@ -24767,7 +24737,7 @@
             }
           };
         },
-        Jf = {
+        Kf = {
           series: [
             { name: "Desktops", data: [10, 41, 35, 51, 49, 62, 69, 91, 148] }
           ],
@@ -24775,20 +24745,20 @@
             { name: "High - 2019", data: [28, 29, 33, 36, 32, 32, 33] },
             { name: "Low - 2019", data: [12, 11, 14, 18, 17, 13, 13] }
           ],
-          series3: [{ name: "Flatlogic LLC", data: Vf }],
-          series4: [{ data: zf.slice() }]
+          series3: [{ name: "Flatlogic LLC", data: Gf }],
+          series4: [{ data: Wf.slice() }]
         };
-      function qf(e) {
+      function Qf(e) {
         Object(l.useEffect)(function() {
           return (
-            Gf(),
+            Hf(),
             function() {
-              (Rf = !1), (zf = zf.slice(zf.length - 10, zf.length));
+              (Df = !1), (Wf = Wf.slice(Wf.length - 10, Wf.length));
             }
           );
         });
         var a = Object(V.a)(),
-          t = Object(l.useState)(Jf),
+          t = Object(l.useState)(Kf),
           r = Object(x.a)(t, 1)[0];
         return n.a.createElement(
           n.a.Fragment,
@@ -24800,10 +24770,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Line Basic", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Qf(a),
+                n.a.createElement(Nf.a, {
+                  options: Yf(a),
                   series: r.series,
                   type: "line",
                   height: "350"
@@ -24814,10 +24784,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Line with Data Labels", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Qf(a).options,
+                n.a.createElement(Nf.a, {
+                  options: Yf(a).options,
                   series: r.series2,
                   type: "line",
                   height: "350"
@@ -24828,10 +24798,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Zoomable Timeseries", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Qf(a).options2,
+                n.a.createElement(Nf.a, {
+                  options: Yf(a).options2,
                   series: r.series3,
                   type: "area",
                   height: "350"
@@ -24842,10 +24812,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Dynamic Updating Chart", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Qf(a).options3,
+                n.a.createElement(Nf.a, {
+                  options: Yf(a).options3,
                   series: r.series4,
                   type: "line",
                   height: "350"
@@ -24855,9 +24825,9 @@
           )
         );
       }
-      var Zf = t(177),
-        _f = t.n(Zf),
-        Xf = function(e) {
+      var Jf = t(177),
+        qf = t.n(Jf),
+        Zf = function(e) {
           return {
             plotOptions: { bar: { horizontal: !0 } },
             dataLabels: { enabled: !1 },
@@ -24940,12 +24910,12 @@
               fill: {
                 type: "image",
                 opacity: 0.87,
-                image: { src: [_f.a], width: 466, height: 406 }
+                image: { src: [qf.a], width: 466, height: 406 }
               }
             }
           };
         },
-        $f = {
+        _f = {
           series: [
             { data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380] }
           ],
@@ -25000,9 +24970,9 @@
             }
           ]
         };
-      function ey(e) {
+      function Xf(e) {
         var a = Object(V.a)(),
-          t = Object(l.useState)($f),
+          t = Object(l.useState)(_f),
           r = Object(x.a)(t, 1)[0];
         return n.a.createElement(
           n.a.Fragment,
@@ -25014,10 +24984,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Bar Basic", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Xf(a),
+                n.a.createElement(Nf.a, {
+                  options: Zf(a),
                   series: r.series,
                   type: "bar",
                   height: "350"
@@ -25028,10 +24998,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Grouped Basic", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Xf(a).options,
+                n.a.createElement(Nf.a, {
+                  options: Zf(a).options,
                   series: r.series2,
                   type: "bar",
                   height: "350"
@@ -25042,10 +25012,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Stacked Basic", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Xf(a).options2,
+                n.a.createElement(Nf.a, {
+                  options: Zf(a).options2,
                   series: r.series3,
                   type: "bar",
                   height: "350"
@@ -25056,10 +25026,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Bar with Images", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: Xf(a).options3,
+                n.a.createElement(Nf.a, {
+                  options: Zf(a).options3,
                   series: r.series4,
                   type: "bar",
                   height: "350"
@@ -25069,7 +25039,7 @@
           )
         );
       }
-      var ay = function(e) {
+      var $f = function(e) {
           return {
             labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
             responsive: [
@@ -25152,15 +25122,15 @@
             }
           };
         },
-        ty = {
+        ey = {
           series: [44, 55, 13, 43, 22],
           series2: [44, 55, 41, 17, 15],
           series3: [44, 55, 13, 33],
           series4: [25, 15, 44, 55, 41, 17]
         };
-      function ly(e) {
+      function ay(e) {
         var a = Object(V.a)(),
-          t = Object(l.useState)(ty),
+          t = Object(l.useState)(ey),
           r = Object(x.a)(t, 2),
           m = r[0],
           c = r[1];
@@ -25174,10 +25144,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Simple Pie", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: ay(a),
+                n.a.createElement(Nf.a, {
+                  options: $f(a),
                   series: m.series,
                   type: "pie",
                   height: "380",
@@ -25189,10 +25159,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Simple Donut", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: ay(a).options,
+                n.a.createElement(Nf.a, {
+                  options: $f(a).options,
                   series: m.series2,
                   type: "donut",
                   height: "380",
@@ -25204,10 +25174,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Update Donut", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: ay(a).options2,
+                n.a.createElement(Nf.a, {
+                  options: $f(a).options2,
                   series: m.series3,
                   type: "donut",
                   height: "380",
@@ -25298,10 +25268,10 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Monochrome Pie", noBodyPadding: !0 },
-                n.a.createElement(ff.a, {
-                  options: ay(a).options,
+                n.a.createElement(Nf.a, {
+                  options: $f(a).options,
                   series: m.series2,
                   type: "pie",
                   height: "380",
@@ -25312,7 +25282,7 @@
           )
         );
       }
-      var ny = Object(L.a)(function(e) {
+      var ty = Object(L.a)(function(e) {
         return {
           dashedBorder: {
             border: "1px dashed",
@@ -25325,8 +25295,8 @@
           text: { marginBottom: e.spacing(2) }
         };
       });
-      function ry() {
-        var e = ny();
+      function ly() {
+        var e = ty();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -25337,7 +25307,7 @@
               v.a,
               { item: !0, xs: 12, md: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "States Colors", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -25345,173 +25315,173 @@
                   "There is a couple of brand colors that we're using."
                 ),
                 n.a.createElement(
-                  dt.a,
+                  st.a,
                   { className: "mb-0" },
                   n.a.createElement(
-                    nt.a,
+                    tt.a,
                     null,
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, null, "State"),
-                      n.a.createElement(mt.a, null, "Preview"),
-                      n.a.createElement(mt.a, null, "Usage Example"),
-                      n.a.createElement(mt.a, null, "Hex Value")
+                      n.a.createElement(nt.a, null, "State"),
+                      n.a.createElement(nt.a, null, "Preview"),
+                      n.a.createElement(nt.a, null, "Usage Example"),
+                      n.a.createElement(nt.a, null, "Hex Value")
                     )
                   ),
                   n.a.createElement(
-                    Et.a,
+                    ot.a,
                     null,
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, null, "Primary"),
+                      n.a.createElement(nt.a, null, "Primary"),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Oa, {
+                        n.a.createElement(Pa, {
                           color: "primary",
                           size: "large"
                         })
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           '<Button color="primary">'
                         )
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
-                          $a[localStorage.getItem("theme")].palette.primary.main
+                          _a[localStorage.getItem("theme")].palette.primary.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, { align: "left" }, "Secondary"),
+                      n.a.createElement(nt.a, { align: "left" }, "Secondary"),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Oa, {
+                        n.a.createElement(Pa, {
                           color: "secondary",
                           size: "large"
                         })
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           '<Dot color="secondary">'
                         )
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
-                          $a[localStorage.getItem("theme")].palette.secondary
+                          _a[localStorage.getItem("theme")].palette.secondary
                             .main
                         )
                       )
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, { align: "left" }, "Warning"),
+                      n.a.createElement(nt.a, { align: "left" }, "Warning"),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Oa, {
+                        n.a.createElement(Pa, {
                           color: "warning",
                           size: "large"
                         })
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           '<Typography color="warning">'
                         )
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
-                          $a[localStorage.getItem("theme")].palette.warning.main
+                          _a[localStorage.getItem("theme")].palette.warning.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, { align: "left" }, "Success"),
+                      n.a.createElement(nt.a, { align: "left" }, "Success"),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Oa, {
+                        n.a.createElement(Pa, {
                           color: "success",
                           size: "large"
                         })
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           '<Notification color="success">'
                         )
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
-                          $a[localStorage.getItem("theme")].palette.success.main
+                          _a[localStorage.getItem("theme")].palette.success.main
                         )
                       )
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, { align: "left" }, "Info"),
+                      n.a.createElement(nt.a, { align: "left" }, "Info"),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         { align: "right" },
-                        n.a.createElement(Oa, { color: "info", size: "large" })
+                        n.a.createElement(Pa, { color: "info", size: "large" })
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           '<Icon color="info">'
                         )
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
-                          $a[localStorage.getItem("theme")].palette.info.main
+                          _a[localStorage.getItem("theme")].palette.info.main
                         )
                       )
                     )
@@ -25523,7 +25493,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Typography Colors", disableWidgetMenu: !0 },
                 n.a.createElement(
                   "div",
@@ -25570,7 +25540,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Example buttons",
                   disableWidgetMenu: !0,
@@ -25651,7 +25621,7 @@
           )
         );
       }
-      var my = Object(L.a)(function(e) {
+      var ny = Object(L.a)(function(e) {
         return {
           paperItem: {
             textAlign: "center",
@@ -25670,8 +25640,8 @@
           card: { minHeight: "100%", display: "flex", flexDirection: "column" }
         };
       });
-      function cy() {
-        var e = my();
+      function ry() {
+        var e = ny();
         return n.a.createElement(
           "div",
           null,
@@ -25682,7 +25652,7 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "How it works", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -25723,7 +25693,7 @@
                     v.a,
                     { item: !0, xs: !0, zeroMinWidth: !0 },
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       null,
                       "\n  <Grid container>\n    <Grid item xs={4}>One of three</Grid>\n    <Grid item xs={4}>One of three</Grid>\n    <Grid item xs={4}>One of three</Grid>\n  </Grid>\n                  "
                     )
@@ -25735,7 +25705,7 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Equal width", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -25767,7 +25737,7 @@
                     v.a,
                     { item: !0, xs: 12, zeroMinWidth: !0 },
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       null,
                       "\n  <Grid container>\n    <Grid item xs>1 of 2</Grid>\n    <Grid item xs>2 of 2</Grid>\n    <Grid item xs>2 of 2</Grid>\n  </Grid>\n                  "
                     )
@@ -25779,7 +25749,7 @@
               v.a,
               { item: !0, md: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Grid options", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -25787,45 +25757,45 @@
                   "While Material UI grid uses ems or rems for defining most sizes, pxs are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the font size. See how aspects of the Material UI grid system work across multiple devices with a handy table."
                 ),
                 n.a.createElement(
-                  dt.a,
+                  st.a,
                   { className: "mb-0", style: { overflowX: "auto" } },
                   n.a.createElement(
-                    nt.a,
+                    tt.a,
                     null,
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
-                      n.a.createElement(mt.a, null),
+                      n.a.createElement(nt.a, null),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Extra small"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "<576px")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Small"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265576px")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Medium"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265768px")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Large"),
                         n.a.createElement("br", null),
                         n.a.createElement("small", null, "\u2265992px")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Extra large"),
                         n.a.createElement("br", null),
@@ -25834,105 +25804,105 @@
                     )
                   ),
                   n.a.createElement(
-                    Et.a,
+                    ot.a,
                     null,
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Max container width")
                       ),
-                      n.a.createElement(mt.a, null, "None (auto)"),
-                      n.a.createElement(mt.a, null, "540px"),
-                      n.a.createElement(mt.a, null, "720px"),
-                      n.a.createElement(mt.a, null, "960px"),
-                      n.a.createElement(mt.a, null, "1140px")
+                      n.a.createElement(nt.a, null, "None (auto)"),
+                      n.a.createElement(nt.a, null, "540px"),
+                      n.a.createElement(nt.a, null, "720px"),
+                      n.a.createElement(nt.a, null, "960px"),
+                      n.a.createElement(nt.a, null, "1140px")
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Component property")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Gt, { row: !0 }, "<Grid item xs>")
+                        n.a.createElement(Ht, { row: !0 }, "<Grid item xs>")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Gt, { row: !0 }, "<Grid item sm>")
+                        n.a.createElement(Ht, { row: !0 }, "<Grid item sm>")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Gt, { row: !0 }, "<Grid item md>")
+                        n.a.createElement(Ht, { row: !0 }, "<Grid item md>")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Gt, { row: !0 }, "<Grid item lg>")
+                        n.a.createElement(Ht, { row: !0 }, "<Grid item lg>")
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
-                        n.a.createElement(Gt, { row: !0 }, "<Grid item xl>")
+                        n.a.createElement(Ht, { row: !0 }, "<Grid item xl>")
                       )
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "# of columns")
                       ),
-                      n.a.createElement(mt.a, null, "12")
+                      n.a.createElement(nt.a, null, "12")
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Spacing"),
                         " "
                       ),
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement(
-                          Gt,
+                          Ht,
                           { row: !0 },
                           "<Grid container spacing={2}>"
                         )
                       ),
-                      n.a.createElement(mt.a, null)
+                      n.a.createElement(nt.a, null)
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Nestable")
                       ),
-                      n.a.createElement(mt.a, null, "Yes")
+                      n.a.createElement(nt.a, null, "Yes")
                     ),
                     n.a.createElement(
-                      rt.a,
+                      lt.a,
                       null,
                       n.a.createElement(
-                        mt.a,
+                        nt.a,
                         null,
                         n.a.createElement("b", null, "Column ordering")
                       ),
-                      n.a.createElement(mt.a, null, "Yes")
+                      n.a.createElement(nt.a, null, "Yes")
                     )
                   )
                 )
@@ -25942,7 +25912,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Vertical Alignment",
                   disableWidgetMenu: !0,
@@ -26012,7 +25982,7 @@
                     v.a,
                     { item: !0, xs: !0, zeroMinWidth: !0 },
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       null,
                       '\n  <Grid container>\n    <Box display="flex">\n      <Box alignSelf="flex-start">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n      <Box alignSelf="center">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n      <Box alignSelf="flex-end">\n        <Grid item xs={4}>One of three</Grid>\n      </Box>\n    </Box>\n  </Grid>\n                  '
                     )
@@ -26024,7 +25994,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Vertical Alignment", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -26153,7 +26123,7 @@
                     v.a,
                     { item: !0, xs: !0, zeroMinWidth: !0 },
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       null,
                       '\n  <Box display="flex" flexDirection="column">\n    <Box display="flex" flexDirection="row" justifyContent="flex-end">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n    </Box>\n    <Box display="flex" flexDirection="row" justifyContent="flex-around">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n    </Box>\n    <Box display="flex" flexDirection="row" justifyContent="flex-between">\n      <Grid item xs={3}>1</Grid>\n      <Grid item xs={3}>2</Grid>\n      <Grid item xs={3}>3</Grid>\n    </Box>\n  </Box>\n                  '
                     )
@@ -26164,15 +26134,15 @@
           )
         );
       }
-      var iy = Object(L.a)(function(e) {
+      var my = Object(L.a)(function(e) {
         return {
           paddingTop: { paddingTop: e.spacing(1) },
           badge: { margin: e.spacing(2, 2, 0, 0) },
           margin: { margin: e.spacing(0, 2, 0, 0) }
         };
       });
-      function sy() {
-        var e = iy();
+      function cy() {
+        var e = my();
         return n.a.createElement(
           "div",
           null,
@@ -26183,7 +26153,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Badge Example", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -26300,7 +26270,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Icon Badges", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -26321,7 +26291,7 @@
                     n.a.createElement(
                       xe,
                       { className: e.badge, badgeContent: 4, color: "primary" },
-                      n.a.createElement(bE.a, null)
+                      n.a.createElement(fE.a, null)
                     ),
                     n.a.createElement(
                       xe,
@@ -26330,7 +26300,7 @@
                         badgeContent: 10,
                         color: "secondary"
                       },
-                      n.a.createElement(bE.a, null)
+                      n.a.createElement(fE.a, null)
                     ),
                     n.a.createElement(
                       C.a,
@@ -26341,7 +26311,7 @@
                       n.a.createElement(
                         xe,
                         { badgeContent: 4, color: "warning" },
-                        n.a.createElement(bE.a, null)
+                        n.a.createElement(fE.a, null)
                       )
                     )
                   ),
@@ -26382,7 +26352,7 @@
                     "You may to use dot badge via",
                     " ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       'variant="dot"'
                     )
@@ -26413,7 +26383,7 @@
                         className: e.margin,
                         variant: "dot"
                       },
-                      n.a.createElement(bE.a, null)
+                      n.a.createElement(fE.a, null)
                     ),
                     n.a.createElement(
                       xe,
@@ -26431,14 +26401,14 @@
                     { block: !0 },
                     "You can use the ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       "horizontalAlignment"
                     ),
                     " ",
                     "and ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       "verticalAlignment"
                     ),
@@ -26474,7 +26444,7 @@
                           horizontal: "right"
                         }
                       },
-                      n.a.createElement(bE.a, null)
+                      n.a.createElement(fE.a, null)
                     ),
                     n.a.createElement(
                       xe,
@@ -26496,7 +26466,7 @@
               v.a,
               { item: !0, md: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Chips", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -26537,55 +26507,55 @@
           )
         );
       }
-      var oy = t(1469),
-        dy = t(264),
-        Ey = t(28),
-        uy = t(140),
+      var iy = t(1469),
+        sy = t(264),
+        oy = t(28),
+        dy = t(140),
+        Ey = t.n(dy),
+        uy = t(124),
         py = t.n(uy),
-        gy = t(124),
+        gy = t(209),
         xy = t.n(gy),
-        hy = t(209),
-        Ny = t.n(hy),
-        Iy = t(638),
-        fy = t(288),
+        hy = t(638),
+        Ny = t(288),
+        Iy = t.n(Ny),
+        fy = t(289),
         yy = t.n(fy),
-        by = t(289),
-        vy = t.n(by),
-        Ty = Object(Iy.autoPlay)(Ny.a),
+        by = Object(hy.autoPlay)(xy.a),
+        vy = [
+          {
+            label: "San Francisco \u2013 Oakland Bay Bridge, United States",
+            imgPath: Iy.a
+          },
+          {
+            label: "Alaska - Glacier Bay National Park, United States",
+            imgPath: qf.a
+          },
+          { label: "Bali, Indonesia", imgPath: yy.a }
+        ],
+        Ty = [
+          {
+            label: "Alaska - Glacier Bay National Park, United States",
+            imgPath: qf.a
+          },
+          { label: "Bali, Indonesia", imgPath: yy.a },
+          {
+            label: "San Francisco \u2013 Oakland Bay Bridge, United States",
+            imgPath: Iy.a
+          }
+        ],
         Ay = [
+          { label: "Bali, Indonesia", imgPath: yy.a },
           {
             label: "San Francisco \u2013 Oakland Bay Bridge, United States",
-            imgPath: yy.a
+            imgPath: Iy.a
           },
           {
             label: "Alaska - Glacier Bay National Park, United States",
-            imgPath: _f.a
-          },
-          { label: "Bali, Indonesia", imgPath: vy.a }
-        ],
-        wy = [
-          {
-            label: "Alaska - Glacier Bay National Park, United States",
-            imgPath: _f.a
-          },
-          { label: "Bali, Indonesia", imgPath: vy.a },
-          {
-            label: "San Francisco \u2013 Oakland Bay Bridge, United States",
-            imgPath: yy.a
+            imgPath: qf.a
           }
         ],
-        Cy = [
-          { label: "Bali, Indonesia", imgPath: vy.a },
-          {
-            label: "San Francisco \u2013 Oakland Bay Bridge, United States",
-            imgPath: yy.a
-          },
-          {
-            label: "Alaska - Glacier Bay National Park, United States",
-            imgPath: _f.a
-          }
-        ],
-        ky = Object(dy.a)(function(e) {
+        wy = Object(sy.a)(function(e) {
           return {
             root: { maxWidth: 400, flexGrow: 1 },
             header: {
@@ -26604,14 +26574,14 @@
             }
           };
         });
-      var Py = function() {
-          var e = ky(),
-            a = Object(Ey.a)(),
+      var Cy = function() {
+          var e = wy(),
+            a = Object(oy.a)(),
             t = n.a.useState(0),
             l = Object(x.a)(t, 2),
             r = l[0],
             m = l[1],
-            c = Ay.length,
+            c = vy.length,
             i = function() {
               m(function(e) {
                 return e + 1;
@@ -26632,7 +26602,123 @@
               v.a,
               { item: !0, xs: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
+                {
+                  square: !0,
+                  elevation: 0,
+                  header: n.a.createElement(Ne, null, vy[r].label),
+                  disableWidgetMenu: !0,
+                  noBodyPadding: !0
+                },
+                n.a.createElement(
+                  by,
+                  {
+                    axis: "rtl" === a.direction ? "x-reverse" : "x",
+                    index: r,
+                    onChangeIndex: o,
+                    enableMouseEvents: !0
+                  },
+                  vy.map(function(a, t) {
+                    return n.a.createElement(
+                      "div",
+                      { key: a.label },
+                      Math.abs(r - t) <= 2
+                        ? n.a.createElement("img", {
+                            className: e.img,
+                            src: a.imgPath,
+                            alt: a.label
+                          })
+                        : null
+                    );
+                  })
+                ),
+                n.a.createElement(iy.a, {
+                  steps: c,
+                  position: "static",
+                  variant: "text",
+                  activeStep: r,
+                  nextButton: n.a.createElement(
+                    Ie,
+                    { size: "small", onClick: i, disabled: r === c - 1 },
+                    "Next",
+                    "rtl" === a.direction
+                      ? n.a.createElement(Ey.a, null)
+                      : n.a.createElement(py.a, null)
+                  ),
+                  backButton: n.a.createElement(
+                    Ie,
+                    { size: "small", onClick: s, disabled: 0 === r },
+                    "rtl" === a.direction
+                      ? n.a.createElement(py.a, null)
+                      : n.a.createElement(Ey.a, null),
+                    "Back"
+                  )
+                })
+              )
+            ),
+            n.a.createElement(
+              v.a,
+              { item: !0, xs: 6 },
+              n.a.createElement(
+                Ha,
+                {
+                  square: !0,
+                  elevation: 0,
+                  header: n.a.createElement(Ne, null, Ty[r].label),
+                  disableWidgetMenu: !0,
+                  noBodyPadding: !0
+                },
+                n.a.createElement(
+                  by,
+                  {
+                    axis: "rtl" === a.direction ? "x-reverse" : "x",
+                    index: r,
+                    onChangeIndex: o,
+                    enableMouseEvents: !0
+                  },
+                  Ty.map(function(a, t) {
+                    return n.a.createElement(
+                      "div",
+                      { key: a.label },
+                      Math.abs(r - t) <= 2
+                        ? n.a.createElement("img", {
+                            className: e.img,
+                            src: a.imgPath,
+                            alt: a.label
+                          })
+                        : null
+                    );
+                  })
+                ),
+                n.a.createElement(iy.a, {
+                  steps: c,
+                  position: "static",
+                  variant: "dots",
+                  activeStep: r,
+                  nextButton: n.a.createElement(
+                    Ie,
+                    { size: "small", onClick: i, disabled: r === c - 1 },
+                    "Next",
+                    "rtl" === a.direction
+                      ? n.a.createElement(Ey.a, null)
+                      : n.a.createElement(py.a, null)
+                  ),
+                  backButton: n.a.createElement(
+                    Ie,
+                    { size: "small", onClick: s, disabled: 0 === r },
+                    "rtl" === a.direction
+                      ? n.a.createElement(py.a, null)
+                      : n.a.createElement(Ey.a, null),
+                    "Back"
+                  )
+                })
+              )
+            ),
+            n.a.createElement(
+              v.a,
+              { item: !0, xs: 12 },
+              n.a.createElement(
+                Ha,
                 {
                   square: !0,
                   elevation: 0,
@@ -26641,7 +26727,7 @@
                   noBodyPadding: !0
                 },
                 n.a.createElement(
-                  Ty,
+                  by,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
@@ -26662,123 +26748,7 @@
                     );
                   })
                 ),
-                n.a.createElement(oy.a, {
-                  steps: c,
-                  position: "static",
-                  variant: "text",
-                  activeStep: r,
-                  nextButton: n.a.createElement(
-                    Ie,
-                    { size: "small", onClick: i, disabled: r === c - 1 },
-                    "Next",
-                    "rtl" === a.direction
-                      ? n.a.createElement(py.a, null)
-                      : n.a.createElement(xy.a, null)
-                  ),
-                  backButton: n.a.createElement(
-                    Ie,
-                    { size: "small", onClick: s, disabled: 0 === r },
-                    "rtl" === a.direction
-                      ? n.a.createElement(xy.a, null)
-                      : n.a.createElement(py.a, null),
-                    "Back"
-                  )
-                })
-              )
-            ),
-            n.a.createElement(
-              v.a,
-              { item: !0, xs: 6 },
-              n.a.createElement(
-                Ga,
-                {
-                  square: !0,
-                  elevation: 0,
-                  header: n.a.createElement(Ne, null, wy[r].label),
-                  disableWidgetMenu: !0,
-                  noBodyPadding: !0
-                },
-                n.a.createElement(
-                  Ty,
-                  {
-                    axis: "rtl" === a.direction ? "x-reverse" : "x",
-                    index: r,
-                    onChangeIndex: o,
-                    enableMouseEvents: !0
-                  },
-                  wy.map(function(a, t) {
-                    return n.a.createElement(
-                      "div",
-                      { key: a.label },
-                      Math.abs(r - t) <= 2
-                        ? n.a.createElement("img", {
-                            className: e.img,
-                            src: a.imgPath,
-                            alt: a.label
-                          })
-                        : null
-                    );
-                  })
-                ),
-                n.a.createElement(oy.a, {
-                  steps: c,
-                  position: "static",
-                  variant: "dots",
-                  activeStep: r,
-                  nextButton: n.a.createElement(
-                    Ie,
-                    { size: "small", onClick: i, disabled: r === c - 1 },
-                    "Next",
-                    "rtl" === a.direction
-                      ? n.a.createElement(py.a, null)
-                      : n.a.createElement(xy.a, null)
-                  ),
-                  backButton: n.a.createElement(
-                    Ie,
-                    { size: "small", onClick: s, disabled: 0 === r },
-                    "rtl" === a.direction
-                      ? n.a.createElement(xy.a, null)
-                      : n.a.createElement(py.a, null),
-                    "Back"
-                  )
-                })
-              )
-            ),
-            n.a.createElement(
-              v.a,
-              { item: !0, xs: 12 },
-              n.a.createElement(
-                Ga,
-                {
-                  square: !0,
-                  elevation: 0,
-                  header: n.a.createElement(Ne, null, Cy[r].label),
-                  disableWidgetMenu: !0,
-                  noBodyPadding: !0
-                },
-                n.a.createElement(
-                  Ty,
-                  {
-                    axis: "rtl" === a.direction ? "x-reverse" : "x",
-                    index: r,
-                    onChangeIndex: o,
-                    enableMouseEvents: !0
-                  },
-                  Cy.map(function(a, t) {
-                    return n.a.createElement(
-                      "div",
-                      { key: a.label },
-                      Math.abs(r - t) <= 2
-                        ? n.a.createElement("img", {
-                            className: e.img,
-                            src: a.imgPath,
-                            alt: a.label
-                          })
-                        : null
-                    );
-                  })
-                ),
-                n.a.createElement(oy.a, {
+                n.a.createElement(iy.a, {
                   steps: c,
                   position: "static",
                   variant: "progress",
@@ -26788,15 +26758,15 @@
                     { size: "small", onClick: i, disabled: r === c - 1 },
                     "Next",
                     "rtl" === a.direction
-                      ? n.a.createElement(py.a, null)
-                      : n.a.createElement(xy.a, null)
+                      ? n.a.createElement(Ey.a, null)
+                      : n.a.createElement(py.a, null)
                   ),
                   backButton: n.a.createElement(
                     Ie,
                     { size: "small", onClick: s, disabled: 0 === r },
                     "rtl" === a.direction
-                      ? n.a.createElement(xy.a, null)
-                      : n.a.createElement(py.a, null),
+                      ? n.a.createElement(py.a, null)
+                      : n.a.createElement(Ey.a, null),
                     "Back"
                   )
                 })
@@ -26804,10 +26774,10 @@
             )
           );
         },
-        Sy = t(680),
-        Oy = t(1466),
-        By = t(1465),
-        My = Object(L.a)(function(e) {
+        ky = t(680),
+        Py = t(1466),
+        Sy = t(1465),
+        Oy = Object(L.a)(function(e) {
           return {
             marginRight: { marginRight: "10px" },
             marginTop: { marginTop: "10px" },
@@ -26826,7 +26796,7 @@
             paperMargin: { margin: 12 }
           };
         });
-      function jy(e, a) {
+      function By(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -26838,16 +26808,16 @@
         }
         return t;
       }
-      function Ly(e) {
+      function My(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? jy(Object(t), !0).forEach(function(a) {
+            ? By(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : jy(Object(t)).forEach(function(a) {
+            : By(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -26857,39 +26827,39 @@
         }
         return e;
       }
-      var Dy = function(e, a) {
+      var jy = function(e, a) {
         switch (a.type) {
           case "OPEN_MODAL":
-            return Ly({}, e, { toggleModal: !0 });
+            return My({}, e, { toggleModal: !0 });
           case "CLOSE_MODAL":
-            return Ly({}, e, { toggleModal: !1 });
+            return My({}, e, { toggleModal: !1 });
           case "OPEN_BODY":
-            return Ly({}, e, { toggleBody: !0 });
+            return My({}, e, { toggleBody: !0 });
           case "CLOSE_BODY":
-            return Ly({}, e, { toggleBody: !1 });
+            return My({}, e, { toggleBody: !1 });
           case "OPEN_SMALL":
-            return Ly({}, e, { toggleSmall: !0 });
+            return My({}, e, { toggleSmall: !0 });
           case "CLOSE_SMALL":
-            return Ly({}, e, { toggleSmall: !1 });
+            return My({}, e, { toggleSmall: !1 });
           case "OPEN_LARGE":
-            return Ly({}, e, { toggleLarge: !0 });
+            return My({}, e, { toggleLarge: !0 });
           case "CLOSE_LARGE":
-            return Ly({}, e, { toggleLarge: !1 });
+            return My({}, e, { toggleLarge: !1 });
           case "OPEN_GRID":
-            return Ly({}, e, { toggleGrid: !0 });
+            return My({}, e, { toggleGrid: !0 });
           case "CLOSE_GRID":
-            return Ly({}, e, { toggleGrid: !1 });
+            return My({}, e, { toggleGrid: !1 });
           case "OPEN_INPUT_MODAL":
-            return Ly({}, e, { toggleInputModal: !0 });
+            return My({}, e, { toggleInputModal: !0 });
           case "CLOSE_INPUT_MODAL":
-            return Ly({}, e, { toggleInputModal: !1 });
+            return My({}, e, { toggleInputModal: !1 });
           default:
             return null;
         }
       };
-      function Fy() {
-        var e = My(),
-          a = n.a.useReducer(Dy, {
+      function Ly() {
+        var e = Oy(),
+          a = n.a.useReducer(jy, {
             toggleModal: !1,
             toggleBody: !1,
             toggleSmall: !1,
@@ -26916,7 +26886,7 @@
                   T.a,
                   { mb: 6 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     { title: "Live Demo", disableWidgetMenu: !0 },
                     n.a.createElement(
                       Ne,
@@ -26939,7 +26909,7 @@
                         "Demo"
                       ),
                       n.a.createElement(
-                        Ba.a,
+                        Sa.a,
                         {
                           open: l.toggleModal,
                           onClose: function() {
@@ -26949,21 +26919,21 @@
                           "aria-labelledby": "scroll-dialog-title"
                         },
                         n.a.createElement(
-                          Ma.a,
+                          Oa.a,
                           { id: "alert-dialog-title" },
                           "Use Google's location service?"
                         ),
                         n.a.createElement(
-                          ja.a,
+                          Ba.a,
                           null,
                           n.a.createElement(
-                            Oy.a,
+                            Py.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          By.a,
+                          Sy.a,
                           null,
                           n.a.createElement(
                             Ie,
@@ -27000,7 +26970,7 @@
                         "Scrolling long content"
                       ),
                       n.a.createElement(
-                        Ba.a,
+                        Sa.a,
                         {
                           open: l.toggleBody,
                           onClose: function() {
@@ -27010,17 +26980,17 @@
                           "aria-labelledby": "scroll-dialog-title"
                         },
                         n.a.createElement(
-                          Ma.a,
+                          Oa.a,
                           { id: "scroll-dialog-title" },
                           "Subscribe"
                         ),
                         n.a.createElement(
-                          ja.a,
+                          Ba.a,
                           null,
                           n.a.createElement(
-                            Oy.a,
+                            Py.a,
                             null,
-                            Object(Sy.a)(new Array(50))
+                            Object(ky.a)(new Array(50))
                               .map(function() {
                                 return "Cras mattis consectetur purus sit amet fermentum.\nCras justo odio, dapibus ac facilisis in, egestas eget quam.\nMorbi leo risus, porta ac consectetur ac, vestibulum at eros.\nPraesent commodo cursus magna, vel scelerisque nisl consectetur et.";
                               })
@@ -27028,7 +26998,7 @@
                           )
                         ),
                         n.a.createElement(
-                          By.a,
+                          Sy.a,
                           null,
                           n.a.createElement(
                             Ie,
@@ -27059,14 +27029,14 @@
                   T.a,
                   { mb: 6 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     { title: "Optional Sizes", disableWidgetMenu: !0 },
                     n.a.createElement(
                       Ne,
                       { block: !0 },
                       "To appoint modal's width size, equal maxWidth attribute to one of values: ",
                       n.a.createElement(
-                        Gt,
+                        Ht,
                         { row: !0, inline: !0 },
                         "xs, sm, md, lg, xl"
                       )
@@ -27087,7 +27057,7 @@
                         "Large Modal"
                       ),
                       n.a.createElement(
-                        Ba.a,
+                        Sa.a,
                         {
                           maxWidth: "xl",
                           open: l.toggleLarge,
@@ -27098,21 +27068,21 @@
                           "aria-describedby": "alert-dialog-description"
                         },
                         n.a.createElement(
-                          Ma.a,
+                          Oa.a,
                           { id: "alert-dialog-title" },
                           "Use Google's location service?"
                         ),
                         n.a.createElement(
-                          ja.a,
+                          Ba.a,
                           null,
                           n.a.createElement(
-                            Oy.a,
+                            Py.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          By.a,
+                          Sy.a,
                           null,
                           n.a.createElement(
                             Ie,
@@ -27150,7 +27120,7 @@
                         "Small modal"
                       ),
                       n.a.createElement(
-                        Ba.a,
+                        Sa.a,
                         {
                           maxWidth: "sm",
                           open: l.toggleSmall,
@@ -27161,21 +27131,21 @@
                           "aria-describedby": "alert-dialog-description"
                         },
                         n.a.createElement(
-                          Ma.a,
+                          Oa.a,
                           { id: "alert-dialog-title" },
                           "Use Google's location service?"
                         ),
                         n.a.createElement(
-                          ja.a,
+                          Ba.a,
                           null,
                           n.a.createElement(
-                            Oy.a,
+                            Py.a,
                             { id: "alert-dialog-description" },
                             "Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running."
                           )
                         ),
                         n.a.createElement(
-                          By.a,
+                          Sy.a,
                           null,
                           n.a.createElement(
                             Ie,
@@ -27207,13 +27177,13 @@
                   T.a,
                   null,
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     { title: "Form dialogs", disableWidgetMenu: !0 },
                     n.a.createElement(
                       Ne,
                       { block: !0 },
                       "Form dialogs allow users to fill out form fields within a dialog. For example, if your site prompts for potential subscribers to fill in their email address, they can fill out the email field and touch ",
-                      n.a.createElement(Gt, { row: !0, inline: !0 }, "Submit")
+                      n.a.createElement(Ht, { row: !0, inline: !0 }, "Submit")
                     ),
                     n.a.createElement(
                       T.a,
@@ -27230,7 +27200,7 @@
                         "Open form dialog"
                       ),
                       n.a.createElement(
-                        Ba.a,
+                        Sa.a,
                         {
                           open: l.toggleInputModal,
                           onClose: function() {
@@ -27239,19 +27209,19 @@
                           "aria-labelledby": "form-dialog-title"
                         },
                         n.a.createElement(
-                          Ma.a,
+                          Oa.a,
                           { id: "form-dialog-title" },
                           "Subscribe"
                         ),
                         n.a.createElement(
-                          ja.a,
+                          Ba.a,
                           null,
                           n.a.createElement(
-                            Oy.a,
+                            Py.a,
                             null,
                             "To subscribe to this website, please enter your email address here. We will send updates occasionally."
                           ),
-                          n.a.createElement(Aa.a, {
+                          n.a.createElement(va.a, {
                             autoFocus: !0,
                             margin: "dense",
                             id: "name",
@@ -27261,7 +27231,7 @@
                           })
                         ),
                         n.a.createElement(
-                          By.a,
+                          Sy.a,
                           null,
                           n.a.createElement(
                             Ie,
@@ -27294,7 +27264,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Using Grid", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -27302,13 +27272,13 @@
                   "Utilize the Material UI grid system within a modal by nesting",
                   " ",
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     { row: !0, inline: !0 },
                     "<Grid container>"
                   ),
                   " within the",
                   " ",
-                  n.a.createElement(Gt, { row: !0, inline: !0 }, "<Dialog>"),
+                  n.a.createElement(Ht, { row: !0, inline: !0 }, "<Dialog>"),
                   ". Then, use the normal grid system classes as you would anywhere else."
                 ),
                 n.a.createElement(
@@ -27333,7 +27303,7 @@
                       v.a,
                       { item: !0, xs: !0, zeroMinWidth: !0 },
                       n.a.createElement(
-                        Gt,
+                        Ht,
                         null,
                         '\n  <Grid container>\n    <Box display="flex" flexDirection="column">\n      <Box display="flex" flexDirection="row" justifyContent="flex-end">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n      </Box>\n      <Box display="flex" flexDirection="row" justifyContent="flex-around">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n      </Box>\n      <Box display="flex" flexDirection="row" justifyContent="flex-between">\n        <Grid item xs={3}>1</Grid>\n        <Grid item xs={3}>2</Grid>\n        <Grid item xs={3}>3</Grid>Code\n      </Box>\n    </Box>\n  </Grid>\n                  '
                       )
@@ -27341,7 +27311,7 @@
                   )
                 ),
                 n.a.createElement(
-                  Ba.a,
+                  Sa.a,
                   {
                     fullWidth: !0,
                     maxWidth: "lg",
@@ -27353,15 +27323,15 @@
                     "aria-describedby": "alert-dialog-description"
                   },
                   n.a.createElement(
-                    Ma.a,
+                    Oa.a,
                     { id: "alert-dialog-title" },
                     "Grid system"
                   ),
                   n.a.createElement(
-                    ja.a,
+                    Ba.a,
                     null,
                     n.a.createElement(
-                      Oy.a,
+                      Py.a,
                       { id: "alert-dialog-description", component: "div" },
                       n.a.createElement(
                         T.a,
@@ -27485,7 +27455,7 @@
                     )
                   ),
                   n.a.createElement(
-                    By.a,
+                    Sy.a,
                     null,
                     n.a.createElement(
                       Ie,
@@ -27515,11 +27485,11 @@
           )
         );
       }
-      var Ry = t(639),
+      var Dy = t(639),
+        Fy = t.n(Dy),
+        Ry = t(290),
         Wy = t.n(Ry),
-        Hy = t(290),
-        zy = t.n(Hy),
-        Gy = Object(L.a)(function(e) {
+        Hy = Object(L.a)(function(e) {
           return {
             root: { flexGrow: 1 },
             menuButton: { marginRight: e.spacing(2) },
@@ -27573,7 +27543,7 @@
             }
           };
         });
-      function Uy() {
+      function zy() {
         var e = n.a.useState(null),
           a = Object(x.a)(e, 2),
           t = a[0],
@@ -27586,7 +27556,7 @@
           s = Object(x.a)(i, 2),
           o = s[0],
           d = s[1],
-          E = Gy();
+          E = Hy();
         return n.a.createElement(
           "div",
           null,
@@ -27597,7 +27567,7 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Navbar Example", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
@@ -27624,7 +27594,7 @@
                             color: "inherit",
                             "aria-label": "menu"
                           },
-                          n.a.createElement(zy.a, null)
+                          n.a.createElement(Wy.a, null)
                         ),
                         n.a.createElement(
                           Ne,
@@ -27665,7 +27635,7 @@
                           color: "inherit",
                           "aria-label": "menu"
                         },
-                        n.a.createElement(zy.a, null)
+                        n.a.createElement(Wy.a, null)
                       ),
                       n.a.createElement(
                         Ne,
@@ -27683,7 +27653,7 @@
                           },
                           color: "inherit"
                         },
-                        n.a.createElement(Wy.a, null)
+                        n.a.createElement(Fy.a, null)
                       ),
                       n.a.createElement(
                         G.a,
@@ -27714,7 +27684,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Navbar Search",
                   disableWidgetMenu: !0,
@@ -27745,7 +27715,7 @@
                             color: "inherit",
                             "aria-label": "menu"
                           },
-                          n.a.createElement(zy.a, null)
+                          n.a.createElement(Wy.a, null)
                         ),
                         n.a.createElement(
                           Ne,
@@ -27790,8 +27760,8 @@
           )
         );
       }
-      var Vy = t(1463),
-        Yy = Object(L.a)(function(e) {
+      var Gy = t(1463),
+        Uy = Object(L.a)(function(e) {
           return {
             button: {
               boxShadow: e.customShadows.widget,
@@ -27803,7 +27773,7 @@
             typography: { padding: e.spacing(2) }
           };
         });
-      function Ky(e, a) {
+      function Vy(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -27815,16 +27785,16 @@
         }
         return t;
       }
-      function Qy(e) {
+      function Yy(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? Ky(Object(t), !0).forEach(function(a) {
+            ? Vy(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : Ky(Object(t)).forEach(function(a) {
+            : Vy(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -27834,79 +27804,79 @@
         }
         return e;
       }
-      var Jy = function(e, a) {
+      var Ky = function(e, a) {
         switch (a.type) {
           case "OPEN_TOOLTIP":
-            return Qy({}, e, { tooltipOpened: !0 });
+            return Yy({}, e, { tooltipOpened: !0 });
           case "CLOSE_TOOLTIP":
-            return Qy({}, e, { tooltipOpened: !1 });
+            return Yy({}, e, { tooltipOpened: !1 });
           case "OPEN_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               togglePopover: !0,
               popoverSibling: a.setSibling
             });
           case "CLOSE_POPOVER":
-            return Qy({}, e, { togglePopover: !1, popoverSibling: null });
+            return Yy({}, e, { togglePopover: !1, popoverSibling: null });
           case "OPEN_HOVER_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleHoverPopover: !0,
               hoverPopoverSibling: a.setHoverPopoverSibling
             });
           case "CLOSE_HOVER_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleHoverPopover: !1,
               hoverPopoverSibling: null
             });
           case "OPEN_TOP_TOOLTIP":
-            return Qy({}, e, { toggleTopTooltip: !0 });
+            return Yy({}, e, { toggleTopTooltip: !0 });
           case "CLOSE_TOP_TOOLTIP":
-            return Qy({}, e, { toggleTopTooltip: !1 });
+            return Yy({}, e, { toggleTopTooltip: !1 });
           case "OPEN_RIGHT_TOOLTIP":
-            return Qy({}, e, { toggleRightTooltip: !0 });
+            return Yy({}, e, { toggleRightTooltip: !0 });
           case "CLOSE_RIGHT_TOOLTIP":
-            return Qy({}, e, { toggleRightTooltip: !1 });
+            return Yy({}, e, { toggleRightTooltip: !1 });
           case "OPEN_BOTTOM_TOOLTIP":
-            return Qy({}, e, { toggleBottomTooltip: !0 });
+            return Yy({}, e, { toggleBottomTooltip: !0 });
           case "CLOSE_BOTTOM_TOOLTIP":
-            return Qy({}, e, { toggleBottomTooltip: !1 });
+            return Yy({}, e, { toggleBottomTooltip: !1 });
           case "OPEN_LEFT_TOOLTIP":
-            return Qy({}, e, { toggleLeftTooltip: !0 });
+            return Yy({}, e, { toggleLeftTooltip: !0 });
           case "CLOSE_LEFT_TOOLTIP":
-            return Qy({}, e, { toggleLeftTooltip: !1 });
+            return Yy({}, e, { toggleLeftTooltip: !1 });
           case "OPEN_TOP_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleTopPopover: !0,
               topPopoverSibling: a.setTopPopoverSibling
             });
           case "CLOSE_TOP_POPOVER":
-            return Qy({}, e, { toggleTopPopover: !1, topPopoverSibling: null });
+            return Yy({}, e, { toggleTopPopover: !1, topPopoverSibling: null });
           case "OPEN_RIGHT_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleRightPopover: !0,
               rightPopoverSibling: a.setRightPopoverSibling
             });
           case "CLOSE_RIGHT_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleRightPopover: !1,
               rightPopoverSibling: null
             });
           case "OPEN_BOTTOM_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleBottomPopover: !0,
               bottomPopoverSibling: a.setBottomPopoverSibling
             });
           case "CLOSE_BOTTOM_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleBottomPopover: !1,
               bottomPopoverSibling: null
             });
           case "OPEN_LEFT_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleLeftPopover: !0,
               leftPopoverSibling: a.setLeftPopoverSibling
             });
           case "CLOSE_LEFT_POPOVER":
-            return Qy({}, e, {
+            return Yy({}, e, {
               toggleLeftPopover: !1,
               leftPopoverSibling: null
             });
@@ -27914,9 +27884,9 @@
             return {};
         }
       };
-      function qy() {
-        var e = Yy(),
-          a = n.a.useReducer(Jy, !1),
+      function Qy() {
+        var e = Uy(),
+          a = n.a.useReducer(Ky, !1),
           t = Object(x.a)(a, 2),
           l = t[0],
           r = t[1];
@@ -27930,7 +27900,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Tooltip Example",
                   disableWidgetMenu: !0,
@@ -27943,7 +27913,7 @@
                     T.a,
                     { mt: 2, display: "flex" },
                     n.a.createElement(
-                      Vy.a,
+                      Gy.a,
                       {
                         onClickAway: function() {
                           return r({ type: "CLOSE_TOOLTIP" });
@@ -28009,7 +27979,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Popover Example", disableWidgetMenu: !0 },
                 n.a.createElement(
                   T.a,
@@ -28039,7 +28009,7 @@
                         "Open Popover"
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: l.togglePopover ? "simple-popover" : void 0,
                           open: l.togglePopover || !1,
@@ -28086,7 +28056,7 @@
                         "Hover with a Popover."
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: "mouse-over-popover",
                           open: l.toggleHoverPopover || !1,
@@ -28119,13 +28089,13 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Tooltip Directions", disableWidgetMenu: !0 },
                 n.a.createElement(
                   T.a,
                   { mt: 2, display: "flex" },
                   n.a.createElement(
-                    Vy.a,
+                    Gy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_TOP_TOOLTIP" });
@@ -28165,7 +28135,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Gy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_RIGHT_TOOLTIP" });
@@ -28205,7 +28175,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Gy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_BOTTOM_TOOLTIP" });
@@ -28245,7 +28215,7 @@
                     )
                   ),
                   n.a.createElement(
-                    Vy.a,
+                    Gy.a,
                     {
                       onClickAway: function() {
                         return r({ type: "CLOSE_LEFT_TOOLTIP" });
@@ -28291,7 +28261,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Popover Directions", disableWidgetMenu: !0 },
                 n.a.createElement(
                   T.a,
@@ -28321,7 +28291,7 @@
                         "Popover on top"
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: l.toggleTopPopover ? "simple-popover" : void 0,
                           open: l.toggleTopPopover || !1,
@@ -28366,7 +28336,7 @@
                         "Popover on right"
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: l.toggleRightPopover ? "simple-popover" : void 0,
                           open: l.toggleRightPopover || !1,
@@ -28411,7 +28381,7 @@
                         "Popover on bottom"
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: l.toggleBottomPopover ? "simple-popover" : void 0,
                           open: l.toggleBottomPopover || !1,
@@ -28456,7 +28426,7 @@
                         "Popover on left"
                       ),
                       n.a.createElement(
-                        Ta.a,
+                        ba.a,
                         {
                           id: l.toggleLeftPopover ? "simple-popover" : void 0,
                           open: l.toggleLeftPopover || !1,
@@ -28487,10 +28457,10 @@
           )
         );
       }
-      var Zy = t(2416),
-        _y = t(1468),
-        Xy = t(1467),
-        $y = Object(L.a)(function(e) {
+      var Jy = t(2416),
+        qy = t(1468),
+        Zy = t(1467),
+        _y = Object(L.a)(function(e) {
           return {
             expansion: {
               backgroundColor: e.palette.primary.light,
@@ -28498,7 +28468,7 @@
             }
           };
         });
-      function eb(e) {
+      function Xy(e) {
         var a = e.children,
           t = e.value,
           l = e.index,
@@ -28518,15 +28488,15 @@
           n.a.createElement(T.a, { p: 3 }, a)
         );
       }
-      function ab(e) {
+      function $y(e) {
         return {
           id: "full-width-tab-".concat(e),
           "aria-controls": "full-width-tabpanel-".concat(e)
         };
       }
-      function tb() {
-        var e = $y(),
-          a = Object(Ey.a)(),
+      function eb() {
+        var e = _y(),
+          a = Object(oy.a)(),
           t = n.a.useState(0),
           l = Object(x.a)(t, 2),
           r = l[0],
@@ -28545,7 +28515,7 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Tabs Example",
                   disableWidgetMenu: !0,
@@ -28572,20 +28542,20 @@
                     },
                     n.a.createElement(
                       b.a,
-                      Object.assign({ label: "Item One" }, ab(0))
+                      Object.assign({ label: "Item One" }, $y(0))
                     ),
                     n.a.createElement(
                       b.a,
-                      Object.assign({ label: "Item Two" }, ab(1))
+                      Object.assign({ label: "Item Two" }, $y(1))
                     ),
                     n.a.createElement(
                       b.a,
-                      Object.assign({ label: "Item Three" }, ab(2))
+                      Object.assign({ label: "Item Three" }, $y(2))
                     )
                   )
                 ),
                 n.a.createElement(
-                  Ny.a,
+                  xy.a,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: r,
@@ -28594,7 +28564,7 @@
                     }
                   },
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: r, index: 0, dir: a.direction },
                     "Tabs-enabled widget You will never know exactly how something will go until you try it. You can think three hundred times and still have no precise result. If you see attractive girl all you need to do is to go and ask her to give you her phone. You don\u2019t need to think about HOW it can turn out. All you have to do is to GO and DO IT. It should be super-fast and easy. No hesitation. You ask me: \u201cWhat to do with these fearful thoughts preventing me from doing that?\u201d The answer is to ignore them, because they can\u2019t disappear immediately. The same thing is for startups and ideas. If you have an idea right away after it appears in your mind you should go and make a first step to implement it.",
                     n.a.createElement(
@@ -28621,12 +28591,12 @@
                     )
                   ),
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: r, index: 1, dir: a.direction },
                     "Why don't use Lore Ipsum? I think if some one says don't use lore ipsum it's very controversial point. I think the opposite actually. Everyone knows what is lore ipsum - it is easy to understand if text is lore ipsum."
                   ),
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: r, index: 2, dir: a.direction },
                     "If you will think too much it will sink in the swamp of never implemented plans and ideas or will just go away or will be implemented by someone else. 5 months of doing everything to achieve nothing. You'll automatically skip - because you know - it's just non-informative stub. But what if there some text like this one?"
                   )
@@ -28637,7 +28607,7 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Icons Tabs",
                   disableWidgetMenu: !0,
@@ -28667,9 +28637,9 @@
                       Object.assign(
                         {
                           label: "Item One",
-                          icon: n.a.createElement(tp.a, null)
+                          icon: n.a.createElement(ep.a, null)
                         },
-                        ab(0)
+                        $y(0)
                       )
                     ),
                     n.a.createElement(
@@ -28677,9 +28647,9 @@
                       Object.assign(
                         {
                           label: "Item Two",
-                          icon: n.a.createElement(tp.a, null)
+                          icon: n.a.createElement(ep.a, null)
                         },
-                        ab(1)
+                        $y(1)
                       )
                     ),
                     n.a.createElement(
@@ -28687,15 +28657,15 @@
                       Object.assign(
                         {
                           label: "Item Three",
-                          icon: n.a.createElement(tp.a, null)
+                          icon: n.a.createElement(ep.a, null)
                         },
-                        ab(2)
+                        $y(2)
                       )
                     )
                   )
                 ),
                 n.a.createElement(
-                  Ny.a,
+                  xy.a,
                   {
                     axis: "rtl" === a.direction ? "x-reverse" : "x",
                     index: s,
@@ -28704,7 +28674,7 @@
                     }
                   },
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: s, index: 0, dir: a.direction },
                     "Tabs-enabled widget You will never know exactly how something will go until you try it. You can think three hundred times and still have no precise result. If you see attractive girl all you need to do is to go and ask her to give you her phone. You don\u2019t need to think about HOW it can turn out. All you have to do is to GO and DO IT. It should be super-fast and easy. No hesitation. You ask me: \u201cWhat to do with these fearful thoughts preventing me from doing that?\u201d The answer is to ignore them, because they can\u2019t disappear immediately. The same thing is for startups and ideas. If you have an idea right away after it appears in your mind you should go and make a first step to implement it.",
                     n.a.createElement(
@@ -28731,12 +28701,12 @@
                     )
                   ),
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: s, index: 1, dir: a.direction },
                     "Why don't use Lore Ipsum? I think if some one says don't use lore ipsum it's very controversial point. I think the opposite actually. Everyone knows what is lore ipsum - it is easy to understand if text is lore ipsum."
                   ),
                   n.a.createElement(
-                    eb,
+                    Xy,
                     { value: s, index: 2, dir: a.direction },
                     "If you will think too much it will sink in the swamp of never implemented plans and ideas or will just go away or will be implemented by someone else. 5 months of doing everything to achieve nothing. You'll automatically skip - because you know - it's just non-informative stub. But what if there some text like this one?"
                   )
@@ -28747,26 +28717,26 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Expansion Panel Example",
                   disableWidgetMenu: !0,
                   inheritHeight: !0
                 },
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   null,
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel1a-content",
                       id: "panel1a-header"
                     },
                     n.a.createElement(Ne, null, "Expansion Panel 1")
                   ),
                   n.a.createElement(
-                    Xy.a,
+                    Zy.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -28776,19 +28746,19 @@
                   )
                 ),
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   null,
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel2a-content",
                       id: "panel2a-header"
                     },
                     n.a.createElement(Ne, null, "Expansion Panel 2")
                   ),
                   n.a.createElement(
-                    Xy.a,
+                    Zy.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -28798,12 +28768,12 @@
                   )
                 ),
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   { disabled: !0 },
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel3a-content",
                       id: "panel3a-header"
                     },
@@ -28816,26 +28786,26 @@
               v.a,
               { item: !0, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Customize Expansion Panel Example",
                   disableWidgetMenu: !0,
                   inheritHeight: !0
                 },
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   { classes: { root: e.expansion } },
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel1a-content",
                       id: "panel1a-header"
                     },
                     n.a.createElement(Ne, null, "Expansion Panel 1")
                   ),
                   n.a.createElement(
-                    Xy.a,
+                    Zy.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -28845,19 +28815,19 @@
                   )
                 ),
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   { classes: { root: e.expansion } },
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel2a-content",
                       id: "panel2a-header"
                     },
                     n.a.createElement(Ne, null, "Expansion Panel 2")
                   ),
                   n.a.createElement(
-                    Xy.a,
+                    Zy.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -28867,12 +28837,12 @@
                   )
                 ),
                 n.a.createElement(
-                  Zy.a,
+                  Jy.a,
                   { disabled: !0 },
                   n.a.createElement(
-                    _y.a,
+                    qy.a,
                     {
-                      expandIcon: n.a.createElement(ka.a, null),
+                      expandIcon: n.a.createElement(wa.a, null),
                       "aria-controls": "panel3a-content",
                       id: "panel3a-header"
                     },
@@ -28884,8 +28854,8 @@
           )
         );
       }
-      var lb = t(1395),
-        nb = Object(L.a)(function(e) {
+      var ab = t(1395),
+        tb = Object(L.a)(function(e) {
           return {
             root: { "&:hover": { backgroundColor: "transparent" } },
             icon: {
@@ -28924,28 +28894,28 @@
             horizontalFormTop: { paddingTop: e.spacing(2) }
           };
         }),
-        rb = t(577),
-        mb = t(641),
+        lb = t(577),
+        nb = t(641),
+        rb = t.n(nb),
+        mb = t(640),
         cb = t.n(mb),
-        ib = t(640),
+        ib = t(642),
         sb = t.n(ib),
-        ob = t(642),
+        ob = t(643),
         db = t.n(ob),
-        Eb = t(643),
+        Eb = t(644),
         ub = t.n(Eb),
-        pb = t(644),
+        pb = t(645),
         gb = t.n(pb),
-        xb = t(645),
-        hb = t.n(xb),
-        Nb = Object(pe.a)({
+        xb = Object(pe.a)({
           root: { color: "green", "&$checked": { color: "green" } }
         })(function(e) {
           return n.a.createElement(
-            ct.a,
+            rt.a,
             Object.assign({ color: "default" }, e)
           );
         }),
-        Ib = Object(pe.a)({
+        hb = Object(pe.a)({
           root: { color: "green", "&$checked": { color: "green" } }
         })(function(e) {
           return n.a.createElement(
@@ -28953,7 +28923,7 @@
             Object.assign({ color: "default" }, e)
           );
         }),
-        fb = Object(pe.a)(function(e) {
+        Nb = Object(pe.a)(function(e) {
           return {
             root: {
               "& .MuiInputLabel-root": { color: "green" },
@@ -28968,16 +28938,16 @@
             }
           };
         })(function(e) {
-          return n.a.createElement(Aa.a, e);
+          return n.a.createElement(va.a, e);
         }),
-        yb = [
+        Ib = [
           { id: 0, value: "Action" },
           { id: 1, value: "Another action" },
           { id: 2, value: "Something else here" },
           { id: 3, type: "divider" },
           { id: 4, value: "Separated link" }
         ];
-      function bb() {
+      function fb() {
         var e = n.a.useState({ default: !1, horizontal: !1 }),
           a = Object(x.a)(e, 2),
           t = a[0],
@@ -28989,7 +28959,7 @@
           s = function(e) {
             i(e.target.value);
           },
-          o = nb();
+          o = tb();
         return n.a.createElement(
           "div",
           null,
@@ -29000,7 +28970,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Horizontal form",
                   bodyClass: o.horizontalFormTop,
@@ -29025,7 +28995,7 @@
                     n.a.createElement(
                       v.a,
                       { xs: 6, item: !0 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper1",
                         placeholder: "May have placeholder",
                         style: { width: "100%" }
@@ -29043,13 +29013,13 @@
                     n.a.createElement(
                       v.a,
                       { xs: 6, item: !0 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper2",
                         "aria-describedby": "component-helper-text",
                         style: { width: "100%" }
                       }),
                       n.a.createElement(
-                        lb.a,
+                        ab.a,
                         { id: "component-helper-text" },
                         "Some important helper text"
                       )
@@ -29070,7 +29040,7 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         disabled: !0,
                         defaultValue: "Default value",
                         id: "component-helper3",
@@ -29089,7 +29059,7 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper4",
                         inputProps: { maxLength: 3 },
                         style: { width: "100%" }
@@ -29111,13 +29081,13 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper5",
                         InputProps: {
                           startAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
-                            n.a.createElement(cl.a, null)
+                            n.a.createElement(rl.a, null)
                           )
                         },
                         style: { width: "100%" }
@@ -29135,13 +29105,13 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper6",
                         InputProps: {
                           startAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
-                            n.a.createElement(zI.a, null)
+                            n.a.createElement(WI.a, null)
                           )
                         },
                         style: { width: "100%" }
@@ -29163,11 +29133,11 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper7",
                         InputProps: {
                           endAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
                             ".00"
                           )
@@ -29191,16 +29161,16 @@
                     n.a.createElement(
                       v.a,
                       { item: !0, xs: 6 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "component-helper8",
                         InputProps: {
                           startAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
-                            n.a.createElement(ml.a, null)
+                            n.a.createElement(nl.a, null)
                           ),
                           endAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
                             ".00"
                           )
@@ -29242,7 +29212,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Default Form",
                   disableWidgetMenu: !0,
@@ -29259,7 +29229,7 @@
                       { variant: "body1" },
                       "Search type input"
                     ),
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       color: "primary",
                       type: "search",
                       placeholder: "Search",
@@ -29274,7 +29244,7 @@
                       { variant: "body1", style: { marginTop: 16 } },
                       "Outlined input"
                     ),
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       id: "outlined-input",
                       margin: "normal",
                       variant: "outlined"
@@ -29292,7 +29262,7 @@
                   n.a.createElement(
                     v.a,
                     { item: !0 },
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       id: "outlined-input",
                       margin: "normal",
                       variant: "filled"
@@ -29309,7 +29279,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Control sizing",
                   disableWidgetMenu: !0,
@@ -29323,12 +29293,12 @@
                     { item: !0 },
                     "If",
                     " ",
-                    n.a.createElement(Gt, { row: !0, inline: !0 }, "dense"),
+                    n.a.createElement(Ht, { row: !0, inline: !0 }, "dense"),
                     "or",
                     " ",
-                    n.a.createElement(Gt, { row: !0, inline: !0 }, "normal"),
+                    n.a.createElement(Ht, { row: !0, inline: !0 }, "normal"),
                     ", will adjust vertical spacing of this and contained components.",
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       label: 'margin="dense"',
                       placeholder: "Margin dense",
                       margin: "dense",
@@ -29339,7 +29309,7 @@
                   n.a.createElement(
                     v.a,
                     { item: !0 },
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       label: 'margin="normal"',
                       placeholder: "Margin normal",
                       margin: "normal",
@@ -29354,7 +29324,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Selects", disableWidgetMenu: !0, inheritHeight: !0 },
                 n.a.createElement(
                   v.a,
@@ -29372,16 +29342,16 @@
                     v.a,
                     { xs: 6, item: !0 },
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         labelId: "demo-simple-select-label",
                         id: "demo-simple-select",
                         value: c,
                         onChange: s
                       },
-                      yb.map(function(e) {
+                      Ib.map(function(e) {
                         return "divider" === e.type
-                          ? n.a.createElement(fa.a, { key: e.id })
+                          ? n.a.createElement(Na.a, { key: e.id })
                           : n.a.createElement(
                               U.a,
                               { value: e.value, key: e.id },
@@ -29407,16 +29377,16 @@
                     v.a,
                     { xs: 6, item: !0 },
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         labelId: "demo-simple-select-label",
                         id: "demo-simple-select",
                         value: c,
                         onChange: s
                       },
-                      yb.map(function(e) {
+                      Ib.map(function(e) {
                         return "divider" === e.type
-                          ? n.a.createElement(fa.a, { key: e.id })
+                          ? n.a.createElement(Na.a, { key: e.id })
                           : n.a.createElement(
                               U.a,
                               { value: e.value, key: e.id },
@@ -29436,7 +29406,7 @@
               v.a,
               { item: !0, md: 6, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Input variants",
                   disableWidgetMenu: !0,
@@ -29449,8 +29419,8 @@
                   n.a.createElement(
                     v.a,
                     { item: !0 },
-                    n.a.createElement(rb.a, {
-                      control: n.a.createElement(ct.a, {
+                    n.a.createElement(lb.a, {
+                      control: n.a.createElement(rt.a, {
                         disabled: !0,
                         defaultChecked: t.default,
                         onChange: function(e) {
@@ -29460,8 +29430,8 @@
                       }),
                       label: "Disabled"
                     }),
-                    n.a.createElement(rb.a, {
-                      control: n.a.createElement(Nb, {
+                    n.a.createElement(lb.a, {
+                      control: n.a.createElement(xb, {
                         defaultChecked: t.default,
                         onChange: function(e) {
                           return l(Object(g.a)({}, e.target.value, !t.default));
@@ -29470,18 +29440,18 @@
                       }),
                       label: "Custom color"
                     }),
-                    n.a.createElement(rb.a, {
-                      control: n.a.createElement(ct.a, {
-                        icon: n.a.createElement(sb.a, null),
-                        checkedIcon: n.a.createElement(cb.a, null),
+                    n.a.createElement(lb.a, {
+                      control: n.a.createElement(rt.a, {
+                        icon: n.a.createElement(cb.a, null),
+                        checkedIcon: n.a.createElement(rb.a, null),
                         value: "checkedH"
                       }),
                       label: "Custom icon"
                     }),
-                    n.a.createElement(rb.a, {
-                      control: n.a.createElement(ct.a, {
-                        icon: n.a.createElement(db.a, { fontSize: "small" }),
-                        checkedIcon: n.a.createElement(ub.a, {
+                    n.a.createElement(lb.a, {
+                      control: n.a.createElement(rt.a, {
+                        icon: n.a.createElement(sb.a, { fontSize: "small" }),
+                        checkedIcon: n.a.createElement(db.a, {
                           fontSize: "small"
                         }),
                         value: "checkedI"
@@ -29492,7 +29462,7 @@
                   n.a.createElement(
                     v.a,
                     { item: !0 },
-                    n.a.createElement(rb.a, {
+                    n.a.createElement(lb.a, {
                       control: n.a.createElement(ue.a, {
                         disabled: !0,
                         defaultChecked: t.default,
@@ -29505,8 +29475,8 @@
                       }),
                       label: "Disabled"
                     }),
-                    n.a.createElement(rb.a, {
-                      control: n.a.createElement(Ib, {
+                    n.a.createElement(lb.a, {
+                      control: n.a.createElement(hb, {
                         defaultChecked: t.default,
                         onChange: function(e) {
                           return l(Object(g.a)({}, e.target.value, !t.default));
@@ -29517,7 +29487,7 @@
                       }),
                       label: "Custom color"
                     }),
-                    n.a.createElement(rb.a, {
+                    n.a.createElement(lb.a, {
                       control: n.a.createElement(ue.a, {
                         defaultChecked: t.default,
                         onChange: function(e) {
@@ -29527,14 +29497,14 @@
                         color: "default",
                         name: "radio-button-demo",
                         inputProps: { "aria-label": "E" },
-                        icon: n.a.createElement(gb.a, { fontSize: "small" }),
-                        checkedIcon: n.a.createElement(hb.a, {
+                        icon: n.a.createElement(ub.a, { fontSize: "small" }),
+                        checkedIcon: n.a.createElement(gb.a, {
                           fontSize: "small"
                         })
                       }),
                       label: "Small radio"
                     }),
-                    n.a.createElement(rb.a, {
+                    n.a.createElement(lb.a, {
                       value: "a",
                       control: n.a.createElement(function(e) {
                         return n.a.createElement(
@@ -29560,7 +29530,7 @@
                     n.a.createElement(
                       v.a,
                       { item: !0 },
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         error: !0,
                         label: "Error input",
                         placeholder: "Input with an error",
@@ -29568,7 +29538,7 @@
                         variant: "outlined",
                         fullWidth: !0
                       }),
-                      n.a.createElement(fb, {
+                      n.a.createElement(Nb, {
                         label: "Success input",
                         placeholder: "Input with success",
                         margin: "normal",
@@ -29584,7 +29554,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Textareas",
                   disableWidgetMenu: !0,
@@ -29601,7 +29571,7 @@
                   n.a.createElement(
                     v.a,
                     { xs: 6, item: !0 },
-                    n.a.createElement(Aa.a, {
+                    n.a.createElement(va.a, {
                       id: "outlined-multiline-static",
                       label: "Multiline",
                       multiline: !0,
@@ -29617,7 +29587,7 @@
           )
         );
       }
-      var vb = function() {
+      var yb = function() {
           var e = n.a.useRef(null),
             a = n.a.useState(!1),
             t = Object(x.a)(a, 2),
@@ -29633,7 +29603,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   {
                     title: "Dead simple validation",
                     disableWidgetMenu: !0,
@@ -29662,7 +29632,7 @@
                       n.a.createElement(
                         v.a,
                         { xs: 6, item: !0 },
-                        n.a.createElement(Aa.a, {
+                        n.a.createElement(va.a, {
                           id: "component-helper9",
                           style: { width: "100%" },
                           ref: e,
@@ -29694,7 +29664,7 @@
                       n.a.createElement(
                         v.a,
                         { xs: 6, item: !0 },
-                        n.a.createElement(Aa.a, {
+                        n.a.createElement(va.a, {
                           id: "component-helper10",
                           style: { width: "100%" },
                           inputProps: { maxLength: 10 }
@@ -29735,13 +29705,13 @@
             )
           );
         },
-        Tb = t(1457),
-        Ab = t(1460),
-        wb = t(1459),
-        Cb = t(1458),
-        kb = t(1462),
-        Pb = t(1461),
-        Sb = Object(L.a)(function(e) {
+        bb = t(1457),
+        vb = t(1460),
+        Tb = t(1459),
+        Ab = t(1458),
+        wb = t(1462),
+        Cb = t(1461),
+        kb = Object(L.a)(function(e) {
           return {
             card: {
               minWidth: "100%",
@@ -29758,17 +29728,17 @@
             cardActions: { padding: e.spacing(2) }
           };
         }),
-        Ob = t(646),
+        Pb = t(646),
+        Sb = t.n(Pb),
+        Ob = t(647),
         Bb = t.n(Ob),
-        Mb = t(647),
+        Mb = t(285),
         jb = t.n(Mb),
-        Lb = t(285),
-        Db = t.n(Lb),
-        Fb = t(648),
-        Rb = t.n(Fb);
-      function Wb() {
-        var e = { card: Bb.a },
-          a = Sb(e);
+        Lb = t(648),
+        Db = t.n(Lb);
+      function Fb() {
+        var e = { card: Sb.a },
+          a = kb(e);
         return n.a.createElement(
           "div",
           null,
@@ -29779,10 +29749,10 @@
               v.a,
               { item: !0, md: 12, xs: 12 },
               n.a.createElement(
-                Tb.a,
+                bb.a,
                 { className: a.card },
                 n.a.createElement(
-                  Ab.a,
+                  vb.a,
                   null,
                   n.a.createElement(
                     Ne,
@@ -29805,7 +29775,7 @@
                   )
                 ),
                 n.a.createElement(
-                  wb.a,
+                  Tb.a,
                   null,
                   n.a.createElement(
                     Ie,
@@ -29819,18 +29789,18 @@
               v.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                Tb.a,
+                bb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
-                  Cb.a,
+                  Ab.a,
                   null,
-                  n.a.createElement(kb.a, {
+                  n.a.createElement(wb.a, {
                     className: a.media,
-                    image: jb.a,
+                    image: Bb.a,
                     title: "Contemplative Reptile"
                   }),
                   n.a.createElement(
-                    Ab.a,
+                    vb.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -29849,7 +29819,7 @@
                   )
                 ),
                 n.a.createElement(
-                  wb.a,
+                  Tb.a,
                   { classes: { root: a.cardActions } },
                   n.a.createElement(
                     Ie,
@@ -29874,10 +29844,10 @@
                   T.a,
                   { mb: 6 },
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     { className: a.cardMedia },
                     n.a.createElement(
-                      Ab.a,
+                      vb.a,
                       null,
                       n.a.createElement(
                         Ne,
@@ -29889,18 +29859,18 @@
                         ),
                         n.a.createElement(Te, null, "All Time")
                       ),
-                      n.a.createElement(fa.a, { style: { width: "100%" } }),
+                      n.a.createElement(Na.a, { style: { width: "100%" } }),
                       n.a.createElement(
                         T.a,
                         { display: "flex", alignItems: "center", my: 3 },
                         n.a.createElement(
                           T.a,
                           null,
-                          n.a.createElement(yh.a, { className: a.starIcon }),
-                          n.a.createElement(yh.a, { className: a.starIcon }),
-                          n.a.createElement(yh.a, { className: a.starIcon }),
-                          n.a.createElement(yh.a, { className: a.starIcon }),
-                          n.a.createElement(yh.a, { className: a.starIcon })
+                          n.a.createElement(Ih.a, { className: a.starIcon }),
+                          n.a.createElement(Ih.a, { className: a.starIcon }),
+                          n.a.createElement(Ih.a, { className: a.starIcon }),
+                          n.a.createElement(Ih.a, { className: a.starIcon }),
+                          n.a.createElement(Ih.a, { className: a.starIcon })
                         ),
                         n.a.createElement(
                           T.a,
@@ -29920,7 +29890,7 @@
                       )
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       { classes: { root: a.cardActions } },
                       n.a.createElement(
                         Ie,
@@ -29938,9 +29908,9 @@
                   T.a,
                   null,
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     { className: a.cardMedia },
-                    n.a.createElement(Pb.a, {
+                    n.a.createElement(Cb.a, {
                       avatar: n.a.createElement(
                         fe,
                         { "aria-label": "", color: "primary" },
@@ -29949,18 +29919,18 @@
                       action: n.a.createElement(
                         C.a,
                         { "aria-label": "settings" },
-                        n.a.createElement(Ha.a, null)
+                        n.a.createElement(Ra.a, null)
                       ),
                       title: "Weekly Inspiration",
                       subheader: "September 14, 2016"
                     }),
-                    n.a.createElement(kb.a, {
+                    n.a.createElement(wb.a, {
                       className: a.media,
-                      image: Db.a,
+                      image: jb.a,
                       title: "Paella dish"
                     }),
                     n.a.createElement(
-                      Ab.a,
+                      vb.a,
                       null,
                       n.a.createElement(
                         Ne,
@@ -29973,17 +29943,17 @@
                       )
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       { disableSpacing: !0 },
                       n.a.createElement(
                         C.a,
                         { "aria-label": "add to favorites" },
-                        n.a.createElement(fi.a, null)
+                        n.a.createElement(Ni.a, null)
                       ),
                       n.a.createElement(
                         C.a,
                         { "aria-label": "share" },
-                        n.a.createElement(wx.a, null)
+                        n.a.createElement(Tx.a, null)
                       )
                     )
                   )
@@ -29994,18 +29964,18 @@
               v.a,
               { item: !0, md: 4, xs: 12 },
               n.a.createElement(
-                Tb.a,
+                bb.a,
                 { className: a.cardMedia },
                 n.a.createElement(
-                  Cb.a,
+                  Ab.a,
                   null,
-                  n.a.createElement(kb.a, {
+                  n.a.createElement(wb.a, {
                     className: a.media,
-                    image: Rb.a,
+                    image: Db.a,
                     title: "Technology"
                   }),
                   n.a.createElement(
-                    Ab.a,
+                    vb.a,
                     null,
                     n.a.createElement(
                       Ne,
@@ -30023,9 +29993,9 @@
                     )
                   )
                 ),
-                n.a.createElement(fa.a, { style: { width: "100%" } }),
+                n.a.createElement(Na.a, { style: { width: "100%" } }),
                 n.a.createElement(
-                  wb.a,
+                  Tb.a,
                   { classes: { root: a.cardActions } },
                   n.a.createElement(
                     Ne,
@@ -30048,8 +30018,8 @@
           )
         );
       }
-      var Hb = t(575),
-        zb = Object(dy.a)(function(e) {
+      var Rb = t(575),
+        Wb = Object(sy.a)(function(e) {
           return {
             root: {
               flexShrink: 0,
@@ -30058,9 +30028,9 @@
             }
           };
         });
-      function Gb(e) {
-        var a = zb(),
-          t = Object(Ey.a)(),
+      function Hb(e) {
+        var a = Wb(),
+          t = Object(oy.a)(),
           l = e.count,
           r = e.page,
           m = e.rowsPerPage,
@@ -30078,8 +30048,8 @@
               "aria-label": "first page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(hd.a, null)
-              : n.a.createElement(Xi.a, null)
+              ? n.a.createElement(gd.a, null)
+              : n.a.createElement(Zi.a, null)
           ),
           n.a.createElement(
             C.a,
@@ -30091,8 +30061,8 @@
               "aria-label": "previous page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(ed.a, null)
-              : n.a.createElement($o.a, null)
+              ? n.a.createElement(Xo.a, null)
+              : n.a.createElement(_o.a, null)
           ),
           n.a.createElement(
             C.a,
@@ -30104,8 +30074,8 @@
               "aria-label": "next page"
             },
             "rtl" === t.direction
-              ? n.a.createElement($o.a, null)
-              : n.a.createElement(ed.a, null)
+              ? n.a.createElement(_o.a, null)
+              : n.a.createElement(Xo.a, null)
           ),
           n.a.createElement(
             C.a,
@@ -30117,50 +30087,50 @@
               "aria-label": "last page"
             },
             "rtl" === t.direction
-              ? n.a.createElement(Xi.a, null)
-              : n.a.createElement(hd.a, null)
+              ? n.a.createElement(Zi.a, null)
+              : n.a.createElement(gd.a, null)
           )
         );
       }
-      var Ub = [
-        Vb("Cupcake", 305, 3.7),
-        Vb("Donut", 452, 25),
-        Vb("Eclair", 262, 16),
-        Vb("Frozen yoghurt", 159, 6),
-        Vb("Gingerbread", 356, 16),
-        Vb("Honeycomb", 408, 3.2),
-        Vb("Ice cream sandwich", 237, 9),
-        Vb("Jelly Bean", 375, 0),
-        Vb("KitKat", 518, 26),
-        Vb("Lollipop", 392, 0.2),
-        Vb("Marshmallow", 318, 0),
-        Vb("Nougat", 360, 19),
-        Vb("Oreo", 437, 18)
+      var zb = [
+        Gb("Cupcake", 305, 3.7),
+        Gb("Donut", 452, 25),
+        Gb("Eclair", 262, 16),
+        Gb("Frozen yoghurt", 159, 6),
+        Gb("Gingerbread", 356, 16),
+        Gb("Honeycomb", 408, 3.2),
+        Gb("Ice cream sandwich", 237, 9),
+        Gb("Jelly Bean", 375, 0),
+        Gb("KitKat", 518, 26),
+        Gb("Lollipop", 392, 0.2),
+        Gb("Marshmallow", 318, 0),
+        Gb("Nougat", 360, 19),
+        Gb("Oreo", 437, 18)
       ].sort(function(e, a) {
         return e.calories < a.calories ? -1 : 1;
       });
-      function Vb(e, a, t, l, n) {
+      function Gb(e, a, t, l, n) {
         return { name: e, calories: a, fat: t, carbs: l, protein: n };
       }
-      var Yb = [
-        Vb("Cupcake", 305, 3.7, 67, 4.3),
-        Vb("Donut", 452, 25, 51, 4.9),
-        Vb("Eclair", 262, 16, 24, 6),
-        Vb("Frozen yoghurt", 159, 6, 24, 4),
-        Vb("Gingerbread", 356, 16, 49, 3.9),
-        Vb("Honeycomb", 408, 3.2, 87, 6.5),
-        Vb("Ice cream sandwich", 237, 9, 37, 4.3),
-        Vb("Jelly Bean", 375, 0, 94, 0),
-        Vb("KitKat", 518, 26, 65, 7),
-        Vb("Lollipop", 392, 0.2, 98, 0),
-        Vb("Marshmallow", 318, 0, 81, 2),
-        Vb("Nougat", 360, 19, 9, 37),
-        Vb("Oreo", 437, 18, 63, 4)
+      var Ub = [
+        Gb("Cupcake", 305, 3.7, 67, 4.3),
+        Gb("Donut", 452, 25, 51, 4.9),
+        Gb("Eclair", 262, 16, 24, 6),
+        Gb("Frozen yoghurt", 159, 6, 24, 4),
+        Gb("Gingerbread", 356, 16, 49, 3.9),
+        Gb("Honeycomb", 408, 3.2, 87, 6.5),
+        Gb("Ice cream sandwich", 237, 9, 37, 4.3),
+        Gb("Jelly Bean", 375, 0, 94, 0),
+        Gb("KitKat", 518, 26, 65, 7),
+        Gb("Lollipop", 392, 0.2, 98, 0),
+        Gb("Marshmallow", 318, 0, 81, 2),
+        Gb("Nougat", 360, 19, 9, 37),
+        Gb("Oreo", 437, 18, 63, 4)
       ];
-      function Kb(e, a, t) {
+      function Vb(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var Qb = [
+      var Yb = [
         {
           id: "name",
           numeric: !1,
@@ -30172,7 +30142,7 @@
         { id: "carbs", numeric: !0, disablePadding: !1, label: "Carbs (g)" },
         { id: "protein", numeric: !0, disablePadding: !1, label: "Protein (g)" }
       ];
-      function Jb(e) {
+      function Kb(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -30181,24 +30151,24 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          nt.a,
+          tt.a,
           null,
           n.a.createElement(
-            rt.a,
+            lt.a,
             null,
             n.a.createElement(
-              mt.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(ct.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
                 inputProps: { "aria-label": "select all desserts" }
               })
             ),
-            Qb.map(function(e) {
+            Yb.map(function(e) {
               return n.a.createElement(
-                mt.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "right" : "left",
@@ -30206,7 +30176,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  it.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -30231,7 +30201,7 @@
           )
         );
       }
-      var qb = Object(dy.a)(function(e) {
+      var Qb = Object(sy.a)(function(e) {
           return {
             root: {
               paddingLeft: e.spacing(2),
@@ -30242,7 +30212,7 @@
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(vt.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -30256,15 +30226,15 @@
             title: { flex: "0 0 auto" }
           };
         }),
-        Zb = Object(dy.a)(function(e) {
+        Jb = Object(sy.a)(function(e) {
           return {
             root: { width: "100%", marginTop: e.spacing(3) },
             table: { minWidth: 500 },
             tableWrapper: { overflowX: "auto", marginTop: e.spacing(3) }
           };
         }),
-        _b = function(e) {
-          var a = qb(),
+        qb = function(e) {
+          var a = Qb(),
             t = e.numSelected;
           return n.a.createElement(
             H.a,
@@ -30296,7 +30266,7 @@
                     n.a.createElement(
                       C.a,
                       { "aria-label": "delete" },
-                      n.a.createElement(yt.a, null)
+                      n.a.createElement(It.a, null)
                     )
                   )
                 : n.a.createElement(
@@ -30305,13 +30275,13 @@
                     n.a.createElement(
                       C.a,
                       { "aria-label": "filter list" },
-                      n.a.createElement(bt.a, null)
+                      n.a.createElement(ft.a, null)
                     )
                   )
             )
           );
         },
-        Xb = Object(dy.a)(function(e) {
+        Zb = Object(sy.a)(function(e) {
           return {
             root: { width: "100%", marginTop: e.spacing(3) },
             paper: { width: "100%", marginBottom: e.spacing(2) },
@@ -30330,8 +30300,8 @@
             }
           };
         });
-      function $b() {
-        var e = Zb(),
+      function _b() {
+        var e = Jb(),
           a = n.a.useState(0),
           t = Object(x.a)(a, 2),
           l = t[0],
@@ -30340,14 +30310,14 @@
           c = Object(x.a)(m, 2),
           i = c[0],
           s = c[1],
-          o = i - Math.min(i, Ub.length - l * i);
+          o = i - Math.min(i, zb.length - l * i);
         function d(e, a) {
           r(a);
         }
         function E(e) {
           s(parseInt(e.target.value, 10)), r(0);
         }
-        var u = Xb(),
+        var u = Zb(),
           p = n.a.useState("asc"),
           g = Object(x.a)(p, 2),
           h = g[0],
@@ -30368,7 +30338,7 @@
           M = Object(x.a)(B, 2),
           j = M[0],
           L = M[1];
-        var D = j - Math.min(j, Yb.length - S * j);
+        var D = j - Math.min(j, Ub.length - S * j);
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -30379,43 +30349,43 @@
               v.a,
               { item: !0, md: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Sorting & Selecting", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
                   { block: !0 },
                   "This example demonstrates the use of",
                   " ",
-                  n.a.createElement(Gt, { inline: !0, row: !0 }, "Checkbox"),
+                  n.a.createElement(Ht, { inline: !0, row: !0 }, "Checkbox"),
                   " and clickable rows for selection, with a custom ",
-                  n.a.createElement(Gt, { inline: !0, row: !0 }, "Toolbar"),
+                  n.a.createElement(Ht, { inline: !0, row: !0 }, "Toolbar"),
                   ". It uses the ",
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     { inline: !0, row: !0 },
                     "TableSortLabel1"
                   ),
                   "component to help style column headings."
                 ),
-                n.a.createElement(_b, { numSelected: w.length }),
+                n.a.createElement(qb, { numSelected: w.length }),
                 n.a.createElement(
                   "div",
                   { className: u.tableWrapper },
                   n.a.createElement(
-                    dt.a,
+                    st.a,
                     {
                       className: u.table,
                       "aria-labelledby": "tableTitle",
                       size: "small"
                     },
-                    n.a.createElement(Jb, {
+                    n.a.createElement(Kb, {
                       classes: u,
                       numSelected: w.length,
                       order: h,
                       orderBy: y,
                       onSelectAllClick: function(e) {
                         if (e.target.checked) {
-                          var a = Yb.map(function(e) {
+                          var a = Ub.map(function(e) {
                             return e.name;
                           });
                           C(a);
@@ -30424,10 +30394,10 @@
                       onRequestSort: function(e, a) {
                         N(y === a && "desc" === h ? "asc" : "desc"), b(a);
                       },
-                      rowCount: Yb.length
+                      rowCount: Ub.length
                     }),
                     n.a.createElement(
-                      Et.a,
+                      ot.a,
                       null,
                       (function(e, a) {
                         var t = e.map(function(e, a) {
@@ -30443,14 +30413,14 @@
                           })
                         );
                       })(
-                        Yb,
+                        Ub,
                         (function(e, a) {
                           return "desc" === e
                             ? function(e, t) {
-                                return Kb(e, t, a);
+                                return Vb(e, t, a);
                               }
                             : function(e, t) {
-                                return -Kb(e, t, a);
+                                return -Vb(e, t, a);
                               };
                         })(h, y)
                       )
@@ -30460,7 +30430,7 @@
                             l = ((t = e.name), -1 !== w.indexOf(t)),
                             r = "enhanced-table-checkbox-".concat(a);
                           return n.a.createElement(
-                            rt.a,
+                            lt.a,
                             {
                               hover: !0,
                               onClick: function(a) {
@@ -30488,15 +30458,15 @@
                               selected: l
                             },
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               { padding: "checkbox" },
-                              n.a.createElement(ct.a, {
+                              n.a.createElement(rt.a, {
                                 checked: l,
                                 inputProps: { "aria-labelledby": r }
                               })
                             ),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               {
                                 component: "th",
                                 id: r,
@@ -30506,18 +30476,18 @@
                               e.name
                             ),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               { align: "right" },
                               e.calories
                             ),
-                            n.a.createElement(mt.a, { align: "right" }, e.fat),
+                            n.a.createElement(nt.a, { align: "right" }, e.fat),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               { align: "right" },
                               e.carbs
                             ),
                             n.a.createElement(
-                              mt.a,
+                              nt.a,
                               { align: "right" },
                               e.protein
                             )
@@ -30525,17 +30495,17 @@
                         }),
                       D > 0 &&
                         n.a.createElement(
-                          rt.a,
+                          lt.a,
                           { style: { height: 49 * D } },
-                          n.a.createElement(mt.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     )
                   )
                 ),
-                n.a.createElement(ut.a, {
+                n.a.createElement(dt.a, {
                   rowsPerPageOptions: [5, 10, 25],
                   component: "div",
-                  count: Yb.length,
+                  count: Ub.length,
                   rowsPerPage: j,
                   page: S,
                   backIconButtonProps: { "aria-label": "previous page" },
@@ -30553,7 +30523,7 @@
               v.a,
               { item: !0, md: 12, xs: 12 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Custom Table Pagination Action",
                   disableWidgetMenu: !0
@@ -30562,11 +30532,11 @@
                   Ne,
                   { block: !0 },
                   "The ",
-                  n.a.createElement(Gt, { inline: !0, row: !0 }, "Action"),
+                  n.a.createElement(Ht, { inline: !0, row: !0 }, "Action"),
                   " property of the",
                   " ",
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     { inline: !0, row: !0 },
                     "TablePagination"
                   ),
@@ -30576,26 +30546,26 @@
                   "div",
                   { className: e.tableWrapper },
                   n.a.createElement(
-                    dt.a,
+                    st.a,
                     { className: e.table },
                     n.a.createElement(
-                      Et.a,
+                      ot.a,
                       null,
-                      Ub.slice(l * i, l * i + i).map(function(e) {
+                      zb.slice(l * i, l * i + i).map(function(e) {
                         return n.a.createElement(
-                          rt.a,
+                          lt.a,
                           { key: e.name },
                           n.a.createElement(
-                            mt.a,
+                            nt.a,
                             { component: "th", scope: "row" },
                             e.name
                           ),
                           n.a.createElement(
-                            mt.a,
+                            nt.a,
                             { align: "right" },
                             e.calories
                           ),
-                          n.a.createElement(mt.a, { align: "right" }, e.fat)
+                          n.a.createElement(nt.a, { align: "right" }, e.fat)
                         );
                       }),
                       o > 0 &&
@@ -30603,27 +30573,27 @@
                           "div",
                           { className: e.tableWrapper },
                           n.a.createElement(
-                            dt.a,
+                            st.a,
                             { className: u.table },
                             n.a.createElement(
-                              Et.a,
+                              ot.a,
                               null,
-                              Ub.slice(l * i, l * i + i).map(function(e) {
+                              zb.slice(l * i, l * i + i).map(function(e) {
                                 return n.a.createElement(
-                                  rt.a,
+                                  lt.a,
                                   { key: e.name },
                                   n.a.createElement(
-                                    mt.a,
+                                    nt.a,
                                     { component: "th", scope: "row" },
                                     e.name
                                   ),
                                   n.a.createElement(
-                                    mt.a,
+                                    nt.a,
                                     { align: "right" },
                                     e.calories
                                   ),
                                   n.a.createElement(
-                                    mt.a,
+                                    nt.a,
                                     { align: "right" },
                                     e.fat
                                   )
@@ -30631,21 +30601,21 @@
                               }),
                               o > 0 &&
                                 n.a.createElement(
-                                  rt.a,
+                                  lt.a,
                                   { style: { height: 48 * o } },
-                                  n.a.createElement(mt.a, { colSpan: 6 })
+                                  n.a.createElement(nt.a, { colSpan: 6 })
                                 )
                             ),
                             n.a.createElement(
-                              Hb.a,
+                              Rb.a,
                               null,
                               n.a.createElement(
-                                rt.a,
+                                lt.a,
                                 null,
-                                n.a.createElement(ut.a, {
+                                n.a.createElement(dt.a, {
                                   rowsPerPageOptions: [5, 10, 25],
                                   colSpan: 3,
-                                  count: Ub.length,
+                                  count: zb.length,
                                   rowsPerPage: i,
                                   page: l,
                                   SelectProps: {
@@ -30656,25 +30626,25 @@
                                   },
                                   onChangePage: d,
                                   onChangeRowsPerPage: E,
-                                  ActionsComponent: Gb
+                                  ActionsComponent: Hb
                                 })
                               )
                             )
                           )
                         ) &&
                         n.a.createElement(
-                          rt.a,
+                          lt.a,
                           { style: { height: 48 * D } },
-                          n.a.createElement(mt.a, { colSpan: 6 })
+                          n.a.createElement(nt.a, { colSpan: 6 })
                         )
                     ),
                     n.a.createElement(
-                      Hb.a,
+                      Rb.a,
                       null,
-                      n.a.createElement(ut.a, {
+                      n.a.createElement(dt.a, {
                         rowsPerPageOptions: [5, 10, 25],
                         colSpan: 3,
-                        count: Ub.length,
+                        count: zb.length,
                         rowsPerPage: i,
                         page: l,
                         SelectProps: {
@@ -30683,7 +30653,7 @@
                         },
                         onChangePage: d,
                         onChangeRowsPerPage: E,
-                        ActionsComponent: Gb
+                        ActionsComponent: Hb
                       })
                     )
                   )
@@ -30693,11 +30663,11 @@
           )
         );
       }
-      var ev = Object(L.a)(function(e) {
+      var Xb = Object(L.a)(function(e) {
         return { paper: { margin: "24px 0", backgroundColor: "#f3f3f3" } };
       });
-      function av() {
-        var e = ev();
+      function $b() {
+        var e = Xb();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -30708,21 +30678,21 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 { title: "Simple Widget", disableWidgetMenu: !0 },
                 n.a.createElement(
                   Ne,
                   { block: !0 },
                   "It appears in the top of the page container. It have to be the first component after ",
-                  n.a.createElement(Gt, { row: !0, inline: !0 }, "return"),
+                  n.a.createElement(Ht, { row: !0, inline: !0 }, "return"),
                   " ",
                   "statement."
                 ),
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { className: e.paper, disableWidgetMenu: !0 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     {
                       title: "Simple Widget",
                       disableWidgetMenu: !0,
@@ -30731,7 +30701,7 @@
                     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, rem?"
                   ),
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     null,
                     '\n  <Widget title="Simple Widget" disableWidgetMenu>\n    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,\n    rem?\n  </Widget>\n              '
                   )
@@ -30742,7 +30712,7 @@
               v.a,
               { item: !0, xs: 12, md: 6 },
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   title: "Page Title",
                   disableWidgetMenu: !0,
@@ -30752,7 +30722,7 @@
                   Ne,
                   { block: !0 },
                   "It appears in the top of the page container. It have to be the first component after ",
-                  n.a.createElement(Gt, { row: !0, inline: !0 }, "return"),
+                  n.a.createElement(Ht, { row: !0, inline: !0 }, "return"),
                   " ",
                   "statement."
                 ),
@@ -30760,7 +30730,7 @@
                   T.a,
                   { mt: 1 },
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     null,
                     '\n              <PageTitle title="Widget" />\n              '
                   )
@@ -30770,7 +30740,7 @@
           )
         );
       }
-      function tv() {
+      function ev() {
         var e = n.a.useState(0),
           a = Object(x.a)(e, 2),
           t = a[0],
@@ -30798,7 +30768,7 @@
                 v.a,
                 { item: !0, xs: 12, md: 6 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { title: "Circular Indeterminate", disableWidgetMenu: !0 },
                   n.a.createElement(
                     T.a,
@@ -30840,7 +30810,7 @@
                 v.a,
                 { item: !0, xs: 12, md: 6 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { title: "Linear Indeterminate", disableWidgetMenu: !0 },
                   n.a.createElement(
                     T.a,
@@ -30889,8 +30859,8 @@
           )
         );
       }
-      var lv = t(576),
-        nv = Object(L.a)(function(e) {
+      var av = t(576),
+        tv = Object(L.a)(function(e) {
           return {
             form: { flexGrow: 1 },
             selectEmpty: { marginTop: e.spacing(2) },
@@ -30984,22 +30954,22 @@
             searchIcon: { color: "rgba(0, 0, 0, 0.23)" }
           };
         }),
-        rv = t(104),
+        lv = t(104),
+        nv = t.n(lv),
+        rv = t(105),
         mv = t.n(rv),
-        cv = t(105),
+        cv = t(106),
         iv = t.n(cv),
-        sv = t(106),
+        sv = t(107),
         ov = t.n(sv),
-        dv = t(107),
+        dv = t(178),
         Ev = t.n(dv),
-        uv = t(178),
+        uv = t(179),
         pv = t.n(uv),
-        gv = t(179),
-        xv = t.n(gv),
-        hv = [
+        gv = [
           {
             id: 1,
-            img: mv.a,
+            img: nv.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 80,
@@ -31007,7 +30977,7 @@
           },
           {
             id: 2,
-            img: iv.a,
+            img: mv.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 37,
@@ -31015,7 +30985,7 @@
           },
           {
             id: 3,
-            img: ov.a,
+            img: iv.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 70,
@@ -31023,7 +30993,7 @@
           },
           {
             id: 4,
-            img: Ev.a,
+            img: ov.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 85,
@@ -31031,7 +31001,7 @@
           },
           {
             id: 5,
-            img: pv.a,
+            img: Ev.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 12,
@@ -31039,7 +31009,7 @@
           },
           {
             id: 6,
-            img: xv.a,
+            img: pv.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -31047,7 +31017,7 @@
           },
           {
             id: 7,
-            img: mv.a,
+            img: nv.a,
             title: "Boots",
             subtitle: "Trainers In White",
             price: 76,
@@ -31055,7 +31025,7 @@
           },
           {
             id: 8,
-            img: iv.a,
+            img: mv.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 76,
@@ -31063,7 +31033,7 @@
           },
           {
             id: 9,
-            img: ov.a,
+            img: iv.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -31071,7 +31041,7 @@
           },
           {
             id: 10,
-            img: Ev.a,
+            img: ov.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -31079,7 +31049,7 @@
           },
           {
             id: 11,
-            img: pv.a,
+            img: Ev.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 71,
@@ -31087,15 +31057,15 @@
           },
           {
             id: 12,
-            img: xv.a,
+            img: pv.a,
             title: "Flat sandals",
             subtitle: "Trainers In Blue",
             price: 76,
             rating: 4.6
           }
         ],
-        Nv = n.a.createContext(),
-        Iv = function(e, a) {
+        xv = n.a.createContext(),
+        hv = function(e, a) {
           switch (a.type) {
             case "UPDATE_PRODUCTS":
               return {
@@ -31122,31 +31092,31 @@
               return Object(te.a)({}, e);
           }
         },
-        fv = function(e) {
+        Nv = function(e) {
           var a = e.children,
-            t = n.a.useReducer(Iv, { isLoaded: !1, products: hv }),
+            t = n.a.useReducer(hv, { isLoaded: !1, products: gv }),
             l = Object(x.a)(t, 2),
             r = l[0],
             m = l[1];
           return n.a.createElement(
-            Nv.Provider,
+            xv.Provider,
             { value: { products: r, setProducts: m } },
             a
           );
         },
-        yv = function() {
-          return n.a.useContext(Nv);
+        Iv = function() {
+          return n.a.useContext(xv);
         };
-      function bv(e) {
+      function fv(e) {
         if (la.isBackend)
           return i.a.get("/products").then(function(a) {
             e({ type: "UPDATE_PRODUCTS", payload: a.data });
           });
       }
-      function vv(e, a, t) {
+      function yv(e, a, t) {
         return a[t] < e[t] ? -1 : a[t] > e[t] ? 1 : 0;
       }
-      var Tv = [
+      var bv = [
         { id: "id", numeric: !0, disablePadding: !0, label: "ID" },
         { id: "image", numeric: !0, disablePadding: !1, label: "Image" },
         { id: "title", numeric: !0, disablePadding: !1, label: "Title" },
@@ -31155,7 +31125,7 @@
         { id: "rating", numeric: !0, disablePadding: !1, label: "Rating" },
         { id: "actions", numeric: !0, disablePadding: !1, label: "Actions" }
       ];
-      function Av(e) {
+      function vv(e) {
         var a = e.classes,
           t = e.onSelectAllClick,
           l = e.order,
@@ -31164,24 +31134,24 @@
           c = e.rowCount,
           i = e.onRequestSort;
         return n.a.createElement(
-          nt.a,
+          tt.a,
           null,
           n.a.createElement(
-            rt.a,
+            lt.a,
             null,
             n.a.createElement(
-              mt.a,
+              nt.a,
               { padding: "checkbox" },
-              n.a.createElement(ct.a, {
+              n.a.createElement(rt.a, {
                 indeterminate: m > 0 && m < c,
                 checked: m === c,
                 onChange: t,
                 inputProps: { "aria-label": "select all rows" }
               })
             ),
-            Tv.map(function(e) {
+            bv.map(function(e) {
               return n.a.createElement(
-                mt.a,
+                nt.a,
                 {
                   key: e.id,
                   align: e.numeric ? "left" : "right",
@@ -31189,7 +31159,7 @@
                   sortDirection: r === e.id && l
                 },
                 n.a.createElement(
-                  it.a,
+                  mt.a,
                   {
                     active: r === e.id,
                     direction: l,
@@ -31214,14 +31184,14 @@
           )
         );
       }
-      var wv = Object(dy.a)(function(e) {
+      var Tv = Object(sy.a)(function(e) {
           return {
             root: { paddingLeft: e.spacing(2), paddingRight: e.spacing(1) },
             highlight:
               "light" === e.palette.type
                 ? {
                     color: e.palette.secondary.main,
-                    backgroundColor: Object(vt.i)(
+                    backgroundColor: Object(yt.i)(
                       e.palette.secondary.light,
                       0.85
                     )
@@ -31233,12 +31203,12 @@
             title: { flex: "1 1 100%" }
           };
         }),
-        Cv = function(e) {
+        Av = function(e) {
           var a = e.numSelected,
             t = e.selected,
             l = e.deleteProducts,
             r = Object(E.g)(),
-            m = wv();
+            m = Tv();
           return n.a.createElement(
             H.a,
             {
@@ -31268,7 +31238,7 @@
                   n.a.createElement(
                     C.a,
                     { "aria-label": "delete" },
-                    n.a.createElement(yt.a, {
+                    n.a.createElement(It.a, {
                       onClick: function(e) {
                         return l(t, r, e);
                       }
@@ -31281,20 +31251,20 @@
                   n.a.createElement(
                     C.a,
                     { "aria-label": "filter list" },
-                    n.a.createElement(bt.a, null)
+                    n.a.createElement(ft.a, null)
                   )
                 )
           );
         };
-      function kv(e) {
+      function wv(e) {
         var a = e.closeToast,
           t = e.className;
-        return n.a.createElement(Dt.a, { className: t, onClick: a });
+        return n.a.createElement(jt.a, { className: t, onClick: a });
       }
-      var Pv = Object(E.k)(function(e) {
+      var Cv = Object(E.k)(function(e) {
           var a = e.history,
-            t = nv(),
-            r = yv(),
+            t = tv(),
+            r = Iv(),
             m = n.a.useState("asc"),
             c = Object(x.a)(m, 2),
             s = c[0],
@@ -31323,12 +31293,12 @@
             !(function() {
               var e = {
                 type: "info",
-                position: Ft.b.POSITION.TOP_RIGHT,
+                position: Lt.b.POSITION.TOP_RIGHT,
                 progressClassName: t.progress,
                 className: t.notification,
                 timeOut: 1e3
               };
-              Object(Ft.b)(
+              Object(Lt.b)(
                 n.a.createElement(
                   Ke,
                   Object.assign(
@@ -31346,7 +31316,7 @@
                 e
               );
             })(),
-              bv(r.setProducts);
+              fv(r.setProducts);
           }, []),
             Object(l.useEffect)(
               function() {
@@ -31367,11 +31337,11 @@
                       i.a.delete("/products/" + a[n]).then(function(e) {});
                   else
                     i.a.delete("/products/" + a).then(function(e) {
-                      bv(l),
+                      fv(l),
                         "/app/ecommerce/management" !== t.location.pathname &&
                           t.push("/app/ecommerce/management");
                     });
-                  bv(l);
+                  fv(l);
                 }
               })({ id: e, history: a, dispatch: r.setProducts }),
                 t.stopPropagation();
@@ -31382,9 +31352,9 @@
             n.a.createElement(
               v.a,
               { container: !0, spacing: 3 },
-              n.a.createElement(Ft.a, {
+              n.a.createElement(Lt.a, {
                 className: t.toastsContainer,
-                closeButton: n.a.createElement(kv, {
+                closeButton: n.a.createElement(wv, {
                   className: t.notificationCloseButton
                 }),
                 closeOnClick: !1,
@@ -31394,7 +31364,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   {
                     disableWidgetMenu: !0,
                     header: n.a.createElement(
@@ -31436,7 +31406,7 @@
                           )
                         )
                       ),
-                      n.a.createElement(Aa.a, {
+                      n.a.createElement(va.a, {
                         id: "search-field",
                         className: t.textField,
                         label: "Search",
@@ -31444,7 +31414,7 @@
                         variant: "outlined",
                         InputProps: {
                           startAdornment: n.a.createElement(
-                            Wa.a,
+                            Fa.a,
                             { position: "start" },
                             n.a.createElement(Q.a, { className: t.searchIcon })
                           )
@@ -31472,7 +31442,7 @@
                     },
                     "Create Product"
                   ),
-                  n.a.createElement(Cv, {
+                  n.a.createElement(Av, {
                     numSelected: I.length,
                     selected: I,
                     deleteProducts: D
@@ -31491,13 +31461,13 @@
                         "div",
                         { className: t.tableWrapper },
                         n.a.createElement(
-                          dt.a,
+                          st.a,
                           {
                             className: t.table,
                             "aria-labelledby": "tableTitle",
                             "aria-label": "enhanced table"
                           },
-                          n.a.createElement(Av, {
+                          n.a.createElement(vv, {
                             classes: t,
                             numSelected: I.length,
                             order: s,
@@ -31516,10 +31486,10 @@
                             rowCount: M.length
                           }),
                           n.a.createElement(
-                            fv,
+                            Nv,
                             null,
                             n.a.createElement(
-                              Et.a,
+                              ot.a,
                               null,
                               (function(e, a) {
                                 var t = e.map(function(e, a) {
@@ -31539,10 +31509,10 @@
                                 (function(e, a) {
                                   return "desc" === e
                                     ? function(e, t) {
-                                        return vv(e, t, a);
+                                        return yv(e, t, a);
                                       }
                                     : function(e, t) {
-                                        return -vv(e, t, a);
+                                        return -yv(e, t, a);
                                       };
                                 })(s, p)
                               )
@@ -31552,7 +31522,7 @@
                                     r = ((l = e.id), -1 !== I.indexOf(l)),
                                     m = "enhanced-table-checkbox-".concat(t);
                                   return n.a.createElement(
-                                    rt.a,
+                                    lt.a,
                                     {
                                       hover: !0,
                                       onClick: function(a) {
@@ -31579,15 +31549,15 @@
                                       key: e.id
                                     },
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       { padding: "checkbox" },
-                                      n.a.createElement(ct.a, {
+                                      n.a.createElement(rt.a, {
                                         checked: r,
                                         inputProps: { "aria-labelledby": m }
                                       })
                                     ),
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       {
                                         component: "th",
                                         id: m,
@@ -31597,7 +31567,7 @@
                                       e.id
                                     ),
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       null,
                                       n.a.createElement("img", {
                                         src: e.img,
@@ -31606,7 +31576,7 @@
                                       })
                                     ),
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       null,
                                       n.a.createElement(
                                         Te,
@@ -31637,10 +31607,10 @@
                                           : null
                                       )
                                     ),
-                                    n.a.createElement(mt.a, null, e.subtitle),
-                                    n.a.createElement(mt.a, null, "$", e.price),
+                                    n.a.createElement(nt.a, null, e.subtitle),
+                                    n.a.createElement(nt.a, null, "$", e.price),
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       null,
                                       n.a.createElement(
                                         T.a,
@@ -31651,22 +31621,22 @@
                                         n.a.createElement(
                                           Ne,
                                           {
-                                            style: { color: lv.a[700] },
+                                            style: { color: av.a[700] },
                                             display: "inline"
                                           },
                                           e.rating
                                         ),
                                         " ",
-                                        n.a.createElement(yh.a, {
+                                        n.a.createElement(Ih.a, {
                                           style: {
-                                            color: lv.a[700],
+                                            color: av.a[700],
                                             marginTop: -5
                                           }
                                         })
                                       )
                                     ),
                                     n.a.createElement(
-                                      mt.a,
+                                      nt.a,
                                       null,
                                       n.a.createElement(
                                         T.a,
@@ -31714,15 +31684,15 @@
                                 }),
                               L > 0 &&
                                 n.a.createElement(
-                                  rt.a,
+                                  lt.a,
                                   { style: { height: 53 * L } },
-                                  n.a.createElement(mt.a, { colSpan: 6 })
+                                  n.a.createElement(nt.a, { colSpan: 6 })
                                 )
                             )
                           )
                         )
                       ),
-                  n.a.createElement(ut.a, {
+                  n.a.createElement(dt.a, {
                     rowsPerPageOptions: [5, 10, 25],
                     component: "div",
                     count: M.length,
@@ -31742,10 +31712,10 @@
             )
           );
         }),
-        Sv = t(380),
-        Ov = t(381),
-        Bv = t(45),
-        Mv = Object(L.a)(function(e) {
+        kv = t(380),
+        Pv = t(381),
+        Sv = t(45),
+        Ov = Object(L.a)(function(e) {
           return {
             pageTitleContainer: {
               display: "flex",
@@ -31761,8 +31731,8 @@
             }
           };
         });
-      function jv(e) {
-        var a = Mv();
+      function Bv(e) {
+        var a = Ov();
         return n.a.createElement(
           "div",
           { className: a.pageTitleContainer },
@@ -31784,18 +31754,18 @@
             )
         );
       }
-      var Lv = t(649),
+      var Mv = t(649),
+        jv = t.n(Mv),
+        Lv = t(650),
         Dv = t.n(Lv),
-        Fv = t(650),
+        Fv = t(651),
         Rv = t.n(Fv),
-        Wv = t(651),
+        Wv = t(652),
         Hv = t.n(Wv),
-        zv = t(652),
-        Gv = t.n(zv),
-        Uv = [
+        zv = [
           {
             id: 1,
-            img: mv.a,
+            img: nv.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -31806,7 +31776,7 @@
           },
           {
             id: 2,
-            img: iv.a,
+            img: mv.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 37,
@@ -31817,7 +31787,7 @@
           },
           {
             id: 3,
-            img: ov.a,
+            img: iv.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 70,
@@ -31828,7 +31798,7 @@
           },
           {
             id: 4,
-            img: Ev.a,
+            img: ov.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 85,
@@ -31839,7 +31809,7 @@
           },
           {
             id: 5,
-            img: pv.a,
+            img: Ev.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 12,
@@ -31850,7 +31820,7 @@
           },
           {
             id: 6,
-            img: xv.a,
+            img: pv.a,
             title: "Trainers",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -31861,7 +31831,7 @@
           },
           {
             id: 7,
-            img: mv.a,
+            img: nv.a,
             title: "Boots",
             subtitle: "Trainers In White",
             price: 76,
@@ -31872,7 +31842,7 @@
           },
           {
             id: 8,
-            img: iv.a,
+            img: mv.a,
             title: "Flat sandals",
             subtitle: "Trainers In White",
             price: 76,
@@ -31883,7 +31853,7 @@
           },
           {
             id: 9,
-            img: ov.a,
+            img: iv.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 76,
@@ -31894,7 +31864,7 @@
           },
           {
             id: 10,
-            img: Ev.a,
+            img: ov.a,
             title: "Boots",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -31905,7 +31875,7 @@
           },
           {
             id: 11,
-            img: pv.a,
+            img: Ev.a,
             title: "Trainers",
             subtitle: "Trainers In White",
             price: 71,
@@ -31916,7 +31886,7 @@
           },
           {
             id: 12,
-            img: xv.a,
+            img: pv.a,
             title: "Flat sandals",
             subtitle: "Trainers In Blue",
             price: 76,
@@ -31926,7 +31896,7 @@
             process: "0%"
           }
         ],
-        Vv = function(e) {
+        Gv = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useState(0),
             l = Object(x.a)(t, 2),
@@ -31935,7 +31905,7 @@
           n.a.useEffect(function() {
             m(a.current.offsetWidth);
           }, []);
-          var c = nv(),
+          var c = tv(),
             i = n.a.useState(""),
             s = Object(x.a)(i, 2),
             o = s[0],
@@ -31954,7 +31924,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0, noBodyPadding: !0 },
                   n.a.createElement(
                     v.a,
@@ -31964,13 +31934,13 @@
                       { item: !0, md: 6, xs: 12 },
                       e.match.params.id
                         ? n.a.createElement("img", {
-                            src: Uv[e.match.params.id - 1].img,
-                            alt: Uv[e.match.params.id - 1].title,
+                            src: zv[e.match.params.id - 1].img,
+                            alt: zv[e.match.params.id - 1].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                         : n.a.createElement("img", {
-                            src: Uv[0].img,
-                            alt: Uv[0].title,
+                            src: zv[0].img,
+                            alt: zv[0].title,
                             style: { width: "100%", minHeight: 400 }
                           })
                     ),
@@ -31996,14 +31966,14 @@
                                 n.a.createElement(
                                   Ne,
                                   {
-                                    style: { color: Bv.yellow[700] },
+                                    style: { color: Sv.yellow[700] },
                                     display: "inline"
                                   },
-                                  Uv[e.match.params.id - 1].rating
+                                  zv[e.match.params.id - 1].rating
                                 ),
-                                n.a.createElement(yh.a, {
+                                n.a.createElement(Ih.a, {
                                   style: {
-                                    color: Bv.yellow[700],
+                                    color: Sv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -32013,13 +31983,13 @@
                                 {
                                   style: {
                                     fontSize: "1.5rem",
-                                    color: Bv.yellow[700]
+                                    color: Sv.yellow[700]
                                   }
                                 },
-                                Uv[0].rating,
-                                n.a.createElement(yh.a, {
+                                zv[0].rating,
+                                n.a.createElement(Ih.a, {
                                   style: {
-                                    color: Bv.yellow[700],
+                                    color: Sv.yellow[700],
                                     marginTop: -5
                                   }
                                 })
@@ -32036,12 +32006,12 @@
                                 n.a.createElement(
                                   Ne,
                                   { variant: "h3", uppercase: !0 },
-                                  Uv[e.match.params.id - 1].title
+                                  zv[e.match.params.id - 1].title
                                 ),
                                 n.a.createElement(
                                   Ne,
                                   null,
-                                  Uv[e.match.params.id].subtitle
+                                  zv[e.match.params.id].subtitle
                                 )
                               )
                             : n.a.createElement(
@@ -32050,9 +32020,9 @@
                                 n.a.createElement(
                                   Ne,
                                   { variant: "h3", uppercase: !0 },
-                                  Uv[0].title
+                                  zv[0].title
                                 ),
-                                n.a.createElement(Ne, null, Uv[0].subtitle)
+                                n.a.createElement(Ne, null, zv[0].subtitle)
                               ),
                           " "
                         ),
@@ -32067,7 +32037,7 @@
                                   Ne,
                                   { weight: "medium" },
                                   "$",
-                                  Uv[e.match.params.id].price
+                                  zv[e.match.params.id].price
                                 )
                               )
                             : n.a.createElement(
@@ -32077,7 +32047,7 @@
                                   Ne,
                                   { weight: "medium", variant: "h5" },
                                   "$",
-                                  Uv[0].price
+                                  zv[0].price
                                 )
                               ),
                           " "
@@ -32091,19 +32061,19 @@
                           T.a,
                           { display: "flex", alignItems: "center" },
                           n.a.createElement(
-                            Sv.a,
+                            kv.a,
                             {
                               variant: "outlined",
                               className: c.form,
                               style: { marginRight: 15 }
                             },
                             n.a.createElement(
-                              Ov.a,
+                              Pv.a,
                               { htmlFor: "size-simple", ref: a },
                               "Select size"
                             ),
                             n.a.createElement(
-                              st.a,
+                              ct.a,
                               {
                                 value: o,
                                 onChange: function(e) {
@@ -32121,10 +32091,10 @@
                             )
                           ),
                           n.a.createElement(
-                            Sv.a,
+                            kv.a,
                             { className: c.form },
                             n.a.createElement(
-                              st.a,
+                              ct.a,
                               {
                                 value: p,
                                 onChange: function(e) {
@@ -32167,22 +32137,22 @@
                           T.a,
                           null,
                           n.a.createElement("img", {
-                            src: Dv.a,
+                            src: jv.a,
                             alt: "mastercard",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Rv.a,
+                            src: Dv.a,
                             alt: "paypal",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Hv.a,
+                            src: Rv.a,
                             alt: "visa",
                             style: { width: 40, marginRight: 8 }
                           }),
                           n.a.createElement("img", {
-                            src: Gv.a,
+                            src: Hv.a,
                             alt: "americanexpress",
                             style: { width: 40 }
                           })
@@ -32201,7 +32171,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0, title: "Product Info" },
                   n.a.createElement(
                     v.a,
@@ -32357,14 +32327,14 @@
                                   n.a.createElement(
                                     Ne,
                                     {
-                                      style: { color: Bv.yellow[700] },
+                                      style: { color: Sv.yellow[700] },
                                       display: "inline"
                                     },
-                                    Uv[e.match.params.id - 1].rating
+                                    zv[e.match.params.id - 1].rating
                                   ),
-                                  n.a.createElement(yh.a, {
+                                  n.a.createElement(Ih.a, {
                                     style: {
-                                      color: Bv.yellow[700],
+                                      color: Sv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32374,13 +32344,13 @@
                                   {
                                     style: {
                                       fontSize: "1.5rem",
-                                      color: Bv.yellow[700]
+                                      color: Sv.yellow[700]
                                     }
                                   },
-                                  Uv[0].rating,
-                                  n.a.createElement(yh.a, {
+                                  zv[0].rating,
+                                  n.a.createElement(Ih.a, {
                                     style: {
-                                      color: Bv.yellow[700],
+                                      color: Sv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -32399,7 +32369,7 @@
                 )
               )
             ),
-            n.a.createElement(jv, { title: "You may also like" }),
+            n.a.createElement(Bv, { title: "You may also like" }),
             n.a.createElement(
               v.a,
               { item: !0, xs: 12 },
@@ -32410,33 +32380,87 @@
                   T.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     { className: c.card },
                     n.a.createElement(
-                      Cb.a,
+                      Ab.a,
                       null,
-                      n.a.createElement(kb.a, {
+                      n.a.createElement(wb.a, {
+                        className: c.media,
+                        image: nv.a,
+                        title: zv[0].title
+                      }),
+                      n.a.createElement(
+                        vb.a,
+                        null,
+                        n.a.createElement(
+                          Ne,
+                          { gutterBottom: !0, variant: "h5", component: "h2" },
+                          zv[0].title
+                        ),
+                        n.a.createElement(
+                          Ne,
+                          { variant: "body2", component: "p" },
+                          zv[0].subtitle
+                        )
+                      )
+                    ),
+                    n.a.createElement(
+                      Tb.a,
+                      {
+                        style: {
+                          display: "flex",
+                          justifyContent: "space-between"
+                        }
+                      },
+                      n.a.createElement(
+                        Ne,
+                        { variant: "body2", component: "p" },
+                        "$",
+                        zv[0].price
+                      ),
+                      n.a.createElement(
+                        "div",
+                        { style: { color: Sv.yellow[700] } },
+                        zv[0].rating,
+                        n.a.createElement(Ih.a, {
+                          style: { color: Sv.yellow[700], marginTop: -5 }
+                        })
+                      )
+                    )
+                  )
+                ),
+                n.a.createElement(
+                  T.a,
+                  { flexGrow: 1, mr: 3, mb: 3 },
+                  n.a.createElement(
+                    bb.a,
+                    { className: c.card },
+                    n.a.createElement(
+                      Ab.a,
+                      null,
+                      n.a.createElement(wb.a, {
                         className: c.media,
                         image: mv.a,
-                        title: Uv[0].title
+                        title: zv[1].img
                       }),
                       n.a.createElement(
-                        Ab.a,
+                        vb.a,
                         null,
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Uv[0].title
+                          zv[1].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Uv[0].subtitle
+                          zv[1].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       {
                         style: {
                           display: "flex",
@@ -32447,14 +32471,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Uv[0].price
+                        zv[1].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Bv.yellow[700] } },
-                        Uv[0].rating,
-                        n.a.createElement(yh.a, {
-                          style: { color: Bv.yellow[700], marginTop: -5 }
+                        { style: { color: Sv.yellow[700] } },
+                        zv[1].rating,
+                        n.a.createElement(Ih.a, {
+                          style: { color: Sv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32464,33 +32488,33 @@
                   T.a,
                   { flexGrow: 1, mr: 3, mb: 3 },
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     { className: c.card },
                     n.a.createElement(
-                      Cb.a,
+                      Ab.a,
                       null,
-                      n.a.createElement(kb.a, {
+                      n.a.createElement(wb.a, {
                         className: c.media,
                         image: iv.a,
-                        title: Uv[1].img
+                        title: zv[2].img
                       }),
                       n.a.createElement(
-                        Ab.a,
+                        vb.a,
                         null,
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Uv[1].title
+                          zv[2].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Uv[1].subtitle
+                          zv[2].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       {
                         style: {
                           display: "flex",
@@ -32501,68 +32525,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Uv[1].price
+                        zv[2].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Bv.yellow[700] } },
-                        Uv[1].rating,
-                        n.a.createElement(yh.a, {
-                          style: { color: Bv.yellow[700], marginTop: -5 }
-                        })
-                      )
-                    )
-                  )
-                ),
-                n.a.createElement(
-                  T.a,
-                  { flexGrow: 1, mr: 3, mb: 3 },
-                  n.a.createElement(
-                    Tb.a,
-                    { className: c.card },
-                    n.a.createElement(
-                      Cb.a,
-                      null,
-                      n.a.createElement(kb.a, {
-                        className: c.media,
-                        image: ov.a,
-                        title: Uv[2].img
-                      }),
-                      n.a.createElement(
-                        Ab.a,
-                        null,
-                        n.a.createElement(
-                          Ne,
-                          { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Uv[2].title
-                        ),
-                        n.a.createElement(
-                          Ne,
-                          { variant: "body2", component: "p" },
-                          Uv[2].subtitle
-                        )
-                      )
-                    ),
-                    n.a.createElement(
-                      wb.a,
-                      {
-                        style: {
-                          display: "flex",
-                          justifyContent: "space-between"
-                        }
-                      },
-                      n.a.createElement(
-                        Ne,
-                        { variant: "body2", component: "p" },
-                        "$",
-                        Uv[2].price
-                      ),
-                      n.a.createElement(
-                        "div",
-                        { style: { color: Bv.yellow[700] } },
-                        Uv[2].rating,
-                        n.a.createElement(yh.a, {
-                          style: { color: Bv.yellow[700], marginTop: -5 }
+                        { style: { color: Sv.yellow[700] } },
+                        zv[2].rating,
+                        n.a.createElement(Ih.a, {
+                          style: { color: Sv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32572,33 +32542,33 @@
                   T.a,
                   { flexGrow: 1, mb: 3 },
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     { className: c.card },
                     n.a.createElement(
-                      Cb.a,
+                      Ab.a,
                       null,
-                      n.a.createElement(kb.a, {
+                      n.a.createElement(wb.a, {
                         className: c.media,
-                        image: Ev.a,
-                        title: Uv[3].img
+                        image: ov.a,
+                        title: zv[3].img
                       }),
                       n.a.createElement(
-                        Ab.a,
+                        vb.a,
                         null,
                         n.a.createElement(
                           Ne,
                           { gutterBottom: !0, variant: "h5", component: "h2" },
-                          Uv[3].title
+                          zv[3].title
                         ),
                         n.a.createElement(
                           Ne,
                           { variant: "body2", component: "p" },
-                          Uv[3].subtitle
+                          zv[3].subtitle
                         )
                       )
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       {
                         style: {
                           display: "flex",
@@ -32609,14 +32579,14 @@
                         Ne,
                         { variant: "body2", component: "p" },
                         "$",
-                        Uv[3].price
+                        zv[3].price
                       ),
                       n.a.createElement(
                         "div",
-                        { style: { color: Bv.yellow[700] } },
-                        Uv[3].rating,
-                        n.a.createElement(yh.a, {
-                          style: { color: Bv.yellow[700], marginTop: -5 }
+                        { style: { color: Sv.yellow[700] } },
+                        zv[3].rating,
+                        n.a.createElement(Ih.a, {
+                          style: { color: Sv.yellow[700], marginTop: -5 }
                         })
                       )
                     )
@@ -32626,7 +32596,7 @@
             )
           );
         };
-      function Yv(e, a) {
+      function Uv(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -32638,16 +32608,16 @@
         }
         return t;
       }
-      function Kv(e) {
+      function Vv(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? Yv(Object(t), !0).forEach(function(a) {
+            ? Uv(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : Yv(Object(t)).forEach(function(a) {
+            : Uv(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -32657,7 +32627,7 @@
         }
         return e;
       }
-      var Qv = function(e) {
+      var Yv = function(e) {
           var a = n.a.useRef(null),
             t = n.a.useRef(null),
             l = n.a.useRef(null),
@@ -32668,19 +32638,19 @@
               function(e, a) {
                 switch (a.type) {
                   case "TYPE":
-                    return Kv({}, e, { type: a.typeWidth });
+                    return Vv({}, e, { type: a.typeWidth });
                   case "BRANDS":
-                    return Kv({}, e, { brands: a.brandsWidth });
+                    return Vv({}, e, { brands: a.brandsWidth });
                   case "SIZE":
-                    return Kv({}, e, { size: a.sizeWidth });
+                    return Vv({}, e, { size: a.sizeWidth });
                   case "COLOUR":
-                    return Kv({}, e, { colour: a.colourWidth });
+                    return Vv({}, e, { colour: a.colourWidth });
                   case "RANGE":
-                    return Kv({}, e, { range: a.rangeWidth });
+                    return Vv({}, e, { range: a.rangeWidth });
                   case "SORT":
-                    return Kv({}, e, { sort: a.sortWidth });
+                    return Vv({}, e, { sort: a.sortWidth });
                   default:
-                    return Kv({}, e);
+                    return Vv({}, e);
                 }
               },
               { type: 0, brands: 0, size: 0, colour: 0, range: 0, sort: 0 }
@@ -32696,24 +32666,24 @@
               d({ type: "RANGE", rangeWidth: m.current.offsetWidth }),
               d({ type: "SORT", sortWidth: c.current.offsetWidth });
           }, []);
-          var E = nv(),
+          var E = tv(),
             u = n.a.useReducer(
               function(e, a) {
                 switch (a.type) {
                   case "SELECT_TYPE":
-                    return Kv({}, e, { valueType: a.valueType });
+                    return Vv({}, e, { valueType: a.valueType });
                   case "SELECT_BRANDS":
-                    return Kv({}, e, { valueBrands: a.valueBrands });
+                    return Vv({}, e, { valueBrands: a.valueBrands });
                   case "SELECT_SIZE":
-                    return Kv({}, e, { valueSize: a.valueSize });
+                    return Vv({}, e, { valueSize: a.valueSize });
                   case "SELECT_COLOUR":
-                    return Kv({}, e, { valueColor: a.valueColor });
+                    return Vv({}, e, { valueColor: a.valueColor });
                   case "SELECT_RANGE":
-                    return Kv({}, e, { valueRange: a.valueRange });
+                    return Vv({}, e, { valueRange: a.valueRange });
                   case "SELECT_SORT":
-                    return Kv({}, e, { valueSort: a.valueSort });
+                    return Vv({}, e, { valueSort: a.valueSort });
                   default:
-                    return Kv({}, e);
+                    return Vv({}, e);
                 }
               },
               {
@@ -32741,19 +32711,19 @@
                   T.a,
                   { display: "flex" },
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "type_select", ref: a },
                       "Type"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueType,
                         onChange: function(e) {
@@ -32771,19 +32741,19 @@
                     )
                   ),
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "brands_select", ref: t },
                       "Brands"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueBrands,
                         onChange: function(e) {
@@ -32801,19 +32771,19 @@
                     )
                   ),
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "size_select", ref: l },
                       "Size"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueSize,
                         onChange: function(e) {
@@ -32836,19 +32806,19 @@
                     )
                   ),
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "colour_select", ref: r },
                       "Colour"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueColour,
                         onChange: function(e) {
@@ -32866,19 +32836,19 @@
                     )
                   ),
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "range_select", ref: m },
                       "Range"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueRange,
                         onChange: function(e) {
@@ -32896,19 +32866,19 @@
                     )
                   ),
                   n.a.createElement(
-                    Sv.a,
+                    kv.a,
                     {
                       variant: "outlined",
                       className: E.form,
                       style: { marginRight: 15 }
                     },
                     n.a.createElement(
-                      Ov.a,
+                      Pv.a,
                       { htmlFor: "sort_select", ref: c },
                       "Sort"
                     ),
                     n.a.createElement(
-                      st.a,
+                      ct.a,
                       {
                         value: g.valueSort,
                         onChange: function(e) {
@@ -32936,18 +32906,18 @@
                   n.a.createElement(
                     v.a,
                     { container: !0, item: !0, spacing: 3 },
-                    hv.map(function(e) {
+                    gv.map(function(e) {
                       return n.a.createElement(
                         v.a,
                         { item: !0, xs: 12, md: 3, key: e.id },
                         n.a.createElement(
-                          Tb.a,
+                          bb.a,
                           { className: E.card },
                           n.a.createElement(
-                            Cb.a,
+                            Ab.a,
                             null,
                             n.a.createElement(
-                              kb.a,
+                              wb.a,
                               {
                                 className: E.media,
                                 image: e.img,
@@ -32964,7 +32934,7 @@
                                   })
                             ),
                             n.a.createElement(
-                              Ab.a,
+                              vb.a,
                               null,
                               n.a.createElement(
                                 Ne,
@@ -32988,7 +32958,7 @@
                             )
                           ),
                           n.a.createElement(
-                            wb.a,
+                            Tb.a,
                             { style: { padding: 16 } },
                             n.a.createElement(
                               T.a,
@@ -33009,11 +32979,11 @@
                                 { block: !0 },
                                 n.a.createElement(
                                   "div",
-                                  { style: { color: Bv.yellow[700] } },
-                                  hv[0].rating,
-                                  n.a.createElement(yh.a, {
+                                  { style: { color: Sv.yellow[700] } },
+                                  gv[0].rating,
+                                  n.a.createElement(Ih.a, {
                                     style: {
-                                      color: Bv.yellow[700],
+                                      color: Sv.yellow[700],
                                       marginTop: -5
                                     }
                                   })
@@ -33030,17 +33000,17 @@
             )
           );
         },
-        Jv = t(98),
-        qv = Object(L.a)(function(e) {
+        Kv = t(98),
+        Qv = Object(L.a)(function(e) {
           return {
             mapContainer: { height: "100%" },
             vectorContainer: { margin: -e.spacing(3) }
           };
         }),
-        Zv = Object(Jv.withScriptjs)(
-          Object(Jv.withGoogleMap)(function() {
+        Jv = Object(Kv.withScriptjs)(
+          Object(Kv.withGoogleMap)(function() {
             return n.a.createElement(
-              Jv.GoogleMap,
+              Kv.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -33048,18 +33018,18 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(Jv.Marker, {
+              n.a.createElement(Kv.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function _v() {
-        var e = qv();
+      function qv() {
+        var e = Qv();
         return n.a.createElement(
           "div",
           { className: e.mapContainer },
-          n.a.createElement(Zv, {
+          n.a.createElement(Jv, {
             googleMapURL:
               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
             loadingElement: n.a.createElement("div", {
@@ -33072,22 +33042,22 @@
           })
         );
       }
-      var Xv = t(141),
-        $v = t(655),
-        eT = [
+      var Zv = t(141),
+        _v = t(655),
+        Xv = [
           {
             markerOffset: -25,
             name: "Buenos Aires",
             coordinates: [-58.3816, -34.6037]
           }
         ];
-      var aT = function() {
-          var e = qv();
+      var $v = function() {
+          var e = Qv();
           return n.a.createElement(
             "div",
             { className: e.vectorContainer },
             n.a.createElement(
-              Xv.ComposableMap,
+              Zv.ComposableMap,
               {
                 projectionConfig: { scale: 205, rotation: [-11, 0, 0] },
                 width: 980,
@@ -33095,16 +33065,16 @@
                 style: { width: "100%", height: "auto", overflow: "auto" }
               },
               n.a.createElement(
-                Xv.ZoomableGroup,
+                Zv.ZoomableGroup,
                 { center: [0, 20], disablePanning: !0 },
-                n.a.createElement(Xv.Geographies, { geography: $v }, function(
+                n.a.createElement(Zv.Geographies, { geography: _v }, function(
                   e,
                   a
                 ) {
                   return e.map(function(e, t) {
                     return (
                       "ATA" !== e.id &&
-                      n.a.createElement(Xv.Geography, {
+                      n.a.createElement(Zv.Geography, {
                         key: t,
                         geography: e,
                         projection: a,
@@ -33133,11 +33103,11 @@
                   });
                 }),
                 n.a.createElement(
-                  Xv.Markers,
+                  Zv.Markers,
                   null,
-                  eT.map(function(e, a) {
+                  Xv.map(function(e, a) {
                     return n.a.createElement(
-                      Xv.Marker,
+                      Zv.Marker,
                       {
                         key: a,
                         marker: e,
@@ -33176,7 +33146,7 @@
             )
           );
         },
-        tT = Object(L.a)(function(e) {
+        eT = Object(L.a)(function(e) {
           return {
             icon: { fontSize: e.spacing(2) },
             divider: { margin: "0px -".concat(e.spacing(3), "px") },
@@ -33186,17 +33156,17 @@
             }
           };
         }),
-        lT = t(212),
+        aT = t(212),
+        tT = t.n(aT),
+        lT = t(391),
         nT = t.n(lT),
-        rT = t(391),
+        rT = t(392),
         mT = t.n(rT),
-        cT = t(392),
+        cT = t(656),
         iT = t.n(cT),
-        sT = t(656),
+        sT = t(657),
         oT = t.n(sT),
-        dT = t(657),
-        ET = t.n(dT),
-        uT = Object(L.a)(function(e) {
+        dT = Object(L.a)(function(e) {
           return {
             border: {
               position: "relative",
@@ -33212,7 +33182,7 @@
             circle: { border: "rgba(255,255,255,.2) 5px solid" }
           };
         }),
-        pT = function(e) {
+        ET = function(e) {
           return n.a.createElement(
             T.a,
             { width: "45%", align: e.right && "right" },
@@ -33224,10 +33194,10 @@
             )
           );
         },
-        gT = function(e) {
+        uT = function(e) {
           var a = e.children,
             t = Object(o.a)(e, ["children"]),
-            l = uT();
+            l = dT();
           return n.a.createElement(
             T.a,
             { className: l.border, display: "flex" },
@@ -33238,7 +33208,7 @@
             )
           );
         },
-        xT = function(e) {
+        pT = function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -33253,10 +33223,10 @@
             )
           );
         },
-        hT = Object(Jv.withScriptjs)(
-          Object(Jv.withGoogleMap)(function() {
+        gT = Object(Kv.withScriptjs)(
+          Object(Kv.withGoogleMap)(function() {
             return n.a.createElement(
-              Jv.GoogleMap,
+              Kv.GoogleMap,
               {
                 defaultZoom: 12,
                 defaultCenter: {
@@ -33264,14 +33234,14 @@
                   lng: parseFloat(144.950259)
                 }
               },
-              n.a.createElement(Jv.Marker, {
+              n.a.createElement(Kv.Marker, {
                 position: { lat: -37.813179, lng: 144.950259 }
               })
             );
           })
         );
-      function NT() {
-        var e = tT(),
+      function xT() {
+        var e = eT(),
           a = n.a.useState(!1),
           t = Object(x.a)(a, 2),
           l = t[0],
@@ -33294,13 +33264,13 @@
                   className: e.wrapper
                 },
                 n.a.createElement(
-                  xT,
+                  pT,
                   null,
                   n.a.createElement(
                     T.a,
                     { width: "45%" },
                     n.a.createElement(
-                      Ga,
+                      Ha,
                       { disableWidgetMenu: !0, inheritHeight: !0 },
                       n.a.createElement(
                         T.a,
@@ -33309,7 +33279,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: nT.a,
+                            src: tT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33335,7 +33305,7 @@
                         n.a.createElement(
                           T.a,
                           { height: 200, width: "100%", mx: "-24px", mt: 2 },
-                          n.a.createElement(hT, {
+                          n.a.createElement(gT, {
                             googleMapURL:
                               "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg",
                             loadingElement: n.a.createElement("div", {
@@ -33358,20 +33328,20 @@
                           n.a.createElement(
                             C.a,
                             { "aria-label": "like" },
-                            n.a.createElement(fi.a, null)
+                            n.a.createElement(Ni.a, null)
                           ),
                           n.a.createElement(
                             C.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(Xr.a, null)
+                            n.a.createElement(Zr.a, null)
                           )
                         ),
-                        n.a.createElement(fa.a, { className: e.divider }),
+                        n.a.createElement(Na.a, { className: e.divider }),
                         n.a.createElement(
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: nT.a,
+                            src: tT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33408,12 +33378,12 @@
                             )
                           )
                         ),
-                        n.a.createElement(fa.a, { className: e.divider }),
+                        n.a.createElement(Na.a, { className: e.divider }),
                         n.a.createElement(
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: mT.a,
+                            src: nT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33450,7 +33420,7 @@
                             )
                           )
                         ),
-                        n.a.createElement(fa.a, { className: e.divider }),
+                        n.a.createElement(Na.a, { className: e.divider }),
                         n.a.createElement(
                           T.a,
                           { display: "flex", mt: 3 },
@@ -33459,7 +33429,7 @@
                             { color: "primary", style: { marginRight: 8 } },
                             "P"
                           ),
-                          n.a.createElement(Aa.a, {
+                          n.a.createElement(va.a, {
                             placeholder: "Write your comment...",
                             style: { flexGrow: 1 }
                           })
@@ -33468,33 +33438,33 @@
                     )
                   ),
                   n.a.createElement(
-                    gT,
+                    uT,
                     { color: "primary" },
-                    n.a.createElement(nu.a, { className: e.icon })
+                    n.a.createElement(tu.a, { className: e.icon })
                   ),
-                  n.a.createElement(pT, {
+                  n.a.createElement(ET, {
                     day: "yesterday",
                     timestep: "8:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  xT,
+                  pT,
                   null,
-                  n.a.createElement(pT, {
+                  n.a.createElement(ET, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
                   n.a.createElement(
-                    gT,
+                    uT,
                     { color: "secondary" },
-                    n.a.createElement($r.a, { className: e.icon })
+                    n.a.createElement(_r.a, { className: e.icon })
                   ),
                   n.a.createElement(
                     T.a,
                     { width: "45%" },
                     n.a.createElement(
-                      Ga,
+                      Ha,
                       { disableWidgetMenu: !0, inheritHeight: !0 },
                       n.a.createElement(
                         T.a,
@@ -33503,7 +33473,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: iT.a,
+                            src: mT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33538,12 +33508,12 @@
                           n.a.createElement(
                             C.a,
                             { "aria-label": "like" },
-                            n.a.createElement(fi.a, null)
+                            n.a.createElement(Ni.a, null)
                           ),
                           n.a.createElement(
                             C.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(Xr.a, null)
+                            n.a.createElement(Zr.a, null)
                           )
                         )
                       )
@@ -33551,13 +33521,13 @@
                   )
                 ),
                 n.a.createElement(
-                  xT,
+                  pT,
                   null,
                   n.a.createElement(
                     T.a,
                     { width: "45%" },
                     n.a.createElement(
-                      Ga,
+                      Ha,
                       { disableWidgetMenu: !0, inheritHeight: !0 },
                       n.a.createElement(
                         T.a,
@@ -33566,7 +33536,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: nT.a,
+                            src: tT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33602,7 +33572,7 @@
                           T.a,
                           { height: 400, width: "100%", mx: "-24px", mt: 2 },
                           n.a.createElement("img", {
-                            src: Db.a,
+                            src: jb.a,
                             alt: "mountains",
                             style: {
                               height: "100%",
@@ -33616,33 +33586,33 @@
                           n.a.createElement(
                             C.a,
                             { "aria-label": "like" },
-                            n.a.createElement(fi.a, null)
+                            n.a.createElement(Ni.a, null)
                           ),
                           n.a.createElement(
                             C.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(Xr.a, null)
+                            n.a.createElement(Zr.a, null)
                           ),
                           n.a.createElement(
                             T.a,
                             { ml: "auto", display: "flex" },
-                            n.a.createElement(fe, { src: nT.a }),
+                            n.a.createElement(fe, { src: tT.a }),
                             n.a.createElement(fe, {
-                              src: mT.a,
+                              src: nT.a,
                               style: { marginLeft: 8 }
                             }),
                             n.a.createElement(fe, {
-                              src: iT.a,
+                              src: mT.a,
                               style: { marginLeft: 8 }
                             })
                           )
                         ),
-                        n.a.createElement(fa.a, { className: e.divider }),
+                        n.a.createElement(Na.a, { className: e.divider }),
                         n.a.createElement(
                           T.a,
                           { display: "flex", my: 2 },
                           n.a.createElement(fe, {
-                            src: ET.a,
+                            src: oT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33679,7 +33649,7 @@
                             )
                           )
                         ),
-                        n.a.createElement(fa.a, { className: e.divider }),
+                        n.a.createElement(Na.a, { className: e.divider }),
                         n.a.createElement(
                           T.a,
                           { display: "flex", mt: 3 },
@@ -33688,7 +33658,7 @@
                             { color: "warning", style: { marginRight: 8 } },
                             "P"
                           ),
-                          n.a.createElement(Aa.a, {
+                          n.a.createElement(va.a, {
                             placeholder: "Write your comment...",
                             style: { flexGrow: 1 }
                           })
@@ -33697,29 +33667,29 @@
                     )
                   ),
                   n.a.createElement(
-                    gT,
+                    uT,
                     { color: "warning" },
-                    n.a.createElement(Vs.a, { className: e.icon })
+                    n.a.createElement(Gs.a, { className: e.icon })
                   ),
-                  n.a.createElement(pT, {
+                  n.a.createElement(ET, {
                     day: "yesterday",
                     timestep: "9:03 pm"
                   })
                 ),
                 n.a.createElement(
-                  xT,
+                  pT,
                   null,
-                  n.a.createElement(pT, {
+                  n.a.createElement(ET, {
                     day: "yesterday",
                     timestep: "9:03 am",
                     right: !0
                   }),
-                  n.a.createElement(gT, { color: "success" }, "J"),
+                  n.a.createElement(uT, { color: "success" }, "J"),
                   n.a.createElement(
                     T.a,
                     { width: "45%" },
                     n.a.createElement(
-                      Ga,
+                      Ha,
                       { disableWidgetMenu: !0, inheritHeight: !0 },
                       n.a.createElement(
                         T.a,
@@ -33728,7 +33698,7 @@
                           T.a,
                           { display: "flex" },
                           n.a.createElement(fe, {
-                            src: oT.a,
+                            src: iT.a,
                             style: { marginRight: 8 }
                           }),
                           n.a.createElement(
@@ -33781,10 +33751,10 @@
                             )
                           ),
                           n.a.createElement(
-                            wa.a,
+                            Ta.a,
                             { in: l, timeout: "auto", unmountOnExit: !0 },
                             n.a.createElement(
-                              Ab.a,
+                              vb.a,
                               null,
                               n.a.createElement(
                                 Ne,
@@ -33810,12 +33780,12 @@
                           n.a.createElement(
                             C.a,
                             { "aria-label": "like" },
-                            n.a.createElement(fi.a, null)
+                            n.a.createElement(Ni.a, null)
                           ),
                           n.a.createElement(
                             C.a,
                             { "aria-label": "comments" },
-                            n.a.createElement(Xr.a, null)
+                            n.a.createElement(Zr.a, null)
                           )
                         )
                       )
@@ -33827,8 +33797,8 @@
           )
         );
       }
-      var IT = t(1456),
-        fT = Object(L.a)(function(e) {
+      var hT = t(1456),
+        NT = Object(L.a)(function(e) {
           return {
             filter: { width: 130 },
             adjustRightBorderRadius: {
@@ -33841,10 +33811,10 @@
             }
           };
         }),
-        yT = t(658),
-        bT = t(659),
-        vT = t.n(bT),
-        TT = Object(L.a)(function(e) {
+        IT = t(658),
+        fT = t(659),
+        yT = t.n(fT),
+        bT = Object(L.a)(function(e) {
           return {
             wrapper: { textAlign: "center", margin: e.spacing(3) },
             container: {
@@ -33865,14 +33835,14 @@
             next: { "& a": { color: e.palette.primary.main } }
           };
         }),
-        AT = function(e) {
-          var a = Object(yT.a)({}, e),
-            t = TT();
+        vT = function(e) {
+          var a = Object(IT.a)({}, e),
+            t = bT();
           return n.a.createElement(
             "div",
             { className: t.wrapper },
             n.a.createElement(
-              vT.a,
+              yT.a,
               Object.assign(
                 {
                   pageClassName: t.element,
@@ -33888,7 +33858,7 @@
             )
           );
         };
-      function wT() {
+      function TT() {
         var e = n.a.useState({ row: !0, grid: !1 }),
           a = Object(x.a)(e, 2),
           t = a[0],
@@ -33906,7 +33876,7 @@
               return { row: !e.row, grid: !e.grid };
             });
           },
-          p = fT();
+          p = NT();
         return n.a.createElement(
           n.a.Fragment,
           null,
@@ -33920,14 +33890,14 @@
                 T.a,
                 { display: "flex", alignItems: "center" },
                 n.a.createElement(
-                  Sv.a,
+                  kv.a,
                   {
                     variant: "outlined",
                     className: p.filter,
                     style: { marginRight: 8 }
                   },
                   n.a.createElement(
-                    st.a,
+                    ct.a,
                     {
                       value: c,
                       onChange: function(e) {
@@ -33945,10 +33915,10 @@
                   )
                 ),
                 n.a.createElement(
-                  Sv.a,
+                  kv.a,
                   { variant: "outlined", className: p.filter },
                   n.a.createElement(
-                    st.a,
+                    ct.a,
                     {
                       value: d,
                       onChange: function(e) {
@@ -33970,7 +33940,7 @@
                   T.a,
                   { style: { display: "inline-flex", marginLeft: "auto" } },
                   n.a.createElement(
-                    IT.a,
+                    hT.a,
                     {
                       color: "primary",
                       size: "large",
@@ -33985,7 +33955,7 @@
                         },
                         className: p.adjustRightBorderRadius
                       },
-                      n.a.createElement(gs.a, null)
+                      n.a.createElement(us.a, null)
                     ),
                     n.a.createElement(
                       Ie,
@@ -33996,7 +33966,7 @@
                         },
                         className: p.adjustLeftBorderRadius
                       },
-                      n.a.createElement(Un.a, null)
+                      n.a.createElement(zn.a, null)
                     )
                   )
                 )
@@ -34042,17 +34012,17 @@
                       "Listed content is categorized by the following groups:"
                     ),
                     n.a.createElement(
-                      xa.a,
+                      pa.a,
                       {
                         component: "nav",
                         "aria-label": "main mailbox folders"
                       },
                       n.a.createElement(
-                        ya.a,
+                        Ia.a,
                         { button: !0 },
-                        n.a.createElement(va.a, { primary: "Hot Ideas" }),
+                        n.a.createElement(ya.a, { primary: "Hot Ideas" }),
                         n.a.createElement(
-                          ba.a,
+                          fa.a,
                           null,
                           n.a.createElement(he, {
                             label: "34",
@@ -34061,11 +34031,11 @@
                         )
                       ),
                       n.a.createElement(
-                        ya.a,
+                        Ia.a,
                         { button: !0 },
-                        n.a.createElement(va.a, { primary: "Latest Pictures" }),
+                        n.a.createElement(ya.a, { primary: "Latest Pictures" }),
                         n.a.createElement(
-                          ba.a,
+                          fa.a,
                           null,
                           n.a.createElement(he, {
                             label: "9",
@@ -34074,21 +34044,21 @@
                         )
                       ),
                       n.a.createElement(
-                        ya.a,
+                        Ia.a,
                         { button: !0 },
-                        n.a.createElement(va.a, { primary: "Labels of Day" })
+                        n.a.createElement(ya.a, { primary: "Labels of Day" })
                       ),
                       n.a.createElement(
-                        ya.a,
+                        Ia.a,
                         { button: !0 },
-                        n.a.createElement(va.a, { primary: "Recent Movies" })
+                        n.a.createElement(ya.a, { primary: "Recent Movies" })
                       ),
                       n.a.createElement(
-                        ya.a,
+                        Ia.a,
                         { button: !0 },
-                        n.a.createElement(va.a, { primary: "Globals" }),
+                        n.a.createElement(ya.a, { primary: "Globals" }),
                         n.a.createElement(
-                          ba.a,
+                          fa.a,
                           null,
                           n.a.createElement(he, {
                             label: "18",
@@ -34107,7 +34077,7 @@
                   v.a,
                   { item: !0 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     {
                       disableWidgetMenu: !0,
                       noBodyPadding: !0,
@@ -34120,7 +34090,7 @@
                         v.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: mv.a,
+                          src: nv.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -34193,7 +34163,7 @@
                   v.a,
                   { item: !0 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     {
                       disableWidgetMenu: !0,
                       noBodyPadding: !0,
@@ -34206,7 +34176,7 @@
                         v.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: iv.a,
+                          src: mv.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -34285,7 +34255,7 @@
                   v.a,
                   { item: !0 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     {
                       disableWidgetMenu: !0,
                       noBodyPadding: !0,
@@ -34298,7 +34268,7 @@
                         v.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: ov.a,
+                          src: iv.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -34371,7 +34341,7 @@
                   v.a,
                   { item: !0 },
                   n.a.createElement(
-                    Ga,
+                    Ha,
                     {
                       disableWidgetMenu: !0,
                       noBodyPadding: !0,
@@ -34384,7 +34354,7 @@
                         v.a,
                         { item: !0, md: 2, xs: 12 },
                         n.a.createElement("img", {
-                          src: Ev.a,
+                          src: ov.a,
                           alt: "admin templates",
                           style: { width: "100%", height: "100%" }
                         })
@@ -34452,7 +34422,7 @@
                       )
                     )
                   ),
-                  n.a.createElement(AT, {
+                  n.a.createElement(vT, {
                     pageCount: 10,
                     previousLabel: "<",
                     nextLabel: ">",
@@ -34464,79 +34434,79 @@
           )
         );
       }
-      var CT = t(660),
+      var AT = t(660),
+        wT = t.n(AT),
+        CT = t(661),
         kT = t.n(CT),
-        PT = t(661),
+        PT = t(662),
         ST = t.n(PT),
-        OT = t(662),
+        OT = t(663),
         BT = t.n(OT),
-        MT = t(663),
+        MT = t(664),
         jT = t.n(MT),
-        LT = t(664),
+        LT = t(665),
         DT = t.n(LT),
-        FT = t(665),
+        FT = t(666),
         RT = t.n(FT),
-        WT = t(666),
+        WT = t(667),
         HT = t.n(WT),
-        zT = t(667),
+        zT = t(668),
         GT = t.n(zT),
-        UT = t(668),
+        UT = t(669),
         VT = t.n(UT),
-        YT = t(669),
+        YT = t(670),
         KT = t.n(YT),
-        QT = t(670),
+        QT = t(671),
         JT = t.n(QT),
-        qT = t(671),
-        ZT = t.n(qT),
-        _T = [
-          { img: kT.a, id: 1 },
-          { img: ST.a, id: 2 },
-          { img: BT.a, id: 3 },
-          { img: jT.a, id: 4 },
-          { img: DT.a, id: 5 },
-          { img: RT.a, id: 6 },
-          { img: HT.a, id: 7 },
-          { img: GT.a, id: 8 },
-          { img: VT.a, id: 9 },
-          { img: KT.a, id: 10 },
-          { img: JT.a, id: 11 },
-          { img: ZT.a, id: 12 }
+        qT = [
+          { img: wT.a, id: 1 },
+          { img: kT.a, id: 2 },
+          { img: ST.a, id: 3 },
+          { img: BT.a, id: 4 },
+          { img: jT.a, id: 5 },
+          { img: DT.a, id: 6 },
+          { img: RT.a, id: 7 },
+          { img: HT.a, id: 8 },
+          { img: GT.a, id: 9 },
+          { img: VT.a, id: 10 },
+          { img: KT.a, id: 11 },
+          { img: JT.a, id: 12 }
         ],
-        XT = function() {
+        ZT = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
             n.a.createElement(
               v.a,
               { container: !0, spacing: 6 },
-              _T.map(function(e, a) {
+              qT.map(function(e, a) {
                 return n.a.createElement(
                   v.a,
                   { item: !0, md: 3, xs: 12, key: e.id },
                   n.a.createElement(
-                    Tb.a,
+                    bb.a,
                     null,
                     n.a.createElement(
-                      Cb.a,
+                      Ab.a,
                       null,
-                      n.a.createElement(kb.a, {
+                      n.a.createElement(wb.a, {
                         image: e.img,
                         title: "Gallery",
                         style: { height: 200 }
                       })
                     ),
                     n.a.createElement(
-                      wb.a,
+                      Tb.a,
                       null,
                       n.a.createElement(
                         C.a,
                         { "aria-label": "like" },
-                        n.a.createElement(fi.a, null)
+                        n.a.createElement(Ni.a, null)
                       ),
                       n.a.createElement(
                         C.a,
                         { "aria-label": "comments" },
-                        n.a.createElement(Xr.a, null)
+                        n.a.createElement(Zr.a, null)
                       )
                     )
                   )
@@ -34545,7 +34515,7 @@
             )
           );
         },
-        $T = Object(L.a)(function(e) {
+        _T = Object(L.a)(function(e) {
           return {
             table: {
               "& .MuiTableRow-root:nth-child(odd)": {
@@ -34564,9 +34534,9 @@
             iconButton: { marginRight: e.spacing(1) }
           };
         }),
-        eA = t(672),
-        aA = t.n(eA),
-        tA = [
+        XT = t(672),
+        $T = t.n(XT),
+        eA = [
           {
             id: 1,
             item: "Brand-new 27 monitor",
@@ -34601,11 +34571,11 @@
             total: 2
           }
         ],
-        lA = function() {
+        aA = function() {
           window.print();
         },
-        nA = function() {
-          var e = $T();
+        tA = function() {
+          var e = _T();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -34616,13 +34586,13 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0 },
                   n.a.createElement(
                     T.a,
                     { display: "flex", justifyContent: "space-between", mb: 3 },
                     n.a.createElement("img", {
-                      src: aA.a,
+                      src: $T.a,
                       alt: "Flatlogic",
                       style: {
                         maxHeight: 100,
@@ -34788,35 +34758,35 @@
                       "div",
                       { className: e.tableWrapper },
                       n.a.createElement(
-                        dt.a,
+                        st.a,
                         { className: e.table, "aria-label": "simple table" },
                         n.a.createElement(
-                          nt.a,
+                          tt.a,
                           null,
                           n.a.createElement(
-                            rt.a,
+                            lt.a,
                             { className: e.tableFooter },
-                            n.a.createElement(mt.a, null, "#"),
-                            n.a.createElement(mt.a, null, "ITEM"),
-                            n.a.createElement(mt.a, null, "DESCRIPTION"),
-                            n.a.createElement(mt.a, null, "QUANTITY"),
-                            n.a.createElement(mt.a, null, "PRICE PER UNIT"),
-                            n.a.createElement(mt.a, null, "TOTAL")
+                            n.a.createElement(nt.a, null, "#"),
+                            n.a.createElement(nt.a, null, "ITEM"),
+                            n.a.createElement(nt.a, null, "DESCRIPTION"),
+                            n.a.createElement(nt.a, null, "QUANTITY"),
+                            n.a.createElement(nt.a, null, "PRICE PER UNIT"),
+                            n.a.createElement(nt.a, null, "TOTAL")
                           )
                         ),
                         n.a.createElement(
-                          Et.a,
+                          ot.a,
                           null,
-                          tA.map(function(e) {
+                          eA.map(function(e) {
                             return n.a.createElement(
-                              rt.a,
+                              lt.a,
                               { key: e.id },
-                              n.a.createElement(mt.a, null, e.id),
-                              n.a.createElement(mt.a, null, e.item),
-                              n.a.createElement(mt.a, null, e.desc),
-                              n.a.createElement(mt.a, null, e.quantity),
-                              n.a.createElement(mt.a, null, e.price),
-                              n.a.createElement(mt.a, null, e.total)
+                              n.a.createElement(nt.a, null, e.id),
+                              n.a.createElement(nt.a, null, e.item),
+                              n.a.createElement(nt.a, null, e.desc),
+                              n.a.createElement(nt.a, null, e.quantity),
+                              n.a.createElement(nt.a, null, e.price),
+                              n.a.createElement(nt.a, null, e.total)
                             );
                           })
                         )
@@ -34896,9 +34866,9 @@
                           variant: "contained",
                           style: { marginRight: 8 },
                           "aria-label": "Print",
-                          onClick: lA
+                          onClick: aA
                         },
-                        n.a.createElement(Yp.a, { className: e.iconButton }),
+                        n.a.createElement(Up.a, { className: e.iconButton }),
                         "Print"
                       ),
                       n.a.createElement(
@@ -34908,7 +34878,7 @@
                           color: "success",
                           "aria-label": "Proceed"
                         },
-                        n.a.createElement(Nt.a, { className: e.iconButton }),
+                        n.a.createElement(xt.a, { className: e.iconButton }),
                         "Proceed with Payment"
                       )
                     )
@@ -34918,15 +34888,15 @@
             )
           );
         };
-      function rA(e) {
+      function lA(e) {
         var a = e.closeToast,
           t = e.className;
-        return n.a.createElement(Dt.a, { className: t, onClick: a });
+        return n.a.createElement(jt.a, { className: t, onClick: a });
       }
-      var mA = function() {
-          var e = nv(),
+      var nA = function() {
+          var e = tv(),
             a = Object(E.i)().id,
-            t = yv(),
+            t = Iv(),
             r = function(e) {
               return t.products.products.findIndex(function(a) {
                 return a.id == e;
@@ -34954,7 +34924,7 @@
             p = u[0],
             h = u[1];
           Object(l.useEffect)(function() {
-            bv(t.setProducts),
+            fv(t.setProducts),
               (function(e) {
                 if (la.isBackend) {
                   i.a.get("/products/images-list").then(function(a) {
@@ -35010,12 +34980,12 @@
                 (function() {
                   var a = {
                     type: "info",
-                    position: Ft.b.POSITION.TOP_RIGHT,
+                    position: Lt.b.POSITION.TOP_RIGHT,
                     progressClassName: e.progress,
                     className: e.notification,
                     timeOut: 1e3
                   };
-                  Object(Ft.b)(
+                  Object(Lt.b)(
                     n.a.createElement(
                       Ke,
                       Object.assign(
@@ -35051,9 +35021,9 @@
             n.a.createElement(
               v.a,
               { container: !0, spacing: 3 },
-              n.a.createElement(Ft.a, {
+              n.a.createElement(Lt.a, {
                 className: e.toastsContainer,
-                closeButton: n.a.createElement(rA, {
+                closeButton: n.a.createElement(lA, {
                   className: e.notificationCloseButton
                 }),
                 closeOnClick: !1,
@@ -35063,7 +35033,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   {
                     title: A ? "New product" : "Edit product",
                     disableWidgetMenu: !0
@@ -35093,7 +35063,7 @@
                             T.a,
                             { width: 200 },
                             n.a.createElement(
-                              st.a,
+                              ct.a,
                               {
                                 value: A ? p.img : s.img,
                                 fullWidth: !0,
@@ -35137,7 +35107,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "title",
                               margin: "normal",
                               variant: "outlined",
@@ -35160,7 +35130,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "subtitle",
                               margin: "normal",
                               variant: "outlined",
@@ -35183,7 +35153,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "price",
                               margin: "normal",
                               variant: "outlined",
@@ -35207,7 +35177,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "discount",
                               margin: "normal",
                               variant: "outlined",
@@ -35235,7 +35205,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "description_1",
                               margin: "normal",
                               variant: "outlined",
@@ -35263,7 +35233,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "description_2",
                               margin: "normal",
                               variant: "outlined",
@@ -35287,7 +35257,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "code",
                               margin: "normal",
                               variant: "outlined",
@@ -35310,7 +35280,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "hashtag",
                               margin: "normal",
                               variant: "outlined",
@@ -35337,7 +35307,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "technology",
                               margin: "normal",
                               variant: "outlined",
@@ -35360,7 +35330,7 @@
                           n.a.createElement(
                             T.a,
                             { width: 500 },
-                            n.a.createElement(Aa.a, {
+                            n.a.createElement(va.a, {
                               id: "rating",
                               margin: "normal",
                               variant: "outlined",
@@ -35405,41 +35375,41 @@
             )
           );
         },
-        cA = t(673),
-        iA = t(674),
-        sA = t(681),
-        oA = t(675),
-        dA = t(67),
-        EA = t(682),
-        uA = t(676),
-        pA = t(180),
-        gA = t(677),
-        xA = t(394),
-        hA = t(213),
+        rA = t(673),
+        mA = t(674),
+        cA = t(681),
+        iA = t(675),
+        sA = t(67),
+        oA = t(682),
+        dA = t(676),
+        EA = t(180),
+        uA = t(677),
+        pA = t(394),
+        gA = t(213),
+        xA = t.n(gA),
+        hA = (t(1378), t(1379), t(1380), t(292)),
         NA = t.n(hA),
-        IA = (t(1378), t(1379), t(1380), t(292)),
-        fA = t.n(IA),
-        yA = (function(e) {
+        IA = (function(e) {
           function a(e) {
             var t;
-            Object(cA.a)(this, a),
-              (t = Object(sA.a)(this, Object(oA.a)(a).call(this, e))),
-              Object(g.a)(Object(dA.a)(t), "drop", function(e) {
+            Object(rA.a)(this, a),
+              (t = Object(cA.a)(this, Object(iA.a)(a).call(this, e))),
+              Object(g.a)(Object(sA.a)(t), "drop", function(e) {
                 e.draggedEl.parentNode.removeChild(e.draggedEl);
               }),
-              Object(g.a)(Object(dA.a)(t), "handleChange", function(e) {
+              Object(g.a)(Object(sA.a)(t), "handleChange", function(e) {
                 t.setState({
                   event: Object(te.a)({}, t.state.event, {
                     title: e.target.value
                   })
                 });
               }),
-              Object(g.a)(Object(dA.a)(t), "createEvent", function() {
+              Object(g.a)(Object(sA.a)(t), "createEvent", function() {
                 t.fullCalendar.getApi().addEvent(t.state.event),
                   t.fullCalendar.getApi().unselect(),
                   t.toggleModal();
               }),
-              Object(g.a)(Object(dA.a)(t), "select", function(e) {
+              Object(g.a)(Object(sA.a)(t), "select", function(e) {
                 var a = e.start,
                   l = e.end,
                   n = e.allDay;
@@ -35455,29 +35425,29 @@
                 }),
                   t.toggleModal();
               }),
-              Object(g.a)(Object(dA.a)(t), "eventClick", function(e) {
+              Object(g.a)(Object(sA.a)(t), "eventClick", function(e) {
                 t.setState({ event: e.event }), t.toggleModalEvent();
               }),
-              Object(g.a)(Object(dA.a)(t), "prev", function() {
+              Object(g.a)(Object(sA.a)(t), "prev", function() {
                 t.fullCalendar.getApi().prev();
               }),
-              Object(g.a)(Object(dA.a)(t), "next", function() {
+              Object(g.a)(Object(sA.a)(t), "next", function() {
                 t.fullCalendar.getApi().next();
               }),
-              Object(g.a)(Object(dA.a)(t), "today", function() {
+              Object(g.a)(Object(sA.a)(t), "today", function() {
                 t.fullCalendar.getApi().today();
               }),
-              Object(g.a)(Object(dA.a)(t), "changeView", function(e) {
+              Object(g.a)(Object(sA.a)(t), "changeView", function(e) {
                 t.fullCalendar.getApi().changeView(e),
                   t.setState({ calendarView: e });
               }),
-              Object(g.a)(Object(dA.a)(t), "getFormattedDate", function(e) {
-                return fA()(e).format("YYYY-MM-DD");
+              Object(g.a)(Object(sA.a)(t), "getFormattedDate", function(e) {
+                return NA()(e).format("YYYY-MM-DD");
               }),
-              Object(g.a)(Object(dA.a)(t), "toggleModal", function() {
+              Object(g.a)(Object(sA.a)(t), "toggleModal", function() {
                 t.setState({ modal: !t.state.modal });
               }),
-              Object(g.a)(Object(dA.a)(t), "toggleModalEvent", function() {
+              Object(g.a)(Object(sA.a)(t), "toggleModalEvent", function() {
                 t.setState({ modalEvent: !t.state.modalEvent });
               });
             var l = new Date(),
@@ -35490,8 +35460,8 @@
                 modal: !1,
                 modalEvent: !1,
                 calendarView: "dayGridMonth",
-                currentMonth: fA()().format("MMM YYYY"),
-                currentDay: fA()().format("dddd"),
+                currentMonth: NA()().format("MMM YYYY"),
+                currentDay: NA()().format("dddd"),
                 calendarOptions: {
                   header: { left: "", center: "", right: "" },
                   events: [
@@ -35558,19 +35528,19 @@
                   editable: !0,
                   droppable: !0
                 },
-                calendarPlugins: [pA.d, gA.a, xA.b],
+                calendarPlugins: [EA.d, uA.a, pA.b],
                 dragOptions: { zIndex: 999, revert: !0, revertDuration: 0 }
               }),
               t
             );
           }
           return (
-            Object(EA.a)(a, e),
-            Object(iA.a)(a, [
+            Object(oA.a)(a, e),
+            Object(mA.a)(a, [
               {
                 key: "componentDidMount",
                 value: function() {
-                  new xA.a(this.externalEvents, {
+                  new pA.a(this.externalEvents, {
                     itemSelector: ".external-event"
                   });
                 }
@@ -35620,13 +35590,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                NA.a.widget
+                                xA.a.widget
                               )
                             },
                             n.a.createElement(
                               T.a,
                               { display: "flex" },
-                              n.a.createElement(Oa, {
+                              n.a.createElement(Pa, {
                                 color: "success",
                                 size: "large"
                               }),
@@ -35650,13 +35620,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                NA.a.widget
+                                xA.a.widget
                               )
                             },
                             n.a.createElement(
                               T.a,
                               { display: "flex" },
-                              n.a.createElement(Oa, {
+                              n.a.createElement(Pa, {
                                 color: "warning",
                                 size: "large"
                               }),
@@ -35680,13 +35650,13 @@
                                 "align-items-center",
                                 "draggable",
                                 "external-event",
-                                NA.a.widget
+                                xA.a.widget
                               )
                             },
                             n.a.createElement(
                               T.a,
                               { display: "flex" },
-                              n.a.createElement(Oa, {
+                              n.a.createElement(Pa, {
                                 color: "info",
                                 size: "large"
                               }),
@@ -35706,7 +35676,7 @@
                         v.a,
                         { item: !0, xs: 12, md: 8 },
                         n.a.createElement(
-                          Ga,
+                          Ha,
                           { disableWidgetMenu: !0 },
                           n.a.createElement(
                             v.a,
@@ -35726,7 +35696,7 @@
                                   onClick: this.prev,
                                   "aria-label": "previous page"
                                 },
-                                n.a.createElement($o.a, null)
+                                n.a.createElement(_o.a, null)
                               ),
                               n.a.createElement(
                                 C.a,
@@ -35734,7 +35704,7 @@
                                   onClick: this.next,
                                   "aria-label": "next page"
                                 },
-                                n.a.createElement(ed.a, null)
+                                n.a.createElement(Xo.a, null)
                               ),
                               n.a.createElement(
                                 Ie,
@@ -35801,7 +35771,7 @@
                             )
                           ),
                           n.a.createElement(
-                            uA.a,
+                            dA.a,
                             Object.assign(
                               {
                                 ref: function(a) {
@@ -35820,14 +35790,14 @@
                       )
                     ),
                     n.a.createElement(
-                      Ba.a,
+                      Sa.a,
                       {
                         open: r,
                         onClose: this.toggleModal,
                         id: "news-close-modal"
                       },
                       n.a.createElement(
-                        Ma.a,
+                        Oa.a,
                         { id: "news-close-modal-label" },
                         "Create New Event"
                       ),
@@ -35839,9 +35809,9 @@
                           { variant: "body2", style: { marginBottom: 16 } },
                           "Just enter event name to create a new one"
                         ),
-                        n.a.createElement(Aa.a, {
+                        n.a.createElement(va.a, {
                           onChange: this.handleChange,
-                          className: NA.a.calendarModalInput,
+                          className: xA.a.calendarModalInput,
                           value: t.title,
                           name: "title",
                           placeholder: "Title"
@@ -35873,14 +35843,14 @@
                       )
                     ),
                     n.a.createElement(
-                      Ba.a,
+                      Sa.a,
                       {
                         open: m,
                         onClose: this.toggleModalEvent,
                         id: "news-close-modal"
                       },
                       n.a.createElement(
-                        Ma.a,
+                        Oa.a,
                         { id: "news-close-modal-label" },
                         t.title
                       ),
@@ -35917,13 +35887,13 @@
             a
           );
         })(n.a.Component),
-        bA = t(2408);
-      var vA = [
+        fA = t(2408);
+      var yA = [
           {
             id: 0,
             label: "Dashboard",
             link: "/app/dashboard",
-            icon: n.a.createElement(vo.a, null)
+            icon: n.a.createElement(yo.a, null)
           },
           {
             id: 1,
@@ -35941,7 +35911,7 @@
             id: 2,
             label: "Documentation",
             link: "/documentation",
-            icon: n.a.createElement(ic.a, null)
+            icon: n.a.createElement(mc.a, null)
           },
           { id: 3, type: "divider" },
           { id: 4, type: "title", label: "TEMPLATE" },
@@ -35949,7 +35919,7 @@
             id: 5,
             label: "Core",
             link: "/app/core",
-            icon: n.a.createElement(Ol.a, null),
+            icon: n.a.createElement(Pl.a, null),
             children: [
               { label: "Typography", link: "/app/core/typography" },
               { label: "Colors", link: "/app/core/colors" },
@@ -35960,7 +35930,7 @@
             id: 6,
             label: "Tables",
             link: "/app/tables",
-            icon: n.a.createElement(Un.a, null),
+            icon: n.a.createElement(zn.a, null),
             children: [
               { label: "Tables Basic", link: "/app/tables/static" },
               { label: "Tables Dynamic", link: "/app/tables/dynamic" }
@@ -35970,7 +35940,7 @@
             id: 7,
             label: "UI Elements",
             link: "/app/ui",
-            icon: n.a.createElement(Ki.a, null),
+            icon: n.a.createElement(Vi.a, null),
             children: [
               { label: "Icons", link: "/app/ui/icons" },
               { label: "Badge", link: "/app/ui/badge" },
@@ -35990,7 +35960,7 @@
             id: 8,
             label: "Forms",
             link: "/app/forms",
-            icon: n.a.createElement(ic.a, null),
+            icon: n.a.createElement(mc.a, null),
             children: [
               { label: "Form Elements", link: "/app/forms/elements" },
               { label: "Form Validation", link: "/app/forms/validation" }
@@ -36000,7 +35970,7 @@
             id: 9,
             label: "Charts",
             link: "/app/charts",
-            icon: n.a.createElement(dn.a, null),
+            icon: n.a.createElement(sn.a, null),
             children: [
               { label: "Charts Overview", link: "/app/charts/overview" },
               { label: "Line Charts", link: "/app/charts/line" },
@@ -36012,7 +35982,7 @@
             id: 10,
             label: "Maps",
             link: "/app/maps",
-            icon: n.a.createElement(vE.a, null),
+            icon: n.a.createElement(yE.a, null),
             children: [
               { label: "Google Maps", link: "/app/maps/google" },
               { label: "Vector Map", link: "/app/maps/vector" }
@@ -36052,7 +36022,7 @@
           {
             id: 12,
             label: "Menu Levels",
-            icon: n.a.createElement(os.a, null),
+            icon: n.a.createElement(is.a, null),
             children: [
               { label: "Level 1.1" },
               {
@@ -36071,19 +36041,19 @@
             id: 15,
             label: "Library",
             link: "",
-            icon: n.a.createElement(vd.a, null)
+            icon: n.a.createElement(yd.a, null)
           },
           {
             id: 16,
             label: "Support",
             link: "",
-            icon: n.a.createElement(Zp.a, null)
+            icon: n.a.createElement(Jp.a, null)
           },
           {
             id: 17,
             label: "FAQ",
             link: "",
-            icon: n.a.createElement(Io.a, null)
+            icon: n.a.createElement(ho.a, null)
           },
           { id: 18, type: "divider" },
           { id: 19, type: "title", label: "PROJECTS" },
@@ -36091,19 +36061,19 @@
             id: 20,
             label: "My recent",
             link: "",
-            icon: n.a.createElement(Oa, { size: "medium", color: "secondary" })
+            icon: n.a.createElement(Pa, { size: "medium", color: "secondary" })
           },
           {
             id: 21,
             label: "Starred",
             link: "",
-            icon: n.a.createElement(Oa, { size: "medium", color: "primary" })
+            icon: n.a.createElement(Pa, { size: "medium", color: "primary" })
           },
           {
             id: 22,
             label: "Background",
             link: "",
-            icon: n.a.createElement(Oa, { size: "medium", color: "secondary" })
+            icon: n.a.createElement(Pa, { size: "medium", color: "secondary" })
           },
           { id: 23, type: "divider" },
           {
@@ -36127,7 +36097,7 @@
               return n.a.createElement(
                 "section",
                 { className: e.root },
-                n.a.createElement(bA.a, null)
+                n.a.createElement(fA.a, null)
               );
             }, null),
             click: function(e) {
@@ -36172,7 +36142,7 @@
                 n.a.createElement(
                   "section",
                   { className: e.root },
-                  n.a.createElement(Xr.a, null)
+                  n.a.createElement(Zr.a, null)
                 )
               );
             }, null),
@@ -36192,14 +36162,14 @@
             }
           }
         ],
-        TA = Object(j.a)(function(e) {
+        bA = Object(j.a)(function(e) {
           return {
             root: { minWidth: 72, textTransform: "none", fontWeight: 400 }
           };
         })(function(e) {
           return n.a.createElement(b.a, e);
         });
-      var AA = Object(E.k)(function(e) {
+      var vA = Object(E.k)(function(e) {
         var a = R(),
           t = n.a.useState(2),
           l = Object(x.a)(t, 2),
@@ -36224,8 +36194,8 @@
         return n.a.createElement(
           "div",
           { className: a.root },
-          n.a.createElement(pa, { history: e.history }),
-          n.a.createElement(Fa, { structure: vA }),
+          n.a.createElement(Ea, { history: e.history }),
+          n.a.createElement(La, { structure: yA }),
           n.a.createElement(
             "div",
             {
@@ -36236,7 +36206,7 @@
             },
             n.a.createElement("div", { className: a.fakeToolbar }),
             n.a.createElement(
-              Ga,
+              Ha,
               {
                 disableWidgetMenu: !0,
                 inheritHeight: !0,
@@ -36253,7 +36223,7 @@
                   wrap: "nowrap",
                   style: { overflowX: "auto" }
                 },
-                vA.map(function(e) {
+                yA.map(function(e) {
                   return !e.children &&
                     window.location.hash.includes(e.link) &&
                     e.link
@@ -36277,19 +36247,19 @@
                               style: { marginLeft: 38 }
                             },
                             n.a.createElement(
-                              TA,
+                              bA,
                               Object.assign({ label: "Today" }, I(0))
                             ),
                             n.a.createElement(
-                              TA,
+                              bA,
                               Object.assign({ label: "This week" }, I(1))
                             ),
                             n.a.createElement(
-                              TA,
+                              bA,
                               Object.assign({ label: "This month" }, I(2))
                             ),
                             n.a.createElement(
-                              TA,
+                              bA,
                               Object.assign({ label: "This year" }, I(3))
                             )
                           )
@@ -36374,92 +36344,92 @@
             n.a.createElement(
               E.d,
               null,
-              n.a.createElement(E.b, { path: "/app/dashboard", component: Mt }),
+              n.a.createElement(E.b, { path: "/app/dashboard", component: Ot }),
               n.a.createElement(E.b, {
                 path: "/app/core/typography",
-                component: Lt
+                component: Mt
               }),
-              n.a.createElement(E.b, { path: "/app/core/grid", component: cy }),
+              n.a.createElement(E.b, { path: "/app/core/grid", component: ry }),
               n.a.createElement(E.b, {
                 path: "/app/ui/notifications",
-                component: Vt
+                component: Gt
               }),
               n.a.createElement(E.b, {
                 path: "/app/forms/elements",
-                component: bb
+                component: fb
               }),
               n.a.createElement(E.b, {
                 path: "/app/forms/validation",
-                component: vb
+                component: yb
               }),
-              n.a.createElement(E.b, { path: "/app/ui/badge", component: sy }),
+              n.a.createElement(E.b, { path: "/app/ui/badge", component: cy }),
               n.a.createElement(E.b, {
                 path: "/app/ui/carousel",
-                component: Py
+                component: Cy
               }),
-              n.a.createElement(E.b, { path: "/app/ui/modal", component: Fy }),
-              n.a.createElement(E.b, { path: "/app/ui/navbar", component: Uy }),
+              n.a.createElement(E.b, { path: "/app/ui/modal", component: Ly }),
+              n.a.createElement(E.b, { path: "/app/ui/navbar", component: zy }),
               n.a.createElement(E.b, {
                 path: "/app/ui/tooltips",
-                component: qy
+                component: Qy
               }),
-              n.a.createElement(E.b, { path: "/app/ui/tabs", component: tb }),
-              n.a.createElement(E.b, { path: "/app/ui/cards", component: Wb }),
-              n.a.createElement(E.b, { path: "/app/ui/widget", component: av }),
+              n.a.createElement(E.b, { path: "/app/ui/tabs", component: eb }),
+              n.a.createElement(E.b, { path: "/app/ui/cards", component: Fb }),
+              n.a.createElement(E.b, { path: "/app/ui/widget", component: $b }),
               n.a.createElement(E.b, {
                 path: "/app/ui/progress",
-                component: tv
+                component: ev
               }),
               n.a.createElement(E.b, {
                 path: "/app/tables/static",
-                component: Xt
+                component: Zt
               }),
               n.a.createElement(E.b, {
                 path: "/app/tables/dynamic",
-                component: $b
+                component: _b
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/overview",
-                component: Df
+                component: jf
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/line",
-                component: qf
+                component: Qf
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/bar",
-                component: ey
+                component: Xf
               }),
               n.a.createElement(E.b, {
                 path: "/app/charts/pie",
-                component: ly
+                component: ay
               }),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management", exact: !0 },
-                n.a.createElement(fv, null, n.a.createElement(Pv, null))
+                n.a.createElement(Nv, null, n.a.createElement(Cv, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/edit/:id", exact: !0 },
-                n.a.createElement(fv, null, n.a.createElement(mA, null))
+                n.a.createElement(Nv, null, n.a.createElement(nA, null))
               ),
               n.a.createElement(
                 E.b,
                 { path: "/app/ecommerce/management/create" },
-                n.a.createElement(fv, null, n.a.createElement(mA, null))
+                n.a.createElement(Nv, null, n.a.createElement(nA, null))
               ),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product/:id",
-                component: Vv
+                component: Gv
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/product",
-                component: Vv
+                component: Gv
               }),
               n.a.createElement(E.b, {
                 path: "/app/ecommerce/gridproducts",
-                component: Qv
+                component: Yv
               }),
               n.a.createElement(E.b, {
                 exact: !0,
@@ -36521,37 +36491,37 @@
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/timeline",
-                component: NT
+                component: xT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/search",
-                component: wT
+                component: TT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/gallery",
-                component: XT
+                component: ZT
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/invoice",
-                component: nA
+                component: tA
               }),
               n.a.createElement(E.b, {
                 path: "/app/extra/calendar",
-                component: yA
+                component: IA
               }),
               n.a.createElement(E.b, {
                 path: "/app/core/colors",
-                component: ry
+                component: ly
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/google",
-                component: _v
+                component: qv
               }),
               n.a.createElement(E.b, {
                 path: "/app/maps/vector",
-                component: aT
+                component: $v
               }),
-              n.a.createElement(E.b, { path: "/app/ui/icons", component: Nf })
+              n.a.createElement(E.b, { path: "/app/ui/icons", component: xf })
             ),
             n.a.createElement(
               k.a,
@@ -36567,9 +36537,9 @@
               },
               n.a.createElement(f.a, { path: y.h, size: 1, color: "#fff" })
             ),
-            n.a.createElement(lt, { id: u, open: d, anchorEl: s }),
+            n.a.createElement(at, { id: u, open: d, anchorEl: s }),
             n.a.createElement(
-              Ra,
+              Da,
               null,
               n.a.createElement(
                 "div",
@@ -36658,7 +36628,7 @@
           )
         );
       });
-      function wA(e, a) {
+      function TA(e, a) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
@@ -36670,16 +36640,16 @@
         }
         return t;
       }
-      function CA(e) {
+      function AA(e) {
         for (var a = 1; a < arguments.length; a++) {
           var t = null != arguments[a] ? arguments[a] : {};
           a % 2
-            ? wA(Object(t), !0).forEach(function(a) {
+            ? TA(Object(t), !0).forEach(function(a) {
                 Object(g.a)(e, a, t[a]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t))
-            : wA(Object(t)).forEach(function(a) {
+            : TA(Object(t)).forEach(function(a) {
                 Object.defineProperty(
                   e,
                   a,
@@ -36689,7 +36659,7 @@
         }
         return e;
       }
-      var kA = Object(L.a)(function(e) {
+      var wA = Object(L.a)(function(e) {
           return {
             root: { display: "flex", maxWidth: "100vw", overflowX: "hidden" },
             content: {
@@ -36705,11 +36675,11 @@
                 duration: e.transitions.duration.enteringScreen
               })
             },
-            fakeToolbar: CA({}, e.mixins.toolbar),
+            fakeToolbar: AA({}, e.mixins.toolbar),
             margin: { marginBottom: 24 }
           };
         }),
-        PA = function() {
+        CA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36720,7 +36690,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0 },
                   n.a.createElement(
                     Ne,
@@ -36733,111 +36703,111 @@
                     n.a.createElement(Ne, { variant: "h3" }, "Features")
                   ),
                   n.a.createElement(
-                    xa.a,
+                    pa.a,
                     null,
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "Hundreds of Pages" })
+                      n.a.createElement(ya.a, { primary: "Hundreds of Pages" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "Fully Responsive" })
+                      n.a.createElement(ya.a, { primary: "Fully Responsive" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "React 16 new" })
+                      n.a.createElement(ya.a, { primary: "React 16 new" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "Material-UI v4.6" })
+                      n.a.createElement(ya.a, { primary: "Material-UI v4.6" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "2 Charts Library" })
+                      n.a.createElement(ya.a, { primary: "2 Charts Library" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "Theme Change Support"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "E-Commerce Section" })
+                      n.a.createElement(ya.a, { primary: "E-Commerce Section" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, { primary: "2 State Sidebar" })
+                      n.a.createElement(ya.a, { primary: "2 State Sidebar" })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "Fully Documented Codebase"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
                       n.a.createElement(
-                        ba.a,
+                        fa.a,
                         null,
                         n.a.createElement(De.a, null)
                       ),
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "And even more coming soon!"
                       })
                     )
@@ -36861,7 +36831,7 @@
                           color: "primary"
                         },
                         "Licences ",
-                        n.a.createElement(zl.a, null)
+                        n.a.createElement(Wl.a, null)
                       )
                     ),
                     n.a.createElement(
@@ -36880,7 +36850,7 @@
                           color: "primary"
                         },
                         "How to start project ",
-                        n.a.createElement(zl.a, null)
+                        n.a.createElement(Wl.a, null)
                       )
                     )
                   )
@@ -36889,13 +36859,13 @@
             )
           );
         },
-        SA = Object(L.a)(function(e) {
+        kA = Object(L.a)(function(e) {
           return {
             successIcon: { color: e.palette.success.main },
             failIcon: { color: "red" }
           };
         }),
-        OA = [
+        PA = [
           {
             advantage: "Hundreds unique components",
             single: "plus",
@@ -36909,8 +36879,8 @@
           },
           { advantage: "Paying users allowed", single: "no", extended: "plus" }
         ],
-        BA = function() {
-          var e = SA();
+        SA = function() {
+          var e = kA();
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -36921,7 +36891,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0 },
                   n.a.createElement(
                     Ne,
@@ -36929,53 +36899,53 @@
                     "A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. If your end product including an item is going to be free to the end user then a Single License is what you need. An Extended License is required if the end user must pay to use the end product."
                   ),
                   n.a.createElement(
-                    dt.a,
+                    st.a,
                     {
                       "aria-label": "licences table",
                       style: { marginTop: 48 }
                     },
                     n.a.createElement(
-                      nt.a,
+                      tt.a,
                       null,
                       n.a.createElement(
-                        rt.a,
+                        lt.a,
                         null,
-                        n.a.createElement(mt.a, null),
-                        n.a.createElement(mt.a, null, "Single"),
-                        n.a.createElement(mt.a, null, "Extended")
+                        n.a.createElement(nt.a, null),
+                        n.a.createElement(nt.a, null, "Single"),
+                        n.a.createElement(nt.a, null, "Extended")
                       )
                     ),
                     n.a.createElement(
-                      Et.a,
+                      ot.a,
                       null,
-                      OA.map(function(a) {
+                      PA.map(function(a) {
                         return n.a.createElement(
-                          rt.a,
+                          lt.a,
                           { key: a.advantage },
                           n.a.createElement(
-                            mt.a,
+                            nt.a,
                             { component: "th", scope: "row" },
                             a.advantage
                           ),
                           n.a.createElement(
-                            mt.a,
+                            nt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(bA.a, {
+                              ? n.a.createElement(fA.a, {
                                   className: e.successIcon
                                 })
-                              : n.a.createElement(og.a, {
+                              : n.a.createElement(ig.a, {
                                   className: e.failIcon
                                 })
                           ),
                           n.a.createElement(
-                            mt.a,
+                            nt.a,
                             null,
                             "plus" === a.extended
-                              ? n.a.createElement(bA.a, {
+                              ? n.a.createElement(fA.a, {
                                   className: e.successIcon
                                 })
-                              : n.a.createElement(og.a, {
+                              : n.a.createElement(ig.a, {
                                   className: e.failIcon
                                 })
                           )
@@ -37016,7 +36986,7 @@
             )
           );
         },
-        MA = function() {
+        OA = function() {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -37027,7 +36997,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0 },
                   n.a.createElement(
                     Ne,
@@ -37035,26 +37005,26 @@
                     "Requirements:"
                   ),
                   n.a.createElement(
-                    xa.a,
+                    pa.a,
                     null,
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "1. Mac OS X, Windows, or Linux"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "2. Yarn package + Node.js v6.5 or newer\n"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary:
                           "3. Running our Node.js backend (Required only in full stack version)\n"
                       })
@@ -37066,19 +37036,19 @@
                     "Quick Start:"
                   ),
                   n.a.createElement(
-                    xa.a,
+                    pa.a,
                     null,
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary: "1. Run yarn install"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, { primary: "2. Run yarn start" })
+                      n.a.createElement(ya.a, { primary: "2. Run yarn start" })
                     )
                   ),
                   n.a.createElement(
@@ -37087,20 +37057,20 @@
                     "There are also other npm tasks:"
                   ),
                   n.a.createElement(
-                    xa.a,
+                    pa.a,
                     null,
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary:
                           "yarn build: if you need just to build the app (without running a dev server)"
                       })
                     ),
                     n.a.createElement(
-                      ya.a,
+                      Ia.a,
                       null,
-                      n.a.createElement(va.a, {
+                      n.a.createElement(ya.a, {
                         primary:
                           "yarn lint: to check the source code for syntax errors and potential issues"
                       })
@@ -37116,7 +37086,7 @@
             )
           );
         },
-        jA = Object(E.k)(function(e) {
+        BA = Object(E.k)(function(e) {
           return n.a.createElement(
             n.a.Fragment,
             null,
@@ -37127,7 +37097,7 @@
                 v.a,
                 { item: !0, xs: 12 },
                 n.a.createElement(
-                  Ga,
+                  Ha,
                   { disableWidgetMenu: !0 },
                   n.a.createElement(Ne, { variant: "h6" }, "Auth"),
                   n.a.createElement(
@@ -37136,31 +37106,31 @@
                     "User authorization is build via",
                     " ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       "React Hooks and React Router Dom"
                     ),
                     " ",
                     "to redirect. We're using ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { inline: !0, row: !0 },
                       "localStorage"
                     ),
                     " ",
                     "to keep that the user is login. When a user is coming in",
                     " ",
-                    n.a.createElement(Gt, { row: !0, inline: !0 }, "token"),
+                    n.a.createElement(Ht, { row: !0, inline: !0 }, "token"),
                     " ",
                     "value is recorded with the number key. You can see a logic specified in ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       "/src/components/App.js"
                     )
                   ),
                   n.a.createElement(
-                    Gt,
+                    Ht,
                     null,
                     '\n  function PrivateRoute({ component, ...rest }) {\n    return (\n      <Route\n        {...rest}\n        render={props =>\n          isAuthenticated ? (\n            React.createElement(component, props)\n          ) : (\n            <Redirect\n              to={{\n                pathname: "/login",\n                state: {\n                  from: props.location\n                }\n              }}\n            />\n          )\n        }\n      />\n    );\n  }\n\n  function PublicRoute({ component, ...rest }) {\n    return (\n      <Route\n        {...rest}\n        render={props =>\n          isAuthenticated ? (\n            <Redirect\n              to={{\n                pathname: "/"\n              }}\n            />\n          ) : (\n            React.createElement(component, props)\n          )\n        }\n      />\n    );\n  }\n            '
                   ),
@@ -37171,7 +37141,7 @@
                     "We have build a dynamic dashboard that visualized via",
                     " ",
                     n.a.createElement(
-                      Gt,
+                      Ht,
                       { row: !0, inline: !0 },
                       "Recharts and Apexcharts"
                     ),
@@ -37199,31 +37169,31 @@
             )
           );
         }),
-        LA = function() {
+        MA = function() {
           return n.a.createElement(
-            Ga,
+            Ha,
             { title: "Typography", inheritHeight: !0, disableWidgetMenu: !0 },
             n.a.createElement(
               Ne,
               { variant: "body1" },
               "Typography component is the wrapper of native",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "Material-UI"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "Material-UI"),
               " ",
               "typography component. We'he override Typography screen size in",
               " ",
               n.a.createElement(
-                Gt,
+                Ht,
                 { row: !0, inline: !0 },
                 "src/themes/index.js"
               ),
               "Also we attached prop called",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "size"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "size"),
               " ",
               "with the values",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "sm, md, xl, xxl")
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "sm, md, xl, xxl")
             ),
             n.a.createElement(
               Ne,
@@ -37231,7 +37201,7 @@
               "Function define sizing"
             ),
             n.a.createElement(
-              Gt,
+              Ht,
               null,
               '\n  function getFontSize(size, variant = "", theme) {\n    let multiplier;\n    \n    switch (size) {\n    case "sm":\n      multiplier = 0.8;\n      break;\n    case "md":\n      multiplier = 1.5;\n      break;\n    case "xl":\n      multiplier = 2;\n      break;\n    case "xxl":\n      multiplier = 3;\n      break;\n    default:\n      multiplier = 1;\n      break;\n    }\n\n  const defaultSize =\n    variant && theme.typography[variant]\n      ? theme.typography[variant].fontSize\n      : theme.typography.fontStyle + "px";\n\n  return `calc(${defaultSize} * ${multiplier})`;\n}\n        '
             ),
@@ -37240,76 +37210,76 @@
               { variant: "body1", style: { margin: "16px 0" } },
               "You can define",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "weight"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "weight"),
               " ",
               "prop to add",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "font-weight"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "font-weight"),
               "property to your text. Take a look at the function:"
             ),
             n.a.createElement(
-              Gt,
+              Ht,
               null,
               '\n  function getFontWeight(style) {\n      switch (style) {\n        case "light":\n          return 300;\n        case "medium":\n          return 500;\n        case "bold":\n          return 600;\n        default:\n          return 400;\n      }\n  }\n        '
             )
           );
         },
-        DA = function() {
+        jA = function() {
           return n.a.createElement(
-            Ga,
+            Ha,
             { title: "Widget", inheritHeight: !0, disableWidgetMenu: !0 },
             n.a.createElement(
               Ne,
               { variant: "body1" },
               "Widget is the wrapper of native",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "Paper"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "Paper"),
               " ",
               "component. But there are a couple of useful props. Such as:",
               " "
             ),
             n.a.createElement(
-              xa.a,
+              pa.a,
               null,
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "title" })
+                n.a.createElement(ya.a, { primary: "title" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "subtitle" })
+                n.a.createElement(ya.a, { primary: "subtitle" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "noBodyPadding" })
+                n.a.createElement(ya.a, { primary: "noBodyPadding" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "bodyClass" })
+                n.a.createElement(ya.a, { primary: "bodyClass" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "disableWidgetMenu" })
+                n.a.createElement(ya.a, { primary: "disableWidgetMenu" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "header" })
+                n.a.createElement(ya.a, { primary: "header" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "inheritHeight" })
+                n.a.createElement(ya.a, { primary: "inheritHeight" })
               ),
               n.a.createElement(
-                ya.a,
+                Ia.a,
                 null,
-                n.a.createElement(va.a, { primary: "searchField" })
+                n.a.createElement(ya.a, { primary: "searchField" })
               )
             ),
             n.a.createElement(
@@ -37317,21 +37287,21 @@
               { variant: "body1" },
               "If",
               " ",
-              n.a.createElement(Gt, { rowi: !0, inline: !0 }, "inheritHeight"),
+              n.a.createElement(Ht, { rowi: !0, inline: !0 }, "inheritHeight"),
               " ",
               "prop doesn't add to your element,",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "Widget", " "),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "Widget", " "),
               " ",
               "will fill",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "100%"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "100%"),
               "of the parent container. To make",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "Widget"),
               "inherit height of the children, ypu have to add",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "inheritHeight"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "inheritHeight"),
               " ",
               "prop."
             ),
@@ -37340,15 +37310,15 @@
               { variant: "body1", style: { marginTop: 16 } },
               "If you want to add",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "className"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "className"),
               " ",
               "to your",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "Widget"),
               " ",
               "add",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "bodyClass"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "bodyClass"),
               " ",
               "prop."
             ),
@@ -37357,11 +37327,11 @@
               { variant: "body1", style: { marginTop: 16 } },
               "By default widget menu is appears in the top right corner of the",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "Widget"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "Widget"),
               ". To delete it type",
               " ",
               n.a.createElement(
-                Gt,
+                Ht,
                 { row: !0, inline: !0 },
                 "disableWidgetMenu."
               )
@@ -37371,13 +37341,13 @@
               { variant: "body1", style: { marginTop: 16 } },
               "You can perform a lot of things inside",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "header"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "header"),
               ". To do this add a",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "JSX"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "JSX"),
               "element to",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "header"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "header"),
               " ",
               "prop."
             ),
@@ -37386,16 +37356,16 @@
               { variant: "body1", style: { marginTop: 16 } },
               "By default we make available search field in",
               " ",
-              n.a.createElement(Gt, { row: !0, inline: !0 }, "Widget"),
+              n.a.createElement(Ht, { row: !0, inline: !0 }, "Widget"),
               " ",
               "component by adding",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "searchField"),
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "searchField"),
               " ",
               "prop. Demo:"
             ),
             n.a.createElement(
-              Ga,
+              Ha,
               {
                 style: { marginTop: 16 },
                 disableWidgetMenu: !0,
@@ -37406,9 +37376,9 @@
             )
           );
         },
-        FA = function() {
+        LA = function() {
           return n.a.createElement(
-            Ga,
+            Ha,
             { title: "Libs", inheritHeight: !0, disableWidgetMenu: !0 },
             n.a.createElement(Ne, { variant: "body1" }, "Font Awesome"),
             n.a.createElement(
@@ -37416,12 +37386,12 @@
               { variant: "h6" },
               "Library can be used among native",
               " ",
-              n.a.createElement(Gt, { inline: !0, row: !0 }, "Material Icons")
+              n.a.createElement(Ht, { inline: !0, row: !0 }, "Material Icons")
             ),
             n.a.createElement(Ne, { variant: "h6" }, "Examples:")
           );
         },
-        RA = Object(L.a)(function(e) {
+        DA = Object(L.a)(function(e) {
           var a;
           return {
             menuIcon: { marginRight: e.spacing(2) },
@@ -37453,10 +37423,10 @@
             })
           };
         }),
-        WA = t(2410),
-        HA = Object(E.k)(function(e) {
+        FA = t(2410),
+        RA = Object(E.k)(function(e) {
           var a = Object(V.a)(),
-            t = RA(),
+            t = DA(),
             r = $e(),
             m = ea(),
             c = Object(l.useState)(!1),
@@ -37531,7 +37501,7 @@
                       n.a.createElement(
                         C.a,
                         null,
-                        n.a.createElement(WA.a, { style: { color: "#fff" } })
+                        n.a.createElement(FA.a, { style: { color: "#fff" } })
                       )
                     ),
                     n.a.createElement(
@@ -37630,7 +37600,7 @@
             )
           );
         }),
-        zA = [
+        WA = [
           {
             id: 0,
             label: "Getting Started",
@@ -37654,7 +37624,7 @@
             id: 1,
             label: "Pages",
             link: "/documentation/pages",
-            icon: n.a.createElement(vd.a, null)
+            icon: n.a.createElement(yd.a, null)
           },
           {
             id: 2,
@@ -37676,18 +37646,18 @@
             id: 3,
             label: "Libs",
             link: "/documentation/libs",
-            icon: n.a.createElement(qd.a, null)
+            icon: n.a.createElement(Qd.a, null)
           }
         ],
-        GA = Object(E.k)(function(e) {
+        HA = Object(E.k)(function(e) {
           var a = $e(),
-            t = kA(),
+            t = wA(),
             l = Object(E.j)().path;
           return n.a.createElement(
             "div",
             { className: t.root },
-            n.a.createElement(HA, null),
-            n.a.createElement(Fa, { structure: zA }),
+            n.a.createElement(RA, null),
+            n.a.createElement(La, { structure: WA }),
             n.a.createElement(
               "div",
               {
@@ -37698,7 +37668,7 @@
               },
               n.a.createElement("div", { className: t.fakeToolbar }),
               n.a.createElement(
-                Ga,
+                Ha,
                 {
                   disableWidgetMenu: !0,
                   inheritHeight: !0,
@@ -37712,7 +37682,7 @@
                     justify: "space-between",
                     alignItems: "center"
                   },
-                  zA.map(function(e) {
+                  WA.map(function(e) {
                     return !e.children &&
                       window.location.hash.includes(e.link) &&
                       e.link
@@ -37762,43 +37732,43 @@
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/overview") },
-                  n.a.createElement(PA, null)
+                  n.a.createElement(CA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/licences") },
-                  n.a.createElement(BA, null)
+                  n.a.createElement(SA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/getting-started/quick-start") },
-                  n.a.createElement(MA, null)
+                  n.a.createElement(OA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/pages") },
-                  n.a.createElement(jA, null)
+                  n.a.createElement(BA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/typography") },
-                  n.a.createElement(LA, null)
+                  n.a.createElement(MA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/components/widget") },
-                  n.a.createElement(DA, null)
+                  n.a.createElement(jA, null)
                 ),
                 n.a.createElement(
                   E.b,
                   { path: "".concat(l, "/libs") },
-                  n.a.createElement(FA, null)
+                  n.a.createElement(LA, null)
                 )
               )
             )
           );
         }),
-        UA = Object(L.a)(function(e) {
+        zA = Object(L.a)(function(e) {
           return {
             container: {
               height: "100vh",
@@ -37844,10 +37814,10 @@
             backButton: { textTransform: "none", fontSize: 22 }
           };
         }),
-        VA = t(678),
-        YA = t.n(VA);
-      function KA() {
-        var e = UA();
+        GA = t(678),
+        UA = t.n(GA);
+      function VA() {
+        var e = zA();
         return n.a.createElement(
           v.a,
           { container: !0, className: e.container },
@@ -37856,7 +37826,7 @@
             { className: e.logotype },
             n.a.createElement("img", {
               className: e.logotypeIcon,
-              src: YA.a,
+              src: UA.a,
               alt: "logo"
             }),
             n.a.createElement(
@@ -37907,8 +37877,8 @@
           )
         );
       }
-      var QA = t(685),
-        JA = Object(L.a)(function(e) {
+      var YA = t(685),
+        KA = Object(L.a)(function(e) {
           var a;
           return {
             container: {
@@ -38024,16 +37994,16 @@
             )
           };
         }),
-        qA = t(679),
-        ZA = t.n(qA),
-        _A = t(395),
-        XA = t.n(_A);
-      var $A = Object(E.k)(function(e) {
-        var a = JA(),
-          t = sa();
+        QA = t(679),
+        JA = t.n(QA),
+        qA = t(395),
+        ZA = t.n(qA);
+      var _A = Object(E.k)(function(e) {
+        var a = KA(),
+          t = ca();
         Object(l.useEffect)(function() {
           var a = new URLSearchParams(e.location.search).get("token");
-          a && da(a, t);
+          a && sa(a, t);
         }, []);
         var r = Object(l.useState)(!1),
           m = Object(x.a)(r, 2),
@@ -38066,7 +38036,7 @@
             "div",
             { className: a.logotypeContainer },
             n.a.createElement("img", {
-              src: ZA.a,
+              src: JA.a,
               alt: "logo",
               className: a.logotypeImage
             }),
@@ -38108,7 +38078,7 @@
                   null,
                   la.isBackend
                     ? n.a.createElement(
-                        Ga,
+                        Ha,
                         {
                           disableWidgetMenu: !0,
                           inheritHeight: !0,
@@ -38153,11 +38123,11 @@
                       size: "large",
                       className: a.googleButton,
                       onClick: function() {
-                        return oa(t, k, B, e.history, i, E, "google");
+                        return ia(t, k, B, e.history, i, E, "google");
                       }
                     },
                     n.a.createElement("img", {
-                      src: XA.a,
+                      src: ZA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -38175,7 +38145,7 @@
                     n.a.createElement("div", { className: a.formDivider })
                   ),
                   n.a.createElement(
-                    QA.a,
+                    YA.a,
                     {
                       in: d,
                       style: d
@@ -38188,7 +38158,7 @@
                       "Something is wrong with your login or password :("
                     )
                   ),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     id: "email",
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
@@ -38202,7 +38172,7 @@
                     type: "email",
                     fullWidth: !0
                   }),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     id: "password",
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
@@ -38229,7 +38199,7 @@
                           {
                             disabled: 0 === k.length || 0 === B.length,
                             onClick: function() {
-                              return oa(t, k, B, e.history, i, E);
+                              return ia(t, k, B, e.history, i, E);
                             },
                             variant: "contained",
                             color: "primary",
@@ -38263,7 +38233,7 @@
                     "Create your account"
                   ),
                   n.a.createElement(
-                    QA.a,
+                    YA.a,
                     { in: d },
                     n.a.createElement(
                       Ne,
@@ -38271,7 +38241,7 @@
                       "Something is wrong with your login or password :("
                     )
                   ),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     id: "name",
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
@@ -38285,7 +38255,7 @@
                     type: "email",
                     fullWidth: !0
                   }),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     id: "email",
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
@@ -38299,7 +38269,7 @@
                     type: "email",
                     fullWidth: !0
                   }),
-                  n.a.createElement(Aa.a, {
+                  n.a.createElement(va.a, {
                     id: "password",
                     InputProps: {
                       classes: { underline: a.InputUnderline, input: a.Input }
@@ -38322,7 +38292,7 @@
                           Ie,
                           {
                             onClick: function() {
-                              return oa(t, k, B, e.history, i, E);
+                              return ia(t, k, B, e.history, i, E);
                             },
                             disabled:
                               0 === k.length ||
@@ -38354,11 +38324,11 @@
                       size: "large",
                       className: N()(a.googleButton, a.googleButtonCreating),
                       onClick: function() {
-                        return oa(t, k, B, e.history, i, E, "google");
+                        return ia(t, k, B, e.history, i, E, "google");
                       }
                     },
                     n.a.createElement("img", {
-                      src: XA.a,
+                      src: ZA.a,
                       alt: "google",
                       className: a.googleIcon
                     }),
@@ -38374,9 +38344,9 @@
           )
         );
       });
-      function ew() {
+      function XA() {
         var e = (function() {
-          var e = n.a.useContext(ma);
+          var e = n.a.useContext(na);
           if (void 0 === e)
             throw new Error("useUserState must be used within a UserProvider");
           return e;
@@ -38401,7 +38371,7 @@
                 return n.a.createElement(E.a, { to: "/app/dashboard" });
               }
             }),
-            n.a.createElement(E.b, { path: "/documentation", component: GA }),
+            n.a.createElement(E.b, { path: "/documentation", component: HA }),
             n.a.createElement(
               function(a) {
                 var t = a.component,
@@ -38419,7 +38389,7 @@
                   })
                 );
               },
-              { path: "/app", component: AA }
+              { path: "/app", component: vA }
             ),
             n.a.createElement(
               function(a) {
@@ -38436,9 +38406,9 @@
                   })
                 );
               },
-              { path: "/login", component: $A }
+              { path: "/login", component: _A }
             ),
-            n.a.createElement(E.b, { component: KA })
+            n.a.createElement(E.b, { component: VA })
           )
         );
       }
@@ -38449,11 +38419,11 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var aw = t(1464);
+      var $A = t(1464);
       (i.a.defaults.baseURL = la.baseURLApi),
         (i.a.defaults.headers.common["Content-Type"] = "application/json");
-      var tw = localStorage.getItem("token");
-      tw && (i.a.defaults.headers.common.Authorization = "Bearer " + tw),
+      var ew = localStorage.getItem("token");
+      ew && (i.a.defaults.headers.common.Authorization = "Bearer " + ew),
         m.a.render(
           n.a.createElement(
             function(e) {
@@ -38472,16 +38442,16 @@
             n.a.createElement(
               function(e) {
                 var a = e.children,
-                  t = n.a.useReducer(ia, {
+                  t = n.a.useReducer(ma, {
                     isAuthenticated: !!localStorage.getItem("token")
                   }),
                   l = Object(x.a)(t, 2),
                   r = l[0],
                   m = l[1];
                 return n.a.createElement(
-                  ma.Provider,
+                  na.Provider,
                   { value: r },
-                  n.a.createElement(ca.Provider, { value: m }, a)
+                  n.a.createElement(ra.Provider, { value: m }, a)
                 );
               },
               null,
@@ -38489,26 +38459,26 @@
                 function(e) {
                   var a = e.children,
                     t =
-                      (Object(et.a)("(prefers-color-scheme: dark)"),
+                      (Object(Xa.a)("(prefers-color-scheme: dark)"),
                       n.a.useState(
-                        $a[localStorage.getItem("theme")] || $a.default
+                        _a[localStorage.getItem("theme")] || _a.default
                       )),
                     l = Object(x.a)(t, 2),
                     r = l[0],
                     m = l[1];
                   return n.a.createElement(
-                    at.Provider,
+                    $a.Provider,
                     { value: r },
-                    n.a.createElement(tt.Provider, { value: m }, a)
+                    n.a.createElement(et.Provider, { value: m }, a)
                   );
                 },
                 null,
-                n.a.createElement(at.Consumer, null, function(e) {
+                n.a.createElement($a.Consumer, null, function(e) {
                   return n.a.createElement(
                     s.a,
                     { theme: e },
-                    n.a.createElement(aw.a, null),
-                    n.a.createElement(ew, null)
+                    n.a.createElement($A.a, null),
+                    n.a.createElement(XA, null)
                   );
                 })
               )
@@ -38645,4 +38615,4 @@
   },
   [[708, 1, 2]]
 ]);
-//# sourceMappingURL=main.f46fd547.chunk.js.map
+//# sourceMappingURL=main.b079c67d.chunk.js.map
