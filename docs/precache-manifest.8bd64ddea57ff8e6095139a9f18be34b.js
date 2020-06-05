@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bfe49b84b0e9a2d7b39f9d47fbfeceb",
+    "revision": "0043fe9e8cacaaaa42b35aefd034e5ff",
     "url": "./index.html"
   },
   {
-    "revision": "399b2e1734731e7ff8e5",
-    "url": "./static/css/2.659925d3.chunk.css"
+    "revision": "b0e8809af2760ac29158",
+    "url": "./static/css/2.662e3d07.chunk.css"
   },
   {
-    "revision": "6ccfb08ad4ba7de40654",
-    "url": "./static/css/main.4680caca.chunk.css"
+    "revision": "75cee601a97f40c31fe8",
+    "url": "./static/css/main.e7338c64.chunk.css"
   },
   {
-    "revision": "399b2e1734731e7ff8e5",
-    "url": "./static/js/2.36e49750.chunk.js"
+    "revision": "b0e8809af2760ac29158",
+    "url": "./static/js/2.6841521a.chunk.js"
   },
   {
-    "revision": "6ccfb08ad4ba7de40654",
-    "url": "./static/js/main.904672d8.chunk.js"
+    "revision": "75cee601a97f40c31fe8",
+    "url": "./static/js/main.b46e2e12.chunk.js"
   },
   {
     "revision": "9ac290a5be9bb4d64d2a",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/3.635e4791.jpg"
   },
   {
+    "revision": "1cedb6e919bfed6a2c1ec00b5d8ee620",
+    "url": "./static/media/UploadIcon.1cedb6e9.svg"
+  },
+  {
     "revision": "617f678949a2a047144fa3692bf87a6c",
     "url": "./static/media/a1.617f6789.jpg"
   },
@@ -52,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/a6.2966ab8e.jpg"
   },
   {
-    "revision": "2f7bff60d36a1791e04ff3552167ef5b",
-    "url": "./static/media/aexpress.2f7bff60.svg"
+    "revision": "436f6271aa56bc9dba4a334e73ae6f98",
+    "url": "./static/media/aexpress.436f6271.svg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -124,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/gallery9.7bf418ba.jpg"
   },
   {
-    "revision": "695a31606b1abb167b03fb1f6375831d",
-    "url": "./static/media/google.695a3160.svg"
+    "revision": "09aea0f59807f6f4f66af7f5719cba9e",
+    "url": "./static/media/google.09aea0f5.svg"
   },
   {
     "revision": "d1ac149fed9f7f836e9f737675238665",
@@ -160,24 +164,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/lifestyle.52254d52.jpg"
   },
   {
-    "revision": "a0185b043dee68a72aebffdcc939e21e",
-    "url": "./static/media/logo.a0185b04.svg"
+    "revision": "3d432ca2badb7e0130b379f9162b99b1",
+    "url": "./static/media/logo.3d432ca2.svg"
   },
   {
     "revision": "d767941b43a20f17b2fc576b93b25b26",
     "url": "./static/media/main-profile.d767941b.png"
   },
   {
-    "revision": "39748d619f81e72cc9fece78c3fe1012",
-    "url": "./static/media/mastercard.39748d61.svg"
+    "revision": "964dc8a089d28e463ab7134f65832a91",
+    "url": "./static/media/mastercard.964dc8a0.svg"
   },
   {
     "revision": "4130575d4640406222d6c8f645cf11a7",
     "url": "./static/media/mountains.4130575d.jpeg"
   },
   {
-    "revision": "7c5528926f594b0c2dd95bba6c06ee8c",
-    "url": "./static/media/paypal.7c552892.svg"
+    "revision": "f02b8147110304c125bce83804f27fe6",
+    "url": "./static/media/paypal.f02b8147.svg"
   },
   {
     "revision": "84f014f09e2520f76be61769a1bb6440",
@@ -188,7 +192,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/rns.95da0675.png"
   },
   {
-    "revision": "868e18965c9747e622d528ab1c4242b4",
-    "url": "./static/media/visa.868e1896.svg"
+    "revision": "77227823992290b3fbff88e743294b78",
+    "url": "./static/media/visa.77227823.svg"
   }
 ]);
