@@ -21,9 +21,6 @@ import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
 
 import s from "./Calendar.module.scss";
 
-import "@fullcalendar/daygrid/main.css";
-import "@fullcalendar/timegrid/main.css";
-
 import moment from "moment/moment";
 import cn from "classnames";
 

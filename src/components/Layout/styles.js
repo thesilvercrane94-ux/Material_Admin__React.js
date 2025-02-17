@@ -93,9 +93,4 @@ export default makeStyles((theme) => ({
     marginRight: 38,
     color: theme.palette.type === 'dark' ? '#D6D6D6' : '#4A494A',
   },
-  link: {
-    '&:not(:first-child)': {
-      paddingLeft: 15
-    }
-  }
 }));
