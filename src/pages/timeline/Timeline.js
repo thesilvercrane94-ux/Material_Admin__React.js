@@ -36,19 +36,19 @@ import { Typography, Avatar, Link, Button } from "../../components/Wrappers";
 import { Annotation, Timestep, Circle } from "../../components/Timeline";
 import Widget from "../../components/Widget";
 
-const BasicMap = withScriptjs(
-  withGoogleMap(() => (
-    <GoogleMap
-      defaultZoom={12}
-      defaultCenter={{
-        lat: parseFloat(-37.813179),
-        lng: parseFloat(144.950259)
-      }}
-    >
-      <Marker position={{ lat: -37.813179, lng: 144.950259 }} />
-    </GoogleMap>
-  ))
-);
+// const BasicMap = withScriptjs(
+//   withGoogleMap(() => (
+//     <GoogleMap
+//       defaultZoom={12}
+//       defaultCenter={{
+//         lat: parseFloat(-37.813179),
+//         lng: parseFloat(144.950259)
+//       }}
+//     >
+//       <Marker position={{ lat: -37.813179, lng: 144.950259 }} />
+//     </GoogleMap>
+//   ))
+// );
 
 export default function TimelineComp() {
   const classes = useStyles();
@@ -82,25 +82,25 @@ export default function TimelineComp() {
                         </Box>
                       </Typography>
                     </Box>
-                    <Box height={200} width={"100%"} mx={"-24px"} mt={2}>
-                      <BasicMap
-                        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg"
-                        loadingElement={
-                          <div
-                            style={{ height: "inherit", width: "inherit" }}
-                          />
-                        }
-                        containerElement={
-                          <div
-                            style={{
-                              height: "100%",
-                              width: "calc(100% + 48px)"
-                            }}
-                          />
-                        }
-                        mapElement={<div style={{ height: "100%" }} />}
-                      />
-                    </Box>
+                    {/*<Box height={200} width={"100%"} mx={"-24px"} mt={2}>*/}
+                    {/*  <BasicMap*/}
+                    {/*    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg"*/}
+                    {/*    loadingElement={*/}
+                    {/*      <div*/}
+                    {/*        style={{ height: "inherit", width: "inherit" }}*/}
+                    {/*      />*/}
+                    {/*    }*/}
+                    {/*    containerElement={*/}
+                    {/*      <div*/}
+                    {/*        style={{*/}
+                    {/*          height: "100%",*/}
+                    {/*          width: "calc(100% + 48px)"*/}
+                    {/*        }}*/}
+                    {/*      />*/}
+                    {/*    }*/}
+                    {/*    mapElement={<div style={{ height: "100%" }} />}*/}
+                    {/*  />*/}
+                    {/*</Box>*/}
                     <Box display="flex" ml={"-12px"} my={1}>
                       <IconButton aria-label="like">
                         <LikeIcon />
